@@ -1,0 +1,63 @@
+# DATA-SOURCES.md — Fuentes de Datos e Insumos Técnicos
+
+Este documento detalla los orígenes de datos, archivos de muestra y fuentes de información identificadas para la **Plataforma Centralizada de Gestión Técnica y Nutricional** de **Alimentos Sevilla S.A.S.**
+
+---
+
+## 1. Catálogo de Fuentes de Datos Conocidas
+
+### 1. Banco de Información Nutricional.xlsx
+- **Tipo:** Hoja de cálculo Excel (.xlsx).
+- **Propósito:** Fuente de referencia para la composición nutricional de las materias primas y aditivos utilizados en formulaciones.
+- **Contenido:** Contiene tablas de nutrientes (proteína, grasa total, grasa saturada, carbohidratos, azúcares totales, azúcares añadidos, sodio, fibra dietaria, vitaminas y minerales) por 100 gramos de ingrediente.
+- **Observaciones y Ambigüedad:** El archivo contiene múltiples pestañas con datos provenientes de diferentes fuentes (análisis de laboratorio, fichas de proveedores, tablas de composición de alimentos).
+- **Open Question Asociada:** [OQ-001](OPEN-QUESTIONS.md#oq-001) — Pendiente definir cuál pestaña o fuente tiene precedencia oficial al resolver valores nutricionales por ingrediente.
+
+---
+
+### 2. CTN - Salchicha Desayuno Premium - v11.xlsx
+- **Tipo:** Hoja de cálculo de Control Técnico Nutricional (.xlsx).
+- **Propósito:** Archivo de referencia utilizado actualmente por el equipo técnico para el cálculo y balance nutricional de productos cárnicos procesados.
+- **Contenido:** Lista de ingredientes de la formulación con sus porcentajes de participación, peso en batch, balance de nutrientes ponderado, factores de rendimiento por cocción y cálculo de sellos de advertencia.
+- **Observaciones y Ambigüedad:** Representa el comportamiento histórico de cálculo en Excel. Requiere auditoría contra la normativa oficial de etiquetado vigente.
+- **Open Question Asociada:** [OQ-006](OPEN-QUESTIONS.md#oq-006) y [OQ-007](OPEN-QUESTIONS.md#oq-007) — Pendiente validar si reproduce con exactitud la lógica normativa que el motor computacional debe estandarizar.
+
+---
+
+### 3. TL - Salchicha desayuno Premium x 480 g
+- **Tipo:** Documento de muestra de Textos Legales (.docx / .pdf).
+- **Propósito:** Ejemplo del documento técnico y legal requerido para la aprobación de rótulos ante entidades sanitarias y clientes comerciales.
+- **Contenido:** Denominación legal del alimento, lista descendente de ingredientes, declaración cuantitativa de ingredientes (QUID si aplica), advertencias de alérgenos, tabla de información nutricional en formato normativo, modo de conservación y vida útil.
+- **Observaciones:** Servirá de modelo de referencia para la plantilla del generador de documentos técnicos en la Semana 6.
+- **Open Question Asociada:** [OQ-016](OPEN-QUESTIONS.md#oq-016) — Pendiente confirmar si este formato representa la plantilla única oficial.
+
+---
+
+### 4. AR - Salchicha Desayuno Premium 480 g (Arte Final)
+- **Tipo:** Archivo de diseño gráfico / arte de empaque.
+- **Propósito:** Referencia visual del empaque final impreso en planta o por la agencia de diseño.
+- **Frontera de Alcance:** **FUERA DEL ALCANCE.** La plataforma no es una herramienta de diseño gráfico vectorial (Adobe Illustrator/Corel). La plataforma genera los datos estructurados, tablas nutricionales y textos legales validados que la agencia de diseño utilizará para confeccionar el arte final.
+
+---
+
+### 5. Archivos de Costos de Junio (Reportes Financieros)
+- **Tipo:** Archivos de exportación contable / financiera (.xlsx / .csv).
+- **Propósito:** Insumo para el módulo de costeo de formulaciones que se actualizará mensualmente.
+- **Contenido:** Listado de cuentas contables, códigos de materia prima, descripciones y costo promedio o estándar por kilogramo.
+- **Frontera de Alcance:** **NO existe integración API directa con el ERP SIESA.** SIESA únicamente aporta el identificador alfanumérico (Código de Materia Prima) que permite cruzar los costos del archivo mensual con los ingredientes registrados en la plataforma.
+- **Open Questions Asociadas:**
+  - [OQ-012](OPEN-QUESTIONS.md#oq-012): Estructura oficial y delimitación del archivo mensual.
+  - [OQ-013](OPEN-QUESTIONS.md#oq-013): Nombre exacto y formato de la columna con el código SIESA.
+  - [OQ-014](OPEN-QUESTIONS.md#oq-014): Política de manejo ante códigos SIESA no encontrados en el catálogo.
+
+---
+
+## 2. Matriz de Trazabilidad de Fuentes de Datos
+
+| Identificador | Archivo / Fuente | Módulo Destino en la Plataforma | Frecuencia de Actualización | Estado de Definición |
+|---|---|---|---|---|
+| **DS-01** | Banco Nutricional.xlsx | Módulo de Ingredientes (Semana 2) | Esporádica / Bajo demanda | Pendiente resolución OQ-001 |
+| **DS-02** | CTN v11.xlsx | Motor de Cálculo Nutricional (Semana 4) | Archivo histórico de calibración | Pendiente resolución OQ-006 |
+| **DS-03** | TL 480g | Módulo de Documentos Técnicos (Semana 6) | Plantilla base de salida | Pendiente resolución OQ-016 |
+| **DS-04** | AR 480g | N/A (Referencia visual) | N/A | Fuera de alcance |
+| **DS-05** | Costos Junio | Módulo de Costos (Semana 5) | Mensual (Carga de archivo) | Pendiente resolución OQ-012/13/14 |
