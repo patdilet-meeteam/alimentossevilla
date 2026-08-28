@@ -2,7 +2,7 @@
 
 **Cliente:** Alimentos Sevilla S.A.S.  
 **Estado:** Semana 1 — Levantamiento y Diseño (**SPEC-001: Platform Foundation**)  
-**Stack:** Next.js 15+ (App Router), React 19, TypeScript Strict, PostgreSQL, Prisma, Tailwind CSS, Zod, Vitest, pnpm.
+**Stack:** Next.js 16+ (App Router, Turbopack), React 19, TypeScript Strict, Better Auth 1.7+, PostgreSQL, Prisma, Tailwind CSS, Zod, Vitest, pnpm.
 
 ---
 
@@ -10,10 +10,12 @@
 
 La **Plataforma Centralizada de Gestión Técnica y Nutricional** es una solución web empresarial diseñada para consolidar, automatizar y estandarizar la gestión de materias primas, formulaciones, cálculos nutricionales normativos (sellos frontales de advertencia, tablas de rotulado), costeo mensual de recetas y emisión de documentos técnicos para Alimentos Sevilla S.A.S., reemplazando hojas de cálculo dispersas.
 
-> **IMPORTANTE — GOBERNANZA TÉCNICA:**
-> - El sistema opera actualmente en fase **SPEC-001 (Platform Foundation)**.
+> **GOBERNANZA TÉCNICA Y REGLAS FUNDAMENTALES:**
+> - El sistema opera en fase **SPEC-001 (Platform Foundation)**.
 > - **NO** se han inventado fórmulas de cálculo nutricional, límites de sellos ni reglas de negocio prematuras antes del Kick-Off funcional.
 > - **NO** existe integración directa vía API con el ERP SIESA. Toda asociación se realiza mediante el código de materia prima SIESA presente en los archivos de costos mensuales.
+> - **Autenticación:** Gestionada canónicamente por **Better Auth** con persistencia en PostgreSQL mediante Prisma.
+> - **Autorización:** Gestionada por la aplicación mediante roles estrictos y comprobación del estado activo del usuario.
 
 ---
 
@@ -23,12 +25,12 @@ La **Plataforma Centralizada de Gestión Técnica y Nutricional** es una soluci�
 |---|---|---|
 | **Protocolo de Gobernanza y Autonomía** | [`AGENTS.md`](AGENTS.md) | Reglas de autonomía de agentes, límites y disparadores de escalamiento (E1-E7). |
 | **Visión de Producto** | [`docs/PRODUCT.md`](docs/PRODUCT.md) | Objetivos, contexto de negocio y alcance modular a 6 semanas. |
-| **Arquitectura de la Solución** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Principios de Monolito Modular, capas de software y directrices técnicas. |
+| **Arquitectura de la Solución** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Principios de Monolito Modular, Better Auth y directrices técnicas. |
 | **Modelo Conceptual de Dominio** | [`docs/DOMAIN.md`](docs/DOMAIN.md) | Modelo V0 categorizado en conceptos confirmados, provisionales y preguntas abiertas. |
-| **Registro de Decisiones (ADRs)** | [`docs/DECISIONS.md`](docs/DECISIONS.md) | Decisiones arquitectónicas fundamentales formalizadas (ADR-001 a ADR-008). |
+| **Registro de Decisiones (ADRs)** | [`docs/DECISIONS.md`](docs/DECISIONS.md) | Decisiones arquitectónicas fundamentales formalizadas (ADR-001 a ADR-009). |
 | **Catálogo de Preguntas Abiertas** | [`docs/OPEN-QUESTIONS.md`](docs/OPEN-QUESTIONS.md) | Catálogo unificado de dudas funcionales y normativas pendientes de Kick-Off. |
 | **Fuentes de Datos e Insumos** | [`docs/DATA-SOURCES.md`](docs/DATA-SOURCES.md) | Documentación de archivos Excel de referencia, textos legales y muestras de costos. |
-| **Políticas de Seguridad** | [`docs/SECURITY.md`](docs/SECURITY.md) | Estándares de autenticación, sesiones, autorización server-side y sanitización. |
+| **Políticas de Seguridad** | [`docs/SECURITY.md`](docs/SECURITY.md) | Estándares de Better Auth, sesiones, autorización server-side y sanitización normalizada. |
 | **Especificación Técnica SPEC-001** | [`docs/specs/SPEC-001-platform-foundation.md`](docs/specs/SPEC-001-platform-foundation.md) | Alcance detallado, criterios de aceptación y matriz de verificación de Foundation. |
 
 ---
@@ -37,7 +39,7 @@ La **Plataforma Centralizada de Gestión Técnica y Nutricional** es una soluci�
 
 - **Node.js:** v20.x o v24.x LTS
 - **pnpm:** v9.x o v10.x (`npm i -g pnpm`)
-- **Docker & Docker Compose:** (Para levantar PostgreSQL localmente)
+- **Docker & Docker Compose:** (Para ejecutar PostgreSQL localmente)
 
 ---
 
@@ -53,7 +55,7 @@ Copie el archivo de ejemplo:
 ```bash
 cp .env.example .env
 ```
-*(Ajuste `DATABASE_URL` y secretos si su entorno local difiere del estándar).*
+*(Si el puerto `5432` de PostgreSQL ya está en uso en su máquina por otra base de datos local, modifique `POSTGRES_PORT=5439` en `.env` y ajuste `DATABASE_URL` acorde).*
 
 ### Paso 3: Iniciar PostgreSQL con Docker Compose
 ```bash
@@ -61,13 +63,13 @@ pnpm db:docker
 # O directamente: docker compose up -d
 ```
 
-### Paso 4: Sincronizar el esquema de base de datos
+### Paso 4: Aplicar migraciones versionadas
 ```bash
-pnpm db:push
-# O para migraciones versionadas: pnpm db:migrate
+pnpm db:migrate
+# Para entornos limpios / producción: pnpm db:deploy
 ```
 
-### Paso 5: Ejecutar la semilla inicial de usuarios (Seed)
+### Paso 5: Ejecutar la inicialización de usuarios (Seed de Desarrollo)
 ```bash
 pnpm db:seed
 ```
@@ -82,7 +84,7 @@ La aplicación estará disponible en: [http://localhost:3000](http://localhost:3
 
 ## 5. Credenciales de Prueba (Entorno de Desarrollo)
 
-El script de semilla inicializa cuentas de demostración para los 4 roles soportados:
+El script de semilla inicializa cuentas de prueba para los 4 roles base soportados (bloqueado en producción):
 
 | Rol | Correo Electrónico | Contraseña por Defecto |
 |---|---|---|
@@ -96,7 +98,7 @@ El script de semilla inicializa cuentas de demostración para los 4 roles soport
 ## 6. Comandos de Verificación y Calidad
 
 ```bash
-# Ejecutar suite de pruebas con Vitest
+# Ejecutar suite completa de pruebas (unitarias e integración real con PostgreSQL)
 pnpm test
 
 # Verificación estricta de tipos con TypeScript
@@ -105,7 +107,7 @@ pnpm typecheck
 # Análisis estático de código con ESLint
 pnpm lint
 
-# Compilación de producción
+# Compilación de producción con Next.js 16 (Turbopack)
 pnpm build
 ```
 

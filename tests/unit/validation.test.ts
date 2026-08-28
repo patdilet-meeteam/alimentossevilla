@@ -3,12 +3,13 @@ import {
   loginSchema,
   createUserSchema,
   updateUserRoleSchema,
+  updateUserStatusSchema,
 } from "@/lib/validations/auth";
 import { Role } from "@prisma/client";
 
-describe("Boundary Validations (Zod Schemas)", () => {
+describe("Unit: Boundary Validations (Zod Schemas)", () => {
   describe("loginSchema", () => {
-    it("acepta credenciales con formato correcto", () => {
+    it("acepta credenciales con formato válido", () => {
       const result = loginSchema.safeParse({
         email: "admin@alimentossevilla.com",
         password: "AdminSevilla2026!#",
@@ -17,9 +18,9 @@ describe("Boundary Validations (Zod Schemas)", () => {
       expect(result.success).toBe(true);
     });
 
-    it("rechaza emails malformados o vacíos", () => {
+    it("rechaza correos electrónicos malformados o vacíos", () => {
       const invalidEmail = loginSchema.safeParse({
-        email: "no-es-un-correo",
+        email: "correo_invalido_sin_arroba",
         password: "Password123!",
       });
       expect(invalidEmail.success).toBe(false);
@@ -41,9 +42,9 @@ describe("Boundary Validations (Zod Schemas)", () => {
   });
 
   describe("createUserSchema", () => {
-    it("valida un usuario completo con rol válido y contraseña fuerte", () => {
+    it("valida usuario completo con contraseña fuerte y rol válido", () => {
       const valid = createUserSchema.safeParse({
-        name: "Carlos Pérez",
+        name: "Carlos Gómez",
         email: "carlos@alimentossevilla.com",
         password: "PasswordSeguro2026!",
         role: Role.R_AND_D,
@@ -51,32 +52,50 @@ describe("Boundary Validations (Zod Schemas)", () => {
       expect(valid.success).toBe(true);
     });
 
-    it("rechaza contraseñas débiles menores a 8 caracteres", () => {
+    it("rechaza contraseñas menores a 8 caracteres", () => {
       const weak = createUserSchema.safeParse({
-        name: "Carlos Pérez",
+        name: "Carlos Gómez",
         email: "carlos@alimentossevilla.com",
-        password: "Pass1",
+        password: "Short1",
         role: Role.R_AND_D,
       });
       expect(weak.success).toBe(false);
     });
 
-    it("rechaza roles inexistentes", () => {
+    it("rechaza roles no enumerados", () => {
       const invalidRole = createUserSchema.safeParse({
-        name: "Carlos Pérez",
+        name: "Carlos Gómez",
         email: "carlos@alimentossevilla.com",
         password: "PasswordSeguro2026!",
-        role: "SUPERADMIN_INVENTADO",
+        role: "ROL_NO_EXISTENTE",
       });
       expect(invalidRole.success).toBe(false);
     });
   });
 
   describe("updateUserRoleSchema", () => {
-    it("acepta cambio a rol existente", () => {
+    it("acepta asignación de rol válido", () => {
       const valid = updateUserRoleSchema.safeParse({
-        userId: "user_123",
+        userId: "user_test_123",
         role: Role.QUALITY,
+      });
+      expect(valid.success).toBe(true);
+    });
+
+    it("rechaza identificador de usuario vacío", () => {
+      const invalid = updateUserRoleSchema.safeParse({
+        userId: "",
+        role: Role.ADMIN,
+      });
+      expect(invalid.success).toBe(false);
+    });
+  });
+
+  describe("updateUserStatusSchema", () => {
+    it("acepta cambio de estado booleano", () => {
+      const valid = updateUserStatusSchema.safeParse({
+        userId: "user_test_123",
+        isActive: false,
       });
       expect(valid.success).toBe(true);
     });

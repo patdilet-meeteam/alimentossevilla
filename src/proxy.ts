@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const SESSION_COOKIE_NAME = "alimentos_session";
-
 const PROTECTED_PREFIXES = [
   "/dashboard",
   "/ingredientes",
@@ -15,9 +13,13 @@ const PROTECTED_PREFIXES = [
   "/auditoria",
 ];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const sessionCookie = request.cookies.get(SESSION_COOKIE_NAME)?.value;
+
+  // Better Auth utiliza "better-auth.session_token" o "__Secure-better-auth.session_token"
+  const sessionCookie =
+    request.cookies.get("better-auth.session_token")?.value ||
+    request.cookies.get("__Secure-better-auth.session_token")?.value;
 
   // Si visita la raíz "/", redirigir según estado de sesión
   if (pathname === "/") {
@@ -27,7 +29,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  // Si visita login teniendo ya una sesión, redirigir al dashboard
+  // Si visita login teniendo ya una sesión activa, redirigir al dashboard
   if (pathname === "/login" && sessionCookie) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
@@ -46,16 +48,11 @@ export function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 
+// Compatibilidad con middleware legacy
+export const middleware = proxy;
+
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for:
-     * - api routes (if any public)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
-     * - public assets (.svg, .png, etc.)
-     */
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!api/auth|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };

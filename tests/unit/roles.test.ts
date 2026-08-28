@@ -7,8 +7,8 @@ import {
   requireRole,
 } from "@/lib/auth/roles";
 
-describe("Roles & Authorization Guards", () => {
-  it("contiene exactamente los 4 roles base del levantamiento", () => {
+describe("Unit: Roles & Authorization Guards", () => {
+  it("contiene exactamente los 4 roles base de la fundación", () => {
     expect(Role.ADMIN).toBe("ADMIN");
     expect(Role.R_AND_D).toBe("R_AND_D");
     expect(Role.QUALITY).toBe("QUALITY");
@@ -23,11 +23,11 @@ describe("Roles & Authorization Guards", () => {
     expect(RoleLabels[Role.VIEWER]).toBe("Consulta");
   });
 
-  it("proporciona descripciones de alcance para todos los roles", () => {
+  it("proporciona descripciones para todos los roles", () => {
     expect(RoleDescriptions[Role.ADMIN]).toContain("Administración");
     expect(RoleDescriptions[Role.R_AND_D]).toContain("Investigación");
     expect(RoleDescriptions[Role.QUALITY]).toContain("Calidad");
-    expect(RoleDescriptions[Role.VIEWER]).toContain("lectura");
+    expect(RoleDescriptions[Role.VIEWER]).toContain("Consulta");
   });
 
   it("hasRole valida correctamente si un usuario tiene rol permitido", () => {

@@ -6,40 +6,41 @@ Este documento define los estándares de seguridad implementados en la **Platafo
 
 ## 1. Principios de Seguridad
 
-1. **Defensa en Profundidad (Defense in Depth):** Las comprobaciones de autorización se ejecutan obligatoriamente en el servidor en cada Server Action, Route Handler y carga de página, sin confiar jamás en el estado del cliente o la visibilidad de elementos visuales en React.
+1. **Defensa en Profundidad (Defense in Depth):** Las comprobaciones de autorización se ejecutan obligatoriamente en el servidor en cada Server Action, Route Handler y carga de página, sin confiar en el estado del cliente o la visibilidad de elementos visuales en React.
 2. **Principio de Menor Privilegio (Least Privilege):** Cada rol tiene acceso estrictamente a las operaciones requeridas para su función.
 3. **Validación Exhaustiva en Boundaries:** Ningún dato no confiable ingresa a la capa de dominio sin ser parseado y validado mediante esquemas estrictos de **Zod**.
 4. **Protección de Datos Sensibles:** Contraseñas, tokens de sesión y secretos nunca se almacenan en texto plano ni se registran en logs o eventos de auditoría.
+5. **Fail-Closed en Producción:** Las herramientas de prueba y seeds de demostración están expresamente bloqueadas en entornos de producción.
 
 ---
 
-## 2. Autenticación y Gestión de Contraseñas
+## 2. Autenticación y Gestión de Contraseñas (Better Auth)
 
-- **Algoritmo de Hashing:** Se utiliza `bcryptjs` con un factor de trabajo (salt rounds) de 10 o superior, protegiendo las credenciales contra ataques de fuerza bruta y tablas arcoíris.
-- **Políticas de Contraseña:** Mínimo 8 caracteres, requiriendo al menos una letra mayúscula, una minúscula y un número o carácter especial.
-- **Almacenamiento:** El hash de contraseña se almacena exclusivamente en la columna `passwordHash` de la tabla `User`. Jamás se retorna en payloads JSON al cliente.
+- **Motor de Autenticación:** Se utiliza **Better Auth (v1.7+)** con adapter Prisma para PostgreSQL.
+- **Hashing de Contraseñas:** Better Auth gestiona el hashing mediante funciones criptográficas de derivación de claves seguras con salting automático por usuario. Las credenciales se almacenan exclusivamente en la tabla `Account`.
+- **Políticas de Contraseña:** Mínimo 8 caracteres, requiriendo al menos una letra mayúscula, una minúscula y un número.
 
 ---
 
-## 3. Manejo de Sesiones
+## 3. Manejo de Sesiones y Protección de Rutas
 
-- **Mecanismo:** Sesiones con identificador aleatorio criptográficamente seguro (UUID v4 / base64URL de 32 bytes de entropía) almacenadas en la base de datos (tabla `Session`).
-- **Transporte de Sesión:** Cookie HTTP-Only con los siguientes flags de seguridad:
+- **Mecanismo:** Sesiones con identificador criptográficamente seguro almacenadas en la base de datos (tabla `Session`) asociadas a la tabla `User`.
+- **Transporte de Sesión:** Cookies HTTP-Only emitidas por Better Auth con directivas estrictas:
   - `httpOnly: true` (Inaccesible desde JavaScript en el navegador, previene robo de sesión por XSS).
-  - `secure: process.env.NODE_ENV === 'production'` (Transmisión obligatoria sobre HTTPS en producción).
-  - `sameSite: 'lax'` (Protección contra Cross-Site Request Forgery - CSRF en navegaciones cross-origin).
-  - `path: '/'`
-  - `maxAge: 8 * 60 * 60` (8 horas de vigencia por defecto).
-- **Revocación:** La sesión puede ser invalidada instantáneamente en el servidor eliminando el registro correspondiente en la tabla `Session`.
+  - `secure: process.env.NODE_ENV === 'production'` (Transmisión sobre HTTPS en producción).
+  - `sameSite: 'lax'` (Protección contra CSRF).
+  - `maxAge: 8 * 60 * 60` (8 horas de vigencia).
+- **Control de Inactividad de Usuario (FIX-03):** La capa de autorización del servidor verifica en tiempo real que `user.isActive === true`. Si un usuario es marcado como inactivo (`isActive: false`), cualquier petición es **rechazada inmediatamente** server-side independientemente de la validez temporal del token de sesión. Además, la acción administrativa revoca todas las sesiones activas en la tabla `Session`.
 
 ---
 
 ## 4. Autorización Server-Side y RBAC
 
-- Toda mutación o consulta protegida verifica la sesión del usuario mediante la función `getCurrentUser()` en el servidor.
+- El Proxy/Middleware de Next.js (`src/proxy.ts`) intercepta las peticiones a rutas protegidas (`/(app)/*`), redirigiendo a `/login` si no existe la cookie de sesión de Better Auth.
+- Los Server Components (`src/app/(app)/layout.tsx`) y Server Actions validan el usuario activo mediante `getCurrentUser()` en el servidor.
 - La verificación de roles se ejecuta mediante funciones de guarda tipadas:
   ```typescript
-  export async function requireRole(allowedRoles: Role[]): Promise<User> {
+  export async function requireRole(allowedRoles: Role[]): Promise<void> {
     const user = await getCurrentUser();
     if (!user) {
       throw new Error('UNAUTHORIZED');
@@ -47,46 +48,40 @@ Este documento define los estándares de seguridad implementados en la **Platafo
     if (!allowedRoles.includes(user.role)) {
       throw new Error('FORBIDDEN');
     }
-    return user;
   }
   ```
-- **Rutas Protegidas:** El middleware de Next.js intercepta todas las peticiones a rutas bajo `/(app)/*` (`/dashboard`, `/ingredientes`, `/productos`, `/formulaciones`, `/costos`, `/normativa`, `/documentos`, `/usuarios`, `/auditoria`), redirigiendo a `/login` si no existe una cookie de sesión válida.
 
 ---
 
-## 5. Sanitización de Auditoría y Logs
+## 5. Sanitización Normalizada de Auditoría (`AuditEvent`)
 
-El servicio `src/lib/audit/audit-service.ts` implementa un filtro automático de sanitización que purga cualquier clave sensible antes de persistir en `AuditEvent.metadata`:
+El servicio `src/lib/audit/audit-service.ts` implementa un algoritmo de sanitización que normaliza las claves (convirtiendo a minúsculas y eliminando guiones, guiones bajos y espacios) y ofusca recursivamente cualquier término coincidente:
 
 ```typescript
-const FORBIDDEN_AUDIT_KEYS = ['password', 'passwordHash', 'token', 'secret', 'authorization', 'cookie'];
-
-function sanitizeMetadata(metadata: Record<string, unknown>): Record<string, unknown> {
-  const clean: Record<string, unknown> = {};
-  for (const [key, value] of Object.entries(metadata)) {
-    if (!FORBIDDEN_AUDIT_KEYS.some(f => key.toLowerCase().includes(f))) {
-      clean[key] = value;
-    } else {
-      clean[key] = '[REDACTED]';
-    }
-  }
-  return clean;
-}
+const SENSITIVE_KEY_PATTERNS = [
+  "password", "token", "secret", "auth", "credential",
+  "cookie", "session", "key", "signature", "passphrase", "bearer"
+];
 ```
+
+**Cobertura de Sanitización:**
+- Variantes de casing: `password_hash`, `passwordHash`, `api_key`, `apiKey`, `api-key`, `private_key`, `privateKey`, `auth_header`, `authHeader`, `client_secret`, `bearer_token`, etc.
+- Objetos planos, estructuras profundamente anidadas y colecciones (arrays).
 
 ---
 
 ## 6. Gestión de Secretos y Variables de Entorno
 
-- Los archivos `.env`, `.env.local` y `.env.production` están explícitamente excluidos en `.gitignore`.
-- Se mantiene un archivo `.env.example` documentando todas las variables requeridas con valores sintéticos de ejemplo.
-- Secretos obligatorios:
+- `.env`, `.env.local` y `.env.production` están explícitamente ignorados en `.gitignore`.
+- Se mantiene `.env.example` documentando todas las variables requeridas con valores sintéticos de ejemplo.
+- Secretos principales:
   - `DATABASE_URL`: Cadena de conexión a PostgreSQL.
-  - `AUTH_SECRET` / `SESSION_SECRET`: Semilla criptográfica para firma y tokens.
+  - `BETTER_AUTH_SECRET`: Secreto criptográfico de Better Auth.
+  - `POSTGRES_PORT`: Puerto expuesto en contenedor local de desarrollo.
 
 ---
 
-## 7. Manejo Seguro de Errores
+## 7. Políticas de Seed y Bootstrap en Producción
 
-- En producción, los errores de base de datos o stack traces internos nunca se envían al cliente.
-- Las Server Actions retornan objetos de resultado con formato estructurado `{ success: boolean, error?: string }` con mensajes de error comprensibles y genéricos para el usuario.
+- `prisma/seed.ts` implementa **fail-closed**: si `NODE_ENV === "production"`, el script aborta inmediatamente la creación de cuentas de demostración.
+- El bootstrap del primer administrador se realiza a través de variables de entorno seguras (`INITIAL_ADMIN_*`) configuradas deliberadamente por el equipo de operaciones.

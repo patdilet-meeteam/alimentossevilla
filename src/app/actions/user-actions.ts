@@ -1,7 +1,7 @@
 "use server";
 
 import { db } from "@/lib/db";
-import { getCurrentUser, destroyAllUserSessions } from "@/lib/auth/session";
+import { getCurrentUser, revokeUserSessions } from "@/lib/auth/session";
 import { requireRole, Role } from "@/lib/auth/roles";
 import {
   updateUserRoleSchema,
@@ -139,7 +139,7 @@ export async function toggleUserStatusAction(input: {
 
     if (!isActive) {
       // Invalida todas las sesiones activas del usuario desactivado
-      await destroyAllUserSessions(userId);
+      await revokeUserSessions(userId);
     }
 
     await recordAuditEvent({

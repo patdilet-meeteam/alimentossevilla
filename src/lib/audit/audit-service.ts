@@ -12,39 +12,66 @@ export interface AuditEventInput {
   userAgent?: string | null;
 }
 
-const FORBIDDEN_METADATA_KEYS = [
+const SENSITIVE_KEY_PATTERNS = [
   "password",
-  "passwordhash",
   "token",
   "secret",
-  "authorization",
+  "auth",
+  "credential",
   "cookie",
   "session",
-  "apikey",
-  "privatekey",
+  "key",
+  "signature",
+  "passphrase",
+  "bearer",
 ];
 
+export function isSensitiveKey(key: string): boolean {
+  if (!key) return false;
+  // Normalizar clave: minúsculas y eliminación de guiones, guiones bajos y espacios
+  const normalized = key.toLowerCase().replace(/[-_\s]/g, "");
+
+  return SENSITIVE_KEY_PATTERNS.some((pattern) =>
+    normalized.includes(pattern)
+  );
+}
+
 export function sanitizeMetadata(
-  metadata?: Record<string, unknown> | null
+  metadata?: Record<string, unknown> | unknown[] | null
 ): Prisma.InputJsonValue | undefined {
-  if (!metadata || typeof metadata !== "object") {
+  if (metadata === null || metadata === undefined) {
     return undefined;
+  }
+
+  if (Array.isArray(metadata)) {
+    return metadata.map((item) => {
+      if (item !== null && typeof item === "object") {
+        return sanitizeMetadata(item as Record<string, unknown>);
+      }
+      return item;
+    }) as Prisma.InputJsonValue;
+  }
+
+  if (typeof metadata !== "object") {
+    return metadata as Prisma.InputJsonValue;
   }
 
   const clean: Record<string, unknown> = {};
 
   for (const [key, value] of Object.entries(metadata)) {
-    const lowerKey = key.toLowerCase();
-    const isSensitive = FORBIDDEN_METADATA_KEYS.some((forbidden) =>
-      lowerKey.includes(forbidden)
-    );
-
-    if (isSensitive) {
+    if (isSensitiveKey(key)) {
       clean[key] = "[REDACTED]";
+    } else if (Array.isArray(value)) {
+      clean[key] = value.map((item) => {
+        if (item !== null && typeof item === "object") {
+          return sanitizeMetadata(item as Record<string, unknown>);
+        }
+        return item;
+      });
     } else if (
       value !== null &&
       typeof value === "object" &&
-      !Array.isArray(value)
+      !(value instanceof Date)
     ) {
       clean[key] = sanitizeMetadata(value as Record<string, unknown>);
     } else {
@@ -74,7 +101,7 @@ export async function recordAuditEvent(input: AuditEventInput) {
 
     return event;
   } catch (error) {
-    // Fail-safe: Log error locally without crashing the caller transaction
+    // Fail-safe: Registra error internamente sin quebrar la transacción principal
     console.error("❌ Fallo al registrar evento de auditoría:", error);
     return null;
   }

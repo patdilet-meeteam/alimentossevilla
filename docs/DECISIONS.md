@@ -22,40 +22,42 @@ Este documento registra las decisiones arquitectónicas fundamentales (Architect
 - **Decisión:** Utilizar PostgreSQL como el motor de base de datos relacional primario del sistema.
 - **Consecuencias:**
   - *Positivas:* Soporte nativo robusto para tipos numéricos de alta precisión (`Decimal`), campos `JSONB`, transacciones ACID e índices avanzados.
-  - *Trade-off:* Requiere aprovisionamiento de instancia Postgres administrada o contenedor Docker en desarrollo.
+  - *Trade-off:* Requiere aprovisionamiento de instancia Postgres administrada o contenedor Docker en desarrollo con puerto configurable.
 
 ---
 
-## ADR-003: Prisma como ORM y Motor de Migraciones Declarativas
+## ADR-003: Prisma como ORM y Motor de Migraciones Declarativas Versionadas
 - **Estado:** Aceptado
 - **Fecha:** 2026-08-27 (Semana 1)
-- **Contexto:** Se requiere un acceso a base de datos fuertemente tipado en TypeScript, con generación automática de tipos y control determinista de migraciones a lo largo de las 6 semanas del proyecto.
-- **Decisión:** Utilizar Prisma ORM (`@prisma/client` y `prisma` CLI).
+- **Contexto:** Se requiere un acceso a base de datos fuertemente tipado en TypeScript, con generación automática de tipos y control determinista de migraciones versionadas a lo largo de las 6 semanas del proyecto.
+- **Decisión:** Utilizar Prisma ORM (`@prisma/client` y `prisma` CLI) con migraciones físicas versionadas en `prisma/migrations/`.
 - **Consecuencias:**
-  - *Positivas:* Tipado estático completo en tiempo de desarrollo, autocompletado y validación de esquema centralizado en `schema.prisma`.
-  - *Mitigación:* Escribir scripts de semilla reproducibles (`seed.ts`) para inicialización de entornos de prueba y desarrollo.
+  - *Positivas:* Tipado estático completo en tiempo de desarrollo, migraciones SQL trazables e inmutables aplicables mediante `prisma migrate deploy`.
+  - *Mitigación:* Escribir scripts de semilla reproducibles (`seed.ts`) con comportamiento seguro y fail-closed en producción.
 
 ---
 
-## ADR-004: Next.js 16+ con App Router y TypeScript Estricto
+## ADR-004: Next.js 16+ con App Router, Turbopack y TypeScript Estricto
 - **Estado:** Aceptado
 - **Fecha:** 2026-08-27 (Semana 1)
-- **Contexto:** Se necesita una aplicación web con Server-Side Rendering (RSC) para proteger información sensible y Server Actions para procesar mutaciones de manera segura sin exponer APIs REST públicas desprotegidas.
-- **Decisión:** Utilizar Next.js con App Router en modo estricto de TypeScript (`"strict": true`).
+- **Contexto:** Se necesita una plataforma web moderna con Server-Side Rendering (RSC) para proteger información sensible y Server Actions / Proxy para procesar mutaciones y proteger rutas de manera segura sin exponer APIs REST públicas desprotegidas.
+- **Decisión:** Utilizar Next.js 16 (16.3.3) con App Router en modo estricto de TypeScript (`"strict": true`) y convención `src/proxy.ts`.
 - **Consecuencias:**
-  - *Positivas:* Excelente rendimiento inicial, componentes de servidor con acceso directo y seguro a la capa de datos, validación centralizada en el backend.
-  - *Mitigación:* Disciplina estricta en no mezclar lógica de negocio pesada dentro del JSX de los componentes.
+  - *Positivas:* Excelente rendimiento con Turbopack, componentes de servidor con acceso seguro a la capa de datos, validación centralizada en el backend.
+  - *Mitigación:* Mantener separación estricta entre la UI y la capa de servicios de dominio.
 
 ---
 
-## ADR-005: Autorización en el Servidor y Sesiones Seguras Basadas en Cookies HTTP-Only
+## ADR-005: Autorización en el Servidor en Capas sobre Sesiones de Better Auth
 - **Estado:** Aceptado
 - **Fecha:** 2026-08-27 (Semana 1)
 - **Contexto:** La plataforma procesará formulaciones secretas y costos industriales confidenciales. La seguridad no puede delegarse a controles puramente cosméticos en el cliente (como deshabilitar botones en React).
-- **Decisión:** Implementar sesiones en base de datos con tokens criptográficos opacos almacenados en cookies HTTP-only, `SameSite=Lax`, con flags `Secure` en producción. La verificación de identidad y rol se ejecuta del lado del servidor en cada mutación (Server Action) y a través del middleware de Next.js.
+- **Decisión:** Construir la autorización de la aplicación sobre las sesiones criptográficas de Better Auth. Cada operación server-side valida:
+  1. La validez de la sesión en base de datos.
+  2. Que el usuario permanezca activo (`isActive === true`).
+  3. Que el rol del usuario (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`) coincida con los requeridos para la operación mediante `requireRole()`.
 - **Consecuencias:**
-  - *Positivas:* Inmunidad a ataques XSS de robo de token por `localStorage`, revocación inmediata de sesiones desde base de datos y control de acceso robusto.
-  - *Trade-off:* Consulta de sesión en base de datos en peticiones autenticadas (mitigada por índices en `token`).
+  - *Positivas:* Desacoplamiento total: Better Auth resuelve autenticación/sesiones, mientras que nuestra aplicación resuelve la autorización de dominio. Inactividad de usuario deniega el acceso server-side inmediatamente.
 
 ---
 
@@ -70,14 +72,13 @@ Este documento registra las decisiones arquitectónicas fundamentales (Architect
 
 ---
 
-## ADR-007: Subsistema Transversal de Auditoría (AuditEvent) con Sanitización
+## ADR-007: Subsistema Transversal de Auditoría (AuditEvent) con Sanitización Normalizada
 - **Estado:** Aceptado
 - **Fecha:** 2026-08-27 (Semana 1)
-- **Contexto:** Cumplimiento con auditorías de calidad alimentaria y trazabilidad corporativa exigen registrar quién modificó una fórmula, cuándo y con qué parámetros.
-- **Decisión:** Implementar un servicio centralizado (`recordAuditEvent`) que persiste eventos inmutables en la tabla `AuditEvent`, aplicando una capa de sanitización que bloquea el almacenamiento de secretos, contraseñas o tokens en los campos de metadatos.
+- **Contexto:** Cumplimiento con auditorías de calidad alimentaria y trazabilidad corporativa exigen registrar quién modificó una fórmula, cuándo y con qué parámetros, garantizando que jamás se filtren secretos o credenciales.
+- **Decisión:** Implementar un servicio centralizado (`recordAuditEvent`) que persiste eventos inmutables en la tabla `AuditEvent`, aplicando una capa de sanitización que normaliza claves (eliminando guiones, guiones bajos y mayúsculas) y ofusca claves sensibles (`password`, `token`, `secret`, `api_key`, `private_key`, `credential`, `auth_header`, `bearer`, `cookie`, `session`, `signature`, `passphrase`) en objetos planos, anidados y arrays.
 - **Consecuencias:**
-  - *Positivas:* Trazabilidad total sin riesgo de fuga de credenciales en logs de auditoría.
-  - *Mitigación:* Invocar el servicio de forma transversal en las acciones críticas de cada módulo a medida que se implementen.
+  - *Positivas:* Trazabilidad total sin riesgo de fuga de credenciales en logs de auditoría ante variaciones de nombres de clave.
 
 ---
 
@@ -85,7 +86,16 @@ Este documento registra las decisiones arquitectónicas fundamentales (Architect
 - **Estado:** Aceptado
 - **Fecha:** 2026-08-27 (Semana 1)
 - **Contexto:** Muchas entidades nutricionales y regulatorias están sujetas a validación con el cliente en el Kick-Off de la Semana 1. Crear tablas físicas especulativas generaría deuda técnica y migraciones destructivas.
-- **Decisión:** En SPEC-001 (Platform Foundation) únicamente se migran las tablas esenciales (`User`, `Session`, `Role`, `AuditEvent`). El resto de entidades se mantienen en el modelo conceptual (`docs/DOMAIN.md`) y se implementarán en sus respectivas SPECs según el cronograma.
+- **Decisión:** En SPEC-001 (Platform Foundation) únicamente se migran las tablas esenciales (`User`, `Session`, `Account`, `Verification`, `Role`, `AuditEvent`). El resto de entidades se mantienen en el modelo conceptual (`docs/DOMAIN.md`) y se implementarán en sus respectivas SPECs según el cronograma.
 - **Consecuencias:**
   - *Positivas:* Cero deuda técnica por suposiciones erróneas, base de datos limpia y verificable.
-  - *Trade-off:* Los módulos futuros presentan interfaces de placeholder durante la Semana 1.
+
+---
+
+## ADR-009: Adopción de Better Auth como Proveedor Canónico de Autenticación
+- **Estado:** Aceptado
+- **Fecha:** 2026-08-27 (Semana 1)
+- **Contexto:** Se requería una solución estándar y robusta para Next.js que gestionase el ciclo de vida de autenticación por email y contraseña, hashing seguro (scrypt/bcrypt), almacenamiento de sesiones en PostgreSQL con adapter Prisma y transporte mediante cookies HTTP-Only seguras, evitando mantener código criptográfico propio.
+- **Decisión:** Integrar `better-auth` (v1.7+) como el motor canónico de autenticación.
+- **Consecuencias:**
+  - *Positivas:* Cero mantenimiento de criptografía y sesiones caseras, tablas estandarizadas (`Account`, `Verification`, `Session`, `User`), soporte para extensiones futuras (SSO, 2FA) si se aprueba en el Kick-Off.

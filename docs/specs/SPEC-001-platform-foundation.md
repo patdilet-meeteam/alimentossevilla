@@ -5,7 +5,7 @@
 | **Código** | SPEC-001 |
 | **Título** | Platform Foundation |
 | **Fase / Semana** | Semana 1 — Levantamiento y Diseño |
-| **Estado** | IMPLEMENTADA |
+| **Estado** | IMPLEMENTADA Y VALIDADA |
 | **Responsable** | Principal Software Engineer |
 | **Dependencias** | Ninguna (Inicio de proyecto desde cero) |
 
@@ -23,31 +23,36 @@ Esta especificación proporciona una aplicación web funcional, desplegable y ve
 
 1. **Inicialización y Configuración:**
    - Repositorio Git inicializado.
-   - Next.js 16+ con App Router y TypeScript en modo estricto (`strict: true`).
+   - Next.js 16+ con App Router, Turbopack y TypeScript en modo estricto (`strict: true`).
    - Tailwind CSS configurado con componentes de interfaz B2B limpios y accesibles.
-   - Configuración de ESLint, Prettier y Vitest para pruebas automatizadas.
-   - Contenedor `docker-compose.yml` para PostgreSQL local.
+   - Configuración de ESLint flat config y Vitest para pruebas unitarias e integración real.
+   - Contenedor `docker-compose.yml` para PostgreSQL local con puerto parametrizable (`${POSTGRES_PORT:-5432}:5432`).
    - Archivo `.env.example` exhaustivamente documentado.
 
-2. **Capa de Persistencia y Base de Datos:**
+2. **Capa de Persistencia y Migraciones:**
    - Prisma ORM configurado con PostgreSQL.
-   - Modelos físicos mínimos para Foundation:
-     - `User`: Gestión de cuentas de usuario, email, nombre, hash de contraseña y estado.
-     - `Role`: Enum y soporte para los 4 perfiles base (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`).
+   - Migraciones SQL físicas versionadas en `prisma/migrations/`.
+   - Modelos físicos mínimos para Foundation y Better Auth:
+     - `User`: Gestión de cuentas, email, nombre, rol base y estado activo.
+     - `Account`: Vinculación de credenciales y contraseñas hasheadas gestionadas por Better Auth.
      - `Session`: Sesiones de usuario seguras en base de datos.
+     - `Verification`: Tokens de verificación requeridos por Better Auth.
      - `AuditEvent`: Bitácora inmutable de eventos de auditoría y trazabilidad.
-   - Script de siembra (`prisma/seed.ts`) idempotente para inicializar el usuario Administrador inicial en entornos de desarrollo.
+     - `Role`: Enum para los 4 perfiles base (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`).
+   - Script de siembra (`prisma/seed.ts`) con comportamiento **fail-closed** en producción.
 
-3. **Autenticación y Autorización:**
-   - Password hashing seguro con `bcryptjs` (salt rounds >= 10).
-   - Generación de sesiones con tokens opacos y transporte mediante cookies HTTP-Only seguras.
-   - Middleware de protección de rutas privadas en `/(app)/*`.
-   - Utilidades de autorización server-side (`requireRole`, `hasRole`, `getCurrentUser`).
-   - Flujo completo de Login y Logout mediante Server Actions.
+3. **Autenticación y Autorización en Capas:**
+   - Autenticación canónica mediante **Better Auth (v1.7+)**.
+   - Generación de sesiones con tokens criptográficos y transporte mediante cookies HTTP-Only seguras (`better-auth.session_token`).
+   - Proxy de protección de rutas privadas en `/(app)/*` (`src/proxy.ts`).
+   - Capa de autorización de dominio (`getCurrentUser`, `requireRole`, `hasRole`):
+     - **Control de inactividad:** Usuario inactivo (`isActive === false`) es rechazado inmediatamente del lado del servidor.
+     - **Control de roles:** Operaciones administrativas de usuarios restringidas exclusivamente al rol `ADMIN`.
+   - Flujo completo de Login y Logout.
 
 4. **Subsistema de Auditoría Transversal:**
-   - Servicio `recordAuditEvent` para registrar acciones relevantes de negocio y seguridad.
-   - Sanitización automática de metadatos para bloquear el registro de contraseñas o tokens.
+   - Servicio `recordAuditEvent` con normalización estricta de nombres de claves (`key.toLowerCase().replace(/[-_\s]/g, '')`).
+   - Sanitización automática y recursiva sobre objetos planos, anidados y arrays, ofuscando claves sensibles (`password`, `token`, `secret`, `api_key`, `private_key`, `credentials`, `auth_header`, `bearer`, etc.) con `[REDACTED]`.
 
 5. **Shell de Interfaz de Usuario y Navegación:**
    - Layout autenticado con sidebar moderno, responsive y colapsable.
@@ -68,8 +73,8 @@ Esta especificación proporciona una aplicación web funcional, desplegable y ve
    - Manejo consistente de estados de carga (`loading.tsx`), errores (`error.tsx`) y páginas no encontradas (`not-found.tsx`).
 
 6. **Suite de Pruebas Automatizadas:**
-   - Tests unitarios de hashing, roles, validación Zod y sanitización de auditoría.
-   - Tests de integración de protección de rutas y gestión de sesiones.
+   - Tests unitarios: Roles, validaciones Zod y sanitizador de auditoría con normalización de casing y estructuras anidadas.
+   - Tests de integración real: Persistencia en PostgreSQL, sesiones, rechazo de usuario inactivo, barreras de autorización por rol y verificación de sanitización en base de datos.
 
 ---
 
@@ -90,27 +95,14 @@ Esta especificación proporciona una aplicación web funcional, desplegable y ve
 
 ## 4. Criterios de Aceptación (Acceptance Criteria)
 
-- **AC-01 (Compilación y Tipado):** La aplicación compila sin errores con `pnpm build` y `pnpm typecheck` ejecuta con cero errores de TypeScript en modo estricto.
-- **AC-02 (Calidad de Código):** `pnpm lint` ejecuta con cero advertencias o errores bloqueantes.
-- **AC-03 (Protección de Rutas):** Intentar acceder a cualquier ruta bajo `/dashboard`, `/ingredientes`, `/productos`, etc., sin una sesión activa redirige inmediatamente a `/login`.
-- **AC-04 (Autenticación):** Un usuario registrado puede iniciar sesión ingresando credenciales válidas en `/login`, recibiendo una cookie HTTP-Only que le permite navegar por la aplicación.
-- **AC-05 (Cierre de Sesión):** Al hacer clic en "Cerrar Sesión", la sesión en base de datos se invalida y la cookie se destruye, redirigiendo a `/login`.
-- **AC-06 (Roles Base):** Los 4 roles (`Administrador`, `Investigación y Desarrollo`, `Calidad`, `Consulta`) están soportados y se muestran claramente en la interfaz.
-- **AC-07 (Dashboard Sobrio):** El Dashboard muestra el nombre de la plataforma, el estado del sistema, el rol del usuario conectado y las tarjetas de acceso rápido a los módulos sin gráficas falsas ni KPIs inventados.
-- **AC-08 (Placeholders de Módulos):** Todas las rutas de módulos no implementados renderizan un placeholder profesional informativo.
-- **AC-09 (Auditoría Segura):** El servicio de auditoría almacena eventos en la tabla `AuditEvent` y purga cualquier campo de contraseña o token en los metadatos.
-- **AC-10 (Seed de Desarrollo):** Ejecutar `pnpm db:seed` crea o asegura la existencia de un usuario administrador inicial con credenciales documentadas en `README.md`.
-- **AC-11 (Pruebas Unitarias e Integración):** Todos los tests en `vitest` ejecutan y pasan exitosamente (`pnpm test`).
-
----
-
-## 5. Matriz de Verificación
-
-| Criterio | Método de Verificación | Resultado Esperado |
-|---|---|---|
-| Compilación TypeScript | `pnpm typecheck` | 0 errores |
-| Linting | `pnpm lint` | 0 errores |
-| Pruebas automatizadas | `pnpm test` | Todos los tests en verde |
-| Build de producción | `pnpm build` | Compilación exitosa de todas las rutas |
-| Seguridad de cookies | Inspección de headers HTTP | `HttpOnly; SameSite=Lax; Path=/` |
-| Sanitización de auditoría | Test unitario dedicado | Claves `password`/`token` reemplazadas por `[REDACTED]` |
+- **AC-01 (Compilación y Tipado):** La aplicación compila sin errores con `pnpm build` (Next.js 16 con Turbopack) y `pnpm typecheck` ejecuta con cero errores de TypeScript en modo estricto.
+- **AC-02 (Calidad de Código):** `pnpm lint` ejecuta con cero advertencias o errores con ESLint flat config.
+- **AC-03 (Protección de Rutas):** Intentar acceder a cualquier ruta bajo `/(app)/*` sin una sesión activa de Better Auth redirige inmediatamente a `/login`.
+- **AC-04 (Autenticación Canónica):** Inicio de sesión gestionado por Better Auth emitiendo cookies HTTP-Only y validando credenciales contra la base de datos PostgreSQL.
+- **AC-05 (Cierre de Sesión):** Al invocar `logoutAction`, la sesión se invalida y se destruye la cookie.
+- **AC-06 (Roles Base):** Los 4 roles (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`) están tipados y soportados.
+- **AC-07 (Control de Inactividad):** Un usuario con `isActive: false` es rechazado del lado del servidor.
+- **AC-08 (Placeholders Informativos):** Todas las rutas de módulos no implementados renderizan un placeholder profesional sin datos ficticios.
+- **AC-09 (Auditoría Sanitizada):** El servicio de auditoría almacena eventos en la tabla `AuditEvent` y purga cualquier clave sensible normalizada.
+- **AC-10 (Migraciones y Seed):** La base de datos puede crearse desde cero con `pnpm db:deploy` y el seed de desarrollo cuenta con protección fail-closed en producción.
+- **AC-11 (Pruebas Automatizadas):** Todos los tests unitarios e integrados pasan exitosamente (`pnpm test`).

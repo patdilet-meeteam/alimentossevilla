@@ -1,30 +1,82 @@
 "use client";
 
-import { useActionState, useState } from "react";
-import { loginAction } from "@/app/actions/auth-actions";
+import { useState } from "react";
+import { authClient } from "@/lib/auth/auth-client";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Lock, Mail, AlertCircle, Shield, Check } from "lucide-react";
 import { RoleLabels } from "@/lib/auth/roles";
 import { Role } from "@prisma/client";
 
 export default function LoginPage() {
-  const [state, formAction, isPending] = useActionState(loginAction, null);
+  const router = useRouter();
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, setIsPending] = useState(false);
 
   const demoAccounts = [
-    { role: Role.ADMIN, email: "admin@alimentossevilla.com", pass: "AdminSevilla2026!#" },
-    { role: Role.R_AND_D, email: "id@alimentossevilla.com", pass: "IDSevilla2026!#" },
-    { role: Role.QUALITY, email: "calidad@alimentossevilla.com", pass: "CalidadSevilla2026!#" },
-    { role: Role.VIEWER, email: "consulta@alimentossevilla.com", pass: "ConsultaSevilla2026!#" },
+    {
+      role: Role.ADMIN,
+      email: "admin@alimentossevilla.com",
+      pass: "AdminSevilla2026!#",
+    },
+    {
+      role: Role.R_AND_D,
+      email: "id@alimentossevilla.com",
+      pass: "IDSevilla2026!#",
+    },
+    {
+      role: Role.QUALITY,
+      email: "calidad@alimentossevilla.com",
+      pass: "CalidadSevilla2026!#",
+    },
+    {
+      role: Role.VIEWER,
+      email: "consulta@alimentossevilla.com",
+      pass: "ConsultaSevilla2026!#",
+    },
   ];
 
   const fillDemo = (email: string, pass: string) => {
     setEmailValue(email);
     setPasswordValue(pass);
+    setError(null);
+  };
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsPending(true);
+    setError(null);
+
+    try {
+      const res = await authClient.signIn.email({
+        email: emailValue.trim().toLowerCase(),
+        password: passwordValue,
+      });
+
+      if (res.error) {
+        setError(res.error.message || "Credenciales de acceso incorrectas");
+        setIsPending(false);
+      } else {
+        router.push("/dashboard");
+        router.refresh();
+      }
+    } catch {
+      setError(
+        "Error inesperado al comunicarse con el servicio de autenticación"
+      );
+      setIsPending(false);
+    }
   };
 
   return (
@@ -53,20 +105,18 @@ export default function LoginPage() {
               Iniciar Sesión
             </CardTitle>
             <CardDescription className="text-xs text-slate-400">
-              Ingrese sus credenciales autorizadas para acceder a la plataforma
+              Ingrese sus credenciales autorizadas (Better Auth Provider)
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {state?.error && (
+            {error && (
               <Alert variant="destructive" className="py-2.5">
                 <AlertCircle className="h-4 w-4" />
-                <AlertDescription className="text-xs">
-                  {state.error}
-                </AlertDescription>
+                <AlertDescription className="text-xs">{error}</AlertDescription>
               </Alert>
             )}
 
-            <form action={formAction} className="space-y-4">
+            <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-1.5">
                 <label
                   htmlFor="email"
@@ -112,7 +162,9 @@ export default function LoginPage() {
                 disabled={isPending}
                 className="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium"
               >
-                {isPending ? "Validando credenciales..." : "Ingresar a la Plataforma"}
+                {isPending
+                  ? "Validando credenciales..."
+                  : "Ingresar a la Plataforma"}
               </Button>
             </form>
           </CardContent>
@@ -123,7 +175,7 @@ export default function LoginPage() {
           <div className="flex items-center justify-between text-[11px] font-medium text-slate-400">
             <span className="flex items-center gap-1.5 text-blue-400">
               <Shield className="w-3.5 h-3.5" />
-              Entorno de Desarrollo (Semilla de Usuarios)
+              Entorno de Desarrollo (Cuentas de Prueba)
             </span>
             <span>Semana 1</span>
           </div>
@@ -138,8 +190,12 @@ export default function LoginPage() {
                 onClick={() => fillDemo(acc.email, acc.pass)}
                 className="flex items-center justify-between px-2.5 py-1.5 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-[11px] text-slate-300 transition-colors text-left"
               >
-                <span className="font-medium truncate">{RoleLabels[acc.role]}</span>
-                {emailValue === acc.email && <Check className="w-3 h-3 text-blue-400 shrink-0" />}
+                <span className="font-medium truncate">
+                  {RoleLabels[acc.role]}
+                </span>
+                {emailValue === acc.email && (
+                  <Check className="w-3 h-3 text-blue-400 shrink-0" />
+                )}
               </button>
             ))}
           </div>
