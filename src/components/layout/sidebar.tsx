@@ -19,7 +19,6 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Role, RoleLabels, RoleBadgeStyles } from "@/lib/auth/roles";
-import { logoutAction } from "@/app/actions/auth-actions";
 import { useState } from "react";
 
 interface SidebarProps {
@@ -208,15 +207,24 @@ export function Sidebar({ user }: SidebarProps) {
             </span>
           </div>
 
-          <form action={logoutAction}>
-            <button
-              type="submit"
-              className="w-full flex items-center justify-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md text-slate-300 bg-slate-800/80 hover:bg-red-950/40 hover:text-red-300 hover:border-red-800/50 border border-slate-700/60 transition-colors"
-            >
-              <LogOut className="w-3.5 h-3.5" />
-              <span>Cerrar Sesión</span>
-            </button>
-          </form>
+          <button
+            type="button"
+            onClick={async () => {
+              try {
+                const { authClient } = await import("@/lib/auth/auth-client");
+                await authClient.signOut();
+              } catch (e) {
+                console.error("Logout error:", e);
+              }
+              document.cookie = "better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+              document.cookie = "__Secure-better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+              window.location.href = "/login";
+            }}
+            className="w-full flex items-center justify-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md text-slate-300 bg-slate-800/80 hover:bg-red-950/40 hover:text-red-300 hover:border-red-800/50 border border-slate-700/60 transition-colors cursor-pointer"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span>Cerrar Sesión</span>
+          </button>
         </div>
       </aside>
     </>

@@ -79,3 +79,13 @@ El repositorio actúa como la memoria compartida entre sesiones de agentes human
 3. **No filtración de secretos**: Nunca registrar contraseñas, tokens de sesión o datos sensibles en logs o eventos de auditoría.
 4. **TypeScript Estricto**: No utilizar `any` no justificado. Tipar exhaustivamente todas las capas.
 5. **Separación de Capas**: Mantener la lógica de negocio en servicios/dominio, no incrustada directamente en componentes de renderizado de React.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -29,11 +29,6 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  // Si visita login teniendo ya una sesión activa, redirigir al dashboard
-  if (pathname === "/login" && sessionCookie) {
-    return NextResponse.redirect(new URL("/dashboard", request.url));
-  }
-
   // Comprobar si la ruta actual es una ruta protegida
   const isProtected = PROTECTED_PREFIXES.some((prefix) =>
     pathname.startsWith(prefix)

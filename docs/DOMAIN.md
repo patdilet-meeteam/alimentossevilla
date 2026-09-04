@@ -16,21 +16,16 @@ Para mantener la máxima disciplina metodológica y evitar introducir esquemas f
 |---|---|---|---|
 | **User** | `CONFIRMED CONCEPT` | **SÍ** | Cuenta de usuario del sistema con credenciales y estado activo. |
 | **Role** | `CONFIRMED CONCEPT` | **SÍ** | Perfil de usuario (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`). |
-| **Session** | `CONFIRMED CONCEPT` | **SÍ** | Sesión de usuario autenticada con token criptográfico y expiración. |
+| **Session** | `CONFIRMED CONCEPT` | **SÍ** | Sesión de usuario autenticada (Better Auth) con token y expiración. |
 | **AuditEvent** | `CONFIRMED CONCEPT` | **SÍ** | Registro de auditoría transversal para trazabilidad inmutable. |
-| **Ingredient** | `PROVISIONAL CONCEPT` | NO | Materia prima con código SIESA y datos de proveedor. |
-| **NutritionalProfile** | `PROVISIONAL CONCEPT` | NO | Agrupación de valores nutricionales por porción/base 100g de un ingrediente. |
-| **Nutrient** | `PROVISIONAL CONCEPT` | NO | Catálogo maestro de nutrientes (Sodio, Grasas Totales, Azúcares, etc.). |
-| **NutrientValue** | `PROVISIONAL CONCEPT` | NO | Magnitud numérica y unidad de un nutriente en un perfil específico. |
-| **Product** | `PROVISIONAL CONCEPT` | NO | Producto terminado elaborado por la compañía. |
-| **Formulation** | `PROVISIONAL CONCEPT` | NO | Cabecera de la receta asociada a un producto o base técnica. |
-| **FormulationVersion** | `PROVISIONAL CONCEPT` | NO | Versión inmutable de una formulación con vigencia y estado. |
-| **FormulationIngredient**| `PROVISIONAL CONCEPT` | NO | Inclusión de materia prima (porcentaje/peso) en una versión de fórmula. |
-| **Presentation** | `PROVISIONAL CONCEPT` | NO | Presentación comercial del producto (gramaje, empaque, porciones). |
-| **RegulatoryParameter** | `PROVISIONAL CONCEPT` | NO | Parámetros de umbral para sellos frontales y valores diarios de referencia. |
-| **CostImport** | `PROVISIONAL CONCEPT` | NO | Cabecera de la carga mensual de costos de materias primas. |
-| **CostImportItem** | `PROVISIONAL CONCEPT` | NO | Detalle de costo unitario por código SIESA en un periodo fiscal. |
-| **TechnicalDocument** | `PROVISIONAL CONCEPT` | NO | Ficha técnica o texto legal generado y versionado para un producto. |
+| **Ingredient** | `CONFIRMED CONCEPT (Semana 2)` | Siguiente SPEC | Materia prima con código SIESA (11, 12, 13) y perfil nutricional. |
+| **NutritionalProfile** | `CONFIRMED CONCEPT (Semana 2)` | Siguiente SPEC | Valores nutricionales por 100g de materia prima. |
+| **Product** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Producto terminado elaborado por la compañía. |
+| **Formulation** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Receta base (1 por producto). |
+| **FormulationVersion** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Versión inmutable (v1, v2) con estados (Borrador/Aprobada) y % de merma. |
+| **Presentation** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Gramaje neto y materiales de empaque asociados (13...). |
+| **CostImport** | `CONFIRMED CONCEPT (Semana 5)` | Siguiente SPEC | Archivo mensual de costos cargado por Finanzas. |
+| **TechnicalDocument** | `CONFIRMED CONCEPT (Semana 6)` | Siguiente SPEC | Ficha técnica y texto legal almacenados como snapshots inmutables. |
 
 ---
 
