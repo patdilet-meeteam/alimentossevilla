@@ -1,7 +1,26 @@
-import { PrismaClient, Role } from "@prisma/client";
+import { PrismaClient, Role, NutrientUnit } from "@prisma/client";
 import { auth } from "../src/lib/auth/auth";
 
 const prisma = new PrismaClient();
+
+// Catálogo de nutrientes obligatorios según normativa y DATA-SOURCES.md
+const NUTRIENTS_SEED = [
+  { key: "ENERGY_KCAL", unit: "KCAL" as NutrientUnit, displayName: "Energía", isRequiredOnLabel: true },
+  { key: "ENERGY_KJ", unit: "KJ" as NutrientUnit, displayName: "Energía (kJ)", isRequiredOnLabel: false },
+  { key: "FAT_TOTAL", unit: "G" as NutrientUnit, displayName: "Grasas Totales", isRequiredOnLabel: true },
+  { key: "FAT_SAT", unit: "G" as NutrientUnit, displayName: "Grasas Saturadas", isRequiredOnLabel: true },
+  { key: "FAT_TRANS", unit: "G" as NutrientUnit, displayName: "Grasas Trans", isRequiredOnLabel: true },
+  { key: "CARBS_TOTAL", unit: "G" as NutrientUnit, displayName: "Carbohidratos Totales", isRequiredOnLabel: true },
+  { key: "SUGAR_TOTAL", unit: "G" as NutrientUnit, displayName: "Azúcares Totales", isRequiredOnLabel: true },
+  { key: "SUGAR_ADDED", unit: "G" as NutrientUnit, displayName: "Azúcares Añadidos", isRequiredOnLabel: true },
+  { key: "FIBER", unit: "G" as NutrientUnit, displayName: "Fibra Dietaria", isRequiredOnLabel: true },
+  { key: "PROTEIN", unit: "G" as NutrientUnit, displayName: "Proteína", isRequiredOnLabel: true },
+  { key: "SODIUM", unit: "MG" as NutrientUnit, displayName: "Sodio", isRequiredOnLabel: true },
+  { key: "VITAMIN_A", unit: "MCG" as NutrientUnit, displayName: "Vitamina A", isRequiredOnLabel: false },
+  { key: "VITAMIN_C", unit: "MG" as NutrientUnit, displayName: "Vitamina C", isRequiredOnLabel: false },
+  { key: "CALCIUM", unit: "MG" as NutrientUnit, displayName: "Calcio", isRequiredOnLabel: false },
+  { key: "IRON", unit: "MG" as NutrientUnit, displayName: "Hierro", isRequiredOnLabel: false },
+];
 
 async function main() {
   console.log("🌱 Iniciando inicialización de base de datos...");
@@ -119,17 +138,29 @@ async function main() {
     console.log(`✅ Cuenta de prueba lista: ${demo.email} (Rol: ${demo.role})`);
   }
 
-  // 3. Registrar evento de auditoría del seed
+  // 3. Sembrar catálogo de nutrientes
+  console.log("🌿 Sembrando catálogo de nutrientes...");
+  for (const nutrient of NUTRIENTS_SEED) {
+    await prisma.nutrient.upsert({
+      where: { key: nutrient.key },
+      update: {},
+      create: nutrient,
+    });
+  }
+  console.log(`✅ Catálogo de nutrientes sembrado: ${NUTRIENTS_SEED.length} nutrientes`);
+
+  // 4. Registrar evento de auditoría del seed
   await prisma.auditEvent.create({
     data: {
       actorId: adminUser?.id || null,
       actorEmail: adminEmail,
       action: "DATABASE_SEEDED",
       entity: "System",
-      entityId: "platform-foundation-v1",
+      entityId: "platform-foundation-v2-spec-002",
       metadata: {
         environment: process.env.NODE_ENV || "development",
         seededAccounts: demoAccounts.length + 1,
+        seededNutrients: NUTRIENTS_SEED.length,
         authProvider: "Better Auth",
       },
     },

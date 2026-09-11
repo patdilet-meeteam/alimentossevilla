@@ -18,8 +18,8 @@ Para mantener la máxima disciplina metodológica y evitar introducir esquemas f
 | **Role** | `CONFIRMED CONCEPT` | **SÍ** | Perfil de usuario (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`). |
 | **Session** | `CONFIRMED CONCEPT` | **SÍ** | Sesión de usuario autenticada (Better Auth) con token y expiración. |
 | **AuditEvent** | `CONFIRMED CONCEPT` | **SÍ** | Registro de auditoría transversal para trazabilidad inmutable. |
-| **Ingredient** | `CONFIRMED CONCEPT (Semana 2)` | Siguiente SPEC | Materia prima con código SIESA (11, 12, 13) y perfil nutricional. |
-| **NutritionalProfile** | `CONFIRMED CONCEPT (Semana 2)` | Siguiente SPEC | Valores nutricionales por 100g de materia prima. |
+| **Ingredient** | **IMPLEMENTADO en SPEC-002** (10 sep 2026) | **SÍ** | Materia prima con código SIESA (11, 12, 13) y perfil nutricional. |
+| **NutritionalProfile** | **IMPLEMENTADO en SPEC-002** (10 sep 2026) | **SÍ** | Valores nutricionales por 100g de materia prima. |
 | **Product** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Producto terminado elaborado por la compañía. |
 | **Formulation** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Receta base (1 por producto). |
 | **FormulationVersion** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Versión inmutable (v1, v2) con estados (Borrador/Aprobada) y % de merma. |
