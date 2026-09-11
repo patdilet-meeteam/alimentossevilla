@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
   Wheat,
@@ -94,6 +94,7 @@ const navItems: NavItem[] = [
 
 export function Sidebar({ user }: SidebarProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const badgeStyle = RoleBadgeStyles[user.role] || RoleBadgeStyles[Role.VIEWER];
 
@@ -218,7 +219,7 @@ export function Sidebar({ user }: SidebarProps) {
               }
               document.cookie = "better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
               document.cookie = "__Secure-better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-              window.location.href = "/login";
+              router.push("/login");
             }}
             className="w-full flex items-center justify-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md text-slate-300 bg-slate-800/80 hover:bg-red-950/40 hover:text-red-300 hover:border-red-800/50 border border-slate-700/60 transition-colors cursor-pointer"
           >
