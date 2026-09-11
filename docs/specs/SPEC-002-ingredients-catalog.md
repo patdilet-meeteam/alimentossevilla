@@ -5,7 +5,7 @@
 | **Código** | SPEC-002 |
 | **Título** | Catálogo de Ingredientes y Perfiles Nutricionales |
 | **Fase / Semana** | Semana 2 — Levantamiento & Catálogo |
-| **Estado** | EN IMPLEMENTACIÓN |
+| **Estado** | ✅ COMPLETADO |
 | **Responsable** | Principal Software Engineer |
 | **Dependencias** | SPEC-001 (Platform Foundation) |
 
@@ -229,11 +229,11 @@ model NutrientValue {
 | Entregable | Estado | Evidencia |
 |---|---|---|
 | SPEC-002 redactada | ✅ | docs/specs/SPEC-002-ingredients-catalog.md |
-| Migraciones aplicadas | ⬜ | pnpm db:deploy |
-| Schema Prisma actualizado | ⬜ | prisma/schema.prisma |
-| Server Actions implementadas | ⬜ | src/app/actions/ |
-| UI /ingredientes funcional | ⬜ | src/app/(app)/ingredientes/ |
-| Tests nuevos pasando | ⬜ | pnpm test |
-| Quality gates verdes | ⬜ | build, typecheck, lint |
-| DOMAIN.md actualizado | ⬜ | docs/DOMAIN.md |
-| Commit en spec-002-ingredients | ⬜ | git log |
+| Migraciones aplicadas | ✅ | prisma/migrations/20260911022228_spec_002_ingredients/ |
+| Schema Prisma actualizado | ✅ | prisma/schema.prisma (4 modelos nuevos) |
+| Server Actions implementadas | ✅ | src/app/actions/ingredient-actions.ts |
+| UI /ingredientes funcional | ✅ | src/app/(app)/ingredientes/ (3 rutas) |
+| Tests nuevos pasando | ✅ | 39/39 (15 nuevos en ingredients-validation) |
+| Quality gates verdes | ✅ | build, typecheck, test — sin errores |
+| DOMAIN.md actualizado | ✅ | docs/DOMAIN.md |
+| Commit en spec-002-ingredients | ✅ | `f794d25 feat(spec-002): implement ingredients catalog and nutritional profiles` |
