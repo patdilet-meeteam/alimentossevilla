@@ -11,7 +11,7 @@ Este documento registra el estado comprobable del proyecto. Cada actualización 
 | SPEC-003 | Productos, presentaciones, formulaciones y versionamiento | Cierre técnico validado | 6,0 h | `db:generate`, `db:deploy`, typecheck, lint, 62/62 tests y build Webpack correctos | OQ-021 para la autorización de rechazo funcional |
 | SPEC-004 | Cálculo nutricional y sellos | Preparación técnica validada | 8,5 h | CTN v11 inspeccionado; patrón de ponderación identificado; control de preparación de perfiles; 79/79 tests y build Webpack correctos | Requiere CTN oficial, contrato de cálculo, mapeo de ingredientes y normativa confirmada |
 | SPEC-005 | Costos e importador mensual SIESA | Cierre técnico validado | 5,5 h | `db:deploy`, typecheck, lint, 76/76 tests y build Webpack correctos | OQ-025 bloquea aplicar archivos con códigos duplicados; requiere revisión de Finanzas |
-| SPEC-006 | Fichas técnicas, textos legales y cierre | No iniciada | 7,5 h | — | Requiere plantilla final y muestras aprobadas de salida |
+| SPEC-006 | Fichas técnicas, textos legales y cierre | Preparación técnica parcial validada | 7,5 h | Previsualización de ingredientes y alérgenos desde formulación aprobada; 80/80 tests y build Webpack correctos | Requiere plantilla final, flujo de emisión y muestras aprobadas de salida |
 
 **Estimación base:** 40,0 h. **Alcance técnico completado:** 24,0 h (SPEC-001 a SPEC-003 y SPEC-005). **Estimación base restante:** 16,0 h, sin incluir decisiones funcionales, correcciones de datos ni aceptación humana.
 
