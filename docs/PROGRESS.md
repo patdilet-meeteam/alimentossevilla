@@ -9,7 +9,7 @@ Este documento registra el estado comprobable del proyecto. Cada actualización 
 | SPEC-001 | Foundation: autenticación, roles, auditoría, Prisma y PostgreSQL | Cerrada | 7,0 h | Integrada previamente en `main` | Ninguno conocido para este alcance |
 | SPEC-002 | Ingredientes y perfiles nutricionales | Cerrada | 5,5 h | Integrada previamente en `main` | Ninguno conocido para este alcance |
 | SPEC-003 | Productos, presentaciones, formulaciones y versionamiento | Cierre técnico validado | 6,0 h | `db:generate`, `db:deploy`, typecheck, lint, 62/62 tests y build Webpack correctos | OQ-021 para la autorización de rechazo funcional |
-| SPEC-004 | Cálculo nutricional y sellos | Preparación documentada | 8,5 h | CTN v11 inspeccionado; patrón de ponderación identificado; SPEC y OQ-022 a OQ-024 preparados | Requiere CTN oficial, contrato de cálculo, mapeo de ingredientes y normativa confirmada |
+| SPEC-004 | Cálculo nutricional y sellos | Preparación técnica validada | 8,5 h | CTN v11 inspeccionado; patrón de ponderación identificado; control de preparación de perfiles; 79/79 tests y build Webpack correctos | Requiere CTN oficial, contrato de cálculo, mapeo de ingredientes y normativa confirmada |
 | SPEC-005 | Costos e importador mensual SIESA | Cierre técnico validado | 5,5 h | `db:deploy`, typecheck, lint, 76/76 tests y build Webpack correctos | OQ-025 bloquea aplicar archivos con códigos duplicados; requiere revisión de Finanzas |
 | SPEC-006 | Fichas técnicas, textos legales y cierre | No iniciada | 7,5 h | — | Requiere plantilla final y muestras aprobadas de salida |
 
@@ -102,6 +102,8 @@ Las 3 pruebas de integración de SPEC-005 verifican persistencia, auditoría, ap
 - La importación real del archivo canónico y su aprobación requieren al usuario `ADMIN` que representa a Finanzas; no se cargó ni aplicó ningún archivo de cliente durante la validación técnica.
 
 La preparación de SPEC-004 quedó documentada en `docs/specs/SPEC-004-nutritional-calculation-and-warning-seals.md`, junto con OQ-022, OQ-023 y OQ-024.
+
+El módulo `/normativa` ahora ofrece un control de preparación para las formulaciones aprobadas: identifica ingredientes sin perfil activo, con más de un perfil activo o con un perfil activo sin valores. No selecciona una fuente de perfiles, no calcula nutrientes y no evalúa sellos; por tanto, no anticipa decisiones bloqueadas por OQ-022 a OQ-024.
 
 **Hallazgo de trazabilidad:** el archivo CTN v11 no se puede convertir todavía en fixture de paridad. Su hoja `CTN`, rotulada como “SALCHICHAS DESAYUNO PREMIUM”, referencia códigos en la hoja oculta `Chorizo con ternera (3)`. Hasta que el cliente determine la hoja, producto y códigos canónicos, no se asociarán esos datos a ingredientes de la plataforma.
 
