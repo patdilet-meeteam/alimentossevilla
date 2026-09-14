@@ -29,6 +29,16 @@ const CATEGORY_LABELS: Record<IngredientCategory, string> = {
   MATERIA_SECA: "Materia Seca (12)",
   EMPAQUE: "Empaques (13)",
   ADITIVO: "Aditivo",
+  MPC: "MPC",
+  MPNC: "MPNC",
+  PROTEINA: "Proteína",
+  AGUA: "Agua",
+  CONDIMENTO_ESPECIA: "Condimento / Especia",
+  CONSERVANTE: "Conservante",
+  REGULADOR_ACIDEZ: "Regulador de acidez",
+  SABORIZANTE: "Saborizante",
+  COLORANTE: "Colorante",
+  MPC_PROTEINA: "MPC / Proteína",
   OTRO: "Otro",
 };
 

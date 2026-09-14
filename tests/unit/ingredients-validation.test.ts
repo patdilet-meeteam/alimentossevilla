@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
   ingredientSchema,
-  ingredientUpdateSchema,
   ingredientFilterSchema,
   nutritionalProfileSchema,
   normalizeSiesaCode,
@@ -34,10 +33,11 @@ describe("Validaciones de Ingredientes", () => {
       expect(() => ingredientSchema.parse(valid)).not.toThrow();
     });
 
-    it("debe rechazar código SIESA inválido", () => {
+    it("debe rechazar código SIESA inválido (longitud o caracteres no permitidos)", () => {
+      // Tras la relajación de SPEC-003, "999999" pasa (6 chars alnum). Usamos un caso realmente inválido.
       const invalid = {
         name: "Test",
-        siesaCode: "999999",
+        siesaCode: "ABC!@", // contiene caracteres no permitidos y longitud incorrecta
         category: "OTRO" as const,
       };
       expect(() => ingredientSchema.parse(invalid)).toThrow();
@@ -113,11 +113,13 @@ describe("Validaciones de Ingredientes", () => {
       expect(getSiesaPrefix("110001")).toBe("11");
       expect(getSiesaPrefix("120001")).toBe("12");
       expect(getSiesaPrefix("130001")).toBe("13");
+      // SPEC-003: prefijo MP para códigos reales del cliente
+      expect(getSiesaPrefix("MPCC010")).toBe("MP");
     });
 
-    it("debe devolver null para código inválido", () => {
-      expect(getSiesaPrefix("990001")).toBeNull();
+    it("debe devolver null para código inválido (vacío o muy corto)", () => {
       expect(getSiesaPrefix("")).toBeNull();
+      expect(getSiesaPrefix("9")).toBeNull(); // <2 chars
     });
   });
 

@@ -1,7 +1,7 @@
 # Plataforma Centralizada de Gestión Técnica y Nutricional
 
 **Cliente:** Alimentos Sevilla S.A.S.  
-**Estado:** Semana 1 — Levantamiento y Diseño (**SPEC-001: Platform Foundation**)  
+**Estado:** Semana 2 completada — Catálogo de Ingredientes y Perfiles Nutricionales (**SPEC-001 y SPEC-002**)
 **Stack:** Next.js 16+ (App Router, Turbopack), React 19, TypeScript Strict, Better Auth 1.7+, PostgreSQL, Prisma, Tailwind CSS, Zod, Vitest, pnpm.
 
 ---
@@ -11,7 +11,7 @@
 La **Plataforma Centralizada de Gestión Técnica y Nutricional** es una solución web empresarial diseñada para consolidar, automatizar y estandarizar la gestión de materias primas, formulaciones, cálculos nutricionales normativos (sellos frontales de advertencia, tablas de rotulado), costeo mensual de recetas y emisión de documentos técnicos para Alimentos Sevilla S.A.S., reemplazando hojas de cálculo dispersas.
 
 > **GOBERNANZA TÉCNICA Y REGLAS FUNDAMENTALES:**
-> - El sistema opera en fase **SPEC-001 (Platform Foundation)**.
+> - La Foundation (SPEC-001) y el Catálogo de Ingredientes y Perfiles Nutricionales (SPEC-002) están implementados. El siguiente alcance pendiente es SPEC-003: Productos, Formulaciones y Versionamiento.
 > - **NO** se han inventado fórmulas de cálculo nutricional, límites de sellos ni reglas de negocio prematuras antes del Kick-Off funcional.
 > - **NO** existe integración directa vía API con el ERP SIESA. Toda asociación se realiza mediante el código de materia prima SIESA presente en los archivos de costos mensuales.
 > - **Autenticación:** Gestionada canónicamente por **Better Auth** con persistencia en PostgreSQL mediante Prisma.
@@ -32,6 +32,7 @@ La **Plataforma Centralizada de Gestión Técnica y Nutricional** es una soluci�
 | **Fuentes de Datos e Insumos** | [`docs/DATA-SOURCES.md`](docs/DATA-SOURCES.md) | Documentación de archivos Excel de referencia, textos legales y muestras de costos. |
 | **Políticas de Seguridad** | [`docs/SECURITY.md`](docs/SECURITY.md) | Estándares de Better Auth, sesiones, autorización server-side y sanitización normalizada. |
 | **Especificación Técnica SPEC-001** | [`docs/specs/SPEC-001-platform-foundation.md`](docs/specs/SPEC-001-platform-foundation.md) | Alcance detallado, criterios de aceptación y matriz de verificación de Foundation. |
+| **Especificación Técnica SPEC-002** | [`docs/specs/SPEC-002-ingredients-catalog.md`](docs/specs/SPEC-002-ingredients-catalog.md) | Catálogo de ingredientes y perfiles nutricionales implementado. |
 
 ---
 

@@ -18,12 +18,13 @@ Para mantener la máxima disciplina metodológica y evitar introducir esquemas f
 | **Role** | `CONFIRMED CONCEPT` | **SÍ** | Perfil de usuario (`ADMIN`, `R_AND_D`, `QUALITY`, `VIEWER`). |
 | **Session** | `CONFIRMED CONCEPT` | **SÍ** | Sesión de usuario autenticada (Better Auth) con token y expiración. |
 | **AuditEvent** | `CONFIRMED CONCEPT` | **SÍ** | Registro de auditoría transversal para trazabilidad inmutable. |
-| **Ingredient** | **IMPLEMENTADO en SPEC-002** (10 sep 2026) | **SÍ** | Materia prima con código SIESA (11, 12, 13) y perfil nutricional. |
+| **Ingredient** | **IMPLEMENTADO en SPEC-002** (10 sep 2026) | **SÍ** | Materia prima con código SIESA (validación relajada en SPEC-003) y perfil nutricional. |
 | **NutritionalProfile** | **IMPLEMENTADO en SPEC-002** (10 sep 2026) | **SÍ** | Valores nutricionales por 100g de materia prima. |
-| **Product** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Producto terminado elaborado por la compañía. |
-| **Formulation** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Receta base (1 por producto). |
-| **FormulationVersion** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Versión inmutable (v1, v2) con estados (Borrador/Aprobada) y % de merma. |
-| **Presentation** | `CONFIRMED CONCEPT (Semana 3)` | Siguiente SPEC | Gramaje neto y materiales de empaque asociados (13...). |
+| **Product** | **IMPLEMENTADO en SPEC-003** (11 sep 2026) | **SÍ** | Producto terminado elaborado por la compañía. |
+| **Presentation** | **IMPLEMENTADO en SPEC-003** (11 sep 2026) | **SÍ** | Presentaciones comerciales (gramaje neto, unidades por empaque, porción declarada, porciones por envase). |
+| **Formulation** | **IMPLEMENTADO en SPEC-003** (11 sep 2026) | **SÍ** | Receta base 1:1 con Product (OQ-002). |
+| **FormulationVersion** | **IMPLEMENTADO en SPEC-003** (11 sep 2026) | **SÍ** | Versión inmutable (v1, v2) con workflow DRAFT→IN_REVIEW→APPROVED→OBSOLETE. |
+| **FormulationIngredient** | **IMPLEMENTADO en SPEC-003** (11 sep 2026) | **SÍ** | Ingrediente de una versión con porcentaje de participación. |
 | **CostImport** | `CONFIRMED CONCEPT (Semana 5)` | Siguiente SPEC | Archivo mensual de costos cargado por Finanzas. |
 | **TechnicalDocument** | `CONFIRMED CONCEPT (Semana 6)` | Siguiente SPEC | Ficha técnica y texto legal almacenados como snapshots inmutables. |
 
@@ -41,10 +42,10 @@ Para mantener la máxima disciplina metodológica y evitar introducir esquemas f
 #### Role
 - **Propósito:** Perfil funcional que determina las capacidades de acceso.
 - **Valores Confirmados:**
-  - `ADMIN` (*Administrador*): Configuración, gestión de usuarios, auditoría y parámetros globales.
-  - `R_AND_D` (*Investigación y Desarrollo*): Creación, ajuste y simulación de fórmulas y nutrientes.
-  - `QUALITY` (*Calidad*): Validación de normas, aprobación de fichas y revisión técnica.
-  - `VIEWER` (*Consulta*): Consulta de fichas aprobadas, catálogos y reportes de lectura.
+  - `ADMIN` (*Administración / Director Técnico / Finanzas*): Configuración, gestión de usuarios, auditoría, aprobación de versiones y aprobación de costos. En esta empresa, **el rol ADMIN representa tres funciones reales**: Director Técnico (libera versiones de formulación, ver P-06 del cliente), Finanzas (aprueba costos, ver P-14) y Administrador del sistema (gestión de usuarios y parámetros globales).
+  - `R_AND_D` (*Investigación y Desarrollo*): Creación y edición de productos, presentaciones, ingredientes, perfiles nutricionales y versiones de formulación en estado DRAFT. **No aprueba.**
+  - `QUALITY` (*Calidad*): Revisión y aprobación de versiones de formulación (IN_REVIEW → APPROVED).
+  - `VIEWER` (*Consulta*): Solo lectura sobre catálogos, formulaciones aprobadas y reportes.
 - **Open Question asociada:** Matriz granular de permisos (ver `docs/OPEN-QUESTIONS.md#OQ-011`).
 
 #### Session
@@ -73,7 +74,7 @@ Para mantener la máxima disciplina metodológica y evitar introducir esquemas f
 
 #### Product, Formulation & Presentation
 ```
-[ Product ] 1 ──── * [ Formulation ] 1 ──── * [ FormulationVersion ] 1 ──── * [ FormulationIngredient ]
+[ Product ] 1 ──── 1 [ Formulation ] 1 ──── * [ FormulationVersion ] 1 ──── * [ FormulationIngredient ]
      │                                                                                │
      ├──── * [ Presentation ]                                                         ▼
      │            │                                                            [ Ingredient ]

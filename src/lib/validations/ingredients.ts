@@ -1,11 +1,24 @@
 import { z } from "zod";
 
-// Enum values based on Prisma schema
+// Enum values based on Prisma schema (extended in SPEC-003 to include real customer categories)
 const IngredientCategoryEnum = z.enum([
+  // Legacy demo values (preserved)
   "CARNE",
   "MATERIA_SECA",
   "EMPAQUE",
   "ADITIVO",
+  // Real customer categories (SPEC-003)
+  "MPC",
+  "MPNC",
+  "PROTEINA",
+  "AGUA",
+  "CONDIMENTO_ESPECIA",
+  "CONSERVANTE",
+  "REGULADOR_ACIDEZ",
+  "SABORIZANTE",
+  "COLORANTE",
+  "MPC_PROTEINA",
+  // Catch-all
   "OTRO",
 ]);
 
@@ -17,8 +30,13 @@ const NutrientSourceEnum = z.enum([
 
 const __NutrientUnitEnum = z.enum(["G", "MG", "MCG", "KCAL", "KJ"]);
 
-// SIESA code validation patterns
-const SIESA_CODE_PATTERN = /^(11|12|13)\d{5}$/;
+// SIESA code validation patterns (relaxed in SPEC-003 to accept real customer codes).
+// Two accepted shapes:
+//   - Operational/Formulation: ^MP[A-Z]{2}\d{3}$  (e.g. MPCC010, MPII311)
+//   - Accounting/Costs:        ^\d{7}$            (e.g. 1210005, 2903003)
+// Both old demo format (8-digit ^1[123]\d{6}$) and any other alnum 6-8 char are tolerated via SIESA_CODE_PATTERN_RELAXED.
+const SIESA_CODE_PATTERN_RELAXED = /^[A-Z0-9]{6,8}$/;
+const SIESA_CODE_PATTERN_LEGACY = /^(11|12|13)\d{5}$/;
 
 export const ingredientSchema = z.object({
   name: z
@@ -35,8 +53,8 @@ export const ingredientSchema = z.object({
     .min(1, "El código SIESA es requerido")
     .max(20, "El código SIESA no puede exceder 20 caracteres")
     .refine(
-      (val) => SIESA_CODE_PATTERN.test(val),
-      "El código SIESA debe comenzar con 11, 12 o 13 seguido de 5 dígitos"
+      (val) => SIESA_CODE_PATTERN_RELAXED.test(val) || SIESA_CODE_PATTERN_LEGACY.test(val),
+      "El código SIESA debe ser alfanumérico de 6-8 caracteres (p.ej. MPCC010 o 1210005)"
     ),
   category: IngredientCategoryEnum,
   isAllergen: z.boolean().default(false),
@@ -54,7 +72,7 @@ export const ingredientFilterSchema = z.object({
   isActive: z.boolean().optional(),
   siesaPrefix: z
     .string()
-    .regex(/^(11|12|13)?$/, "Prefijo SIESA debe ser 11, 12 o 13")
+    .regex(/^(11|12|13|MP)?$/, "Prefijo SIESA debe ser 11, 12, 13 o MP")
     .optional(),
 });
 
@@ -110,23 +128,52 @@ export function normalizeSiesaCode(code: string): string {
 }
 
 // Helper to validate SIESA prefix
+// SPEC-003: returns the first 2 chars (letters or digits) without assuming 11/12/13.
+// Returns null for empty or too-short codes.
 export function getSiesaPrefix(code: string): string | null {
   const normalized = normalizeSiesaCode(code);
-  const match = normalized.match(/^(11|12|13)/);
+  if (normalized.length < 2) return null;
+  // Legacy demo codes start with 11/12/13; real customer codes start with MP or 2 digits.
+  const match = normalized.match(/^([0-9]{2}|MP)/);
   return match ? match[1] : null;
 }
 
-// Helper to categorize by SIESA prefix
+// Helper to categorize by SIESA prefix.
+// SPEC-003: maps real customer prefixes (MPCC/MPII/MPCP/MPPA/MPPS/MPPD/MPPO/MPPC/MPLP/MPLS/MPI/MPPK, 11-15)
+// to the customer's own 10-category taxonomy. Legacy 11/12/13 still maps to demo categories.
 export function categorizeBySiesaCode(code: string): IngredientCategory {
-  const prefix = getSiesaPrefix(code);
-  switch (prefix) {
-    case "11":
-      return "CARNE";
-    case "12":
-      return "MATERIA_SECA";
-    case "13":
-      return "EMPAQUE";
-    default:
-      return "OTRO";
+  const normalized = normalizeSiesaCode(code);
+  const prefix2 = normalized.slice(0, 2);
+  // Real customer MP-prefix buckets
+  if (prefix2 === "MP") {
+    const slot = normalized.slice(2, 4); // MP{CC,II,CP,PA,PS,PD,PO,PC,LP,LS,II,PK}
+    switch (slot) {
+      case "CC": // Carne de Cerdo (MPC)
+      case "CP": // Carne de Pollo (MPC)
+        return "MPC";
+      case "II": // Insumos industriales (MPNC)
+      case "PD": // Productos deshidratados (MPNC)
+        return "MPNC";
+      case "PA": // Proteínas / almidones
+      case "PK": // Proteínas / condimentos
+        return "PROTEINA";
+      case "PS": // Productos de sal / sales
+        return "MPC_PROTEINA";
+      case "PO": // Polvo / oleorresinas / colorantes
+        return "COLORANTE";
+      case "PC": // Preparados / condimentos complejos
+      case "LP": // Líquidos / preparados
+      case "LS": // Líquidos / saborizantes
+        return "SABORIZANTE";
+      default:
+        return "MPNC";
+    }
   }
+  // Legacy 8-digit demo codes
+  if (/^11/.test(normalized)) return "CARNE";
+  if (/^12/.test(normalized)) return "MATERIA_SECA";
+  if (/^13/.test(normalized)) return "EMPAQUE";
+  if (/^14/.test(normalized)) return "ADITIVO";
+  if (/^15/.test(normalized)) return "EMPAQUE";
+  return "OTRO";
 }

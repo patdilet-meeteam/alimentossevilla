@@ -105,14 +105,15 @@
 │   ├── DATA-SOURCES.md
 │   ├── SECURITY.md
 │   └── specs/
-│       └── SPEC-001-platform-foundation.md
+│       ├── SPEC-001-platform-foundation.md
+│       └── SPEC-002-ingredients-catalog.md
 ├── src/
 │   ├── app/                   # Next.js App Router
 │   │   ├── (auth)/            # Rutas públicas de autenticación (login)
 │   │   ├── (app)/             # Rutas protegidas de la aplicación
 │   │   │   ├── layout.tsx     # Shell autenticado con Sidebar y Header
 │   │   │   ├── dashboard/     # Vista principal de resumen
-│   │   │   ├── ingredientes/  # Placeholder Semana 2
+│   │   │   ├── ingredientes/  # Catálogo y perfiles nutricionales (SPEC-002)
 │   │   │   ├── productos/     # Placeholder Semana 3
 │   │   │   ├── formulaciones/ # Placeholder Semana 3
 │   │   │   ├── costos/        # Placeholder Semana 5

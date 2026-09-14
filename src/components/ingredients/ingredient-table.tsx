@@ -69,6 +69,16 @@ const CATEGORY_LABELS: Record<IngredientCategory, string> = {
   MATERIA_SECA: "Materia Seca",
   EMPAQUE: "Empaques",
   ADITIVO: "Aditivo",
+  MPC: "MPC",
+  MPNC: "MPNC",
+  PROTEINA: "Proteína",
+  AGUA: "Agua",
+  CONDIMENTO_ESPECIA: "Condimento / Especia",
+  CONSERVANTE: "Conservante",
+  REGULADOR_ACIDEZ: "Regulador de acidez",
+  SABORIZANTE: "Saborizante",
+  COLORANTE: "Colorante",
+  MPC_PROTEINA: "MPC / Proteína",
   OTRO: "Otro",
 };
 
@@ -77,6 +87,16 @@ const CATEGORY_COLORS: Record<IngredientCategory, string> = {
   MATERIA_SECA: "bg-amber-100 text-amber-800",
   EMPAQUE: "bg-blue-100 text-blue-800",
   ADITIVO: "bg-purple-100 text-purple-800",
+  MPC: "bg-red-50 text-red-700",
+  MPNC: "bg-amber-50 text-amber-700",
+  PROTEINA: "bg-yellow-100 text-yellow-800",
+  AGUA: "bg-cyan-100 text-cyan-800",
+  CONDIMENTO_ESPECIA: "bg-orange-100 text-orange-800",
+  CONSERVANTE: "bg-violet-100 text-violet-800",
+  REGULADOR_ACIDEZ: "bg-indigo-100 text-indigo-800",
+  SABORIZANTE: "bg-pink-100 text-pink-800",
+  COLORANTE: "bg-rose-100 text-rose-800",
+  MPC_PROTEINA: "bg-fuchsia-100 text-fuchsia-800",
   OTRO: "bg-gray-100 text-gray-800",
 };
 

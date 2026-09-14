@@ -5,7 +5,7 @@
 - **Cliente:** Alimentos Sevilla S.A.S.
 - **Proyecto:** Plataforma Centralizada de Gestión Técnica y Nutricional
 - **Objetivo Principal:** Reemplazar y automatizar el flujo técnico-nutricional que históricamente ha dependido de múltiples libros de Excel desconectados, archivos de control de formulaciones y documentos legales dispersos, garantizando la centralización de datos, integridad de cálculos, trazabilidad histórica y cumplimiento normativo.
-- **Fase Actual:** **Semana 1 — Levantamiento y Diseño** (Kick-Off funcional pendiente de confirmación de reglas específicas de negocio).
+- **Fase Actual:** **Semana 3 cerrada técnicamente — Productos, Formulaciones y Versionamiento**. SPEC-001 a SPEC-003 están implementadas y validadas técnicamente. El siguiente alcance es SPEC-004 (Motor de Cálculo Nutricional y Sellos), cuya implementación depende de las confirmaciones registradas en `docs/OPEN-QUESTIONS.md`.
 
 ---
 
@@ -73,13 +73,13 @@ La plataforma se concibe como una solución integral B2B que integrará los sigu
 
 ```
 +-------------------------------------------------------------------------------+
-| SEMANA 1 (Actual) : Platform Foundation (SPEC-001) + Levantamiento / Kick-Off |
-| SEMANA 2          : Catálogo de Ingredientes y Perfiles Nutricionales         |
-| SEMANA 3          : Productos, Formulaciones y Versionamiento                 |
-| SEMANA 4          : Motor de Cálculo Nutricional y Sellos Regulatorios        |
+| SEMANA 1          : Platform Foundation (SPEC-001) + Levantamiento / Kick-Off |
+| SEMANA 2          : Catálogo de Ingredientes y Perfiles Nutricionales (SPEC-002, completada) |
+| SEMANA 3          : Productos, Formulaciones y Versionamiento (cierre técnico) |
+| SEMANA 4 (siguiente): Motor de Cálculo Nutricional y Sellos Regulatorios      |
 | SEMANA 5          : Costos de Formulación e Importador Mensual                |
 | SEMANA 6          : Generador de Fichas Técnicas, Textos Legales y Cierre     |
 +-------------------------------------------------------------------------------+
 ```
 
-> **IMPORTANTE:** Durante la Semana 1, el foco es **SPEC-001 (Platform Foundation)**. No se implementan fórmulas nutricionales ni lógica regulatoria provisional para evitar reescrituras antes de la consolidación formal del Kick-Off.
+> **IMPORTANTE:** El avance a SPEC-004 no autoriza implementar fórmulas nutricionales, redondeos, sellos ni lógica regulatoria provisional. Esas decisiones deben confirmarse explícitamente mediante OQ-010 y OQ-022 a OQ-024.

@@ -117,7 +117,7 @@ export default async function DashboardPage() {
         <div className="max-w-3xl space-y-3 relative z-10">
           <div className="flex items-center gap-2">
             <Badge variant="secondary" className="bg-blue-900/60 text-blue-200 border-blue-700/50 text-[11px]">
-              Fase Actual: Semana 1 — Levantamiento y Diseño
+              Fase Actual: Semana 2 — Catálogo de Ingredientes
             </Badge>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
@@ -142,12 +142,12 @@ export default async function DashboardPage() {
               Etapa Contractual
             </CardDescription>
             <CardTitle className="text-base font-semibold">
-              Semana 1 de 6
+              Semana 2 de 6
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Levantamiento de reglas de negocio y SPEC-001 Platform Foundation.
+              Catálogo de materias primas, perfiles nutricionales y código SIESA (SPEC-002).
             </p>
           </CardContent>
         </Card>

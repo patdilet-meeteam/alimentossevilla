@@ -19,8 +19,8 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 - **Tipo:** Hoja de cálculo de Control Técnico Nutricional (.xlsx).
 - **Propósito:** Archivo de referencia utilizado actualmente por el equipo técnico para el cálculo y balance nutricional de productos cárnicos procesados.
 - **Contenido:** Lista de ingredientes de la formulación con sus porcentajes de participación, peso en batch, balance de nutrientes ponderado, factores de rendimiento por cocción y cálculo de sellos de advertencia.
-- **Observaciones y Ambigüedad:** Representa el comportamiento histórico de cálculo en Excel. Requiere auditoría contra la normativa oficial de etiquetado vigente.
-- **Open Question Asociada:** [OQ-006](OPEN-QUESTIONS.md#oq-006) y [OQ-007](OPEN-QUESTIONS.md#oq-007) — Pendiente validar si reproduce con exactitud la lógica normativa que el motor computacional debe estandarizar.
+- **Observaciones y Ambigüedad:** Representa un comportamiento histórico de cálculo en Excel. La hoja `CTN`, titulada “SALCHICHAS DESAYUNO PREMIUM”, toma códigos desde la hoja oculta `Chorizo con ternera (3)`; por ello no se usa como fixture canónico ni como fuente de carga hasta que el cliente confirme el caso, las hojas y los códigos correctos.
+- **Open Questions Asociadas:** [OQ-022](OPEN-QUESTIONS.md#oq-022), [OQ-023](OPEN-QUESTIONS.md#oq-023) y [OQ-024](OPEN-QUESTIONS.md#oq-024). OQ-006 y OQ-008 confirman que la base Excel debe replicarse, pero no sustituyen la identificación explícita del caso patrón ni el contrato matemático.
 
 ---
 
@@ -57,7 +57,7 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 | Identificador | Archivo / Fuente | Módulo Destino en la Plataforma | Frecuencia de Actualización | Estado de Definición |
 |---|---|---|---|---|
 | **DS-01** | Banco Nutricional.xlsx | Módulo de Ingredientes (Semana 2) | Esporádica / Bajo demanda | Pendiente resolución OQ-001 |
-| **DS-02** | CTN v11.xlsx | Motor de Cálculo Nutricional (Semana 4) | Archivo histórico de calibración | Pendiente resolución OQ-006 |
+| **DS-02** | CTN v11.xlsx | Motor de Cálculo Nutricional (Semana 4) | Candidato a caso de calibración | Pendiente resolución OQ-022/023/024 |
 | **DS-03** | TL 480g | Módulo de Documentos Técnicos (Semana 6) | Plantilla base de salida | Pendiente resolución OQ-016 |
 | **DS-04** | AR 480g | N/A (Referencia visual) | N/A | Fuera de alcance |
 | **DS-05** | Costos Junio | Módulo de Costos (Semana 5) | Mensual (Carga de archivo) | Pendiente resolución OQ-012/13/14 |

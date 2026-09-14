@@ -15,10 +15,22 @@ enum Role {
 }
 
 enum IngredientCategory {
+  // Demo legacy values (preserved for backward compat)
   CARNE
   MATERIA_SECA
   EMPAQUE
   ADITIVO
+  // Real customer categories (added in SPEC-003, migrated from demo)
+  MPC
+  MPNC
+  PROTEINA
+  AGUA
+  CONDIMENTO_ESPECIA
+  CONSERVANTE
+  REGULADOR_ACIDEZ
+  SABORIZANTE
+  COLORANTE
+  MPC_PROTEINA
   OTRO
 }
 
@@ -36,6 +48,42 @@ enum NutrientUnit {
   KJ
 }
 
+enum ProductCategory {
+  SALCHICHA
+  CHORIZO
+  JAMON
+  MORTADELA
+  TOCINETA
+  PERRO_CALIENTE
+  OTRO
+}
+
+enum FormulationVersionStatus {
+  DRAFT
+  IN_REVIEW
+  APPROVED
+  OBSOLETE
+}
+
+enum CostImportStatus {
+  DRAFT
+  APPLIED
+  SUPERSEDED
+}
+
+enum CostImportItemStatus {
+  MATCHED
+  CREATED_PENDING_REVIEW
+  INVALID
+  DUPLICATE_CONFLICT
+}
+
+enum CostCodeType {
+  INSUMO
+  PRODUCTO_EN_PROCESO
+  PRODUCTO_TERMINADO
+}
+
 model User {
   id            String       @id
   name          String
@@ -51,6 +99,10 @@ model User {
   auditEvents   AuditEvent[]
   ingredients   Ingredient[]
   profiles      NutritionalProfile[]
+  productsCreated Product[]
+  formulationVersionsAprobadas FormulationVersion[]
+  costImportsCreated CostImport[] @relation("CostImportCreatedBy")
+  costImportsApproved CostImport[] @relation("CostImportApprovedBy")
 
   @@map("users")
 }
@@ -116,6 +168,7 @@ model AuditEvent {
   userAgent  String?
   timestamp  DateTime @default(now())
   actor      User?    @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  formulationVersions FormulationVersion[]
 
   @@index([action])
   @@index([entity, entityId])
@@ -132,11 +185,14 @@ model Ingredient {
   isAllergen   Boolean            @default(false)
   allergenTags String[]
   isActive     Boolean            @default(true)
+  pendingReview Boolean           @default(false)
   createdAt    DateTime           @default(now())
   updatedAt    DateTime           @updatedAt
   createdById String?
   createdBy   User?              @relation(fields: [createdById], references: [id], onDelete: SetNull)
   profiles    NutritionalProfile[]
+  formulationIngredients FormulationIngredient[]
+  costImportItems CostImportItem[]
 
   @@index([siesaCode])
   @@index([category])
@@ -188,4 +244,139 @@ model NutrientValue {
   @@unique([profileId, nutrientId])
   @@index([nutrientId])
   @@map("nutrient_values")
+}
+
+model Product {
+  id               String        @id @default(cuid())
+  codigoInterno    String        @unique
+  nombreComercial  String
+  categoriaProducto ProductCategory
+  descripcion      String?
+  isActive         Boolean       @default(true)
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  createdById      String?
+  createdBy        User?         @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  presentations    Presentation[]
+  formulations     Formulation[]
+
+  @@index([categoriaProducto])
+  @@index([isActive])
+  @@map("products")
+}
+
+model Presentation {
+  id                String   @id @default(cuid())
+  productId         String
+  product           Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  gramajeNeto       Decimal  @db.Decimal(12, 3)
+  unidadesPorEmpaque Int?
+  porcionDeclarada  Decimal? @db.Decimal(12, 3)
+  porcionPorEnvase  Decimal? @db.Decimal(12, 4)
+  isActive          Boolean  @default(true)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([productId])
+  @@index([isActive])
+  @@map("presentations")
+}
+
+model Formulation {
+  id                 String   @id @default(cuid())
+  productId          String   @unique
+  product            Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  baseCalculo        Decimal  @default(100) @db.Decimal(12, 4)
+  rendimientoEsperado Decimal? @db.Decimal(6, 4)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  versions           FormulationVersion[]
+
+  @@index([productId])
+  @@map("formulations")
+}
+
+model FormulationVersion {
+  id                  String   @id @default(cuid())
+  formulationId       String
+  formulation         Formulation @relation(fields: [formulationId], references: [id], onDelete: Cascade)
+  numeroSecuencial    Int
+  estado              FormulationVersionStatus @default(DRAFT)
+  rendimientoEsperado Decimal? @db.Decimal(6, 4)
+  validFrom           DateTime?
+  aprobadaPorId       String?
+  aprobadaPor         User?    @relation(fields: [aprobadaPorId], references: [id], onDelete: SetNull)
+  aprobadaEn          DateTime?
+  auditTrailId        String?
+  auditTrail          AuditEvent? @relation(fields: [auditTrailId], references: [id], onDelete: SetNull)
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  ingredients         FormulationIngredient[]
+
+  @@unique([formulationId, numeroSecuencial])
+  @@index([estado])
+  @@index([formulationId])
+  @@map("formulation_versions")
+}
+
+model FormulationIngredient {
+  id                    String   @id @default(cuid())
+  formulationVersionId  String
+  formulationVersion    FormulationVersion @relation(fields: [formulationVersionId], references: [id], onDelete: Cascade)
+  ingredientId          String
+  ingredient            Ingredient @relation(fields: [ingredientId], references: [id])
+  porcentajeParticipacion Decimal @db.Decimal(7, 4)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@unique([formulationVersionId, ingredientId])
+  @@index([ingredientId])
+  @@map("formulation_ingredients")
+}
+
+model CostImport {
+  id               String           @id @default(cuid())
+  periodStart      DateTime         @db.Date
+  sourceFileName   String
+  sourceFileHash   String           @unique
+  status           CostImportStatus @default(DRAFT)
+  rowCount         Int
+  validItemCount   Int
+  warningCount     Int              @default(0)
+  importedById     String
+  importedBy       User             @relation("CostImportCreatedBy", fields: [importedById], references: [id], onDelete: Restrict)
+  approvedById     String?
+  approvedBy       User?            @relation("CostImportApprovedBy", fields: [approvedById], references: [id], onDelete: SetNull)
+  appliedAt        DateTime?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  items            CostImportItem[]
+
+  @@index([periodStart])
+  @@index([status])
+  @@index([createdAt])
+  @@map("cost_imports")
+}
+
+model CostImportItem {
+  id             String               @id @default(cuid())
+  costImportId   String
+  costImport     CostImport           @relation(fields: [costImportId], references: [id], onDelete: Cascade)
+  sourceRow      Int
+  sourceCode     String
+  description    String
+  unit           String?
+  unitCost       Decimal              @db.Decimal(18, 4)
+  codeType       CostCodeType?
+  status         CostImportItemStatus
+  issues         Json?
+  ingredientId   String?
+  ingredient     Ingredient?          @relation(fields: [ingredientId], references: [id], onDelete: SetNull)
+  createdAt      DateTime             @default(now())
+
+  @@unique([costImportId, sourceRow])
+  @@index([sourceCode])
+  @@index([ingredientId])
+  @@index([status])
+  @@map("cost_import_items")
 }
