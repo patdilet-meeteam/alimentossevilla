@@ -8,19 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default async function DocumentosPage() {
-  const user = await getCurrentUser();
-  if (!user) {
-    return (
-      <ModulePlaceholder
-        moduleName="Documentación Técnica & Textos Legales"
-        moduleKey="documentos"
-        description="Inicie sesión para revisar los datos de formulaciones aprobadas."
-        roadmapWeek="Semana 6 — Documentos & Cierre"
-        icon={FileText}
-        plannedCapabilities={["Previsualización de ingredientes desde la formulación aprobada."]}
-      />
-    );
-  }
+  // El layout (app)/layout.tsx ya garantizó que hay un usuario autenticado.
+  await getCurrentUser();
 
   const previews = await listLegalIngredientsPreviews();
 

@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Users, Shield, Info, ShieldAlert } from "lucide-react";
+import { Users, Shield, ShieldAlert } from "lucide-react";
 import { formatDate, cn } from "@/lib/utils";
 import { UserRoleSelector } from "@/components/users/user-role-selector";
 
@@ -54,24 +54,6 @@ export default async function UsuariosPage() {
           </Badge>
         </div>
       </div>
-
-      {/* Role Governance Notice */}
-      <Alert variant="info">
-        <Info className="h-4 w-4" />
-        <AlertTitle className="text-xs font-semibold">
-          Gobernanza de Roles Base (Semana 1 — Foundation)
-        </AlertTitle>
-        <AlertDescription className="text-xs mt-1">
-          La plataforma soporta los 4 perfiles base identificados:{" "}
-          <strong>Administrador</strong>, <strong>Investigación y Desarrollo (I+D)</strong>,{" "}
-          <strong>Calidad</strong> y <strong>Consulta</strong>. La matriz granular de permisos por acción funcional
-          se consolidará tras las definiciones del Kick-Off funcional (Ref:{" "}
-          <code className="bg-blue-100 dark:bg-blue-950 px-1 py-0.5 rounded font-mono">
-            docs/OPEN-QUESTIONS.md#OQ-011
-          </code>
-          ).
-        </AlertDescription>
-      </Alert>
 
       {!isAdmin && (
         <Alert variant="warning">

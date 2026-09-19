@@ -7,8 +7,8 @@ import {
   Wheat,
   Package,
   FlaskConical,
-  CircleDollarSign,
   ShieldCheck,
+  CircleDollarSign,
   FileText,
   Users,
   History,
@@ -48,34 +48,30 @@ const navItems: NavItem[] = [
     title: "Ingredientes",
     href: "/ingredientes",
     icon: Wheat,
-    badge: "Sem. 2",
   },
   {
     title: "Productos",
     href: "/productos",
     icon: Package,
-    badge: "Sem. 3",
   },
   {
     title: "Formulaciones",
     href: "/formulaciones",
     icon: FlaskConical,
-    badge: "Sem. 3",
   },
   {
-    title: "Costos",
-    href: "/costos",
-    icon: CircleDollarSign,
-    badge: "Sem. 5",
-  },
-  {
-    title: "Normativa",
+    title: "Cálculo Nutricional",
     href: "/normativa",
     icon: ShieldCheck,
     badge: "Sem. 4",
   },
   {
-    title: "Documentos",
+    title: "Costos",
+    href: "/costos",
+    icon: CircleDollarSign,
+  },
+  {
+    title: "Documentos Técnicos",
     href: "/documentos",
     icon: FileText,
     badge: "Sem. 6",
@@ -122,20 +118,20 @@ export function Sidebar({ user }: SidebarProps) {
       {/* Sidebar container */}
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-40 w-64 bg-slate-900 text-slate-100 flex flex-col border-r border-slate-800 transition-transform duration-200 ease-in-out lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 w-64 bg-[#1C4378] text-slate-100 flex flex-col border-r border-[#1C4378] transition-transform duration-200 ease-in-out lg:translate-x-0",
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
         {/* Brand Header */}
-        <div className="h-16 flex items-center px-6 border-b border-slate-800 gap-3">
-          <div className="w-8 h-8 rounded-md bg-blue-600 flex items-center justify-center font-bold text-white tracking-wider text-sm shadow-sm">
+        <div className="h-16 flex items-center px-6 border-b border-[#6FC7DA]/30 gap-3">
+          <div className="w-8 h-8 rounded-md bg-[#6FC7DA] flex items-center justify-center font-bold text-[#1C4378] tracking-wider text-sm shadow-sm">
             AS
           </div>
           <div className="flex flex-col">
             <span className="font-semibold text-sm leading-tight text-white">
               Alimentos Sevilla
             </span>
-            <span className="text-[11px] text-slate-400 leading-tight">
+            <span className="text-[11px] text-[#B9E8F1] leading-tight">
               Gestión Nutricional
             </span>
           </div>
@@ -158,7 +154,7 @@ export function Sidebar({ user }: SidebarProps) {
                 className={cn(
                   "flex items-center justify-between px-3 py-2 text-sm font-medium rounded-md transition-colors",
                   isActive
-                    ? "bg-blue-600 text-white shadow-xs"
+            ? "bg-[#1C4378] text-white shadow-xs"
                     : "text-slate-300 hover:bg-slate-800/80 hover:text-white"
                 )}
               >
@@ -171,7 +167,7 @@ export function Sidebar({ user }: SidebarProps) {
                     className={cn(
                       "text-[10px] px-1.5 py-0.5 rounded font-mono font-normal",
                       isActive
-                        ? "bg-blue-700/80 text-blue-100"
+                    ? "bg-[#6FC7DA]/30 text-white"
                         : "bg-slate-800 text-slate-400 border border-slate-700/50"
                     )}
                   >

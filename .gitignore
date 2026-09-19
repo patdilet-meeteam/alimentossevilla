@@ -50,3 +50,12 @@ next-env.d.ts
 
 # Docker data volume (if local)
 /pgdata
+
+# Codex presentation build artifacts
+/.codex-presentation-build/
+
+# Codex chart data caches (random hash dirs)
+/.chart-data-*/
+
+# pnpm store (local cache)
+/.pnpm-store/

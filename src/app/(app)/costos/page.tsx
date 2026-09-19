@@ -39,20 +39,9 @@ function formatMoney(value: number): string {
 }
 
 export default async function CostosPage() {
-  const user = await getCurrentUser();
-  if (!user) {
-    return (
-      <ModulePlaceholder
-        moduleName="Costos de Formulación"
-        moduleKey="costos"
-        description="Inicie sesión para consultar las importaciones y costos directos."
-        roadmapWeek="Semana 4 — Costos de formulaciones"
-        icon={CircleDollarSign}
-        plannedCapabilities={["Importación mensual y trazabilidad de costos por código SIESA."]}
-      />
-    );
-  }
-
+  // El layout (app)/layout.tsx ya garantizó que hay un usuario autenticado.
+  // Re-leemos el user solo para conocer su rol y ajustar permisos.
+  const user = (await getCurrentUser())!;
   const [imports, summaries] = await Promise.all([
     listCostImports(),
     listFormulationCostSummaries(),

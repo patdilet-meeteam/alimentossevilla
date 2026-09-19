@@ -83,21 +83,21 @@ const CATEGORY_LABELS: Record<IngredientCategory, string> = {
 };
 
 const CATEGORY_COLORS: Record<IngredientCategory, string> = {
-  CARNE: "bg-red-100 text-red-800",
-  MATERIA_SECA: "bg-amber-100 text-amber-800",
-  EMPAQUE: "bg-blue-100 text-blue-800",
-  ADITIVO: "bg-purple-100 text-purple-800",
-  MPC: "bg-red-50 text-red-700",
-  MPNC: "bg-amber-50 text-amber-700",
-  PROTEINA: "bg-yellow-100 text-yellow-800",
-  AGUA: "bg-cyan-100 text-cyan-800",
-  CONDIMENTO_ESPECIA: "bg-orange-100 text-orange-800",
-  CONSERVANTE: "bg-violet-100 text-violet-800",
-  REGULADOR_ACIDEZ: "bg-indigo-100 text-indigo-800",
-  SABORIZANTE: "bg-pink-100 text-pink-800",
-  COLORANTE: "bg-rose-100 text-rose-800",
-  MPC_PROTEINA: "bg-fuchsia-100 text-fuchsia-800",
-  OTRO: "bg-gray-100 text-gray-800",
+  CARNE: "bg-slate-100 text-slate-700",
+  MATERIA_SECA: "bg-slate-100 text-slate-700",
+  EMPAQUE: "bg-slate-100 text-slate-700",
+  ADITIVO: "bg-slate-100 text-slate-700",
+  MPC: "bg-slate-100 text-slate-700",
+  MPNC: "bg-slate-100 text-slate-700",
+  PROTEINA: "bg-slate-100 text-slate-700",
+  AGUA: "bg-slate-100 text-slate-700",
+  CONDIMENTO_ESPECIA: "bg-slate-100 text-slate-700",
+  CONSERVANTE: "bg-slate-100 text-slate-700",
+  REGULADOR_ACIDEZ: "bg-slate-100 text-slate-700",
+  SABORIZANTE: "bg-slate-100 text-slate-700",
+  COLORANTE: "bg-slate-100 text-slate-700",
+  MPC_PROTEINA: "bg-slate-100 text-slate-700",
+  OTRO: "bg-slate-100 text-slate-700",
 };
 
 const SOURCE_LABELS: Record<NutrientSource, string> = {

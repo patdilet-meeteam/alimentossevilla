@@ -177,7 +177,7 @@ export default function LoginPage() {
               <Shield className="w-3.5 h-3.5" />
               Entorno de Desarrollo (Cuentas de Prueba)
             </span>
-            <span>Semana 2</span>
+            <span>Demo local</span>
           </div>
           <p className="text-[11px] text-slate-400 leading-relaxed">
             Haga clic en un perfil para autocompletar credenciales de prueba:

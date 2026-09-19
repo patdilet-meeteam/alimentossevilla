@@ -19,8 +19,6 @@ import {
   Users,
   History,
   ArrowRight,
-  ShieldAlert,
-  Calendar,
   Layers,
 } from "lucide-react";
 import Link from "next/link";
@@ -41,24 +39,24 @@ const moduleCards: ModuleCard[] = [
     href: "/ingredientes",
     icon: Wheat,
     scope: "Gestión de catálogo de materias primas, perfiles nutricionales y asociación con códigos SIESA.",
-    status: "Semana 2",
-    week: "Semana 2",
+    status: "Disponible",
+    week: "Catálogo",
   },
   {
     title: "Productos & Presentaciones",
     href: "/productos",
     icon: Package,
     scope: "Catálogo de productos terminados, presentaciones comerciales, gramajes y porciones de referencia.",
-    status: "Semana 3",
-    week: "Semana 3",
+    status: "Disponible",
+    week: "Productos",
   },
   {
     title: "Formulaciones & Recetas",
     href: "/formulaciones",
     icon: FlaskConical,
     scope: "Estructura de fórmulas, control de versiones, rendimientos de proceso y trazabilidad técnica.",
-    status: "Semana 3",
-    week: "Semana 3",
+    status: "Disponible",
+    week: "Formulaciones",
   },
   {
     title: "Cálculo Nutricional & Sellos",
@@ -66,15 +64,15 @@ const moduleCards: ModuleCard[] = [
     icon: ShieldCheck,
     scope: "Motor de cálculo normativo, límites de advertencia frontal y parámetros regulatorios.",
     status: "Semana 4",
-    week: "Semana 4",
+    week: "Sem. 4",
   },
   {
     title: "Costos de Formulación",
     href: "/costos",
     icon: CircleDollarSign,
     scope: "Carga mensual de costos de materias primas, cruce por código SIESA y costeo de batch.",
-    status: "Semana 5",
-    week: "Semana 5",
+    status: "Disponible",
+    week: "Costos",
   },
   {
     title: "Documentos Técnicos",
@@ -82,23 +80,23 @@ const moduleCards: ModuleCard[] = [
     icon: FileText,
     scope: "Generación de Fichas Técnicas, Textos Legales y rotulado normativo oficial.",
     status: "Semana 6",
-    week: "Semana 6",
+    week: "Sem. 6",
   },
   {
     title: "Gestión de Usuarios",
     href: "/usuarios",
     icon: Users,
     scope: "Administración de accesos, cuentas y perfiles según la matriz de roles corporativa.",
-    status: "Operativo",
-    week: "Foundation",
+    status: "Disponible",
+    week: "Accesos",
   },
   {
     title: "Auditoría & Trazabilidad",
     href: "/auditoria",
     icon: History,
     scope: "Registro inmutable de eventos de seguridad y cambios en entidades del sistema.",
-    status: "Operativo",
-    week: "Foundation",
+    status: "Disponible",
+    week: "Trazabilidad",
   },
 ];
 
@@ -109,15 +107,15 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Welcome Banner */}
-      <div className="rounded-xl bg-slate-900 text-white p-6 sm:p-8 shadow-sm relative overflow-hidden">
+      <div className="rounded-xl bg-[#1C4378] text-white p-6 sm:p-8 shadow-sm relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
-          <Layers className="w-64 h-64 text-blue-400" />
+          <Layers className="w-64 h-64 text-[#6FC7DA]" />
         </div>
 
         <div className="max-w-3xl space-y-3 relative z-10">
           <div className="flex items-center gap-2">
-            <Badge variant="secondary" className="bg-blue-900/60 text-blue-200 border-blue-700/50 text-[11px]">
-              Fase Actual: Semana 2 — Catálogo de Ingredientes
+            <Badge variant="secondary" className="bg-[#6FC7DA]/20 text-[#DDF7FC] border-[#6FC7DA]/50 text-[11px]">
+              Fase Actual: Semana 4 — Costos de Formulación
             </Badge>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
@@ -138,16 +136,16 @@ export default async function DashboardPage() {
         <Card className="bg-white dark:bg-slate-900 border shadow-xs">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs flex items-center gap-1.5">
-              <Calendar className="w-3.5 h-3.5 text-blue-600" />
+              <Wheat className="w-3.5 h-3.5 text-[#1C4378]" />
               Etapa Contractual
             </CardDescription>
             <CardTitle className="text-base font-semibold">
-              Semana 2 de 6
+              Semana 4 de 6
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Catálogo de materias primas, perfiles nutricionales y código SIESA (SPEC-002).
+              Costos de formulación: importación mensual, cruce SIESA y costeo de batch.
             </p>
           </CardContent>
         </Card>
@@ -155,16 +153,16 @@ export default async function DashboardPage() {
         <Card className="bg-white dark:bg-slate-900 border shadow-xs">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-              Foundation Operativa
+              <FlaskConical className="w-3.5 h-3.5 text-[#1C4378]" />
+              Productos y formulaciones
             </CardDescription>
-            <CardTitle className="text-base font-semibold text-emerald-700 dark:text-emerald-400">
-              Activa & Segura
+            <CardTitle className="text-base font-semibold text-[#1C4378] dark:text-[#6FC7DA]">
+              Recetas y versiones
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Autenticación server-side, 4 roles base y bitácora de auditoría habilitada.
+              Productos, presentaciones y control de versiones de cada formulación.
             </p>
           </CardContent>
         </Card>
@@ -172,16 +170,16 @@ export default async function DashboardPage() {
         <Card className="bg-white dark:bg-slate-900 border shadow-xs">
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs flex items-center gap-1.5">
-              <ShieldAlert className="w-3.5 h-3.5 text-amber-600" />
-              Gobernanza de Reglas
+              <History className="w-3.5 h-3.5 text-[#1C4378]" />
+              Trazabilidad y acceso
             </CardDescription>
             <CardTitle className="text-base font-semibold text-slate-800 dark:text-slate-200">
-              Kick-Off Funcional
+              Usuarios y auditoría
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              18 preguntas abiertas documentadas en <code className="text-[11px] bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">docs/OPEN-QUESTIONS.md</code>.
+              Administración de accesos por rol y registro de cambios relevantes del sistema.
             </p>
           </CardContent>
         </Card>
@@ -201,17 +199,17 @@ export default async function DashboardPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {moduleCards.map((m) => {
             const Icon = m.icon;
-            const isOperational = m.status === "Operativo";
+            const isOperational = m.status === "Disponible";
 
             return (
               <Link
                 key={m.href}
                 href={m.href}
-                className="group flex flex-col justify-between p-5 rounded-lg bg-white dark:bg-slate-900 border hover:border-blue-500/50 hover:shadow-md transition-all duration-150"
+                className="group flex flex-col justify-between p-5 rounded-lg bg-white dark:bg-slate-900 border hover:border-[#6FC7DA] hover:shadow-md transition-all duration-150"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <div className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-blue-50 group-hover:text-blue-600 dark:group-hover:bg-blue-950/50 dark:group-hover:text-blue-400 transition-colors">
+                    <div className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-[#6FC7DA]/20 group-hover:text-[#1C4378] dark:group-hover:bg-[#1C4378]/50 dark:group-hover:text-[#6FC7DA] transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
                     <Badge
@@ -223,7 +221,7 @@ export default async function DashboardPage() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-sm text-slate-900 dark:text-slate-100 group-hover:text-blue-600 transition-colors">
+                    <h4 className="font-semibold text-sm text-slate-900 dark:text-slate-100 group-hover:text-[#1C4378] transition-colors">
                       {m.title}
                     </h4>
                     <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">
@@ -232,7 +230,7 @@ export default async function DashboardPage() {
                   </div>
                 </div>
 
-                <div className="pt-4 flex items-center text-xs font-medium text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
+                <div className="pt-4 flex items-center text-xs font-medium text-[#1C4378] dark:text-[#6FC7DA] group-hover:translate-x-1 transition-transform">
                   <span>Acceder al área</span>
                   <ArrowRight className="w-3.5 h-3.5 ml-1" />
                 </div>
@@ -255,7 +253,7 @@ export default async function DashboardPage() {
           </div>
           <Link
             href="/auditoria"
-            className="text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 flex items-center gap-1"
+            className="text-xs font-medium text-[#1C4378] hover:text-[#6FC7DA] dark:text-[#6FC7DA] flex items-center gap-1"
           >
             <span>Ver toda la bitácora</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -276,7 +274,7 @@ export default async function DashboardPage() {
                     className="p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="w-2 h-2 rounded-full bg-blue-600 shrink-0" />
+                      <span className="w-2 h-2 rounded-full bg-[#1C4378] shrink-0" />
                       <div>
                         <span className="font-semibold text-slate-800 dark:text-slate-200">
                           {evt.action}

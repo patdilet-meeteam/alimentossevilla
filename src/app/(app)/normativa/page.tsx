@@ -14,19 +14,8 @@ const ISSUE_LABELS = {
 } as const;
 
 export default async function NormativaPage() {
-  const user = await getCurrentUser();
-  if (!user) {
-    return (
-      <ModulePlaceholder
-        moduleName="Cálculo Nutricional & Parámetros Regulatorios"
-        moduleKey="normativa"
-        description="Inicie sesión para revisar la preparación nutricional de las formulaciones."
-        roadmapWeek="Semana 4 — Motor Nutricional & Normativa"
-        icon={ShieldCheck}
-        plannedCapabilities={["Validación de insumos antes del cálculo nutricional."]}
-      />
-    );
-  }
+  // El layout (app)/layout.tsx ya garantizó que hay un usuario autenticado.
+  await getCurrentUser();
 
   const readiness = await listNutritionReadiness();
   const issueCount = readiness.reduce((total, formulation) => total + formulation.issueCount, 0);

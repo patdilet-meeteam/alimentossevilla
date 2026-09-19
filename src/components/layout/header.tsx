@@ -27,11 +27,6 @@ export function Header({ user }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-3">
-        <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 border text-[11px] text-slate-600 dark:text-slate-300">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="font-medium">SPEC-002: Catálogo de Ingredientes</span>
-        </div>
-
         <div className="flex items-center gap-2">
           <span
             className={cn(
