@@ -3,11 +3,12 @@
 import { useState } from "react";
 import { authClient } from "@/lib/auth/auth-client";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { BrandLogo } from "@/components/layout/brand-logo";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Lock, Mail, AlertCircle, Shield, Check } from "lucide-react";
+import { Lock, Mail, AlertCircle, Shield, Check, type LucideIcon } from "lucide-react";
 import { RoleLabels } from "@/lib/auth/roles";
 import { Role } from "@prisma/client";
 
@@ -16,6 +17,38 @@ const brandHighlights = [
   { title: "Nutrición", caption: "Perfiles" },
   { title: "Fichas", caption: "Técnicas" },
 ];
+
+interface IconFieldProps {
+  id: string;
+  label: string;
+  icon: LucideIcon;
+  type: string;
+  autoComplete: string;
+  placeholder: string;
+  value: string;
+  onChange: (value: string) => void;
+}
+
+function IconField({ id, label, icon: Icon, onChange, ...inputProps }: IconFieldProps) {
+  return (
+    <div className="space-y-2">
+      <Label htmlFor={id} className="text-slate-700">
+        {label}
+      </Label>
+      <div className="relative">
+        <Icon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+        <Input
+          id={id}
+          name={id}
+          required
+          onChange={(e) => onChange(e.target.value)}
+          className="h-12 rounded-full border-slate-200 bg-slate-100/70 pl-11 text-slate-900 placeholder:text-slate-400 focus-visible:ring-[#2e2a6b]"
+          {...inputProps}
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function LoginPage() {
   const router = useRouter();
@@ -87,12 +120,9 @@ export default function LoginPage() {
         <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-indigo-500/10 blur-3xl" />
 
         <div className="relative z-10 flex max-w-md flex-col items-center text-center">
-          <Image
-            src="/brand/alimentos-sevilla-logo.png"
-            alt="Alimentos Sevilla"
-            width={700}
-            height={315}
-            priority
+          <BrandLogo
+            displayWidth={208}
+            preload
             className="h-auto w-44 sm:w-52"
           />
           <h1 className="mt-10 text-2xl sm:text-3xl font-bold tracking-tight">
@@ -136,51 +166,26 @@ export default function LoginPage() {
           )}
 
           <form onSubmit={handleLogin} className="space-y-5">
-            <div className="space-y-2">
-              <label
-                htmlFor="email"
-                className="text-sm font-medium text-slate-700"
-              >
-                Correo electrónico
-              </label>
-              <div className="relative">
-                <Mail className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  placeholder="usuario@alimentossevilla.com"
-                  required
-                  value={emailValue}
-                  onChange={(e) => setEmailValue(e.target.value)}
-                  className="h-12 rounded-full border-slate-200 bg-slate-100/70 pl-11 text-slate-900 placeholder:text-slate-400 focus-visible:ring-[#2e2a6b]"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <label
-                htmlFor="password"
-                className="text-sm font-medium text-slate-700"
-              >
-                Contraseña
-              </label>
-              <div className="relative">
-                <Lock className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-                <Input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  placeholder="••••••••••"
-                  required
-                  value={passwordValue}
-                  onChange={(e) => setPasswordValue(e.target.value)}
-                  className="h-12 rounded-full border-slate-200 bg-slate-100/70 pl-11 text-slate-900 placeholder:text-slate-400 focus-visible:ring-[#2e2a6b]"
-                />
-              </div>
-            </div>
+            <IconField
+              id="email"
+              label="Correo electrónico"
+              icon={Mail}
+              type="email"
+              autoComplete="email"
+              placeholder="usuario@alimentossevilla.com"
+              value={emailValue}
+              onChange={setEmailValue}
+            />
+            <IconField
+              id="password"
+              label="Contraseña"
+              icon={Lock}
+              type="password"
+              autoComplete="current-password"
+              placeholder="••••••••••"
+              value={passwordValue}
+              onChange={setPasswordValue}
+            />
 
             <Button
               type="submit"

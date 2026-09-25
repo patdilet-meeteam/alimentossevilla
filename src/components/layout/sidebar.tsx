@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   Wheat,
@@ -15,13 +14,15 @@ import {
   History,
   LogOut,
   ChevronLeft,
-  ChevronRight,
   Menu,
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Role, RoleLabels, RoleBadgeStyles } from "@/lib/auth/roles";
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
+import { logoutAction } from "@/app/actions/auth-actions";
+import { BrandLogo } from "@/components/layout/brand-logo";
+import { SIDEBAR_COLLAPSED_COOKIE } from "@/components/layout/sidebar-preferences";
 
 interface SidebarProps {
   user: {
@@ -30,6 +31,7 @@ interface SidebarProps {
     email: string;
     role: Role;
   };
+  initialCollapsed: boolean;
 }
 
 interface NavItem {
@@ -90,58 +92,19 @@ const navItems: NavItem[] = [
   },
 ];
 
-const COLLAPSED_STORAGE_KEY = "sidebar-collapsed";
-const COLLAPSED_CHANGE_EVENT = "sidebar-collapsed-change";
-
-function readCollapsed(): boolean {
-  try {
-    return localStorage.getItem(COLLAPSED_STORAGE_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
-
-function subscribeCollapsed(onChange: () => void): () => void {
-  window.addEventListener("storage", onChange);
-  window.addEventListener(COLLAPSED_CHANGE_EVENT, onChange);
-  return () => {
-    window.removeEventListener("storage", onChange);
-    window.removeEventListener(COLLAPSED_CHANGE_EVENT, onChange);
-  };
-}
-
-function writeCollapsed(value: boolean): void {
-  try {
-    localStorage.setItem(COLLAPSED_STORAGE_KEY, value ? "1" : "0");
-  } catch {
-    // Storage unavailable: preference is not persisted.
-  }
-  window.dispatchEvent(new Event(COLLAPSED_CHANGE_EVENT));
-}
-
-export function Sidebar({ user }: SidebarProps) {
+// Collapsed mode is desktop-only: every collapsed style is scoped with
+// `lg:group-data-[collapsed]:` so the mobile drawer always renders expanded.
+export function Sidebar({ user, initialCollapsed }: SidebarProps) {
   const pathname = usePathname();
-  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const collapsed = useSyncExternalStore(subscribeCollapsed, readCollapsed, () => false);
+  const [collapsed, setCollapsed] = useState(initialCollapsed);
   const badgeStyle = RoleBadgeStyles[user.role] || RoleBadgeStyles[Role.VIEWER];
 
-  const toggleCollapsed = () => writeCollapsed(!collapsed);
-
-  const handleLogout = async () => {
-    try {
-      const { authClient } = await import("@/lib/auth/auth-client");
-      await authClient.signOut();
-    } catch (e) {
-      console.error("Logout error:", e);
-    }
-    document.cookie = "better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    document.cookie = "__Secure-better-auth.session_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    router.push("/login");
+  const toggleCollapsed = () => {
+    const next = !collapsed;
+    setCollapsed(next);
+    document.cookie = `${SIDEBAR_COLLAPSED_COOKIE}=${next ? "1" : "0"}; path=/; max-age=31536000; samesite=lax`;
   };
-
-  // Collapsed mode applies only on desktop; the mobile drawer is always expanded.
-  const hideOnCollapse = collapsed ? "lg:hidden" : "";
 
   return (
     <>
@@ -166,29 +129,20 @@ export function Sidebar({ user }: SidebarProps) {
 
       {/* Sidebar container */}
       <aside
+        data-collapsed={collapsed || undefined}
         className={cn(
-          "fixed inset-y-0 left-0 z-40 w-72 shrink-0 bg-[#1C4378] text-slate-100 flex flex-col transition-[transform,width] duration-200 ease-in-out",
-          "lg:sticky lg:top-0 lg:h-screen lg:translate-x-0",
-          collapsed && "lg:w-[76px]",
+          "group fixed inset-y-0 left-0 z-40 w-72 shrink-0 bg-[#1C4378] text-slate-100 flex flex-col transition-transform duration-200 ease-in-out",
+          "lg:sticky lg:top-0 lg:h-screen lg:translate-x-0 lg:data-[collapsed]:w-[76px]",
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
         {/* Brand Header */}
-        <div
-          className={cn(
-            "h-20 flex items-center gap-3 border-b border-[#6FC7DA]/30 pl-16 pr-5 lg:pl-5",
-            collapsed && "lg:flex-col lg:justify-center lg:gap-1 lg:px-2"
-          )}
-        >
-          <Image
-            src="/brand/alimentos-sevilla-logo.png"
-            alt="Alimentos Sevilla"
-            width={700}
-            height={315}
-            priority
-            className={cn("h-9 w-auto shrink-0", collapsed && "lg:h-6")}
+        <div className="h-20 flex items-center gap-3 border-b border-[#6FC7DA]/30 pl-16 pr-5 lg:pl-5 lg:group-data-[collapsed]:flex-col lg:group-data-[collapsed]:justify-center lg:group-data-[collapsed]:gap-1 lg:group-data-[collapsed]:px-2">
+          <BrandLogo
+            displayWidth={80}
+            className="h-9 w-auto shrink-0 lg:group-data-[collapsed]:h-6"
           />
-          <div className={cn("min-w-0 flex-1", hideOnCollapse)}>
+          <div className="min-w-0 flex-1 lg:group-data-[collapsed]:hidden">
             <p className="truncate text-sm font-semibold leading-tight text-white">
               Gestión Técnica
             </p>
@@ -202,22 +156,13 @@ export function Sidebar({ user }: SidebarProps) {
             className="hidden lg:flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[#B9E8F1]/80 transition-colors hover:bg-white/10 hover:text-white"
             aria-label={collapsed ? "Expandir menú" : "Contraer menú"}
           >
-            {collapsed ? (
-              <ChevronRight className="h-4 w-4" />
-            ) : (
-              <ChevronLeft className="h-4 w-4" />
-            )}
+            <ChevronLeft className="h-4 w-4 transition-transform group-data-[collapsed]:rotate-180" />
           </button>
         </div>
 
         {/* Navigation */}
-        <nav className={cn("flex-1 space-y-1 overflow-y-auto px-3 py-5", collapsed && "lg:px-2")}>
-          <div
-            className={cn(
-              "px-3 pb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[#B9E8F1]/50",
-              hideOnCollapse
-            )}
-          >
+        <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-5 lg:group-data-[collapsed]:px-2">
+          <div className="px-3 pb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[#B9E8F1]/50 lg:group-data-[collapsed]:hidden">
             Navegación
           </div>
           {navItems.map((item) => {
@@ -231,8 +176,7 @@ export function Sidebar({ user }: SidebarProps) {
                 title={collapsed ? item.title : undefined}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  "flex items-center justify-between gap-3 rounded-full border px-4 py-2.5 text-sm transition-colors",
-                  collapsed && "lg:justify-center lg:px-0",
+                  "flex items-center justify-between gap-3 rounded-full border px-4 py-2.5 text-sm transition-colors lg:group-data-[collapsed]:justify-center lg:group-data-[collapsed]:px-0",
                   isActive
                     ? "border-[#6FC7DA] bg-[#6FC7DA]/15 font-medium text-white"
                     : "border-transparent text-[#B9E8F1]/80 hover:bg-white/5 hover:text-white"
@@ -245,14 +189,13 @@ export function Sidebar({ user }: SidebarProps) {
                       isActive ? "text-white" : "text-[#B9E8F1]/70"
                     )}
                   />
-                  <span className={cn("truncate", hideOnCollapse)}>{item.title}</span>
+                  <span className="truncate lg:group-data-[collapsed]:hidden">{item.title}</span>
                 </div>
                 {item.badge && (
                   <span
                     className={cn(
-                      "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium",
-                      isActive ? "bg-[#6FC7DA]/30 text-white" : "bg-white/10 text-[#B9E8F1]/70",
-                      hideOnCollapse
+                      "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium lg:group-data-[collapsed]:hidden",
+                      isActive ? "bg-[#6FC7DA]/30 text-white" : "bg-white/10 text-[#B9E8F1]/70"
                     )}
                   >
                     {item.badge}
@@ -264,14 +207,9 @@ export function Sidebar({ user }: SidebarProps) {
         </nav>
 
         {/* User Card & Logout */}
-        <div className={cn("border-t border-[#6FC7DA]/30 p-3", collapsed && "lg:px-2")}>
-          <div
-            className={cn(
-              "flex items-center gap-2 rounded-2xl border border-[#6FC7DA]/30 bg-white/5 px-4 py-3",
-              collapsed && "lg:flex-col lg:px-0 lg:py-2"
-            )}
-          >
-            <div className={cn("min-w-0 flex-1", hideOnCollapse)}>
+        <div className="border-t border-[#6FC7DA]/30 p-3 lg:group-data-[collapsed]:px-2">
+          <div className="flex items-center gap-2 rounded-2xl border border-[#6FC7DA]/30 bg-white/5 px-4 py-3 lg:group-data-[collapsed]:flex-col lg:group-data-[collapsed]:px-0 lg:group-data-[collapsed]:py-2">
+            <div className="min-w-0 flex-1 lg:group-data-[collapsed]:hidden">
               <p className="truncate text-sm font-medium text-white">{user.name}</p>
               <p className="truncate text-[11px] text-[#B9E8F1]/60">{user.email}</p>
               <span
@@ -285,15 +223,16 @@ export function Sidebar({ user }: SidebarProps) {
                 {RoleLabels[user.role] || user.role}
               </span>
             </div>
-            <button
-              type="button"
-              onClick={handleLogout}
-              title="Cerrar sesión"
-              aria-label="Cerrar sesión"
-              className="flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-[#B9E8F1]/80 transition-colors hover:bg-red-500/15 hover:text-red-300"
-            >
-              <LogOut className="h-4 w-4" />
-            </button>
+            <form action={logoutAction}>
+              <button
+                type="submit"
+                title="Cerrar sesión"
+                aria-label="Cerrar sesión"
+                className="flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-[#B9E8F1]/80 transition-colors hover:bg-red-500/15 hover:text-red-300"
+              >
+                <LogOut className="h-4 w-4" />
+              </button>
+            </form>
           </div>
         </div>
       </aside>
