@@ -32,7 +32,7 @@ export default async function ProductoDetallePage({ params }: PageProps) {
   if (!product) notFound();
 
   const canWrite = hasRole(user.role, ["ADMIN", "R_AND_D"]);
-  const canApprove = hasRole(user.role, ["ADMIN", "QUALITY"]);
+  const canApprove = hasRole(user.role, ["ADMIN"]);
   const canReject = hasRole(user.role, ["ADMIN"]);
 
   return (
@@ -102,6 +102,11 @@ export default async function ProductoDetallePage({ params }: PageProps) {
 
         <ProductVersionPanel
           productId={product.id}
+          presentations={product.presentations.map((pres) => ({
+            id: pres.id,
+            gramajeNeto: Number(pres.gramajeNeto),
+            porcionDeclarada: pres.porcionDeclarada === null ? null : Number(pres.porcionDeclarada),
+          }))}
           formulations={product.formulations.map((f) => ({
             id: f.id,
             baseCalculo: f.baseCalculo.toString(),

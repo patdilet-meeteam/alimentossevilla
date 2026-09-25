@@ -326,6 +326,9 @@ model FormulationIngredient {
   ingredientId          String
   ingredient            Ingredient @relation(fields: [ingredientId], references: [id])
   porcentajeParticipacion Decimal @db.Decimal(7, 4)
+  // Cantidad de la receta fuente. Es canónica para cálculos CTN cuando existe;
+  // el porcentaje es la representación reconciliada para la formulación.
+  cantidadCanonica       Decimal? @db.Decimal(14, 6)
   createdAt             DateTime @default(now())
   updatedAt             DateTime @updatedAt
 

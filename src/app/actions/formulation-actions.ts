@@ -19,13 +19,14 @@ import {
   type TransitionVersionInput,
 } from "@/lib/validations/products";
 import { Role } from "@prisma/client";
+import { Prisma } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 
 const WRITE_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D];
 const READ_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D, Role.QUALITY, Role.VIEWER];
-const APPROVE_ROLES: Role[] = [Role.ADMIN, Role.QUALITY];
-// OQ-021 leaves the non-admin rejection permission unresolved. ADMIN is the
-// only role common to both conflicting SPEC-003 permission tables.
+const APPROVE_ROLES: Role[] = [Role.ADMIN];
+// El Director Técnico (ADMIN) es la única autoridad confirmada para aprobar
+// o devolver una versión a corrección.
 const REJECT_ROLES: Role[] = [Role.ADMIN];
 
 class VersionLockedError extends Error {
@@ -152,16 +153,18 @@ export async function addIngredientToVersion(rawInput: AddIngredientToVersionInp
       formulationVersionId: input.formulationVersionId,
       ingredientId: input.ingredientId,
       porcentajeParticipacion: input.porcentajeParticipacion,
+      cantidadCanonica: input.cantidadCanonica ?? null,
     },
     update: {
       porcentajeParticipacion: input.porcentajeParticipacion,
+      cantidadCanonica: input.cantidadCanonica ?? null,
     },
   });
 
   await recordAuditEvent({
     actorId: user.id, actorEmail: user.email,
     action: "formulation_ingredient.upsert", entity: "FormulationIngredient", entityId: created.id,
-    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion },
+    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
   });
 
   revalidatePath(`/productos/${version.formulation.productId}`);
@@ -184,13 +187,13 @@ export async function updateIngredientPercentage(rawInput: UpdateIngredientPerce
         ingredientId: input.ingredientId,
       },
     },
-    data: { porcentajeParticipacion: input.porcentajeParticipacion },
+    data: { porcentajeParticipacion: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
   });
 
   await recordAuditEvent({
     actorId: user.id, actorEmail: user.email,
     action: "formulation_ingredient.update", entity: "FormulationIngredient", entityId: updated.id,
-    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion },
+    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
   });
 
   revalidatePath(`/productos/${version.formulation.productId}`);
@@ -233,6 +236,14 @@ export async function submitForReview(rawInput: TransitionVersionInput) {
   const version = await loadVersionOrThrow(input.formulationVersionId);
   if (version.estado !== "DRAFT") {
     throw new Error(`Solo se pueden enviar a revisión versiones en estado DRAFT. Estado actual: ${version.estado}.`);
+  }
+
+  const percentageSum = await db.formulationIngredient.aggregate({
+    where: { formulationVersionId: version.id },
+    _sum: { porcentajeParticipacion: true },
+  });
+  if (!percentageSum._sum.porcentajeParticipacion?.equals(new Prisma.Decimal(100))) {
+    throw new Error("La suma de porcentajes debe ser exactamente 100,00 % antes de enviar a revisión.");
   }
 
   const updated = await db.formulationVersion.update({

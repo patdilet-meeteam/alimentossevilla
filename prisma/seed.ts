@@ -20,6 +20,11 @@ const NUTRIENTS_SEED = [
   { key: "VITAMIN_C", unit: "MG" as NutrientUnit, displayName: "Vitamina C", isRequiredOnLabel: false },
   { key: "CALCIUM", unit: "MG" as NutrientUnit, displayName: "Calcio", isRequiredOnLabel: false },
   { key: "IRON", unit: "MG" as NutrientUnit, displayName: "Hierro", isRequiredOnLabel: false },
+  { key: "MOISTURE", unit: "G" as NutrientUnit, displayName: "Humedad", isRequiredOnLabel: false },
+  { key: "CHOLESTEROL", unit: "MG" as NutrientUnit, displayName: "Colesterol", isRequiredOnLabel: false },
+  { key: "STARCH", unit: "G" as NutrientUnit, displayName: "Almidón", isRequiredOnLabel: false },
+  { key: "VITAMIN_D", unit: "MCG" as NutrientUnit, displayName: "Vitamina D", isRequiredOnLabel: false },
+  { key: "ZINC", unit: "MG" as NutrientUnit, displayName: "Zinc", isRequiredOnLabel: false },
 ];
 
 async function main() {

@@ -10,8 +10,8 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 - **Tipo:** Hoja de cálculo Excel (.xlsx).
 - **Propósito:** Fuente de referencia para la composición nutricional de las materias primas y aditivos utilizados en formulaciones.
 - **Contenido:** Contiene tablas de nutrientes (proteína, grasa total, grasa saturada, carbohidratos, azúcares totales, azúcares añadidos, sodio, fibra dietaria, vitaminas y minerales) por 100 gramos de ingrediente.
-- **Observaciones y Ambigüedad:** El archivo contiene múltiples pestañas con datos provenientes de diferentes fuentes (análisis de laboratorio, fichas de proveedores, tablas de composición de alimentos).
-- **Open Question Asociada:** [OQ-001](OPEN-QUESTIONS.md#oq-001) — Pendiente definir cuál pestaña o fuente tiene precedencia oficial al resolver valores nutricionales por ingrediente.
+- **Implementación vigente:** La carga protegida lee la hoja `TN OFICIAL` (123 filas verificadas el 23 de septiembre de 2026). El archivo no contiene códigos SIESA: solo puede versionar perfiles de ingredientes maestros activos que coincidan de forma única por nombre o nombre genérico; no crea ingredientes.
+- **Trazabilidad:** Cada perfil importado conserva la referencia de fuente de la fila, se registra en auditoría y crea una nueva versión. Un perfil activo de laboratorio o literatura no se sustituye automáticamente.
 
 ---
 
@@ -28,8 +28,8 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 - **Tipo:** Documento de muestra de Textos Legales (.docx / .pdf).
 - **Propósito:** Ejemplo del documento técnico y legal requerido para la aprobación de rótulos ante entidades sanitarias y clientes comerciales.
 - **Contenido:** Denominación legal del alimento, lista descendente de ingredientes, declaración cuantitativa de ingredientes (QUID si aplica), advertencias de alérgenos, tabla de información nutricional en formato normativo, modo de conservación y vida útil.
-- **Observaciones:** Servirá de modelo de referencia para la plantilla del generador de documentos técnicos en la Semana 6.
-- **Open Question Asociada:** [OQ-016](OPEN-QUESTIONS.md#oq-016) — Pendiente confirmar si este formato representa la plantilla única oficial.
+- **Observaciones:** El archivo físico `TL - Salchicha desayuno Premium x 480 g - v4.doc.pdf` fue revisado visualmente. Contiene cara frontal, cara posterior, lista legal, alérgenos, conservación, uso, registro sanitario, tabla nutricional, dimensiones, tipografía, código de barras y responsable de elaboración. Presenta una diferencia de valores y sellos frente al cálculo vigente de `TN OFICIAL`; ver OQ-030.
+- **Open Question Asociada:** [OQ-016](OPEN-QUESTIONS.md#oq-016) está confirmada como guía estructural; la discrepancia de contenido queda en [OQ-030](OPEN-QUESTIONS.md#oq-030).
 
 ---
 
@@ -58,6 +58,6 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 |---|---|---|---|---|
 | **DS-01** | Banco Nutricional.xlsx | Módulo de Ingredientes (Semana 2) | Esporádica / Bajo demanda | Pendiente resolución OQ-001 |
 | **DS-02** | CTN v11.xlsx | Motor de Cálculo Nutricional (Semana 4) | Candidato a caso de calibración | Pendiente resolución OQ-022/023/024 |
-| **DS-03** | TL 480g | Módulo de Documentos Técnicos (Semana 6) | Plantilla base de salida | Pendiente resolución OQ-016 |
+| **DS-03** | TL 480g | Módulo de Documentos Técnicos (Semana 6) | Plantilla base de salida | Revisada; discrepancia de contenido pendiente OQ-030 |
 | **DS-04** | AR 480g | N/A (Referencia visual) | N/A | Fuera de alcance |
 | **DS-05** | Costos Junio | Módulo de Costos (Semana 5) | Mensual (Carga de archivo) | Pendiente resolución OQ-012/13/14 |

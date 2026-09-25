@@ -8,9 +8,9 @@ Este documento registra el estado comprobable del proyecto. Cada actualización 
 |---|---|---|---:|---|---|
 | SPEC-001 | Foundation: autenticación, roles, auditoría, Prisma y PostgreSQL | Cerrada | 7,0 h | Integrada previamente en `main` | Ninguno conocido para este alcance |
 | SPEC-002 | Ingredientes y perfiles nutricionales | Cerrada | 5,5 h | Integrada previamente en `main` | Ninguno conocido para este alcance |
-| SPEC-003 | Productos, presentaciones, formulaciones y versionamiento | Cierre técnico validado | 6,0 h | `db:generate`, `db:deploy`, typecheck, lint, 62/62 tests y build Webpack correctos | OQ-021 para la autorización de rechazo funcional |
-| SPEC-004 | Cálculo nutricional y sellos | Preparación técnica validada | 8,5 h | CTN v11 inspeccionado; patrón de ponderación identificado; control de preparación de perfiles; 79/79 tests y build Webpack correctos | Requiere CTN oficial, contrato de cálculo, mapeo de ingredientes y normativa confirmada |
-| SPEC-005 | Costos e importador mensual SIESA | Cierre técnico validado | 5,5 h | `db:deploy`, typecheck, lint, 76/76 tests y build Webpack correctos | OQ-025 bloquea aplicar archivos con códigos duplicados; requiere revisión de Finanzas |
+| SPEC-003 | Productos, presentaciones, formulaciones y versionamiento | Ajustado a respuestas funcionales | 6,0 h | Validación exacta `100,00 %`; aprobación y devolución restringidas a Director Técnico | Pendiente validación integrada contra PostgreSQL |
+| SPEC-004 | Cálculo nutricional y sellos | Cierre técnico local validado | 9,5 h | Motor decimal; CTN; cantidades canónicas; perfiles `TN OFICIAL`; `FAT_TRANS=0` confirmado y auditado; v3 aprobada; UI verificada con 2 sellos | Pendiente aceptación funcional/regulatoria del cliente |
+| SPEC-005 | Costos e importador mensual SIESA | Ajustado a respuestas funcionales | 5,5 h | Se conserva trazabilidad y se usa la última fila/costo duplicado | Pendiente validación integrada contra PostgreSQL |
 | SPEC-006 | Fichas técnicas, textos legales y cierre | Preparación técnica parcial validada | 7,5 h | Previsualización de ingredientes y alérgenos desde formulación aprobada; 80/80 tests y build Webpack correctos | Requiere plantilla final, flujo de emisión y muestras aprobadas de salida |
 
 **Estimación base:** 40,0 h. **Alcance técnico completado:** 24,0 h (SPEC-001 a SPEC-003 y SPEC-005). **Estimación base restante:** 16,0 h, sin incluir decisiones funcionales, correcciones de datos ni aceptación humana.
@@ -46,9 +46,7 @@ El build con Turbopack no fue aceptado como evidencia porque el entorno restring
 
 ### Pendiente funcional
 
-- **OQ-021:** confirmar quién puede ejecutar `IN_REVIEW → DRAFT`.
-  - Mientras no exista respuesta del cliente, la aplicación permite esa transición solo a `ADMIN`, el único rol común entre las dos definiciones contradictorias de la SPEC.
-  - No se debe ampliar ese permiso a `QUALITY` o `R_AND_D` sin confirmación.
+- **Decisión confirmada:** `IN_REVIEW → DRAFT` y `IN_REVIEW → APPROVED` solo pueden ser ejecutadas por el Director Técnico (`ADMIN`).
 
 ### Estado Git
 
@@ -57,17 +55,37 @@ El build con Turbopack no fue aceptado como evidencia porque el entorno restring
 - SPEC-003 permanece sin commit, push ni despliegue.
 - Los cambios locales preexistentes de documentación, dashboard, login y header se preservan y no se atribuyen a SPEC-003.
 
-## Próximo hito: cierre de insumos para SPEC-004
+## Próximo hito: sellos regulatorios de SPEC-004
 
-Antes de escribir código para el motor nutricional, obtener y registrar:
+El motor ya aplica las respuestas funcionales confirmadas: calcula nutrientes desde cantidades canónicas sin ajustar nutrientes por merma; suma grasa saturada de todos los ingredientes; y persiste porcentajes exactos a `100,00`.
 
-1. Confirmación explícita de que CTN v11 es la fuente oficial o su reemplazo oficial.
-2. Archivo(s) CTN de referencia completos, con fórmulas y resultados esperados para casos de prueba.
-3. Regla exacta de rendimiento/merma, unidades y momento de aplicación en el cálculo.
-4. Reglas oficiales de redondeo, cifras significativas y valores por 100 g / porción.
-5. Normativa vigente, umbrales y fechas de aplicación de sellos.
+### Implementado (23-sep-2026)
 
-Sin estos insumos, SPEC-004 no debe implementar fórmulas, límites regulatorios ni aproximaciones.
+**Umbrales normativa colombiana**: Resolución 810 de 2021 modificada por Resolución 2492 de 2022, Artículo 32, Tabla 17:
+
+| Nutriente | Umbral | Referencia |
+|-----------|--------|------------|
+| Sodio | ≥ 300 mg/100g | Fijo |
+| Azúcares | ≥ 10% energía total | Por kcal |
+| Grasas saturadas | ≥ 10% energía total | Por kcal |
+| Grasas trans | ≥ 1% energía total | Por kcal |
+
+**Función implementada**: `calculateFormulationSeals(versionId, portionGrams)` en `nutrition-actions.ts`.
+
+**Evaluación sobre v3 APROBADA** (Salchicha Desayuno Premium):
+
+| Nutriente | Valor/100g | % Energía | Umbral | Sello |
+|-----------|------------|-----------|--------|-------|
+| Sodio | 613 mg | — | 300 mg | 🔴 EXCESO_SODIO |
+| Azúcares | 0.66 g | 1.83% | 10% | ✅ |
+| Grasa saturada | 3.51 g | 21.70% | 10% | 🔴 EXCESO_GRASAS_SATURADAS |
+| Grasa trans | 0 g | 0% | 1% | ✅ |
+
+**Resultado**: 2 sellos activos sobre la formulación vigente.
+
+**Verificación visual (24-sep-2026)**: la pantalla `/productos/prod_0019` muestra el botón **Calcular sellos** y, al ejecutarlo sobre v3 `APPROVED`, presenta `EXCESO EN SODIO` y `EXCESO EN GRASAS SATURADAS`, con valores por 100 g y umbrales.
+
+**Evidencia integrada**: PostgreSQL local saludable en `localhost:5439`, migraciones sin pendientes y pruebas de workflow existentes `8/8` correctas. La regularización de `FAT_TRANS=0` afectó 141 perfiles `BANCO_ALIMENTOS` y quedó auditada.
 
 ## SPEC-005 — Estado detallado
 
@@ -98,8 +116,8 @@ Las 3 pruebas de integración de SPEC-005 verifican persistencia, auditoría, ap
 
 ### Pendiente funcional
 
-- **OQ-025:** Finanzas debe definir cómo resolver un mismo código con más de un costo o unidad. Hasta entonces, ese caso se marca `DUPLICATE_CONFLICT`, es visible para revisión y bloquea aplicar la importación.
-- La importación real del archivo canónico y su aprobación requieren al usuario `ADMIN` que representa a Finanzas; no se cargó ni aplicó ningún archivo de cliente durante la validación técnica.
+- **Decisión confirmada:** ante un código repetido se conservan todas las filas y se usa la última asignación del archivo. El duplicado no bloquea por sí solo aplicar la importación.
+- La importación real del archivo canónico y su aprobación requieren al usuario `ADMIN`; no se cargó ni aplicó ningún archivo de cliente durante la validación técnica.
 
 La preparación de SPEC-004 quedó documentada en `docs/specs/SPEC-004-nutritional-calculation-and-warning-seals.md`, junto con OQ-022, OQ-023 y OQ-024.
 

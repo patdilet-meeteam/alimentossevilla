@@ -3,7 +3,7 @@ import { readSheet } from "read-excel-file/node";
 export const SUPPORTED_COST_UNITS = ["KG", "UND", "MTR"] as const;
 export type SupportedCostUnit = (typeof SUPPORTED_COST_UNITS)[number];
 export type ParsedCostCodeType = "INSUMO" | null;
-export type ParsedCostRowStatus = "VALID" | "INVALID" | "DUPLICATE_CONFLICT";
+export type ParsedCostRowStatus = "VALID" | "INVALID";
 
 export interface ParsedCostRow {
   sourceRow: number;
@@ -103,9 +103,16 @@ export function parseCostRows(rawRows: readonly (readonly unknown[])[]): ParsedC
   for (const [code, rows] of rowsByCode) {
     if (rows.length < 2) continue;
     duplicateCodes.push(code);
+    // Regla funcional confirmada: cuando un código aparece varias veces, el
+    // último costo asignado en el archivo es el vigente. Se conservan todas
+    // las filas para trazabilidad, sin convertir el duplicado en un bloqueo.
+    const selectedRow = rows.at(-1)!;
     for (const row of rows) {
-      row.status = "DUPLICATE_CONFLICT";
-      row.issues.push(`Código repetido ${rows.length} veces en el archivo`);
+      row.issues.push(
+        row === selectedRow
+          ? `Código repetido ${rows.length} veces; se usa este último costo asignado`
+          : `Código repetido ${rows.length} veces; reemplazado por la última asignación`,
+      );
     }
   }
 

@@ -37,7 +37,9 @@ export const auth = betterAuth({
   },
   session: {
     expiresIn: 8 * 60 * 60, // 8 horas
-    updateAge: 60 * 60, // 1 hora
+    // Renovación en cada validación de sesión para conservar disponibilidad
+    // continua mientras el usuario permanezca activo.
+    updateAge: 0,
   },
   secret:
     process.env.BETTER_AUTH_SECRET ||

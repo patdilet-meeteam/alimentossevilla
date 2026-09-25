@@ -186,7 +186,6 @@ export async function createCostImport(formData: FormData): Promise<CostImportAc
 
 function mapItemStatus(row: ParsedCostRow, createdIngredient: boolean): CostImportItemStatus {
   if (row.status === "INVALID") return CostImportItemStatus.INVALID;
-  if (row.status === "DUPLICATE_CONFLICT") return CostImportItemStatus.DUPLICATE_CONFLICT;
   return createdIngredient
     ? CostImportItemStatus.CREATED_PENDING_REVIEW
     : CostImportItemStatus.MATCHED;
@@ -284,11 +283,16 @@ export async function listFormulationCostSummaries() {
         const candidates = (itemsByIngredient.get(entry.ingredientId) ?? []).filter(
           (item) => item.status === CostImportItemStatus.MATCHED || item.status === CostImportItemStatus.CREATED_PENDING_REVIEW,
         );
-        if (candidates.length !== 1) {
-          issues.push(`${entry.ingredient.name}: ${candidates.length ? "costo ambiguo" : "sin costo"}`);
+        if (candidates.length === 0) {
+          issues.push(`${entry.ingredient.name}: sin costo`);
           continue;
         }
-        const item = candidates[0];
+        // La fila posterior del archivo es la última asignación de costo
+        // confirmada por Finanzas. Las filas previas quedan persistidas como
+        // evidencia del archivo, pero no participan en el cálculo.
+        const item = candidates.reduce((latest, candidate) =>
+          candidate.sourceRow > latest.sourceRow ? candidate : latest,
+        );
         if (item.unit !== "KG") {
           issues.push(`${entry.ingredient.name}: unidad ${item.unit ?? "ausente"}`);
           continue;

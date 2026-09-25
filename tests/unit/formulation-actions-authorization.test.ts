@@ -29,7 +29,7 @@ vi.mock("next/cache", () => ({
   revalidatePath: mocks.revalidatePath,
 }));
 
-import { rejectToDraft } from "@/app/actions/formulation-actions";
+import { approveVersion, rejectToDraft } from "@/app/actions/formulation-actions";
 
 describe("Unit: SPEC-003 rejection authorization", () => {
   beforeEach(() => {
@@ -49,6 +49,20 @@ describe("Unit: SPEC-003 rejection authorization", () => {
 
     expect(mocks.findUnique).not.toHaveBeenCalled();
     expect(mocks.update).not.toHaveBeenCalled();
+  });
+
+  it("denies QUALITY approval because only the Director Técnico may approve", async () => {
+    mocks.getCurrentUser.mockResolvedValue({
+      id: "quality-1",
+      email: "quality@alimentossevilla.com",
+      role: "QUALITY",
+    });
+
+    await expect(
+      approveVersion({ formulationVersionId: "version-1", motivo: "Aprobar" }),
+    ).rejects.toThrow("Acceso denegado");
+
+    expect(mocks.findUnique).not.toHaveBeenCalled();
   });
 
   it("allows ADMIN to return an in-review version to draft and audits it", async () => {

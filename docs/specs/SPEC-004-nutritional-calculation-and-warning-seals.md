@@ -1,7 +1,7 @@
 # SPEC-004 — Cálculo Nutricional y Sellos de Advertencia
 
 > **Semana 4** del cronograma de Alimentos Sevilla S.A.S.
-> **Estado:** `preparación documentada — implementación bloqueada por OQ-022, OQ-023 y OQ-024`.
+> **Estado:** `cierre técnico local validado; pendiente aceptación funcional y regulatoria del cliente`.
 > **Fecha de preparación:** 14 de septiembre de 2026.
 
 ---
@@ -21,7 +21,7 @@ El archivo `CTN - Salchicha Desayuno Premium - v11.xlsx` contiene:
 
 La auditoría de fórmulas identificó que los aportes ponderados siguen el patrón `nutriente del ingrediente × porcentaje de participación`. Después se suman por nutriente. La hoja aplica la merma de cocción y frío (`11 %`) como humedad × `0,89` y demás nutrientes × `1,11`; los resultados ajustados pasan a la hoja `Análisis`, que redondea macronutrientes antes de calcular energía y escala los resultados por gramos de porción.
 
-Sin embargo, la hoja `CTN` titulada como salchicha toma códigos desde la hoja oculta `Chorizo con ternera (3)`. Además, la evaluación del sello de grasa saturada usa solo el aporte del tocino (`CTN!AA6`) y no el total de grasa saturada. Estas inconsistencias impiden usar el archivo como fixture normativo definitivo hasta resolver OQ-023 y OQ-024.
+Las respuestas del cliente corrigen dos comportamientos del ejemplo: la merma se aplica solo a cantidades totales, pues la pérdida es agua y los nutrientes permanecen en el producto final; y la grasa saturada debe sumar el aporte de todos los ingredientes, no solo el tocino. Para Salchicha Desayuno Premium, los nombres canónicos son `COLOR NATURAL ROJO AC150` y `HUMO TRUSMOKE OIL EX` del archivo de junio.
 
 Esto confirma que existe un caso de referencia útil para pruebas de paridad. No confirma por sí mismo las reglas de cálculo, redondeo, retención o los parámetros regulatorios que el código debe implementar.
 
@@ -34,24 +34,29 @@ Esto confirma que existe un caso de referencia útil para pruebas de paridad. No
 5. Pruebas de paridad contra el caso CTN oficial, incluyendo valores de borde y redondeos.
 6. Evaluación de sellos a partir de parámetros regulatorios versionados y vigentes.
 
-## 4. No implementar antes de la confirmación
+## 4. Reglas confirmadas para implementar
 
-- Fórmulas de merma, concentración o retención de nutrientes.
-- Reglas de redondeo, cifras significativas o conversión de unidades.
+- Replicar 1:1 la secuencia y precisión de los archivos Excel compartidos.
+- Aplicar merma únicamente a cantidades totales del proceso; no concentrar ni reducir nutrientes por merma.
+- Sumar el aporte ponderado de grasa saturada de todos los ingredientes.
+- Exigir exactamente `100,00 %` al enviar una formulación a revisión, sin tolerancia ni redondeo de validación.
+- Importar porcentajes desde cantidades canónicas, no desde porcentajes visibles redondeados; la distribución determinista del residuo garantiza `100,0000 %` persistido y conserva el origen.
+
+## 5. Fuera de alcance hasta contar con insumos aprobados
+
 - Umbrales de sellos, valores diarios de referencia o leyendas regulatorias.
 - Selección automática de una fuente nutricional ante perfiles múltiples.
-- Carga masiva de productos o ingredientes desde el CTN.
+- Carga masiva no auditada de productos o ingredientes desde el CTN.
 
-## 5. Preguntas que bloquean la implementación
+## 6. Insumos pendientes para la paridad automatizada
 
 | Pregunta | Decisión requerida | Riesgo si se infiere |
 |---|---|---|
-| OQ-022 | Confirmar CTN v11 como patrón oficial vigente | Paridad contra un caso no canónico |
-| OQ-023 | Entregar o validar el orden matemático de cálculo | Resultados nutricionales incorrectos |
-| OQ-024 | Definir fuente, hoja y mapeo canónico de ingredientes | Asociar datos nutricionales a materia prima equivocada |
-| OQ-010 | Definir quién actualiza parámetros regulatorios | Permiso funcional no autorizado |
+| Insumo | Uso requerido | Riesgo si falta |
+| Archivo Excel fuente | Fixture de paridad automatizada | No se puede demostrar réplica 1:1 |
+| Umbrales y vigencia normativa | Evaluación de sellos | No se pueden inventar límites |
 
-## 6. Criterios de aceptación propuestos para validación humana
+## 7. Criterios de aceptación propuestos para validación humana
 
 - El cliente reconoce el caso CTN seleccionado y sus resultados esperados.
 - Cada resultado calculado conserva referencia a versión de formulación, perfiles nutricionales y parámetros usados.
@@ -59,9 +64,31 @@ Esto confirma que existe un caso de referencia útil para pruebas de paridad. No
 - Cambiar una formulación aprobada requiere una nueva versión; los resultados históricos no se modifican.
 - Los sellos se calculan solo con la norma y los umbrales vigentes confirmados.
 
-## 7. Próximo paso verificable
+## 8. Implementación inicial
 
-Recibir una respuesta del cliente para OQ-022 a OQ-024 y un caso CTN oficial con resultados esperados que se pueda convertir en fixture de prueba. Hasta entonces, el avance permitido es documentación, inventario de datos y diseño técnico desacoplado.
+- `src/lib/nutrition/nutrition-calculator.ts` calcula aportes por 100 g y por porción desde cantidades canónicas, usando aritmética decimal.
+- `src/lib/nutrition/ctn-import.ts` lee el CSV CTN y genera un plan de importación que se detiene cuando `TOTAL` aparece como descripción o código, e ignora fórmulas post-merma y secciones posteriores del libro.
+- `importCtnCsvToDraft` solo crea una nueva versión `DRAFT` si cada fila del CTN encuentra un ingrediente activo existente por código o nombre canónico; registra cantidades, porcentajes y mapeos aplicados en auditoría. No crea ingredientes ni perfiles nutricionales de forma implícita.
+- `importNutritionalBankProfiles` lee exclusivamente la hoja `TN OFICIAL` del Banco Nutricional y versiona perfiles solo para ingredientes maestros activos con coincidencia única por nombre o nombre genérico. El Banco no aporta código SIESA: las filas sin coincidencia se omiten y nunca crean ingredientes. Los perfiles activos de laboratorio o literatura quedan protegidos; cada importación deja una nueva versión y auditoría.
+- El detalle de producto presenta la carga `.csv` únicamente a I+D y Director Técnico; el mensaje identifica ingredientes faltantes sin escribir cambios parciales.
+- La migración `20260923010000_spec_004_canonical_quantities` incorpora `cantidadCanonica` nullable en `FormulationIngredient`, conservando versiones históricas que solo disponen de porcentaje.
+- La reconciliación de porcentajes persiste exactamente `100,0000 %`, pero los nutrientes se calculan contra las cantidades originales de alta precisión; por ello la normalización de almacenamiento no modifica los resultados nutricionales.
+- La prueba `tests/unit/nutrition-calculator.test.ts` cubre el caso patrón de 18 ingredientes de Salchicha Desayuno Premium y verifica cantidad total, grasa, grasa saturada, proteína, sodio y grasa saturada por porción, sin multiplicador de merma.
+
+La carga CTN y la migración ya fueron verificadas localmente. La v3 `APPROVED` de Salchicha Desayuno Premium preserva 18 ingredientes, `487,948` de cantidad canónica y `100,0000 %`. La comparación CTN detectó diferencias frente a algunos perfiles activos. Según [OQ-028](../OPEN-QUESTIONS.md#oq-028), prevalece `TN OFICIAL`: la comparación CTN conserva evidencia histórica, pero no exige paridad exacta ni autoriza sustituir perfiles nutricionales. La transición `DRAFT → IN_REVIEW → APPROVED` y la corrección previa de la importación quedaron registradas en `AuditEvent`.
+
+## 9. Evidencia de cierre técnico local
+
+- PostgreSQL local saludable en `localhost:5439`; migraciones sin pendientes.
+- La v3 `APPROVED` `cmueo3rx80001eo3cg2nd8zb7` contiene 18 ingredientes y perfiles activos completos para los nutrientes críticos.
+- La ausencia de `FAT_TRANS` en `TN OFICIAL` se regularizó como `0 g/100 g` según OQ-029; 141 perfiles activos quedaron actualizados y auditados.
+- El cálculo produce `613,04 mg/100 g` de sodio y `3,51 g/100 g` de grasa saturada, con sellos activos de sodio y grasas saturadas.
+- La pantalla de producto fue verificada visualmente y muestra ambos sellos, valores y umbrales.
+- Pruebas de workflows integrados existentes: `8/8`; pruebas unitarias de cálculo/sellos: `7/7`; typecheck y diff check correctos.
+
+## 10. Pendiente de aceptación
+
+La aceptación final requiere que el cliente valide los textos, umbrales y vigencia normativa aplicables al rotulado. La implementación no constituye por sí sola aprobación sanitaria ni reemplaza la revisión regulatoria.
 
 ### Respuesta mínima solicitada al cliente
 

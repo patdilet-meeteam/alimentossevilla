@@ -117,6 +117,7 @@ export const addIngredientToVersionSchema = z.object({
     .finite()
     .min(0, "El porcentaje no puede ser negativo")
     .max(100, "El porcentaje no puede exceder 100"),
+  cantidadCanonica: positiveDecimal.optional().nullable(),
 });
 
 export const updateIngredientPercentageSchema = z.object({
@@ -127,6 +128,7 @@ export const updateIngredientPercentageSchema = z.object({
     .finite()
     .min(0)
     .max(100),
+  cantidadCanonica: positiveDecimal.optional().nullable(),
 });
 
 export const removeIngredientFromVersionSchema = z.object({

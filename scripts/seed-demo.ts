@@ -97,8 +97,6 @@ async function main() {
         const status = !row.sourceCode.startsWith("INVALID-") &&
                        row.status === "VALID" && resolved
           ? CostImportItemStatus.MATCHED
-          : row.status === "DUPLICATE_CONFLICT"
-          ? CostImportItemStatus.DUPLICATE_CONFLICT
           : CostImportItemStatus.INVALID;
 
         await tx.costImportItem.create({

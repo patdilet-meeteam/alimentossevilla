@@ -153,7 +153,7 @@ model FormulationIngredient {
 
 Se agregan back-relations en `User` (auditEvents ya está; falta `products`, `formulationVersionsAprobadas`) y en `AuditEvent` (`formulationVersions`).
 
-## 4. Permisos (baseline hasta OQ-011)
+## 4. Permisos confirmados
 
 | Acción | ADMIN | R_AND_D | QUALITY | VIEWER |
 |---|:-:|:-:|:-:|:-:|
@@ -164,8 +164,8 @@ Se agregan back-relations en `User` (auditEvents ya está; falta `products`, `fo
 | Crear versión DRAFT | ✅ | ✅ | ❌ | ❌ |
 | Editar versión DRAFT | ✅ | ✅ | ❌ | ❌ |
 | Pasar DRAFT → IN_REVIEW | ✅ | ✅ | ❌ | ❌ |
-| Pasar IN_REVIEW → APPROVED | ✅ | ❌ | ✅ | ❌ |
-| Pasar IN_REVIEW → DRAFT | ✅ temporalmente (OQ-021) | ❌ | ❌ | ❌ |
+| Pasar IN_REVIEW → APPROVED | ✅ | ❌ | ❌ | ❌ |
+| Pasar IN_REVIEW → DRAFT | ✅ | ❌ | ❌ | ❌ |
 | Pasar APPROVED → OBSOLETE | ✅ | ✅ | ❌ | ❌ |
 | Modificar versión APPROVED | ❌ | ❌ | ❌ | ❌ (defensa en 2 capas: API + service) |
 | Eliminar cualquier versión | ❌ | ❌ | ❌ | ❌ |
@@ -176,8 +176,8 @@ Se agregan back-relations en `User` (auditEvents ya está; falta `products`, `fo
 |---|---|---|---|
 | ∅ | DRAFT | R_AND_D, ADMIN | `createdAt` |
 | DRAFT | IN_REVIEW | R_AND_D, ADMIN | `submittedAt` (en metadata) |
-| IN_REVIEW | APPROVED | QUALITY, ADMIN | `aprobadaPorId`, `aprobadaEn`, `auditTrailId` |
-| IN_REVIEW | DRAFT | ADMIN temporalmente (OQ-021) | rechaza revisión, vuelve a edición |
+| IN_REVIEW | APPROVED | ADMIN (Director Técnico) | `aprobadaPorId`, `aprobadaEn`, `auditTrailId` |
+| IN_REVIEW | DRAFT | ADMIN (Director Técnico) | rechaza revisión, vuelve a edición |
 | APPROVED | OBSOLETE | R_AND_D, ADMIN | ya no es la vigente |
 | OBSOLETE | (terminal) | — | — |
 
@@ -202,8 +202,8 @@ Se agregan back-relations en `User` (auditEvents ya está; falta `products`, `fo
 | `updateIngredientPercentage(versionId, ingredientId, porcentaje)` | R_AND_D, ADMIN | Solo si estado=DRAFT |
 | `removeIngredientFromVersion(versionId, ingredientId)` | R_AND_D, ADMIN | Solo si estado=DRAFT |
 | `submitForReview(id)` | R_AND_D, ADMIN | DRAFT → IN_REVIEW |
-| `approveVersion(id)` | QUALITY, ADMIN | IN_REVIEW → APPROVED |
-| `rejectToDraft(id, motivo)` | ADMIN temporalmente (OQ-021) | IN_REVIEW → DRAFT |
+| `approveVersion(id)` | ADMIN | IN_REVIEW → APPROVED |
+| `rejectToDraft(id, motivo)` | ADMIN | IN_REVIEW → DRAFT |
 | `obsoleteVersion(id)` | R_AND_D, ADMIN | APPROVED → OBSOLETE |
 
 Cada action llama `recordAuditEvent` con la metadata correspondiente (sin secretos).
@@ -214,7 +214,7 @@ Cada action llama `recordAuditEvent` con la metadata correspondiente (sin secret
 - `/productos/[id]` — detalle con presentaciones, formulación y su historial de versiones.
 - `/productos/[id]/presentaciones/nueva` — formulario.
 - `/formulaciones` — índice cruzado producto ↔ formulación ↔ versión vigente.
-- `/formulaciones/[id]/v[nueva]` — formulario de edición con ingredientes (drag-and-drop o tabla con autocomplete). Validación visual de suma 100 % como **warning**.
+- `/formulaciones/[id]/v[nueva]` — formulario de edición con ingredientes (drag-and-drop o tabla con autocomplete). El envío a revisión exige suma decimal exacta de 100,00 %.
 - `/auditoria` — sin cambios, ya muestra `recordAuditEvent` para `entity=Product`, `entity=Formulation`, `entity=FormulationVersion`.
 
 Mantengo el `ModulePlaceholder` en `/productos` solo mientras no haya productos, pero **lo retiro** desde la primera carga demo: la pantalla debe mostrar la tabla real con datos.

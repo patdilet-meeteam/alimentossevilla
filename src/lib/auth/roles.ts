@@ -15,9 +15,9 @@ export const RoleDescriptions: Record<Role, string> = {
   [Role.R_AND_D]:
     "Investigación y Desarrollo: creación, edición y simulación de formulaciones, ingredientes y perfiles nutricionales.",
   [Role.QUALITY]:
-    "Control de Calidad: validación técnica, revisión de cumplimiento normativo y control de fichas técnicas.",
+    "Control de Calidad: consulta y visualización, sin modificar, exportar ni imprimir.",
   [Role.VIEWER]:
-    "Consulta: acceso en modo lectura para visualización de catálogos, formulaciones aprobadas y reportes.",
+    "Finanzas: acceso de Consulta a catálogos, formulaciones aprobadas y reportes.",
 };
 
 export const RoleBadgeStyles: Record<

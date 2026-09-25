@@ -18,7 +18,7 @@ describe("Unit: parser de costos SIESA", () => {
     });
   });
 
-  it("marca todas las ocurrencias de un código repetido sin elegir una silenciosamente", () => {
+  it("conserva los duplicados y deja trazado que el último costo es el vigente", () => {
     const result = parseCostRows([
       ["2903003", "Producto A", "2903003", "UND", 11506.13],
       ["2903003", "Producto A", "2903003", "KG", 11937.77],
@@ -26,7 +26,9 @@ describe("Unit: parser de costos SIESA", () => {
 
     expect(result.duplicateCodes).toEqual(["2903003"]);
     expect(result.rows).toHaveLength(2);
-    expect(result.rows.every((row) => row.status === "DUPLICATE_CONFLICT")).toBe(true);
+    expect(result.rows.every((row) => row.status === "VALID")).toBe(true);
+    expect(result.rows[0].issues).toContain("Código repetido 2 veces; reemplazado por la última asignación");
+    expect(result.rows[1].issues).toContain("Código repetido 2 veces; se usa este último costo asignado");
   });
 
   it("mantiene una unidad vacía como dato faltante y no la convierte", () => {

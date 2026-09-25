@@ -3,6 +3,8 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { hasRole } from "@/lib/auth/roles";
 import { listIngredients } from "@/app/actions/ingredient-actions";
 import { IngredientTable } from "@/components/ingredients";
+import { NutritionalBankImportControls } from "@/components/nutrition/nutritional-bank-import-controls";
+import { JuneMasterImportControls } from "@/components/nutrition/june-master-import-controls";
 // Role imported for type hints
 
 export default async function IngredientesPage({
@@ -33,6 +35,11 @@ export default async function IngredientesPage({
           Catálogo de materias primas y perfiles nutricionales
         </p>
       </div>
+
+      {isAdmin ? <>
+        <JuneMasterImportControls />
+        <NutritionalBankImportControls />
+      </> : null}
 
       <IngredientTable
         ingredients={ingredients}
