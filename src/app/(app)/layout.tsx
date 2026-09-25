@@ -17,10 +17,10 @@ export default async function AppLayout({
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex">
       <Sidebar user={user} />
 
-      <div className="lg:pl-64 flex flex-col flex-1">
+      <div className="flex flex-col flex-1 min-w-0">
         <Header user={user} />
         <main className="flex-1 p-6 md:p-8 max-w-7xl w-full mx-auto">
           {children}
