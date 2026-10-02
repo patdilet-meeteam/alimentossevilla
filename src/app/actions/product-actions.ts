@@ -45,6 +45,7 @@ export async function listProducts(filter?: ProductFilter) {
   const user = await getCurrentUser();
   if (!user) throw new Error("Unauthorized");
   requireRole(user.role, READ_ROLES);
+  const includeNonApprovedVersions = user.role === Role.ADMIN || user.role === Role.R_AND_D;
 
   // Validate optional filter (drops invalid inputs early).
   const parsedFilter = filter ? productFilterSchema.parse(filter) : undefined;
@@ -55,7 +56,10 @@ export async function listProducts(filter?: ProductFilter) {
       presentations: { where: { isActive: true } },
       formulations: {
         include: {
-          versions: { orderBy: { numeroSecuencial: "desc" } },
+          versions: {
+            where: includeNonApprovedVersions ? undefined : { estado: "APPROVED" },
+            orderBy: { numeroSecuencial: "desc" },
+          },
         },
       },
       createdBy: { select: { id: true, name: true, email: true } },
@@ -68,6 +72,7 @@ export async function getProductById(id: string) {
   const user = await getCurrentUser();
   if (!user) throw new Error("Unauthorized");
   requireRole(user.role, READ_ROLES);
+  const includeNonApprovedVersions = user.role === Role.ADMIN || user.role === Role.R_AND_D;
 
   return db.product.findUnique({
     where: { id },
@@ -76,6 +81,7 @@ export async function getProductById(id: string) {
       formulations: {
         include: {
           versions: {
+            where: includeNonApprovedVersions ? undefined : { estado: "APPROVED" },
             orderBy: { numeroSecuencial: "desc" },
             include: {
               ingredients: {

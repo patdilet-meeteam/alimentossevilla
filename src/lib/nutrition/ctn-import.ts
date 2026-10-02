@@ -1,4 +1,6 @@
 import { Prisma } from "@prisma/client";
+import { readSheet } from "read-excel-file/node";
+import { z } from "zod";
 import { normalizePercentagesFromQuantities, type NutritionIngredientInput } from "@/lib/nutrition/nutrition-calculator";
 
 export interface CtnParsedRow {
@@ -16,6 +18,71 @@ export interface CtnImportPlanItem {
   quantity: Prisma.Decimal;
   percentage: Prisma.Decimal;
   nutrientsPer100g: Record<string, Prisma.Decimal>;
+}
+
+const ctnNutritionSnapshotSchema = z.object({
+  source: z.literal("CTN"),
+  sourceFileName: z.string().min(1),
+  rows: z.array(z.object({
+    sourceRow: z.number().int().positive(),
+    sourceCode: z.string().nullable(),
+    sourceName: z.string().min(1),
+    ingredientId: z.string().min(1),
+    quantity: z.string().refine((value) => {
+      try { return new Prisma.Decimal(value).isFinite() && new Prisma.Decimal(value).greaterThan(0); } catch { return false; }
+    }),
+    nutrientsPer100g: z.record(z.string(), z.string().refine((value) => {
+      try { return new Prisma.Decimal(value).isFinite() && new Prisma.Decimal(value).greaterThanOrEqualTo(0); } catch { return false; }
+    })),
+  })).min(1),
+});
+
+export type CtnNutritionSourceSnapshot = z.infer<typeof ctnNutritionSnapshotSchema>;
+
+export type CtnSnapshotIngredient = Pick<NutritionIngredientInput, "ingredientId" | "name" | "quantity">;
+
+export type CtnNutritionSnapshotResolution =
+  | { status: "absent" }
+  | { status: "invalid"; reason: string }
+  | { status: "ready"; sourceFileName: string; inputs: NutritionIngredientInput[] };
+
+/**
+ * Resolves immutable CTN row inputs for one formulation version. It refuses
+ * stale/mismatched snapshots instead of silently falling back to the nutrient bank.
+ */
+export function resolveCtnNutritionSnapshot(
+  rawSnapshot: unknown,
+  formulationIngredients: readonly CtnSnapshotIngredient[],
+): CtnNutritionSnapshotResolution {
+  if (rawSnapshot === null || rawSnapshot === undefined) return { status: "absent" };
+  const parsed = ctnNutritionSnapshotSchema.safeParse(rawSnapshot);
+  if (!parsed.success) return { status: "invalid", reason: "La captura nutricional CTN guardada no tiene un formato válido." };
+
+  const expected = new Map<string, Prisma.Decimal>();
+  for (const ingredient of formulationIngredients) {
+    expected.set(ingredient.ingredientId, new Prisma.Decimal(ingredient.quantity));
+  }
+  const actual = new Map<string, Prisma.Decimal>();
+  for (const row of parsed.data.rows) {
+    if (!expected.has(row.ingredientId)) {
+      return { status: "invalid", reason: "La captura CTN contiene ingredientes que no pertenecen a esta versión." };
+    }
+    actual.set(row.ingredientId, (actual.get(row.ingredientId) ?? new Prisma.Decimal(0)).plus(row.quantity));
+  }
+  if (expected.size !== actual.size || [...expected].some(([id, quantity]) => !actual.get(id)?.eq(quantity))) {
+    return { status: "invalid", reason: "La fórmula cambió después de importar el CTN. Reimporte el Excel para actualizar su base nutricional." };
+  }
+
+  return {
+    status: "ready",
+    sourceFileName: parsed.data.sourceFileName,
+    inputs: parsed.data.rows.map((row) => ({
+      ingredientId: row.ingredientId,
+      name: row.sourceName,
+      quantity: row.quantity,
+      nutrientsPer100g: Object.fromEntries(Object.entries(row.nutrientsPer100g).map(([key, value]) => [key, new Prisma.Decimal(value)])),
+    })),
+  };
 }
 
 const COLUMN_TO_NUTRIENT: Record<string, string> = {
@@ -46,6 +113,21 @@ function parseCsv(text: string): string[][] {
   }
   rows.at(-1)!.push(field);
   return rows.filter((row) => row.some((value) => value.trim()));
+}
+
+/** Reads the customer workbook directly when it contains the canonical CTN tab. */
+export async function parseCtnWorkbook(buffer: Buffer): Promise<CtnParsedRow[]> {
+  let rows: unknown[][];
+  try {
+    rows = await readSheet(buffer, "CTN");
+  } catch {
+    throw new Error("No se pudo leer la hoja CTN del archivo Excel.");
+  }
+  const csv = rows.map((row) => row.map((cell) => {
+    const value = cell === null || cell === undefined ? "" : String(cell);
+    return `"${value.replace(/"/g, '""')}"`;
+  }).join(",")).join("\n");
+  return parseCtnCsv(csv);
 }
 
 function key(value: string): string {

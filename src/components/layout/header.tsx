@@ -1,5 +1,6 @@
 import { Role, RoleLabels, RoleBadgeStyles } from "@/lib/auth/roles";
 import { cn } from "@/lib/utils";
+import { UserGuide } from "@/components/layout/user-guide";
 
 interface HeaderProps {
   user: {
@@ -27,6 +28,7 @@ export function Header({ user }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-3">
+        <UserGuide />
         <div className="flex items-center gap-2">
           <span
             className={cn(

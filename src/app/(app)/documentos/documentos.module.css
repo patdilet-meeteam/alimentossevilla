@@ -1,0 +1,23 @@
+@media print {
+  .hideForPrint {
+    display: none !important;
+  }
+
+  .printOnly {
+    display: block !important;
+  }
+
+  .previewCard {
+    break-inside: avoid;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .printRestricted {
+    display: none !important;
+  }
+}
+
+.printOnly {
+  display: none;
+}

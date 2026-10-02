@@ -1,7 +1,15 @@
 # SPEC-004 — Cálculo Nutricional y Sellos de Advertencia
 
+## Parámetros regulatorios versionados — preentrega (1-oct-2026)
+
+- `ADMIN` representa al Director Técnico y es el único rol autorizado por Server Action para crear una nueva versión.
+- La migración crea una línea base v1 con los umbrales existentes: sodio 300 mg/100 g, azúcares y grasa saturada 10% de energía, y grasa trans 1% de energía.
+- `/normativa` expone valores activos e historial; cada cambio conserva autor/fecha y genera `AuditEvent`. La versión activa se usa en los cálculos posteriores.
+- Los cálculos y previsualizaciones muestran qué versión de parámetros usaron. Los snapshots documentales ya guardados son inmutables.
+- Esta UI cubre los umbrales ya existentes; valores diarios de referencia, nuevas categorías de sello y vigencia programada se registran para observación del cliente y no se inventan en esta entrega.
+
 > **Semana 4** del cronograma de Alimentos Sevilla S.A.S.
-> **Estado:** `cierre técnico local validado; pendiente aceptación funcional y regulatoria del cliente`.
+> **Estado:** `decisión de fuente Excel confirmada; captura CTN por versión implementada; cotejo numérico completo pendiente`.
 > **Fecha de preparación:** 14 de septiembre de 2026.
 
 ---
@@ -23,7 +31,7 @@ La auditoría de fórmulas identificó que los aportes ponderados siguen el patr
 
 Las respuestas del cliente corrigen dos comportamientos del ejemplo: la merma se aplica solo a cantidades totales, pues la pérdida es agua y los nutrientes permanecen en el producto final; y la grasa saturada debe sumar el aporte de todos los ingredientes, no solo el tocino. Para Salchicha Desayuno Premium, los nombres canónicos son `COLOR NATURAL ROJO AC150` y `HUMO TRUSMOKE OIL EX` del archivo de junio.
 
-Esto confirma que existe un caso de referencia útil para pruebas de paridad. No confirma por sí mismo las reglas de cálculo, redondeo, retención o los parámetros regulatorios que el código debe implementar.
+La respuesta más reciente del cliente confirma que los Excel compartidos son la base del reporte y deben replicarse 1:1. Esta prioridad sustituye para el reporte la decisión anterior de OQ-028 que hacía prevalecer `TN OFICIAL` ante diferencias con CTN; el Banco Nutricional sigue disponible como fuente de perfiles, pero no demuestra paridad. El motor ya implementa las correcciones confirmadas de merma y grasa saturada. Falta adaptar y verificar técnicamente las entradas/fórmulas/salidas del motor antes de declarar paridad o presentar el reporte como final; no falta una respuesta del cliente sobre la fuente.
 
 ## 3. Alcance posible una vez confirmadas las preguntas abiertas
 
@@ -64,18 +72,25 @@ Esto confirma que existe un caso de referencia útil para pruebas de paridad. No
 - Cambiar una formulación aprobada requiere una nueva versión; los resultados históricos no se modifican.
 - Los sellos se calculan solo con la norma y los umbrales vigentes confirmados.
 
+### Actualización de alcance — respuesta del cliente recibida el 1-oct-2026
+
+- La pérdida de proceso se aplica a cantidades totales; no se multiplica ningún nutriente por `1 ± merma`.
+- `FAT_SAT` se calcula como suma del aporte de todos los ingredientes, no solo tocino.
+- La matriz de permisos debe cubrir consulta, ejecución, modificación, impresión y exportación. Los permisos de ADMIN/Director Técnico siguen sin especificar acciones concretas; ver OQ-032.
+- El diagrama “Una sola grasa sin carne de su especie activa el sello” propone una regla nueva de sello. Su interpretación operativa, taxonomía especie/carne/grasa y relación con los umbrales regulatorios requieren definición en OQ-033; no se debe codificar aún.
+
 ## 8. Implementación inicial
 
 - `src/lib/nutrition/nutrition-calculator.ts` calcula aportes por 100 g y por porción desde cantidades canónicas, usando aritmética decimal.
-- `src/lib/nutrition/ctn-import.ts` lee el CSV CTN y genera un plan de importación que se detiene cuando `TOTAL` aparece como descripción o código, e ignora fórmulas post-merma y secciones posteriores del libro.
-- `importCtnCsvToDraft` solo crea una nueva versión `DRAFT` si cada fila del CTN encuentra un ingrediente activo existente por código o nombre canónico; registra cantidades, porcentajes y mapeos aplicados en auditoría. No crea ingredientes ni perfiles nutricionales de forma implícita.
+- `src/lib/nutrition/ctn-import.ts` lee el libro Excel (hoja `CTN`) o exportación CSV, y genera un plan de importación que se detiene cuando `TOTAL` aparece como descripción o código; ignora fórmulas post-merma porque el cliente confirmó que la merma no ajusta nutrientes.
+- `importCtnCsvToDraft` solo crea una nueva versión `DRAFT` si cada fila del CTN encuentra un ingrediente activo existente por código o nombre canónico. Conserva por versión cantidades y nutrientes exactos de las filas fuente; no crea ingredientes ni perfiles maestros de forma implícita.
 - `importNutritionalBankProfiles` lee exclusivamente la hoja `TN OFICIAL` del Banco Nutricional y versiona perfiles solo para ingredientes maestros activos con coincidencia única por nombre o nombre genérico. El Banco no aporta código SIESA: las filas sin coincidencia se omiten y nunca crean ingredientes. Los perfiles activos de laboratorio o literatura quedan protegidos; cada importación deja una nueva versión y auditoría.
 - El detalle de producto presenta la carga `.csv` únicamente a I+D y Director Técnico; el mensaje identifica ingredientes faltantes sin escribir cambios parciales.
 - La migración `20260923010000_spec_004_canonical_quantities` incorpora `cantidadCanonica` nullable en `FormulationIngredient`, conservando versiones históricas que solo disponen de porcentaje.
 - La reconciliación de porcentajes persiste exactamente `100,0000 %`, pero los nutrientes se calculan contra las cantidades originales de alta precisión; por ello la normalización de almacenamiento no modifica los resultados nutricionales.
 - La prueba `tests/unit/nutrition-calculator.test.ts` cubre el caso patrón de 18 ingredientes de Salchicha Desayuno Premium y verifica cantidad total, grasa, grasa saturada, proteína, sodio y grasa saturada por porción, sin multiplicador de merma.
 
-La carga CTN y la migración ya fueron verificadas localmente. La v3 `APPROVED` de Salchicha Desayuno Premium preserva 18 ingredientes, `487,948` de cantidad canónica y `100,0000 %`. La comparación CTN detectó diferencias frente a algunos perfiles activos. Según [OQ-028](../OPEN-QUESTIONS.md#oq-028), prevalece `TN OFICIAL`: la comparación CTN conserva evidencia histórica, pero no exige paridad exacta ni autoriza sustituir perfiles nutricionales. La transición `DRAFT → IN_REVIEW → APPROVED` y la corrección previa de la importación quedaron registradas en `AuditEvent`.
+La v3 `APPROVED` de Salchicha Desayuno Premium preserva 18 ingredientes, `487,948` de cantidad canónica y `100,0000 %`, pero no tiene una captura nutricional CTN por versión y por eso todavía usa perfiles activos del Banco. Una nueva importación CTN conserva sus datos nutricionales en la versión `DRAFT`; al aprobarla, los cálculos usarán esa fuente versionada. La comparación numérica completa aún debe realizarse contra una importación del libro fuente disponible.
 
 ## 9. Evidencia de cierre técnico local
 

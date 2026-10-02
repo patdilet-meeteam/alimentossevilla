@@ -46,7 +46,7 @@ export function CostImportControls({ canManage }: CostImportControlsProps) {
       <Alert variant="info">
         <AlertTitle>Consulta habilitada</AlertTitle>
         <AlertDescription>
-          La carga y aplicación de costos está restringida al rol ADMIN mientras no exista una matriz funcional de Finanzas.
+          En esta versión, la carga y aplicación de costos está habilitada para el perfil Administrador. Finanzas conserva acceso de consulta.
         </AlertDescription>
       </Alert>
     );
@@ -77,7 +77,7 @@ export function CostImportControls({ canManage }: CostImportControlsProps) {
         <div className="grid gap-4 md:grid-cols-[180px_1fr_auto] md:items-end">
           <div className="space-y-2">
             <Label htmlFor="cost-period">Periodo mensual</Label>
-            <Input id="cost-period" name="period" type="month" required disabled={pending} defaultValue="2026-06" />
+            <Input id="cost-period" name="period" type="month" required disabled={pending} />
             <p className="text-[11px] text-muted-foreground">
               Formato AAAA-MM · corresponde al mes del archivo de costos.
             </p>

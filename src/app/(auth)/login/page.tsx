@@ -8,9 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BrandLogo } from "@/components/layout/brand-logo";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Lock, Mail, AlertCircle, Shield, Check, type LucideIcon } from "lucide-react";
-import { RoleLabels } from "@/lib/auth/roles";
-import { Role } from "@prisma/client";
+import { Lock, Mail, AlertCircle, type LucideIcon } from "lucide-react";
 
 const brandHighlights = [
   { title: "Fórmulas", caption: "Versionado" },
@@ -42,7 +40,7 @@ function IconField({ id, label, icon: Icon, onChange, ...inputProps }: IconField
           name={id}
           required
           onChange={(e) => onChange(e.target.value)}
-          className="h-12 rounded-full border-slate-200 bg-slate-100/70 pl-11 text-slate-900 placeholder:text-slate-400 focus-visible:ring-[#2e2a6b]"
+      className="h-12 rounded-xl border-slate-200 bg-slate-50 pl-11 text-slate-900 placeholder:text-slate-400 focus-visible:ring-[#1C4378]"
           {...inputProps}
         />
       </div>
@@ -56,35 +54,6 @@ export default function LoginPage() {
   const [passwordValue, setPasswordValue] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, setIsPending] = useState(false);
-
-  const demoAccounts = [
-    {
-      role: Role.ADMIN,
-      email: "admin@alimentossevilla.com",
-      pass: "AdminSevilla2026!#",
-    },
-    {
-      role: Role.R_AND_D,
-      email: "id@alimentossevilla.com",
-      pass: "IDSevilla2026!#",
-    },
-    {
-      role: Role.QUALITY,
-      email: "calidad@alimentossevilla.com",
-      pass: "CalidadSevilla2026!#",
-    },
-    {
-      role: Role.VIEWER,
-      email: "consulta@alimentossevilla.com",
-      pass: "ConsultaSevilla2026!#",
-    },
-  ];
-
-  const fillDemo = (email: string, pass: string) => {
-    setEmailValue(email);
-    setPasswordValue(pass);
-    setError(null);
-  };
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -113,11 +82,12 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-[1.1fr_1fr] bg-slate-50">
+    <div className="min-h-screen grid bg-slate-50 lg:grid-cols-[1.1fr_1fr] dark:bg-slate-950">
       {/* Brand panel */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#16112f] via-[#1c1640] to-[#2a2270] text-white flex flex-col items-center justify-center px-6 py-12 lg:py-0">
-        <div className="pointer-events-none absolute -bottom-40 -left-24 h-[28rem] w-[140%] rounded-[50%] bg-[#140f2b]/70" />
-        <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-indigo-500/10 blur-3xl" />
+      <section className="relative flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#16365F] via-[#1C4378] to-[#245B88] px-6 py-12 text-white lg:py-0">
+        <div className="pointer-events-none absolute -bottom-44 -left-24 h-[28rem] w-[140%] rounded-[50%] bg-[#102B4D]/45" />
+        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#6FC7DA]/15 blur-3xl" />
+        <div className="pointer-events-none absolute left-0 top-0 h-1 w-full bg-[#6FC7DA]" />
 
         <div className="relative z-10 flex max-w-md flex-col items-center text-center">
           <BrandLogo
@@ -128,16 +98,16 @@ export default function LoginPage() {
           <h1 className="mt-10 text-2xl sm:text-3xl font-bold tracking-tight">
             Gestión Técnica y Nutricional
           </h1>
-          <p className="mt-3 text-sm sm:text-base leading-relaxed text-indigo-100/75">
+          <p className="mt-3 text-sm leading-relaxed text-[#DCEEF4] sm:text-base">
             Plataforma centralizada de formulaciones, perfiles nutricionales y
             documentación técnica.
           </p>
 
           <dl className="mt-10 hidden sm:grid grid-cols-3 divide-x divide-white/15">
             {brandHighlights.map((item) => (
-              <div key={item.title} className="px-6">
-                <dt className="text-xl font-bold">{item.title}</dt>
-                <dd className="mt-1 text-xs text-indigo-100/60">
+            <div key={item.title} className="px-6">
+              <dt className="text-xl font-bold">{item.title}</dt>
+              <dd className="mt-1 text-xs text-[#B9E8F1]">
                   {item.caption}
                 </dd>
               </div>
@@ -147,13 +117,14 @@ export default function LoginPage() {
       </section>
 
       {/* Form panel */}
-      <section className="flex items-center justify-center px-4 py-12 sm:px-8">
-        <div className="w-full max-w-sm space-y-8">
-          <div className="space-y-1.5">
-            <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+      <section className="flex items-center justify-center px-4 py-10 sm:px-8 lg:px-12">
+        <div className="w-full max-w-md rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm shadow-slate-900/5 sm:p-9 dark:border-slate-800 dark:bg-slate-900">
+          <div className="mb-8 space-y-1.5">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#1C4378] dark:text-[#6FC7DA]">Acceso seguro</p>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
               Bienvenido
             </h2>
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-slate-500 dark:text-slate-400">
               Ingresa tus credenciales para acceder al sistema
             </p>
           </div>
@@ -190,41 +161,13 @@ export default function LoginPage() {
             <Button
               type="submit"
               disabled={isPending}
-              className="h-12 w-full rounded-full bg-[#2e2a6b] text-white font-medium hover:bg-[#3a3585]"
+              className="h-12 w-full rounded-xl bg-[#1C4378] font-medium text-white shadow-sm shadow-[#1C4378]/20 hover:bg-[#16365F]"
             >
               {isPending ? "Validando credenciales..." : "Iniciar sesión"}
             </Button>
           </form>
 
-          {/* Demo Fast Fill Section (Dev / Review Mode) */}
-          <div className="space-y-2.5 rounded-2xl border border-slate-200 bg-white p-4">
-            <div className="flex items-center justify-between text-[11px] font-medium text-slate-500">
-              <span className="flex items-center gap-1.5 text-[#2e2a6b]">
-                <Shield className="h-3.5 w-3.5" />
-                Cuentas de prueba
-              </span>
-              <span>Demo local</span>
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              {demoAccounts.map((acc) => (
-                <button
-                  key={acc.role}
-                  type="button"
-                  onClick={() => fillDemo(acc.email, acc.pass)}
-                  className="flex items-center justify-between rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-left text-[11px] text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-100"
-                >
-                  <span className="truncate font-medium">
-                    {RoleLabels[acc.role]}
-                  </span>
-                  {emailValue === acc.email && (
-                    <Check className="h-3 w-3 shrink-0 text-[#2e2a6b]" />
-                  )}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <p className="text-center text-[11px] text-slate-400">
+          <p className="mt-6 text-center text-[11px] leading-relaxed text-slate-400 dark:text-slate-500">
             Acceso restringido a colaboradores de Alimentos Sevilla S.A.S.
           </p>
         </div>

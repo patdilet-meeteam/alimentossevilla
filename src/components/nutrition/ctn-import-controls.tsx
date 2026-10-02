@@ -34,13 +34,13 @@ export function CtnImportControls({ formulationId }: { formulationId: string }) 
     <div className="rounded-md border border-dashed border-[#6FC7DA]/60 bg-[#DDF7FC]/30 p-3">
       <p className="text-sm font-medium text-[#1F2933]">Importar receta CTN</p>
       <p className="mt-1 text-xs text-muted-foreground">
-        Crea una nueva versión DRAFT desde cantidades canónicas. Si algún ingrediente no existe en el maestro, no realiza cambios.
+        Crea una nueva versión DRAFT desde cantidades canónicas y conserva los valores nutricionales de cada fila como fuente de esa versión. Puede cargar el libro Excel con hoja CTN o una exportación CSV. Si algún ingrediente no existe en el maestro, no realiza cambios.
       </p>
       <form ref={formRef} onSubmit={onSubmit} className="mt-3 flex flex-wrap items-end gap-3">
         <input name="formulationId" type="hidden" value={formulationId} />
         <div className="min-w-64 space-y-1.5">
-          <Label htmlFor={`ctn-file-${formulationId}`}><FileSpreadsheet className="mr-1 inline size-3.5" />CTN (.csv)</Label>
-          <Input id={`ctn-file-${formulationId}`} name="file" type="file" accept=".csv,text/csv" required disabled={pending} />
+          <Label htmlFor={`ctn-file-${formulationId}`}><FileSpreadsheet className="mr-1 inline size-3.5" />CTN (.xlsx o .csv)</Label>
+          <Input id={`ctn-file-${formulationId}`} name="file" type="file" accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv" required disabled={pending} />
         </div>
         <Button type="submit" size="sm" disabled={pending}>
           {pending ? <Loader2 className="mr-2 size-4 animate-spin" /> : <Upload className="mr-2 size-4" />}Importar CTN

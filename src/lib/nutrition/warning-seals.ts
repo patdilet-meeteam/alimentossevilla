@@ -73,6 +73,12 @@ export const SEAL_THRESHOLDS = {
   FAT_TRANS_THRESHOLD: 1,
 } as const;
 
+export interface SealThresholds {
+  SODIUM_MG_PER_100G: number;
+  ENERGY_PERCENTAGE_THRESHOLD: number;
+  FAT_TRANS_THRESHOLD: number;
+}
+
 /** Factores de conversión calórica (kcal por gramo) */
 const KCAL_PER_GRAM = {
   FAT: 9,
@@ -100,7 +106,7 @@ export function evaluateWarningSeals(nutritionData: {
   per100g: Record<string, Decimal>;
   /** Energía total en kcal por 100g */
   energyKcalPer100g: Decimal;
-}): SealEvaluation {
+}, thresholds: SealThresholds = SEAL_THRESHOLDS): SealEvaluation {
   const { per100g, energyKcalPer100g } = nutritionData;
 
   // Extraer valores de nutrientes críticos
@@ -125,10 +131,10 @@ export function evaluateWarningSeals(nutritionData: {
   const fatTransPercentageOfEnergy = fatTransEnergyKcal.mul(100).div(safeTotalEnergy);
 
   // Evaluar cada sello
-  const exceedsSodium = sodiumMg.gte(SEAL_THRESHOLDS.SODIUM_MG_PER_100G);
-  const exceedsSugars = sugarsPercentageOfEnergy.gte(SEAL_THRESHOLDS.ENERGY_PERCENTAGE_THRESHOLD);
-  const exceedsFatSaturated = fatSaturatedPercentageOfEnergy.gte(SEAL_THRESHOLDS.ENERGY_PERCENTAGE_THRESHOLD);
-  const exceedsFatTrans = fatTransPercentageOfEnergy.gte(SEAL_THRESHOLDS.FAT_TRANS_THRESHOLD);
+  const exceedsSodium = sodiumMg.gte(thresholds.SODIUM_MG_PER_100G);
+  const exceedsSugars = sugarsPercentageOfEnergy.gte(thresholds.ENERGY_PERCENTAGE_THRESHOLD);
+  const exceedsFatSaturated = fatSaturatedPercentageOfEnergy.gte(thresholds.ENERGY_PERCENTAGE_THRESHOLD);
+  const exceedsFatTrans = fatTransPercentageOfEnergy.gte(thresholds.FAT_TRANS_THRESHOLD);
 
   // Construir resultado
   const activeSeals: WarningSeal[] = [];
@@ -142,7 +148,7 @@ export function evaluateWarningSeals(nutritionData: {
     nutrients: {
       sodium: {
         valuePer100g: sodiumMg,
-        threshold: SEAL_THRESHOLDS.SODIUM_MG_PER_100G,
+        threshold: thresholds.SODIUM_MG_PER_100G,
         exceeds: exceedsSodium,
       },
       sugars: {
@@ -150,7 +156,7 @@ export function evaluateWarningSeals(nutritionData: {
         energyKcal: sugarsEnergyKcal,
         totalEnergyKcal: energyKcalPer100g,
         percentageOfEnergy: sugarsPercentageOfEnergy,
-        threshold: SEAL_THRESHOLDS.ENERGY_PERCENTAGE_THRESHOLD,
+        threshold: thresholds.ENERGY_PERCENTAGE_THRESHOLD,
         exceeds: exceedsSugars,
       },
       fatSaturated: {
@@ -158,7 +164,7 @@ export function evaluateWarningSeals(nutritionData: {
         energyKcal: fatSaturatedEnergyKcal,
         totalEnergyKcal: energyKcalPer100g,
         percentageOfEnergy: fatSaturatedPercentageOfEnergy,
-        threshold: SEAL_THRESHOLDS.ENERGY_PERCENTAGE_THRESHOLD,
+        threshold: thresholds.ENERGY_PERCENTAGE_THRESHOLD,
         exceeds: exceedsFatSaturated,
       },
       fatTrans: {
@@ -166,7 +172,7 @@ export function evaluateWarningSeals(nutritionData: {
         energyKcal: fatTransEnergyKcal,
         totalEnergyKcal: energyKcalPer100g,
         percentageOfEnergy: fatTransPercentageOfEnergy,
-        threshold: SEAL_THRESHOLDS.FAT_TRANS_THRESHOLD,
+        threshold: thresholds.FAT_TRANS_THRESHOLD,
         exceeds: exceedsFatTrans,
       },
     },

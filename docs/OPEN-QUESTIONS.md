@@ -41,12 +41,17 @@ Este documento centraliza todas las dudas funcionales, normativas y técnicas pe
 - **Estado:** `CONFIRMADA EN SEMANA 1`
 
 ### [OQ-007] ¿Cómo deben manejarse el rendimiento de cocción/horneo, transformación y pérdidas de proceso?
-- **Respuesta Cliente:** Balance de masa directo: entran X kg de batch y salen Y kg cocidos; la diferencia es la merma de proceso que concentra los nutrientes.
-- **Estado:** `CONFIRMADA EN SEMANA 1`
+- **Respuesta inicial:** Balance de masa directo: entran X kg de batch y salen Y kg cocidos.
+- **Corrección del cliente (1-oct-2026):** la merma aplica únicamente a cantidades totales; la diferencia representa pérdida de agua y los nutrientes permanecen en el producto final.
+- **Decisión vigente:** no ajustar nutrientes por merma. Esta respuesta supersede la mención inicial de que la merma concentra nutrientes.
+- **Implementación de preentrega:** para un lote base `X` y una merma fraccional `m` (ej. `0,11`), se muestra cantidad perdida `X × m` y salida total estimada `X × (1 − m)`. El porcentaje se guarda en la versión del proceso; editarlo requiere un borrador nuevo. Los cálculos nutricionales y el costo de materias primas siguen usando las cantidades de entrada.
+- **Estado:** `CONFIRMADA E IMPLEMENTADA — merma solo en cantidad total; nutrientes conservados`
 
 ### [OQ-008] ¿Cuáles son exactamente las reglas oficiales de redondeo y cifras significativas aplicables?
 - **Respuesta Cliente:** Sí, las reglas y tablas del archivo CTN son la base oficial.
-- **Estado:** `CONFIRMADA EN SEMANA 1`
+- **Respuesta adicional (1-oct-2026):** no aplicar redondeo y mantener exactitud hasta 2 cifras significativas, ejemplificado como `100,00`.
+- **Decisión:** la suma de porcentajes sigue siendo exactamente 100, sin tolerancia; qué precisión aplicar a cada porcentaje y su presentación queda pendiente en OQ-034.
+- **Estado:** `PARCIALMENTE CONFIRMADA — ver OQ-034`
 
 ---
 
@@ -59,6 +64,8 @@ Este documento centraliza todas las dudas funcionales, normativas y técnicas pe
 ### [OQ-010] ¿Quién está autorizado para modificar parámetros regulatorios (umbrales de sellos, valores diarios de referencia)?
 - **Respuesta Cliente:** Director técnico.
 - **Decisión:** `ADMIN` representa al Director Técnico y es el único rol autorizado para modificar parámetros regulatorios. Cada cambio debe versionarse y auditarse.
+- **Implementación provisional:** `/normativa` permite crear versiones para los umbrales actuales de sodio, azúcares/grasa saturada y grasas trans; la v1 conserva los valores que ya usaba el sistema. Los cambios aplican inmediatamente a cálculos futuros y no reescriben snapshots previos.
+- **Observación al cliente:** confirmar si además deben administrarse valores diarios de referencia u otros parámetros, y si se requiere programar una vigencia futura.
 - **Estado:** `CONFIRMADA`
 
 ---
@@ -67,8 +74,10 @@ Este documento centraliza todas las dudas funcionales, normativas y técnicas pe
 
 ### [OQ-011] ¿Cuál es la matriz definitiva de permisos por rol?
 - **Respuesta Cliente:** Administrador/Director Técnico: administración técnica; Calidad: consulta y visualización sin exportar ni imprimir; I+D: ejecutar, imprimir y modificar; Finanzas: consulta.
-- **Decisión:** el mapeo actual es `ADMIN` = Administrador/Director Técnico, `R_AND_D` = I+D, `QUALITY` = Calidad y `VIEWER` = Finanzas. Calidad y Finanzas no reciben permisos de mutación; la aprobación y devolución de formulaciones quedan exclusivamente en `ADMIN`.
-- **Estado:** `CONFIRMADA`
+- **Mapeo provisional de perfiles:** `ADMIN` = Administrador/Director Técnico, `R_AND_D` = I+D, `QUALITY` = Calidad y `VIEWER` = Finanzas.
+- **Confirmado en respuestas posteriores:** Calidad sin exportar/imprimir; I+D puede ejecutar/imprimir/modificar; Finanzas consulta; aprobación/devolución de formulaciones y modificación de parámetros regulatorios corresponden a Director Técnico (`ADMIN`).
+- **Pendiente:** acciones concretas de ADMIN, permiso de exportar para I+D/Finanzas, definición de ejecutar por módulo y matriz completa de rutas/acciones. Ver OQ-032.
+- **Estado:** `PARCIALMENTE CONFIRMADA — no tratar como matriz final`
 
 ---
 
@@ -118,8 +127,9 @@ Este documento centraliza todas las dudas funcionales, normativas y técnicas pe
 
 ### [OQ-019] Tolerancia de cierre de % en una versión de formulación
 - **Respuesta Cliente:** no se acepta redondeo ni tolerancia; la suma debe mantenerse exactamente en `100,00`.
-- **Decisión:** la transición `DRAFT → IN_REVIEW` exige que la suma decimal almacenada sea exactamente 100; no se redondea para pasar la validación.
-- **Estado:** `CONFIRMADA`
+- **Aclaración recibida (1-oct-2026):** la respuesta confirma suma exacta; no se aplica tolerancia ni redondeo para validar. La escala de presentación individual queda en OQ-034.
+- **Decisión:** la transición `DRAFT → IN_REVIEW` exige que la suma decimal almacenada sea exactamente 100; el servidor la bloquea y la interfaz deshabilita el envío cuando no se cumple.
+- **Estado:** `CONFIRMADA E IMPLEMENTADA`
 
 ### [OQ-020] Códigos SIESA duplicados entre operativo y contable
 - **Contexto:** el cliente maneja la misma materia prima con dos códigos distintos según el sistema (ej. SAL YODADA REFISAL es `MPPS150` operativo y `1210005` contable). La validación actual los trata como ingredientes distintos.
@@ -213,11 +223,6 @@ Este documento centraliza todas las dudas funcionales, normativas y técnicas pe
 
 Como consecuencia de las respuestas anteriores, las preguntas abiertas se actualizan así:
 
-### [OQ-013] Tolerancia de cierre de % en una versión de formulación
-- **Estado anterior:** `ABIERTA — Bloqueante para SPEC-003.5`
-- **Decisión actualizada:** **se mantiene como warning visual, no bloquea**. Lina no respondió explícitamente a esta pregunta, pero su respuesta en P-08 ("sin cifras obviadas") refuerza que el sistema debe tolerar diferencias pequeñas de redondeo sin rechazar la versión. La decisión final sobre la tolerancia (¿99.5 %? ¿99.8 %?) queda pendiente para SPEC-004 (motor nutricional) cuando se midan los casos reales.
-- **Estado:** `PARCIALMENTE RESUELTA — confirmar tolerancia exacta en SPEC-004`
-
 ### [OQ-014] Códigos SIESA duplicados entre operativo y contable
 - **Estado anterior:** `ABIERTA — Bloqueante para SPEC-003.5`
 - **Decisión actualizada:** **se mantiene el modelo actual** (`Ingredient.siesaCode` único, ambos formatos aceptados). En la carga inicial (SPEC-003.5) se cargan los 90 ingredientes del BIN (operativo, formato `MPxxxxxx`) primero, y los del archivo de costos (contable, formato `1210005`) después como `CostImportItem` referenciando al ingrediente del BIN por nombre cuando coincidan. Si hay duplicados explícitos, el equipo de finanzas decide cuál es el canónico y se actualiza el mapeo.
@@ -269,7 +274,8 @@ Como consecuencia de las respuestas anteriores, las preguntas abiertas se actual
 - **Impacto:** escoger la primera o última fila alteraría costos sin una regla confirmada.
 - **Respuesta Cliente:** usar el último costo asignado.
 - **Decisión:** se conservan todas las filas del archivo por trazabilidad; la de mayor `sourceRow` es la última asignación y es la que se usa para calcular. El duplicado no bloquea aplicar la importación si no existen otras filas inválidas.
-- **Estado:** `CONFIRMADA`
+- **Validación contra el archivo recibido (1-oct-2026):** el código `2906002` tiene su última fila en 278 con costo `8.851,17`, pero la unidad está vacía; `1131002` (agua) tiene última fila en 506, costo `0` y unidad vacía. Además, `2917001` en fila 279 no declara unidad. El importador marca las filas sin unidad como inválidas y no permite aplicar el archivo mientras permanezcan; no se infiere la unidad de otra fila ni de la descripción.
+- **Estado:** `REGLA DE DUPLICADOS CONFIRMADA — carga del archivo actual pendiente de completar/confirmar las unidades vacías`.
 
 ### [OQ-026] Precisión canónica de porcentajes en CTN Salchicha Desayuno Premium v11
 - **Evidencia:** el CSV entregado `CTN - Salchicha Desayuno Premium - v11.xlsx - CTN.csv` contiene 18 porcentajes visibles que suman `100,005 %`; su fila `TOTAL` muestra `100 %` y la respuesta funcional exige exactamente `100,00 %`, sin tolerancia ni redondeo para validar.
@@ -290,7 +296,8 @@ Como consecuencia de las respuestas anteriores, las preguntas abiertas se actual
 - **Impacto:** OQ-022 exige reproducir el CTN 1:1, mientras que la carga vigente conserva `TN OFICIAL` como perfil activo. Elegir uno, mezclar valores o sustituir perfiles cambiaría una fuente nutricional y no puede inferirse técnicamente.
 - **Respuesta Director Técnico:** prevalece `TN OFICIAL`.
 - **Decisión:** los perfiles activos versionados desde `TN OFICIAL` son la fuente nutricional vigente. El CTN conserva trazabilidad de receta, cantidades y resultados históricos, pero sus valores por ingrediente no sustituyen ni corrigen automáticamente perfiles del Banco.
-- **Estado:** `CONFIRMADA — la comparación CTN es informativa, no criterio de paridad exacta`
+- **Vigencia:** decisión histórica de fuente de perfiles. Para el cálculo del reporte, la respuesta posterior del cliente en OQ-031 establece Excel 1:1 y sustituye esta prioridad cuando los resultados difieren.
+- **Estado:** `SUPERADA PARA LA SALIDA DEL REPORTE POR OQ-031 — conserva vigencia como decisión de administración del Banco Nutricional`
 
 ### [OQ-029] ¿Cómo se interpreta la ausencia de `FAT_TRANS` en `TN OFICIAL`?
 - **Decisión:** cuando la fila oficial no informa `FAT_TRANS`, se persiste explícitamente `0` g/100 g.
@@ -300,5 +307,56 @@ Como consecuencia de las respuestas anteriores, las preguntas abiertas se actual
 ### [OQ-030] ¿Qué fuente debe prevalecer entre TL v4/arte final y el cálculo vigente de la plataforma?
 - **Evidencia:** el TL v4 de `SALCHICHA DESAYUNO PREMIUM 480 g` declara aproximadamente 163 kcal, grasa total 10 g, grasa saturada 3,9 g y sodio 579 mg; además muestra únicamente un sello frontal de sodio. La plataforma, usando la v3 `APPROVED` y perfiles activos `TN OFICIAL`, calcula 145,4 kcal, grasa total 9,40 g, grasa saturada 3,51 g y sodio 613,04 mg, y propone sellos de sodio y grasas saturadas.
 - **Impacto:** no se puede emitir una ficha técnica ni validar el arte final si la tabla nutricional y los sellos no tienen una fuente canónica única.
-- **Pregunta:** confirmar si el TL/arte representa la salida regulatoria aprobada que debe reproducirse, o si debe actualizarse desde el cálculo vigente de `TN OFICIAL`; confirmar también por qué el arte solo muestra sodio.
-- **Estado:** `ABIERTA — bloqueante para emisión oficial de SPEC-006`
+- **Respuesta posterior del cliente:** el reporte nutricional vigente debe reproducir los Excel compartidos 1:1 (OQ-031). Por tanto, la plataforma no debe usar el TL v4 como fuente de cálculo ni copiar sus valores para ocultar la diferencia.
+- **Pendiente de producto:** el documento/arte final todavía debe ser revisado contra el cálculo Excel implementado y el criterio de sellos confirmado; la explicación del arte de sodio por sí solo no bloquea la regla de cálculo Excel.
+- **Estado:** `FUENTE DE CÁLCULO RESUELTA — conciliación técnica del arte/documento final después de implementar y cotejar Excel`
+
+---
+
+## 14. Respuestas del cliente — actualización recibida el 1-oct-2026
+
+### [OQ-031] Paridad técnica del reporte con el Excel confirmado
+- **Respuesta Cliente:** los Excel compartidos son la base de cálculo usada actualmente para el reporte nutricional y la plataforma debe replicarlos 1:1.
+- **Hallazgo en los dos libros de Junio recibidos (1-oct-2026):** `Junio (1).xlsx` contiene hojas de receta/costo/merma con fórmulas enlazadas a otros libros; la hoja piloto de 480 g presenta resultados almacenados `#DIV/0!` y `#N/A`. `Junio costos Base de Datos ME - MPNC - MPC.xlsx` es un libro de costos (`Hoja1`/`Hoja2`). No encontramos en ninguno una tabla de resultados de nutrientes que se pueda usar como salida esperada del reporte. Ver [inspección de fuentes](DATA-SOURCES.md).
+- **Decisión vigente:** la instrucción más reciente del cliente confirma que la salida del reporte debe reproducir los Excel compartidos 1:1. Esta prioridad sustituye la decisión anterior de usar `TN OFICIAL` como resultado nutricional prevalente cuando difiera del Excel; `TN OFICIAL` sigue siendo una fuente importable de perfiles, pero no prueba ni reemplaza la paridad del reporte.
+- **Implementación:** el importador CTN ahora acepta `.xlsx` (hoja `CTN`) o `.csv` y guarda, de forma inmutable por versión, cantidades y valores nutricionales de cada fila. Los cálculos/documentos usan esa captura cuando existe; si una fórmula cambió y la captura ya no corresponde, se bloquea el cálculo en vez de volver silenciosamente al Banco. Las versiones previas sin captura conservan su fuente de perfiles activos.
+- **Límite de evidencia:** los dos libros de junio inspeccionados son de receta/costos y no contienen por sí solos una salida nutricional íntegra. La comparación completa de una nueva versión contra el CTN depende de importar el archivo fuente correspondiente. Esto no revoca la decisión del cliente ni requiere volver a preguntar qué fuente debe gobernar.
+- **Estado:** `DECISIÓN FUNCIONAL RESUELTA E IMPLEMENTADA — cotejo numérico 1:1 pendiente para una versión importada del CTN`.
+
+### [OQ-032] Matriz final de permisos por acción y perfil
+- **Respuesta Cliente:** Administrador / Director Técnico; Calidad: consultar y ver sin exportar o imprimir; I+D: ejecutar, imprimir y modificar; Finanzas: consulta.
+- **Matriz provisional aplicada para preentrega:** `ADMIN` (Administrador/Director Técnico) administra y consulta todos los módulos, aprueba/devuelve formulaciones, administra usuarios, consulta auditoría, gestiona costos y crea snapshots preliminares; `R_AND_D` consulta y modifica los módulos técnicos, ejecuta cálculos y puede imprimir la previsualización; `QUALITY` consulta los módulos y documentos, no modifica, exporta ni imprime; `VIEWER` (Finanzas) consulta, sin acciones de modificación, exportación o impresión desde la aplicación.
+- **Límites de impresión:** solo se habilita el control de impresión de la previsualización a `ADMIN` e `I+D`; Calidad/Finanzas reciben una salida de impresión vacía en esa pantalla. No existe exportación de documentos ni emisión oficial.
+- **Visibilidad:** Usuarios y Auditoría quedan restringidos a `ADMIN`; Calidad/Finanzas consultan únicamente versiones de formulación `APPROVED`, mientras `ADMIN` e `I+D` pueden consultar el historial completo.
+- **Costos:** se conserva carga/aplicación para `ADMIN` únicamente. Esta decisión provisional sigue la respuesta más reciente (Finanzas consulta) y prevalece para la preentrega sobre P-14 anterior, que mapeaba Finanzas a ADMIN.
+- **Observaciones para el cliente:** confirmar si I+D requiere acceso al módulo Auditoría, si Finanzas puede imprimir, si alguna operación de costos corresponde al rol Finanzas, y qué acciones adicionales comprende “ejecutar”. Ajustaremos la matriz tras revisión de preentrega.
+- **Hallazgos de código (1-oct-2026):** el cálculo está limitado en servidor e interfaz a `ADMIN`/`R_AND_D`; Usuarios/Auditoría a `ADMIN`; las listas de producto/formulación filtran estados no aprobados para `QUALITY`/`VIEWER`. Ver el [inventario de permisos actual](ROLE-ACTION-INVENTORY-2026-10-01.md).
+- **Estado:** `MATRIZ PROVISIONAL DE PREENTREGA APLICADA — abierta a observaciones del cliente`.
+
+### [OQ-033] Regla del diagrama de sello por grasas animales
+- **Insumo recibido:** diagrama titulado “Una sola grasa sin carne de su especie activa el sello”: leer ingredientes, clasificar especie + carne o grasa; si no hay grasa animal, sin sello; si cada grasa tiene carne de su misma especie, sin sello; si al menos una grasa no tiene carne de su especie, con sello de grasa.
+- **Pendiente:** definir qué ingredientes cuentan como carne y grasa, cómo se reconoce especie y sinónimos/ingredientes compuestos, cómo se trata una especie desconocida y si el resultado activa el sello existente de grasas saturadas o un sello distinto. El diagrama describe un criterio de composición que no está cubierto por los umbrales actuales de SPEC-004.
+- **Estado:** `ABIERTA — bloqueante para implementar esta regla de sello`.
+
+### [OQ-034] Precisión de porcentajes: exactitud decimal frente a cifras significativas
+- **Respuesta Cliente:** no aplicar redondeo; mantener exactitud hasta dos cifras significativas, ilustrado como `100,00`.
+- **Conflicto de términos:** `100,00` expresa dos decimales, pero no dos cifras significativas. La validación ya exige suma exacta de 100 sin tolerancia; el modelo persiste cuatro decimales (`100,0000`).
+- **Pregunta:** confirmar si la regla se refiere a porcentajes individuales con dos decimales, a la suma total `100,00`, o a precisión interna sin redondeo con solo presentación a dos decimales. Mantener el bloqueo exacto de suma actual mientras se aclara la precisión individual/visual.
+- **Estado:** `ABIERTA — la escala individual y visualización queda para validación en preentrega; el total 100,00 exacto ya está definido e implementado`.
+
+### [OQ-035] Identificador de inicio de sesión local
+- **Respuesta Cliente:** solo usuario y contraseña.
+- **Pendiente:** la autenticación actual identifica el usuario mediante email. Confirmar si “usuario” significa email corporativo como nombre de usuario o un identificador separado; no habilitar SSO, que queda fuera de alcance.
+- **Estado:** `PARCIALMENTE CONFIRMADA — sin SSO; identificador pendiente`.
+
+### [OQ-036] Retención de documentos emitidos y evidencia de nuevas versiones
+- **Respuesta Cliente:** al cambiar el documento se debe cambiar la versión y dejar soporte; no eliminar por trazabilidad.
+- **Decisión:** toda nueva emisión debe crear una versión nueva e inmutable y conservar versiones y soportes anteriores; nunca sobreescribir ni borrar documentos emitidos.
+- **Decisión provisional de preentrega:** cada guardado crea un snapshot JSON inmutable de la previsualización, con número de versión por producto, referencia a la formulación aprobada, autor y fecha. Solo `ADMIN` e `I+D` crean snapshots; todos los perfiles de consulta pueden revisarlos. No se genera ni conserva PDF/arte firmado.
+- **Observación al cliente:** confirmar si el soporte final exige además conservar el archivo emitido, firmas, motivo u otros metadatos. Los snapshots preliminares no se borran ni sobrescriben.
+- **Estado:** `RETENCIÓN CONFIRMADA — snapshot preliminar implementado; soporte final sujeto a observación`.
+
+### [OQ-037] Vigencia de sesión y disponibilidad 24/7
+- **Respuesta Cliente:** sesión de 8 horas con renovación mientras el usuario permanece activo; renovación inmediata es aceptable; consulta debe estar disponible 24/7.
+- **Decisión:** la configuración existente conserva expiración de 8 horas y renueva al validar actividad. El requisito 24/7 es disponibilidad del servicio, no duración ilimitada de una sesión; requiere operación/monitorización y recuperación fuera del alcance de autenticación.
+- **Estado:** `REGLA DE SESIÓN CONFIRMADA — disponibilidad operativa 24/7 pendiente de SLO/infraestructura`.

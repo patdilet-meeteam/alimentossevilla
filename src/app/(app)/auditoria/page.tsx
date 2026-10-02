@@ -18,8 +18,14 @@ import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { History, ShieldCheck, Database } from "lucide-react";
 import { formatDate } from "@/lib/utils";
+import { getCurrentUser } from "@/lib/auth/session";
+import { Role } from "@/lib/auth/roles";
+import { redirect } from "next/navigation";
 
 export default async function AuditoriaPage() {
+  const currentUser = await getCurrentUser();
+  if (!currentUser || currentUser.role !== Role.ADMIN) redirect("/dashboard");
+
   const events = await db.auditEvent.findMany({
     take: 100,
     orderBy: { timestamp: "desc" },

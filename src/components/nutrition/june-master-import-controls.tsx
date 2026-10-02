@@ -32,13 +32,13 @@ export function JuneMasterImportControls() {
 
   return (
     <section className="rounded-md border border-dashed border-[#6FC7DA]/60 bg-[#DDF7FC]/30 p-4">
-      <p className="text-sm font-medium text-[#1F2933]">Cargar maestro piloto de junio</p>
+      <p className="text-sm font-medium text-[#1F2933]">Carga inicial del piloto de junio (uso puntual)</p>
       <p className="mt-1 text-xs text-muted-foreground">
-        Crea únicamente las 18 materias primas de Salchicha Desayuno Premium desde la hoja confirmada. Solo reconcilia registros provisionales creados desde costos; si un código ya tiene datos técnicos distintos, no realiza cambios.
+        Esta herramienta corresponde solo a la carga inicial del piloto Salchicha Desayuno Premium con el archivo de junio; no es el proceso habitual para otros meses o productos. Crea únicamente sus 18 materias primas desde la hoja confirmada y solo reconcilia registros provisionales creados desde costos. Si un código ya tiene datos técnicos distintos, no realiza cambios.
       </p>
       <form ref={formRef} onSubmit={onSubmit} className="mt-3 flex flex-wrap items-end gap-3">
         <div className="min-w-64 space-y-1.5">
-          <Label htmlFor="june-master-file"><Database className="mr-1 inline size-3.5" />Archivo de junio (.xlsx)</Label>
+          <Label htmlFor="june-master-file"><Database className="mr-1 inline size-3.5" />Archivo del piloto de junio (.xlsx)</Label>
           <Input id="june-master-file" name="file" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required disabled={pending} />
         </div>
         <Button type="submit" size="sm" disabled={pending}>

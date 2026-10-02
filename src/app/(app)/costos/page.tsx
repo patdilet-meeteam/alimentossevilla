@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { AlertTriangle, CircleDollarSign } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import { Role } from "@prisma/client";
 import { getCurrentUser } from "@/lib/auth/session";
 import { formatCostPeriod } from "@/lib/validations/costs";
 import { listCostImports, listFormulationCostSummaries } from "@/app/actions/cost-actions";
 import { CostImportControls, ApplyCostImportButton } from "@/components/costs/cost-import-controls";
-import { ModulePlaceholder } from "@/components/layout/module-placeholder";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -53,7 +52,7 @@ export default async function CostosPage() {
       <header>
         <h1 className="text-2xl font-semibold tracking-tight text-[#1F2933]">Costos de formulaciones</h1>
         <p className="text-sm text-muted-foreground">
-          Importación mensual trazable y cálculo directo para ingredientes con costo inequívoco en KG.
+          Carga manual del archivo mensual de costos (sin conexión directa a SIESA). Los códigos repetidos se conservan para trazabilidad y se calcula con la última asignación. El resumen usa solo materia prima con unidad KG y una formulación aprobada; las filas con unidad o costo inválidos impiden aplicar el archivo.
         </p>
       </header>
 
@@ -139,7 +138,7 @@ export default async function CostosPage() {
           <AlertTriangle className="size-4" />
           <AlertTitle>Hay filas que requieren revisión</AlertTitle>
           <AlertDescription>
-            Los códigos duplicados o filas inválidas mantienen la importación en borrador. La regla para resolver duplicados está pendiente en OQ-025.
+            Las filas inválidas o con conflictos requieren revisión antes de aplicar la importación. Cuando un código se repite, se conserva la trazabilidad y se usa la última asignación de costo.
           </AlertDescription>
         </Alert>
       ) : null}

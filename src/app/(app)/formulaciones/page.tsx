@@ -1,100 +1,70 @@
 import Link from "next/link";
 import { listProducts } from "@/app/actions/product-actions";
-import { getCurrentUser } from "@/lib/auth/session";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ModulePlaceholder } from "@/components/layout/module-placeholder";
-import { ArrowRight, Beaker } from "lucide-react";
-
-const EstadoClass: Record<string, string> = {
-  DRAFT: "bg-slate-100 text-slate-700 border-slate-200",
-  IN_REVIEW: "bg-amber-100 text-amber-800 border-amber-200",
-  APPROVED: "bg-emerald-100 text-emerald-800 border-emerald-200",
-  OBSOLETE: "bg-zinc-200 text-zinc-700 border-zinc-300",
-};
+import { Badge } from "@/components/ui/badge";
+import { FormulationsTable } from "@/components/products/formulations-table";
+import { ArrowRight, CheckCircle2, ClipboardList, FlaskConical, PackagePlus } from "lucide-react";
 
 export default async function FormulacionesPage() {
-  const user = await getCurrentUser();
-  if (!user) {
-    return (
-      <ModulePlaceholder
-        moduleName="Formulaciones"
-        moduleKey="formulaciones"
-        description="Inicie sesión para acceder a las formulaciones."
-        roadmapWeek="Semana 3 — Productos & Fórmulas"
-        icon={Beaker}
-        plannedCapabilities={["Listado cruzado de productos, formulaciones y versiones vigentes."]}
-      />
-    );
-  }
-
   const products = await listProducts();
-  const productsWithForm = products.filter((p) => p.formulations.length > 0);
-
-  if (productsWithForm.length === 0) {
-    return (
-      <ModulePlaceholder
-        moduleName="Formulaciones"
-        moduleKey="formulaciones"
-        description="Aún no hay formulaciones registradas. Cree un producto y luego su primera versión de fórmula."
-        roadmapWeek="Semana 3 — Productos & Fórmulas"
-        icon={Beaker}
-        plannedCapabilities={[
-          "Maestro de productos terminados con formulación 1:1 (OQ-002).",
-          "Versionamiento inmutable con workflow DRAFT → IN_REVIEW → APPROVED → OBSOLETE.",
-          "Trazabilidad de aprobaciones con usuario y fecha (OQ-004 y OQ-005).",
-        ]}
-      />
-    );
-  }
+  const productsWithForm = products.filter((product) => product.formulations.length > 0);
+  const entries = productsWithForm.map((product) => {
+    const versions = product.formulations.flatMap((formulation) => formulation.versions);
+    const current = versions.find((version) => version.estado === "APPROVED");
+    const latest = versions[0] ?? null;
+    return {
+      id: product.id,
+      name: product.nombreComercial,
+      code: product.codigoInterno,
+      category: product.categoriaProducto,
+      versions: versions.map((version) => ({ number: version.numeroSecuencial, status: version.estado })),
+      approvedVersion: current?.numeroSecuencial ?? null,
+      latestVersion: latest ? { number: latest.numeroSecuencial, status: latest.estado } : null,
+    };
+  });
+  const totalVersions = entries.reduce((total, product) => total + product.versions.length, 0);
+  const approvedCount = entries.filter((product) => product.approvedVersion !== null).length;
+  const reviewCount = entries.filter((product) => product.latestVersion?.status === "IN_REVIEW").length;
+  const categoryLabels: Record<string, string> = { SALCHICHA: "Salchicha", CHORIZO: "Chorizo", JAMON: "Jamón", MORTADELA: "Mortadela", TOCINETA: "Tocineta", PERRO_CALIENTE: "Perro caliente", OTRO: "Otro" };
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-semibold tracking-tight text-[#1F2933]">Formulaciones</h1>
-        <p className="text-sm text-muted-foreground">
-          Estado actual de las formulaciones de cada producto. Use la vista de detalle para crear versiones y registrar ingredientes.
-        </p>
+    <div className="space-y-7">
+      <header className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <div className="flex flex-col gap-5 border-b border-slate-100 bg-gradient-to-r from-white via-white to-violet-50/70 px-5 py-5 dark:border-slate-800 dark:from-slate-900 dark:to-slate-800/80 sm:flex-row sm:items-center sm:justify-between sm:px-7 sm:py-6">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#1C4378] text-white shadow-sm"><FlaskConical className="h-6 w-6" aria-hidden="true" /></div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#1C4378] dark:text-[#6FC7DA]">Control de versiones</p>
+              <h1 className="mt-1 text-2xl font-semibold tracking-tight text-slate-900 dark:text-white">Formulaciones</h1>
+              <p className="mt-1 max-w-xl text-sm text-slate-600 dark:text-slate-300">Consulte el avance y estado de las recetas por producto.</p>
+            </div>
+          </div>
+          <Button asChild variant="outline" className="justify-center border-slate-200 text-[#1C4378] dark:border-slate-700 dark:text-slate-200">
+            <Link href="/productos"><PackagePlus className="mr-2 h-4 w-4" />Ir a Productos</Link>
+          </Button>
+        </div>
+        <div className="grid grid-cols-3 divide-x divide-slate-100 dark:divide-slate-800">
+          <div className="px-4 py-3.5 sm:px-7"><p className="flex items-center gap-1.5 text-xl font-semibold text-slate-900 dark:text-white"><ClipboardList className="h-4 w-4 text-[#1C4378] dark:text-[#6FC7DA]" />{entries.length}</p><p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">Productos con fórmula</p></div>
+          <div className="px-4 py-3.5 sm:px-7"><p className="text-xl font-semibold text-slate-900 dark:text-white">{totalVersions}</p><p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">Versiones registradas</p></div>
+          <div className="px-4 py-3.5 sm:px-7"><p className="flex items-center gap-1.5 text-xl font-semibold text-slate-900 dark:text-white"><CheckCircle2 className="h-4 w-4 text-emerald-600" />{approvedCount}</p><p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">Con versión aprobada</p></div>
+        </div>
       </header>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {productsWithForm.map((p) => {
-          const versions = p.formulations.flatMap((f) => f.versions);
-          const vigente = versions.find((v) => v.estado === "APPROVED");
-          const ultima = versions[0];
-          return (
-            <Card key={p.id} className="border-[#D3D8DE]">
-              <CardHeader>
-                <CardTitle className="text-base">{p.nombreComercial}</CardTitle>
-                <p className="text-xs text-muted-foreground">{p.codigoInterno}</p>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs text-muted-foreground">
-                    {versions.length} versión(es)
-                  </span>
-                  {vigente ? (
-                    <Badge variant="outline" className={EstadoClass.APPROVED}>
-                      Vigente v{vigente.numeroSecuencial}
-                    </Badge>
-                  ) : ultima ? (
-                    <Badge variant="outline" className={EstadoClass[ultima.estado]}>
-                      Última v{ultima.numeroSecuencial} · {ultima.estado}
-                    </Badge>
-                  ) : null}
-                </div>
-                <div className="flex justify-end">
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={`/productos/${p.id}`}>
-                      Ver detalle <ArrowRight className="ml-1 size-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          );
-        })}
+      {entries.length === 0 ? (
+        <Card className="border-dashed border-slate-300 dark:border-slate-700">
+          <CardContent className="flex flex-col items-center gap-3 py-14 text-center">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-[#1C4378] dark:bg-slate-800 dark:text-[#6FC7DA]"><FlaskConical className="h-6 w-6" /></div>
+            <div><h2 className="font-semibold text-slate-900 dark:text-white">Todavía no hay formulaciones</h2><p className="mt-1 max-w-md text-sm text-slate-500 dark:text-slate-400">Las formulaciones se crean desde el detalle de cada producto.</p></div>
+            <Button asChild><Link href="/productos">Ir al catálogo de productos<ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
+          </CardContent>
+        </Card>
+      ) : (
+        <FormulationsTable entries={entries} categoryLabels={categoryLabels} reviewCount={reviewCount} />
+      )}
+      <div className="flex items-start gap-2 rounded-xl border border-blue-100 bg-blue-50/70 px-4 py-3 text-xs leading-relaxed text-blue-900 dark:border-blue-950 dark:bg-blue-950/30 dark:text-blue-200">
+        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" />
+        <p>Una versión aprobada es la vigente para consulta. Las versiones en borrador o revisión son visibles según el perfil asignado; Calidad y Finanzas consultan únicamente versiones aprobadas.</p>
       </div>
     </div>
   );

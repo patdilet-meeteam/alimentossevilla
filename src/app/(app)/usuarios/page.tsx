@@ -21,9 +21,11 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Users, Shield, ShieldAlert } from "lucide-react";
 import { formatDate, cn } from "@/lib/utils";
 import { UserRoleSelector } from "@/components/users/user-role-selector";
+import { redirect } from "next/navigation";
 
 export default async function UsuariosPage() {
   const currentUser = await getCurrentUser();
+  if (!currentUser || currentUser.role !== Role.ADMIN) redirect("/dashboard");
   const isAdmin = currentUser?.role === Role.ADMIN;
 
   const users = await db.user.findMany({

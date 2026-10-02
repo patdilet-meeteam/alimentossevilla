@@ -20,7 +20,7 @@ Fuera de alcance (explícito): cálculo nutricional automático, sellos, redonde
 - **OQ-004:** el Director de I+D/Técnico libera y aprueba cada cambio dejando trazabilidad.
 - **OQ-005:** aprueban Director / Calidad con perfil de aprobación.
 - **OQ-011 (abierta):** matriz granular de permisos → usar baseline (ADMIN/R_AND_D escriben, QUALITY/VIEWER solo lectura) y dejar TODO.
-- **OQ-013 (abierta):** tolerancia de cierre de % en una versión de formulación → tratada como **warning**, no error, hasta confirmación del cliente.
+- **OQ-019 (resuelta):** la suma debe ser exactamente `100,00 %`, sin tolerancia ni redondeo; el servidor bloquea el envío a revisión y la interfaz lo indica.
 - **OQ-014 (abierta):** el cliente usa dos códigos para la misma MP (`MPPS150` operativo vs `1210005` contable) → decisión pendiente Lina. No bloquea esta SPEC.
 
 ## 3. Cambios al modelo de dominio
@@ -151,6 +151,10 @@ model FormulationIngredient {
 }
 ```
 
+### Cálculo de salida total del proceso — preentrega
+
+`rendimientoEsperado` contiene la fracción de merma confirmada por el cliente: `0,11` equivale a 11% perdido. Para un lote base `X`, la pantalla muestra pérdida `X × merma` y salida total estimada `X × (1 − merma)`. El valor se edita solo en una versión `DRAFT`; para cambiar un proceso aprobado se crea otra versión. Este ajuste no se aplica a aportes nutricionales ni a los consumos de ingredientes usados por el costeo.
+
 Se agregan back-relations en `User` (auditEvents ya está; falta `products`, `formulationVersionsAprobadas`) y en `AuditEvent` (`formulationVersions`).
 
 ## 4. Permisos confirmados
@@ -271,7 +275,7 @@ Sanitización aplicada (módulo `src/lib/audit/audit-service.ts` ya lo hace).
 - `src/components/products/`, `src/components/formulations/` (nuevo).
 - `tests/unit/products-validation.test.ts`, `tests/unit/formulations-validation.test.ts`, `tests/integration/formulation-workflow.test.ts`.
 - `docs/DOMAIN.md` actualizado (Product/Formulation/FormulationVersion/FormulationIngredient/Presentation → IMPLEMENTADO en SPEC-003).
-- `docs/OPEN-QUESTIONS.md` actualizado (OQ-013, OQ-014 añadidas).
+- `docs/OPEN-QUESTIONS.md` actualizado (OQ-019 confirmada, OQ-014 añadida).
 
 ## 12. Cierre técnico y pendiente de aceptación
 

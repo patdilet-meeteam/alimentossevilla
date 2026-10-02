@@ -1,28 +1,37 @@
 import Link from "next/link";
 import { FileText, Info } from "lucide-react";
-import { listLegalIngredientsPreviews } from "@/app/actions/document-preview-actions";
+import { listLegalIngredientsPreviews, listLegalPreviewSnapshots, saveLegalIngredientsPreviewSnapshot } from "@/app/actions/document-preview-actions";
 import { getCurrentUser } from "@/lib/auth/session";
-import { ModulePlaceholder } from "@/components/layout/module-placeholder";
+import { Role } from "@/lib/auth/roles";
+import { formatDate } from "@/lib/utils";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { PrintPreviewButton } from "@/components/documents/print-preview-button";
+import styles from "./documentos.module.css";
 
 export default async function DocumentosPage() {
   // El layout (app)/layout.tsx ya garantizó que hay un usuario autenticado.
-  await getCurrentUser();
+  const user = await getCurrentUser();
+  const canSaveSnapshot = user?.role === Role.ADMIN || user?.role === Role.R_AND_D;
+  const canPrint = user?.role === Role.ADMIN || user?.role === Role.R_AND_D;
 
-  const previews = await listLegalIngredientsPreviews();
+  const [previews, snapshots] = await Promise.all([
+    listLegalIngredientsPreviews(),
+    listLegalPreviewSnapshots(),
+  ]);
 
   return (
     <div className="space-y-6">
-      <header>
+      <header className={styles.hideForPrint}>
         <h1 className="text-2xl font-semibold tracking-tight text-[#1F2933]">Datos para documentos técnicos</h1>
         <p className="text-sm text-muted-foreground">
-          Ingredientes obtenidos desde la última formulación aprobada, en orden descendente de participación.
+          La lista incluye automáticamente todos los productos con una formulación aprobada ({previews.length} en este momento). Esto no significa que todos tengan datos nutricionales completos ni que sean documentos oficiales. Si falta un perfil, la tarjeta lo indica y no muestra tabla nutricional.
         </p>
       </header>
 
-      <Alert variant="info">
+      <Alert className={styles.hideForPrint} variant="info">
         <Info className="size-4" />
         <AlertTitle>Previsualización no emitida</AlertTitle>
         <AlertDescription>
@@ -30,19 +39,28 @@ export default async function DocumentosPage() {
         </AlertDescription>
       </Alert>
 
-      <Alert variant="warning">
+      <Alert className={styles.hideForPrint} variant="info">
         <Info className="size-4" />
-        <AlertTitle>Validación pendiente de fuente nutricional</AlertTitle>
+        <AlertTitle>Versionado preliminar disponible</AlertTitle>
         <AlertDescription>
-          Para la Salchicha Desayuno Premium 480 g, el TL v4/arte de referencia declara 163 kcal, 10 g de grasa, 3,9 g de grasa saturada y 579 mg de sodio, y muestra un sello de sodio. La plataforma calcula con TN OFICIAL 145,4 kcal, 9,40 g de grasa, 3,51 g de grasa saturada y 613,04 mg de sodio, con sellos de sodio y grasas saturadas. Esta diferencia está documentada en OQ-030; la previsualización no es emitible hasta confirmar la fuente oficial.
+          I+D y Dirección Técnica pueden guardar una copia inmutable de esta previsualización. Cada copia conserva los datos mostrados, la formulación aprobada de origen, el usuario y la fecha; no constituye una emisión oficial ni un archivo final aprobado.
+        </AlertDescription>
+      </Alert>
+
+      <Alert className={styles.hideForPrint} variant="warning">
+        <Info className="size-4" />
+        <AlertTitle>Validación técnica de paridad con Excel</AlertTitle>
+        <AlertDescription>
+          El cliente ya confirmó que los Excel compartidos son la base del reporte nutricional y deben replicarse 1:1. Esta versión aprobada no tiene una captura de nutrientes del CTN, por lo que muestra los perfiles activos del Banco Nutricional. Al importar y aprobar una nueva versión desde el CTN, se usarán sus valores por fila sin reemplazar los perfiles maestros. La previsualización seguirá marcada para cotejo técnico hasta comparar todos los resultados con el Excel.
         </AlertDescription>
       </Alert>
 
       {previews.length === 0 ? (
         <Card className="border-[#D3D8DE]"><CardContent className="py-8 text-sm text-muted-foreground">No hay formulaciones aprobadas para previsualizar.</CardContent></Card>
       ) : previews.map((preview) => (
-        <Card key={preview.productId} className="border-[#D3D8DE]">
+        <Card key={preview.productId} className={`${styles.previewCard} ${canPrint ? "" : styles.printRestricted} border-[#D3D8DE]`}>
           <CardHeader>
+            <Badge className={styles.printOnly} variant="outline">PRELIMINAR — NO OFICIAL</Badge>
             <CardTitle className="text-base"><Link href={`/productos/${preview.productId}`} className="hover:underline">{preview.productName}</Link></CardTitle>
             <p className="text-xs text-muted-foreground">{preview.productCode} · versión aprobada v{preview.versionNumber}</p>
           </CardHeader>
@@ -52,6 +70,37 @@ export default async function DocumentosPage() {
                 <Badge key={presentation.id} variant="outline">{presentation.netWeightGrams} g{presentation.portionGrams ? ` · porción ${presentation.portionGrams} g` : ""}</Badge>
               ))}
             </div>
+            {canSaveSnapshot && preview.nutrition.ready && preview.nutrition.calculationSource === "EXCEL_CTN" && (
+              <form className={styles.hideForPrint} action={async () => {
+                "use server";
+                await saveLegalIngredientsPreviewSnapshot(preview.productId);
+              }}>
+                <Button type="submit" variant="outline" size="sm">
+                  <FileText className="mr-2 size-4" />
+                  Guardar nueva versión preliminar
+                </Button>
+              </form>
+            )}
+            {canPrint && preview.nutrition.ready && preview.nutrition.calculationSource === "EXCEL_CTN" && <div className={styles.hideForPrint}><PrintPreviewButton /></div>}
+            {canPrint && preview.nutrition.ready && preview.nutrition.calculationSource !== "EXCEL_CTN" && (
+              <p className="text-xs text-amber-700">La salida nutricional de esta versión aún no se puede guardar ni imprimir: debe provenir de una captura del Excel CTN confirmada para la formulación.</p>
+            )}
+            {snapshots.filter((snapshot) => snapshot.productId === preview.productId).length > 0 && (
+              <section aria-label="Historial de versiones preliminares" className={`${styles.hideForPrint} rounded-md border p-3`}>
+                <h2 className="mb-2 text-sm font-medium">Versiones preliminares guardadas</h2>
+                <ul className="space-y-1 text-xs text-muted-foreground">
+                  {snapshots.filter((snapshot) => snapshot.productId === preview.productId).map((snapshot) => (
+                    <li key={snapshot.id} className="rounded border p-2">
+                      <p>v{snapshot.documentVersion} · formulación v{snapshot.sourceFormulationVersionNumber} · {snapshot.createdByEmail} · {formatDate(snapshot.createdAt)}</p>
+                      <details className="mt-1">
+                        <summary className="cursor-pointer text-[#1C4378]">Consultar soporte guardado</summary>
+                        <pre className="mt-2 max-h-64 overflow-auto rounded bg-slate-50 p-2 text-[10px] dark:bg-slate-950">{JSON.stringify(snapshot.content, null, 2)}</pre>
+                      </details>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
             <div>
               <h2 className="mb-2 text-sm font-medium">Ingredientes</h2>
               <ol className="list-decimal space-y-1 pl-5 text-sm">
@@ -66,7 +115,9 @@ export default async function DocumentosPage() {
                 <p className="text-sm text-amber-700">{preview.nutrition.ready ? "" : preview.nutrition.reason}</p>
               ) : (
                 <div className="space-y-3">
-                  <p className="text-xs text-muted-foreground">Valores calculados desde la versión aprobada. Energía: {readyNutrition.energyKcalPer100g.toFixed(1)} kcal/100 g.</p>
+                  <p className="text-xs text-muted-foreground">
+                    Fuente de nutrientes: {readyNutrition.calculationSource === "EXCEL_CTN" ? `captura del Excel CTN (${readyNutrition.sourceFileName})` : "perfiles maestros activos del Banco Nutricional"}. Cálculo desde la versión aprobada y parámetros regulatorios v{readyNutrition.regulatoryParametersVersion}. Energía: {readyNutrition.energyKcalPer100g.toFixed(1)} kcal/100 g.
+                  </p>
                   <div className="overflow-x-auto">
                     <table className="w-full min-w-[520px] text-xs">
                       <thead className="border-b text-left text-muted-foreground"><tr><th className="px-2 py-1">Nutriente</th><th className="px-2 py-1 text-right">Por 100 g</th>{readyNutrition.presentations.filter((p) => p.portionGrams !== null).map((p) => <th key={p.id} className="px-2 py-1 text-right">Por {p.portionGrams} g</th>)}</tr></thead>

@@ -109,6 +109,16 @@ export const createDraftVersionSchema = z.object({
     .nullable(),
 });
 
+export const updateDraftProcessLossSchema = z.object({
+  formulationVersionId: z.string().min(1),
+  rendimientoEsperado: z
+    .number()
+    .finite()
+    .min(0)
+    .max(1, "La merma debe estar entre 0 y 1 (ej. 0.11 = 11%)")
+    .nullable(),
+});
+
 export const addIngredientToVersionSchema = z.object({
   formulationVersionId: z.string().min(1),
   ingredientId: z.string().min(1, "El ingrediente es requerido"),

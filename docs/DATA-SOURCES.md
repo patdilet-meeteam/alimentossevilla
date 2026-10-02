@@ -12,6 +12,7 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 - **Contenido:** Contiene tablas de nutrientes (proteína, grasa total, grasa saturada, carbohidratos, azúcares totales, azúcares añadidos, sodio, fibra dietaria, vitaminas y minerales) por 100 gramos de ingrediente.
 - **Implementación vigente:** La carga protegida lee la hoja `TN OFICIAL` (123 filas verificadas el 23 de septiembre de 2026). El archivo no contiene códigos SIESA: solo puede versionar perfiles de ingredientes maestros activos que coincidan de forma única por nombre o nombre genérico; no crea ingredientes.
 - **Trazabilidad:** Cada perfil importado conserva la referencia de fuente de la fila, se registra en auditoría y crea una nueva versión. Un perfil activo de laboratorio o literatura no se sustituye automáticamente.
+- **Uso operativo:** Importar únicamente cuando se reciba una nueva versión aprobada del Banco. Esta herramienta no es requisito para consultar el catálogo ni está asociada a un mes específico; el contrato actual sí requiere que el libro conserve la hoja `TN OFICIAL`.
 
 ---
 
@@ -50,6 +51,24 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
   - [OQ-013](OPEN-QUESTIONS.md#oq-013): Nombre exacto y formato de la columna con el código SIESA.
   - [OQ-014](OPEN-QUESTIONS.md#oq-014): Política de manejo ante códigos SIESA no encontrados en el catálogo.
 
+### 6. Junio (1).xlsx — maestro y formulaciones de junio
+- **Tipo:** Libro Excel de formulaciones, consumos y costos por presentación.
+- **Uso revisado:** La hoja `SCHA DESAYUNO 480 G -14 UND` contiene la fórmula del producto e incluye `COLOR NATURAL ROJO AC150` (código SIESA `1250009`) y `HUMO TRUSMOKE OIL EX` (código SIESA `1270004`). El libro incluye además hojas para las presentaciones de 115 g, 240 g y 960 g.
+- **Uso en la plataforma:** Fuente de receta/cantidades para el piloto de Salchicha Desayuno Premium. El importador existente apunta a la hoja de 480 g y exige las 18 filas del mapeo explícito.
+- **Reconciliación local (1-oct-2026):** los códigos `1250009` y `1270004` están activos y presentes en la versión aprobada v3 de `SALCHICHA DESAYUNO PREMIUM 480 G`, con perfil activo `BANCO_ALIMENTOS`.
+- **Límite:** No usar por sí solo los costos incrustados/enlazados de sus hojas como sustituto del libro maestro mensual de costos; preservar separadas las procedencias de cantidades de fórmula y precios.
+- **Inspección de archivo recibido (1-oct-2026):** el libro contiene 140 hojas y 17.544 fórmulas; la hoja de 480 g calcula receta/cantidades, costos por aplicación y merma. Sus búsquedas externas remiten a libros de costos históricos/Junio. No se encontraron encabezados ni tabla de salida nutricional (energía, grasa, proteína, sodio, etc.) en sus hojas. En la hoja de 480 g hay celdas con resultados almacenados `#DIV/0!` y `#N/A`; por tanto, los valores en caché no prueban una corrida íntegra y reproducible.
+- **Implicación:** este archivo respalda la receta y el costo, pero por sí solo no proporciona las ecuaciones/salida del reporte nutricional que pide la respuesta del cliente. No recalcular ni declarar réplica 1:1 usando solo esta hoja.
+- **Seguimiento técnico:** [OQ-031](OPEN-QUESTIONS.md#oq-031) documenta la verificación pendiente de paridad nutricional 1:1 con los Excel; la fuente del reporte ya fue confirmada por el cliente.
+
+### 7. Junio costos Base de Datos ME - MPNC - MPC.xlsx
+- **Tipo:** Maestro/listado de costos Excel.
+- **Uso revisado:** `Hoja1` registra `1250009` / `COLOR NATURAL ROJO AC150` con unidad KG y costo `83.551,55`, y `1270004` / `HUMO TRUSMOKE OIL EX` con unidad KG y costo `50.662,00`.
+- **Uso en la plataforma:** Fuente para costos y cruce por código; no es el libro de receta que define las cantidades de ingredientes del piloto.
+- **Inspección de archivo recibido (1-oct-2026):** contiene `Hoja1` y `Hoja2`; corresponde a datos de costo, sin hoja ni etiquetas de salida nutricional.
+- **Regla de duplicados:** usar la última asignación dentro del archivo y mantener todas las filas fuente, según OQ-025.
+- **Validación de carga:** la última asignación de `2906002` está en la fila 278 y no incluye unidad; `1131002` aparece nuevamente en la fila 506 con costo cero y sin unidad; `2917001` en la fila 279 tampoco declara unidad. El importador conserva estas filas como inválidas y bloquea aplicar el archivo hasta completar o confirmar sus unidades. No se infieren a partir de filas anteriores.
+
 ---
 
 ## 2. Matriz de Trazabilidad de Fuentes de Datos
@@ -61,3 +80,5 @@ Este documento detalla los orígenes de datos, archivos de muestra y fuentes de 
 | **DS-03** | TL 480g | Módulo de Documentos Técnicos (Semana 6) | Plantilla base de salida | Revisada; discrepancia de contenido pendiente OQ-030 |
 | **DS-04** | AR 480g | N/A (Referencia visual) | N/A | Fuera de alcance |
 | **DS-05** | Costos Junio | Módulo de Costos (Semana 5) | Mensual (Carga de archivo) | Pendiente resolución OQ-012/13/14 |
+| **DS-06** | `Junio (1).xlsx` | Maestro y formulaciones | Según actualización de receta | Revisado; hoja piloto y 18 filas soportadas por importador |
+| **DS-07** | `Junio costos Base de Datos ME - MPNC - MPC.xlsx` | Módulo de Costos | Mensual | Revisado; libro de costo distinto de la fuente de receta |

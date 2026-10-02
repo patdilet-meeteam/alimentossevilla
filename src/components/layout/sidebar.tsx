@@ -38,7 +38,6 @@ interface NavItem {
   title: string;
   href: string;
   icon: React.ComponentType<{ className?: string }>;
-  badge?: string;
   allowedRoles?: Role[];
 }
 
@@ -64,10 +63,9 @@ const navItems: NavItem[] = [
     icon: FlaskConical,
   },
   {
-    title: "Cálculo Nutricional",
+    title: "Preparación Nutricional",
     href: "/normativa",
     icon: ShieldCheck,
-    badge: "Sem. 4",
   },
   {
     title: "Costos",
@@ -78,17 +76,18 @@ const navItems: NavItem[] = [
     title: "Documentos Técnicos",
     href: "/documentos",
     icon: FileText,
-    badge: "Sem. 6",
   },
   {
     title: "Usuarios",
     href: "/usuarios",
     icon: Users,
+    allowedRoles: [Role.ADMIN],
   },
   {
     title: "Auditoría",
     href: "/auditoria",
     icon: History,
+    allowedRoles: [Role.ADMIN],
   },
 ];
 
@@ -165,7 +164,7 @@ export function Sidebar({ user, initialCollapsed }: SidebarProps) {
           <div className="px-3 pb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-[#B9E8F1]/50 lg:group-data-[collapsed]:hidden">
             Navegación
           </div>
-          {navItems.map((item) => {
+          {navItems.filter((item) => !item.allowedRoles || item.allowedRoles.includes(user.role)).map((item) => {
             const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
             const Icon = item.icon;
 
@@ -191,16 +190,6 @@ export function Sidebar({ user, initialCollapsed }: SidebarProps) {
                   />
                   <span className="truncate lg:group-data-[collapsed]:hidden">{item.title}</span>
                 </div>
-                {item.badge && (
-                  <span
-                    className={cn(
-                      "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium lg:group-data-[collapsed]:hidden",
-                      isActive ? "bg-[#6FC7DA]/30 text-white" : "bg-white/10 text-[#B9E8F1]/70"
-                    )}
-                  >
-                    {item.badge}
-                  </span>
-                )}
               </Link>
             );
           })}

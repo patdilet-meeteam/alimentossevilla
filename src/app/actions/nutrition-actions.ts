@@ -5,13 +5,14 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { requireRole } from "@/lib/auth/roles";
 import { db } from "@/lib/db";
 import { assessNutritionReadiness } from "@/lib/nutrition/nutrition-readiness";
-import { buildCtnImportPlan, parseCtnCsv } from "@/lib/nutrition/ctn-import";
+import { buildCtnImportPlan, parseCtnCsv, parseCtnWorkbook, resolveCtnNutritionSnapshot } from "@/lib/nutrition/ctn-import";
 import { calculateNutrition } from "@/lib/nutrition/nutrition-calculator";
 import { evaluateWarningSeals, formatActiveSeals, getSealText, type WarningSeal } from "@/lib/nutrition/warning-seals";
 import { parseNutritionalBankWorkbook } from "@/lib/nutrition/nutritional-bank-import";
 import { parseJuneSalchichaMasterWorkbook } from "@/lib/nutrition/june-salchicha-master-import";
 import { normalizeCostDescription } from "@/lib/costs/cost-import-parser";
 import { revalidatePath } from "next/cache";
+import { getCurrentRegulatoryParameters } from "@/lib/nutrition/regulatory-parameters";
 
 const READ_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D, Role.QUALITY, Role.VIEWER];
 const WRITE_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D];
@@ -126,10 +127,13 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
   const formulationId = formData.get("formulationId");
   const file = formData.get("file");
   if (typeof formulationId !== "string" || !formulationId) throw new Error("La formulación es requerida.");
-  if (!(file instanceof File) || !file.name.toLowerCase().endsWith(".csv")) throw new Error("Seleccione un archivo CTN CSV.");
-  if (file.size === 0 || file.size > 2 * 1024 * 1024) throw new Error("El CTN debe pesar entre 1 byte y 2 MB.");
+  if (!(file instanceof File) || !/\.(csv|xlsx)$/i.test(file.name)) throw new Error("Seleccione el CTN en formato XLSX o CSV.");
+  if (file.size === 0 || file.size > 10 * 1024 * 1024) throw new Error("El CTN debe pesar entre 1 byte y 10 MB.");
 
-  const plan = buildCtnImportPlan(parseCtnCsv(await file.text()));
+  const parsedCtn = file.name.toLowerCase().endsWith(".xlsx")
+    ? await parseCtnWorkbook(Buffer.from(await file.arrayBuffer()))
+    : parseCtnCsv(await file.text());
+  const plan = buildCtnImportPlan(parsedCtn);
   const formulation = await db.formulation.findUnique({
     where: { id: formulationId },
     include: { versions: { orderBy: { numeroSecuencial: "desc" }, take: 1 } },
@@ -167,11 +171,29 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
     } else resolvedPlan.set(ingredient.id, { ingredientId: ingredient.id, quantity: row.quantity, percentage: row.percentage, sourceRows: [row.sourceRow] });
   }
 
+  const nutritionSourceSnapshot = {
+    source: "CTN" as const,
+    sourceFileName: file.name,
+    rows: plan.map((row) => {
+      const ingredient = (row.sourceCode && byCode.get(row.sourceCode.toUpperCase())) || byName.get(canonicalCtnName(row.sourceName));
+      if (!ingredient) throw new Error(`Ingrediente no resuelto: ${row.sourceName}`);
+      return {
+        sourceRow: row.sourceRow,
+        sourceCode: row.sourceCode,
+        sourceName: row.sourceName,
+        ingredientId: ingredient.id,
+        quantity: row.quantity.toString(),
+        nutrientsPer100g: Object.fromEntries(Object.entries(row.nutrientsPer100g).map(([key, value]) => [key, value.toString()])),
+      };
+    }),
+  };
+
   const version = await db.$transaction(async (tx) => tx.formulationVersion.create({
     data: {
       formulationId: formulation.id,
       numeroSecuencial: (formulation.versions[0]?.numeroSecuencial ?? 0) + 1,
       estado: "DRAFT",
+      nutritionSourceSnapshot: nutritionSourceSnapshot as Prisma.InputJsonValue,
       ingredients: {
         create: [...resolvedPlan.values()].map((row) => ({ ingredientId: row.ingredientId, porcentajeParticipacion: row.percentage, cantidadCanonica: row.quantity })),
       },
@@ -194,13 +216,14 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
         totalCanonicalQuantity: plan.reduce((sum, row) => sum.plus(row.quantity), new Prisma.Decimal(0)).toString(),
         percentageTotal: plan.reduce((sum, row) => sum.plus(row.percentage), new Prisma.Decimal(0)).toString(),
         aliasesApplied: Object.keys(CTN_NAME_ALIASES),
+        nutritionSourceRows: nutritionSourceSnapshot.rows.length,
       },
     },
   });
 
   revalidatePath(`/productos/${formulation.productId}`);
   revalidatePath("/normativa");
-  return { ok: true, versionId: version.id, message: `CTN importado en borrador v${version.numeroSecuencial}.` };
+  return { ok: true, versionId: version.id, message: `CTN importado en borrador v${version.numeroSecuencial}; se conservaron las cantidades y los valores nutricionales de cada fila como fuente de esta versión.` };
 }
 
 /**
@@ -398,6 +421,8 @@ export async function calculateFormulationSeals(
     perPortion: Record<string, number>;
     energyKcalPer100g: number;
     energyKcalPerPortion: number;
+    calculationSource: "EXCEL_CTN" | "BANCO_NUTRICIONAL";
+    sourceFileName: string | null;
   };
   seals?: {
     activeSeals: WarningSeal[];
@@ -411,10 +436,12 @@ export async function calculateFormulationSeals(
     };
   };
   readiness?: { ready: boolean; issues: string[] };
+  regulatoryParametersVersion?: number;
 }> {
   const user = await getCurrentUser();
   if (!user) throw new Error("Unauthorized");
-  requireRole(user.role, READ_ROLES);
+  requireRole(user.role, WRITE_ROLES);
+  const regulatoryParameters = await getCurrentRegulatoryParameters();
 
   // Obtener la versión de formulación con ingredientes y perfiles nutricionales activos
   const version = await db.formulationVersion.findUnique({
@@ -452,9 +479,25 @@ export async function calculateFormulationSeals(
     return { ok: false, message: `La versión ${version.numeroSecuencial} no está aprobada (estado: ${version.estado}). Los sellos solo se evalúan en versiones aprobadas.` };
   }
 
+  const ctnSource = resolveCtnNutritionSnapshot(version.nutritionSourceSnapshot, version.ingredients.map((fi) => ({
+    ingredientId: fi.ingredientId,
+    name: fi.ingredient.name,
+    quantity: fi.cantidadCanonica ?? fi.porcentajeParticipacion,
+  })));
+  if (ctnSource.status === "invalid") {
+    return { ok: false, message: ctnSource.reason, readiness: { ready: false, issues: [ctnSource.reason] } };
+  }
+
   // Verificar que cada ingrediente tenga perfil activo con valores
   const readinessIssues: string[] = [];
-  const ingredientsWithProfiles = version.ingredients.filter((fi) => {
+  if (ctnSource.status === "ready") {
+    const required = ["FAT_TOTAL", "FAT_SAT", "FAT_TRANS", "PROTEIN", "CARBS_TOTAL", "SUGAR_TOTAL", "SUGAR_ADDED", "FIBER", "SODIUM"];
+    for (const input of ctnSource.inputs) {
+      const missing = required.filter((key) => input.nutrientsPer100g[key] === undefined);
+      if (missing.length) readinessIssues.push(`La fila CTN de ${input.name} no incluye: ${missing.join(", ")}`);
+    }
+  }
+  const ingredientsWithProfiles = ctnSource.status === "ready" ? version.ingredients : version.ingredients.filter((fi) => {
     const activeProfiles = fi.ingredient.profiles.filter((p) => p.isActive);
     if (activeProfiles.length === 0) {
       readinessIssues.push(`Falta perfil nutricional para: ${fi.ingredient.name}`);
@@ -465,10 +508,8 @@ export async function calculateFormulationSeals(
       return false;
     }
     const profile = activeProfiles[0];
-    const hasRequiredNutrients = profile.values.some((v) => v.nutrient.key === "SODIUM")
-      && profile.values.some((v) => v.nutrient.key === "SUGAR_TOTAL")
-      && profile.values.some((v) => v.nutrient.key === "FAT_SAT")
-      && profile.values.some((v) => v.nutrient.key === "FAT_TRANS");
+    const required = ["FAT_TOTAL", "FAT_SAT", "FAT_TRANS", "PROTEIN", "CARBS_TOTAL", "SUGAR_TOTAL", "SUGAR_ADDED", "FIBER", "SODIUM"];
+    const hasRequiredNutrients = required.every((key) => profile.values.some((value) => value.nutrient.key === key));
     if (!hasRequiredNutrients) {
       readinessIssues.push(`Perfil incompleto para: ${fi.ingredient.name}`);
       return false;
@@ -489,7 +530,7 @@ export async function calculateFormulationSeals(
   }
 
   // Preparar datos para el calculador
-  const nutritionInputs = ingredientsWithProfiles.map((fi) => {
+  const nutritionInputs = ctnSource.status === "ready" ? ctnSource.inputs : ingredientsWithProfiles.map((fi) => {
     const profile = fi.ingredient.profiles.find((p) => p.isActive)!;
     const nutrientsPer100g: Record<string, number> = {};
     for (const v of profile.values) {
@@ -515,7 +556,7 @@ export async function calculateFormulationSeals(
   const sealEvaluation = evaluateWarningSeals({
     per100g: per100gRecord,
     energyKcalPer100g: calculation.energyKcalPer100g,
-  });
+  }, regulatoryParameters.thresholds);
 
   // Formatear resultados
   const sealTexts = sealEvaluation.activeSeals.map(getSealText);
@@ -534,6 +575,8 @@ export async function calculateFormulationSeals(
       ),
       energyKcalPer100g: Number(calculation.energyKcalPer100g),
       energyKcalPerPortion: Number(calculation.energyKcalPerPortion),
+      calculationSource: ctnSource.status === "ready" ? "EXCEL_CTN" : "BANCO_NUTRICIONAL",
+      sourceFileName: ctnSource.status === "ready" ? ctnSource.sourceFileName : null,
     },
     seals: {
       activeSeals: sealEvaluation.activeSeals,
@@ -566,5 +609,6 @@ export async function calculateFormulationSeals(
       },
     },
     readiness: { ready: readinessIssues.length === 0, issues: readinessIssues },
+    regulatoryParametersVersion: regulatoryParameters.version,
   };
 }

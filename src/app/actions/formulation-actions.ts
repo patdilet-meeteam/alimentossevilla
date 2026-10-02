@@ -7,6 +7,7 @@ import { recordAuditEvent } from "@/lib/audit/audit-service";
 import {
   getOrCreateFormulationSchema,
   createDraftVersionSchema,
+  updateDraftProcessLossSchema,
   addIngredientToVersionSchema,
   updateIngredientPercentageSchema,
   removeIngredientFromVersionSchema,
@@ -118,7 +119,10 @@ export async function createDraftVersion(rawInput: CreateDraftVersionInput) {
       formulationId: formulation.id,
       numeroSecuencial: nextNumber,
       estado: "DRAFT",
-      rendimientoEsperado: input.rendimientoEsperado ?? formulation.rendimientoEsperado ?? null,
+      rendimientoEsperado: input.rendimientoEsperado
+        ?? formulation.versions[0]?.rendimientoEsperado
+        ?? formulation.rendimientoEsperado
+        ?? null,
     },
   });
 
@@ -130,6 +134,39 @@ export async function createDraftVersion(rawInput: CreateDraftVersionInput) {
 
   revalidatePath(`/productos/${formulation.productId}`);
   return created;
+}
+
+export async function updateDraftProcessLoss(rawInput: {
+  formulationVersionId: string;
+  rendimientoEsperado: number | null;
+}) {
+  const user = await getCurrentUser();
+  if (!user) throw new Error("Unauthorized");
+  requireRole(user.role, WRITE_ROLES);
+
+  const input = updateDraftProcessLossSchema.parse(rawInput);
+  const version = await loadVersionOrThrow(input.formulationVersionId);
+  assertMutable(version);
+
+  const updated = await db.formulationVersion.update({
+    where: { id: version.id },
+    data: { rendimientoEsperado: input.rendimientoEsperado },
+  });
+
+  await recordAuditEvent({
+    actorId: user.id,
+    actorEmail: user.email,
+    action: "formulation_version.process_loss.update",
+    entity: "FormulationVersion",
+    entityId: version.id,
+    metadata: {
+      numeroSecuencial: version.numeroSecuencial,
+      rendimientoEsperado: input.rendimientoEsperado,
+    },
+  });
+
+  revalidatePath(`/productos/${version.formulation.productId}`);
+  return updated;
 }
 
 export async function addIngredientToVersion(rawInput: AddIngredientToVersionInput) {

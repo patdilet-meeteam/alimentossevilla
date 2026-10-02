@@ -32,13 +32,13 @@ export function NutritionalBankImportControls() {
 
   return (
     <section className="rounded-md border border-dashed border-[#6FC7DA]/60 bg-[#DDF7FC]/30 p-4">
-      <p className="text-sm font-medium text-[#1F2933]">Importar Banco Nutricional</p>
+      <p className="text-sm font-medium text-[#1F2933]">Actualizar perfiles desde el Banco Nutricional</p>
       <p className="mt-1 text-xs text-muted-foreground">
-        Lee la hoja TN OFICIAL. Solo versiona perfiles de ingredientes maestros que coincidan de forma única; no crea ingredientes sin código SIESA ni reemplaza perfiles de laboratorio o literatura.
+        Use esta carga cuando reciba una nueva versión aprobada del Banco Nutricional; no es necesaria para consultar el catálogo. Lee la hoja TN OFICIAL. Solo versiona perfiles de ingredientes maestros que coincidan de forma única; no crea ingredientes sin código SIESA ni reemplaza perfiles de laboratorio o literatura.
       </p>
       <form ref={formRef} onSubmit={onSubmit} className="mt-3 flex flex-wrap items-end gap-3">
         <div className="min-w-64 space-y-1.5">
-          <Label htmlFor="nutritional-bank-file"><FileSpreadsheet className="mr-1 inline size-3.5" />Banco (.xlsx)</Label>
+          <Label htmlFor="nutritional-bank-file"><FileSpreadsheet className="mr-1 inline size-3.5" />Nueva versión del Banco (.xlsx)</Label>
           <Input id="nutritional-bank-file" name="file" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required disabled={pending} />
         </div>
         <Button type="submit" size="sm" disabled={pending}>

@@ -1,5 +1,5 @@
 import { getCurrentUser } from "@/lib/auth/session";
-import { RoleLabels } from "@/lib/auth/roles";
+import { Role, RoleDescriptions, RoleLabels } from "@/lib/auth/roles";
 import { getRecentAuditEvents } from "@/lib/audit/audit-service";
 import {
   Card,
@@ -30,7 +30,8 @@ interface ModuleCard {
   icon: React.ComponentType<{ className?: string }>;
   scope: string;
   status: string;
-  week: string;
+  allowedRoles?: Role[];
+  roleScope?: Partial<Record<Role, string>>;
 }
 
 const moduleCards: ModuleCard[] = [
@@ -38,9 +39,9 @@ const moduleCards: ModuleCard[] = [
     title: "Ingredientes & Materias Primas",
     href: "/ingredientes",
     icon: Wheat,
-    scope: "Gestión de catálogo de materias primas, perfiles nutricionales y asociación con códigos SIESA.",
+    scope: "Catálogo de materias primas, perfiles nutricionales y asociación con códigos SIESA.",
     status: "Disponible",
-    week: "Catálogo",
+    roleScope: { [Role.ADMIN]: "Consulta y administración", [Role.R_AND_D]: "Consulta y edición", [Role.QUALITY]: "Solo consulta", [Role.VIEWER]: "Solo consulta" },
   },
   {
     title: "Productos & Presentaciones",
@@ -48,47 +49,47 @@ const moduleCards: ModuleCard[] = [
     icon: Package,
     scope: "Catálogo de productos terminados, presentaciones comerciales, gramajes y porciones de referencia.",
     status: "Disponible",
-    week: "Productos",
+    roleScope: { [Role.ADMIN]: "Consulta y administración", [Role.R_AND_D]: "Consulta y edición", [Role.QUALITY]: "Solo consulta", [Role.VIEWER]: "Solo consulta" },
   },
   {
     title: "Formulaciones & Recetas",
     href: "/formulaciones",
     icon: FlaskConical,
-    scope: "Estructura de fórmulas, control de versiones, rendimientos de proceso y trazabilidad técnica.",
+    scope: "Estructura de fórmulas, control de versiones y trazabilidad de cambios.",
     status: "Disponible",
-    week: "Formulaciones",
+    roleScope: { [Role.ADMIN]: "Consulta y gestión técnica", [Role.R_AND_D]: "Consulta y edición", [Role.QUALITY]: "Solo consulta de aprobadas", [Role.VIEWER]: "Solo consulta de aprobadas" },
   },
   {
-    title: "Cálculo Nutricional & Sellos",
+    title: "Preparación Nutricional",
     href: "/normativa",
     icon: ShieldCheck,
-    scope: "Motor de cálculo normativo, límites de advertencia frontal y parámetros regulatorios.",
-    status: "Semana 4",
-    week: "Sem. 4",
+    scope: "Verificación de perfiles nutricionales activos para formulaciones aprobadas.",
+    status: "Disponible",
+    roleScope: { [Role.ADMIN]: "Consulta y configuración", [Role.R_AND_D]: "Solo consulta", [Role.QUALITY]: "Solo consulta", [Role.VIEWER]: "Solo consulta" },
   },
   {
     title: "Costos de Formulación",
     href: "/costos",
     icon: CircleDollarSign,
-    scope: "Carga mensual de costos de materias primas, cruce por código SIESA y costeo de batch.",
+    scope: "Carga mensual de costos, cruce por código SIESA y cálculo de costo directo de materiales.",
     status: "Disponible",
-    week: "Costos",
+    roleScope: { [Role.ADMIN]: "Consulta, carga y aplicación", [Role.R_AND_D]: "Solo consulta", [Role.QUALITY]: "Solo consulta", [Role.VIEWER]: "Solo consulta" },
   },
   {
     title: "Documentos Técnicos",
     href: "/documentos",
     icon: FileText,
-    scope: "Generación de Fichas Técnicas, Textos Legales y rotulado normativo oficial.",
-    status: "Semana 6",
-    week: "Sem. 6",
+    scope: "Permite revisar y versionar datos técnicos. La salida nutricional sigue en validación técnica contra el Excel 1:1 confirmado por el cliente.",
+    status: "En validación",
+    roleScope: { [Role.ADMIN]: "Consulta, guardar versión e imprimir", [Role.R_AND_D]: "Consulta, guardar versión e imprimir", [Role.QUALITY]: "Solo consulta; sin impresión", [Role.VIEWER]: "Solo consulta" },
   },
   {
     title: "Gestión de Usuarios",
     href: "/usuarios",
     icon: Users,
-    scope: "Administración de accesos, cuentas y perfiles según la matriz de roles corporativa.",
+    scope: "Consulta de cuentas y administración de roles y estados de usuario.",
     status: "Disponible",
-    week: "Accesos",
+    allowedRoles: [Role.ADMIN],
   },
   {
     title: "Auditoría & Trazabilidad",
@@ -96,13 +97,14 @@ const moduleCards: ModuleCard[] = [
     icon: History,
     scope: "Registro inmutable de eventos de seguridad y cambios en entidades del sistema.",
     status: "Disponible",
-    week: "Trazabilidad",
+    allowedRoles: [Role.ADMIN],
   },
 ];
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
-  const recentEvents = await getRecentAuditEvents(5);
+  const canViewAudit = user?.role === Role.ADMIN;
+  const recentEvents = canViewAudit ? await getRecentAuditEvents(5) : [];
 
   return (
     <div className="space-y-8">
@@ -115,7 +117,7 @@ export default async function DashboardPage() {
         <div className="max-w-3xl space-y-3 relative z-10">
           <div className="flex items-center gap-2">
             <Badge variant="secondary" className="bg-[#6FC7DA]/20 text-[#DDF7FC] border-[#6FC7DA]/50 text-[11px]">
-              Fase Actual: Semana 4 — Costos de Formulación
+              Plataforma de gestión técnica
             </Badge>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
@@ -126,8 +128,9 @@ export default async function DashboardPage() {
             <span className="font-semibold text-white">
               {user ? RoleLabels[user.role] : "Usuario"}
             </span>
-            . Esta plataforma centraliza la gestión técnica, perfiles nutricionales, formulaciones y cumplimiento normativo de Alimentos Sevilla S.A.S.
+            . Esta plataforma centraliza la gestión técnica, los perfiles nutricionales, las formulaciones y los costos de Alimentos Sevilla S.A.S.
           </p>
+          {user ? <p className="text-xs text-slate-200">Alcance de su perfil: {RoleDescriptions[user.role]}</p> : null}
         </div>
       </div>
 
@@ -137,15 +140,15 @@ export default async function DashboardPage() {
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs flex items-center gap-1.5">
               <Wheat className="w-3.5 h-3.5 text-[#1C4378]" />
-              Etapa Contractual
+              Operación técnica
             </CardDescription>
             <CardTitle className="text-base font-semibold">
-              Semana 4 de 6
+              Catálogos y formulaciones
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Costos de formulación: importación mensual, cruce SIESA y costeo de batch.
+              Ingredientes, productos, presentaciones y versiones de formulación.
             </p>
           </CardContent>
         </Card>
@@ -154,15 +157,15 @@ export default async function DashboardPage() {
           <CardHeader className="p-4 pb-2">
             <CardDescription className="text-xs flex items-center gap-1.5">
               <FlaskConical className="w-3.5 h-3.5 text-[#1C4378]" />
-              Productos y formulaciones
+              Cálculo nutricional
             </CardDescription>
             <CardTitle className="text-base font-semibold text-[#1C4378] dark:text-[#6FC7DA]">
-              Recetas y versiones
+              En validación técnica
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Productos, presentaciones y control de versiones de cada formulación.
+              Excel ya está confirmado como base 1:1. Las versiones nuevas conservan los nutrientes importados del CTN; falta cotejar el resultado completo.
             </p>
           </CardContent>
         </Card>
@@ -174,12 +177,12 @@ export default async function DashboardPage() {
               Trazabilidad y acceso
             </CardDescription>
             <CardTitle className="text-base font-semibold text-slate-800 dark:text-slate-200">
-              Usuarios y auditoría
+              Historial de cambios
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 pt-1">
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Administración de accesos por rol y registro de cambios relevantes del sistema.
+              Versiones de formulación y eventos relevantes conservan trazabilidad.
             </p>
           </CardContent>
         </Card>
@@ -197,7 +200,7 @@ export default async function DashboardPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {moduleCards.map((m) => {
+          {moduleCards.filter((m) => !m.allowedRoles || (user && m.allowedRoles.includes(user.role))).map((m) => {
             const Icon = m.icon;
             const isOperational = m.status === "Disponible";
 
@@ -227,6 +230,11 @@ export default async function DashboardPage() {
                     <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">
                       {m.scope}
                     </p>
+                    {user?.role && m.roleScope?.[user.role] ? (
+                      <p className="mt-2 text-xs font-medium text-[#1C4378] dark:text-[#6FC7DA]">
+                        Para su perfil: {m.roleScope[user.role]}
+                      </p>
+                    ) : null}
                   </div>
                 </div>
 
@@ -241,7 +249,7 @@ export default async function DashboardPage() {
       </div>
 
       {/* Recent Audit Activity */}
-      <div className="space-y-4">
+      {canViewAudit && <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
@@ -297,7 +305,7 @@ export default async function DashboardPage() {
             )}
           </CardContent>
         </Card>
-      </div>
+      </div>}
     </div>
   );
 }

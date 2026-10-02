@@ -259,6 +259,7 @@ model Product {
   createdBy        User?         @relation(fields: [createdById], references: [id], onDelete: SetNull)
   presentations    Presentation[]
   formulations     Formulation[]
+  technicalDocumentSnapshots TechnicalDocumentSnapshot[]
 
   @@index([categoriaProducto])
   @@index([isActive])
@@ -303,6 +304,8 @@ model FormulationVersion {
   numeroSecuencial    Int
   estado              FormulationVersionStatus @default(DRAFT)
   rendimientoEsperado Decimal? @db.Decimal(6, 4)
+  // Immutable nutrient inputs captured from the imported customer CTN for this version.
+  nutritionSourceSnapshot Json?
   validFrom           DateTime?
   aprobadaPorId       String?
   aprobadaPor         User?    @relation(fields: [aprobadaPorId], references: [id], onDelete: SetNull)
@@ -335,6 +338,40 @@ model FormulationIngredient {
   @@unique([formulationVersionId, ingredientId])
   @@index([ingredientId])
   @@map("formulation_ingredients")
+}
+
+// Immutable application snapshot of a preliminary technical-document preview.
+// Official document issuance remains disabled until functional acceptance.
+model TechnicalDocumentSnapshot {
+  id                         String   @id @default(cuid())
+  productId                  String
+  product                    Product  @relation(fields: [productId], references: [id], onDelete: Restrict)
+  documentVersion            Int
+  sourceFormulationVersionId String
+  sourceFormulationVersionNumber Int
+  createdById                String
+  createdByEmail             String
+  content                    Json
+  createdAt                  DateTime @default(now())
+
+  @@unique([productId, documentVersion])
+  @@index([productId, createdAt])
+  @@map("technical_document_snapshots")
+}
+
+model RegulatoryParameterVersion {
+  id                       String   @id @default(cuid())
+  version                  Int      @unique
+  sodiumMgPer100g          Decimal  @db.Decimal(12, 4)
+  energyPercentageThreshold Decimal @db.Decimal(8, 4)
+  fatTransPercentageThreshold Decimal @db.Decimal(8, 4)
+  createdById              String?
+  createdByEmail           String
+  createdAt                DateTime @default(now())
+  effectiveAt              DateTime @default(now())
+
+  @@index([effectiveAt])
+  @@map("regulatory_parameter_versions")
 }
 
 model CostImport {

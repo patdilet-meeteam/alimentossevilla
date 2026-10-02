@@ -63,21 +63,20 @@ export default async function ProductoDetallePage({ params }: PageProps) {
         <p className="text-sm text-muted-foreground">{product.descripcion}</p>
       ) : null}
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="border-[#D3D8DE]">
-          <CardHeader>
-            <CardTitle className="text-base">Presentaciones comerciales</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2 text-sm">
+      <Card className="border-[#D3D8DE]">
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base">Presentaciones comerciales</CardTitle>
+        </CardHeader>
+        <CardContent className="grid gap-2 pb-4 sm:grid-cols-2 xl:grid-cols-3">
             {product.presentations.length === 0 ? (
-              <p className="text-muted-foreground">Sin presentaciones registradas.</p>
+              <p className="text-sm text-muted-foreground">Sin presentaciones registradas.</p>
             ) : (
               product.presentations.map((pres) => (
                 <div
                   key={pres.id}
-                  className="flex items-center justify-between rounded-md border border-[#D3D8DE] px-3 py-2"
+                  className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-[#D3D8DE] bg-slate-50/70 px-3 py-2"
                 >
-                  <div>
+                  <div className="min-w-0">
                     <div className="font-medium text-[#1F2933]">
                       {Number(pres.gramajeNeto.toString()).toLocaleString("es-CO", { maximumFractionDigits: 2 })} g
                     </div>
@@ -97,9 +96,10 @@ export default async function ProductoDetallePage({ params }: PageProps) {
                 </div>
               ))
             )}
-          </CardContent>
-        </Card>
+        </CardContent>
+      </Card>
 
+      <div className="min-w-0">
         <ProductVersionPanel
           productId={product.id}
           presentations={product.presentations.map((pres) => ({
@@ -115,6 +115,7 @@ export default async function ProductoDetallePage({ params }: PageProps) {
               id: v.id,
               numeroSecuencial: v.numeroSecuencial,
               estado: v.estado,
+              rendimientoEsperado: v.rendimientoEsperado?.toString() ?? null,
               aprobadaEn: v.aprobadaEn ? v.aprobadaEn.toISOString() : null,
               aprobadaPor: v.aprobadaPor ? { name: v.aprobadaPor.name, email: v.aprobadaPor.email } : null,
               ingredients: v.ingredients.map((fi) => ({

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { AlertTriangle, CheckCircle2, ShieldCheck } from "lucide-react";
 import { listNutritionReadiness } from "@/app/actions/nutrition-actions";
+import { getRegulatoryParametersForPage, listRegulatoryParameterVersions, saveRegulatoryParameterVersion } from "@/app/actions/regulatory-actions";
 import { getCurrentUser } from "@/lib/auth/session";
-import { ModulePlaceholder } from "@/components/layout/module-placeholder";
+import { Role } from "@/lib/auth/roles";
+import { formatDate } from "@/lib/utils";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,9 +17,14 @@ const ISSUE_LABELS = {
 
 export default async function NormativaPage() {
   // El layout (app)/layout.tsx ya garantizó que hay un usuario autenticado.
-  await getCurrentUser();
+  const user = await getCurrentUser();
+  const canEditRegulatoryParameters = user?.role === Role.ADMIN;
 
-  const readiness = await listNutritionReadiness();
+  const [readiness, currentParameters, parameterVersions] = await Promise.all([
+    listNutritionReadiness(),
+    getRegulatoryParametersForPage(),
+    listRegulatoryParameterVersions(),
+  ]);
   const issueCount = readiness.reduce((total, formulation) => total + formulation.issueCount, 0);
 
   return (
@@ -25,9 +32,47 @@ export default async function NormativaPage() {
       <header>
         <h1 className="text-2xl font-semibold tracking-tight text-[#1F2933]">Preparación nutricional</h1>
         <p className="text-sm text-muted-foreground">
-          Verificación de insumos para formulaciones aprobadas. No ejecuta cálculos, redondeos ni sellos hasta resolver OQ-022 a OQ-024.
+          Esta pantalla revisa si las formulaciones aprobadas tienen perfiles nutricionales activos y permite consultar/versionar los umbrales regulatorios. No calcula el reporte aquí; el resultado y su fuente se consultan en el producto y en Documentos Técnicos.
         </p>
       </header>
+
+      <Card className="border-[#D3D8DE]">
+        <CardHeader>
+          <CardTitle className="text-base">Parámetros regulatorios versionados</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Versión activa v{currentParameters.version} · registrada por {currentParameters.createdByEmail} · {formatDate(currentParameters.createdAt)}. Solo el Administrador/Director Técnico puede guardar una nueva versión. Los cambios rigen para cálculos futuros; las versiones/documentos guardados no se reescriben.
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid gap-3 text-sm sm:grid-cols-3">
+            <p>Sodio: <strong>{currentParameters.thresholds.SODIUM_MG_PER_100G} mg/100 g</strong></p>
+            <p>Azúcares y grasa saturada: <strong>{currentParameters.thresholds.ENERGY_PERCENTAGE_THRESHOLD}%</strong> de energía</p>
+            <p>Grasas trans: <strong>{currentParameters.thresholds.FAT_TRANS_THRESHOLD}%</strong> de energía</p>
+          </div>
+          {canEditRegulatoryParameters && (
+            <form action={saveRegulatoryParameterVersion} className="grid gap-3 rounded-md border p-4 md:grid-cols-3">
+              <label className="space-y-1 text-xs font-medium">Sodio (mg/100 g)
+                <input name="sodiumMgPer100g" type="number" min="0" max="100000" step="0.0001" required defaultValue={currentParameters.thresholds.SODIUM_MG_PER_100G} className="h-9 w-full rounded-md border bg-background px-3 text-sm" />
+              </label>
+              <label className="space-y-1 text-xs font-medium">Azúcares y grasa saturada (% energía)
+                <input name="energyPercentageThreshold" type="number" min="0" max="100" step="0.0001" required defaultValue={currentParameters.thresholds.ENERGY_PERCENTAGE_THRESHOLD} className="h-9 w-full rounded-md border bg-background px-3 text-sm" />
+              </label>
+              <label className="space-y-1 text-xs font-medium">Grasas trans (% energía)
+                <input name="fatTransPercentageThreshold" type="number" min="0" max="100" step="0.0001" required defaultValue={currentParameters.thresholds.FAT_TRANS_THRESHOLD} className="h-9 w-full rounded-md border bg-background px-3 text-sm" />
+              </label>
+              <button type="submit" className="h-9 rounded-md bg-[#1C4378] px-4 text-sm font-medium text-white hover:bg-[#16365F] md:col-span-3 md:justify-self-start">Guardar nueva versión</button>
+            </form>
+          )}
+          <details>
+            <summary className="cursor-pointer text-sm font-medium">Historial de parámetros ({parameterVersions.length})</summary>
+            <ul className="mt-2 space-y-1 text-xs text-muted-foreground">
+              {parameterVersions.map((version) => (
+                <li key={version.id}>v{version.version} · sodio {Number(version.sodiumMgPer100g)} mg/100 g · energía {Number(version.energyPercentageThreshold)}% · trans {Number(version.fatTransPercentageThreshold)}% · {version.createdByEmail} · {formatDate(version.createdAt)}</li>
+              ))}
+            </ul>
+          </details>
+        </CardContent>
+      </Card>
 
       {issueCount > 0 ? (
         <Alert variant="warning">
