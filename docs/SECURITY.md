@@ -19,6 +19,9 @@ Este documento define los estándares de seguridad implementados en la **Platafo
 - **Motor de Autenticación:** Se utiliza **Better Auth (v1.7+)** con adapter Prisma para PostgreSQL.
 - **Hashing de Contraseñas:** Better Auth gestiona el hashing mediante funciones criptográficas de derivación de claves seguras con salting automático por usuario. Las credenciales se almacenan exclusivamente en la tabla `Account`.
 - **Políticas de Contraseña:** Mínimo 8 caracteres, requiriendo al menos una letra mayúscula, una minúscula y un número.
+- **Registro público deshabilitado:** `emailAndPassword.disableSignUp: true` (`src/lib/auth/auth.ts`). El endpoint `POST /api/auth/sign-up/email` responde `400 EMAIL_PASSWORD_SIGN_UP_DISABLED`. Antes de este cambio cualquier persona en internet podía crearse una cuenta activa con rol `VIEWER`.
+- **Alta de cuentas:** solo desde el servidor, con `provisionCredentialUser` (`src/lib/auth/provision-user.ts`), que usa el adaptador interno de Better Auth (mismo hash y misma cuenta `credential` que su registro). La bandera `disableSignUp` también bloquea `auth.api.signUpEmail` llamado desde el servidor, por eso el seed y el bootstrap no lo usan.
+- **Orígenes de confianza:** `trustedOrigins` se construye con `BETTER_AUTH_URL` y `NEXT_PUBLIC_APP_URL` (`src/lib/auth/config.ts`). En producción solo se acepta ese origen; las direcciones `localhost` solo fuera de producción. Una petición con otro `Origin` recibe `403 INVALID_ORIGIN`.
 
 ---
 
@@ -78,10 +81,22 @@ const SENSITIVE_KEY_PATTERNS = [
   - `DATABASE_URL`: Cadena de conexión a PostgreSQL.
   - `BETTER_AUTH_SECRET`: Secreto criptográfico de Better Auth.
   - `POSTGRES_PORT`: Puerto expuesto en contenedor local de desarrollo.
+- **Fail-closed del secreto (`src/lib/auth/config.ts`):** en producción `BETTER_AUTH_SECRET` es obligatorio, debe tener al menos 32 caracteres y no puede ser el valor de ejemplo de `.env.example` (publicado en el repositorio: con él cualquiera podría firmar sesiones). Lo mismo para `BETTER_AUTH_URL`.
+- **Validación al arrancar (`src/instrumentation.ts`):** el servidor comprueba esa configuración antes de atender peticiones y termina con código 1 si es inválida. Sin esta comprobación el error solo aparecía en la primera petición que cargaba Better Auth.
+- `.env.production` está en `.gitignore`; las variables de producción se documentan en `.env.production.example`.
 
 ---
 
 ## 7. Políticas de Seed y Bootstrap en Producción
 
 - `prisma/seed.ts` implementa **fail-closed**: si `NODE_ENV === "production"`, el script aborta inmediatamente la creación de cuentas de demostración.
-- El bootstrap del primer administrador se realiza a través de variables de entorno seguras (`INITIAL_ADMIN_*`) configuradas deliberadamente por el equipo de operaciones.
+- El bootstrap del primer administrador se realiza con `pnpm admin:bootstrap` (`scripts/bootstrap-admin.ts`) y las variables `INITIAL_ADMIN_*`, sin valores por defecto y validadas con `createUserSchema`. Si ya existe un administrador activo, no crea otro: no es una vía para fabricar administradores sobre una instalación en uso. También carga el catálogo de nutrientes (dato de referencia que el seed de desarrollo no deja en producción). Deja el evento `PLATFORM_BOOTSTRAPPED` en la auditoría.
+
+---
+
+## 8. Despliegue en Producción
+
+- Imagen Docker multi-etapa (`Dockerfile`) con salida `standalone` de Next: el contenedor final no lleva `node_modules` completos ni código fuente, y corre como usuario `node` sin privilegios.
+- `docker-compose.prod.yml`: PostgreSQL sin puertos publicados; la app sin puertos publicados (la sirve el proxy HTTPS del servidor por una red Docker externa); sistema de archivos de solo lectura, `cap_drop: ALL`, `no-new-privileges` y límites de memoria.
+- Las migraciones se aplican con `prisma migrate deploy` en un contenedor aparte (`migrar`) antes de que arranque la app.
+- `poweredByHeader: false`: las respuestas no anuncian el framework.

@@ -1,0 +1,89 @@
+# Despliegue de producción.
+#
+#   docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
+#
+# - PostgreSQL sin puertos publicados: solo lo alcanzan la app y las migraciones.
+# - `migrar` aplica las migraciones versionadas antes de que arranque `web`.
+# - `web` no publica puertos: la sirve el proxy HTTPS del servidor por la red
+#   externa RED_PROXY (por defecto "proxy"; debe existir antes de levantar).
+#
+# Primer arranque (crea el administrador inicial y el catálogo de nutrientes):
+#   docker compose -f docker-compose.prod.yml --env-file .env.production run --rm migrar pnpm admin:bootstrap
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks: [interna]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    security_opt: ["no-new-privileges:true"]
+    deploy:
+      resources:
+        limits: { memory: 512M }
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+  migrar:
+    build:
+      context: .
+      target: herramientas
+    env_file: .env.production
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}?schema=public
+    depends_on:
+      db: { condition: service_healthy }
+    networks: [interna]
+    restart: "no"
+    security_opt: ["no-new-privileges:true"]
+
+  web:
+    build:
+      context: .
+      target: runtime
+    restart: unless-stopped
+    env_file: .env.production
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}?schema=public
+    depends_on:
+      db: { condition: service_healthy }
+      migrar: { condition: service_completed_successfully }
+    networks: [interna, proxy]
+    # Sistema de archivos de solo lectura; Next solo escribe su caché.
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /app/.next/cache
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/login').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits: { memory: 768M }
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "5" }
+
+networks:
+  interna:
+  proxy:
+    external: true
+    name: ${RED_PROXY:-proxy}
+
+volumes:
+  postgres_data:
