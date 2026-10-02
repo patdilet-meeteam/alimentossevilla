@@ -125,3 +125,23 @@ pnpm build
 - `/documentos`: Emisión de Fichas Técnicas y Textos Legales (*Semana 6*).
 - `/usuarios`: Administración de usuarios, roles y estados de cuenta (*Foundation*).
 - `/auditoria`: Bitácora inmutable de eventos de auditoría y trazabilidad (*Foundation*).
+
+---
+
+## 8. Despliegue en Producción
+
+Requiere Docker y un proxy HTTPS en el servidor conectado a una red Docker externa (por defecto `proxy`).
+
+```bash
+# 1. Variables de producción (archivo ignorado por git)
+cp .env.production.example .env.production
+#    Complete BETTER_AUTH_URL, BETTER_AUTH_SECRET, POSTGRES_PASSWORD e INITIAL_ADMIN_*
+
+# 2. Construir, migrar y arrancar
+docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
+
+# 3. Solo la primera vez: administrador inicial y catálogo de nutrientes
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm migrar pnpm admin:bootstrap
+```
+
+La aplicación no arranca si falta `BETTER_AUTH_SECRET`, si es el valor de ejemplo o si falta `BETTER_AUTH_URL`. El registro público está deshabilitado: las cuentas se crean desde el servidor. Detalle en [`docs/SECURITY.md`](docs/SECURITY.md) §2, §6, §7 y §8.

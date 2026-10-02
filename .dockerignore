@@ -1,0 +1,13 @@
+# Nada de secretos, dependencias locales ni artefactos de compilación en el
+# contexto de Docker.
+.git
+node_modules
+.next
+out
+coverage
+.env
+.env.*
+!.env.example
+*.env
+deliverables
+tests

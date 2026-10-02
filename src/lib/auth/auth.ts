@@ -1,6 +1,7 @@
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { db } from "@/lib/db";
+import { resolveAuthSecret, resolveTrustedOrigins } from "@/lib/auth/config";
 
 export const auth = betterAuth({
   database: prismaAdapter(db, {
@@ -8,17 +9,14 @@ export const auth = betterAuth({
   }),
   emailAndPassword: {
     enabled: true,
+    // Sin registro público: las cuentas se crean desde el servidor con
+    // src/lib/auth/provision-user.ts (seed de desarrollo y bootstrap del
+    // administrador). Con el registro abierto, cualquiera en internet podía
+    // crearse una cuenta activa.
+    disableSignUp: true,
   },
-  trustedOrigins: [
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:3002",
-    "http://localhost:3003",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:3001",
-    "http://127.0.0.1:3002",
-    "http://127.0.0.1:3003",
-  ],
+  // Solo la URL pública configurada (y las locales fuera de producción).
+  trustedOrigins: resolveTrustedOrigins(),
   user: {
     additionalFields: {
       role: {
@@ -41,8 +39,6 @@ export const auth = betterAuth({
     // continua mientras el usuario permanezca activo.
     updateAge: 0,
   },
-  secret:
-    process.env.BETTER_AUTH_SECRET ||
-    process.env.AUTH_SECRET ||
-    "dev_secret_key_alimentos_sevilla_super_secure_32_chars_min",
+  // Falla al arrancar en producción si falta o es el valor de ejemplo.
+  secret: resolveAuthSecret(),
 });

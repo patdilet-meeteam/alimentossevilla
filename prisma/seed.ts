@@ -1,31 +1,8 @@
-import { PrismaClient, Role, NutrientUnit } from "@prisma/client";
-import { auth } from "../src/lib/auth/auth";
+import { PrismaClient, Role } from "@prisma/client";
+import { provisionCredentialUser } from "../src/lib/auth/provision-user";
+import { NUTRIENTS_SEED } from "./nutrients-catalog";
 
 const prisma = new PrismaClient();
-
-// Catálogo de nutrientes obligatorios según normativa y DATA-SOURCES.md
-const NUTRIENTS_SEED = [
-  { key: "ENERGY_KCAL", unit: "KCAL" as NutrientUnit, displayName: "Energía", isRequiredOnLabel: true },
-  { key: "ENERGY_KJ", unit: "KJ" as NutrientUnit, displayName: "Energía (kJ)", isRequiredOnLabel: false },
-  { key: "FAT_TOTAL", unit: "G" as NutrientUnit, displayName: "Grasas Totales", isRequiredOnLabel: true },
-  { key: "FAT_SAT", unit: "G" as NutrientUnit, displayName: "Grasas Saturadas", isRequiredOnLabel: true },
-  { key: "FAT_TRANS", unit: "G" as NutrientUnit, displayName: "Grasas Trans", isRequiredOnLabel: true },
-  { key: "CARBS_TOTAL", unit: "G" as NutrientUnit, displayName: "Carbohidratos Totales", isRequiredOnLabel: true },
-  { key: "SUGAR_TOTAL", unit: "G" as NutrientUnit, displayName: "Azúcares Totales", isRequiredOnLabel: true },
-  { key: "SUGAR_ADDED", unit: "G" as NutrientUnit, displayName: "Azúcares Añadidos", isRequiredOnLabel: true },
-  { key: "FIBER", unit: "G" as NutrientUnit, displayName: "Fibra Dietaria", isRequiredOnLabel: true },
-  { key: "PROTEIN", unit: "G" as NutrientUnit, displayName: "Proteína", isRequiredOnLabel: true },
-  { key: "SODIUM", unit: "MG" as NutrientUnit, displayName: "Sodio", isRequiredOnLabel: true },
-  { key: "VITAMIN_A", unit: "MCG" as NutrientUnit, displayName: "Vitamina A", isRequiredOnLabel: false },
-  { key: "VITAMIN_C", unit: "MG" as NutrientUnit, displayName: "Vitamina C", isRequiredOnLabel: false },
-  { key: "CALCIUM", unit: "MG" as NutrientUnit, displayName: "Calcio", isRequiredOnLabel: false },
-  { key: "IRON", unit: "MG" as NutrientUnit, displayName: "Hierro", isRequiredOnLabel: false },
-  { key: "MOISTURE", unit: "G" as NutrientUnit, displayName: "Humedad", isRequiredOnLabel: false },
-  { key: "CHOLESTEROL", unit: "MG" as NutrientUnit, displayName: "Colesterol", isRequiredOnLabel: false },
-  { key: "STARCH", unit: "G" as NutrientUnit, displayName: "Almidón", isRequiredOnLabel: false },
-  { key: "VITAMIN_D", unit: "MCG" as NutrientUnit, displayName: "Vitamina D", isRequiredOnLabel: false },
-  { key: "ZINC", unit: "MG" as NutrientUnit, displayName: "Zinc", isRequiredOnLabel: false },
-];
 
 async function main() {
   console.log("🌱 Iniciando inicialización de base de datos...");
@@ -36,7 +13,7 @@ async function main() {
       "⚠️ Entorno de producción detectado. El seed de demostración ha sido omitido por seguridad."
     );
     console.log(
-      "ℹ️ Para inicializar el primer administrador en producción, configure las variables INITIAL_ADMIN_* en su entorno y ejecute el script de bootstrap administrativo."
+      "ℹ️ Para inicializar el primer administrador en producción, configure las variables INITIAL_ADMIN_* y ejecute: pnpm admin:bootstrap"
     );
     return;
   }
@@ -49,40 +26,15 @@ async function main() {
   const adminPassword =
     process.env.INITIAL_ADMIN_PASSWORD || "AdminSevilla2026!#";
 
-  // 1. Crear o asegurar Administrador principal mediante Better Auth
-  let adminUser = await prisma.user.findUnique({
-    where: { email: adminEmail },
+  // 1. Crear o asegurar Administrador principal (registro público deshabilitado:
+  //    la cuenta se crea con el adaptador interno de Better Auth).
+  const admin = await provisionCredentialUser(prisma, {
+    email: adminEmail,
+    name: adminName,
+    password: adminPassword,
+    role: Role.ADMIN,
   });
-
-  if (!adminUser) {
-    console.log(`Creando administrador inicial: ${adminEmail}`);
-    const res = await auth.api.signUpEmail({
-      body: {
-        email: adminEmail,
-        password: adminPassword,
-        name: adminName,
-      },
-    });
-
-    if (res?.user) {
-      adminUser = await prisma.user.update({
-        where: { id: res.user.id },
-        data: {
-          role: Role.ADMIN,
-          isActive: true,
-        },
-      });
-    }
-  } else {
-    adminUser = await prisma.user.update({
-      where: { email: adminEmail },
-      data: {
-        name: adminName,
-        role: Role.ADMIN,
-        isActive: true,
-      },
-    });
-  }
+  if (admin.created) console.log(`Creando administrador inicial: ${adminEmail}`);
 
   console.log(`✅ Administrador listo: ${adminEmail} (Rol: ADMIN)`);
 
@@ -109,37 +61,7 @@ async function main() {
   ];
 
   for (const demo of demoAccounts) {
-    const existing = await prisma.user.findUnique({
-      where: { email: demo.email },
-    });
-
-    if (!existing) {
-      const res = await auth.api.signUpEmail({
-        body: {
-          email: demo.email,
-          password: demo.password,
-          name: demo.name,
-        },
-      });
-      if (res?.user) {
-        await prisma.user.update({
-          where: { id: res.user.id },
-          data: {
-            role: demo.role,
-            isActive: true,
-          },
-        });
-      }
-    } else {
-      await prisma.user.update({
-        where: { email: demo.email },
-        data: {
-          name: demo.name,
-          role: demo.role,
-          isActive: true,
-        },
-      });
-    }
+    await provisionCredentialUser(prisma, demo);
     console.log(`✅ Cuenta de prueba lista: ${demo.email} (Rol: ${demo.role})`);
   }
 
@@ -157,7 +79,7 @@ async function main() {
   // 4. Registrar evento de auditoría del seed
   await prisma.auditEvent.create({
     data: {
-      actorId: adminUser?.id || null,
+      actorId: admin.id,
       actorEmail: adminEmail,
       action: "DATABASE_SEEDED",
       entity: "System",
