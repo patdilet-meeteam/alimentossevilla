@@ -66,3 +66,17 @@ export async function provisionCredentialUser(
 
   return { id: user.id, created: true };
 }
+
+/**
+ * Reemplaza la contraseña de una cuenta "credential" existente y cierra todas
+ * sus sesiones abiertas: quien tuviera la contraseña anterior queda por fuera.
+ */
+export async function resetCredentialPassword(
+  prisma: PrismaClient,
+  userId: string,
+  newPassword: string
+): Promise<void> {
+  const ctx = await auth.$context;
+  await ctx.internalAdapter.updatePassword(userId, await ctx.password.hash(newPassword));
+  await prisma.session.deleteMany({ where: { userId } });
+}

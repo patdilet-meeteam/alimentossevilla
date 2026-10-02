@@ -91,6 +91,7 @@ const SENSITIVE_KEY_PATTERNS = [
 
 - `prisma/seed.ts` implementa **fail-closed**: si `NODE_ENV === "production"`, el script aborta inmediatamente la creación de cuentas de demostración.
 - El bootstrap del primer administrador se realiza con `pnpm admin:bootstrap` (`scripts/bootstrap-admin.ts`) y las variables `INITIAL_ADMIN_*`, sin valores por defecto y validadas con `createUserSchema`. Si ya existe un administrador activo, no crea otro: no es una vía para fabricar administradores sobre una instalación en uso. También carga el catálogo de nutrientes (dato de referencia que el seed de desarrollo no deja en producción). Deja el evento `PLATFORM_BOOTSTRAPPED` en la auditoría.
+- Las demás cuentas se crean con `pnpm user:create` (`scripts/create-user.ts`), validado con `createUserSchema`. La contraseña la genera el script con CSPRNG (20 caracteres, mayúscula, minúscula, número y símbolo; sin caracteres ambiguos): **nunca se recibe por argumento**, para que no quede en el historial de la terminal, y se muestra una sola vez. `--reset-password` reemplaza la contraseña y **revoca todas las sesiones** del usuario. Eventos de auditoría: `USER_CREATED`, `USER_PASSWORD_RESET` (sin la contraseña).
 
 ---
 

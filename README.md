@@ -144,4 +144,20 @@ docker compose -f docker-compose.prod.yml --env-file .env.production up -d --bui
 docker compose -f docker-compose.prod.yml --env-file .env.production run --rm migrar pnpm admin:bootstrap
 ```
 
+### Usuarios
+
+El registro público está cerrado y el panel aún no permite crear usuarios ni cambiar contraseñas. Se hace desde el servidor; la contraseña la genera el comando y se muestra una sola vez:
+
+```bash
+# Crear (roles: ADMIN, R_AND_D, QUALITY, VIEWER)
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm migrar \
+  pnpm user:create --email ana@alimentossevilla.com --name "Ana Pérez" --role R_AND_D
+
+# Restablecer contraseña (cierra todas sus sesiones)
+docker compose -f docker-compose.prod.yml --env-file .env.production run --rm migrar \
+  pnpm user:create --email ana@alimentossevilla.com --reset-password
+```
+
+En desarrollo: `pnpm user:create ...` directamente.
+
 La aplicación no arranca si falta `BETTER_AUTH_SECRET`, si es el valor de ejemplo o si falta `BETTER_AUTH_URL`. El registro público está deshabilitado: las cuentas se crean desde el servidor. Detalle en [`docs/SECURITY.md`](docs/SECURITY.md) §2, §6, §7 y §8.
