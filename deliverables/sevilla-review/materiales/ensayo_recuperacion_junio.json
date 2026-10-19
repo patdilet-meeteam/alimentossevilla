@@ -1,0 +1,773 @@
+{
+  "scope": "ISOLATED_LOCAL_ONLY",
+  "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+  "before": {
+    "ingredients": 430,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "bundles": 0,
+    "bundleComponents": 0,
+    "approvals": 0
+  },
+  "after": {
+    "ingredients": 456,
+    "formulations": 38,
+    "versions": 51,
+    "components": 872,
+    "bundles": 4,
+    "bundleComponents": 14,
+    "approvals": 0
+  },
+  "createdIngredients": [
+    {
+      "code": "MPCP031",
+      "name": "PASTA DE POLLO IMPORTADA TYSON USA",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 6
+    },
+    {
+      "code": "MPII311",
+      "name": "AGUA POTABLE.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 7
+    },
+    {
+      "code": "MPCC012",
+      "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 8
+    },
+    {
+      "code": "MPPA144",
+      "name": "ALMIDON DE PAPA SACO X 25 KILOS .",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 9
+    },
+    {
+      "code": "MPPA154",
+      "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 10
+    },
+    {
+      "code": "MPCP044",
+      "name": "PASTA DE POLLO NACIONAL ALIPAQ",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 11
+    },
+    {
+      "code": "MPPA168",
+      "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 12
+    },
+    {
+      "code": "MPPS150",
+      "name": "SAL YODADA REFISAL. SACO X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 13
+    },
+    {
+      "code": "MPPD168",
+      "name": "CARRAGENINA CEAMGEL M 9396. SACO X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 14
+    },
+    {
+      "code": "MPPC122",
+      "name": "MEZCLA SABOR MORTADELA DROP TECH",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 15
+    },
+    {
+      "code": "MPPN323",
+      "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 16
+    },
+    {
+      "code": "MPPD160",
+      "name": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 17
+    },
+    {
+      "code": "MPPS151",
+      "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 18
+    },
+    {
+      "code": "MPPS154",
+      "name": "PIMIENTA MOLIDA BLANCA. BOLSA X 1 KILO. (TECNAS)",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 19
+    },
+    {
+      "code": "MPPS104",
+      "name": "AJO MOLIDO DESHIDRATADO B. 1. CAJA X 20 KILOS. (LA CAMPANA)",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 20
+    },
+    {
+      "code": "MPLO214",
+      "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 21
+    },
+    {
+      "code": "MPPD161",
+      "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS.",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 22
+    },
+    {
+      "code": "MPCC043",
+      "name": "TOCINO LOMO CONGELADO IMPORTADO",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 8
+    },
+    {
+      "code": "MPPA151",
+      "name": "PLASMA APROPORK. SACO X 20 KILOS.",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 13
+    },
+    {
+      "code": "MPPC112",
+      "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 15
+    },
+    {
+      "code": "MPLR191",
+      "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS.",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 16
+    },
+    {
+      "code": "MPPA134",
+      "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg.",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 17
+    },
+    {
+      "code": "MPPD172",
+      "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS.",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 19
+    },
+    {
+      "code": "MPLO215",
+      "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS.",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 23
+    },
+    {
+      "code": "MPPA132",
+      "name": "PROTEÍNA DE SOYA AL 65%. SACO X 20 KILOS",
+      "sheet": "SCHA VIANDÉ 400 G ",
+      "sourceRow": 9
+    },
+    {
+      "code": "MPPA158",
+      "name": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS",
+      "sheet": "SCHA VIANDÉ 400 G ",
+      "sourceRow": 20
+    }
+  ],
+  "recipes": [
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 500",
+      "version": 1,
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "unresolvedRows": [],
+      "exactPercent": "111.970224509584545859",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 750",
+      "version": 2,
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "unresolvedRows": [],
+      "exactPercent": "100.019949777479426643",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1300",
+      "version": 3,
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "unresolvedRows": [],
+      "exactPercent": "100.019949777479426643",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1500",
+      "version": 4,
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "unresolvedRows": [],
+      "exactPercent": "100.019949777479426643",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "cervecero-fzan",
+      "sheet": "CERVECERO FZAN  225",
+      "version": 1,
+      "sourceRows": 14,
+      "linkedComponents": 14,
+      "unresolvedRows": [],
+      "exactPercent": "100.009949777479426643",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 300",
+      "version": 1,
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "unresolvedRows": [],
+      "exactPercent": "99.993000000000000421",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 1000",
+      "version": 2,
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "unresolvedRows": [],
+      "exactPercent": "100.001000000000001015",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "chorizo-santa-corto",
+      "sheet": "CHORIZO SANTA CORTO 480 ",
+      "version": 1,
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "unresolvedRows": [],
+      "exactPercent": "100.001000000000001015",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "chorizo-santa-largo-x",
+      "sheet": "CHORIZO SANTA LARGO x 1200 ",
+      "version": 1,
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "unresolvedRows": [],
+      "exactPercent": "100.001000000000001015",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "chrz-con-ternera",
+      "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+      "version": 1,
+      "sourceRows": 13,
+      "linkedComponents": 13,
+      "unresolvedRows": [],
+      "exactPercent": "99.998999999999998339",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "jmn-premium",
+      "sheet": "JMN PREMIUM 400 G",
+      "version": 1,
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "unresolvedRows": [],
+      "exactPercent": "100.120529643999996993",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "jmn-sdw-exito-x",
+      "sheet": "JMN SDW  EXITO X 225 ",
+      "version": 1,
+      "sourceRows": 25,
+      "linkedComponents": 25,
+      "unresolvedRows": [],
+      "exactPercent": "100.202142184000002176",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_29_1260025"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "version": 1,
+      "sourceRows": 17,
+      "linkedComponents": 17,
+      "unresolvedRows": [],
+      "exactPercent": "99.999999999999985878",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+      "version": 2,
+      "sourceRows": 24,
+      "linkedComponents": 24,
+      "unresolvedRows": [],
+      "exactPercent": "100.058999999999998616",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_12_1250009"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 240 G 2 UNDS",
+      "version": 1,
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "unresolvedRows": [],
+      "exactPercent": "99.999999999999991280",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 600 G 5 UNDS",
+      "version": 2,
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "unresolvedRows": [],
+      "exactPercent": "99.999999999999991280",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 1800 G 15 UND",
+      "version": 3,
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "unresolvedRows": [],
+      "exactPercent": "99.999999999999991280",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "morta-jamonada",
+      "sheet": "MORTA JAMONADA 400",
+      "version": 1,
+      "sourceRows": 21,
+      "linkedComponents": 21,
+      "unresolvedRows": [],
+      "exactPercent": "93.1995944081622374857",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mortadela-jamon-x",
+      "sheet": "MORTADELA JAMON X 225 ",
+      "version": 1,
+      "sourceRows": 25,
+      "linkedComponents": 25,
+      "unresolvedRows": [],
+      "exactPercent": "99.469999999999999987",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_29_1260025"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "scha-institu-x",
+      "sheet": "SCHA INSTITU x 1200",
+      "version": 1,
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "unresolvedRows": [
+        22
+      ],
+      "exactPercent": "100.129999999999999172",
+      "issues": [
+        "INVALID_CODE_ROW_22",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_1121009",
+        "UNRESOLVED_SOURCE_ROW_22"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "version": 1,
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "unresolvedRows": [],
+      "exactPercent": "100.000000000000013428",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_MPCP031"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+      "version": 2,
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "unresolvedRows": [],
+      "exactPercent": "100.000000000000037692",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_MPCP031"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 400 G ",
+      "version": 3,
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "unresolvedRows": [],
+      "exactPercent": "99.999999999999995534",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_5_MPII311",
+        "MASTER_NAME_CONFLICT_6_MPCP044",
+        "MASTER_NAME_CONFLICT_8_MPPA144"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 225 G",
+      "version": 1,
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "unresolvedRows": [
+        7
+      ],
+      "exactPercent": "100.004301443000000422",
+      "issues": [
+        "INVALID_CODE_ROW_7",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 750 G",
+      "version": 2,
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "unresolvedRows": [
+        7
+      ],
+      "exactPercent": "100.004301443000000422",
+      "issues": [
+        "INVALID_CODE_ROW_7",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-cerv-viand-x",
+      "sheet": "SCHON CERV VIANDÉ X 225 G",
+      "version": 1,
+      "sourceRows": 16,
+      "linkedComponents": 15,
+      "unresolvedRows": [
+        9
+      ],
+      "exactPercent": "99.990047713867078886",
+      "issues": [
+        "INVALID_CODE_ROW_9",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_9"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 225",
+      "version": 1,
+      "sourceRows": 17,
+      "linkedComponents": 17,
+      "unresolvedRows": [],
+      "exactPercent": "89.94000000000000091",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 500",
+      "version": 2,
+      "sourceRows": 17,
+      "linkedComponents": 17,
+      "unresolvedRows": [],
+      "exactPercent": "89.97000000000000081",
+      "issues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-pollo-x",
+      "sheet": "SCHON POLLO X 225 G",
+      "version": 1,
+      "sourceRows": 17,
+      "linkedComponents": 17,
+      "unresolvedRows": [],
+      "exactPercent": "89.97000000000000081",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "schon-trad-viand-x",
+      "sheet": "SCHON TRAD VIANDÉ X 500 ",
+      "version": 1,
+      "sourceRows": 18,
+      "linkedComponents": 18,
+      "unresolvedRows": [],
+      "exactPercent": "89.919992783478365113",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_22_1121009"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "snack-cerv-prem-x",
+      "sheet": "SNACK  CERV PREM X 50 G ",
+      "version": 1,
+      "sourceRows": 21,
+      "linkedComponents": 21,
+      "unresolvedRows": [],
+      "exactPercent": "99.931000000000001098",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500",
+      "version": 1,
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "unresolvedRows": [],
+      "exactPercent": "100.086007311633544922",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500 RX",
+      "version": 2,
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "unresolvedRows": [],
+      "exactPercent": "100.086007311633544922",
+      "issues": [
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "storedDecimalsEqualSource": true,
+      "state": "DRAFT"
+    }
+  ],
+  "bundles": [
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "components": 3,
+      "linkedMembers": 0,
+      "declaredGrams": "675",
+      "computedGrams": "675",
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "components": 4,
+      "linkedMembers": 0,
+      "declaredGrams": "900",
+      "computedGrams": null,
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "MEMBER_WEIGHT_NOT_IN_SOURCE",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "components": 3,
+      "linkedMembers": 2,
+      "declaredGrams": "900",
+      "computedGrams": "675",
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "DECLARED_AND_COMPONENT_WEIGHT_DIFFER",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "s-per-combo-viand",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "components": 4,
+      "linkedMembers": 4,
+      "declaredGrams": "900",
+      "computedGrams": "900",
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected."
+      ],
+      "state": "DRAFT"
+    }
+  ],
+  "noNormalization": true,
+  "noApprovals": true
+}

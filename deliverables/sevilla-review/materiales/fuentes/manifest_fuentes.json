@@ -1,0 +1,30 @@
+[
+  {
+    "packagedFile": "junio_original.xlsx",
+    "originalName": "Junio (1).xlsx",
+    "sha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+    "bytes": 1577411,
+    "scope": "PUBLIC_BUSINESS_SOURCE_EXPLICITLY_AUTHORIZED"
+  },
+  {
+    "packagedFile": "costos_junio_original.xlsx",
+    "originalName": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+    "sha256": "a9f74a8ec998761582e56fe7295b0303f2ced9bfce532e3d1f5f53545ca2bedc",
+    "bytes": 69978,
+    "scope": "PUBLIC_BUSINESS_SOURCE_EXPLICITLY_AUTHORIZED"
+  },
+  {
+    "packagedFile": "banco_nutricional_original.xlsx",
+    "originalName": "Banco de Información Nutricional..xlsx",
+    "sha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+    "bytes": 71389,
+    "scope": "PUBLIC_BUSINESS_SOURCE_EXPLICITLY_AUTHORIZED"
+  },
+  {
+    "packagedFile": "ctn_salchicha_v11_original.xlsx",
+    "originalName": "CTN - Salchicha Desayuno Premium - v11.xlsx",
+    "sha256": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
+    "bytes": 1428549,
+    "scope": "PUBLIC_BUSINESS_SOURCE_EXPLICITLY_AUTHORIZED"
+  }
+]

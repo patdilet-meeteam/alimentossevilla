@@ -1,0 +1,93 @@
+{
+  "scope": "Authenticated local HTTP/server rendering; not an interactive browser test",
+  "browserLimit": "cua inventory browsers=[] and getBrowser(iab) unavailable",
+  "credentialsPersisted": false,
+  "pages": [
+    {
+      "path": "/dashboard",
+      "status": 200,
+      "htmlBytes": 82099,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/ingredientes",
+      "status": 200,
+      "htmlBytes": 2299614,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos",
+      "status": 200,
+      "htmlBytes": 217423,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/formulaciones",
+      "status": 200,
+      "htmlBytes": 101265,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/normativa",
+      "status": 200,
+      "htmlBytes": 37082,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/costos",
+      "status": 200,
+      "htmlBytes": 37388,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/documentos",
+      "status": 200,
+      "htmlBytes": 38133,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos/chorizo-de-cerdo",
+      "status": 200,
+      "htmlBytes": 83743,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true
+      }
+    },
+    {
+      "path": "/productos/mega-combo-faizan",
+      "status": 200,
+      "htmlBytes": 50223,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "sourceRecipeWarning": true
+      }
+    },
+    {
+      "path": "/productos/salchicha-desayuno-premium-480",
+      "status": 200,
+      "htmlBytes": 91498,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "fiveServings115g": true,
+        "fourteenServings480g": true,
+        "showsDraft": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1767 @@
+book,sheet,cell,type,value,formula,formula_attributes,style
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B2,s,CHORIZO CON TERNERA ,,,6
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B4,s,CÓDIGO,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C4,s,DESCRIPCIÓN,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D4,s,CATIDAD,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E4,s,%,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B5,s,MPCC010,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C5,s,BRAZUELO DE CERDO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D5,n,754.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E5,n,41.45180266,+(D5*100)/$D$19,"{""t"": ""shared"", ""ref"": ""E5:E17"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B6,s,MPCC026,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C6,s,TOCINO CINTA,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D6,n,437.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E6,n,24.02445327,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B7,s,MPII311,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C7,s,AGUA POTABLE.,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D7,n,369.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E7,n,20.2860944,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B8,s,MPCC010,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C8,s,BRAZUELO DE CERDO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D8,n,70.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E8,n,3.848310592,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B9,s,MPPA154,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C9,s,PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D9,n,60.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E9,n,3.298551936,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B10,s,MPPA144,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C10,s,ALMIDON DE PAPA SACO X 25 KILOS .,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D10,n,50.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E10,n,2.74879328,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B11,s,MPPC097,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C11,s,"PREPARADO SABOR CHORIZO TERNERA SEVILLA X 3,83 KG",,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D11,n,34.47,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E11,n,1.895018087,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B12,s,MPPS150,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C12,s,SAL YODADA REFISAL. SACO X 25 KILOS.,,,53
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D12,n,24.85,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E12,n,1.36615026,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B13,s,MPPD160,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C13,s,MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D13,n,10.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E13,n,0.549758656,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B14,s,MPPO134,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C14,s,COLOR LOY.(NARAN. LIQ. A10-1). TARRO X 1 KILO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D14,n,3.1,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E14,n,0.1704251833,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B15,s,MPPS151,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C15,s,SAL CURANTE AL 12 %. SACO X 25 KILOS.,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D15,n,3.0,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E15,n,0.1649275968,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B16,s,MPPO135,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C16,s,COLOR NATURAL NARANJA LIQUIDO RA 40 - 3 9827 AF. GALÓN x 4 KILOS.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D16,n,2.36,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E16,n,0.1297430428,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B17,s,MPPO142,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,C17,s,COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D17,n,1.2,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E17,n,0.06597103871,,"{""t"": ""shared"", ""si"": ""1""}",21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,B19,s,TOTAL,,,80
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,D19,n,1818.98,SUM(D5:D17),"{""t"": ""shared"", ""ref"": ""D19:E19"", ""si"": ""2""}",83
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera,E19,n,100,,"{""t"": ""shared"", ""si"": ""2""}",83
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B2,s,CHORIZO CON TERNERA ,,,6
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B4,s,CÓDIGO,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C4,s,DESCRIPCIÓN,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D4,s,%,,,13
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C5,s,CARNE TERNERA,,,20
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D5,n,27.65,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B6,s,MPCC026,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C6,s,TOCINO CINTA,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D6,n,24.02445326501666,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B7,s,MPII311,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C7,s,AGUA POTABLE.,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D7,n,20.2860944045564,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B8,s,MPCC010,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C8,s,BRAZUELO DE CERDO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D8,n,17.65,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B9,s,MPPA154,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C9,s,PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D9,n,3.298551935700228,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B10,s,MPPA144,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C10,s,ALMIDON DE PAPA SACO X 25 KILOS .,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D10,n,2.74879327975019,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B11,s,MPPC097,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C11,s,"PREPARADO SABOR CHORIZO TERNERA SEVILLA X 3,83 KG",,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D11,n,1.895018087059781,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B12,s,MPPS150,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C12,s,SAL YODADA REFISAL. SACO X 25 KILOS.,,,53
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D12,n,1.3661502600358444,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B13,s,MPPD160,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C13,s,MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D13,n,0.549758655950038,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B14,s,MPPO134,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C14,s,COLOR LOY.(NARAN. LIQ. A10-1). TARRO X 1 KILO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D14,n,0.1704251833445118,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B15,s,MPPS151,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C15,s,SAL CURANTE AL 12 %. SACO X 25 KILOS.,,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D15,n,0.1649275967850114,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B16,s,MPPO135,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C16,s,COLOR NATURAL NARANJA LIQUIDO RA 40 - 3 9827 AF. GALÓN x 4 KILOS.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D16,n,0.12974304280420898,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B17,s,MPPO142,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),C17,s,COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO.,,,18
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D17,n,0.06597103871400456,,,21
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),B19,s,TOTAL,,,80
+CTN - Salchicha Desayuno Premium - v11.xlsx,Chorizo con ternera (3),D19,n,99.99988675,SUM(D5:D17),,83
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D2,s,SALCHICHAS DESAYUNO PREMIUM,,,17
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H3,s,100 g.,,,31
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y3,s,%,,,35
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C4,s,FUENTE,,,41
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D4,s,CÓDIGO,,,42
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E4,s,DESCRIPCIÓN,,,42
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F4,s,CANTIDAD,,,43
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G4,s,%,,,42
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H4,s,HUMEDAD,,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I4,s,GRASA (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J4,s,GRASA SATURADA (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K4,s,GRASA TRANS (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L4,s,COLESTEROL (mg),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M4,s,PROTEÍNA (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N4,s,CHO (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O4,s,AZ TOTALES (g),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P4,s,AZ. AÑADIDO (g),,,47
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q4,s,ALMIDÓN,,,49
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R4,s,FIBRA (g),,,50
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S4,s,SODIO (mg),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T4,s,CALCIO (mg),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U4,s,HIERRO (mg),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V4,s,ZINC (mg),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W4,s,"VIT. A
+(ug ER)",,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X4,s,VIT. D (ug),,,45
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y4,s,HUMEDAD,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z4,s,GRASA,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA4,s,GRASA SATURADA,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB4,s,GRASA TRANS,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC4,s,COLESTEROL,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD4,s,PROTEÍNA,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE4,s,CHO,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF4,s,AZUCARES TOTALES,,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG4,s,AZÚCARES AÑADIDOS,,,54
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH4,s,ALMIDÓN,,,55
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI4,s,FIBRA,,,56
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ4,s,SODIO (mg),,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK4,s,CALCIO (mg),,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL4,s,HIERRO (mg),,,51
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM4,s,ZINC (mg),,,54
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN4,s,VIT A,,,57
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO4,s,VIT D,,,57
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP4,s,%NaCl,,,58
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AQ4,s,% NO2,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AR4,s,% FOS,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS4,s,FÓSFORO mg/100 g pto,,,60
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AT4,s,% ERITORBATO,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AU4,s,% NISINA,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AV4,s,%KCL,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AW4,s,%PVH,,,59
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AX4,s,%COLORANTE,,,60
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AY4,s,%ACETATO DE SODIO,,,60
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AZ4,s,%ÁCIDO MÁLICO,,,60
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,BA4,s,ALERGENOS,,,61
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C5,s,https://fdc.nal.usda.gov/fdc-app.html#/food-details/169190/nutrients,,,65
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D5,str,,'Chorizo con ternera (3)'!B5,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E5,s,BRAZUELO DE CERDO,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F5,n,315.0,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G5,n,64.56,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H5,n,73.6,,,71
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I5,n,4.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J5,n,1.42,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K5,n,0.032,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L5,n,59.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M5,n,21.1,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N5,n,0.21,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O5,n,0.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P5,n,0.0,,,73
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q5,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R5,n,0.0,,,71
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S5,n,67.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T5,n,15.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U5,n,0.86,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V5,n,1.93,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W5,n,0.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X5,n,0.1,,,73
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y5,n,47.51616,H5*G5%,"{""t"": ""shared"", ""ref"": ""Y5:Y22"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z5,n,2.5824,I5*$G5%,"{""t"": ""shared"", ""ref"": ""Z5:AO5"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA5,n,0.916752,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB5,n,0.0206592,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC5,n,38.0904,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD5,n,13.62216,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE5,n,0.135576,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF5,n,0,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG5,n,0,,"{""t"": ""shared"", ""si"": ""1""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH5,n,0,,"{""t"": ""shared"", ""si"": ""1""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI5,n,0,,"{""t"": ""shared"", ""si"": ""1""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ5,n,43.2552,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK5,n,9.684,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL5,n,0.555216,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM5,n,1.246008,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN5,n,0,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO5,n,0.06456,,"{""t"": ""shared"", ""si"": ""1""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS5,n,122.664,190*G5%,,84
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C6,s,ICBF,,,87
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D6,str,MPCC026,'Chorizo con ternera (3)'!B6,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E6,s,TOCINO CINTA,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F6,n,25.0,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G6,n,5.12,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H6,n,10.8,,,71
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I6,n,85.8,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J6,n,34.6,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K6,n,0.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L6,n,70.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M6,n,2.9,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N6,n,0.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O6,n,0.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P6,n,0.0,,,73
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q6,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R6,n,0.0,,,71
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S6,n,22.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T6,n,6.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U6,n,1.1,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V6,n,0.8,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W6,n,10.0,,,72
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X6,n,0.0,,,73
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y6,n,0.55296,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z6,n,4.39296,I6*$G6%,"{""t"": ""shared"", ""ref"": ""Z6:AO6"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA6,n,1.77152,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC6,n,3.584,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD6,n,0.14848,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ6,n,1.1264,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK6,n,0.3072,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL6,n,0.05632,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM6,n,0.04096,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN6,n,0.512,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO6,n,0,,"{""t"": ""shared"", ""si"": ""3""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS6,n,1.8944,37*G6%,,84
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C7,s,https://fdc.nal.usda.gov/fdc-app.html#/food-details/614990/nutrients,,,90
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D7,str,MPII311,'Chorizo con ternera (3)'!B7,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E7,s,REPELE FAZÁN,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F7,n,46.0,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G7,n,9.43,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H7,n,61.72,100-(I7+M7+N7),,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I7,n,25.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J7,n,8.48,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K7,n,0.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L7,n,68.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M7,n,13.28,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N7,n,0.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O7,n,0.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P7,n,0.0,,,94
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q7,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R7,n,0.0,,,96
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S7,n,62.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T7,n,14.0,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U7,n,0.96,,,92
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V7,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W7,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X7,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y7,n,5.820196,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z7,n,2.3575,I7*$G7%,"{""t"": ""shared"", ""ref"": ""Z7:AO7"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA7,n,0.799664,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC7,n,6.4124,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD7,n,1.252304,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ7,n,5.8466,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK7,n,1.3202,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL7,n,0.090528,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO7,n,0,,"{""t"": ""shared"", ""si"": ""4""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C8,s,https://fdc.nal.usda.gov/fdc-app.html#/food-details/173647/nutrients,,,103
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D8,str,MPCC010,'Chorizo con ternera (3)'!B8,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E8,s,AGUA POTABLE,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F8,n,82.964,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G8,n,17.0,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H8,n,99.9,,,105
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P8,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q8,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R8,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S8,n,4.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T8,n,3.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V8,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W8,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X8,n,0.0,,,110
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y8,n,16.983,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z8,n,0,I8*$G8%,"{""t"": ""shared"", ""ref"": ""Z8:AO8"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ8,n,0.68,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK8,n,0.51,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C9,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D9,str,MPPA154,'Chorizo con ternera (3)'!B9,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E9,s,COLOR NATURAL LINICOL,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F9,n,0.123,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G9,n,0.03,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M9,n,1.4,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N9,n,7.8,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q9,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V9,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W9,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X9,n,0.0,,,118
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y9,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z9,n,0,I9*$G9%,"{""t"": ""shared"", ""ref"": ""Z9:AO9"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD9,n,0.00042,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE9,n,0.00234,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO9,n,0,,"{""t"": ""shared"", ""si"": ""6""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AX9,n,0.0033,G9*0.11,,100
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C10,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D10,str,MPPA144,'Chorizo con ternera (3)'!B10,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E10,s,COLOR NATURAL NARANJA  PR801 WD.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F10,n,0.096,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G10,n,0.02,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H10,n,2.269999999999996,,,121
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I10,n,96.3,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J10,n,21.8,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K10,n,0.15,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L10,n,5.3,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M10,n,1.43,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N10,n,2.27,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O10,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P10,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q10,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R10,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S10,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T10,n,22.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U10,n,8.1,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V10,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W10,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X10,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y10,n,0.000454,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z10,n,0.01926,I10*$G10%,"{""t"": ""shared"", ""ref"": ""Z10:AO10"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA10,n,0.00436,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB10,n,0.00003,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC10,n,0.00106,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD10,n,0.000286,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE10,n,0.000454,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK10,n,0.0044,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL10,n,0.00162,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO10,n,0,,"{""t"": ""shared"", ""si"": ""7""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C11,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D11,str,MPPC097,'Chorizo con ternera (3)'!B11,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E11,s,SAL REDUCIDA EN SODIO.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F11,n,8.25,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G11,n,1.69,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O11,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P11,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q11,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R11,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S11,n,23268.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V11,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W11,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X11,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y11,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z11,n,0,I11*$G11%,"{""t"": ""shared"", ""ref"": ""Z11:AO11"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ11,n,393.2292,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO11,n,0,,"{""t"": ""shared"", ""si"": ""8""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP11,n,1.014,G11*60%,,119
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AV11,n,0.676,G11*40%,,113
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C12,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E12,s,SAL CURANTE AL 12 %.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F12,n,0.405,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G12,n,0.085,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H12,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M12,n,0.001,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N12,n,0.005,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O12,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P12,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q12,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R12,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S12,n,38339.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V12,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W12,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X12,n,0.0,,,110
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y12,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z12,n,0,I12*$G12%,"{""t"": ""shared"", ""ref"": ""Z12:AO12"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD12,n,0.00000085,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE12,n,0.00000425,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ12,n,32.58815,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO12,n,0,,"{""t"": ""shared"", ""si"": ""9""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP12,n,0.0747575,87.95%*G12,,119
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AQ12,n,0.010625,G12*12.5%,,119
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C13,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D13,str,MPPD160,'Chorizo con ternera (3)'!B13,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E13,s,MEZCLA DE FOSFATOS SUPRA MEAT F451,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F13,n,2.0,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G13,n,0.41,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H13,n,0.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P13,n,0.0,,,146
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q13,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R13,n,0.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S13,n,11100.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V13,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W13,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X13,n,0.0,,,118
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y13,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z13,n,0,I13*$G13%,"{""t"": ""shared"", ""ref"": ""Z13:AO13"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ13,n,45.51,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO13,n,0,,"{""t"": ""shared"", ""si"": ""10""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS13,n,89.38,21800*G13%,,101
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C14,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D14,str,MPPO134,'Chorizo con ternera (3)'!B14,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E14,s,CONSERVANTE INBAC ACN/NA.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F14,n,1.53,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G14,n,0.31,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H14,n,0.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I14,n,2.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J14,n,2.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K14,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L14,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M14,n,1.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N14,n,33.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O14,n,2.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P14,n,2.0,,,146
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R14,n,0.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S14,n,17000.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T14,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U14,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V14,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W14,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X14,n,0.0,,,118
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y14,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z14,n,0.0062,I14*$G14%,"{""t"": ""shared"", ""ref"": ""Z14:AO14"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA14,n,0.0062,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD14,n,0.0031,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE14,n,0.1023,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF14,n,0.0062,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG14,n,0.0062,,"{""t"": ""shared"", ""si"": ""11""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ14,n,52.7,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO14,n,0,,"{""t"": ""shared"", ""si"": ""11""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP14,n,0.01085,3.5%*G14,,147
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AU14,n,0.0003875,G14*0.125%,,148
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AY14,n,0.1736,56%*G14,,149
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AZ14,n,0.0124,4%*G14,,149
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C15,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D15,str,MPPS151,'Chorizo con ternera (3)'!B15,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E15,s,PVH LIQUIDA M 1222,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F15,n,2.25,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G15,n,0.46,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H15,n,38.1,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M15,n,13.7,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N15,n,29.2,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P15,n,0.0,,,146
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q15,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R15,n,0.2,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S15,n,7160.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T15,n,29.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U15,n,0.8,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V15,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W15,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X15,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y15,n,0.17526,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z15,n,0,I15*$G15%,"{""t"": ""shared"", ""ref"": ""Z15:AO15"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD15,n,0.06302,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE15,n,0.13432,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI15,n,0.00092,,"{""t"": ""shared"", ""si"": ""12""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ15,n,32.936,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK15,n,0.1334,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL15,n,0.00368,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO15,n,0,,"{""t"": ""shared"", ""si"": ""12""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP15,n,0.0874,19%*G15,,126
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AW15,n,0.3726,G15-AP15,,169
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C16,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D16,str,MPPO135,'Chorizo con ternera (3)'!B16,,67
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E16,s,CEBOLLA EN POLVO B.1.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F16,n,0.1,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G16,n,0.02,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H16,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I16,n,1.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J16,n,0.2,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K16,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L16,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M16,n,10.4,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N16,n,79.1,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O16,n,15.2,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P16,n,0.0,,,146
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q16,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R16,n,6.6,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S16,n,73.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T16,n,384.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U16,n,3.9,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V16,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W16,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X16,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y16,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z16,n,0.0002,I16*$G16%,"{""t"": ""shared"", ""ref"": ""Z16:AO16"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA16,n,0.00004,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD16,n,0.00208,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE16,n,0.01582,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF16,n,0.00304,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI16,n,0.00132,,"{""t"": ""shared"", ""si"": ""13""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ16,n,0.0146,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK16,n,0.0768,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL16,n,0.00078,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO16,n,0,,"{""t"": ""shared"", ""si"": ""13""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C17,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E17,s,ERITORBATO DE SODIO. ,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F17,n,0.23,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G17,n,0.05,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H17,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O17,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P17,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q17,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R17,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S17,n,10680,10680,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V17,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W17,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X17,n,0.0,,,110
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y17,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z17,n,0,I17*$G17%,"{""t"": ""shared"", ""ref"": ""Z17:AO17"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ17,n,5.34,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO17,n,0,,"{""t"": ""shared"", ""si"": ""14""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AT17,n,0.049,98%*G17,,100
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C18,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E18,s,PLASMA PORCINO,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F18,n,0.3,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G18,n,0.06,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H18,n,0.0,,,88
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I18,n,2.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J18,n,0.8,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M18,n,75.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N18,n,2.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P18,n,0.0,,,146
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q18,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R18,n,0.0,,,145
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S18,n,4750.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T18,n,92.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W18,n,0.0,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X18,n,0.0,,,172
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y18,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z18,n,0.0012,I18*$G18%,"{""t"": ""shared"", ""ref"": ""Z18:AO18"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA18,n,0.00048,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD18,n,0.045,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE18,n,0.0012,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ18,n,2.85,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK18,n,0.0552,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO18,n,0,,"{""t"": ""shared"", ""si"": ""15""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C19,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E19,s,AJO MOLIDO DESHIDRATADO B. 1.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F19,n,0.1,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G19,n,0.02,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H19,n,6.75,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I19,n,0.8,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J19,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K19,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L19,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M19,n,17.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N19,n,75.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O19,n,24.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P19,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q19,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R19,n,9.9,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S19,n,60.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T19,n,55.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U19,n,5.6,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V19,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W19,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X19,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y19,n,0.00135,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z19,n,0.00016,I19*$G19%,"{""t"": ""shared"", ""ref"": ""Z19:AO19"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD19,n,0.0034,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE19,n,0.015,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF19,n,0.0048,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI19,n,0.00198,,"{""t"": ""shared"", ""si"": ""16""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ19,n,0.012,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK19,n,0.011,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL19,n,0.00112,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO19,n,0,,"{""t"": ""shared"", ""si"": ""16""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C20,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E20,s,PIMIENTA NEGRA MOLIDA ESP. 0.9 MM.,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F20,n,0.3,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G20,n,0.06,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H20,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I20,n,3.3,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J20,n,1.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K20,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L20,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M20,n,11.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N20,n,64.8,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O20,n,26.5,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P20,n,0.0,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q20,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R20,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S20,n,44.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T20,n,437.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U20,n,28.9,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V20,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W20,n,57.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X20,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y20,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z20,n,0.00198,I20*$G20%,"{""t"": ""shared"", ""ref"": ""Z20:AO20"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA20,n,0.0006,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD20,n,0.0066,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE20,n,0.03888,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF20,n,0.0159,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ20,n,0.0264,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK20,n,0.2622,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL20,n,0.01734,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN20,n,0.0342,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO20,n,0,,"{""t"": ""shared"", ""si"": ""17""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C21,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E21,s,DEXTROSA,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F21,n,3.1,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G21,n,0.64,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H21,n,0.5,100-N21,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M21,n,0.002,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N21,n,99.5,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O21,n,99.5,,,122
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P21,n,99.5,,,106
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q21,n,0.0,,,95
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R21,n,0.0,,,107
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U21,n,0.005,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V21,n,0.0,,,97
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W21,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X21,n,0.0,,,98
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y21,n,0.0032,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z21,n,0,I21*$G21%,"{""t"": ""shared"", ""ref"": ""Z21:AO21"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD21,n,0.0000128,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE21,n,0.6368,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF21,n,0.6368,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG21,n,0.6368,,"{""t"": ""shared"", ""si"": ""18""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL21,n,0.000032,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO21,n,0,,"{""t"": ""shared"", ""si"": ""18""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,C22,s,FTP,,,116
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E22,s,HUMO CHARDEX EN POLVO,,,68
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F22,n,0.2,,,69
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G22,n,0.04,,,70
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,H22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,J22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,K22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,L22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,M22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,N22,n,60.7,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,O22,n,2.2,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,P22,n,0.0,,,118
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Q22,n,0.0,,,74
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,R22,n,0.0,,,175
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,S22,n,45.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,T22,n,16.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,U22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,V22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,W22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,X22,n,0.0,,,117
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y22,n,0,,"{""t"": ""shared"", ""si"": ""2""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z22,n,0,I22*$G22%,"{""t"": ""shared"", ""ref"": ""Z22:AO22"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE22,n,0.02428,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF22,n,0.00088,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",76
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",77
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",78
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ22,n,0.018,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK22,n,0.0064,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO22,n,0,,"{""t"": ""shared"", ""si"": ""19""}",75
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,D23,s,TOTAL,,,177
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F23,n,487.948,SUM(F5:F22),"{""t"": ""shared"", ""ref"": ""F23:G23"", ""si"": ""20""}",179
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G23,n,100.005,,"{""t"": ""shared"", ""si"": ""20""}",180
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y23,n,71.05258,SUM(Y5:Y22),"{""t"": ""shared"", ""ref"": ""Y23:AZ23"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z23,n,9.36186,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA23,n,3.499616,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB23,n,0.0206892,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC23,n,48.08786,,"{""t"": ""shared"", ""si"": ""21""}",186
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD23,n,15.14686365,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE23,n,1.10697425,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF23,n,0.66762,,"{""t"": ""shared"", ""si"": ""21""}",185
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG23,n,0.643,,"{""t"": ""shared"", ""si"": ""21""}",187
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH23,n,0,,"{""t"": ""shared"", ""si"": ""21""}",188
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI23,n,0.00422,,"{""t"": ""shared"", ""si"": ""21""}",189
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ23,n,616.13255,,"{""t"": ""shared"", ""si"": ""21""}",186
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK23,n,12.3708,,"{""t"": ""shared"", ""si"": ""21""}",186
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL23,n,0.726636,,"{""t"": ""shared"", ""si"": ""21""}",186
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM23,n,1.286968,,"{""t"": ""shared"", ""si"": ""21""}",190
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN23,n,0.5462,,"{""t"": ""shared"", ""si"": ""21""}",190
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO23,n,0.06456,,"{""t"": ""shared"", ""si"": ""21""}",190
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP23,n,1.1870075,,"{""t"": ""shared"", ""si"": ""21""}",191
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AQ23,n,0.010625,,"{""t"": ""shared"", ""si"": ""21""}",192
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AR23,n,0,,"{""t"": ""shared"", ""si"": ""21""}",191
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS23,n,213.9384,,"{""t"": ""shared"", ""si"": ""21""}",191
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AT23,n,0.049,,"{""t"": ""shared"", ""si"": ""21""}",191
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AU23,n,0.0003875,,"{""t"": ""shared"", ""si"": ""21""}",193
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AV23,n,0.676,,"{""t"": ""shared"", ""si"": ""21""}",194
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AW23,n,0.3726,,"{""t"": ""shared"", ""si"": ""21""}",194
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AX23,n,0.0033,,"{""t"": ""shared"", ""si"": ""21""}",195
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AY23,n,0.1736,,"{""t"": ""shared"", ""si"": ""21""}",193
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AZ23,n,0.0124,,"{""t"": ""shared"", ""si"": ""21""}",193
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y24,n,63.2367962,Y23*(100%-$AA$31),,197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z24,n,10.3916646,Z23*(100%+$AA$31),"{""t"": ""shared"", ""ref"": ""Z24:AO24"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA24,n,3.88457376,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB24,n,0.022965012,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC24,n,53.3775246,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AD24,n,16.81301865,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AE24,n,1.228741418,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AF24,n,0.7410582,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AG24,n,0.71373,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AH24,n,0,,"{""t"": ""shared"", ""si"": ""22""}",198
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AI24,n,0.0046842,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AJ24,n,683.9071305,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK24,n,13.731588,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL24,n,0.80656596,,"{""t"": ""shared"", ""si"": ""22""}",197
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AM24,n,1.42853448,,"{""t"": ""shared"", ""si"": ""22""}",199
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AN24,n,0.606282,,"{""t"": ""shared"", ""si"": ""22""}",199
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AO24,n,0.0716616,,"{""t"": ""shared"", ""si"": ""22""}",199
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E26,s,VERDADERA NATURALEZA,,,201
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AR26,s,Fósforo,,,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AS26,n,2139.384,AS23*10,,203
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AT26,s,ppm,,,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E27,str,BRAZUELO DE CERDO,E5,,147
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F27,n,64.56,G5,,24
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G27,n,100,(F27*100)/$F$28,,126
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA27,s,TRANS,,,204
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AB27,n,22.965012,AB24*1000,,174
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AC27,s,mg,,,174
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E28,s,TOTAL,,,201
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F28,n,64.56,SUM(F27),,205
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,G28,n,100.0,,,201
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AK29,s,Resultado laboratorio,,,206
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AL29,n,578.5,,,207
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E30,s,Verdadera Naturaleza,,,205
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,F30,s,Salchicha de Cerdo,,,208
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y31,s,Merma por cocción y frío,,,209
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AA31,n,0.11,,,211
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y33,s,CLASIFICACIÓN,,,213
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,I34,s, ,,,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y34,s,PROTEÍNA,,,215
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z34,n,16.81301865,AD24,,216
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y35,s,GRASA,,,217
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z35,n,10.3916646,Z24,,218
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y36,s,HUMEDAD,,,217
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z36,n,63.2367962,Y24,,218
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,E37,s,Versión 11,,,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y37,s,ALMIDON,,,217
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z37,n,0,AH24,,219
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,AP37,s, ,,,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y38,s,PNC,,,220
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Z38,n,0.0699522,(AD15)*(100%+AA31),,221
+CTN - Salchicha Desayuno Premium - v11.xlsx,CTN,Y39,s,PREMIUM,,,222
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C1,s,Valores,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D1,s,Cantidad ,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E1,s,Redondeo,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F1,s,%VD,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I1,s,Cantidad (porción),,,10
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J1,s,Redondeo,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K1,s,Declaraciones,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A2,s,NUTRIENTE,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B2,s,UM,,,12
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C2,s,Res. 810,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D2,n,100.0,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E2,n,100,D2,,14
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I2,n,60,I31,,19
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J2,n,60,I2,,19
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A3,s,CALORÍAS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B3,s,Kcal,,,22
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E3,n,163,"ROUND((E4*9)+(E7*4)+(E11*4)+(E8*2),0)",,25
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G3,n,163,"IF(E3<=4,0,E3)",,28
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H3,str,Misma declaración,"IF(G3=E3,""Misma declaración"",""Cambia declaración"")","{""t"": ""shared"", ""ref"": ""H3:H9"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J3,n,97,"ROUND((J4*9)+(J7*4)+(J11*4)+(J8*2),0)",,25
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A4,s,GRASA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B4,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C4,n,66.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D4,n,10.3916646,CTN!Z24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E4,n,10,"ROUND(D4,0)",,44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G4,n,10,"IF(E4<=0.5,0,E4)",,48
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H4,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I4,n,6.23499876,(D4*$I$2)/$D$2,"{""t"": ""shared"", ""ref"": ""I4:I17"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J4,n,6,"ROUND(I4,0)",,44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A5,s,GRASA SATURADA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B5,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C5,n,20.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D5,n,3.88457376,CTN!AA24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E5,n,3.9,"ROUND(D5,1)",,62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G5,n,3.9,"IF(E5<=0.1,0,E5)",,64
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H5,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I5,n,2.330744256,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J5,n,2.3,"ROUND(I5,1)",,62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K5,str,Declaración normal,"IF(G5=0,""No es fuente significativa"",""Declaración normal"")",,66
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A6,s,GRASA TRANS ISOMEROS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B6,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C6,n,2200.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D6,n,0.022965012,CTN!AB24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E6,n,0,"ROUND(D6,0)",,44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G6,n,0,"IF(E6<=100,0,E6)",,28
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H6,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I6,n,0.0137790072,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J6,n,0.0,,,79
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A7,s,CHO TOTALES,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B7,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C7,n,300.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D7,n,1.228741418,CTN!AE24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E7,n,1.2,"ROUND(D7,1)",,62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G7,n,1.2,"IF(E7<=0.5,0,E7)","{""t"": ""shared"", ""ref"": ""G7:G9"", ""si"": ""3""}",64
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H7,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I7,n,0.7372448505,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J7,n,0.7,"ROUND(I7,1)",,62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A8,s,FIBRA DIETARIA TOTAL,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B8,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C8,n,28.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D8,n,0.0046842,CTN!AI24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E8,n,0,"ROUND(D8,0)",,44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G8,n,0,,"{""t"": ""shared"", ""si"": ""3""}",28
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H8,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I8,n,0.00281052,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J8,n,0.0,,,79
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K8,str,No es fuente significativa,"IF(G8=0,""No es fuente significativa"",""Declaración normal"")",,66
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A9,s,AZÚCARES REDUCTORES TOTALES,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B9,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D9,n,0.7410582,CTN!AF24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E9,n,0.7,"ROUND(D9,1)","{""t"": ""shared"", ""ref"": ""E9:E10"", ""si"": ""4""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G9,n,0.7,,"{""t"": ""shared"", ""si"": ""3""}",64
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H9,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""1""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I9,n,0.44463492,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J9,n,0.4,"ROUND(I9,1)","{""t"": ""shared"", ""ref"": ""J9:J11"", ""si"": ""5""}",79
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A10,s,AZUCARES AÑADIDOS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B10,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C10,n,50.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D10,n,0.71373,CTN!AG24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E10,n,0.7,,"{""t"": ""shared"", ""si"": ""4""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I10,n,0.428238,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J10,n,0.4,,"{""t"": ""shared"", ""si"": ""5""}",79
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A11,s,PROTEÍNA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B11,s,g,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C11,n,50.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D11,n,16.81301865,CTN!AD24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E11,n,17,"ROUND(D11,0)","{""t"": ""shared"", ""ref"": ""E11:E12"", ""si"": ""6""}",44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F11,n,0.34,E11/C11,,99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G11,n,17,"IF(E11<=0.5,0,E11)",,48
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H11,str,Misma declaración,"IF(G11=E11,""Misma declaración"",""Cambia declaración"")","{""t"": ""shared"", ""ref"": ""H11:H12"", ""si"": ""7""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I11,n,10.08781119,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J11,n,10.1,,"{""t"": ""shared"", ""si"": ""5""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K11,str,Excelente fuente,"IF(F11>=0.2,""Excelente fuente"",""Verificar si es buena fuente"")",,66
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A12,s,SODIO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B12,s,mg,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C12,n,2000.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D12,n,683.9071305,CTN!AJ24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E12,n,684,,"{""t"": ""shared"", ""si"": ""6""}",44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,G12,n,684,"IF(E12<=5,0,E12)",,48
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,H12,str,Misma declaración,,"{""t"": ""shared"", ""si"": ""7""}",30
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I12,n,410.3442783,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J12,n,410,"ROUND(I12,0)",,104
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A13,s,VITAMINA A,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B13,s,mcg ER,,,22
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C13,n,800.0,,,108
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E13,n,0,"ROUND(D13,1)","{""t"": ""shared"", ""ref"": ""E13:E15"", ""si"": ""8""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F13,n,0,E13/C13,"{""t"": ""shared"", ""ref"": ""F13:F17"", ""si"": ""9""}",99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I13,n,0,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J13,n,0,"ROUND(I13,1)","{""t"": ""shared"", ""ref"": ""J13:J14"", ""si"": ""10""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K13,str,No es fuente significativa,"IF(F13<0.02,""No es fuente significativa"",""Revisar modo de declaración"")","{""t"": ""shared"", ""ref"": ""K13:K17"", ""si"": ""11""}",112
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A14,s,VITAMINA D,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B14,s,mcg,,,22
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C14,n,15.0,,,108
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E14,n,0,,"{""t"": ""shared"", ""si"": ""8""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F14,n,0,,"{""t"": ""shared"", ""si"": ""9""}",99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I14,n,0,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J14,n,0,,"{""t"": ""shared"", ""si"": ""10""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K14,str,No es fuente significativa,,"{""t"": ""shared"", ""si"": ""11""}",112
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A15,s,HIERRO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B15,s,mg,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C15,n,20.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D15,n,0.80656596,CTN!AL24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E15,n,0.8,,"{""t"": ""shared"", ""si"": ""8""}",62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F15,n,0.04,,"{""t"": ""shared"", ""si"": ""9""}",99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I15,n,0.483939576,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J15,n,0.48,"ROUND(I15,2)",,52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K15,str,Revisar modo de declaración,,"{""t"": ""shared"", ""si"": ""11""}",112
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A16,s,CALCIO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B16,s,mg,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C16,n,1000.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D16,n,13.731588,CTN!AK24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E16,n,14,"ROUND(D16,0)",,44
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F16,n,0.014,,"{""t"": ""shared"", ""si"": ""9""}",99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I16,n,8.2389528,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J16,n,8,"ROUND(I16,0)",,104
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K16,str,No es fuente significativa,,"{""t"": ""shared"", ""si"": ""11""}",112
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A17,s,ZINC,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B17,s,mg,,,37
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,C17,n,11.0,,,38
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,D17,n,1.42853448,CTN!AM24,,40
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E17,n,1.4,"ROUND(D17,1)",,62
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,F17,n,0.1272727273,,"{""t"": ""shared"", ""si"": ""9""}",99
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I17,n,0.857120688,,"{""t"": ""shared"", ""si"": ""2""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,J17,n,0.86,"ROUND(I17,2)",,52
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K17,str,Revisar modo de declaración,,"{""t"": ""shared"", ""si"": ""11""}",112
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A21,s,GRASA INSATURADA,,,129
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B21,s,g,,,130
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A22,s,GRASA MONO INSATURADA,,,136
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B22,s,g,,,137
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A23,s,GRASA POLI INSATURADA,,,136
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B23,s,g,,,137
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A24,s,COLESTEROL,,,136
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B24,s,g,,,137
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,A25,s,Porción para salchicha según resolución 810,,,139
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I25,n,50.0,,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B26,s,Peso promedio por cada unidad,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I26,n,60,120/2,,144
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B27,s,30% de la porción en resolución 810,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I27,n,15,I25*0.3,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B28,s,Rango máximo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I28,n,65,I25+I27,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,B29,s,Rango mínimo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I29,n,35,I25-I27,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E31,s,Porción: 1 unidad,,,153
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I31,n,60,I26,,156
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E32,s,Porciones por empaque 120g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I32,n,2,120/I31,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E33,s,Porciones por empaque 480g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I33,n,8,480/60,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,E34,s,Porciones por empaque 1020g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,I34,n,17,1020/60,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K50,n,15.0,,,86
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K51,n,10.0,,,86
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K52,n,150,K50*K51,,86
+CTN - Salchicha Desayuno Premium - v11.xlsx,IN,K53,n,37.5,K52/4,,86
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C1,s,Valores,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D1,s,Cantidad ,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E1,s,Redondeo,,,225
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F1,s,%VD,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G1,s,No significativas,,,10
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,H1,s,Calculos Sello ,,,226
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I1,s,Cantidad (porción),,,10
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J1,s,Redondeo,,,225
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K1,s,Declaraciones,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A2,s,NUTRIENTE,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B2,s,Unidad,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C2,s,Res. 810,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D2,n,100.0,,,4
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E2,n,100,D2,,227
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I2,n,46,I31,,19
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J2,n,46,I2,,228
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A3,s,CALORÍAS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B3,s,Kcal,,,229
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C3,n,2000.0,,,230
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E3,n,162.8,(L25*9)+((L26-L27-L28)*4)+(L27*2)+(L28*4)+(L29*4),,231
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G3,n,162.8,"IF(E3<=4,0,E3)",,232
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J3,n,74.888,(L32*9)+((L33-L34-L35)*4)+(L34*2)+(L35*4)+(L36*4),,231
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A4,s,GRASA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B4,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C4,n,66.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D4,n,10.3916646,CTN!Z24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E4,n,10.3916646,D4,"{""t"": ""shared"", ""ref"": ""E4:E17"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F4,n,0.1574494636,E4/C4,"{""t"": ""shared"", ""ref"": ""F4:F8"", ""si"": ""2""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G4,n,10.3916646,"IF(E4<=0.5,0,E4)",,240
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I4,n,4.780165716,(D4*$I$2)/$D$2,"{""t"": ""shared"", ""ref"": ""I4:I17"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J4,n,4.780165716,I4,"{""t"": ""shared"", ""ref"": ""J4:J5"", ""si"": ""4""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K4,str,Declara normal,"IF(D4<=0.5,""No es fuente significativa"",""Declara normal"")",,242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A5,s,GRASA SATURADA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B5,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C5,n,20.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D5,n,3.88457376,CTN!AA24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E5,n,3.88457376,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F5,n,0.194228688,,"{""t"": ""shared"", ""si"": ""2""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G5,n,3.88457376,"IF(E5<=0.1,0,E5)",,240
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,H5,n,0.09793415233,((CTN!AA6)*9)/E3,,243
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I5,n,1.78690393,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J5,n,1.78690393,,"{""t"": ""shared"", ""si"": ""4""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K5,str,SIN SELLO,"IF(H5>=10%,""SELLO"",""SIN SELLO"")",,244
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A6,s,GRASA TRANS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B6,s,mg,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C6,n,2200.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D6,n,22.965012,CTN!AB27,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E6,n,22.965012,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F6,n,0.01043864182,,"{""t"": ""shared"", ""si"": ""2""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G6,n,0,"IF(E6<=100,0,E6)",,245
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,H6,n,0.001269564545,(((E6/1000)*9)/E3),,246
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I6,n,10.56390552,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J6,n,0.0,,,238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K6,str,SIN SELLO,"IF(H6>1%,""SELLO"",""SIN SELLO"")",,242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L6,str,No es fuente significativa,"IF(E6<=100,""No es fuente significativa"",""Declara normal"")",,2
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A7,s,CHO TOTALES,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B7,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C7,n,300.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D7,n,1.228741418,CTN!AE24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E7,n,1.228741418,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F7,n,0.004095804725,,"{""t"": ""shared"", ""si"": ""2""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G7,n,1.228741418,"IF(E7<=0.5,0,E7)","{""t"": ""shared"", ""ref"": ""G7:G9"", ""si"": ""5""}",240
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I7,n,0.5652210521,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J7,n,0.5652210521,I7,,241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K7,str,Declara normal,"IF(D7<=0.5,""No es fuente significativa"",""Declara normal"")","{""t"": ""shared"", ""ref"": ""K7:K9"", ""si"": ""6""}",242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A8,s,FIBRA DIETARIA TOTAL,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B8,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C8,n,28.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D8,n,0.0046842,CTN!AI24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E8,n,0.0046842,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F8,n,0.0001672928571,,"{""t"": ""shared"", ""si"": ""2""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G8,n,0,,"{""t"": ""shared"", ""si"": ""5""}",245
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I8,n,0.002154732,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J8,n,0.0,,,238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K8,str,No es fuente significativa,,"{""t"": ""shared"", ""si"": ""6""}",242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A9,s,AZÚCARES TOTALES,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B9,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D9,n,0.7410582,CTN!AF24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E9,n,0.7410582,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G9,n,0.7410582,,"{""t"": ""shared"", ""si"": ""5""}",245
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I9,n,0.340886772,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J9,n,0.340886772,I9,"{""t"": ""shared"", ""ref"": ""J9:J12"", ""si"": ""7""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K9,str,Declara normal,,"{""t"": ""shared"", ""si"": ""6""}",242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A10,s,AZUCARES AÑADIDOS,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B10,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C10,n,50.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D10,n,0.71373,CTN!AG24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E10,n,0.71373,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F10,n,0.0142746,E10/C10,"{""t"": ""shared"", ""ref"": ""F10:F17"", ""si"": ""8""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,H10,n,0.01753636364,((E10*4)/E3),,248
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I10,n,0.3283158,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J10,n,0.3283158,,"{""t"": ""shared"", ""si"": ""7""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K10,str,SIN SELLO,"IF(H10>=10%,""SELLO"",""SIN SELLO"")",,242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A11,s,PROTEÍNA,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B11,s,g,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C11,n,50.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D11,n,16.81301865,CTN!AD24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E11,n,16.81301865,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F11,n,0.336260373,,"{""t"": ""shared"", ""si"": ""8""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G11,n,16.81301865,"IF(E11<=0.5,0,E11)",,232
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I11,n,7.73398858,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J11,n,7.73398858,,"{""t"": ""shared"", ""si"": ""7""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K11,str,Excelente fuente,"IF(F11>=0.2,""Excelente fuente"",IF(F11>=10%,""Buena fuente"",IF(G11<=0.5,0,""Declara normal"")))",,242
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A12,s,SODIO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B12,s,mg,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C12,n,2000.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D12,n,578.5,CTN!AL29,,250
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E12,n,578.5,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F12,n,0.28925,,"{""t"": ""shared"", ""si"": ""8""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G12,n,578.5,"IF(E12<=5,0,E12)",,232
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,H12,n,3.553439803,E12/E3,,251
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I12,n,266.11,,"{""t"": ""shared"", ""si"": ""3""}",104
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J12,n,266.11,,"{""t"": ""shared"", ""si"": ""7""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K12,str,SELLO,"IF(H12>=1,""SELLO"",IF(E12>=300,""SELLO"",""SIN SELLO""))",,252
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A13,s,VITAMINA A,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B13,s,mcg ER,,,229
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C13,n,800.0,,,253
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D13,n,0.606282,CTN!AN24,,254
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E13,n,0.606282,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F13,n,0.0007578525,,"{""t"": ""shared"", ""si"": ""8""}",255
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G13,n,0,"IF(F13<2%,0,E13)","{""t"": ""shared"", ""ref"": ""G13:G17"", ""si"": ""9""}",256
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I13,n,0.27888972,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J13,n,0.0,,,238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K13,str,No es fuente significativa,"IF(F13<0.02,""No es fuente significativa"",""Revisar modo de declaración"")","{""t"": ""shared"", ""ref"": ""K13:K17"", ""si"": ""10""}",257
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A14,s,VITAMINA D,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B14,s,mcg,,,229
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C14,n,15.0,,,253
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D14,n,0.0716616,CTN!AO24,,254
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E14,n,0.0716616,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F14,n,0.00477744,,"{""t"": ""shared"", ""si"": ""8""}",255
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G14,n,0,,"{""t"": ""shared"", ""si"": ""9""}",256
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I14,n,0.032964336,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J14,n,0.0,,,238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K14,str,No es fuente significativa,,"{""t"": ""shared"", ""si"": ""10""}",257
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A15,s,HIERRO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B15,s,mg,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C15,n,20.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D15,n,0.80656596,CTN!AL24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E15,n,0.80656596,,"{""t"": ""shared"", ""si"": ""1""}",258
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F15,n,0.040328298,,"{""t"": ""shared"", ""si"": ""8""}",255
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G15,n,0.80656596,,"{""t"": ""shared"", ""si"": ""9""}",259
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I15,n,0.3710203416,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J15,n,0.3710203416,I15,,258
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K15,str,Revisar modo de declaración,,"{""t"": ""shared"", ""si"": ""10""}",257
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A16,s,CALCIO,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B16,s,mg,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C16,n,1000.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D16,n,13.731588,CTN!AK24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E16,n,13.731588,,"{""t"": ""shared"", ""si"": ""1""}",238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F16,n,0.013731588,,"{""t"": ""shared"", ""si"": ""8""}",255
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G16,n,0,,"{""t"": ""shared"", ""si"": ""9""}",256
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I16,n,6.31653048,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J16,n,0.0,,,238
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K16,str,No es fuente significativa,,"{""t"": ""shared"", ""si"": ""10""}",257
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A17,s,ZINC,,,11
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B17,s,mg,,,235
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,C17,n,11.0,,,236
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,D17,n,1.42853448,CTN!AM24,,237
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E17,n,1.42853448,,"{""t"": ""shared"", ""si"": ""1""}",241
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,F17,n,0.1298667709,,"{""t"": ""shared"", ""si"": ""8""}",239
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G17,n,1.42853448,,"{""t"": ""shared"", ""si"": ""9""}",259
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I17,n,0.6571258608,,"{""t"": ""shared"", ""si"": ""3""}",52
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J17,n,0.6571258608,I17,,258
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K17,str,Revisar modo de declaración,,"{""t"": ""shared"", ""si"": ""10""}",257
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G20,s,SALCHICHA DESAYUNO x 115 g,,,260
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K20,s,Por 100 g,,,263
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A21,s,GRASA INSATURADA,,,129
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B21,s,g,,,130
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A22,s,GRASA MONO INSATURADA,,,136
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B22,s,g,,,137
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A23,s,GRASA POLI INSATURADA,,,136
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B23,s,g,,,137
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A24,s,COLESTEROL,,,265
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B24,s,g,,,266
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A25,s,Porción para salchicha según resolución 810,,,270
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I25,n,40.0,,,275
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K25,s,grasa total,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L25,n,10,"ROUND(E4,0)",,276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B26,s,Peso promedio por cada unidad,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I26,n,23.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K26,s,carbohidratos,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L26,n,1.2,"ROUND(E7,1)",,276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B27,s,30% de la porción en resolución 810,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I27,n,12,I25*0.3,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K27,s,Fibra,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L27,n,0,"ROUND(E8,0)",,276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B28,s,Rango máximo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I28,n,52,I25+I27,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K28,s,Azúcares,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L28,n,0.7,"ROUND(E9,1)",,276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B29,s,Rango mínimo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I29,n,28,I25-I27,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K29,s,Proteína,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L29,n,17,"ROUND(E11,0)",,281
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E31,s,Porción: 2 unidades,,,284
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I31,n,46.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K31,s,Por porción (46 g),,,263
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E32,s,Porciones por empaque x 115 g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I32,n,2.5,115/46,,287
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K32,s,grasa total,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L32,n,4.6,46%*L25,"{""t"": ""shared"", ""ref"": ""L32:L36"", ""si"": ""11""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K33,s,carbohidratos,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L33,n,0.552,,"{""t"": ""shared"", ""si"": ""11""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G34,s,SALCHICHA DESAYUNO x 240 g,,,260
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K34,s,Fibra,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L34,n,0,,"{""t"": ""shared"", ""si"": ""11""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A35,s,Porción para salchicha según resolución 810,,,270
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I35,n,40.0,,,275
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K35,s,Azúcares,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L35,n,0.322,,"{""t"": ""shared"", ""si"": ""11""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B36,s,Peso promedio por cada unidad,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I36,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K36,s,Proteína,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L36,n,7.82,,"{""t"": ""shared"", ""si"": ""11""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B37,s,30% de la porción en resolución 810,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I37,n,12,I35*0.3,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B38,s,Rango máximo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I38,n,52,I35+I37,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K38,s,Por porción (34 g),,,263
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B39,s,Rango mínimo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I39,n,28,I35-I37,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K39,s,grasa total,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L39,n,3.4,34%*L25,"{""t"": ""shared"", ""ref"": ""L39:L43"", ""si"": ""12""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K40,s,carbohidratos,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L40,n,0.408,,"{""t"": ""shared"", ""si"": ""12""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E41,s,Porción: 1 unidad,,,284
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I41,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K41,s,Fibra,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L41,n,0,,"{""t"": ""shared"", ""si"": ""12""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E42,s,Porciones por empaque x 240 g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I42,n,7.058823529,240/34,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J42,s,Aprox.,,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K42,s,Azúcares,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L42,n,0.238,,"{""t"": ""shared"", ""si"": ""12""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K43,s,Proteína,,,264
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L43,n,5.78,,"{""t"": ""shared"", ""si"": ""12""}",276
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G44,s,SALCHICHA DESAYUNO x 480 g,,,260
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,K44,s,Calorías,,,288
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,L44,n,55.352,(L39*9)+((L40-L41-L42)*4)+(L41*2)+(L42*4)+L43*4,,289
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A45,s,Porción para salchicha según resolución 810,,,270
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I45,n,40.0,,,275
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B46,s,Peso promedio por cada unidad,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I46,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B47,s,30% de la porción en resolución 810,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I47,n,12,I45*0.3,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B48,s,Rango máximo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I48,n,52,I45+I47,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B49,s,Rango mínimo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I49,n,28,I45-I47,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E51,s,Porción: 1 unidad,,,284
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I51,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E52,s,Porciones por empaque x 480 g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I52,n,14.11764706,480/34,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J52,s,Aprox.,,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,G54,s,SALCHICHA DESAYUNO x 960 g,,,260
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,A55,s,Porción para salchicha según resolución 810,,,270
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I55,n,40.0,,,275
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B56,s,Peso promedio por cada unidad,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I56,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B57,s,30% de la porción en resolución 810,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I57,n,12,I55*0.3,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B58,s,Rango máximo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I58,n,52,I55+I57,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,B59,s,Rango mínimo para porción,,,143
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I59,n,28,I55-I57,,279
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E61,s,Porción: 1 unidad,,,284
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I61,n,34.0,,,278
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,E62,s,Porciones por empaque x 480 g,,,159
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,I62,n,28.23529412,960/34,,162
+CTN - Salchicha Desayuno Premium - v11.xlsx,Análisis,J62,s,Aprox.,,,142
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G2,s,Información Nutricional,,,291
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M2,s,Información Nutricional,,,291
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S2,s,Información Nutricional,,,291
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y2,s,Información Nutricional,,,291
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G3,s,SALCHICHA DESAYUNO PREMIUM X 240 G,,,294
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M3,s,SALCHICHA DESAYUNO PREMIUM X 480 G,,,294
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S3,s,SALCHICHA DESAYUNO PREMIUM x 115 G,,,294
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y3,s,SALCHICHA DESAYUNO PREMIUM X 960 G,,,294
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G4,s,Tamaño por porción : 1 unidad (34 g),,,297
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M4,s,Tamaño por porción : 1 unidad (34 g),,,297
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S4,s,Tamaño por porción: 2 unidades (46 g),,,297
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y4,s,Tamaño por porción : 1 unidad (34 g),,,297
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G5,s,Número de porciones por envase: Aprox. 7,,,298
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M5,s,Número de porciones por envase: Aprox. 14,,,298
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S5,s,"Número de porciones por envase: 2,5",,,298
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y5,s,Número de porciones por envase: Aprox. 28,,,298
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B7,s,Calorias (kcal),,,304
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E7,s,Por 100 g,,,306
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G7,s,Calorias (kcal),,,304
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J7,s,Por 100 g,,,306
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K7,s,Por porción,,,307
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M7,s,Calorias (kcal),,,304
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P7,s,Por 100 g,,,306
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q7,s,Por porción,,,307
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S7,s,Calorias (kcal),,,304
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V7,s,Por 100 g,,,306
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W7,s,Por porción,,,307
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y7,s,Calorias (kcal),,,304
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB7,s,Por 100 g,,,306
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC7,s,Por porción,,,307
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E8,n,162.8,'Análisis'!E3,,309
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J8,n,163.0,,,309
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K8,n,55.0,,,310
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P8,n,163.0,,,309
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q8,n,55.0,,,310
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V8,n,163.0,,,309
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W8,n,75.0,,,310
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB8,n,163.0,,,309
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC8,n,55.0,,,310
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K9,n,0,J9*34%,"{""t"": ""shared"", ""ref"": ""K9:K24"", ""si"": ""1""}",315
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q9,n,0.0,,,315
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W9,n,0,V9*55%,,315
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC9,n,0.0,,,315
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B10,s,Grasa total  ,,,316
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E10,n,10.3916646,'Análisis'!E4,,317
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G10,s,Grasa total  ,,,316
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J10,n,10.0,,,317
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K10,n,3.4,,"{""t"": ""shared"", ""si"": ""1""}",318
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M10,s,Grasa total  ,,,316
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P10,n,10.0,,,317
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q10,n,3.4,P10*34%,"{""t"": ""shared"", ""ref"": ""Q10:Q24"", ""si"": ""2""}",318
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S10,s,Grasa total  ,,,316
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V10,n,10.0,,,317
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W10,n,4.6,V10*46%,"{""t"": ""shared"", ""ref"": ""W10:W18"", ""si"": ""3""}",319
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y10,s,Grasa total  ,,,316
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB10,n,10.0,,,317
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC10,n,3.4,AB10*34%,"{""t"": ""shared"", ""ref"": ""AC10:AC24"", ""si"": ""4""}",318
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B11,s, Grasa saturada,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E11,n,3.88457376,'Análisis'!E5,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G11,s, Grasa saturada,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J11,n,3.9,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K11,n,1.326,,"{""t"": ""shared"", ""si"": ""1""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M11,s, Grasa saturada,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P11,n,3.9,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q11,n,1.326,,"{""t"": ""shared"", ""si"": ""2""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S11,s, Grasa saturada,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V11,n,3.9,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W11,n,1.794,,"{""t"": ""shared"", ""si"": ""3""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y11,s, Grasa saturada,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB11,n,3.9,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC11,n,1.326,,"{""t"": ""shared"", ""si"": ""4""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B12,s, Grasa trans,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E12,n,0.0,,,323
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G12,s, Grasa trans,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J12,n,0.0,,,323
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K12,n,0,,"{""t"": ""shared"", ""si"": ""1""}",324
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M12,s, Grasa trans,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P12,n,0.0,,,323
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q12,n,0,,"{""t"": ""shared"", ""si"": ""2""}",324
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S12,s, Grasa trans,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V12,n,0.0,,,323
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W12,n,0,,"{""t"": ""shared"", ""si"": ""3""}",324
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y12,s, Grasa trans,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB12,n,0.0,,,323
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC12,n,0,,"{""t"": ""shared"", ""si"": ""4""}",324
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B13,s,Carbohidratos totales ,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E13,n,1.228741418,'Análisis'!E7,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G13,s,Carbohidratos totales ,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J13,n,1.2,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K13,n,0.408,,"{""t"": ""shared"", ""si"": ""1""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M13,s,Carbohidratos totales ,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P13,n,1.2,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q13,n,0.408,,"{""t"": ""shared"", ""si"": ""2""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S13,s,Carbohidratos totales ,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V13,n,1.2,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W13,n,0.552,,"{""t"": ""shared"", ""si"": ""3""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y13,s,Carbohidratos totales ,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB13,n,1.2,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC13,n,0.408,,"{""t"": ""shared"", ""si"": ""4""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B14,s, Fibra dietaria,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E14,n,0.0046842,'Análisis'!E8,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G14,s, Fibra dietaria,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J14,n,0.0046842,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K14,n,0.001592628,,"{""t"": ""shared"", ""si"": ""1""}",329
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M14,s, Fibra dietaria,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P14,n,0.0046842,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q14,n,0.001592628,,"{""t"": ""shared"", ""si"": ""2""}",329
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S14,s, Fibra dietaria,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V14,n,0.0046842,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W14,n,0.002154732,,"{""t"": ""shared"", ""si"": ""3""}",329
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y14,s, Fibra dietaria,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB14,n,0.0046842,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC14,n,0.001592628,,"{""t"": ""shared"", ""si"": ""4""}",329
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B15,s, Azucares totales,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E15,n,0.7410582,'Análisis'!E9,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G15,s, Azucares totales,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J15,n,0.7,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K15,n,0.238,,"{""t"": ""shared"", ""si"": ""1""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M15,s, Azucares totales,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P15,n,0.7,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q15,n,0.238,,"{""t"": ""shared"", ""si"": ""2""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S15,s, Azucares totales,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V15,n,0.7,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W15,n,0.322,,"{""t"": ""shared"", ""si"": ""3""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y15,s, Azucares totales,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB15,n,0.7,,,326
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC15,n,0.238,,"{""t"": ""shared"", ""si"": ""4""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B16,s,  Azucares añadidos,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E16,n,0.71373,'Análisis'!E10,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G16,s,  Azucares añadidos,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J16,n,0.7,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K16,n,0.238,,"{""t"": ""shared"", ""si"": ""1""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M16,s,  Azucares añadidos,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P16,n,0.7,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q16,n,0.238,,"{""t"": ""shared"", ""si"": ""2""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S16,s,  Azucares añadidos,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V16,n,0.7,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W16,n,0.322,,"{""t"": ""shared"", ""si"": ""3""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y16,s,  Azucares añadidos,,,320
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB16,n,0.7,,,321
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC16,n,0.238,,"{""t"": ""shared"", ""si"": ""4""}",322
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B17,s,Proteína,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E17,n,16.81301865,'Análisis'!E11,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G17,s,Proteína,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J17,n,17.0,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K17,n,5.78,,"{""t"": ""shared"", ""si"": ""1""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M17,s,Proteína,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P17,n,17.0,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q17,n,5.78,,"{""t"": ""shared"", ""si"": ""2""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S17,s,Proteína,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V17,n,17.0,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W17,n,7.82,,"{""t"": ""shared"", ""si"": ""3""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y17,s,Proteína,,,325
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB17,n,17.0,,,328
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC17,n,5.78,,"{""t"": ""shared"", ""si"": ""4""}",327
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B18,s,Sodio  ,,,330
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E18,n,578.5,'Análisis'!E12,,331
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G18,s,Sodio  ,,,330
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J18,n,579.0,,,331
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K18,n,196.86,,"{""t"": ""shared"", ""si"": ""1""}",332
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M18,s,Sodio  ,,,330
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P18,n,579.0,,,331
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q18,n,196.86,,"{""t"": ""shared"", ""si"": ""2""}",332
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S18,s,Sodio  ,,,330
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V18,n,579.0,,,331
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W18,n,266.34,,"{""t"": ""shared"", ""si"": ""3""}",333
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y18,s,Sodio  ,,,330
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB18,n,579.0,,,331
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC18,n,196.86,,"{""t"": ""shared"", ""si"": ""4""}",332
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K19,n,0,,"{""t"": ""shared"", ""si"": ""1""}",337
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q19,n,0,,"{""t"": ""shared"", ""si"": ""2""}",337
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W19,n,0,V19*55%,,338
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC19,n,0,,"{""t"": ""shared"", ""si"": ""4""}",337
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B20,s,Vitamina A,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E20,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G20,s,Vitamina A,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J20,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K20,n,0,,"{""t"": ""shared"", ""si"": ""1""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M20,s,Vitamina A,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P20,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q20,n,0,,"{""t"": ""shared"", ""si"": ""2""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S20,s,Vitamina A,,,343
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V20,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W20,str,,'Análisis'!AB13,,345
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y20,s,Vitamina A,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB20,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC20,n,0,,"{""t"": ""shared"", ""si"": ""4""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B21,s,Vitamina D,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E21,n,0,'Análisis'!G14,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G21,s,Vitamina D,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J21,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K21,n,0,,"{""t"": ""shared"", ""si"": ""1""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M21,s,Vitamina D,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P21,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q21,n,0,,"{""t"": ""shared"", ""si"": ""2""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S21,s,Vitamina D,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V21,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W21,str,,'Análisis'!AB14,,342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y21,s,Vitamina D,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB21,n,0.0,,,341
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC21,n,0,,"{""t"": ""shared"", ""si"": ""4""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B22,s,Hierro,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E22,n,0.80656596,'Análisis'!E15,,346
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G22,s,Hierro,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J22,n,0.81,,,346
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K22,n,0.2754,,"{""t"": ""shared"", ""si"": ""1""}",347
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M22,s,Hierro,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P22,n,0.81,,,346
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q22,n,0.2754,,"{""t"": ""shared"", ""si"": ""2""}",347
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S22,s,Hierro,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V22,n,0.81,,,346
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W22,n,0.3726,V22*46%,"{""t"": ""shared"", ""ref"": ""W22:W24"", ""si"": ""5""}",347
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y22,s,Hierro,,,340
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB22,n,0.81,,,346
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC22,n,0.2754,,"{""t"": ""shared"", ""si"": ""4""}",347
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B23,s,Calcio,,,348
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E23,n,0.0,,,349
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G23,s,Calcio,,,348
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J23,n,0.0,,,349
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K23,n,0,,"{""t"": ""shared"", ""si"": ""1""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M23,s,Calcio,,,348
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P23,n,0.0,,,349
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q23,n,0,,"{""t"": ""shared"", ""si"": ""2""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S23,s,Calcio,,,348
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V23,n,0.0,,,349
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W23,n,0,,"{""t"": ""shared"", ""si"": ""5""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y23,s,Calcio,,,348
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB23,n,0.0,,,349
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC23,n,0,,"{""t"": ""shared"", ""si"": ""4""}",342
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,B24,s,Zinc,,,350
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,E24,n,1.42853448,'Análisis'!E17,,352
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,G24,s,Zinc,,,350
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,J24,n,1.4,,,352
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,K24,n,0.476,,"{""t"": ""shared"", ""si"": ""1""}",353
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,M24,s,Zinc,,,350
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,P24,n,1.4,,,352
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Q24,n,0.476,,"{""t"": ""shared"", ""si"": ""2""}",353
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,S24,s,Zinc,,,350
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,V24,n,1.4,,,352
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,W24,n,0.644,,"{""t"": ""shared"", ""si"": ""5""}",353
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,Y24,s,Zinc,,,350
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AB24,n,1.4,,,352
+CTN - Salchicha Desayuno Premium - v11.xlsx,Tabla nutricional,AC24,n,0.476,,"{""t"": ""shared"", ""si"": ""4""}",353
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A1,s,Descripcion en Lista de Ingredientes,,,355
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B1,s,%,,,356
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C1,s,"Codex Stan 112 - 95 V. 2019 - Aditivos Alimentarios, Resolución 4126 de 1991 (Reguladores de Acidez), Resolución 4124 de 1991 (Antioxidantes), Resolucion 4125 de 1991 - Conservantes",,,357
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D1,s,Clase Funcional Resolución  2606 de 2009 - Aditivos Alimentarios,,,355
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A2,s,Carne de Cerdo,,,358
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B2,n,73.99,CTN!G5+CTN!G7,,359
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C2,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D2,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A3,s,Agua,,,358
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B3,n,17.0,,,359
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C3,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D3,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A4,s,Grasa de Cerdo,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B4,n,5.12,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C4,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D4,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A5,s,Sal,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B5,n,1.1870075,CTN!AP23,,363
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C5,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D5,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A6,s,Sal de Potasio,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B6,n,0.676,CTN!AV23,,363
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C6,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D6,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A7,s,Dextrosa,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B7,n,0.64,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C7,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D7,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A8,s,Mezcla de fosfatos de Potasio y Sodio,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B8,n,0.41,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C8,s,Regulador de acidez,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D8,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A9,s,Proteína Hidrolizada de Soya y/o Maíz,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B9,n,0.3726,CTN!AW23,,363
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C9,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D9,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A10,s,Acetato de Sodio,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B10,n,0.1736,CTN!AY23,,365
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C10,s,Regulador de acidez,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D10,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A11,s,"Condimentos y Especias (Pimienta Negra, Cebolla, Ajo)",,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B11,n,0.1,CTN!G16+CTN!G19+CTN!G20,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C11,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D11,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A12,s,Plasma de Cerdo,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B12,n,0.06,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C12,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D12,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A13,s,Eritorbato de Sodio,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B13,n,0.049,CTN!AT23,,363
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C13,s,Antioxidante,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D13,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A14,s,Sabor Natural a Humo,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B14,n,0.04,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C14,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D14,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A15,s,Oleorresina de Paprika,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B15,n,0.02,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C15,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D15,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A16,s,Ácido Málico,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B16,n,0.0124,CTN!AZ23,,365
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C16,s,Regulador de acidez,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D16,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A17,s,Nitrito de Sodio,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B17,n,0.010625,CTN!AQ23,,363
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C17,s,Fijador de color,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D17,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A18,s,Color Natural Carmín,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B18,n,0.0033,CTN!AX23,,366
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C18,s,N.A.,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D18,s,NO,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,A19,s,Nisina,,,280
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,B19,n,0.0003875,CTN!AU23,,365
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,C19,s,Conservante,,,364
+CTN - Salchicha Desayuno Premium - v11.xlsx,Lista ingredientes,D19,s,SI,,,360
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A1,s,Descripcion en Lista de Ingredientes,,,367
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B1,s,%,,,368
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C1,s,"Codex Stan 112 - 95 V. 2019 - Aditivos Alimentarios, Resolución 4126 de 1991 (Reguladores de Acidez), Resolución 4124 de 1991 (Antioxidantes), Resolucion 4125 de 1991 - Conservantes",,,367
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D1,s,Clase Funcional Resolución  2606 de 2009 - Aditivos Alimentarios,,,367
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A2,s,"Carne (Carne de Ternera, Brazuelo de Cerdo)",,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B2,n,81.56,CTN!G5+CTN!G8,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C2,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D2,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A3,s,Grasa de Cerdo,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B3,n,5.12,CTN!G6,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C3,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D3,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A4,s,Agua,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B4,n,9.43,CTN!G7,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C4,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D4,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A5,s,Proteína de Soya,,,373
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B5,n,0.03,CTN!G9,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C5,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D5,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A6,s,Almidón de Papa,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B6,n,0.02,CTN!G10,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C6,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D6,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A7,s,Sabor Artificial a Chorizo,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B7,n,1.69,CTN!G11,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C7,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D7,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A8,s,"Sal Dietética (Cloruro de Sodio, Cloruro de Potasio)",,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B8,n,0.085,CTN!G12,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C8,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D8,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A9,s,Mezcla de Fosfatos de Potasio y Sodio,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B9,n,0.41,CTN!G13,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C9,s,Regulador de Acidez,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D9,s,SI,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A10,s,"Colorantes Naturales (Curcumina, Annato y Carmín)",,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B10,n,0.33,CTN!G14+CTN!G16,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C10,s,N.A.,,,374
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D10,s,NO,,,374
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A11,s,Sal Yodada,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B11,n,1.1870075,CTN!AP23,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C11,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D11,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A12,s,Hemoglobina de Cerdo,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B12,str,#ERROR!,CTN!#REF!,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C12,s,N.A.,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D12,s,NO,,,372
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,A13,s,Nitrito de Sodio,,,370
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,B13,n,0.010625,CTN!AQ23,,371
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,C13,s,Fijador de Color,,,374
+CTN - Salchicha Desayuno Premium - v11.xlsx,Ingredientes,D13,s,SI,,,374

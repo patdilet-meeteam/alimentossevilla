@@ -1,0 +1,376 @@
+{
+  "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+  "mappings": [
+    {
+      "targetCode": "agua",
+      "targetName": "Agua",
+      "sourceRow": 39,
+      "sourceName": "Agua",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "ajo-molido",
+      "targetName": "Ajo molido",
+      "sourceRow": 66,
+      "sourceName": "Ajo molido",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "almid-n-de-papa",
+      "targetName": "Almidón de Papa",
+      "sourceRow": 46,
+      "sourceName": "Almidón de Papa",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "almid-n-de-yuca",
+      "targetName": "Almidón de Yuca",
+      "sourceRow": 47,
+      "sourceName": "Almidón de Yuca",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "almid-n-modificado-de-ma-z",
+      "targetName": "Almidón modificado de maíz",
+      "sourceRow": 53,
+      "sourceName": "Almidón modificado de maíz",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "brazuelo-de-cerdo",
+      "targetName": "Brazuelo de Cerdo",
+      "sourceRow": 3,
+      "sourceName": "Brazuelo de Cerdo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "carfosel",
+      "targetName": "Carfosel",
+      "sourceRow": 92,
+      "sourceName": "Carfosel",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "carne-de-ternera",
+      "targetName": "Carne de Ternera",
+      "sourceRow": 15,
+      "sourceName": "Carne de Ternera",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "carragenina",
+      "targetName": "Carragenina",
+      "sourceRow": 45,
+      "sourceName": "Carragenina",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "cebolla-en-polvo",
+      "targetName": "Cebolla en polvo",
+      "sourceRow": 64,
+      "sourceName": "Cebolla en polvo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "cebolla-puerro",
+      "targetName": "Cebolla Puerro",
+      "sourceRow": 71,
+      "sourceName": "Cebolla Puerro",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "cerdo-cocido",
+      "targetName": "Cerdo Cocido",
+      "sourceRow": 102,
+      "sourceName": "Cerdo Cocido",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "cervecero-premium-sv",
+      "targetName": "Cervecero premium SV",
+      "sourceRow": 106,
+      "sourceName": "Cervecero premium SV",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "color-caramelo",
+      "targetName": "Color Caramelo",
+      "sourceRow": 133,
+      "sourceName": "Color Caramelo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "color-loy",
+      "targetName": "Color Loy",
+      "sourceRow": 132,
+      "sourceName": "Color Loy",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "color-natural-naranja-pr801wd",
+      "targetName": "Color Natural Naranja PR801WD",
+      "sourceRow": 130,
+      "sourceName": "NaranjaPR80J WD",
+      "evidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: OQ-027 confirmed identity; June B10/C10"
+    },
+    {
+      "targetCode": "color-natural-rojo-ac150",
+      "targetName": "Color Natural Rojo AC150",
+      "sourceRow": 129,
+      "sourceName": "Color rojo AC150",
+      "evidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B9/C9 and explicit June master mapping"
+    },
+    {
+      "targetCode": "comino-en-polvo",
+      "targetName": "Comino en polvo",
+      "sourceRow": 68,
+      "sourceName": "Comino en polvo",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "conservante-inbac-acn-na",
+      "targetName": "Conservante INBAC ACN/NA",
+      "sourceRow": 86,
+      "sourceName": "INBAC sin sal",
+      "evidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B14/C14 and explicit June master mapping"
+    },
+    {
+      "targetCode": "dextrosa",
+      "targetName": "Dextrosa",
+      "sourceRow": 43,
+      "sourceName": "Dextrosa",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "eritorbato-de-sodio",
+      "targetName": "Eritorbato de Sodio",
+      "sourceRow": 44,
+      "sourceName": "Eritorbato de Sodio",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "extracto-gp83p",
+      "targetName": "Extracto GP83P",
+      "sourceRow": 36,
+      "sourceName": "Extracto GP83P",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "extracto-levadura",
+      "targetName": "Extracto levadura",
+      "sourceRow": 49,
+      "sourceName": "Extracto levadura",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "inbac-sin-sal",
+      "targetName": "INBAC sin sal",
+      "sourceRow": 86,
+      "sourceName": "INBAC sin sal",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "jam-n-t",
+      "targetName": "Jamón T",
+      "sourceRow": 98,
+      "sourceName": "Jamón T",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "mortadela",
+      "targetName": "Mortadela",
+      "sourceRow": 114,
+      "sourceName": "Mortadela",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "naranja-ra-40-3",
+      "targetName": "Naranja RA 40-3",
+      "sourceRow": 131,
+      "sourceName": "Naranja RA 40-3",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "paprika-en-polvo",
+      "targetName": "Paprika en polvo",
+      "sourceRow": 65,
+      "sourceName": "Paprika en polvo",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "pasta-de-pollo",
+      "targetName": "Pasta de Pollo",
+      "sourceRow": 5,
+      "sourceName": "Pasta de Pollo",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "piel-de-cerdo-2",
+      "targetName": "Piel de cerdo",
+      "sourceRow": 18,
+      "sourceName": "Piel de cerdo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "piel-de-pollo",
+      "targetName": "Piel de Pollo",
+      "sourceRow": 7,
+      "sourceName": "Piel de Pollo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "pierna-de-cerdo",
+      "targetName": "Pierna de Cerdo",
+      "sourceRow": 8,
+      "sourceName": "Pierna de Cerdo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "pimienta-negra-en-polvo",
+      "targetName": "Pimienta negra en polvo",
+      "sourceRow": 67,
+      "sourceName": "Pimienta negra en polvo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "plasma-de-cerdo-vepro-75-psc",
+      "targetName": "Plasma de cerdo Vepro 75 PSC",
+      "sourceRow": 37,
+      "sourceName": "Plasma de cerdo Vepro 75 PSC",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "pok",
+      "targetName": "POK",
+      "sourceRow": 51,
+      "sourceName": "POK",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "prote-na-texturizada-de-trigo",
+      "targetName": "Proteína texturizada de trigo",
+      "sourceRow": 34,
+      "sourceName": "Proteína texturizada de trigo",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "proteina-concentrada-de-soya-65",
+      "targetName": "Proteína Concentrada de Soya 65%",
+      "sourceRow": 28,
+      "sourceName": "Proteína concentrada de Soya al 65%",
+      "evidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70."
+    },
+    {
+      "targetCode": "proteina-concentrada-de-soya-70",
+      "targetName": "Proteína Concentrada de Soya 70%",
+      "sourceRow": 26,
+      "sourceName": "Proteína concentrada de Soya al 70%",
+      "evidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70."
+    },
+    {
+      "targetCode": "proteina-texturizada-de-soya-70",
+      "targetName": "Proteína Texturizada de Soya 70%",
+      "sourceRow": 27,
+      "sourceName": "Proteína texturizada de Soya al 70%",
+      "evidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70."
+    },
+    {
+      "targetCode": "pvh-l-quida",
+      "targetName": "PVH Líquida",
+      "sourceRow": 30,
+      "sourceName": "PVH Líquida",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "sal",
+      "targetName": "Sal",
+      "sourceRow": 40,
+      "sourceName": "Sal",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "sal-curante-al-12",
+      "targetName": "Sal Curante al 12%",
+      "sourceRow": 85,
+      "sourceName": "Sal curante",
+      "evidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B12/C12 and explicit June master mapping"
+    },
+    {
+      "targetCode": "sal-reducida-en-sodio",
+      "targetName": "Sal reducida en sodio (60%)",
+      "sourceRow": 41,
+      "sourceName": "Sal reducida en sodio (60%)",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "taroma-ham",
+      "targetName": "Taroma Ham",
+      "sourceRow": 99,
+      "sourceName": "Taroma Ham",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "tocino-de-cerdo",
+      "targetName": "Tocino de Cerdo",
+      "sourceRow": 6,
+      "sourceName": "Tocino de Cerdo",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "transglutaminasa",
+      "targetName": "Transglutaminasa",
+      "sourceRow": 59,
+      "sourceName": "Transglutaminasa",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "trusmoke-dry",
+      "targetName": "Trusmoke Dry",
+      "sourceRow": 124,
+      "sourceName": "Trusmoke Dry",
+      "evidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos."
+    },
+    {
+      "targetCode": "trusmoke-oil-ex",
+      "targetName": "Trusmoke oil ex",
+      "sourceRow": 107,
+      "sourceName": "Trusmoke oil ex",
+      "evidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros."
+    },
+    {
+      "targetCode": "2903003",
+      "targetName": "BRAZUELO CHARQUEADO",
+      "sourceRow": 3,
+      "sourceName": "Brazuelo de Cerdo",
+      "evidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado."
+    },
+    {
+      "targetCode": "1250004",
+      "targetName": "COLOR NATURAL NARANJA PR801WD",
+      "sourceRow": 130,
+      "sourceName": "NaranjaPR80J WD",
+      "evidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado."
+    },
+    {
+      "targetCode": "1270004",
+      "targetName": "HUMO TRUSMOKE OIL EX",
+      "sourceRow": 107,
+      "sourceName": "Trusmoke oil ex",
+      "evidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado."
+    },
+    {
+      "targetCode": "conservante-provian-k",
+      "targetName": "Conservante Provian K",
+      "sourceRow": 94,
+      "sourceName": "Provian K (Diacetato de Potasio)",
+      "evidence": "EXACT_BRANDED_PRODUCT: Producto distintivo Provian K coincide en nombre del maestro/costos1240007 y Banco fila94; Conservante es función, paréntesis declara composición. Sin sustituir otros conservantes."
+    },
+    {
+      "targetCode": "arcon-t",
+      "targetName": "Arcon T (Proteína de Soya 70% Hojuelas)",
+      "sourceRow": 27,
+      "sourceName": "Proteína texturizada de Soya al 70%",
+      "evidence": "Comentario original TN OFICIAL!C27: Arcon T; corroborado T.N!C31. Se conserva grasa total 0 y saturada 0.2 sin corregir la fuente."
+    }
+  ]
+}

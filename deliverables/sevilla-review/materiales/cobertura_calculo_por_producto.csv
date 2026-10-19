@@ -1,0 +1,40 @@
+productCode,productName,mathematicallyReady,draftNutritionReferenceReady,state,sourceConflict,percentageSum,missingCodes,missingNames
+cervecero,Cervecero,False,False,NO_FORMULATION,,,,
+cervecero-fzan,Cervecero Fzan,False,False,NO_FORMULATION,,,,
+chorizo-con-ternera,Chorizo Con Ternera,False,False,DRAFT,,99.999,color-natural-hemoglobina-i-red|preparado-sabor-chorizo-ternera,Color Natural Hemoglobina I Red|Preparado Sabor Chorizo Ternera
+chorizo-de-cerdo,Chorizo De Cerdo,False,False,DRAFT,,100,preparado-sabor-chorizo-cerdo,Preparado Sabor Chorizo Cerdo
+chorizo-santa-coctel-x,Chorizo Santa Coctel X,False,False,NO_FORMULATION,,,,
+chorizo-santa-corto,Chorizo Santa Corto,False,False,NO_FORMULATION,,,,
+chorizo-santa-largo-x,Chorizo Santa Largo X,False,False,NO_FORMULATION,,,,
+chorizo-santarrosano-x,Chorizo Santarrosano X,False,False,DRAFT,,99.968,arcon-t|carnal-961|mdm-nacional|preparado-sabor-chorizo-ternera|recorte-70-30,Arcon T (Proteína de Soya 70% Hojuelas)|Mezcla de Fosfatos Carnal 961|MDM Nacional|Preparado Sabor Chorizo Ternera|Recorte de Cerdo 70/30
+chrz-con-ternera,Chrz Con Ternera,False,False,NO_FORMULATION,,,,
+explosi-n-me-dic,Explosión Me Dic,False,False,NO_FORMULATION,,,,
+hsa,Hsa,False,False,DRAFT,,100.0158,aditivo-burger-meat-80b|color-natural-hemoglobina-i-red|recorte-80-20-emulsificados,Aditivo Burger Meat 80B NAT|Color Natural Hemoglobina I Red|Recorte de Cerdo 80/20 Emulsificados
+hsa-cja,Hsa Cja,False,False,DRAFT,,99.9999,aditivo-burger-meat-80b|color-natural-hemoglobina-i-red,Aditivo Burger Meat 80B NAT|Color Natural Hemoglobina I Red
+jmn-premium,Jmn Premium,False,False,NO_FORMULATION,,,,
+jmn-premium-fzan,Jmn Premium Fzan,False,False,DRAFT,,99.8204,hielo-en-escamas|proteina-colagenica-alta-funcionalidad,Hielo en Escamas|Proteína Colagénica Alta Funcionalidad
+jmn-sdw-exito-x,Jmn Sdw Exito X,False,False,NO_FORMULATION,,,,
+jmn-sdw-fzan-x,Jmn Sdw Fzan X,False,False,DRAFT,,100.002,cloruro-de-potasio-kcl|color-natural-hemoglobina-i-red|proteina-colagenica-alta-funcionalidad,Cloruro de Potasio (KCl)|Color Natural Hemoglobina I Red|Proteína Colagénica Alta Funcionalidad
+mdela-viand-x,Mdela Viandé X,False,False,NO_FORMULATION,,,,
+mega-combo-faizan,Mega Combo Faizan,True,False,DRAFT,Receta sin reconciliar con la fuente: Junio (1).xlsx / MEGA COMBO FAIZAN 675 G / B5:E7: paquete de tres productos terminados; no mortadela y sal50/50.,100,,
+mnesa-apanada,Mnesa Apanada,False,False,NO_FORMULATION,,,,
+morta-jamonada,Morta Jamonada,False,False,NO_FORMULATION,,,,
+mortadela-jamon-x,Mortadela Jamon X,False,False,NO_FORMULATION,,,,
+perro-caliente-viande-x,Perro Caliente Viande X,False,False,DRAFT,,99.95,cloruro-de-potasio-kcl|recorte-80-20-importado,Cloruro de Potasio (KCl)|Recorte de Cerdo 80/20 Importado
+s-per-combo-viand,Súper Combo Viandé,True,False,DRAFT,Receta sin reconciliar con la fuente: Junio (1).xlsx / SÚPER COMBO VIANDÉ 900 G / B5:E8: paquete de cuatro productos terminados; no mortadela y sal25/75.,100,,
+salchicha-desayuno-premium-480,SALCHICHA DESAYUNO PREMIUM 480 G,True,True,DRAFT,,100,,
+scha-cl-sica,Scha Clásica,False,False,DRAFT,,99.9885,solu-tex-grasas-neutro,Solu-Tex Grasas Neutro
+scha-institu-x,Scha Institu X,False,False,NO_FORMULATION,,,,
+scha-jumbo-x,Scha Jumbo X,False,False,DRAFT,,100.03,recorte-80-20-emulsificados,Recorte de Cerdo 80/20 Emulsificados
+scha-manguera,Scha Manguera,False,False,DRAFT,,99.9945,cloruro-de-potasio-kcl|solu-tex-grasas-neutro,Cloruro de Potasio (KCl)|Solu-Tex Grasas Neutro
+scha-perro-x,Scha Perro X,False,False,DRAFT,,100.086,cloruro-de-potasio-kcl|solu-tex-grasas-neutro,Cloruro de Potasio (KCl)|Solu-Tex Grasas Neutro
+scha-s-perro-x,Scha S. Perro X,False,False,DRAFT,,99.95,cloruro-de-potasio-kcl|recorte-80-20-importado,Cloruro de Potasio (KCl)|Recorte de Cerdo 80/20 Importado
+scha-viand,Scha Viandé,False,False,NO_FORMULATION,,,,
+schon-autentico-x,Schon Autentico X,False,False,NO_FORMULATION,,,,
+schon-cerv-prem-x,Schon Cerv Prem X,False,False,DRAFT,,100.0484,cloruro-de-potasio-kcl|color-natural-hemoglobina-i-red|proteina-colagenica-alta-funcionalidad,Cloruro de Potasio (KCl)|Color Natural Hemoglobina I Red|Proteína Colagénica Alta Funcionalidad
+schon-cerv-viand-x,Schon Cerv Viandé X,False,False,NO_FORMULATION,,,,
+schon-pollo-brakel-x,Schon Pollo Brakel X,False,False,NO_FORMULATION,,,,
+schon-pollo-x,Schon Pollo X,False,False,NO_FORMULATION,,,,
+schon-trad-viand-x,Schon Trad Viandé X,False,False,NO_FORMULATION,,,,
+snack-cerv-prem-x,Snack Cerv Prem X,False,False,NO_FORMULATION,,,,
+super-perro-x,Super Perro X,False,False,NO_FORMULATION,,,,

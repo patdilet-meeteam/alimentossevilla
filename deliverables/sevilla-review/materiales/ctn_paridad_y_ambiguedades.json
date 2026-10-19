@@ -1,0 +1,102 @@
+{
+  "scope": "archivo CTN histórico, vigencia no confirmada; no reglas nuevas",
+  "quantity_sum": "487.948",
+  "percentage_sum_computed": "100.005",
+  "percentage_sum_cached": "100.005",
+  "nutrient_missing_is_not_zero": true,
+  "evidence": [
+    {
+      "sheet": "CTN",
+      "cell": "G23",
+      "value": "100.005",
+      "formula": "",
+      "attributes": "{\"t\": \"shared\", \"si\": \"20\"}"
+    },
+    {
+      "sheet": "CTN",
+      "cell": "Z24",
+      "value": "10.3916646",
+      "formula": "Z23*(100%+$AA$31)",
+      "attributes": "{\"t\": \"shared\", \"ref\": \"Z24:AO24\", \"si\": \"22\"}"
+    },
+    {
+      "sheet": "CTN",
+      "cell": "AA23",
+      "value": "3.499616",
+      "formula": "",
+      "attributes": "{\"t\": \"shared\", \"si\": \"21\"}"
+    },
+    {
+      "sheet": "CTN",
+      "cell": "AA24",
+      "value": "3.88457376",
+      "formula": "",
+      "attributes": "{\"t\": \"shared\", \"si\": \"22\"}"
+    },
+    {
+      "sheet": "CTN",
+      "cell": "AJ24",
+      "value": "683.9071305",
+      "formula": "",
+      "attributes": "{\"t\": \"shared\", \"si\": \"22\"}"
+    },
+    {
+      "sheet": "CTN",
+      "cell": "AL29",
+      "value": "578.5",
+      "formula": "",
+      "attributes": ""
+    },
+    {
+      "sheet": "Análisis",
+      "cell": "H5",
+      "value": "0.09793415233",
+      "formula": "((CTN!AA6)*9)/E3",
+      "attributes": ""
+    },
+    {
+      "sheet": "Análisis",
+      "cell": "D12",
+      "value": "578.5",
+      "formula": "CTN!AL29",
+      "attributes": ""
+    },
+    {
+      "sheet": "CTN",
+      "cell": "D7",
+      "value": "MPII311",
+      "formula": "'Chorizo con ternera (3)'!B7",
+      "attributes": ""
+    },
+    {
+      "sheet": "CTN",
+      "cell": "D8",
+      "value": "MPCC010",
+      "formula": "'Chorizo con ternera (3)'!B8",
+      "attributes": ""
+    },
+    {
+      "sheet": "CTN",
+      "cell": "D9",
+      "value": "MPPA154",
+      "formula": "'Chorizo con ternera (3)'!B9",
+      "attributes": ""
+    },
+    {
+      "sheet": "CTN",
+      "cell": "E9",
+      "value": "COLOR NATURAL LINICOL",
+      "formula": "",
+      "attributes": ""
+    },
+    {
+      "sheet": "CTN",
+      "cell": "E22",
+      "value": "HUMO CHARDEX EN POLVO",
+      "formula": "",
+      "attributes": ""
+    }
+  ],
+  "decision": "No se puede declarar réplica 1:1 con el motor vigente. CTN usa porcentajes mostrados y ajuste postmerma, motor usa cantidades sin merma. Se conservan ambos resultados; requiere contrato vigente explícito.",
+  "portions": "No cambiar gramos por porción a partir de aritmética de envase; evidencia histórica recibida indica115g/46g=2.5, mientras datos actuales23g resultan5. No se sobrescriben."
+}

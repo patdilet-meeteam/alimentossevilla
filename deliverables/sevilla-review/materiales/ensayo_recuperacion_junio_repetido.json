@@ -1,0 +1,243 @@
+{
+  "scope": "ISOLATED_LOCAL_ONLY",
+  "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+  "before": {
+    "ingredients": 456,
+    "formulations": 38,
+    "versions": 51,
+    "components": 872,
+    "bundles": 4,
+    "bundleComponents": 14,
+    "approvals": 0
+  },
+  "after": {
+    "ingredients": 456,
+    "formulations": 38,
+    "versions": 51,
+    "components": 872,
+    "bundles": 4,
+    "bundleComponents": 14,
+    "approvals": 0
+  },
+  "createdIngredients": [],
+  "recipes": [
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 500",
+      "identical": true,
+      "versionId": "cmvfgtpqb0003eowrv9cppglm"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 750",
+      "identical": true,
+      "versionId": "cmvfgtpqw000leowrp57dd8ux"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1300",
+      "identical": true,
+      "versionId": "cmvfgtprb0013eowrt54mfgyx"
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1500",
+      "identical": true,
+      "versionId": "cmvfgtprr001leowr6wb53ohv"
+    },
+    {
+      "productCode": "cervecero-fzan",
+      "sheet": "CERVECERO FZAN  225",
+      "identical": true,
+      "versionId": "cmvfgtps70025eowrz7ktek4m"
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 300",
+      "identical": true,
+      "versionId": "cmvfgtpso002oeowrfh6y5bq7"
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 1000",
+      "identical": true,
+      "versionId": "cmvfgtpt60037eowrcbdz05ns"
+    },
+    {
+      "productCode": "chorizo-santa-corto",
+      "sheet": "CHORIZO SANTA CORTO 480 ",
+      "identical": true,
+      "versionId": "cmvfgtptn003seowrgmi72k0u"
+    },
+    {
+      "productCode": "chorizo-santa-largo-x",
+      "sheet": "CHORIZO SANTA LARGO x 1200 ",
+      "identical": true,
+      "versionId": "cmvfgtpu3004deowrg3s0q1lo"
+    },
+    {
+      "productCode": "chrz-con-ternera",
+      "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+      "identical": true,
+      "versionId": "cmvfgtpui004yeowrcu9cy82z"
+    },
+    {
+      "productCode": "jmn-premium",
+      "sheet": "JMN PREMIUM 400 G",
+      "identical": true,
+      "versionId": "cmvfgtpv0005geowrs88wwxqd"
+    },
+    {
+      "productCode": "jmn-sdw-exito-x",
+      "sheet": "JMN SDW  EXITO X 225 ",
+      "identical": true,
+      "versionId": "cmvfgtpvq0065eowramrxb2u9"
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "identical": true,
+      "versionId": "cmvfgtpwh007geowrel36wzjo"
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+      "identical": true,
+      "versionId": "cmvfgtpx00080eowrthczg20g"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 240 G 2 UNDS",
+      "identical": true,
+      "versionId": "cmvfgtpxh008teowr4cr8z8mq"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 600 G 5 UNDS",
+      "identical": true,
+      "versionId": "cmvfgtpxz009geowr5q7x74gf"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 1800 G 15 UND",
+      "identical": true,
+      "versionId": "cmvfgtpyf00a3eowr7udpfmj0"
+    },
+    {
+      "productCode": "morta-jamonada",
+      "sheet": "MORTA JAMONADA 400",
+      "identical": true,
+      "versionId": "cmvfgtpyv00aseowr26vnerza"
+    },
+    {
+      "productCode": "mortadela-jamon-x",
+      "sheet": "MORTADELA JAMON X 225 ",
+      "identical": true,
+      "versionId": "cmvfgtpze00bieowryhzw647t"
+    },
+    {
+      "productCode": "scha-institu-x",
+      "sheet": "SCHA INSTITU x 1200",
+      "identical": true,
+      "versionId": "cmvfgtpzu00cceowrvavwiwrw"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "identical": true,
+      "versionId": "cmvfgtq0c00d6eowrbglw97de"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+      "identical": true,
+      "versionId": "cmvfgtq0r00dseowr45ki9t71"
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 400 G ",
+      "identical": true,
+      "versionId": "cmvfgtq1700egeowrlp05u6dw"
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 225 G",
+      "identical": true,
+      "versionId": "cmvfgtq1l00f4eowrejy1ewye"
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 750 G",
+      "identical": true,
+      "versionId": "cmvfgtq2100fpeowr3lm6cs28"
+    },
+    {
+      "productCode": "schon-cerv-viand-x",
+      "sheet": "SCHON CERV VIANDÉ X 225 G",
+      "identical": true,
+      "versionId": "cmvfgtq2e00gceowrbcja7fou"
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 225",
+      "identical": true,
+      "versionId": "cmvfgtq2s00gweowr5kex1r62"
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 500",
+      "identical": true,
+      "versionId": "cmvfgtq3600hgeowrk1kcx2pv"
+    },
+    {
+      "productCode": "schon-pollo-x",
+      "sheet": "SCHON POLLO X 225 G",
+      "identical": true,
+      "versionId": "cmvfgtq3k00i2eowr61f8y37x"
+    },
+    {
+      "productCode": "schon-trad-viand-x",
+      "sheet": "SCHON TRAD VIANDÉ X 500 ",
+      "identical": true,
+      "versionId": "cmvfgtq4v00ioeowrjh7fnmdb"
+    },
+    {
+      "productCode": "snack-cerv-prem-x",
+      "sheet": "SNACK  CERV PREM X 50 G ",
+      "identical": true,
+      "versionId": "cmvfgtq5a00jbeowrhwr0ehgw"
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500",
+      "identical": true,
+      "versionId": "cmvfgtq5q00k1eowrw5q7m8zr"
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500 RX",
+      "identical": true,
+      "versionId": "cmvfgtq6400kneowrg79efhyg"
+    }
+  ],
+  "bundles": [
+    {
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "identical": true
+    },
+    {
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "identical": true
+    },
+    {
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "identical": true
+    },
+    {
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "identical": true
+    }
+  ],
+  "noNormalization": true,
+  "noApprovals": true
+}

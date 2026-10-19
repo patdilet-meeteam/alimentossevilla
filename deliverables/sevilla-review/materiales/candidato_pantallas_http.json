@@ -1,0 +1,135 @@
+{
+  "scope": "Authenticated local HTTP/server rendering; not an interactive browser test",
+  "browserLimit": "cua inventory browsers=[] and getBrowser(iab) unavailable",
+  "credentialsPersisted": false,
+  "pages": [
+    {
+      "path": "/dashboard",
+      "status": 200,
+      "htmlBytes": 82099,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/ingredientes",
+      "status": 200,
+      "htmlBytes": 2415254,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos",
+      "status": 200,
+      "htmlBytes": 897285,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/formulaciones",
+      "status": 200,
+      "htmlBytes": 175315,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/normativa",
+      "status": 200,
+      "htmlBytes": 37065,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/costos",
+      "status": 200,
+      "htmlBytes": 37388,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/documentos",
+      "status": 200,
+      "htmlBytes": 38133,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos/cervecero",
+      "status": 200,
+      "htmlBytes": 215839,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true,
+        "sourceRecipesShown": true
+      }
+    },
+    {
+      "path": "/productos/chorizo-de-cerdo",
+      "status": 200,
+      "htmlBytes": 86713,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true
+      }
+    },
+    {
+      "path": "/productos/mega-combo-faizan",
+      "status": 200,
+      "htmlBytes": 59173,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true,
+        "sourceRecipeWarning": true
+      }
+    },
+    {
+      "path": "/productos/s-per-combo-viand",
+      "status": 200,
+      "htmlBytes": 54278,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true,
+        "bundleShown": true
+      }
+    },
+    {
+      "path": "/productos/salchicha-desayuno-premium-480",
+      "status": 200,
+      "htmlBytes": 95394,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true,
+        "fiveServings115g": true,
+        "fourteenServings480g": true,
+        "showsDraft": true
+      }
+    },
+    {
+      "path": "/productos/schon-pollo-brakel-x",
+      "status": 200,
+      "htmlBytes": 189630,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "sourceReviewVisible": true,
+        "approvalMessageAccurate": true,
+        "uncodedReprocessVisible": true
+      }
+    }
+  ]
+}

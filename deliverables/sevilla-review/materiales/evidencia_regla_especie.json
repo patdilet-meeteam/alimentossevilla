@@ -1,0 +1,16 @@
+{
+  "source": "Gmail Meeteam",
+  "messageId": "1a0f79cc0433d9d5",
+  "date": "2026-10-01T13:16:59Z",
+  "subject": "RE: Confirmaciones requeridas para continuar plataforma técnica y nutricional",
+  "attachment": "diagrama_grasa_2026-10-01.png",
+  "sha256": "11db6866bb6dcd005b8620d7337f2a059e54ed2e11736f1ae39a471618d7e351",
+  "verifiedVisually": true,
+  "rule": "Sin grasa animal: sin sello. Si cada grasa tiene carne de la misma especie: sin sello. Una grasa sin carne de su especie: con sello de grasa.",
+  "implementation": "species-fat-rule.ts + previsualización en ProductVersionPanel; requiere clasificaciones explícitas con fuente; no infiere por nombre ni altera total de saturadas.",
+  "limits": [
+    "No se afirma equivalencia jurídica con sello de grasas saturadas/trans.",
+    "Notas25sept: Drive Primary403, hi404 informado por revisión documental; no se solicitaron nuevos permisos.",
+    "TL original no hallado en ubicaciones locales autorizadas revisadas."
+  ]
+}

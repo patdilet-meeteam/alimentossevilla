@@ -1,0 +1,194 @@
+{
+  "scope": "FUENTE_ORIGINAL_VS_DATASET; no se cambió receta ni estado",
+  "source": "Junio (1).xlsx",
+  "sha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+  "observed": [
+    {
+      "product": "mega-combo-faizan",
+      "dataset": "mortadela50% +sal50%",
+      "source": "paquetes de3 o4 productos terminados según hoja/presentación"
+    },
+    {
+      "product": "s-per-combo-viand",
+      "dataset": "mortadela25% +sal75%",
+      "source": "4 productos terminados,25%cadauno en SÚPER COMBO VIANDÉ900G B5:E8"
+    }
+  ],
+  "sourceRows": [
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "2",
+      "cells": "{\"B2\": {\"value\": \"MEGA COMBO FAIZAN 675 G\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "4",
+      "cells": "{\"B4\": {\"value\": \"CÓDIGO\", \"formula\": \"\", \"type\": \"s\"}, \"C4\": {\"value\": \"DESCRIPCIÓN\", \"formula\": \"\", \"type\": \"s\"}, \"D4\": {\"value\": \"CATIDAD\", \"formula\": \"\", \"type\": \"s\"}, \"E4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}, \"F4\": {\"value\": \"AGO -       COP / UMB\", \"formula\": \"\", \"type\": \"s\"}, \"G4\": {\"value\": \"AGO - \\nCOP / APP\", \"formula\": \"\", \"type\": \"s\"}, \"H4\": {\"value\": \"JUL- \\nCOP / UMB\", \"formula\": \"\", \"type\": \"s\"}, \"I4\": {\"value\": \"JUL - \\nCOP / APP\", \"formula\": \"\", \"type\": \"s\"}, \"J4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "5",
+      "cells": "{\"B5\": {\"value\": \"10090O\", \"formula\": \"\", \"type\": \"s\"}, \"C5\": {\"value\": \"SALCHICHA CLASICA FAIZAN X 225 GRAMOS OFERTA\", \"formula\": \"\", \"type\": \"s\"}, \"D5\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E5\": {\"value\": \"33.333333333333336\", \"formula\": \"(D5*100)/$D$9\", \"type\": \"n\"}, \"F5\": {\"value\": \"2311\", \"formula\": \"\", \"type\": \"n\"}, \"G5\": {\"value\": \"2311\", \"formula\": \"F5*D5\", \"type\": \"n\"}, \"H5\": {\"value\": \"2275\", \"formula\": \"\", \"type\": \"n\"}, \"I5\": {\"value\": \"2275\", \"formula\": \"H5*D5\", \"type\": \"n\"}, \"J5\": {\"value\": \"1.5824175824175768\", \"formula\": \"((F5/H5)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "6",
+      "cells": "{\"B6\": {\"value\": \"30017\", \"formula\": \"\", \"type\": \"n\"}, \"C6\": {\"value\": \"SALCHICHÓN AUTÉNTICO X 225 GRAMOS\", \"formula\": \"\", \"type\": \"s\"}, \"D6\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E6\": {\"value\": \"33.333333333333336\", \"formula\": \"(D6*100)/$D$9\", \"type\": \"n\"}, \"F6\": {\"value\": \"1347\", \"formula\": \"\", \"type\": \"n\"}, \"G6\": {\"value\": \"1347\", \"formula\": \"F6*D6\", \"type\": \"n\"}, \"H6\": {\"value\": \"1342\", \"formula\": \"\", \"type\": \"n\"}, \"I6\": {\"value\": \"1342\", \"formula\": \"H6*D6\", \"type\": \"n\"}, \"J6\": {\"value\": \"0.37257824143071616\", \"formula\": \"((F6/H6)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "7",
+      "cells": "{\"B7\": {\"value\": \"20018O\", \"formula\": \"\", \"type\": \"s\"}, \"C7\": {\"value\": \"MORTADELA SELECCIONADA X 225 GRAMOS OFERTA\", \"formula\": \"\", \"type\": \"s\"}, \"D7\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E7\": {\"value\": \"33.333333333333336\", \"formula\": \"(D7*100)/$D$9\", \"type\": \"n\"}, \"F7\": {\"value\": \"2095\", \"formula\": \"\", \"type\": \"n\"}, \"G7\": {\"value\": \"2095\", \"formula\": \"F7*D7\", \"type\": \"n\"}, \"H7\": {\"value\": \"2057\", \"formula\": \"\", \"type\": \"n\"}, \"I7\": {\"value\": \"2057\", \"formula\": \"H7*D7\", \"type\": \"n\"}, \"J7\": {\"value\": \"1.8473505104521024\", \"formula\": \"((F7/H7)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "row": "9",
+      "cells": "{\"B9\": {\"value\": \"TOTAL\", \"formula\": \"\", \"type\": \"s\"}, \"D9\": {\"value\": \"3\", \"formula\": \"SUM(D5:D7)\", \"type\": \"n\"}, \"E9\": {\"value\": \"100\", \"formula\": \"SUM(E5:E7)\", \"type\": \"n\"}, \"G9\": {\"value\": \"5753\", \"formula\": \"SUM(G5:G7)\", \"type\": \"n\"}, \"I9\": {\"value\": \"5674\", \"formula\": \"SUM(I5:I7)\", \"type\": \"n\"}, \"J9\": {\"value\": \"1.3923158265773736\", \"formula\": \"((G9/I9)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "2",
+      "cells": "{\"B2\": {\"value\": \"MEGA COMBO FAIZAN 900 G NUEVO CON JMN 225\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "4",
+      "cells": "{\"B4\": {\"value\": \"CÓDIGO\", \"formula\": \"\", \"type\": \"s\"}, \"C4\": {\"value\": \"DESCRIPCIÓN\", \"formula\": \"\", \"type\": \"s\"}, \"D4\": {\"value\": \"CATIDAD\", \"formula\": \"\", \"type\": \"s\"}, \"E4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}, \"F4\": {\"value\": \"JUN-COP/Kg \", \"formula\": \"+'CIF Y PV'!$F$2\", \"type\": \"str\"}, \"G4\": {\"value\": \"JUN-COP/APP\", \"formula\": \"+'CIF Y PV'!$G$2\", \"type\": \"str\"}, \"H4\": {\"value\": \"MAY-COP/Kg \", \"formula\": \"+'CIF Y PV'!$H$2\", \"type\": \"str\"}, \"I4\": {\"value\": \"MAY-COP/APP\", \"formula\": \"+'CIF Y PV'!$I$2\", \"type\": \"str\"}, \"J4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "5",
+      "cells": "{\"B5\": {\"value\": \"10090O\", \"formula\": \"\", \"type\": \"s\"}, \"C5\": {\"value\": \"MORTADELA JAMONADA\", \"formula\": \"\", \"type\": \"s\"}, \"D5\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E5\": {\"value\": \"25\", \"formula\": \"(D5*100)/$D$10\", \"type\": \"n\"}, \"G5\": {\"value\": \"0\", \"formula\": \"F5*D5\", \"type\": \"n\"}, \"H5\": {\"value\": \"2608.8385378613502\", \"formula\": \"\", \"type\": \"n\"}, \"I5\": {\"value\": \"2608.8385378613502\", \"formula\": \"H5*D5\", \"type\": \"n\"}, \"J5\": {\"value\": \"-100\", \"formula\": \"((F5/H5)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "6",
+      "cells": "{\"B6\": {\"value\": \"30017\", \"formula\": \"\", \"type\": \"n\"}, \"C6\": {\"value\": \"SALCHICHÓN AUTÉNTICO X 225 GRAMOS\", \"formula\": \"\", \"type\": \"s\"}, \"D6\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E6\": {\"value\": \"25\", \"formula\": \"(D6*100)/$D$10\", \"type\": \"n\"}, \"G6\": {\"value\": \"0\", \"formula\": \"F6*D6\", \"type\": \"n\"}, \"H6\": {\"value\": \"1266.7937305665005\", \"formula\": \"\", \"type\": \"n\"}, \"I6\": {\"value\": \"1266.7937305665005\", \"formula\": \"H6*D6\", \"type\": \"n\"}, \"J6\": {\"value\": \"-100\", \"formula\": \"((F6/H6)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "7",
+      "cells": "{\"B7\": {\"value\": \"20018O\", \"formula\": \"\", \"type\": \"s\"}, \"C7\": {\"value\": \"MORTADELA SELECCIONADA X 225 GRAMOS OFERTA\", \"formula\": \"\", \"type\": \"s\"}, \"D7\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E7\": {\"value\": \"25\", \"formula\": \"(D7*100)/$D$10\", \"type\": \"n\"}, \"G7\": {\"value\": \"0\", \"formula\": \"F7*D7\", \"type\": \"n\"}, \"H7\": {\"value\": \"2210.0540420059997\", \"formula\": \"\", \"type\": \"n\"}, \"I7\": {\"value\": \"2210.0540420059997\", \"formula\": \"\", \"type\": \"n\"}, \"J7\": {\"value\": \"-100\", \"formula\": \"((F7/H7)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "8",
+      "cells": "{\"B8\": {\"value\": \"30018\", \"formula\": \"\", \"type\": \"n\"}, \"C8\": {\"value\": \"SALCHICHÓN DE CERVECERO  X 225 GRAMOS\", \"formula\": \"\", \"type\": \"s\"}, \"D8\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E8\": {\"value\": \"25\", \"formula\": \"(D8*100)/$D$10\", \"type\": \"n\"}, \"G8\": {\"value\": \"0\", \"formula\": \"F8*D8\", \"type\": \"n\"}, \"H8\": {\"value\": \"1647\", \"formula\": \"\", \"type\": \"n\"}, \"I8\": {\"value\": \"1647\", \"formula\": \"\", \"type\": \"n\"}, \"J8\": {\"value\": \"-100\", \"formula\": \"((F8/H8)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "9",
+      "cells": "{\"G9\": {\"value\": \"0\", \"formula\": \"F9*D9\", \"type\": \"n\"}, \"I9\": {\"value\": \"0\", \"formula\": \"\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "row": "10",
+      "cells": "{\"B10\": {\"value\": \"TOTAL\", \"formula\": \"\", \"type\": \"s\"}, \"D10\": {\"value\": \"4\", \"formula\": \"SUM(D5:D8)\", \"type\": \"n\"}, \"E10\": {\"value\": \"100\", \"formula\": \"SUM(E5:E8)\", \"type\": \"n\"}, \"G10\": {\"value\": \"0\", \"formula\": \"SUM(G5:G8)\", \"type\": \"n\"}, \"I10\": {\"value\": \"7732.6863104338499\", \"formula\": \"SUM(I5:I8)\", \"type\": \"n\"}, \"J10\": {\"value\": \"-100\", \"formula\": \"((G10/I10)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "2",
+      "cells": "{\"B2\": {\"value\": \"MEGA COMBO FAIZAN 675 G X 3\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "4",
+      "cells": "{\"B4\": {\"value\": \"CÓDIGO\", \"formula\": \"\", \"type\": \"s\"}, \"C4\": {\"value\": \"DESCRIPCIÓN\", \"formula\": \"\", \"type\": \"s\"}, \"D4\": {\"value\": \"CATIDAD\", \"formula\": \"\", \"type\": \"s\"}, \"E4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}, \"F4\": {\"value\": \"JUN-COP/Kg \", \"formula\": \"+'CIF Y PV'!$F$2\", \"type\": \"str\"}, \"G4\": {\"value\": \"JUN-COP/APP\", \"formula\": \"+'CIF Y PV'!$G$2\", \"type\": \"str\"}, \"H4\": {\"value\": \"MAY-COP/Kg \", \"formula\": \"+'CIF Y PV'!$H$2\", \"type\": \"str\"}, \"I4\": {\"value\": \"MAY-COP/APP\", \"formula\": \"+'CIF Y PV'!$I$2\", \"type\": \"str\"}, \"J4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "5",
+      "cells": "{\"B5\": {\"value\": \"30017\", \"formula\": \"\", \"type\": \"n\"}, \"C5\": {\"value\": \"SALCHICHÓN AUTÉNTICO X 225 GRAMOS\", \"formula\": \"\", \"type\": \"s\"}, \"D5\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E5\": {\"value\": \"33.333333333333336\", \"formula\": \"(D5*100)/$D$9\", \"type\": \"n\"}, \"F5\": {\"value\": \"1215.9200264212909\", \"formula\": \"'SCHON AUTENTICO X 225 G'!H46\", \"type\": \"n\"}, \"G5\": {\"value\": \"1215.9200264212909\", \"formula\": \"F5*D5\", \"type\": \"n\"}, \"H5\": {\"value\": \"1266.7937305665005\", \"formula\": \"\", \"type\": \"n\"}, \"I5\": {\"value\": \"1266.7937305665005\", \"formula\": \"H5*D5\", \"type\": \"n\"}, \"J5\": {\"value\": \"-4.0159422104543552\", \"formula\": \"((F5/H5)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "6",
+      "cells": "{\"B6\": {\"value\": \"20018O\", \"formula\": \"\", \"type\": \"s\"}, \"C6\": {\"value\": \"MORTADELA SELECCIONADA X 225 GRAMOS OFERTA\", \"formula\": \"\", \"type\": \"s\"}, \"D6\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E6\": {\"value\": \"33.333333333333336\", \"formula\": \"(D6*100)/$D$9\", \"type\": \"n\"}, \"F6\": {\"value\": \"2020.7107754839999\", \"formula\": \"'MDELA FAIZAN  225 G 14 U SC'!H57\", \"type\": \"n\"}, \"G6\": {\"value\": \"2020.7107754839999\", \"formula\": \"F6*D6\", \"type\": \"n\"}, \"H6\": {\"value\": \"2210.0540420059997\", \"formula\": \"\", \"type\": \"n\"}, \"I6\": {\"value\": \"2210.0540420059997\", \"formula\": \"H6*D6\", \"type\": \"n\"}, \"J6\": {\"value\": \"-8.5673591198764854\", \"formula\": \"((F6/H6)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "7",
+      "cells": "{\"B7\": {\"value\": \"30018\", \"formula\": \"\", \"type\": \"n\"}, \"C7\": {\"value\": \"SALCHICHÓN DE POLLO X 225 GRAMOS\", \"formula\": \"\", \"type\": \"s\"}, \"D7\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E7\": {\"value\": \"33.333333333333336\", \"formula\": \"(D7*100)/$D$9\", \"type\": \"n\"}, \"F7\": {\"value\": \"1252.1587188848748\", \"formula\": \"'SCHON POLLO X 225 G'!H46\", \"type\": \"n\"}, \"G7\": {\"value\": \"1252.1587188848748\", \"formula\": \"F7*D7\", \"type\": \"n\"}, \"H7\": {\"value\": \"1289.1999299888248\", \"formula\": \"\", \"type\": \"n\"}, \"I7\": {\"value\": \"1289.1999299888248\", \"formula\": \"\", \"type\": \"n\"}, \"J7\": {\"value\": \"-2.873193694966389\", \"formula\": \"((F7/H7)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "row": "9",
+      "cells": "{\"B9\": {\"value\": \"TOTAL\", \"formula\": \"\", \"type\": \"s\"}, \"D9\": {\"value\": \"3\", \"formula\": \"SUM(D5:D7)\", \"type\": \"n\"}, \"E9\": {\"value\": \"100\", \"formula\": \"SUM(E5:E7)\", \"type\": \"n\"}, \"G9\": {\"value\": \"4488.7895207901656\", \"formula\": \"SUM(G5:G7)\", \"type\": \"n\"}, \"I9\": {\"value\": \"4766.0477025613254\", \"formula\": \"SUM(I5:I7)\", \"type\": \"n\"}, \"J9\": {\"value\": \"-5.8173606114382324\", \"formula\": \"((G9/I9)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "2",
+      "cells": "{\"B2\": {\"value\": \"SÚPER COMBO VIANDÉ 900 G\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "3",
+      "cells": "{\"D3\": {\"value\": \"53.42\", \"formula\": \"\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "4",
+      "cells": "{\"B4\": {\"value\": \"CÓDIGO\", \"formula\": \"\", \"type\": \"s\"}, \"C4\": {\"value\": \"DESCRIPCIÓN\", \"formula\": \"\", \"type\": \"s\"}, \"D4\": {\"value\": \"CATIDAD\", \"formula\": \"\", \"type\": \"s\"}, \"E4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}, \"F4\": {\"value\": \"JUN-COP/Kg \", \"formula\": \"+'CIF Y PV'!$F$2\", \"type\": \"str\"}, \"G4\": {\"value\": \"JUN-COP/APP\", \"formula\": \"+'CIF Y PV'!$G$2\", \"type\": \"str\"}, \"H4\": {\"value\": \"MAY-COP/Kg \", \"formula\": \"+'CIF Y PV'!$H$2\", \"type\": \"str\"}, \"I4\": {\"value\": \"MAY-COP/APP\", \"formula\": \"+'CIF Y PV'!$I$2\", \"type\": \"str\"}, \"J4\": {\"value\": \"%\", \"formula\": \"\", \"type\": \"s\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "5",
+      "cells": "{\"B5\": {\"value\": \"10096\", \"formula\": \"\", \"type\": \"n\"}, \"C5\": {\"value\": \"Salchicha Seleccionada VIANDE x 225 grs\", \"formula\": \"\", \"type\": \"s\"}, \"D5\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E5\": {\"value\": \"25\", \"formula\": \"(D5*100)/$D$10\", \"type\": \"n\"}, \"F5\": {\"value\": \"1235.2639744070877\", \"formula\": \"'SCHA VIANDÉ   225 G 8 UNDS'!H70\", \"type\": \"n\"}, \"G5\": {\"value\": \"1235.2639744070877\", \"formula\": \"F5*D5\", \"type\": \"n\"}, \"H5\": {\"value\": \"1733.3177970686149\", \"formula\": \"\", \"type\": \"n\"}, \"I5\": {\"value\": \"1733.3177970686149\", \"formula\": \"H5*D5\", \"type\": \"n\"}, \"J5\": {\"value\": \"-28.73413193494207\", \"formula\": \"((F5/H5)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "6",
+      "cells": "{\"B6\": {\"value\": \"20046\", \"formula\": \"\", \"type\": \"n\"}, \"C6\": {\"value\": \"Mortadela VIANDE x 225 grs\", \"formula\": \"\", \"type\": \"s\"}, \"D6\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E6\": {\"value\": \"25\", \"formula\": \"(D6*100)/$D$10\", \"type\": \"n\"}, \"F6\": {\"value\": \"1798.2099666239999\", \"formula\": \"'MDELA VIANDÉ X 225 G - 17 UND S'!H79\", \"type\": \"n\"}, \"G6\": {\"value\": \"1798.2099666239999\", \"formula\": \"F6*D6\", \"type\": \"n\"}, \"H6\": {\"value\": \"1960.1858971239999\", \"formula\": \"\", \"type\": \"n\"}, \"I6\": {\"value\": \"1960.1858971239999\", \"formula\": \"H6*D6\", \"type\": \"n\"}, \"J6\": {\"value\": \"-8.2632943506864507\", \"formula\": \"((F6/H6)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "7",
+      "cells": "{\"B7\": {\"value\": \"30055\", \"formula\": \"\", \"type\": \"n\"}, \"C7\": {\"value\": \"Salchichón Cervecero VIANDE x 225 grs\", \"formula\": \"\", \"type\": \"s\"}, \"D7\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E7\": {\"value\": \"25\", \"formula\": \"(D7*100)/$D$10\", \"type\": \"n\"}, \"F7\": {\"value\": \"1279.5844643779169\", \"formula\": \"'SCHON CERV VIANDÉ X 225 G'!H43\", \"type\": \"n\"}, \"G7\": {\"value\": \"1279.5844643779169\", \"formula\": \"F7*D7\", \"type\": \"n\"}, \"H7\": {\"value\": \"1343.0837659442741\", \"formula\": \"\", \"type\": \"n\"}, \"I7\": {\"value\": \"1343.0837659442741\", \"formula\": \"\", \"type\": \"n\"}, \"J7\": {\"value\": \"-4.7278735084488943\", \"formula\": \"((F7/H7)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "8",
+      "cells": "{\"B8\": {\"value\": \"30054\", \"formula\": \"\", \"type\": \"n\"}, \"C8\": {\"value\": \"Salchichón Pollo  BRAKEL x 225 grs\", \"formula\": \"\", \"type\": \"s\"}, \"D8\": {\"value\": \"1\", \"formula\": \"\", \"type\": \"n\"}, \"E8\": {\"value\": \"25\", \"formula\": \"(D8*100)/$D$10\", \"type\": \"n\"}, \"F8\": {\"value\": \"1230.4231456529999\", \"formula\": \"'SCHON POLLO BRAKEL X 225'!H45\", \"type\": \"n\"}, \"G8\": {\"value\": \"1230.4231456529999\", \"formula\": \"F8*D8\", \"type\": \"n\"}, \"H8\": {\"value\": \"1294.1822579727998\", \"formula\": \"\", \"type\": \"n\"}, \"I8\": {\"value\": \"1294.1822579727998\", \"formula\": \"\", \"type\": \"n\"}, \"J8\": {\"value\": \"-4.9265945292490585\", \"formula\": \"((F8/H8)*100)-100\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "9",
+      "cells": "{\"I9\": {\"value\": \"0\", \"formula\": \"H9*D9\", \"type\": \"n\"}}"
+    },
+    {
+      "book": "Junio (1).xlsx",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "row": "10",
+      "cells": "{\"B10\": {\"value\": \"TOTAL\", \"formula\": \"\", \"type\": \"s\"}, \"D10\": {\"value\": \"4\", \"formula\": \"SUM(D5:D8)\", \"type\": \"n\"}, \"E10\": {\"value\": \"100\", \"formula\": \"SUM(E5:E8)\", \"type\": \"n\"}, \"G10\": {\"value\": \"5543.4815510620047\", \"formula\": \"SUM(G5:G8)\", \"type\": \"n\"}, \"I10\": {\"value\": \"6330.7697181096883\", \"formula\": \"SUM(I5:I8)\", \"type\": \"n\"}, \"J10\": {\"value\": \"-12.435899615738364\", \"formula\": \"((G10/I10)*100)-100\", \"type\": \"n\"}}"
+    }
+  ],
+  "action": "Se conserva dato original y se bloquea cálculo/tabla para las dos combinaciones erróneas observadas; no se elige variante ni se aprueba receta."
+}

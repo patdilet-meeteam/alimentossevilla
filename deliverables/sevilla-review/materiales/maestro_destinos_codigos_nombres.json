@@ -1,0 +1,1722 @@
+[
+  {
+    "siesaCode": "1111002",
+    "name": "PIEL DE POLLO"
+  },
+  {
+    "siesaCode": "1112001",
+    "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+  },
+  {
+    "siesaCode": "1112002",
+    "name": "PASTA DE POLLO ESTANDAR"
+  },
+  {
+    "siesaCode": "1112005",
+    "name": "RECORTE DE PECHUGA 95 5 SIN PIEL"
+  },
+  {
+    "siesaCode": "1112013",
+    "name": "PASTA DE POLLO NACIONAL"
+  },
+  {
+    "siesaCode": "1121004",
+    "name": "PIEL DE CERDO DESGRASADA"
+  },
+  {
+    "siesaCode": "1121005",
+    "name": "TOCINO BARRIGUERO PARA INYECCION"
+  },
+  {
+    "siesaCode": "1121006",
+    "name": "TOCINO PAPADA PARA INYECCION"
+  },
+  {
+    "siesaCode": "1121009",
+    "name": "TOCINO NACIONAL"
+  },
+  {
+    "siesaCode": "1122001",
+    "name": "BRAZUELO DE CERDO NACIONAL"
+  },
+  {
+    "siesaCode": "1122002",
+    "name": "PIERNA DE CERDO"
+  },
+  {
+    "siesaCode": "1122006",
+    "name": "BRAZUELO DE CERDO IMPORTADO"
+  },
+  {
+    "siesaCode": "1122007",
+    "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+  },
+  {
+    "siesaCode": "1122008",
+    "name": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+  },
+  {
+    "siesaCode": "1122010",
+    "name": "BRAZUELO DE CERDO NACIONAL (FORANEO)"
+  },
+  {
+    "siesaCode": "1122011",
+    "name": "PIERNA DE CERDO NACIONAL (FORANEA)"
+  },
+  {
+    "siesaCode": "1131001",
+    "name": "HIELO EN ESCAMAS"
+  },
+  {
+    "siesaCode": "1131002",
+    "name": "AGUA POTABLE"
+  },
+  {
+    "siesaCode": "1141001",
+    "name": "CARNE DE TERNERA"
+  },
+  {
+    "siesaCode": "1210002",
+    "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)"
+  },
+  {
+    "siesaCode": "1210003",
+    "name": "ERITORBATO DE SODIO"
+  },
+  {
+    "siesaCode": "1210004",
+    "name": "SAL CURANTE AL 12 %"
+  },
+  {
+    "siesaCode": "1210005",
+    "name": "SAL YODADA REFISAL"
+  },
+  {
+    "siesaCode": "1210006",
+    "name": "SAL REDUCIDA EN SODIO 60/40"
+  },
+  {
+    "siesaCode": "1210008",
+    "name": "PIROFOSFATO ACIDO DE SODIO"
+  },
+  {
+    "siesaCode": "1210009",
+    "name": "SAL REDUCIDA EN SODIO 50/50"
+  },
+  {
+    "siesaCode": "1210010",
+    "name": "CLORURO DE POTASIO - KCL"
+  },
+  {
+    "siesaCode": "121007",
+    "name": "SUPRA MEAT F451"
+  },
+  {
+    "siesaCode": "1220001",
+    "name": "SABOR CERDO COCIDO"
+  },
+  {
+    "siesaCode": "1220004",
+    "name": "AZUCAR REFINADA"
+  },
+  {
+    "siesaCode": "1220005",
+    "name": "AJO MOLIDO DESHIDRATADO B.1"
+  },
+  {
+    "siesaCode": "1220006",
+    "name": "PIMIENTA BLANCA MOLIDA"
+  },
+  {
+    "siesaCode": "1220007",
+    "name": "PIMIENTA NEGRA MOLIDA"
+  },
+  {
+    "siesaCode": "1220008",
+    "name": "COMINO MOLIDO B"
+  },
+  {
+    "siesaCode": "1220009",
+    "name": "CEBOLLA EN POLVO"
+  },
+  {
+    "siesaCode": "1220010",
+    "name": "DEXTROSA"
+  },
+  {
+    "siesaCode": "1220011",
+    "name": "ADITIVO BURGER MEAT 80 B NAT"
+  },
+  {
+    "siesaCode": "1220012",
+    "name": "APANADO NARANJA GRUESO"
+  },
+  {
+    "siesaCode": "1220013",
+    "name": "AROMA SALCHICHON TRADICIONAL 84987B"
+  },
+  {
+    "siesaCode": "1220014",
+    "name": "PVH LIQUIDA M 1222"
+  },
+  {
+    "siesaCode": "1220015",
+    "name": "MEZCLA LIQUIDA SALCHICHA"
+  },
+  {
+    "siesaCode": "1220020",
+    "name": "SALSA DE CIRUELAS SOBRE X 80G TECNAS"
+  },
+  {
+    "siesaCode": "1220022",
+    "name": "LUCTAROMA SCHA POLLO ASADO 82894B"
+  },
+  {
+    "siesaCode": "1230003",
+    "name": "PREPARADO SABOR CERVECERO NEO"
+  },
+  {
+    "siesaCode": "1230004",
+    "name": "PREPARADO SABOR CERVECERO SV GF"
+  },
+  {
+    "siesaCode": "1230005",
+    "name": "PREPARADO SABOR CHORIZO CERDO"
+  },
+  {
+    "siesaCode": "1230006",
+    "name": "PREPARADO SABOR CHORIZO TERNERA"
+  },
+  {
+    "siesaCode": "1230008",
+    "name": "PREPARADO SABOR JAMON T 3391"
+  },
+  {
+    "siesaCode": "1230009",
+    "name": "PREPARADO SABOR CERVECERO PREMIUM SV LS"
+  },
+  {
+    "siesaCode": "1230010",
+    "name": "TAROMA HAM"
+  },
+  {
+    "siesaCode": "1230011",
+    "name": "BATIDO COMPLETO"
+  },
+  {
+    "siesaCode": "1230012",
+    "name": "CEBOLLA PUERRO"
+  },
+  {
+    "siesaCode": "1230013",
+    "name": "PAPRIKA POLVO"
+  },
+  {
+    "siesaCode": "1230016",
+    "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+  },
+  {
+    "siesaCode": "1230017",
+    "name": "AROMA MORTADELA TRAD 88896B"
+  },
+  {
+    "siesaCode": "1230018",
+    "name": "LUCTAROMA CEBOLLA FRITA 82973B"
+  },
+  {
+    "siesaCode": "1230019",
+    "name": "LUCTAROMA CHORIZO ANTIOQUEÑO 81110B"
+  },
+  {
+    "siesaCode": "1230020",
+    "name": "CILANTRO MOLIDO"
+  },
+  {
+    "siesaCode": "1230022",
+    "name": "TOMATE EN POLVO"
+  },
+  {
+    "siesaCode": "1230023",
+    "name": "LUCTAROMA AHUMADO TOCINETA 85812B"
+  },
+  {
+    "siesaCode": "1230024",
+    "name": "LUCTAROMA CHORIZO SANTARROSANO 81738C"
+  },
+  {
+    "siesaCode": "1230025",
+    "name": "NUEZ MOSCADA"
+  },
+  {
+    "siesaCode": "1230026",
+    "name": "CLAVO EN POLVO"
+  },
+  {
+    "siesaCode": "1240002",
+    "name": "CONSERVANTE INBAC ACN NA"
+  },
+  {
+    "siesaCode": "1240007",
+    "name": "CONSERVANTE PROVIAN K"
+  },
+  {
+    "siesaCode": "1240008",
+    "name": "PURAC FCC-85 ÁCIDO LACTICO"
+  },
+  {
+    "siesaCode": "1240009",
+    "name": "ÁCIDO CÍTRICO"
+  },
+  {
+    "siesaCode": "1250001",
+    "name": "COLOR CARAMELO"
+  },
+  {
+    "siesaCode": "1250002",
+    "name": "COLOR LOY NARANJA LIQ A10 1"
+  },
+  {
+    "siesaCode": "1250003",
+    "name": "COLOR NATURAL HEMOGLOBINA I RED"
+  },
+  {
+    "siesaCode": "1250004",
+    "name": "COLOR NATURAL NARANJA PR801WD"
+  },
+  {
+    "siesaCode": "1250005",
+    "name": "COLOR NATURAL NARANJA RA 40-3 9827"
+  },
+  {
+    "siesaCode": "1250007",
+    "name": "ENTURBIANTE EN POLVO DPA"
+  },
+  {
+    "siesaCode": "1250009",
+    "name": "COLOR NATURAL ROJO AC150"
+  },
+  {
+    "siesaCode": "1260005",
+    "name": "PLASMA PORCINO"
+  },
+  {
+    "siesaCode": "1260006",
+    "name": "EXTRACTO PROTEICO LC 300"
+  },
+  {
+    "siesaCode": "1260008",
+    "name": "PROTEINA TEXTURIZADA DE SOYA 70%"
+  },
+  {
+    "siesaCode": "1260009",
+    "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+  },
+  {
+    "siesaCode": "1260010",
+    "name": "PROTEINA CONCENTRADA SOYA 65%"
+  },
+  {
+    "siesaCode": "1260011",
+    "name": "ALMIDON DE PAPA"
+  },
+  {
+    "siesaCode": "1260012",
+    "name": "SOLU TEX GRASAS NEUTRO"
+  },
+  {
+    "siesaCode": "1260013",
+    "name": "PROTEINA TEXTURIZADA DE TRIGO - HAMB CJA"
+  },
+  {
+    "siesaCode": "1260014",
+    "name": "CARRAGENINA"
+  },
+  {
+    "siesaCode": "1260015",
+    "name": "ALMIDON DE YUCA"
+  },
+  {
+    "siesaCode": "1260016",
+    "name": "SUPERGEL GRANULOS CURADOS PLUS"
+  },
+  {
+    "siesaCode": "1260017",
+    "name": "ALMIDON MODIFICADO DE MAIZ"
+  },
+  {
+    "siesaCode": "1260018",
+    "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA"
+  },
+  {
+    "siesaCode": "1260022",
+    "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+  },
+  {
+    "siesaCode": "1260023",
+    "name": "TRANSGLUTAMINASA PROLINK MB-MM BOLSA 1KG"
+  },
+  {
+    "siesaCode": "1260024",
+    "name": "EXTRACTO PROTEICO GP 83"
+  },
+  {
+    "siesaCode": "1260025",
+    "name": "SUPRAMEAT TG MEAT PLUS 874"
+  },
+  {
+    "siesaCode": "1270003",
+    "name": "HUMO TRUSMOKE 45"
+  },
+  {
+    "siesaCode": "1270004",
+    "name": "HUMO TRUSMOKE OIL EX"
+  },
+  {
+    "siesaCode": "1270006",
+    "name": "HUMO ENVIRO 24P X 4KG"
+  },
+  {
+    "siesaCode": "1270007",
+    "name": "TBBQ GSF DRY X 500 G"
+  },
+  {
+    "siesaCode": "1270008",
+    "name": "TRUSMOKE 25 x 4 KG"
+  },
+  {
+    "siesaCode": "1270009",
+    "name": "HUMO TRUSMOKE DRY x 20 KG"
+  },
+  {
+    "siesaCode": "1270010",
+    "name": "HUMO TRUSMOKE H&B"
+  },
+  {
+    "siesaCode": "1280002",
+    "name": "MEZCLA PARA ELABORAR EMULSIONES CÁRNICAS"
+  },
+  {
+    "siesaCode": "1280003",
+    "name": "NEUTRALIZADOR PARA EMULSIÓN"
+  },
+  {
+    "siesaCode": "1310001",
+    "name": "LAM SUP JAMON VIANDE X300G 70X415MM"
+  },
+  {
+    "siesaCode": "1310002",
+    "name": "LAM SUP MDELA VIANDE 225G X 17UNDS 415"
+  },
+  {
+    "siesaCode": "1310011",
+    "name": "LAM SUP SALCHI VIANDE 450G X 16UNDS"
+  },
+  {
+    "siesaCode": "1310012",
+    "name": "LAM COMBO VIANDE"
+  },
+  {
+    "siesaCode": "1310014",
+    "name": "LAM SUP MEGA COMBO FAIZAN X 900 G X 4 UD"
+  },
+  {
+    "siesaCode": "1310015",
+    "name": "LAM SUP SALCHI VIANDE 225G X 8UNDS 415"
+  },
+  {
+    "siesaCode": "1310017",
+    "name": "LAM SUP TRANS ECOWEB M/PAUV 60U 404MM"
+  },
+  {
+    "siesaCode": "1310018",
+    "name": "LAM SUP TRANS ECOWEB M/PAUV 42U 301MM"
+  },
+  {
+    "siesaCode": "1310031",
+    "name": "LAM SUP MEGA COMBO FAIZAN X 675 G X 3 UD"
+  },
+  {
+    "siesaCode": "1310034",
+    "name": "LAM SUP CHZO TERNERA D1 225 X 5 X 415 MM"
+  },
+  {
+    "siesaCode": "1310035",
+    "name": "LAM SUP CHZO ANTIOQUEÑO D1 225X 5X415 MM"
+  },
+  {
+    "siesaCode": "1310037",
+    "name": "LAM SUP SALCH CLASICA 225G 9UN 302"
+  },
+  {
+    "siesaCode": "1310049",
+    "name": "LAM SUP CHZO SANTARO 300 G X 5 U 302 MM"
+  },
+  {
+    "siesaCode": "1310054",
+    "name": "LAM SUP SCHA PERRO D1 240 X 6 X 302 MM"
+  },
+  {
+    "siesaCode": "1310055",
+    "name": "LAM SUP CHZO TERNER 220 G X 4 U 302 MM"
+  },
+  {
+    "siesaCode": "1310056",
+    "name": "LAM SUP CHZO CERDO 100 G X 2 U 302 MM"
+  },
+  {
+    "siesaCode": "1310057",
+    "name": "LAM SUP CHZO CERDO 1000 G X 20 U 302 MM"
+  },
+  {
+    "siesaCode": "1310058",
+    "name": "LAM SUP SALCH CLASICA 450G 18UN 302"
+  },
+  {
+    "siesaCode": "1310059",
+    "name": "LAM SUP SALCH SUPER PERRO 500G 10UN 302"
+  },
+  {
+    "siesaCode": "1310060",
+    "name": "LAM SUP JAMON CERD PREM 120GR 6TJ 302MM"
+  },
+  {
+    "siesaCode": "1310062",
+    "name": "LAM SUP CHZO S.ROSANO D1 225 X 5 X 415MM"
+  },
+  {
+    "siesaCode": "1310063",
+    "name": "LAM SUP SNACK CERVECERITO VIANDE X 50GR"
+  },
+  {
+    "siesaCode": "1310065",
+    "name": "LAM SUPER PERRO VIANDE 400G X 445MM 50MI"
+  },
+  {
+    "siesaCode": "1310066",
+    "name": "LAM SUP TRANS ECOWEB 42 U 445 MM"
+  },
+  {
+    "siesaCode": "1310067",
+    "name": "LAM CERVECERITO VIANDE FLOWPACK"
+  },
+  {
+    "siesaCode": "1310068",
+    "name": "LAM SUP MORTAD JAMON V X 400 GR X 415 MM"
+  },
+  {
+    "siesaCode": "1320003",
+    "name": "LAM INFE 90-423 MM 3.5MILS"
+  },
+  {
+    "siesaCode": "1320004",
+    "name": "LAM INFE SUDPACK GVA200 BT323 MM 8MM"
+  },
+  {
+    "siesaCode": "1320005",
+    "name": "LAM INFE SUDPACK GVP 130-323 MM"
+  },
+  {
+    "siesaCode": "1320006",
+    "name": "LAM INFE SUDPACK GVP130-423 MM"
+  },
+  {
+    "siesaCode": "1320007",
+    "name": "LAM INFE SUDPACK GVA 200 BT 423MM"
+  },
+  {
+    "siesaCode": "1320010",
+    "name": "LAM INFE SUDPACK BTX 100-323 MM"
+  },
+  {
+    "siesaCode": "1320011",
+    "name": "LAM INFE SUDPACK BTX 100 X 460 MM"
+  },
+  {
+    "siesaCode": "1320012",
+    "name": "LAM INFE SUDPACK GVA 200 x 460 MM"
+  },
+  {
+    "siesaCode": "1320013",
+    "name": "LAM INFE SUDPACK BTX 100 x 423 MM"
+  },
+  {
+    "siesaCode": "1330001",
+    "name": "ETI CHORIZO DE CERDO 250G X 5 UDS"
+  },
+  {
+    "siesaCode": "1330002",
+    "name": "ETI CHORIZO TERNERA X 120G X 2 UDS"
+  },
+  {
+    "siesaCode": "1330004",
+    "name": "ETI JAMON DE CERDO PREMIUM X 200G"
+  },
+  {
+    "siesaCode": "1330006",
+    "name": "ETI SALCHI DESAYU PREM X125G X5UNDS"
+  },
+  {
+    "siesaCode": "1330007",
+    "name": "ETI SALCHICHA DESAYUNO PREMIUM 480G"
+  },
+  {
+    "siesaCode": "1330009",
+    "name": "ETI SALCHIPERRO CALIENTE 480 G X 12UND"
+  },
+  {
+    "siesaCode": "1330010",
+    "name": "N/A ETI JAMON SANDUCHE 500GR 28TJ"
+  },
+  {
+    "siesaCode": "1330011",
+    "name": "ETI CHZO TERNERA 440 G X 8U - G.EXITO"
+  },
+  {
+    "siesaCode": "1330012",
+    "name": "ETI CHORIZO CERDO 500GR X 10U"
+  },
+  {
+    "siesaCode": "1330013",
+    "name": "ETI MEGA SALCHICHA X 560GR X 6U"
+  },
+  {
+    "siesaCode": "1330015",
+    "name": "ETI CHORIZO TERNERA 1020 17 UNDS"
+  },
+  {
+    "siesaCode": "1330018",
+    "name": "ETI MDLA CLASICA 225 G FAZAN"
+  },
+  {
+    "siesaCode": "1330021",
+    "name": "ETI JAMON FAIZAN PREM 400G 20 TAJ"
+  },
+  {
+    "siesaCode": "1330022",
+    "name": "ETI BLANCA GENERICA 100 X 80"
+  },
+  {
+    "siesaCode": "1330026",
+    "name": "ETI JAMON SANDUCHE INST 500 GR X 28 U"
+  },
+  {
+    "siesaCode": "1330027",
+    "name": "ETI SALCHICHA SUPER PERRO X 2.5 X 50 U"
+  },
+  {
+    "siesaCode": "1330028",
+    "name": "ETI JAMON SANDUCHE 450 GR X 24 U"
+  },
+  {
+    "siesaCode": "1330029",
+    "name": "ETI MINI PERRO X 1 KG X 40 U"
+  },
+  {
+    "siesaCode": "1330031",
+    "name": "ETI CHORIZO SANTA ROSANO X 260 G X 4 UND"
+  },
+  {
+    "siesaCode": "1330032",
+    "name": "ETI SALCHICHA JUMBO X 450 G X 6 UND"
+  },
+  {
+    "siesaCode": "1330034",
+    "name": "ETI CHORIZO SANTARROSANO X 65 G"
+  },
+  {
+    "siesaCode": "1330035",
+    "name": "ETI CHORIZO CON TERNERA X 60 G"
+  },
+  {
+    "siesaCode": "1330036",
+    "name": "ETI SCHA DESAYUNO X 35 G"
+  },
+  {
+    "siesaCode": "1330037",
+    "name": "ETI SCHA JUMBO X 40 G"
+  },
+  {
+    "siesaCode": "1330038",
+    "name": "ETI CHORIZO CERDO X 50 G"
+  },
+  {
+    "siesaCode": "1330039",
+    "name": "ETI CERVECERITO X 30 G"
+  },
+  {
+    "siesaCode": "1330040",
+    "name": "ETI SALCHICHA DESAYUNO PREMIUM X 240G"
+  },
+  {
+    "siesaCode": "1330041",
+    "name": "ETI SALCHICHA COMUN MAQUILA X 230G"
+  },
+  {
+    "siesaCode": "1330042",
+    "name": "ETI JAMON SANDUCHE 225 GR X 12 U"
+  },
+  {
+    "siesaCode": "1330043",
+    "name": "ETI CERVECERITO 50 GR X 5 TAJ"
+  },
+  {
+    "siesaCode": "1330044",
+    "name": "ETI MDELA JAMONADA 225 GR X 12 U"
+  },
+  {
+    "siesaCode": "1330045",
+    "name": "ETI RESPALDO CHORIZO CERDO 400GR X 8U"
+  },
+  {
+    "siesaCode": "1330046",
+    "name": "ETI RESPALDO CHORIZO SANTA ROSANO X 480"
+  },
+  {
+    "siesaCode": "1330047",
+    "name": "ETI RESPALDO CHORIZO CERDO 250GR X 5U"
+  },
+  {
+    "siesaCode": "1330048",
+    "name": "ETI RESPALDO SALCHICHA DESAYUNO 240"
+  },
+  {
+    "siesaCode": "1330049",
+    "name": "ETI RESPALD CHORIZO SANTA ROSANO X 300 G"
+  },
+  {
+    "siesaCode": "1330050",
+    "name": "ETI RESPALDO SCHA PERRO 480 G X 12UND"
+  },
+  {
+    "siesaCode": "1330051",
+    "name": "ETI RESPALDO SCHA JUMBO 450 G X 6 UND"
+  },
+  {
+    "siesaCode": "1330052",
+    "name": "ETI RESPALDO SCHA CLASICA 225 G X 9 UND"
+  },
+  {
+    "siesaCode": "1330053",
+    "name": "ETI RESPALDO MDELA CLASICA 225 G X 14 TJ"
+  },
+  {
+    "siesaCode": "1330054",
+    "name": "ETI RESPALDO MDELA JAMONAD 225 G X 12 TJ"
+  },
+  {
+    "siesaCode": "1330055",
+    "name": "ETI RESPALDO SCHA DESAYUNO 480 G X 14 UN"
+  },
+  {
+    "siesaCode": "1330057",
+    "name": "ETI RESPALDO JMN PREMIUM 200 G X 10 TJ"
+  },
+  {
+    "siesaCode": "1330058",
+    "name": "ETI RESPALDO JMN PREMIUM 400 G X 20 TJ"
+  },
+  {
+    "siesaCode": "1330059",
+    "name": "ETI RESPALDO JMN SANDUCHE 225 G X 12 TJ"
+  },
+  {
+    "siesaCode": "1330060",
+    "name": "ETI RESPALDO JMN SANDUCHE 450 G X 24 TJ"
+  },
+  {
+    "siesaCode": "1330062",
+    "name": "ETI CHORIZO TERNERA 1100 20 UNDS"
+  },
+  {
+    "siesaCode": "1330065",
+    "name": "ETI JAMON DE CERDO PREMIUM X 220G"
+  },
+  {
+    "siesaCode": "1330066",
+    "name": "ETI RESPALDO JMN PREMIUM 220 G X 11 TJ"
+  },
+  {
+    "siesaCode": "1330068",
+    "name": "ETI RESPAL CHZO TERNERA 440 G 8 U EXITO"
+  },
+  {
+    "siesaCode": "1330074",
+    "name": "ETI RESPALDO CHZO TERNERA 220 G X 4 UN"
+  },
+  {
+    "siesaCode": "1330075",
+    "name": "ETI RESPALDO SCHA CLASICA 450 G X 18 UND"
+  },
+  {
+    "siesaCode": "1330076",
+    "name": "ETI RESPALDO SCHA S.PERRO 500 G X 10 UND"
+  },
+  {
+    "siesaCode": "1330077",
+    "name": "ETI RESPALDO JMN PREMIUM 120 G X 6TJ"
+  },
+  {
+    "siesaCode": "1330078",
+    "name": "ETI MEGA SALCHICHA X 1120GR X 12U"
+  },
+  {
+    "siesaCode": "1330080",
+    "name": "ETI CHORIZO CERDO 400 G X 8 UND"
+  },
+  {
+    "siesaCode": "1330081",
+    "name": "ETI CHORIZO CON TERNERA X 110 GR X 2 U"
+  },
+  {
+    "siesaCode": "1330082",
+    "name": "ETI CHZO COCTEL SANTA ROSANO X 300 G"
+  },
+  {
+    "siesaCode": "1330083",
+    "name": "ETI RESPALDO CHZO COCTEL SROSANO X 300 G"
+  },
+  {
+    "siesaCode": "1330084",
+    "name": "ETI CHZO COCTEL SANTA ROSANO X 1000 G"
+  },
+  {
+    "siesaCode": "1330085",
+    "name": "ETI PERNIL DE CERDO NAVIDEÑO X 500 G"
+  },
+  {
+    "siesaCode": "1330087",
+    "name": "ETI CHORIZO SANTA ROSANO X 480 G"
+  },
+  {
+    "siesaCode": "1330088",
+    "name": "ETI TOCINETA FAZAN AHUM X 150 G X 10 TJ"
+  },
+  {
+    "siesaCode": "1330089",
+    "name": "ETI RESPALDO TOCINETA FAZAN AHUM 150 G"
+  },
+  {
+    "siesaCode": "1330090",
+    "name": "ETI TOCINETA FAZAN AHUM X 1 KG X 66 TJ"
+  },
+  {
+    "siesaCode": "1330091",
+    "name": "ETI TOCINETA FAZAN PREMIUM X 400G X 27TA"
+  },
+  {
+    "siesaCode": "1330092",
+    "name": "ETI RESPALDO TOCINETA FAZAN PREMIU 400 G"
+  },
+  {
+    "siesaCode": "1330093",
+    "name": "ETI SALCHICHA DESAYUNO PREMI X 115 X 5 U"
+  },
+  {
+    "siesaCode": "1340001",
+    "name": "BOLSA AD BCO IMPR FAIZAN 23 X 25"
+  },
+  {
+    "siesaCode": "1340002",
+    "name": "BOLSA AMARILLA MILANESA X 1800G X 15UDS"
+  },
+  {
+    "siesaCode": "1340003",
+    "name": "BOLSA NARANJA MILANE X 600G X 5UDS"
+  },
+  {
+    "siesaCode": "1340005",
+    "name": "BOLSA IMP ROJA HAMB X900 G X10UND MODER"
+  },
+  {
+    "siesaCode": "1340006",
+    "name": "BOLSA HAMB X 450G X 5UND"
+  },
+  {
+    "siesaCode": "1340008",
+    "name": "BOLSA SIN IMP 25 x 35 FLEXIBLE"
+  },
+  {
+    "siesaCode": "1340009",
+    "name": "BOLSA CERVECERITO FAZAN X 6U 16CMX22CM"
+  },
+  {
+    "siesaCode": "1340010",
+    "name": "BOLSA TERMOENCOGIBLE 8X10"
+  },
+  {
+    "siesaCode": "1340012",
+    "name": "BOLSA TRASNP LDPE 21 x 60 CAL 3"
+  },
+  {
+    "siesaCode": "1340015",
+    "name": "BOLSA NARANJA MILANE X 240G X 2UDS"
+  },
+  {
+    "siesaCode": "1340016",
+    "name": "BOLSA BLANCA HSA POLLO X 750G X 5UDS"
+  },
+  {
+    "siesaCode": "1350001",
+    "name": "CAJA JAMON DE CERDO VIANDE (32 UND)"
+  },
+  {
+    "siesaCode": "1350003",
+    "name": "CAJA KOBA SALCHICHON DE POLLO BRAKEL"
+  },
+  {
+    "siesaCode": "1350004",
+    "name": "CAJA KOBA SALCHICHON TRADICIONAL VIANDE"
+  },
+  {
+    "siesaCode": "1350005",
+    "name": "CAJA BA+TA SUP COMBO TRADICIONAL VIANDE"
+  },
+  {
+    "siesaCode": "1350006",
+    "name": "CAJA HAMBURGUESA X 2700GR"
+  },
+  {
+    "siesaCode": "1350011",
+    "name": "CAJA SCHA PERRO CALIENTE X 3.8 KG - 16 U"
+  },
+  {
+    "siesaCode": "1350012",
+    "name": "CAJA SCHA SUPER PERRO X 4 KG - 10 U"
+  },
+  {
+    "siesaCode": "1350013",
+    "name": "CAJA CHORIZO TERNERA X 2.5 KG - 10 U"
+  },
+  {
+    "siesaCode": "1350017",
+    "name": "CAJA B/T SNACK CERVECERITO X 1.8KG-12U"
+  },
+  {
+    "siesaCode": "1350018",
+    "name": "CAJA + TAPA MORT JAMONADA X 400 G - 24 U"
+  },
+  {
+    "siesaCode": "1350019",
+    "name": "CAJA+TAPA CHORIZO ANTIO VIANDE X 16 UNDS"
+  },
+  {
+    "siesaCode": "1350020",
+    "name": "CAJA+TAPA CHORIZO SANTA VIANDE X 16 UNDS"
+  },
+  {
+    "siesaCode": "1360001",
+    "name": "SEPARADOR 15 CM X 15 CM IMPRESO HIGHPACK"
+  },
+  {
+    "siesaCode": "1360003",
+    "name": "SEPARADOR 16,5 X 16,5 CM TRANSPARENTE"
+  },
+  {
+    "siesaCode": "1370001",
+    "name": "FIBROSA FVP CLS 95 B3 4 H3 MORTADELA"
+  },
+  {
+    "siesaCode": "1370002",
+    "name": "FIBROSA FVP CLS 140 JAMON"
+  },
+  {
+    "siesaCode": "1370003",
+    "name": "TUBULAR EMBUTIDO 180 MM MILANESA"
+  },
+  {
+    "siesaCode": "1370004",
+    "name": "FUNDA CELULOSA 18 X 100"
+  },
+  {
+    "siesaCode": "1370007",
+    "name": "FUNDA CELULOSA 23 X 100"
+  },
+  {
+    "siesaCode": "1370008",
+    "name": "FUNDA COLAGENO NDXF 25/50"
+  },
+  {
+    "siesaCode": "1370009",
+    "name": "FUNDA COLAGENO ND 26/60"
+  },
+  {
+    "siesaCode": "1370011",
+    "name": "FUNDA POLIAMIDA 19 X 110 - MEGA SCHA."
+  },
+  {
+    "siesaCode": "1370012",
+    "name": "TUBU SALCHICHON FAIZAN AUTENTICO 225G"
+  },
+  {
+    "siesaCode": "1370013",
+    "name": "TUBU SALCHICHON CERVECERO VIANDE X 225G"
+  },
+  {
+    "siesaCode": "1370014",
+    "name": "TUBU SALCHICHON CERVECERO FAIZAN 1500G"
+  },
+  {
+    "siesaCode": "1370015",
+    "name": "TUBU SALCHICHON CERVECERO FAIZAN 750G"
+  },
+  {
+    "siesaCode": "1370016",
+    "name": "TUBU SALCHICHON CERVECERO FAIZAN X 500G"
+  },
+  {
+    "siesaCode": "1370017",
+    "name": "TUBU SALCHICHON POLLO BRAKEL X 500G"
+  },
+  {
+    "siesaCode": "1370018",
+    "name": "TUBU SALCHICHON POLLO BRAKEL 225G"
+  },
+  {
+    "siesaCode": "1370019",
+    "name": "TUBU SALCHICHON TRADICI VIANDE X 500G"
+  },
+  {
+    "siesaCode": "1370020",
+    "name": "TUBU SALCHICHON POLL FAIZAN X 225G"
+  },
+  {
+    "siesaCode": "1370021",
+    "name": "TUBU SALCHICHON AUTENTICO X750 G"
+  },
+  {
+    "siesaCode": "1370025",
+    "name": "TUBU SALCHICHON CERVECERO FAIZAN X 1300G"
+  },
+  {
+    "siesaCode": "1370026",
+    "name": "MALLA JIF PAK 08SQRU 45MR SM4"
+  },
+  {
+    "siesaCode": "1370027",
+    "name": "MALLA ZIP-NET-28-P368/50GR- ROJA Y VERDE"
+  },
+  {
+    "siesaCode": "1370028",
+    "name": "FUNDA CELULOSA 26 X 84"
+  },
+  {
+    "siesaCode": "1370029",
+    "name": "FUNDA COLAGENO NDX F 28 / 50"
+  },
+  {
+    "siesaCode": "1370030",
+    "name": "FUNDA CELULOSA 19 X 125"
+  },
+  {
+    "siesaCode": "1370031",
+    "name": "FUNDA CELULOSA 20 X 110"
+  },
+  {
+    "siesaCode": "1370032",
+    "name": "FUNDA CELULOSA 17X95"
+  },
+  {
+    "siesaCode": "1370035",
+    "name": "FUNDA CELULOSA 24X84"
+  },
+  {
+    "siesaCode": "1370036",
+    "name": "FUNDA CELULOSA 28X84"
+  },
+  {
+    "siesaCode": "1370039",
+    "name": "FUNDA COLAGENO NDX 17/50"
+  },
+  {
+    "siesaCode": "1370040",
+    "name": "FUNDA COLAGENO NDX 23/50"
+  },
+  {
+    "siesaCode": "1370041",
+    "name": "TUBU SALCHICHON CERVECERO FAIZAN 225G"
+  },
+  {
+    "siesaCode": "1370047",
+    "name": "PLASTICA AHUMADA BTM CAL 540 X 123 CM"
+  },
+  {
+    "siesaCode": "1370048",
+    "name": "FIBROSA NALO P CLEAR 53 MM"
+  },
+  {
+    "siesaCode": "1370049",
+    "name": "TUBULAR EMBUTIDO 90 MM MILANESA TRADE"
+  },
+  {
+    "siesaCode": "1370051",
+    "name": "TRIPA PLASTICA MRB 190 AZUL EASY PEEL"
+  },
+  {
+    "siesaCode": "1380002",
+    "name": "CLIPS HC25-3218T"
+  },
+  {
+    "siesaCode": "1380003",
+    "name": "LAZOS POLY-CLIP GSA20"
+  },
+  {
+    "siesaCode": "1380004",
+    "name": "GRAPAS POLY-CLIP R15-07"
+  },
+  {
+    "siesaCode": "1380005",
+    "name": "GRAPAS POLY- R-ID M 07-150"
+  },
+  {
+    "siesaCode": "2903001",
+    "name": "PIERNA DESGRASADA MOLIENDA DISCO RIÑON"
+  },
+  {
+    "siesaCode": "2903002",
+    "name": "REPELE CHARQUEADO"
+  },
+  {
+    "siesaCode": "2903003",
+    "name": "BRAZUELO CHARQUEADO"
+  },
+  {
+    "siesaCode": "2904002",
+    "name": "MOLIEN EMULSION DE PIEL DE CERDO"
+  },
+  {
+    "siesaCode": "2906001",
+    "name": "EMULSION DE PIEL DE CERDO"
+  },
+  {
+    "siesaCode": "2906002",
+    "name": "GRANULOS"
+  },
+  {
+    "siesaCode": "2917001",
+    "name": "ABLANDADO EMULSION DE PIEL DE CERDO"
+  },
+  {
+    "siesaCode": "ablandador",
+    "name": "Ablandador (Soft skin opti)"
+  },
+  {
+    "siesaCode": "acetato-de-potasio",
+    "name": "Acetato de Potasio"
+  },
+  {
+    "siesaCode": "acetato-de-sodio",
+    "name": "Acetato de Sodio"
+  },
+  {
+    "siesaCode": "aditivo-burger-meat-80b",
+    "name": "Aditivo Burger Meat 80B NAT"
+  },
+  {
+    "siesaCode": "agua",
+    "name": "Agua"
+  },
+  {
+    "siesaCode": "ahumado-tocineta-85812b",
+    "name": "Ahumado tocineta 85812B"
+  },
+  {
+    "siesaCode": "ajo-molido",
+    "name": "Ajo molido"
+  },
+  {
+    "siesaCode": "almid-n-de-papa",
+    "name": "Almidón de Papa"
+  },
+  {
+    "siesaCode": "almid-n-de-yuca",
+    "name": "Almidón de Yuca"
+  },
+  {
+    "siesaCode": "almid-n-modificado-de-ma-z",
+    "name": "Almidón modificado de maíz"
+  },
+  {
+    "siesaCode": "apanado",
+    "name": "Apanado"
+  },
+  {
+    "siesaCode": "arcon-t",
+    "name": "Arcon T (Proteína de Soya 70% Hojuelas)"
+  },
+  {
+    "siesaCode": "aroma-carne",
+    "name": "Aroma Carne"
+  },
+  {
+    "siesaCode": "aroma-schon-de-pollo",
+    "name": "Aroma Schon de Pollo"
+  },
+  {
+    "siesaCode": "az-car",
+    "name": "Azúcar"
+  },
+  {
+    "siesaCode": "barriguero-de-cerdo",
+    "name": "Barriguero de cerdo"
+  },
+  {
+    "siesaCode": "batido",
+    "name": "Batido"
+  },
+  {
+    "siesaCode": "bombal-fresh-amba-os",
+    "name": "Bombal Fresh Amba oS"
+  },
+  {
+    "siesaCode": "bombal-vnx",
+    "name": "Bombal VNX"
+  },
+  {
+    "siesaCode": "brazuelo-de-cerdo",
+    "name": "Brazuelo de Cerdo"
+  },
+  {
+    "siesaCode": "brazuelo-de-cerdo-2",
+    "name": "Brazuelo de Cerdo (sin charquear)"
+  },
+  {
+    "siesaCode": "burguer-meat",
+    "name": "Burguer Meat"
+  },
+  {
+    "siesaCode": "carfosel",
+    "name": "Carfosel"
+  },
+  {
+    "siesaCode": "carnal-961",
+    "name": "Mezcla de Fosfatos Carnal 961"
+  },
+  {
+    "siesaCode": "carne-de-ternera",
+    "name": "Carne de Ternera"
+  },
+  {
+    "siesaCode": "carne-de-ternera-al-40",
+    "name": "Carne de Ternera al 40%"
+  },
+  {
+    "siesaCode": "carragenina",
+    "name": "Carragenina"
+  },
+  {
+    "siesaCode": "cebolla-en-polvo",
+    "name": "Cebolla en polvo"
+  },
+  {
+    "siesaCode": "cebolla-frita",
+    "name": "Cebolla Frita"
+  },
+  {
+    "siesaCode": "cebolla-puerro",
+    "name": "Cebolla Puerro"
+  },
+  {
+    "siesaCode": "cerdo-cocido",
+    "name": "Cerdo Cocido"
+  },
+  {
+    "siesaCode": "cervecero",
+    "name": "Cervecero"
+  },
+  {
+    "siesaCode": "cervecero-premium-sv",
+    "name": "Cervecero premium SV"
+  },
+  {
+    "siesaCode": "chorizo-antioque-o-80489b",
+    "name": "Chorizo antioqueño 80489B"
+  },
+  {
+    "siesaCode": "chorizo-antioque-o-81110b",
+    "name": "Chorizo antioqueño 81110B"
+  },
+  {
+    "siesaCode": "chorizo-con-ternera",
+    "name": "Chorizo con ternera"
+  },
+  {
+    "siesaCode": "chorizo-de-cerdo",
+    "name": "Chorizo de Cerdo"
+  },
+  {
+    "siesaCode": "chorizo-santarrosano-81738c",
+    "name": "Chorizo Santarrosano 81738C"
+  },
+  {
+    "siesaCode": "cilantro-en-polvo",
+    "name": "Cilantro en polvo"
+  },
+  {
+    "siesaCode": "clavo-de-olor",
+    "name": "Clavo de olor"
+  },
+  {
+    "siesaCode": "cloruro-de-potasio-kcl",
+    "name": "Cloruro de Potasio (KCl)"
+  },
+  {
+    "siesaCode": "colag-nico-de-alta-funcionalidad-v-pro-95",
+    "name": "Colagénico de alta funcionalidad V-pro 95"
+  },
+  {
+    "siesaCode": "color-caramelo",
+    "name": "Color Caramelo"
+  },
+  {
+    "siesaCode": "color-loy",
+    "name": "Color Loy"
+  },
+  {
+    "siesaCode": "color-natural-hemoglobina-i-red",
+    "name": "Color Natural Hemoglobina I Red"
+  },
+  {
+    "siesaCode": "color-natural-naranja-pr801wd",
+    "name": "Color Natural Naranja PR801WD"
+  },
+  {
+    "siesaCode": "color-natural-rojo-ac150",
+    "name": "Color Natural Rojo AC150"
+  },
+  {
+    "siesaCode": "color-natural-rojo-ac305",
+    "name": "Color Natural Rojo AC305RWS"
+  },
+  {
+    "siesaCode": "color-rojo-ac150",
+    "name": "Color rojo AC150"
+  },
+  {
+    "siesaCode": "comino-en-polvo",
+    "name": "Comino en polvo"
+  },
+  {
+    "siesaCode": "condimento-chorizo-me",
+    "name": "Condimento Chorizo ME"
+  },
+  {
+    "siesaCode": "conservante-inbac-acn-na",
+    "name": "Conservante INBAC ACN/NA"
+  },
+  {
+    "siesaCode": "conservante-provian-k",
+    "name": "Conservante Provian K"
+  },
+  {
+    "siesaCode": "dextrosa",
+    "name": "Dextrosa"
+  },
+  {
+    "siesaCode": "dioxido-de-titanio",
+    "name": "Dioxido de Titanio"
+  },
+  {
+    "siesaCode": "emulsi-n-de-piel-de-cerdo",
+    "name": "Emulsión de Piel de Cerdo"
+  },
+  {
+    "siesaCode": "enturbiante-dpa",
+    "name": "Enturbiante en Polvo DPA"
+  },
+  {
+    "siesaCode": "eritorbato-de-sodio",
+    "name": "Eritorbato de Sodio"
+  },
+  {
+    "siesaCode": "extracto-gp83p",
+    "name": "Extracto GP83P"
+  },
+  {
+    "siesaCode": "extracto-levadura",
+    "name": "Extracto levadura"
+  },
+  {
+    "siesaCode": "falda-de-res",
+    "name": "Falda de res"
+  },
+  {
+    "siesaCode": "glucono-delta-lactona",
+    "name": "Glucono Delta Lactona"
+  },
+  {
+    "siesaCode": "gr-nulos",
+    "name": "Gránulos"
+  },
+  {
+    "siesaCode": "gr-nulos-hidratados",
+    "name": "Gránulos Hidratados"
+  },
+  {
+    "siesaCode": "grasa-empella",
+    "name": "Grasa empella"
+  },
+  {
+    "siesaCode": "hemoglobina-de-cerdo",
+    "name": "Hemoglobina de Cerdo"
+  },
+  {
+    "siesaCode": "hielo-en-escamas",
+    "name": "Hielo en Escamas"
+  },
+  {
+    "siesaCode": "hot-dog",
+    "name": "Hot dog"
+  },
+  {
+    "siesaCode": "humo-chardex",
+    "name": "Humo Chardex"
+  },
+  {
+    "siesaCode": "humo-h-b",
+    "name": "Humo H&B"
+  },
+  {
+    "siesaCode": "humo-trusmoke-oil",
+    "name": "Humo TruSmoke Oil"
+  },
+  {
+    "siesaCode": "inbac-sin-sal",
+    "name": "INBAC sin sal"
+  },
+  {
+    "siesaCode": "jam-n-t",
+    "name": "Jamón T"
+  },
+  {
+    "siesaCode": "linicol",
+    "name": "Linicol"
+  },
+  {
+    "siesaCode": "mdm-nacional",
+    "name": "MDM Nacional"
+  },
+  {
+    "siesaCode": "mezcla-liq-para-saborizar-salchich-n",
+    "name": "Mezcla liq. Para saborizar salchichón"
+  },
+  {
+    "siesaCode": "mezcla-para-saborizar-salchicha",
+    "name": "Mezcla para saborizar Salchicha"
+  },
+  {
+    "siesaCode": "milanesa",
+    "name": "Milanesa"
+  },
+  {
+    "siesaCode": "mortadela",
+    "name": "Mortadela"
+  },
+  {
+    "siesaCode": "naranja-ra-40-3",
+    "name": "Naranja RA 40-3"
+  },
+  {
+    "siesaCode": "naranjapr80j-wd",
+    "name": "NaranjaPR80J WD"
+  },
+  {
+    "siesaCode": "neutralizador",
+    "name": "Neutralizador (Neutra opti)"
+  },
+  {
+    "siesaCode": "nisina",
+    "name": "Nisina (Conquímica)"
+  },
+  {
+    "siesaCode": "nisina-2",
+    "name": "Nisina (Handary)"
+  },
+  {
+    "siesaCode": "nuez-moscada",
+    "name": "Nuez moscada"
+  },
+  {
+    "siesaCode": "or-gano-molido",
+    "name": "Orégano molido"
+  },
+  {
+    "siesaCode": "papada-de-cerdo",
+    "name": "Papada de cerdo"
+  },
+  {
+    "siesaCode": "paprika-en-polvo",
+    "name": "Paprika en polvo"
+  },
+  {
+    "siesaCode": "pasta-de-pollo",
+    "name": "Pasta de Pollo"
+  },
+  {
+    "siesaCode": "pechuga-de-pollo",
+    "name": "Pechuga de Pollo"
+  },
+  {
+    "siesaCode": "perejil-molido",
+    "name": "Perejil molido"
+  },
+  {
+    "siesaCode": "piel-de-cerdo",
+    "name": "Piel de Cerdo"
+  },
+  {
+    "siesaCode": "piel-de-cerdo-2",
+    "name": "Piel de cerdo"
+  },
+  {
+    "siesaCode": "piel-de-pollo",
+    "name": "Piel de Pollo"
+  },
+  {
+    "siesaCode": "pierna-de-cerdo",
+    "name": "Pierna de Cerdo"
+  },
+  {
+    "siesaCode": "pierna-de-cerdo-2",
+    "name": "Pierna de Cerdo (sin charquear)"
+  },
+  {
+    "siesaCode": "pimenton-picante",
+    "name": "Pimenton picante"
+  },
+  {
+    "siesaCode": "pimienta-blanca-en-polvo",
+    "name": "Pimienta blanca en polvo"
+  },
+  {
+    "siesaCode": "pimienta-cayena-en-polvo",
+    "name": "Pimienta cayena en polvo"
+  },
+  {
+    "siesaCode": "pimienta-negra-en-polvo",
+    "name": "Pimienta negra en polvo"
+  },
+  {
+    "siesaCode": "pirofosfato-cido-de-sodio",
+    "name": "Pirofosfato ácido de sodio"
+  },
+  {
+    "siesaCode": "plasma-de-cerdo-vepro-75-psc",
+    "name": "Plasma de cerdo Vepro 75 PSC"
+  },
+  {
+    "siesaCode": "pok",
+    "name": "POK"
+  },
+  {
+    "siesaCode": "pollo-asado",
+    "name": "Pollo asado"
+  },
+  {
+    "siesaCode": "preparado-sabor-chorizo-cerdo",
+    "name": "Preparado Sabor Chorizo Cerdo"
+  },
+  {
+    "siesaCode": "preparado-sabor-chorizo-ternera",
+    "name": "Preparado Sabor Chorizo Ternera"
+  },
+  {
+    "siesaCode": "preparado-sabor-jamon-california",
+    "name": "Preparado Sabor Jamón California"
+  },
+  {
+    "siesaCode": "prote-na-aislada-de-soya-wilpro-i200",
+    "name": "Proteína aislada de soya Wilpro I200"
+  },
+  {
+    "siesaCode": "prote-na-concentrada-de-soya-al-65",
+    "name": "Proteína concentrada de Soya al 65%"
+  },
+  {
+    "siesaCode": "prote-na-concentrada-de-soya-al-70",
+    "name": "Proteína concentrada de Soya al 70%"
+  },
+  {
+    "siesaCode": "prote-na-texturizada-de-soya-al-70",
+    "name": "Proteína texturizada de Soya al 70%"
+  },
+  {
+    "siesaCode": "prote-na-texturizada-de-trigo",
+    "name": "Proteína texturizada de trigo"
+  },
+  {
+    "siesaCode": "prote-na-texturizada-de-trigo-snips",
+    "name": "Proteína texturizada de trigo snips"
+  },
+  {
+    "siesaCode": "proteina-caramelo-48mm",
+    "name": "Proteína Caramelo 4.8mm"
+  },
+  {
+    "siesaCode": "proteina-colagenica-alta-funcionalidad",
+    "name": "Proteína Colagénica Alta Funcionalidad"
+  },
+  {
+    "siesaCode": "proteina-concentrada-de-soya-65",
+    "name": "Proteína Concentrada de Soya 65%"
+  },
+  {
+    "siesaCode": "proteina-concentrada-de-soya-70",
+    "name": "Proteína Concentrada de Soya 70%"
+  },
+  {
+    "siesaCode": "proteina-texturizada-de-soya-70",
+    "name": "Proteína Texturizada de Soya 70%"
+  },
+  {
+    "siesaCode": "provian-k",
+    "name": "Provian K (Diacetato de Potasio)"
+  },
+  {
+    "siesaCode": "pvh-l-quida",
+    "name": "PVH Líquida"
+  },
+  {
+    "siesaCode": "recorte-70-30",
+    "name": "Recorte de Cerdo 70/30"
+  },
+  {
+    "siesaCode": "recorte-80-20",
+    "name": "Recorte 80 - 20"
+  },
+  {
+    "siesaCode": "recorte-80-20-emulsificados",
+    "name": "Recorte de Cerdo 80/20 Emulsificados"
+  },
+  {
+    "siesaCode": "recorte-80-20-importado",
+    "name": "Recorte de Cerdo 80/20 Importado"
+  },
+  {
+    "siesaCode": "recorte-80-20-mezclados",
+    "name": "Recorte de Cerdo 80/20 Mezclados"
+  },
+  {
+    "siesaCode": "recorte-de-pechuga-95-5",
+    "name": "Recorte de Pechuga 95/5 sin Piel"
+  },
+  {
+    "siesaCode": "repele",
+    "name": "Repele (Recorte 72 - 28)"
+  },
+  {
+    "siesaCode": "reproceso-jam-n-de-cerdo",
+    "name": "Reproceso Jamón de Cerdo"
+  },
+  {
+    "siesaCode": "reproceso-mortadela",
+    "name": "Reproceso Mortadela"
+  },
+  {
+    "siesaCode": "sabor-ahumado-grill",
+    "name": "Sabor Ahumado Grill Líquido"
+  },
+  {
+    "siesaCode": "sabor-cervecero-premium-sv-ls",
+    "name": "Sabor cervecero premium SV LS"
+  },
+  {
+    "siesaCode": "sal",
+    "name": "Sal"
+  },
+  {
+    "siesaCode": "sal-curante",
+    "name": "Sal curante"
+  },
+  {
+    "siesaCode": "sal-curante-al-12",
+    "name": "Sal Curante al 12%"
+  },
+  {
+    "siesaCode": "sal-reducida-en-sodio",
+    "name": "Sal reducida en sodio (60%)"
+  },
+  {
+    "siesaCode": "salchich-n-de-pollo",
+    "name": "Salchichón de Pollo"
+  },
+  {
+    "siesaCode": "salchich-n-tradicional",
+    "name": "Salchichón tradicional"
+  },
+  {
+    "siesaCode": "salchicha-manguera",
+    "name": "Salchicha Manguera"
+  },
+  {
+    "siesaCode": "solu-tex-grasas-neutro",
+    "name": "Solu-Tex Grasas Neutro"
+  },
+  {
+    "siesaCode": "solutex-grasas",
+    "name": "Solutex grasas"
+  },
+  {
+    "siesaCode": "supra-meat",
+    "name": "Supra meat"
+  },
+  {
+    "siesaCode": "supramix",
+    "name": "Supramix (sodio al 50%)"
+  },
+  {
+    "siesaCode": "tari-k",
+    "name": "Tari K"
+  },
+  {
+    "siesaCode": "taroma-ham",
+    "name": "Taroma Ham"
+  },
+  {
+    "siesaCode": "tbbq-gsf-dry",
+    "name": "TBBQ GSF Dry"
+  },
+  {
+    "siesaCode": "tocino-de-cerdo",
+    "name": "Tocino de Cerdo"
+  },
+  {
+    "siesaCode": "tomate-en-polvo",
+    "name": "Tomate en polvo"
+  },
+  {
+    "siesaCode": "tomillo-molido",
+    "name": "Tomillo molido"
+  },
+  {
+    "siesaCode": "transglutaminasa",
+    "name": "Transglutaminasa"
+  },
+  {
+    "siesaCode": "transglutaminasa-meat-plus-874",
+    "name": "Transglutaminasa Meat Plus 874"
+  },
+  {
+    "siesaCode": "transglutaminasa-prolink-mb-mm",
+    "name": "Transglutaminasa Prolink MB-MM"
+  },
+  {
+    "siesaCode": "tru-bbq",
+    "name": "Tru BBQ"
+  },
+  {
+    "siesaCode": "trusmoke-25",
+    "name": "Trusmoke 25"
+  },
+  {
+    "siesaCode": "trusmoke-dry",
+    "name": "Trusmoke Dry"
+  },
+  {
+    "siesaCode": "trusmoke-oil-ex",
+    "name": "Trusmoke oil ex"
+  },
+  {
+    "siesaCode": "vinagre",
+    "name": "Vinagre"
+  }
+]

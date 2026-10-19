@@ -1,0 +1,38 @@
+[
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments1.xml",
+    "cell": "F28",
+    "text": "FAIZAN:\nCambio a lamina impresa\n"
+  },
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments2.xml",
+    "cell": "C13",
+    "text": "Analista ID:\nTecnas: 54,208\nVisdecol: 99,488"
+  },
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments2.xml",
+    "cell": "C21",
+    "text": "Analista ID:\nTecnas: 86900\nVisdecol: 125,000\n"
+  },
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments2.xml",
+    "cell": "C22",
+    "text": "Analista ID:\nVisdecol 1 kg: 21,23\n22kg: 20,66\n"
+  },
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments2.xml",
+    "cell": "C23",
+    "text": "Analista ID:\nVisdecol:29,263\n"
+  },
+  {
+    "file": "Junio (1).xlsx",
+    "xmlPart": "xl/comments3.xml",
+    "cell": "E42",
+    "text": "Analista ID:\nPL500072550-1          MRB 190 AZUL EASY PEEL \nPrecio x mto: us 0,3066."
+  }
+]

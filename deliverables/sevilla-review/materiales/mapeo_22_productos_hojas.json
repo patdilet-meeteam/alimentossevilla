@@ -1,0 +1,81 @@
+{
+  "cervecero": [
+    "CERVECERO 500",
+    "CERVECERO 750",
+    "CERVECERO 1300",
+    "CERVECERO 1500"
+  ],
+  "cervecero-fzan": [
+    "CERVECERO FZAN  225"
+  ],
+  "chorizo-santa-coctel-x": [
+    "CHORIZO SANTA COCTEL x 300",
+    "CHORIZO SANTA COCTEL x 1000"
+  ],
+  "chorizo-santa-corto": [
+    "CHORIZO SANTA CORTO 480 "
+  ],
+  "chorizo-santa-largo-x": [
+    "CHORIZO SANTA LARGO x 1200 "
+  ],
+  "chrz-con-ternera": [
+    "CHRZ CON TERNERA 110 G 2 UND"
+  ],
+  "explosi-n-me-dic": [
+    "EXPLOSION ME DIC 2022",
+    "EXPLOSIÓN ME DIC 2022"
+  ],
+  "jmn-premium": [
+    "JMN PREMIUM 400 G"
+  ],
+  "jmn-sdw-exito-x": [
+    "JMN SDW  EXITO X 225 "
+  ],
+  "mdela-viand-x": [
+    "MDELA VIANDÉ X 225 G 14 UND ",
+    "MDELA VIANDÉ X 225 G - 17 UND S"
+  ],
+  "mnesa-apanada": [
+    "MNESA APANADA 240 G 2 UNDS",
+    "MNESA APANADA 600 G 5 UNDS",
+    "MNESA APANADA 1800 G 15 UND"
+  ],
+  "morta-jamonada": [
+    "MORTA JAMONADA 400"
+  ],
+  "mortadela-jamon-x": [
+    "MORTADELA JAMON X 225 "
+  ],
+  "scha-institu-x": [
+    "SCHA INSTITU x 1200"
+  ],
+  "scha-viand": [
+    "SCHA VIANDÉ   225 G 8 UNDS",
+    "SCHA VIANDÉ 450 G - 16 UNDS",
+    "SCHA VIANDÉ 400 G "
+  ],
+  "schon-autentico-x": [
+    "SCHON AUTENTICO X 225 G",
+    "SCHON AUTENTICO X 750 G"
+  ],
+  "schon-cerv-viand-x": [
+    "SCHON CERV VIANDÉ X 225 G"
+  ],
+  "schon-pollo-brakel-x": [
+    "SCHON POLLO BRAKEL X 225",
+    "SCHON POLLO BRAKEL X 500"
+  ],
+  "schon-pollo-x": [
+    "SCHON POLLO X 225 G"
+  ],
+  "schon-trad-viand-x": [
+    "SCHON TRAD VIANDÉ X 500 "
+  ],
+  "snack-cerv-prem-x": [
+    "SNACK  CERV PREM X 50 G "
+  ],
+  "super-perro-x": [
+    "SUPER PERRO X 2500",
+    "SUPER PERRO X 2500 RX"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "browser": "Chrome/155.0.8059.82",
+  "scope": "Isolated installed Chrome/CDP; no personal session, production or current selection",
+  "screenshots": [
+    "desktop-producto.png",
+    "desktop-selector-variantes.png"
+  ],
+  "checks": [
+    {
+      "name": "Desktop source, warnings and missing nutrition",
+      "passed": true
+    },
+    {
+      "name": "Variant changed by real pointer interaction",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "result": "FAIL",
+  "failure": "Expected browser state missing: document.querySelector('[aria-label=\"Revisión de fuente y cobertura\"] details').open",
+  "cleanup": {
+    "users": 0,
+    "accounts": 0,
+    "sessions": 0,
+    "approvedVersions": 0
+  }
+}

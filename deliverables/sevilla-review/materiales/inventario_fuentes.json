@@ -1,0 +1,266 @@
+[
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/cost_import_history.csv",
+    "rows": 1,
+    "columns": [
+      "localId",
+      "periodStart",
+      "sourceFileName",
+      "status",
+      "rowCount",
+      "validItemCount",
+      "warningCount",
+      "appliedAt",
+      "hasApprover"
+    ],
+    "sha256": "20f2570b6a47c9d16685dbab25d9bdea6537663ce3d8770a40bda9deebde38fb"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/cost_import_items_history.csv",
+    "rows": 279,
+    "columns": [
+      "costImportId",
+      "periodStart",
+      "costImportStatus",
+      "sourceRow",
+      "sourceCode",
+      "description",
+      "unit",
+      "unitCost",
+      "codeType",
+      "status",
+      "issues",
+      "ingredientSiesaCode"
+    ],
+    "sha256": "841667788b456f60fdfc85dc1e58ea103224ef5effc1a2fbc70e01dc42c97f65"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/effective_costs.csv",
+    "rows": 0,
+    "columns": [],
+    "sha256": "529f0212b1624db26044e4a72414b4a640a47dda21ebe1614d6867e5bc1b9075"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/formulation_approval_provenance.csv",
+    "rows": 3,
+    "columns": [
+      "productCode",
+      "sequence",
+      "status",
+      "auditAction",
+      "approvalSource",
+      "reason",
+      "timestamp"
+    ],
+    "sha256": "96ce3c55b0ff3dad2a0d01eef8910ad27366fdf14237735c1d49c146520d0123"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/formulation_ingredients.csv",
+    "rows": 312,
+    "columns": [
+      "productCode",
+      "versionSequence",
+      "ingredientSiesaCode",
+      "ingredientName",
+      "participationPercent",
+      "canonicalQuantity",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "7d6d3909c155f606b46086bb9f19080730b5ff81d715278576dd65868662176d"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/formulation_versions.csv",
+    "rows": 20,
+    "columns": [
+      "localId",
+      "productCode",
+      "sequence",
+      "status",
+      "expectedYield",
+      "validFrom",
+      "approvedAt",
+      "hasApprover",
+      "nutritionSourceSnapshot",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "c954258dd3d9018ec4e60c507c3245c0ee18a0e455cbfa7c03d9f27b94610b96"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/formulations.csv",
+    "rows": 18,
+    "columns": [
+      "localId",
+      "productCode",
+      "baseCalculation",
+      "expectedYield",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "3e04d95c8e4b50bb0cee5a13143a5cec2ac2137cf8a296f75c3b84ce65f30f0a"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/ingredients_active.csv",
+    "rows": 430,
+    "columns": [
+      "localId",
+      "siesaCode",
+      "localCodeValidationPass",
+      "name",
+      "genericName",
+      "category",
+      "isAllergen",
+      "allergenTags",
+      "isActive",
+      "pendingReview",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "5dfecd730a4513c2a20ef3639730cb029857e6ece268660ca706ce6fd41959dd"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/nutrient_catalog.csv",
+    "rows": 51,
+    "columns": [
+      "key",
+      "displayName",
+      "unit",
+      "isRequiredOnLabel"
+    ],
+    "sha256": "1e87b5982d260f79f16de775264c2c26469c36b2e986dc2aea31f1db7324d15c"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/nutrient_key_coverage.csv",
+    "rows": 51,
+    "columns": [
+      "nutrientKey",
+      "displayName",
+      "unit",
+      "valuesStored",
+      "uiMapping"
+    ],
+    "sha256": "ec9277259714295fd3f10f88af1425dbac5bc58ada567a6a11b2e0882b563a2c"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/nutrient_values_active.csv",
+    "rows": 2754,
+    "columns": [
+      "localProfileId",
+      "ingredientSiesaCode",
+      "source",
+      "sourceDetail",
+      "originClass",
+      "validFrom",
+      "referenceBase",
+      "nutrientKey",
+      "nutrientName",
+      "unit",
+      "isRequiredOnLabel",
+      "value",
+      "method"
+    ],
+    "sha256": "7fda1528f93cec2fa7869d1d3623018b5a8223faa953011e8ee1a34f0b5ff6ae"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/nutritional_import_audit_summary.csv",
+    "rows": 1,
+    "columns": [
+      "action",
+      "sourceFileName",
+      "sheet",
+      "importedCount",
+      "unmatchedCount"
+    ],
+    "sha256": "9c2c7e40cdb10236b1f2796850df10f7834c5cba247e6768745bed2398e26f7b"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/nutritional_profiles_active.csv",
+    "rows": 151,
+    "columns": [
+      "localProfileId",
+      "ingredientSiesaCode",
+      "source",
+      "sourceDetail",
+      "originClass",
+      "validFrom",
+      "referenceBase",
+      "isActive",
+      "createdAt",
+      "valueCount",
+      "nutrientKeys"
+    ],
+    "sha256": "53d93885df06ac7164452a45aff747d2d4dcadecaa0c40ffa5d6ab3daf340f1d"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/presentations_active.csv",
+    "rows": 65,
+    "columns": [
+      "localId",
+      "productCode",
+      "netWeight",
+      "unitsPerPackage",
+      "declaredPortion",
+      "portionsPerPackage",
+      "isActive",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "0c71fb50f9d7b7fd9e90c30f343cf735a04d4a56eeda993dc25d70d5749610d6"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/products_active.csv",
+    "rows": 41,
+    "columns": [
+      "localId",
+      "internalCode",
+      "commercialName",
+      "category",
+      "description",
+      "isActive",
+      "createdAt",
+      "updatedAt"
+    ],
+    "sha256": "108dcc7014f5d266e1ecb83e7806db03dc9d6732210eaf6403c5fea7a8da66a2"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_local_snapshot_2026-10-09/regulatory_parameter_versions.csv",
+    "rows": 1,
+    "columns": [
+      "version",
+      "sodiumMgPer100g",
+      "energyPercentageThreshold",
+      "fatTransPercentageThreshold",
+      "createdAt",
+      "effectiveAt"
+    ],
+    "sha256": "7b433d4fe80b1f428f7c239594834e057a534371fe4112e8c490d004dbcd564d"
+  },
+  {
+    "path": "/Users/patmac/Documents/Codex/2026-10-09/task-2/alimentos_sevilla_admin_migration_kit_2026-10-09/data/payload.json",
+    "sha256": "04249ff87b77c4164191d19a5bcb6ef3684d04146c127aec9b57baacd478862c",
+    "counts": {
+      "ingredients": 430,
+      "products": 39,
+      "presentations": 63,
+      "nutrientCatalog": 51,
+      "nutritionalProfiles": 18,
+      "formulations": 17,
+      "formulationVersions": 18,
+      "formulationIngredients": 275,
+      "requiredMigrations": 10
+    }
+  },
+  {
+    "path": "<REPO_ORIGINAL>/deliverables/alimentos_sevilla_admin_migration_kit_2026-10-09.zip",
+    "sha256": "41b6f376fc9dbd79bf26fe2cd837931abac8870f03af6c943c8d4199d0ed7671"
+  },
+  {
+    "path": "<FUENTES_ORIGINALES>/Junio (1).xlsx",
+    "sha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27"
+  },
+  {
+    "path": "<FUENTES_ORIGINALES>/Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+    "sha256": "a9f74a8ec998761582e56fe7295b0303f2ced9bfce532e3d1f5f53545ca2bedc"
+  }
+]

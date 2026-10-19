@@ -1,0 +1,1025 @@
+{
+  "scope": "ISOLATED_LOOPBACK_REHEARSAL_ONLY",
+  "before": {
+    "ingredients": 430,
+    "products": 39,
+    "presentations": 63,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "profiles": 18,
+    "activeProfiles": 18,
+    "nutrientValues": 306,
+    "approvedVersions": 0
+  },
+  "first": {
+    "created": 53,
+    "identical": 0,
+    "deactivatedPreviousProfiles": 3
+  },
+  "after": {
+    "ingredients": 430,
+    "products": 39,
+    "presentations": 63,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "profiles": 71,
+    "activeProfiles": 68,
+    "nutrientValues": 1206,
+    "approvedVersions": 0
+  },
+  "second": {
+    "created": 0,
+    "identical": 53,
+    "deactivatedPreviousProfiles": 0
+  },
+  "afterSecond": {
+    "ingredients": 430,
+    "products": 39,
+    "presentations": 63,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "profiles": 71,
+    "activeProfiles": 68,
+    "nutrientValues": 1206,
+    "approvedVersions": 0
+  },
+  "idempotent": true,
+  "productCoverage": {
+    "total": 39,
+    "ready": 1,
+    "mathematicallyReady": 3,
+    "sourceRecipeConflicts": 2,
+    "missingProfileRecipes": 14,
+    "incomplete": 16,
+    "noFormulation": 22
+  },
+  "products": [
+    {
+      "productCode": "cervecero",
+      "productName": "Cervecero",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "cervecero-fzan",
+      "productName": "Cervecero Fzan",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "chorizo-con-ternera",
+      "productName": "Chorizo Con Ternera",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.99900000000000001",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "color-natural-hemoglobina-i-red",
+          "name": "Color Natural Hemoglobina I Red",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "preparado-sabor-chorizo-ternera",
+          "name": "Preparado Sabor Chorizo Ternera",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "chorizo-de-cerdo",
+      "productName": "Chorizo De Cerdo",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100",
+      "exact100": true,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "preparado-sabor-chorizo-cerdo",
+          "name": "Preparado Sabor Chorizo Cerdo",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "productName": "Chorizo Santa Coctel X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "chorizo-santa-corto",
+      "productName": "Chorizo Santa Corto",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "chorizo-santa-largo-x",
+      "productName": "Chorizo Santa Largo X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "chorizo-santarrosano-x",
+      "productName": "Chorizo Santarrosano X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.968",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "carnal-961",
+          "name": "Mezcla de Fosfatos Carnal 961",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "mdm-nacional",
+          "name": "MDM Nacional",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "preparado-sabor-chorizo-ternera",
+          "name": "Preparado Sabor Chorizo Ternera",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "recorte-70-30",
+          "name": "Recorte de Cerdo 70/30",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "chrz-con-ternera",
+      "productName": "Chrz Con Ternera",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "explosi-n-me-dic",
+      "productName": "Explosión Me Dic",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "hsa",
+      "productName": "Hsa",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100.01580000000000001",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "aditivo-burger-meat-80b",
+          "name": "Aditivo Burger Meat 80B NAT",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "color-natural-hemoglobina-i-red",
+          "name": "Color Natural Hemoglobina I Red",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "recorte-80-20-emulsificados",
+          "name": "Recorte de Cerdo 80/20 Emulsificados",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "hsa-cja",
+      "productName": "Hsa Cja",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.99990000000000001",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "aditivo-burger-meat-80b",
+          "name": "Aditivo Burger Meat 80B NAT",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "color-natural-hemoglobina-i-red",
+          "name": "Color Natural Hemoglobina I Red",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "jmn-premium",
+      "productName": "Jmn Premium",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "jmn-premium-fzan",
+      "productName": "Jmn Premium Fzan",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.82039999999999971",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "hielo-en-escamas",
+          "name": "Hielo en Escamas",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "proteina-colagenica-alta-funcionalidad",
+          "name": "Proteína Colagénica Alta Funcionalidad",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "jmn-sdw-exito-x",
+      "productName": "Jmn Sdw Exito X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "jmn-sdw-fzan-x",
+      "productName": "Jmn Sdw Fzan X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100.00199999999999999",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "color-natural-hemoglobina-i-red",
+          "name": "Color Natural Hemoglobina I Red",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "proteina-colagenica-alta-funcionalidad",
+          "name": "Proteína Colagénica Alta Funcionalidad",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "productName": "Mdela Viandé X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "mega-combo-faizan",
+      "productName": "Mega Combo Faizan",
+      "sourceConflict": "Receta sin reconciliar con la fuente: Junio (1).xlsx / MEGA COMBO FAIZAN 675 G / B5:E7: paquete de tres productos terminados; no mortadela y sal50/50.",
+      "mathematicallyReady": true,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100",
+      "exact100": true,
+      "nutritionReady": false,
+      "missing": [],
+      "calculation": {
+        "per100g": {
+          "MOISTURE": "1.14",
+          "FAT_TOTAL": "48.96",
+          "FAT_SAT": "8.05",
+          "FAT_TRANS": "0.5",
+          "CHOLESTEROL": "0",
+          "PROTEIN": "0",
+          "CARBS_TOTAL": "0",
+          "SUGAR_TOTAL": "0",
+          "SUGAR_ADDED": "0",
+          "STARCH": "0",
+          "FIBER": "0",
+          "SODIUM": "19390.5",
+          "CALCIUM": "12",
+          "IRON": "0.15",
+          "ZINC": "0.05",
+          "VITAMIN_A": "0",
+          "VITAMIN_D": "0"
+        },
+        "energyKcalPer100g": "441",
+        "totalQuantity": "100"
+      },
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "productName": "Mnesa Apanada",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "morta-jamonada",
+      "productName": "Morta Jamonada",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "mortadela-jamon-x",
+      "productName": "Mortadela Jamon X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "perro-caliente-viande-x",
+      "productName": "Perro Caliente Viande X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.95",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "recorte-80-20-importado",
+          "name": "Recorte de Cerdo 80/20 Importado",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "s-per-combo-viand",
+      "productName": "Súper Combo Viandé",
+      "sourceConflict": "Receta sin reconciliar con la fuente: Junio (1).xlsx / SÚPER COMBO VIANDÉ 900 G / B5:E8: paquete de cuatro productos terminados; no mortadela y sal25/75.",
+      "mathematicallyReady": true,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100",
+      "exact100": true,
+      "nutritionReady": false,
+      "missing": [],
+      "calculation": {
+        "per100g": {
+          "MOISTURE": "0.67",
+          "FAT_TOTAL": "24.48",
+          "FAT_SAT": "4.025",
+          "FAT_TRANS": "0.25",
+          "CHOLESTEROL": "0",
+          "PROTEIN": "0",
+          "CARBS_TOTAL": "0",
+          "SUGAR_TOTAL": "0",
+          "SUGAR_ADDED": "0",
+          "STARCH": "0",
+          "FIBER": "0",
+          "SODIUM": "29085.75",
+          "CALCIUM": "18",
+          "IRON": "0.225",
+          "ZINC": "0.075",
+          "VITAMIN_A": "0",
+          "VITAMIN_D": "0"
+        },
+        "energyKcalPer100g": "216",
+        "totalQuantity": "100"
+      },
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "salchicha-desayuno-premium-480",
+      "productName": "SALCHICHA DESAYUNO PREMIUM 480 G",
+      "sourceConflict": null,
+      "mathematicallyReady": true,
+      "version": 3,
+      "state": "DRAFT",
+      "percentageSum": "99.999999999999999",
+      "exact100": false,
+      "nutritionReady": true,
+      "missing": [],
+      "calculation": {
+        "per100g": {
+          "CALCIUM": "12.317409293613253871",
+          "CARBS_TOTAL": "1.0811218510988875864",
+          "CHOLESTEROL": "48.086084582783411347",
+          "FAT_SAT": "3.505752252289178355",
+          "FAT_TOTAL": "9.4044542451244804774",
+          "FAT_TRANS": "0.020888291375310483905",
+          "FIBER": "0.0043138203251166107864",
+          "IRON": "0.7270715322124488675",
+          "MOISTURE": "71.066549140482182528",
+          "PROTEIN": "15.144142787756072368",
+          "SODIUM": "613.03673957060998303",
+          "STARCH": "0",
+          "SUGAR_ADDED": "0.6384081910367498176",
+          "SUGAR_TOTAL": "0.66351598940870748522",
+          "VITAMIN_A": "0.54739439448465820129",
+          "VITAMIN_D": "0.064556059252215400002",
+          "ZINC": "1.2869199176961479502"
+        },
+        "energyKcalPer100g": "145.4",
+        "totalQuantity": "487.948"
+      },
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-cl-sica",
+      "productName": "Scha Clásica",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.988500000000000801",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "solu-tex-grasas-neutro",
+          "name": "Solu-Tex Grasas Neutro",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-institu-x",
+      "productName": "Scha Institu X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "scha-jumbo-x",
+      "productName": "Scha Jumbo X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100.03",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "recorte-80-20-emulsificados",
+          "name": "Recorte de Cerdo 80/20 Emulsificados",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-manguera",
+      "productName": "Scha Manguera",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.9945",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "solu-tex-grasas-neutro",
+          "name": "Solu-Tex Grasas Neutro",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-perro-x",
+      "productName": "Scha Perro X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100.0860000000000008",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "solu-tex-grasas-neutro",
+          "name": "Solu-Tex Grasas Neutro",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-s-perro-x",
+      "productName": "Scha S. Perro X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "99.95",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "recorte-80-20-importado",
+          "name": "Recorte de Cerdo 80/20 Importado",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "scha-viand",
+      "productName": "Scha Viandé",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "productName": "Schon Autentico X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "schon-cerv-prem-x",
+      "productName": "Schon Cerv Prem X",
+      "sourceConflict": null,
+      "mathematicallyReady": false,
+      "version": 1,
+      "state": "DRAFT",
+      "percentageSum": "100.0484",
+      "exact100": false,
+      "nutritionReady": false,
+      "missing": [
+        {
+          "code": "cloruro-de-potasio-kcl",
+          "name": "Cloruro de Potasio (KCl)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "color-natural-hemoglobina-i-red",
+          "name": "Color Natural Hemoglobina I Red",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "proteina-colagenica-alta-funcionalidad",
+          "name": "Proteína Colagénica Alta Funcionalidad",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ],
+      "calculation": null,
+      "error": null,
+      "canApproveAutomatically": false,
+      "clientSpeciesRule": "PENDING_CLASSIFICATION"
+    },
+    {
+      "productCode": "schon-cerv-viand-x",
+      "productName": "Schon Cerv Viandé X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "productName": "Schon Pollo Brakel X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "schon-pollo-x",
+      "productName": "Schon Pollo X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "schon-trad-viand-x",
+      "productName": "Schon Trad Viandé X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "snack-cerv-prem-x",
+      "productName": "Snack Cerv Prem X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    },
+    {
+      "productCode": "super-perro-x",
+      "productName": "Super Perro X",
+      "status": "NO_FORMULATION",
+      "nutritionReady": false
+    }
+  ]
+}

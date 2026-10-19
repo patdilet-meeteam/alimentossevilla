@@ -1,0 +1,59 @@
+{
+  "browser": "Chrome/155.0.8059.82",
+  "scope": "Isolated installed Chrome/CDP; no personal session, production or current selection",
+  "screenshots": [
+    "desktop-producto.png",
+    "desktop-selector-variantes.png",
+    "desktop-fuente-reproceso.png",
+    "mobile-producto.png",
+    "mobile-fuente-reproceso.png",
+    "failure-state.png"
+  ],
+  "checks": [
+    {
+      "name": "Desktop source, warnings and missing nutrition",
+      "passed": true
+    },
+    {
+      "name": "Variant changed by real pointer interaction",
+      "passed": true
+    },
+    {
+      "name": "Uncoded reprocess visible",
+      "passed": true
+    },
+    {
+      "name": "Original formulas expanded",
+      "passed": true
+    },
+    {
+      "name": "Desktop no body horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "Mobile no body horizontal overflow",
+      "passed": true,
+      "detail": {
+        "viewport": 465,
+        "body": 465
+      }
+    },
+    {
+      "name": "ADMIN approve control present",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "result": "FAIL",
+  "failure": "Expected browser state missing: document.body.innerText.includes('La receta fuente requiere revisión')",
+  "cleanup": {
+    "users": 0,
+    "accounts": 0,
+    "sessions": 0,
+    "approvedVersions": 0
+  }
+}

@@ -1,0 +1,6853 @@
+{
+  "scope": "LOCAL_SOURCE_RECOVERY_VERIFIED_NOT_DEPLOYMENT",
+  "summary": {
+    "products": 39,
+    "productsWithFormulation": 38,
+    "productsWithoutFormulation": [
+      "explosi-n-me-dic"
+    ],
+    "recoveredProducts": 21,
+    "recoveredVersions": 33,
+    "recoveredSourceRows": 606,
+    "recoveredLinkedComponents": 597,
+    "recoveredVersionsWithExact100": 0,
+    "recoveredVersionsMissingNutrition": 33,
+    "bundleVersions": 4,
+    "bundleComponents": 14,
+    "approvedVersions": 0,
+    "invalidZeroIngredientCount": 0,
+    "users": 0,
+    "sessions": 0
+  },
+  "recipes": [
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 500",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "percentageSum": "111.970224509584545859",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230003",
+          "name": "PREPARADO SABOR CERVECERO NEO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 750",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "percentageSum": "100.019949777479426643",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230003",
+          "name": "PREPARADO SABOR CERVECERO NEO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1300",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "percentageSum": "100.019949777479426643",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230003",
+          "name": "PREPARADO SABOR CERVECERO NEO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "cervecero",
+      "sheet": "CERVECERO 1500",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 15,
+      "linkedComponents": 15,
+      "percentageSum": "100.019949777479426643",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230003",
+          "name": "PREPARADO SABOR CERVECERO NEO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "cervecero-fzan",
+      "sheet": "CERVECERO FZAN  225",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 14,
+      "linkedComponents": 14,
+      "percentageSum": "100.009949777479426643",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230003",
+          "name": "PREPARADO SABOR CERVECERO NEO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 300",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "percentageSum": "99.993000000000000421",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122008",
+          "name": "RECORTE CERDO 80/20 NAL MEZCLADOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230006",
+          "name": "PREPARADO SABOR CHORIZO TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230012",
+          "name": "CEBOLLA PUERRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250001",
+          "name": "COLOR CARAMELO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "chorizo-santa-coctel-x",
+      "sheet": "CHORIZO SANTA COCTEL x 1000",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "percentageSum": "100.001000000000001015",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_PERCENT_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122008",
+          "name": "RECORTE CERDO 80/20 NAL MEZCLADOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230006",
+          "name": "PREPARADO SABOR CHORIZO TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230012",
+          "name": "CEBOLLA PUERRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250001",
+          "name": "COLOR CARAMELO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "chorizo-santa-corto",
+      "sheet": "CHORIZO SANTA CORTO 480 ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "percentageSum": "100.001000000000001015",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_PERCENT_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122008",
+          "name": "RECORTE CERDO 80/20 NAL MEZCLADOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230006",
+          "name": "PREPARADO SABOR CHORIZO TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230012",
+          "name": "CEBOLLA PUERRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250001",
+          "name": "COLOR CARAMELO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "chorizo-santa-largo-x",
+      "sheet": "CHORIZO SANTA LARGO x 1200 ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 16,
+      "linkedComponents": 16,
+      "percentageSum": "100.001000000000001015",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_PERCENT_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122008",
+          "name": "RECORTE CERDO 80/20 NAL MEZCLADOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230006",
+          "name": "PREPARADO SABOR CHORIZO TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230012",
+          "name": "CEBOLLA PUERRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250001",
+          "name": "COLOR CARAMELO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "chrz-con-ternera",
+      "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 13,
+      "linkedComponents": 13,
+      "percentageSum": "99.998999999999998339",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1141001",
+          "name": "CARNE DE TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230006",
+          "name": "PREPARADO SABOR CHORIZO TERNERA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250002",
+          "name": "COLOR LOY NARANJA LIQ A10 1",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250005",
+          "name": "COLOR NATURAL NARANJA RA 40-3 9827",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "jmn-premium",
+      "sheet": "JMN PREMIUM 400 G",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "percentageSum": "100.120529643999996993",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122002",
+          "name": "PIERNA DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122001",
+          "name": "BRAZUELO DE CERDO NACIONAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1131001",
+          "name": "HIELO EN ESCAMAS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230008",
+          "name": "PREPARADO SABOR JAMON T 3391",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230010",
+          "name": "TAROMA HAM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260023",
+          "name": "TRANSGLUTAMINASA PROLINK MB-MM BOLSA 1KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "jmn-sdw-exito-x",
+      "sheet": "JMN SDW  EXITO X 225 ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 25,
+      "linkedComponents": 25,
+      "percentageSum": "100.202142184000002176",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_29_1260025"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122006",
+          "name": "BRAZUELO DE CERDO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122002",
+          "name": "PIERNA DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230008",
+          "name": "PREPARADO SABOR JAMON T 3391",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230010",
+          "name": "TAROMA HAM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260025",
+          "name": "SUPRAMEAT TG MEAT PLUS 874",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 17,
+      "linkedComponents": 17,
+      "percentageSum": "99.999999999999985878",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "MPCP031",
+          "name": "PASTA DE POLLO IMPORTADA TYSON USA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPII311",
+          "name": "AGUA POTABLE.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC012",
+          "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA144",
+          "name": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA154",
+          "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP044",
+          "name": "PASTA DE POLLO NACIONAL ALIPAQ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA168",
+          "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS150",
+          "name": "SAL YODADA REFISAL. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD168",
+          "name": "CARRAGENINA CEAMGEL M 9396. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPC122",
+          "name": "MEZCLA SABOR MORTADELA DROP TECH",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPN323",
+          "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD160",
+          "name": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS151",
+          "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS154",
+          "name": "PIMIENTA MOLIDA BLANCA. BOLSA X 1 KILO. (TECNAS)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS104",
+          "name": "AJO MOLIDO DESHIDRATADO B. 1. CAJA X 20 KILOS. (LA CAMPANA)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO214",
+          "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD161",
+          "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mdela-viand-x",
+      "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 24,
+      "linkedComponents": 24,
+      "percentageSum": "100.058999999999998616",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_12_1250009"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122001",
+          "name": "BRAZUELO DE CERDO NACIONAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210008",
+          "name": "PIROFOSFATO ACIDO DE SODIO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230017",
+          "name": "AROMA MORTADELA TRAD 88896B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 240 G 2 UNDS",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "percentageSum": "99.99999999999999128",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112005",
+          "name": "RECORTE DE PECHUGA 95 5 SIN PIEL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250007",
+          "name": "ENTURBIANTE EN POLVO DPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220008",
+          "name": "COMINO MOLIDO B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260008",
+          "name": "PROTEINA TEXTURIZADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260018",
+          "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 600 G 5 UNDS",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "percentageSum": "99.99999999999999128",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112005",
+          "name": "RECORTE DE PECHUGA 95 5 SIN PIEL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250007",
+          "name": "ENTURBIANTE EN POLVO DPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220008",
+          "name": "COMINO MOLIDO B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260008",
+          "name": "PROTEINA TEXTURIZADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260018",
+          "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mnesa-apanada",
+      "sheet": "MNESA APANADA 1800 G 15 UND",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 20,
+      "linkedComponents": 20,
+      "percentageSum": "99.99999999999999128",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112005",
+          "name": "RECORTE DE PECHUGA 95 5 SIN PIEL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250007",
+          "name": "ENTURBIANTE EN POLVO DPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220008",
+          "name": "COMINO MOLIDO B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260008",
+          "name": "PROTEINA TEXTURIZADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260018",
+          "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "morta-jamonada",
+      "sheet": "MORTA JAMONADA 400",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 22,
+      "linkedComponents": 21,
+      "percentageSum": "100.1995916081633584857",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "RECOVERY_BUG_OMITTED_CODELESS_REPROCESS_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1131001",
+          "name": "HIELO EN ESCAMAS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230008",
+          "name": "PREPARADO SABOR JAMON T 3391",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230010",
+          "name": "TAROMA HAM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260011",
+          "name": "ALMIDON DE PAPA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "mortadela-jamon-x",
+      "sheet": "MORTADELA JAMON X 225 ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 25,
+      "linkedComponents": 25,
+      "percentageSum": "99.469999999999999987",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "SOURCE_QUANTITY_TOTAL_RANGE_OMITS_MATERIAL_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_29_1260025"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122002",
+          "name": "PIERNA DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1131001",
+          "name": "HIELO EN ESCAMAS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230008",
+          "name": "PREPARADO SABOR JAMON T 3391",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230010",
+          "name": "TAROMA HAM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260009",
+          "name": "PROTEINA CONCENTRADA DE SOYA 70%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260025",
+          "name": "SUPRAMEAT TG MEAT PLUS 874",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "scha-institu-x",
+      "sheet": "SCHA INSTITU x 1200",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "percentageSum": "100.129999999999999172",
+      "blockedBySourceIssues": [
+        "INVALID_CODE_ROW_22",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_1121009",
+        "UNRESOLVED_SOURCE_ROW_22"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122006",
+          "name": "BRAZUELO DE CERDO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230020",
+          "name": "CILANTRO MOLIDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230022",
+          "name": "TOMATE EN POLVO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220001",
+          "name": "SABOR CERDO COCIDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "percentageSum": "100.000000000000013428",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_MPCP031"
+      ],
+      "missingNutrition": [
+        {
+          "code": "MPII311",
+          "name": "AGUA POTABLE.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP044",
+          "name": "PASTA DE POLLO NACIONAL ALIPAQ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP031",
+          "name": "PASTA DE POLLO IMPORTADA TYSON USA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC043",
+          "name": "TOCINO LOMO CONGELADO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA144",
+          "name": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC012",
+          "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA154",
+          "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA168",
+          "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA151",
+          "name": "PLASMA APROPORK. SACO X 20 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS150",
+          "name": "SAL YODADA REFISAL. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPC112",
+          "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLR191",
+          "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA134",
+          "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPN323",
+          "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD172",
+          "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS151",
+          "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO214",
+          "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD161",
+          "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO215",
+          "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "percentageSum": "100.000000000000037692",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_7_MPCP031"
+      ],
+      "missingNutrition": [
+        {
+          "code": "MPII311",
+          "name": "AGUA POTABLE.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP044",
+          "name": "PASTA DE POLLO NACIONAL ALIPAQ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP031",
+          "name": "PASTA DE POLLO IMPORTADA TYSON USA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC043",
+          "name": "TOCINO LOMO CONGELADO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA144",
+          "name": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC012",
+          "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA154",
+          "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA168",
+          "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA151",
+          "name": "PLASMA APROPORK. SACO X 20 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS150",
+          "name": "SAL YODADA REFISAL. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPC112",
+          "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLR191",
+          "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA134",
+          "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPN323",
+          "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD172",
+          "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS151",
+          "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO214",
+          "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD161",
+          "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO215",
+          "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "scha-viand",
+      "sheet": "SCHA VIANDÉ 400 G ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "percentageSum": "99.999999999999995534",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "BINARY_SERIALIZATION_RESIDUAL_ONLY_AT_THIS_DIAGNOSTIC_SCALE",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "MASTER_NAME_CONFLICT_5_MPII311",
+        "MASTER_NAME_CONFLICT_6_MPCP044",
+        "MASTER_NAME_CONFLICT_8_MPPA144"
+      ],
+      "missingNutrition": [
+        {
+          "code": "MPII311",
+          "name": "AGUA POTABLE.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCP044",
+          "name": "PASTA DE POLLO NACIONAL ALIPAQ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC012",
+          "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA144",
+          "name": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA132",
+          "name": "PROTEÍNA DE SOYA AL 65%. SACO X 20 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPCC043",
+          "name": "TOCINO LOMO CONGELADO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA168",
+          "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA151",
+          "name": "PLASMA APROPORK. SACO X 20 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS150",
+          "name": "SAL YODADA REFISAL. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPC112",
+          "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLR191",
+          "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA134",
+          "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPN323",
+          "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD172",
+          "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPS151",
+          "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPA158",
+          "name": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO214",
+          "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPPD161",
+          "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "MPLO215",
+          "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS.",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 225 G",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "percentageSum": "100.004301443000000422",
+      "blockedBySourceIssues": [
+        "INVALID_CODE_ROW_7",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220013",
+          "name": "AROMA SALCHICHON TRADICIONAL 84987B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-autentico-x",
+      "sheet": "SCHON AUTENTICO X 750 G",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "percentageSum": "100.004301443000000422",
+      "blockedBySourceIssues": [
+        "INVALID_CODE_ROW_7",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220013",
+          "name": "AROMA SALCHICHON TRADICIONAL 84987B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-cerv-viand-x",
+      "sheet": "SCHON CERV VIANDÉ X 225 G",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 16,
+      "linkedComponents": 15,
+      "percentageSum": "99.990047713867078886",
+      "blockedBySourceIssues": [
+        "INVALID_CODE_ROW_9",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_9"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1122007",
+          "name": "RECORTE DE CERDO 80/20 IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210002",
+          "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230004",
+          "name": "PREPARADO SABOR CERVECERO SV GF",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 225",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 18,
+      "linkedComponents": 17,
+      "percentageSum": "99.90000000000000181",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "RECOVERY_BUG_OMITTED_CODELESS_REPROCESS_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112002",
+          "name": "PASTA DE POLLO ESTANDAR",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210002",
+          "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-pollo-brakel-x",
+      "sheet": "SCHON POLLO BRAKEL X 500",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 18,
+      "linkedComponents": 17,
+      "percentageSum": "99.93000000000000171",
+      "blockedBySourceIssues": [
+        "PRESENTATION_PERCENTAGE_VARIANTS_REQUIRE_RECONCILIATION",
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "RECOVERY_BUG_OMITTED_CODELESS_REPROCESS_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210002",
+          "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-pollo-x",
+      "sheet": "SCHON POLLO X 225 G",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 18,
+      "linkedComponents": 17,
+      "percentageSum": "99.93000000000000171",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "RECOVERY_BUG_OMITTED_CODELESS_REPROCESS_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230016",
+          "name": "AROMA SCHON DE POLLO 88447B LUCTA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210002",
+          "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1111002",
+          "name": "PIEL DE POLLO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "schon-trad-viand-x",
+      "sheet": "SCHON TRAD VIANDÉ X 500 ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 18,
+      "percentageSum": "99.919992783478365113",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "RECOVERY_BUG_OMITTED_CODELESS_REPROCESS_ROWS",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100",
+        "UNRESOLVED_SOURCE_ROW_7",
+        "MASTER_NAME_CONFLICT_22_1121009"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112002",
+          "name": "PASTA DE POLLO ESTANDAR",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220013",
+          "name": "AROMA SALCHICHON TRADICIONAL 84987B",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220006",
+          "name": "PIMIENTA BLANCA MOLIDA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260015",
+          "name": "ALMIDON DE YUCA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "snack-cerv-prem-x",
+      "sheet": "SNACK  CERV PREM X 50 G ",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 21,
+      "linkedComponents": 21,
+      "percentageSum": "99.931000000000001098",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_PERCENT_COLUMNS_INCONSISTENT",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1122006",
+          "name": "BRAZUELO DE CERDO IMPORTADO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260014",
+          "name": "CARRAGENINA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260022",
+          "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1230009",
+          "name": "PREPARADO SABOR CERVECERO PREMIUM SV LS",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1250003",
+          "name": "COLOR NATURAL HEMOGLOBINA I RED",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1270009",
+          "name": "HUMO TRUSMOKE DRY x 20 KG",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1240007",
+          "name": "CONSERVANTE PROVIAN K",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "percentageSum": "100.086007311633544922",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220015",
+          "name": "MEZCLA LIQUIDA SALCHICHA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    },
+    {
+      "productCode": "super-perro-x",
+      "sheet": "SUPER PERRO X 2500 RX",
+      "rawSourceCellsEqual": true,
+      "exactDecimalsEqual": true,
+      "state": "DRAFT",
+      "sourceRows": 19,
+      "linkedComponents": 19,
+      "percentageSum": "100.086007311633544922",
+      "blockedBySourceIssues": [
+        "CURRENT_VERSION_NOT_ESTABLISHED",
+        "MATERIAL_SOURCE_PERCENT_TOTAL_NOT_100",
+        "SOURCE_QUANTITY_UNIT_REQUIRES_CONFIRMATION",
+        "SOURCE_PERCENTAGE_SUM_NOT_EXACT_100"
+      ],
+      "missingNutrition": [
+        {
+          "code": "1112001",
+          "name": "PASTA DE POLLO IMPORTADA PREMIUM",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "2906001",
+          "name": "EMULSION DE PIEL DE CERDO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210005",
+          "name": "SAL YODADA REFISAL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1210010",
+          "name": "CLORURO DE POTASIO - KCL",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1220015",
+          "name": "MEZCLA LIQUIDA SALCHICHA",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260024",
+          "name": "EXTRACTO PROTEICO GP 83",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260010",
+          "name": "PROTEINA CONCENTRADA SOYA 65%",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260017",
+          "name": "ALMIDON MODIFICADO DE MAIZ",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        },
+        {
+          "code": "1260012",
+          "name": "SOLU TEX GRASAS NEUTRO",
+          "profileCount": 0,
+          "missingKeys": [
+            "FAT_TOTAL",
+            "FAT_SAT",
+            "FAT_TRANS",
+            "PROTEIN",
+            "CARBS_TOTAL",
+            "SUGAR_TOTAL",
+            "SUGAR_ADDED",
+            "FIBER",
+            "SODIUM"
+          ]
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 675 G",
+      "allRowsEqual": true,
+      "components": 3,
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "computedWeightGrams": "675",
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+      "allRowsEqual": true,
+      "components": 4,
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "MEMBER_WEIGHT_NOT_IN_SOURCE",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "computedWeightGrams": null,
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "mega-combo-faizan",
+      "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "allRowsEqual": true,
+      "components": 3,
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected.",
+        "DECLARED_AND_COMPONENT_WEIGHT_DIFFER",
+        "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+      ],
+      "computedWeightGrams": "675",
+      "state": "DRAFT"
+    },
+    {
+      "productCode": "s-per-combo-viand",
+      "sheet": "SÚPER COMBO VIANDÉ 900 G",
+      "allRowsEqual": true,
+      "components": 4,
+      "issues": [
+        "Multiple source variants are retained; no approved assortment selected."
+      ],
+      "computedWeightGrams": "900",
+      "state": "DRAFT"
+    }
+  ],
+  "remainingNutritionCodes": [
+    "1111002",
+    "1112001",
+    "1112002",
+    "1112005",
+    "1122001",
+    "1122002",
+    "1122006",
+    "1122007",
+    "1122008",
+    "1131001",
+    "1141001",
+    "1210002",
+    "1210005",
+    "1210008",
+    "1210010",
+    "1220001",
+    "1220006",
+    "1220008",
+    "1220013",
+    "1220015",
+    "1230003",
+    "1230004",
+    "1230006",
+    "1230008",
+    "1230009",
+    "1230010",
+    "1230012",
+    "1230016",
+    "1230017",
+    "1230020",
+    "1230022",
+    "1240007",
+    "1250001",
+    "1250002",
+    "1250003",
+    "1250005",
+    "1250007",
+    "1260008",
+    "1260009",
+    "1260010",
+    "1260011",
+    "1260012",
+    "1260014",
+    "1260015",
+    "1260017",
+    "1260018",
+    "1260022",
+    "1260023",
+    "1260024",
+    "1260025",
+    "1270009",
+    "2906001",
+    "MPCC012",
+    "MPCC043",
+    "MPCP031",
+    "MPCP044",
+    "MPII311",
+    "MPLO214",
+    "MPLO215",
+    "MPLR191",
+    "MPPA132",
+    "MPPA134",
+    "MPPA144",
+    "MPPA151",
+    "MPPA154",
+    "MPPA158",
+    "MPPA168",
+    "MPPC112",
+    "MPPC122",
+    "MPPD160",
+    "MPPD161",
+    "MPPD168",
+    "MPPD172",
+    "MPPN323",
+    "MPPS104",
+    "MPPS150",
+    "MPPS151",
+    "MPPS154"
+  ]
+}

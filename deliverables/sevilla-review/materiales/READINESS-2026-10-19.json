@@ -1,0 +1,168 @@
+{
+  "status": "CANDIDATO_REVISION_VALIDADO_NO_LIBERADO_NO_DESPLEGADO",
+  "fixes": [
+    "Conteo de porciones derivado de gramos netos y porción declarada; no muta datos heredados.",
+    "Mensaje de aprobación ausente no afirma que faltan versiones.",
+    "Selección de versión válida después de refresh.",
+    "Importador piloto rechaza códigos repetidos, incluso si hay 18 filas.",
+    "Banco reconoce GRASA TRANS (g) y encabezado vitamina A del original.",
+    "No completa nutrientes ausentes con cero ni crea valores indefinidos por unión de columnas.",
+    "CTN exige concordancia código-descripción o nombre único sin código; elimina aliases automáticos.",
+    "CTN conserva porcentajes fuente; bloquea suma distinta de100 y no normaliza.",
+    "Regla del diagrama cliente por especie implementada con fuentes explícitas y previsualización en versiones del producto.",
+    "Planificador de perfiles por código específico/fila exacta/SHA, sin fusionar maestros ni completar faltantes."
+  ],
+  "data_blockers": [
+    "Ensayo detectó2 combos con componentes mortadela/sal incompatibles con paquetes de productos terminados del Excel. Advertencia UI y guarda de cálculo/documentos implementadas para esas composiciones observadas; no se reemplazó receta.",
+    "50 perfiles nuevos respaldados y3 correcciones: plan53; evidencia original de Arcon T añadida, anomalía grasa0/saturada0.2 conservada.",
+    "13 de los14 códigos anteriores siguen pendientes; además78 códigos distintos de recetas recuperadas requieren cobertura nutricional, sin propagación automática por nombre.",
+    "Clasificaciones particulares de especie/carne/grasa se ingresan explícitamente en la previsualización; no se deducen por nombre.",
+    "CTN original se conserva como referencia histórica; las correcciones posteriores de ingredientes y suma exacta no se sustituyen por errores del histórico.",
+    "Porciones de115g: referencia histórica46g/2.5, dato actual23g/5; se conservan separadas.",
+    "Costos con unidades faltantes siguen sin autorizarse; no se ejecutaron aprobaciones ni cargas reales."
+  ],
+  "validation": {
+    "unit_tests": "130 passed in full suite plus1 additional Arcon preservation test",
+    "integration": "13 passed; full suite143 /28files plus1 additional unit test",
+    "build": "Next.js 16.3.3 webpack standalone build completed exit 0 with dependencies physically inside isolated checkout",
+    "typecheck": "passed",
+    "changed_file_lint": "passed",
+    "database": "Ephemeral tmpfs Docker PostgreSQL, loopback only; no deployed DB touched; container stopped after tests",
+    "functionalPages": "12 authenticated local HTTP pages200; source recipes, bundle, draft/approval messages and servings verified",
+    "interactiveBrowser": "Chrome instalado headless/CDP con perfil temporal:15 comprobaciones y8capturas locales. IAB sigue no disponible. VerREVISION-VISUAL-2026-10-19.md."
+  },
+  "originalsReceived": {
+    "bankSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+    "ctnSha256": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
+    "bankRows": 123,
+    "bankSourceBlank": 91,
+    "currentValidity": "unconfirmed"
+  },
+  "profilePlan": {
+    "newProfiles": 49,
+    "corrections": 3,
+    "sourceBibliographyBlank": 40,
+    "originalValuesRetained": true,
+    "precisionRepresentationOnly": [
+      "Humedad naranja en dos códigos:2.269999999999996 frente al almacenamiento4decimales2.27"
+    ],
+    "unresolvedCodes": 14
+  },
+  "localDataRehearsal": {
+    "initialProfiles": 18,
+    "createdProfiles": 52,
+    "deactivatedPrevious": 3,
+    "finalProfiles": 70,
+    "activeProfiles": 67,
+    "nutrientValues": 1189,
+    "secondRunCreated": 0,
+    "secondRunIdentical": 52,
+    "sourceDataCountsUnchanged": {
+      "ingredients": 430,
+      "products": 39,
+      "presentations": 63,
+      "formulations": 17,
+      "versions": 18,
+      "components": 275
+    },
+    "approvedDatasetVersions": 0,
+    "temporaryAccountsRemaining": 0,
+    "multipleActiveProfiles": 0
+  },
+  "productCoverage": {
+    "draftNutritionReferenceReady": [
+      "salchicha-desayuno-premium-480"
+    ],
+    "mathOnlySourceRecipeConflict": [
+      "mega-combo-faizan",
+      "s-per-combo-viand"
+    ],
+    "missingProfileRecipes": 14,
+    "noFormulation": 22,
+    "totalProducts": 39
+  },
+  "sourceRecovery": {
+    "report": "RECUPERACION-FUENTES-2026-10-19.md",
+    "scope": "SUPERSEDED_TECHNICAL_REHEARSAL_NOT_CURRENT_LOAD",
+    "recoveredProducts": 21,
+    "recoveredDraftVersions": 33,
+    "sourceRows": 601,
+    "linkedComponents": 597,
+    "unresolvedZeroCodeRows": 4,
+    "bundleDraftVersions": 4,
+    "bundleComponents": 14,
+    "newPendingIngredientCodes": 26,
+    "remainingNoRecipeProduct": "explosi-n-me-dic",
+    "sourcePercentagesNormalized": false,
+    "allRecoveredRecipesRequireReconciliation": true,
+    "missingNutritionCodesInRecoveredRecipes": null,
+    "approvedVersions": 0,
+    "idempotent": true
+  },
+  "scopeReconciliation": {
+    "report": "CONCILIACION-VIGENCIA-2026-10-19.md",
+    "originalRecoveredBlocks": 33,
+    "additionalBlocksInSameSheets": 7,
+    "additionalVersionAlternatives": 4,
+    "additionalAssembliesWithSubformulas": 3,
+    "confirmedCurrentBlocks": 0,
+    "confirmedHistoricalBlocks": 0,
+    "unprovenCurrentOriginalBlocks": 33,
+    "originalSourceRowsCorrected": 606,
+    "oldRecoveryOmittedRows": 5,
+    "packagingTablesExcluded": 33,
+    "originalBlocksWithSerializationOnlyDiagnostic": 7,
+    "originalBlocksWithMaterialPercentDifference": 26,
+    "originalBlocksWithPercentRangeOmission": 3,
+    "originalBlocksWithQuantityRangeOmission": 6,
+    "duplicateCodeBlocks": 0,
+    "missingCodeRowsCorrected": 9,
+    "candidateMissingCodesOriginal33": 78,
+    "candidateMissingCodesAllBlocks": 84,
+    "currentMissingNutrientCodes": null,
+    "previousLocalRehearsal": "601 selected rows only, missed5 uncoded reprocess rows; not proof of source completeness or current status",
+    "newDatabaseLoads": 0,
+    "selectionAuthorized": false
+  },
+  "finalReviewCandidate": {
+    "report": "CANDIDATO-REVISION-Y-DESPLIEGUE-2026-10-19.md",
+    "testsPassed": 149,
+    "testFiles": 29,
+    "authenticatedHttpPages200": 13,
+    "sourceRowsVerified": 606,
+    "unresolvedSourceCodeRows": 9,
+    "approvedBusinessVersions": 0,
+    "rolesChanged": false,
+    "sourceCurrentSelection": null,
+    "build": "passed",
+    "typecheck": "passed",
+    "changedFileLint": "passed",
+    "localRehearsalOnly": true,
+    "interactiveBrowserAvailable": true,
+    "productionWrites": 0
+  },
+  "visualReview": {
+    "report": "REVISION-VISUAL-2026-10-19.md",
+    "browser": "Chrome155.0.8059.82/CDP1.3",
+    "isolatedProfile": true,
+    "personalSessionsUsed": false,
+    "checksPassed": 15,
+    "screenshots": 8,
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "scope": "TwoBrakelVariantsAndSyntheticApprovalFixtureOnly",
+    "IABAvailable": false,
+    "businessApprovals": 0,
+    "temporaryUsersAccountsSessionsAfterCleanup": 0,
+    "build": "passed",
+    "testsPassed": 149,
+    "typecheck": "passed",
+    "lint": "passed"
+  }
+}

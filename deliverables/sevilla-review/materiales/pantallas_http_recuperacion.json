@@ -1,0 +1,117 @@
+{
+  "scope": "Authenticated local HTTP/server rendering; not an interactive browser test",
+  "browserLimit": "cua inventory browsers=[] and getBrowser(iab) unavailable",
+  "credentialsPersisted": false,
+  "pages": [
+    {
+      "path": "/dashboard",
+      "status": 200,
+      "htmlBytes": 80615,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/ingredientes",
+      "status": 200,
+      "htmlBytes": 2415254,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos",
+      "status": 200,
+      "htmlBytes": 879214,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/formulaciones",
+      "status": 200,
+      "htmlBytes": 175315,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/normativa",
+      "status": 200,
+      "htmlBytes": 37065,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/costos",
+      "status": 200,
+      "htmlBytes": 37388,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/documentos",
+      "status": 200,
+      "htmlBytes": 38133,
+      "authenticated": true,
+      "checks": {}
+    },
+    {
+      "path": "/productos/cervecero",
+      "status": 200,
+      "htmlBytes": 162951,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "sourceRecipesShown": true
+      }
+    },
+    {
+      "path": "/productos/chorizo-de-cerdo",
+      "status": 200,
+      "htmlBytes": 83762,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true
+      }
+    },
+    {
+      "path": "/productos/mega-combo-faizan",
+      "status": 200,
+      "htmlBytes": 58509,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "sourceRecipeWarning": true
+      }
+    },
+    {
+      "path": "/productos/s-per-combo-viand",
+      "status": 200,
+      "htmlBytes": 53614,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "bundleShown": true
+      }
+    },
+    {
+      "path": "/productos/salchicha-desayuno-premium-480",
+      "status": 200,
+      "htmlBytes": 92210,
+      "authenticated": true,
+      "checks": {
+        "hasSpeciesPreview": true,
+        "pendingSpeciesClassification": true,
+        "approvalMessageAccurate": true,
+        "fiveServings115g": true,
+        "fourteenServings480g": true,
+        "showsDraft": true
+      }
+    }
+  ]
+}

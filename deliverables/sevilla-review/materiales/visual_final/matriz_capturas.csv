@@ -1,0 +1,9 @@
+captura,origen_local,ruta_tipo,filtro_version_rol,viewport
+desktop-producto.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,1440x1000
+desktop-selector-variantes.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,1440x1000
+desktop-fuente-reproceso.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,1440x1000
+mobile-producto.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,390x844
+mobile-selector-variantes.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,390x844
+mobile-fuente-reproceso.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,SchonPolloBrakel;ADMIN; ver informe para versión,390x844
+desktop-aprobacion-bloqueada.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,FIXTURE control aprobación;ADMIN; ver informe para versión,1440x1000
+desktop-rol-investigacion.png,http://127.0.0.1:33117,/productos/<id-local-efimero>,FIXTURE control aprobación;R_AND_D; ver informe para versión,1440x1000

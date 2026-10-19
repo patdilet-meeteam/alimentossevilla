@@ -1,0 +1,97 @@
+[
+  {
+    "book": "CTN - Salchicha Desayuno Premium - v11.xlsx",
+    "path": "<ENTREGA>/originales_recibidos/CTN - Salchicha Desayuno Premium - v11.xlsx",
+    "sha256": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
+    "sheets": [
+      {
+        "name": "Chorizo con ternera",
+        "state": "hidden",
+        "range": null,
+        "cells": 60,
+        "formulas": 15
+      },
+      {
+        "name": "Chorizo con ternera (3)",
+        "state": "hidden",
+        "range": null,
+        "cells": 44,
+        "formulas": 1
+      },
+      {
+        "name": "CTN",
+        "state": "visible",
+        "range": null,
+        "cells": 845,
+        "formulas": 393
+      },
+      {
+        "name": "IN",
+        "state": "hidden",
+        "range": null,
+        "cells": 175,
+        "formulas": 99
+      },
+      {
+        "name": "Análisis",
+        "state": "visible",
+        "range": null,
+        "cells": 270,
+        "formulas": 134
+      },
+      {
+        "name": "Tabla nutricional",
+        "state": "visible",
+        "range": null,
+        "cells": 243,
+        "formulas": 74
+      },
+      {
+        "name": "Lista ingredientes",
+        "state": "visible",
+        "range": null,
+        "cells": 76,
+        "formulas": 11
+      },
+      {
+        "name": "Ingredientes",
+        "state": "hidden",
+        "range": null,
+        "cells": 52,
+        "formulas": 12
+      }
+    ],
+    "coreProperties": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2022-06-04T14:34:23Z</dcterms:created><dc:creator>DIR-INVDESARROLLO</dc:creator></cp:coreProperties>",
+    "externalLinks": []
+  },
+  {
+    "book": "Banco de Información Nutricional..xlsx",
+    "path": "<ENTREGA>/originales_recibidos/Banco de Información Nutricional..xlsx",
+    "sha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+    "sheets": [
+      {
+        "name": "Mezclas",
+        "state": "visible",
+        "range": null,
+        "cells": 201,
+        "formulas": 0
+      },
+      {
+        "name": "T.N",
+        "state": "visible",
+        "range": null,
+        "cells": 2731,
+        "formulas": 10
+      },
+      {
+        "name": "TN OFICIAL",
+        "state": "visible",
+        "range": null,
+        "cells": 2562,
+        "formulas": 10
+      }
+    ],
+    "coreProperties": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2024-07-16T15:29:37Z</dcterms:created><dc:creator>Carlos Urrego Tangarife</dc:creator></cp:coreProperties>",
+    "externalLinks": []
+  }
+]

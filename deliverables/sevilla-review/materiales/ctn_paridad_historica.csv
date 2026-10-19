@@ -1,0 +1,17 @@
+nutrient,sourceColumn,weightedColumn,missingRows,weighted_from_source_display_percentages,weighted_from_quantities,cached_preMerma_row23,cached_postMerma_row24,formula_row24,formula_attributes,conclusion
+FAT_TOTAL,I,Z,,9.36186,9.363855984654102486330510629,9.36186,10.3916646,Z23*(100%+$AA$31),"{""t"": ""shared"", ""ref"": ""Z24:AO24"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+FAT_SAT,J,AA,,3.499616,3.500563174764524088632395254,3.499616,3.88457376,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+FAT_TRANS,K,AB,,0.0206892,0.02068745030208136932623968128,0.0206892,0.022965012,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+CHOLESTEROL,L,AC,,48.08786,48.08608458278341134711075771,48.08786,53.3775246,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+PROTEIN,M,AD,,15.14686365,15.14729250862796855402624871,15.14686365,16.81301865,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+CARBS_TOTAL,N,AE,,1.10697425,1.105772223679572413453892628,1.10697425,1.228741418,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+SUGAR_TOTAL,O,AF,,0.66762,0.6636362891127743120168542549,0.66762,0.7410582,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+SUGAR_ADDED,P,AG,,0.6430,0.6384081910367498176035151286,0.643,0.71373,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+STARCH,Q,AH,14,0.0000,0.0,0,0,,"{""t"": ""shared"", ""si"": ""22""}",no validación 1:1 automática: bases diferentes y/o celdas fuente ausentes
+FIBER,R,AI,,0.00422,0.004303737283481026666775967931,0.00422,0.0046842,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+SODIUM,S,AJ,,616.13255,615.9755773156155983834343003,616.13255,683.9071305,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+CALCIUM,T,AK,,12.3708,12.38052825301056669973029914,12.3708,13.731588,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+IRON,U,AL,,0.726636,0.7270715322124488675022748325,0.726636,0.80656596,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+ZINC,V,AM,,1.286968,1.286919917696147950191413839,1.286968,1.42853448,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+VITAMIN_A,W,AN,,0.5462,0.5473943944846582012837433497,0.5462,0.606282,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente
+VITAMIN_D,X,AO,,0.06456,0.06455605925221540000163951897,0.06456,0.0716616,,"{""t"": ""shared"", ""si"": ""22""}",comparación literal de salida histórica; no adopta regla vigente

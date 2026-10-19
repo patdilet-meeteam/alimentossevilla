@@ -1,0 +1,23 @@
+{
+  "passed": 8,
+  "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+  "allPassed": true,
+  "currentSelected": 0,
+  "newDatabaseLoads": 0,
+  "checks": [
+    "5 uncoded rows retained",
+    "606 rows",
+    "Brakel99.9",
+    "Mortajamonada100.19959",
+    "Jamón totalD25",
+    "Provian row20 excluded from original SUM",
+    "no current coverage inferred",
+    "33 packaging tables separated and zero packaging rows in33recipes"
+  ],
+  "preparerRegression": {
+    "blocks": 33,
+    "rows": 606,
+    "allExactSumsAndQuantitiesMatchAudit": true,
+    "currentSelections": 0
+  }
+}

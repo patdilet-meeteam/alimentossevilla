@@ -1,0 +1,901 @@
+{
+  "scope": "Revisión de fuentes cliente; sin DBreal; no autorización de aprobación",
+  "rows": [
+    {
+      "code": "aditivo-burger-meat-80b",
+      "name": "Aditivo Burger Meat 80B NAT",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "agua",
+      "name": "Agua",
+      "bankRow": 39,
+      "bankName": "Agua",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 39,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173647/nutrients"
+    },
+    {
+      "code": "ajo-molido",
+      "name": "Ajo molido",
+      "bankRow": 66,
+      "bankName": "Ajo molido",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 66,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "almid-n-de-papa",
+      "name": "Almidón de Papa",
+      "bankRow": 46,
+      "bankName": "Almidón de Papa",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 46,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "almid-n-de-yuca",
+      "name": "Almidón de Yuca",
+      "bankRow": 47,
+      "bankName": "Almidón de Yuca",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 47,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "almid-n-modificado-de-ma-z",
+      "name": "Almidón modificado de maíz",
+      "bankRow": 53,
+      "bankName": "Almidón modificado de maíz",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 53,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "arcon-t",
+      "name": "Arcon T (Proteína de Soya 70% Hojuelas)",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "brazuelo-de-cerdo",
+      "name": "Brazuelo de Cerdo",
+      "bankRow": 3,
+      "bankName": "Brazuelo de Cerdo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 3,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169190/nutrients"
+    },
+    {
+      "code": "carfosel",
+      "name": "Carfosel",
+      "bankRow": 92,
+      "bankName": "Carfosel",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 92,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "carnal-961",
+      "name": "Mezcla de Fosfatos Carnal 961",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "carne-de-ternera",
+      "name": "Carne de Ternera",
+      "bankRow": 15,
+      "bankName": "Carne de Ternera",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 15,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175290/nutrients"
+    },
+    {
+      "code": "carragenina",
+      "name": "Carragenina",
+      "bankRow": 45,
+      "bankName": "Carragenina",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 45,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "cebolla-en-polvo",
+      "name": "Cebolla en polvo",
+      "bankRow": 64,
+      "bankName": "Cebolla en polvo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 64,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "cebolla-puerro",
+      "name": "Cebolla Puerro",
+      "bankRow": 71,
+      "bankName": "Cebolla Puerro",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 71,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169246/nutrients"
+    },
+    {
+      "code": "cerdo-cocido",
+      "name": "Cerdo Cocido",
+      "bankRow": 102,
+      "bankName": "Cerdo Cocido",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 102,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "cervecero-premium-sv",
+      "name": "Cervecero premium SV",
+      "bankRow": 106,
+      "bankName": "Cervecero premium SV",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 106,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "cloruro-de-potasio-kcl",
+      "name": "Cloruro de Potasio (KCl)",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "color-caramelo",
+      "name": "Color Caramelo",
+      "bankRow": 133,
+      "bankName": "Color Caramelo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 133,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "color-loy",
+      "name": "Color Loy",
+      "bankRow": 132,
+      "bankName": "Color Loy",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 132,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "color-natural-hemoglobina-i-red",
+      "name": "Color Natural Hemoglobina I Red",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "color-natural-naranja-pr801wd",
+      "name": "Color Natural Naranja PR801WD",
+      "bankRow": 130,
+      "bankName": "NaranjaPR80J WD",
+      "status": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION",
+      "reason": "OQ-027 confirmed identity; June B10/C10",
+      "vectorEvidence": [],
+      "sourceOriginal": "",
+      "mappedCanonicalCodeForEvidence": "1250004"
+    },
+    {
+      "code": "color-natural-rojo-ac150",
+      "name": "Color Natural Rojo AC150",
+      "bankRow": 129,
+      "bankName": "Color rojo AC150",
+      "status": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION",
+      "reason": "June B9/C9 and explicit June master mapping",
+      "vectorEvidence": [],
+      "sourceOriginal": "",
+      "mappedCanonicalCodeForEvidence": "1250009"
+    },
+    {
+      "code": "comino-en-polvo",
+      "name": "Comino en polvo",
+      "bankRow": 68,
+      "bankName": "Comino en polvo",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 68,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "conservante-inbac-acn-na",
+      "name": "Conservante INBAC ACN/NA",
+      "bankRow": 86,
+      "bankName": "INBAC sin sal",
+      "status": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION",
+      "reason": "June B14/C14 and explicit June master mapping",
+      "vectorEvidence": [],
+      "sourceOriginal": "",
+      "mappedCanonicalCodeForEvidence": "1240002"
+    },
+    {
+      "code": "conservante-provian-k",
+      "name": "Conservante Provian K",
+      "bankRow": 94,
+      "bankName": "Provian K (Diacetato de Potasio)",
+      "status": "EXACT_BRANDED_PRODUCT",
+      "reason": "Producto distintivo Provian K coincide en nombre del maestro/costos1240007 y Banco fila94; Conservante es función, paréntesis declara composición. Sin sustituir otros conservantes.",
+      "vectorEvidence": [],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "dextrosa",
+      "name": "Dextrosa",
+      "bankRow": 43,
+      "bankName": "Dextrosa",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 43,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "eritorbato-de-sodio",
+      "name": "Eritorbato de Sodio",
+      "bankRow": 44,
+      "bankName": "Eritorbato de Sodio",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 44,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "extracto-gp83p",
+      "name": "Extracto GP83P",
+      "bankRow": 36,
+      "bankName": "Extracto GP83P",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 36,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "extracto-levadura",
+      "name": "Extracto levadura",
+      "bankRow": 49,
+      "bankName": "Extracto levadura",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 49,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "hielo-en-escamas",
+      "name": "Hielo en Escamas",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "inbac-sin-sal",
+      "name": "INBAC sin sal",
+      "bankRow": 86,
+      "bankName": "INBAC sin sal",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 86,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "jam-n-t",
+      "name": "Jamón T",
+      "bankRow": 98,
+      "bankName": "Jamón T",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 98,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "mdm-nacional",
+      "name": "MDM Nacional",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "mortadela",
+      "name": "Mortadela",
+      "bankRow": 114,
+      "bankName": "Mortadela",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 114,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "naranja-ra-40-3",
+      "name": "Naranja RA 40-3",
+      "bankRow": 131,
+      "bankName": "Naranja RA 40-3",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 131,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "paprika-en-polvo",
+      "name": "Paprika en polvo",
+      "bankRow": 65,
+      "bankName": "Paprika en polvo",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 65,
+          "equal": 16,
+          "missing": [
+            "CHOLESTEROL"
+          ]
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "pasta-de-pollo",
+      "name": "Pasta de Pollo",
+      "bankRow": 5,
+      "bankName": "Pasta de Pollo",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 5,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171105/nutrients"
+    },
+    {
+      "code": "piel-de-cerdo-2",
+      "name": "Piel de cerdo",
+      "bankRow": 18,
+      "bankName": "Piel de cerdo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 12,
+          "equal": 6,
+          "missing": []
+        },
+        {
+          "row": 18,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/2341308/nutrients"
+    },
+    {
+      "code": "piel-de-pollo",
+      "name": "Piel de Pollo",
+      "bankRow": 7,
+      "bankName": "Piel de Pollo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 7,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172855/nutrients"
+    },
+    {
+      "code": "pierna-de-cerdo",
+      "name": "Pierna de Cerdo",
+      "bankRow": 8,
+      "bankName": "Pierna de Cerdo ",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 8,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168224/nutrients"
+    },
+    {
+      "code": "pimienta-negra-en-polvo",
+      "name": "Pimienta negra en polvo",
+      "bankRow": 67,
+      "bankName": "Pimienta negra en polvo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 67,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "plasma-de-cerdo-vepro-75-psc",
+      "name": "Plasma de cerdo Vepro 75 PSC",
+      "bankRow": 37,
+      "bankName": "Plasma de cerdo Vepro 75 PSC",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 37,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "pok",
+      "name": "POK",
+      "bankRow": 51,
+      "bankName": "POK",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 51,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "preparado-sabor-chorizo-cerdo",
+      "name": "Preparado Sabor Chorizo Cerdo",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "preparado-sabor-chorizo-ternera",
+      "name": "Preparado Sabor Chorizo Ternera",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "prote-na-texturizada-de-trigo",
+      "name": "Proteína texturizada de trigo",
+      "bankRow": 34,
+      "bankName": "Proteína texturizada de trigo",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 34,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "proteina-colagenica-alta-funcionalidad",
+      "name": "Proteína Colagénica Alta Funcionalidad",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "proteina-concentrada-de-soya-65",
+      "name": "Proteína Concentrada de Soya 65%",
+      "bankRow": 28,
+      "bankName": "Proteína concentrada de Soya al 65%",
+      "status": "SAME_EXPLICIT_COMPOSITION_NAME",
+      "reason": "Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "vectorEvidence": [],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "proteina-concentrada-de-soya-70",
+      "name": "Proteína Concentrada de Soya 70%",
+      "bankRow": 26,
+      "bankName": "Proteína concentrada de Soya al 70%",
+      "status": "SAME_EXPLICIT_COMPOSITION_NAME",
+      "reason": "Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "vectorEvidence": [],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "proteina-texturizada-de-soya-70",
+      "name": "Proteína Texturizada de Soya 70%",
+      "bankRow": 27,
+      "bankName": "Proteína texturizada de Soya al 70%",
+      "status": "SAME_EXPLICIT_COMPOSITION_NAME",
+      "reason": "Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "vectorEvidence": [],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "pvh-l-quida",
+      "name": "PVH Líquida",
+      "bankRow": 30,
+      "bankName": "PVH Líquida",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 30,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "recorte-70-30",
+      "name": "Recorte de Cerdo 70/30",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "recorte-80-20-emulsificados",
+      "name": "Recorte de Cerdo 80/20 Emulsificados",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "recorte-80-20-importado",
+      "name": "Recorte de Cerdo 80/20 Importado",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "sal",
+      "name": "Sal",
+      "bankRow": 40,
+      "bankName": "Sal",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 40,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "ICBF"
+    },
+    {
+      "code": "sal-curante-al-12",
+      "name": "Sal Curante al 12%",
+      "bankRow": 85,
+      "bankName": "Sal curante",
+      "status": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION",
+      "reason": "June B12/C12 and explicit June master mapping",
+      "vectorEvidence": [],
+      "sourceOriginal": "",
+      "mappedCanonicalCodeForEvidence": "1210004"
+    },
+    {
+      "code": "sal-reducida-en-sodio",
+      "name": "Sal reducida en sodio (60%)",
+      "bankRow": 41,
+      "bankName": "Sal reducida en sodio (60%)",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 41,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "ICBF"
+    },
+    {
+      "code": "solu-tex-grasas-neutro",
+      "name": "Solu-Tex Grasas Neutro",
+      "bankRow": null,
+      "bankName": null,
+      "status": "UNRESOLVED",
+      "reason": "Sin relación inequívoca comprobada.",
+      "vectorEvidence": [],
+      "sourceOriginal": null
+    },
+    {
+      "code": "taroma-ham",
+      "name": "Taroma Ham",
+      "bankRow": 99,
+      "bankName": "Taroma Ham",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 99,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "tocino-de-cerdo",
+      "name": "Tocino de Cerdo",
+      "bankRow": 6,
+      "bankName": "Tocino de Cerdo",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 6,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": "ICBF"
+    },
+    {
+      "code": "transglutaminasa",
+      "name": "Transglutaminasa",
+      "bankRow": 59,
+      "bankName": "Transglutaminasa",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 59,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "trusmoke-dry",
+      "name": "Trusmoke Dry",
+      "bankRow": 124,
+      "bankName": "Trusmoke Dry",
+      "status": "SOURCE_ROW_EXACT_NAME",
+      "reason": "Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "vectorEvidence": [
+        {
+          "row": 124,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    },
+    {
+      "code": "trusmoke-oil-ex",
+      "name": "Trusmoke oil ex",
+      "bankRow": 107,
+      "bankName": "Trusmoke oil ex",
+      "status": "SOURCE_ROW_CORROBORATED_17_VALUES",
+      "reason": "Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "vectorEvidence": [
+        {
+          "row": 107,
+          "equal": 17,
+          "missing": []
+        }
+      ],
+      "sourceOriginal": ""
+    }
+  ],
+  "counts": {
+    "UNRESOLVED": 14,
+    "SOURCE_ROW_CORROBORATED_17_VALUES": 24,
+    "SOURCE_ROW_EXACT_NAME": 17,
+    "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION": 4,
+    "EXACT_BRANDED_PRODUCT": 1,
+    "SAME_EXPLICIT_COMPOSITION_NAME": 3
+  },
+  "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d"
+}
