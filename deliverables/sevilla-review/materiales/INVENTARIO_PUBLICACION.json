@@ -551,8 +551,8 @@
     },
     {
       "path": "fuentes/manifest_fuentes.json",
-      "sha256": "b9dff740db661cccdbc89ba31d0f0b094e051fe6c3b01b0a910a4763e81b9c95",
-      "bytes": 1118,
+      "sha256": "7c91ffe433809b2057ad58168f7b98473e0a96bd92a6300997ab9d803bd21db3",
+      "bytes": 1134,
       "source": "authorized Sevilla delivery package"
     },
     {
@@ -631,7 +631,7 @@
   ],
   "localFilesystemPathsGeneralized": true,
   "internalConnectorMetadataRemoved": true,
-  "publicationState": "AUTHORIZED_PUBLIC_RELEASE_PENDING_PUSH",
+  "publicationState": "AUTHORIZED_PUBLIC_RELEASE",
   "codeBranch": "codex/sevilla-review-code",
   "atomicImporterCasesPassed": 16,
   "unitAndIntegrationTestsPassed": 154,
