@@ -1,0 +1,14 @@
+import { readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { basename } from "node:path";
+import { parseNutritionalBankWorkbook } from "../../src/lib/nutrition/nutritional-bank-import";
+import { buildReviewedBankPlan, type BankTargetMapping } from "../../src/lib/nutrition/reviewed-bank-plan";
+const [bankFile, mappingsFile, targetsFile, outputFile] = process.argv.slice(2);
+if (!bankFile || !mappingsFile || !targetsFile || !outputFile) throw new Error("Pass BANK_XLSX MAPPINGS_JSON TARGETS_JSON OUTPUT_JSON");
+const buffer = readFileSync(bankFile);
+const mappings = JSON.parse(readFileSync(mappingsFile, "utf8")) as { sourceSha256: string; mappings: BankTargetMapping[] };
+const hash = createHash("sha256").update(buffer).digest("hex");
+if (hash !== mappings.sourceSha256) throw new Error("SHA-256 de la fuente no coincide con el mapeo revisado.");
+const plan = buildReviewedBankPlan(await parseNutritionalBankWorkbook(buffer), JSON.parse(readFileSync(targetsFile, "utf8")), mappings.mappings, { fileName: basename(bankFile), sha256: hash });
+writeFileSync(outputFile, JSON.stringify({ mode: "REVIEW_ONLY_NO_DATABASE", sourceSha256: hash, profiles: plan }, null, 2));
+console.log(JSON.stringify({ profiles: plan.length, sourceRowsWithoutBibliography: plan.filter((item) => !item.originalBibliography).length, profilesWithStoragePrecisionIssues: plan.filter((item) => item.storagePrecisionIssues.length).length }));

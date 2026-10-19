@@ -1,5 +1,7 @@
 "use server";
 
+import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
+
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
 import { requireRole } from "@/lib/auth/roles";
@@ -275,6 +277,9 @@ export async function submitForReview(rawInput: TransitionVersionInput) {
     throw new Error(`Solo se pueden enviar a revisión versiones en estado DRAFT. Estado actual: ${version.estado}.`);
   }
 
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  if (sourceEvidence?.issues.length) throw new Error(`La receta fuente requiere revisión: ${sourceEvidence.issues.join(", ")}`);
+
   const percentageSum = await db.formulationIngredient.aggregate({
     where: { formulationVersionId: version.id },
     _sum: { porcentajeParticipacion: true },
@@ -308,6 +313,11 @@ export async function approveVersion(rawInput: TransitionVersionInput) {
   if (version.estado !== "IN_REVIEW") {
     throw new Error(`Solo se pueden aprobar versiones en estado IN_REVIEW. Estado actual: ${version.estado}.`);
   }
+
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  if (sourceEvidence?.issues.length) throw new Error(`La receta fuente requiere revisión: ${sourceEvidence.issues.join(", ")}`);
+  const percentageSum = await db.formulationIngredient.aggregate({ where: { formulationVersionId: version.id }, _sum: { porcentajeParticipacion: true } });
+  if (!percentageSum._sum.porcentajeParticipacion?.equals(new Prisma.Decimal(100))) throw new Error("La suma de porcentajes debe ser exactamente 100,00 % antes de aprobar.");
 
   // Audit event for the approval first, then point the version's auditTrailId at it.
   const audit = await recordAuditEvent({

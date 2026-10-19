@@ -5,7 +5,10 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { requireRole } from "@/lib/auth/roles";
 import { db } from "@/lib/db";
 import { assessNutritionReadiness } from "@/lib/nutrition/nutrition-readiness";
+import { resolveCtnIngredient } from "@/lib/nutrition/ctn-ingredient-identity";
 import { buildCtnImportPlan, parseCtnCsv, parseCtnWorkbook, resolveCtnNutritionSnapshot } from "@/lib/nutrition/ctn-import";
+import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
+import { getKnownRecipeConflict } from "@/lib/nutrition/recipe-source-consistency";
 import { calculateNutrition } from "@/lib/nutrition/nutrition-calculator";
 import { evaluateWarningSeals, formatActiveSeals, getSealText, type WarningSeal } from "@/lib/nutrition/warning-seals";
 import { parseNutritionalBankWorkbook } from "@/lib/nutrition/nutritional-bank-import";
@@ -16,23 +19,6 @@ import { getCurrentRegulatoryParameters } from "@/lib/nutrition/regulatory-param
 
 const READ_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D, Role.QUALITY, Role.VIEWER];
 const WRITE_ROLES: Role[] = [Role.ADMIN, Role.R_AND_D];
-
-const CTN_NAME_ALIASES: Record<string, string> = {
-  [normalizeCostDescription("COLOR NATURAL LINICOL")]: normalizeCostDescription("COLOR NATURAL ROJO AC150"),
-  [normalizeCostDescription("HUMO CHARDEX EN POLVO")]: normalizeCostDescription("HUMO TRUSMOKE OIL EX"),
-  [normalizeCostDescription("TOCINO CINTA")]: normalizeCostDescription("TOCINO NACIONAL"),
-  [normalizeCostDescription("REPELE FAZÁN")]: normalizeCostDescription("REPELE CHARQUEADO"),
-  [normalizeCostDescription("COLOR NATURAL NARANJA PR801 WD.")]: normalizeCostDescription("COLOR NATURAL NARANJA PR801WD"),
-  [normalizeCostDescription("SAL REDUCIDA EN SODIO.")]: normalizeCostDescription("SAL REDUCIDA EN SODIO 60/40"),
-  [normalizeCostDescription("MEZCLA DE FOSFATOS SUPRA MEAT F451")]: normalizeCostDescription("SUPRA MEAT F451"),
-  [normalizeCostDescription("CEBOLLA EN POLVO B.1.")]: normalizeCostDescription("CEBOLLA EN POLVO"),
-  [normalizeCostDescription("PIMIENTA NEGRA MOLIDA ESP. 0.9 MM.")]: normalizeCostDescription("PIMIENTA NEGRA MOLIDA"),
-};
-
-function canonicalCtnName(name: string): string {
-  const normalized = normalizeCostDescription(name);
-  return CTN_NAME_ALIASES[normalized] ?? normalized;
-}
 
 const BANK_NUTRIENT_DEFINITIONS: Record<string, { unit: NutrientUnit; displayName: string; isRequiredOnLabel: boolean }> = {
   MOISTURE: { unit: "G", displayName: "Humedad", isRequiredOnLabel: false },
@@ -53,11 +39,6 @@ const BANK_NUTRIENT_DEFINITIONS: Record<string, { unit: NutrientUnit; displayNam
   VITAMIN_A: { unit: "MCG", displayName: "Vitamina A", isRequiredOnLabel: false },
   VITAMIN_D: { unit: "MCG", displayName: "Vitamina D", isRequiredOnLabel: false },
 };
-
-// Confirmed functional rule: TN OFICIAL omits trans fat when the source
-// reports no trans fat; persist an explicit zero instead of treating absence
-// as an unreviewed profile.
-const CONFIRMED_BANK_DEFAULTS: Record<string, number> = { FAT_TRANS: 0 };
 
 export async function listNutritionReadiness() {
   const user = await getCurrentUser();
@@ -144,24 +125,20 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
     where: { isActive: true },
     select: { id: true, siesaCode: true, name: true, genericName: true },
   });
-  const byCode = new Map(ingredients.map((ingredient) => [ingredient.siesaCode.toUpperCase(), ingredient]));
-  const byName = new Map<string, typeof ingredients[number]>();
-  for (const ingredient of ingredients) {
-    byName.set(normalizeCostDescription(ingredient.name), ingredient);
-    if (ingredient.genericName) byName.set(normalizeCostDescription(ingredient.genericName), ingredient);
-  }
+  const resolveRow = (row: { sourceCode: string | null; sourceName: string }) =>
+    resolveCtnIngredient(row, ingredients);
 
-  const unresolved = plan.filter((row) => !((row.sourceCode && byCode.get(row.sourceCode.toUpperCase())) || byName.get(canonicalCtnName(row.sourceName))));
+  const unresolved = plan.filter((row) => !resolveRow(row));
   if (unresolved.length > 0) {
     return {
       ok: false,
-      message: `No se creó el borrador: faltan ${unresolved.length} ingrediente(s) en el maestro (${unresolved.map((row) => row.sourceName).join(", ")}).`,
+      message: `No se creó el borrador: hay ${unresolved.length} ingrediente(s) sin identidad inequívoca por código y descripción (${unresolved.map((row) => row.sourceName).join(", ")}).`,
     };
   }
 
   const resolvedPlan = new Map<string, { ingredientId: string; percentage: Prisma.Decimal; quantity: Prisma.Decimal; sourceRows: number[] }>();
   for (const row of plan) {
-    const ingredient = (row.sourceCode && byCode.get(row.sourceCode.toUpperCase())) || byName.get(canonicalCtnName(row.sourceName));
+    const ingredient = resolveRow(row);
     if (!ingredient) throw new Error(`Ingrediente no resuelto: ${row.sourceName}`);
     const current = resolvedPlan.get(ingredient.id);
     if (current) {
@@ -175,7 +152,7 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
     source: "CTN" as const,
     sourceFileName: file.name,
     rows: plan.map((row) => {
-      const ingredient = (row.sourceCode && byCode.get(row.sourceCode.toUpperCase())) || byName.get(canonicalCtnName(row.sourceName));
+      const ingredient = resolveRow(row);
       if (!ingredient) throw new Error(`Ingrediente no resuelto: ${row.sourceName}`);
       return {
         sourceRow: row.sourceRow,
@@ -215,7 +192,7 @@ export async function importCtnCsvToDraft(formData: FormData): Promise<{ ok: boo
         consolidatedSourceRows: [...resolvedPlan.values()].filter((row) => row.sourceRows.length > 1).map((row) => row.sourceRows),
         totalCanonicalQuantity: plan.reduce((sum, row) => sum.plus(row.quantity), new Prisma.Decimal(0)).toString(),
         percentageTotal: plan.reduce((sum, row) => sum.plus(row.percentage), new Prisma.Decimal(0)).toString(),
-        aliasesApplied: Object.keys(CTN_NAME_ALIASES),
+        aliasesApplied: [],
         nutritionSourceRows: nutritionSourceSnapshot.rows.length,
       },
     },
@@ -284,14 +261,7 @@ export async function importNutritionalBankProfiles(formData: FormData): Promise
     return { ok: false, message: "No se modificó ningún perfil: ninguna fila del Banco coincide de forma única con un ingrediente maestro activo." };
   }
 
-  const nutrientKeys = [...new Set([
-    ...matched.flatMap(({ row }) => Object.keys(row.valuesPer100g)),
-    ...Object.keys(CONFIRMED_BANK_DEFAULTS),
-  ])];
-  const defaultedNutrientCount = matched.reduce(
-    (count, { row }) => count + Object.keys(CONFIRMED_BANK_DEFAULTS).filter((key) => row.valuesPer100g[key] === undefined).length,
-    0,
-  );
+  const nutrientKeys = [...new Set(matched.flatMap(({ row }) => Object.keys(row.valuesPer100g)))];
   await db.$transaction(async (tx) => {
     const nutrients = new Map<string, { id: string }>();
     for (const key of nutrientKeys) {
@@ -310,12 +280,10 @@ export async function importNutritionalBankProfiles(formData: FormData): Promise
           referenceBase: "100g",
           isActive: true,
           createdById: user.id,
-          values: { create: nutrientKeys.map((key) => ({
+          values: { create: Object.entries(row.valuesPer100g).map(([key, value]) => ({
             nutrientId: nutrients.get(key)!.id,
-            value: row.valuesPer100g[key] ?? CONFIRMED_BANK_DEFAULTS[key],
-            method: row.valuesPer100g[key] === undefined
-              ? `TN OFICIAL fila ${row.sourceRow} · valor por defecto confirmado`
-              : `TN OFICIAL fila ${row.sourceRow}`,
+            value,
+            method: `TN OFICIAL fila ${row.sourceRow}`,
           })) },
         },
       });
@@ -329,12 +297,12 @@ export async function importNutritionalBankProfiles(formData: FormData): Promise
       actorEmail: user.email,
       action: "nutritional_profile.bank_import",
       entity: "NutritionalProfile",
-      metadata: { sourceFileName: file.name, sheet: "TN OFICIAL", importedCount: matched.length, unmatchedCount, defaultedNutrientCount, defaults: CONFIRMED_BANK_DEFAULTS },
+      metadata: { sourceFileName: file.name, sheet: "TN OFICIAL", importedCount: matched.length, unmatchedCount },
     },
   });
   revalidatePath("/ingredientes");
   revalidatePath("/normativa");
-  return { ok: true, importedCount: matched.length, message: `Se versionaron ${matched.length} perfil(es) desde TN OFICIAL.${defaultedNutrientCount ? ` Se completaron ${defaultedNutrientCount} valor(es) FAT_TRANS en cero según la regla confirmada.` : ""}${unmatchedCount ? ` Se omitieron ${unmatchedCount} fila(s) sin ingrediente maestro coincidente.` : ""}` };
+  return { ok: true, importedCount: matched.length, message: `Se versionaron ${matched.length} perfil(es) desde TN OFICIAL.${unmatchedCount ? ` Se omitieron ${unmatchedCount} fila(s) sin ingrediente maestro coincidente.` : ""}` };
 }
 
 /**
@@ -449,7 +417,7 @@ export async function calculateFormulationSeals(
     include: {
       formulation: {
         include: {
-          product: { select: { id: true, nombreComercial: true } },
+          product: { select: { id: true, nombreComercial: true, codigoInterno: true } },
         },
       },
       ingredients: {
@@ -474,6 +442,11 @@ export async function calculateFormulationSeals(
   if (!version) {
     return { ok: false, message: "Versión de formulación no encontrada." };
   }
+
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  if (sourceEvidence?.issues.length) return { ok: false, message: `Receta fuente pendiente: ${sourceEvidence.issues.join(", ")}` };
+  const recipeConflict = getKnownRecipeConflict(version.formulation.product.codigoInterno, version.ingredients.map((row) => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentajeParticipacion.toString() })));
+  if (recipeConflict) return { ok: false, message: recipeConflict, readiness: { ready: false, issues: [recipeConflict] } };
 
   if (version.estado !== "APPROVED") {
     return { ok: false, message: `La versión ${version.numeroSecuencial} no está aprobada (estado: ${version.estado}). Los sellos solo se evalúan en versiones aprobadas.` };

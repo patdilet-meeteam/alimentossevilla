@@ -7,6 +7,7 @@ export const BANK_NUTRIENT_COLUMNS: Record<string, string> = {
   GRASA: "FAT_TOTAL",
   "GRASA SATURADA": "FAT_SAT",
   TRANS: "FAT_TRANS",
+  "GRASA TRANS": "FAT_TRANS",
   COLESTEROL: "CHOLESTEROL",
   PROTEINA: "PROTEIN",
   CHO: "CARBS_TOTAL",
@@ -34,6 +35,7 @@ function normalizedHeader(value: unknown): string {
   return String(value ?? "")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\\n/g, " ")
     .trim()
     .toUpperCase()
     .replace(/\([^)]*\)/g, "")
@@ -48,7 +50,7 @@ function text(value: unknown): string | null {
 }
 
 function decimal(value: unknown): Prisma.Decimal | null {
-  if (typeof value === "number" && Number.isFinite(value)) return new Prisma.Decimal(value);
+  if (typeof value === "number" && Number.isFinite(value)) return value < 0 ? null : new Prisma.Decimal(value);
   if (typeof value !== "string") return null;
   const normalized = value.trim().replace(/\s/g, "");
   if (!normalized || normalized === "-") return null;
@@ -57,7 +59,7 @@ function decimal(value: unknown): Prisma.Decimal | null {
     : normalized.replace(/,/g, "");
   try {
     const parsed = new Prisma.Decimal(canonical);
-    return parsed.isNegative() ? null : parsed;
+    return !parsed.isFinite() || parsed.isNegative() ? null : parsed;
   } catch {
     return null;
   }

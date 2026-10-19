@@ -1,5 +1,11 @@
 "use client";
 
+import { getKnownRecipeConflict } from "@/lib/nutrition/recipe-source-consistency";
+import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
+import { sumExactDecimalStrings } from "@/lib/formulations/exact-decimal-sum";
+import { FormulationReviewEvidence, type ReviewIngredient } from "@/components/products/formulation-review-evidence";
+import { SpeciesFatPreview } from "@/components/nutrition/species-fat-preview";
+
 import { useEffect, useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -53,6 +59,8 @@ interface FormulationVersionRow {
   aprobadaEn: string | null;
   aprobadaPor: { name: string; email: string } | null;
   ingredients: FormulationIngredientRow[];
+  sourceRecipeSnapshot?: unknown;
+  reviewIngredients?: ReviewIngredient[];
 }
 
 interface FormulationRow {
@@ -64,6 +72,7 @@ interface FormulationRow {
 
 interface Props {
   productId: string;
+  productCode?: string;
   presentations: Array<{ id: string; gramajeNeto: number; porcionDeclarada: number | null }>;
   formulations: FormulationRow[];
   canWrite: boolean;
@@ -78,27 +87,31 @@ const EstadoClass: Record<FormulationVersionRow["estado"], string> = {
   OBSOLETE: "bg-zinc-200 text-zinc-700 border-zinc-300",
 };
 
-export function ProductVersionPanel({ productId, presentations, formulations, canWrite, canApprove, canReject }: Props) {
+export function ProductVersionPanel({ productId, productCode = "", presentations, formulations, canWrite, canApprove, canReject }: Props) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
   const [sealResult, setSealResult] = useState<Awaited<ReturnType<typeof calculateFormulationSeals>> | null>(null);
   const [selectedPresentationId, setSelectedPresentationId] = useState<string | null>(presentations[0]?.id ?? null);
-  const [lossPercent, setLossPercent] = useState("");
+  const [lossDraft, setLossDraft] = useState<{ key: string; value: string } | null>(null);
 
   const formulation = formulations[0];
   const versions = useMemo(() => formulation?.versions ?? [], [formulation]);
   const [activeVersionId, setActiveVersionId] = useState<string | null>(versions[0]?.id ?? null);
   const activeVersion = useMemo(
-    () => versions.find((v) => v.id === activeVersionId) ?? null,
+    () => versions.find((v) => v.id === activeVersionId) ?? versions[0] ?? null,
     [versions, activeVersionId],
   );
 
-  useEffect(() => {
-    setLossPercent(activeVersion?.rendimientoEsperado === null || !activeVersion?.rendimientoEsperado
+  const sourceEvidence = getSourceRecipeEvidence(activeVersion?.sourceRecipeSnapshot);
+  const exactPercentageSum = sumExactDecimalStrings(activeVersion?.ingredients.map((row) => row.porcentaje) ?? []);
+  const recipeConflict = activeVersion ? getKnownRecipeConflict(productCode, activeVersion.ingredients.map((row) => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentaje }))) : null;
+  const lossKey = `${activeVersion?.id ?? ""}:${activeVersion?.rendimientoEsperado ?? ""}`;
+  const lossPercent = lossDraft?.key === lossKey
+    ? lossDraft.value
+    : activeVersion?.rendimientoEsperado == null
       ? ""
-      : (Number(activeVersion.rendimientoEsperado) * 100).toString());
-  }, [activeVersion?.id, activeVersion?.rendimientoEsperado]);
+      : (Number(activeVersion.rendimientoEsperado) * 100).toString();
 
   const [ingredients, setIngredients] = useState<IngredientLite[]>([]);
   useEffect(() => {
@@ -193,13 +206,7 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
   }
 
   const versionLocked = activeVersion?.estado === "APPROVED" || activeVersion?.estado === "OBSOLETE";
-  // Persisted participation has four decimal places. Sum at that exact scale so
-  // the UI matches the server's no-tolerance review gate without float epsilon.
-  const sumaUnidades = activeVersion
-    ? activeVersion.ingredients.reduce((acc, fi) => acc + Math.round(Number(fi.porcentaje) * 10_000), 0)
-    : 0;
-  const suma = sumaUnidades / 10_000;
-  const sumaWarning = activeVersion && sumaUnidades !== 1_000_000;
+  const sumaWarning = activeVersion && exactPercentageSum !== "100";
   const processOutput = activeVersion?.rendimientoEsperado !== null && activeVersion
     ? calculateProcessOutput(formulation?.baseCalculo ?? 0, activeVersion.rendimientoEsperado)
     : null;
@@ -221,13 +228,13 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
             {canWrite ? <CtnImportControls formulationId={formulation.id} /> : null}
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs text-muted-foreground">
-                Lote de entrada: {Number(formulation.baseCalculo).toLocaleString("es-CO", { maximumFractionDigits: 4 })} kg
+                {sourceEvidence ? `Cantidad de la hoja: ${sourceEvidence.quantitySum} (base/unidad de la fuente)` : `Lote de entrada: ${Number(formulation.baseCalculo).toLocaleString("es-CO", { maximumFractionDigits: 4 })} kg`}
                 {processOutput
                   ? ` · Merma estimada: ${processOutput.lossQuantityKg.toFixed(4)} kg · Salida total estimada: ${processOutput.outputQuantityKg.toFixed(4)} kg`
                   : activeVersion ? " · Merma sin definir; salida total no estimada" : ""}
               </span>
               <Select
-                value={activeVersionId ?? ""}
+                value={activeVersion?.id ?? ""}
                 onValueChange={(v) => {
                   setActiveVersionId(v || null);
                   setSealResult(null);
@@ -239,7 +246,7 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
                 <SelectContent>
                   {versions.map((v) => (
                     <SelectItem key={v.id} value={v.id}>
-                      v{v.numeroSecuencial} · {v.estado}
+                      v{v.numeroSecuencial} · {v.estado}{getSourceRecipeEvidence(v.sourceRecipeSnapshot)?.sheet ? ` · ${getSourceRecipeEvidence(v.sourceRecipeSnapshot)!.sheet}` : ""}
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -262,7 +269,7 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
                     max="100"
                     step="0.0001"
                     value={lossPercent}
-                    onChange={(event) => setLossPercent(event.target.value)}
+                    onChange={(event) => setLossDraft({ key: lossKey, value: event.target.value })}
                     placeholder="Sin definir"
                     className="w-48 bg-white"
                   />
@@ -293,15 +300,20 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
                     </span>
             ) : (
               <p className="rounded-md bg-slate-50 p-3 text-sm text-muted-foreground">
-                {canWrite ? "Aún no hay versiones de formulación." : "No hay una formulación aprobada disponible para consulta."}
+                Esta versión aún no tiene una aprobación registrada.
               </p>
             )}
                 </div>
 
+                <FormulationReviewEvidence snapshot={activeVersion.sourceRecipeSnapshot} ingredients={activeVersion.reviewIngredients ?? []} />
+                {sourceEvidence ? <p className="rounded border p-3 text-xs [overflow-wrap:anywhere]">Fuente: Junio / {sourceEvidence.sheet}. Cantidad fuente: {sourceEvidence.quantitySum}. Suma literal: {sourceEvidence.percentageSum} %. {sourceEvidence.issues.join(" · ")}</p> : null}
+                {recipeConflict ? <p role="alert" className="rounded border border-red-200 bg-red-50 p-3 text-sm text-red-800">{recipeConflict}</p> : null}
+                <SpeciesFatPreview key={activeVersion.id} ingredients={activeVersion.ingredients.filter((row) => Number(row.porcentaje) > 0).map((row) => ({ id: row.ingredient.id, name: row.ingredient.name }))} />
+
                 {sumaWarning ? (
                   <div className="flex items-center gap-2 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-800">
                     <AlertTriangle className="size-4" />
-                    La suma de porcentajes es {suma.toFixed(4)} %; debe ser exactamente 100,00 % para enviar la versión a revisión.
+                    La suma de porcentajes es {exactPercentageSum} %; debe ser exactamente 100,00 % para enviar la versión a revisión.
                   </div>
                 ) : null}
 
@@ -490,12 +502,13 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
                   </div>
                 ) : null}
 
+                {sourceEvidence?.issues.length ? <p role="alert" className="rounded border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">Revisión y aprobación bloqueadas: concilie las diferencias de la fuente y acredite la variante vigente antes de continuar.</p> : null}
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   {canWrite && activeVersion.estado === "DRAFT" ? (
                     <Button
                       variant="outline"
                       onClick={() => withRefresh(() => submitForReview({ formulationVersionId: activeVersion.id }))}
-                      disabled={pending || Boolean(sumaWarning)}
+                      disabled={pending || Boolean(sumaWarning) || Boolean(sourceEvidence?.issues.length)}
                     >
                       <Send className="mr-1 size-4" /> Enviar a revisión
                     </Button>
@@ -513,7 +526,7 @@ export function ProductVersionPanel({ productId, presentations, formulations, ca
                       ) : null}
                       <Button
                         onClick={() => withRefresh(() => approveVersion({ formulationVersionId: activeVersion.id }))}
-                        disabled={pending}
+                        disabled={pending || Boolean(sumaWarning) || Boolean(sourceEvidence?.issues.length)}
                       >
                         <Check className="mr-1 size-4" /> Aprobar
                       </Button>

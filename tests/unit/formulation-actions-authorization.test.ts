@@ -4,6 +4,7 @@ const mocks = vi.hoisted(() => ({
   getCurrentUser: vi.fn(),
   findUnique: vi.fn(),
   update: vi.fn(),
+  aggregate: vi.fn(),
   recordAuditEvent: vi.fn(),
   revalidatePath: vi.fn(),
 }));
@@ -14,6 +15,7 @@ vi.mock("@/lib/auth/session", () => ({
 
 vi.mock("@/lib/db", () => ({
   db: {
+    formulationIngredient: { aggregate: mocks.aggregate },
     formulationVersion: {
       findUnique: mocks.findUnique,
       update: mocks.update,
@@ -95,5 +97,30 @@ describe("Unit: SPEC-003 rejection authorization", () => {
       }),
     );
     expect(mocks.revalidatePath).toHaveBeenCalledWith("/productos/product-1");
+  });
+});
+
+
+describe("approval rechecks existing validation rules", () => {
+  beforeEach(() => { vi.clearAllMocks(); mocks.getCurrentUser.mockResolvedValue({id:"admin-1",email:"admin@example.test",role:"ADMIN"}); });
+  it("blocks unresolved source even when the version is already IN_REVIEW", async () => {
+    mocks.findUnique.mockResolvedValue({id:"version-1",estado:"IN_REVIEW",sourceRecipeSnapshot:{source:"JUNE_RECIPE",sourceSheet:"x",issues:["CURRENT_VERSION_NOT_ESTABLISHED"]}});
+    await expect(approveVersion({formulationVersionId:"version-1"})).rejects.toThrow("receta fuente requiere revisión");
+    expect(mocks.update).not.toHaveBeenCalled();expect(mocks.recordAuditEvent).not.toHaveBeenCalled();
+  });
+  it("blocks a non100 sum before approval and audit", async () => {
+    const {Prisma}=await import("@prisma/client");
+    mocks.findUnique.mockResolvedValue({id:"version-1",estado:"IN_REVIEW",sourceRecipeSnapshot:null});
+    mocks.aggregate.mockResolvedValue({_sum:{porcentajeParticipacion:new Prisma.Decimal("99.999999999999999999")}});
+    await expect(approveVersion({formulationVersionId:"version-1"})).rejects.toThrow("exactamente 100");
+    expect(mocks.update).not.toHaveBeenCalled();expect(mocks.recordAuditEvent).not.toHaveBeenCalled();
+  });
+  it("allows ADMIN through the existing workflow when source and exact sum are valid", async () => {
+    const {Prisma}=await import("@prisma/client");
+    mocks.findUnique.mockResolvedValue({id:"version-1",estado:"IN_REVIEW",sourceRecipeSnapshot:null,numeroSecuencial:1,formulation:{productId:"p"}});
+    mocks.aggregate.mockResolvedValue({_sum:{porcentajeParticipacion:new Prisma.Decimal(100)}});
+    mocks.recordAuditEvent.mockResolvedValue({id:"audit-1"});mocks.update.mockResolvedValue({id:"version-1",estado:"APPROVED"});
+    expect((await approveVersion({formulationVersionId:"version-1"})).estado).toBe("APPROVED");
+    expect(mocks.update).toHaveBeenCalledWith(expect.objectContaining({data:expect.objectContaining({aprobadaPorId:"admin-1",auditTrailId:"audit-1"})}));
   });
 });

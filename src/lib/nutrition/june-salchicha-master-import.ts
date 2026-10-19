@@ -50,6 +50,7 @@ export function parseJuneSalchichaMasterRows(rawRows: readonly (readonly unknown
   if (headerIndex < 0) throw new Error("No se encontró la tabla CÓDIGO / DESCRIPCIÓN de la fórmula de junio.");
 
   const parsed: JuneSalchichaMasterRow[] = [];
+  const seen = new Set<string>();
   for (let index = headerIndex + 1; index < rawRows.length; index += 1) {
     const sourceCode = code(rawRows[index][1]);
     const sourceName = name(rawRows[index][2]);
@@ -57,6 +58,8 @@ export function parseJuneSalchichaMasterRows(rawRows: readonly (readonly unknown
     if (!sourceName) throw new Error(`La fila ${index + 1} no tiene descripción.`);
     const mapping = MAPPING[sourceCode];
     if (!mapping) throw new Error(`El código ${sourceCode} no pertenece al maestro piloto confirmado.`);
+    if (seen.has(sourceCode)) throw new Error(`El código ${sourceCode} está duplicado en la fila ${index + 1}.`);
+    seen.add(sourceCode);
     parsed.push({ sourceRow: index + 1, siesaCode: sourceCode, name: sourceName, ...mapping });
   }
   if (parsed.length !== Object.keys(MAPPING).length) {

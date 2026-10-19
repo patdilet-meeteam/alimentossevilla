@@ -18,6 +18,12 @@ describe("Unit: maestro piloto de junio", () => {
     expect(rows.find((row) => row.siesaCode === "1250004")?.nutritionalBankName).toBe("NaranjaPR80J WD");
   });
 
+  it("rechaza un código repetido aunque el total siga siendo 18 filas", () => {
+    const duplicated = requiredRows.map((row) => [...row]);
+    duplicated[17] = [...duplicated[0]];
+    expect(() => parseJuneSalchichaMasterRows([[null], header, ...duplicated])).toThrow("duplicado");
+  });
+
   it("rechaza códigos fuera del piloto en vez de clasificarlos por inferencia", () => {
     expect(() => parseJuneSalchichaMasterRows([[null], header, [null, 999, "Desconocido"], [null, "TOTAL", null]])).toThrow("no pertenece");
   });

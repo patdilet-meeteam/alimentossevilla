@@ -264,6 +264,8 @@ model Product {
   @@index([categoriaProducto])
   @@index([isActive])
   @@map("products")
+  bundleVersions ProductBundleVersion[] @relation("BundleOwner")
+  bundleMemberships ProductBundleComponent[] @relation("BundleMember")
 }
 
 model Presentation {
@@ -306,6 +308,7 @@ model FormulationVersion {
   rendimientoEsperado Decimal? @db.Decimal(6, 4)
   // Immutable nutrient inputs captured from the imported customer CTN for this version.
   nutritionSourceSnapshot Json?
+  sourceRecipeSnapshot Json?
   validFrom           DateTime?
   aprobadaPorId       String?
   aprobadaPor         User?    @relation(fields: [aprobadaPorId], references: [id], onDelete: SetNull)
@@ -328,10 +331,10 @@ model FormulationIngredient {
   formulationVersion    FormulationVersion @relation(fields: [formulationVersionId], references: [id], onDelete: Cascade)
   ingredientId          String
   ingredient            Ingredient @relation(fields: [ingredientId], references: [id])
-  porcentajeParticipacion Decimal @db.Decimal(7, 4)
+  porcentajeParticipacion Decimal @db.Decimal(38, 24)
   // Cantidad de la receta fuente. Es canónica para cálculos CTN cuando existe;
   // el porcentaje es la representación reconciliada para la formulación.
-  cantidadCanonica       Decimal? @db.Decimal(14, 6)
+  cantidadCanonica       Decimal? @db.Decimal(38, 24)
   createdAt             DateTime @default(now())
   updatedAt             DateTime @updatedAt
 
@@ -419,4 +422,38 @@ model CostImportItem {
   @@index([ingredientId])
   @@index([status])
   @@map("cost_import_items")
+}
+
+
+// Source-backed finished-product assortments, distinct from raw-material formulations.
+model ProductBundleVersion {
+  id String @id @default(cuid())
+  productId String
+  product Product @relation("BundleOwner", fields: [productId], references: [id])
+  sequence Int
+  status FormulationVersionStatus @default(DRAFT)
+  sourceSha256 String
+  sourceSheet String
+  declaredNetWeightGrams Decimal? @db.Decimal(38,24)
+  sourceSnapshot Json
+  components ProductBundleComponent[]
+  createdAt DateTime @default(now())
+  @@unique([productId, sourceSha256, sourceSheet], map: "bundle_source_unique")
+  @@unique([productId, sequence])
+  @@map("product_bundle_versions")
+}
+
+model ProductBundleComponent {
+  id String @id @default(cuid())
+  bundleVersionId String
+  bundleVersion ProductBundleVersion @relation(fields: [bundleVersionId], references: [id], onDelete: Cascade)
+  sourceCode String
+  sourceName String
+  unitCount Decimal @db.Decimal(38,24)
+  netWeightGrams Decimal? @db.Decimal(38,24)
+  memberProductId String?
+  memberProduct Product? @relation("BundleMember", fields: [memberProductId], references: [id])
+  sourceReference String?
+  @@index([bundleVersionId])
+  @@map("product_bundle_components")
 }

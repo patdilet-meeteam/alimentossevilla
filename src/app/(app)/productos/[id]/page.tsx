@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { portionsPerPackage } from "@/lib/products/presentation-metrics";
 import { ProductVersionPanel } from "@/components/products/product-version-panel";
 
 interface PageProps {
@@ -83,10 +84,10 @@ export default async function ProductoDetallePage({ params }: PageProps) {
                     <div className="text-xs text-muted-foreground">
                       {pres.unidadesPorEmpaque ? `${pres.unidadesPorEmpaque} unid/empaque` : "—"}
                       {pres.porcionDeclarada
-                        ? ` · porción ${Number(pres.porcionDeclarada.toString()).toLocaleString("es-CO", { maximumFractionDigits: 1 })} g`
+                        ? ` · porción ${Number(pres.porcionDeclarada.toString()).toLocaleString("es-CO", { maximumFractionDigits: 3 })} g`
                         : ""}
-                      {pres.porcionPorEnvase
-                        ? ` · ${Number(pres.porcionPorEnvase.toString()).toLocaleString("es-CO", { maximumFractionDigits: 2 })} porciones/envase`
+                      {portionsPerPackage(pres.gramajeNeto.toString(), pres.porcionDeclarada?.toString() ?? null) !== null
+                        ? ` · ${portionsPerPackage(pres.gramajeNeto.toString(), pres.porcionDeclarada?.toString() ?? null)!.toLocaleString("es-CO", { maximumFractionDigits: 2 })} porciones/envase`
                         : ""}
                     </div>
                   </div>
@@ -99,9 +100,20 @@ export default async function ProductoDetallePage({ params }: PageProps) {
         </CardContent>
       </Card>
 
+      {product.bundleVersions.length ? <Card><CardHeader><CardTitle>Agrupaciones de productos terminados</CardTitle></CardHeader><CardContent className="space-y-3">
+        {product.bundleVersions.map((bundle) => <div key={bundle.id} className="rounded border p-3 text-sm">
+          <p className="font-medium">Borrador {bundle.sequence} · {bundle.sourceSheet}</p>
+          <p className="text-xs text-muted-foreground">Fuente de agrupación; no es una receta de materias primas.</p>
+          <p className="text-xs">Peso declarado en hoja: {bundle.declaredNetWeightGrams?.toString() ?? "Pendiente"} g. Estado: {bundle.status}.</p>
+          {bundle.sourceSnapshot && typeof bundle.sourceSnapshot === "object" && !Array.isArray(bundle.sourceSnapshot) && Array.isArray(bundle.sourceSnapshot.issues) ? <p className="text-xs text-amber-800">Pendientes de fuente: {bundle.sourceSnapshot.issues.filter((issue): issue is string => typeof issue === "string").join(" · ")}</p> : null}
+          <ul className="ml-4 list-disc">{bundle.components.map((component) => <li key={component.id}>{component.unitCount.toString()} × {component.sourceName}{component.netWeightGrams ? ` · ${component.netWeightGrams.toString()} g por unidad` : ""}{component.memberProduct ? ` · Producto: ${component.memberProduct.nombreComercial}` : " · Referencia de producto pendiente"}</li>)}</ul>
+        </div>)}
+      </CardContent></Card> : null}
+
       <div className="min-w-0">
         <ProductVersionPanel
           productId={product.id}
+          productCode={product.codigoInterno}
           presentations={product.presentations.map((pres) => ({
             id: pres.id,
             gramajeNeto: Number(pres.gramajeNeto),
@@ -118,6 +130,11 @@ export default async function ProductoDetallePage({ params }: PageProps) {
               rendimientoEsperado: v.rendimientoEsperado?.toString() ?? null,
               aprobadaEn: v.aprobadaEn ? v.aprobadaEn.toISOString() : null,
               aprobadaPor: v.aprobadaPor ? { name: v.aprobadaPor.name, email: v.aprobadaPor.email } : null,
+              sourceRecipeSnapshot: v.sourceRecipeSnapshot,
+              reviewIngredients: v.ingredients.map((fi) => {
+                const keys = new Set(fi.ingredient.profiles[0]?.values.map(value => value.nutrient.key));
+                return { code: fi.ingredient.siesaCode, name: fi.ingredient.name, percentage: fi.porcentajeParticipacion.toString(), quantity: fi.cantidadCanonica?.toString() ?? null, activeProfileCount: fi.ingredient.profiles.length, missingNutrients: ["FAT_TOTAL", "FAT_SAT", "FAT_TRANS", "PROTEIN", "CARBS_TOTAL", "SUGAR_TOTAL", "SUGAR_ADDED", "FIBER", "SODIUM"].filter(key => !keys.has(key)) };
+              }),
               ingredients: v.ingredients.map((fi) => ({
                 id: fi.id,
                 porcentaje: fi.porcentajeParticipacion.toString(),

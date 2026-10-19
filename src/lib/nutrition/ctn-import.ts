@@ -1,13 +1,14 @@
 import { Prisma } from "@prisma/client";
 import { readSheet } from "read-excel-file/node";
 import { z } from "zod";
-import { normalizePercentagesFromQuantities, type NutritionIngredientInput } from "@/lib/nutrition/nutrition-calculator";
+import { type NutritionIngredientInput } from "@/lib/nutrition/nutrition-calculator";
 
 export interface CtnParsedRow {
   sourceRow: number;
   sourceCode: string | null;
   sourceName: string;
   quantity: Prisma.Decimal;
+  sourcePercentage?: Prisma.Decimal | null;
   nutrientsPer100g: Record<string, Prisma.Decimal>;
 }
 
@@ -149,6 +150,7 @@ export function parseCtnCsv(text: string): CtnParsedRow[] {
   const codeIndex = indexOf("CODIGO");
   const nameIndex = indexOf("DESCRIPCION");
   const quantityIndex = indexOf("CANTIDAD");
+  const percentageIndex = indexOf("%");
   if (nameIndex < 0 || quantityIndex < 0) throw new Error("El CTN no contiene DESCRIPCIÓN y CANTIDAD.");
   const nutrientIndexes = Object.entries(COLUMN_TO_NUTRIENT)
     .map(([column, nutrient]) => [indexOf(key(column)), nutrient] as const)
@@ -169,7 +171,15 @@ export function parseCtnCsv(text: string): CtnParsedRow[] {
       sourceCode,
       sourceName,
       quantity,
-      nutrientsPer100g: Object.fromEntries(nutrientIndexes.map(([columnIndex, nutrient]) => [nutrient, decimalOrZero(row[columnIndex] ?? "")])),
+      sourcePercentage: percentageIndex >= 0 && row[percentageIndex]?.trim()
+        ? new Prisma.Decimal(row[percentageIndex].trim()) : null,
+      nutrientsPer100g: Object.fromEntries(nutrientIndexes.flatMap(([columnIndex, nutrient]) => {
+        const raw = row[columnIndex]?.trim() ?? "";
+        if (!raw || raw === "-") return [];
+        const value = new Prisma.Decimal(raw);
+        if (!value.isFinite() || value.isNegative()) throw new Error(`Valor nutricional inválido para ${sourceName}: ${nutrient}.`);
+        return [[nutrient, value]];
+      })),
     });
   }
   if (parsed.length === 0) throw new Error("El CTN no contiene ingredientes importables.");
@@ -177,8 +187,12 @@ export function parseCtnCsv(text: string): CtnParsedRow[] {
 }
 
 export function buildCtnImportPlan(rows: readonly CtnParsedRow[]): CtnImportPlanItem[] {
-  const normalized = normalizePercentagesFromQuantities(rows.map((row) => ({
-    ingredientId: String(row.sourceRow), name: row.sourceName, quantity: row.quantity, nutrientsPer100g: row.nutrientsPer100g,
-  } satisfies NutritionIngredientInput)));
-  return normalized.map((row, index) => ({ ...rows[index], quantity: new Prisma.Decimal(row.quantity), percentage: row.percentage }));
+  if (rows.length === 0) throw new Error("El CTN no contiene ingredientes importables.");
+  const percentages = rows.map((row) => row.sourcePercentage);
+  if (percentages.some((value) => value == null || !value.isFinite() || value.isNegative() || value.greaterThan(100) || value.decimalPlaces() > 4)) {
+    throw new Error("El CTN requiere porcentajes fuente explícitos y representables sin redondeo (máximo cuatro decimales).");
+  }
+  const total = percentages.reduce<Prisma.Decimal>((sum, value) => sum.plus(value!), new Prisma.Decimal(0));
+  if (!total.eq(100)) throw new Error(`Los porcentajes fuente suman ${total.toString()} %; deben ser exactamente 100,00 %. No se normalizaron.`);
+  return rows.map((row) => ({ ...row, percentage: new Prisma.Decimal(row.sourcePercentage!) }));
 }

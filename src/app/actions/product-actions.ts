@@ -78,6 +78,7 @@ export async function getProductById(id: string) {
     where: { id },
     include: {
       presentations: { orderBy: { gramajeNeto: "asc" } },
+      bundleVersions: { where: includeNonApprovedVersions ? undefined : { status: "APPROVED" }, orderBy: { sequence: "desc" }, include: { components: { include: { memberProduct: { select: { nombreComercial: true } } } } } },
       formulations: {
         include: {
           versions: {
@@ -85,7 +86,7 @@ export async function getProductById(id: string) {
             orderBy: { numeroSecuencial: "desc" },
             include: {
               ingredients: {
-                include: { ingredient: true },
+                include: { ingredient: { include: { profiles: { where: { isActive: true }, include: { values: { include: { nutrient: { select: { key: true } } } } } } } } },
               },
               aprobadaPor: { select: { id: true, name: true, email: true } },
             },

@@ -5,6 +5,8 @@ import { getCurrentUser } from "@/lib/auth/session";
 import { requireRole } from "@/lib/auth/roles";
 import { db } from "@/lib/db";
 import { buildLegalIngredientsPreview } from "@/lib/documents/legal-ingredients-preview";
+import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
+import { getKnownRecipeConflict } from "@/lib/nutrition/recipe-source-consistency";
 import { calculateNutrition } from "@/lib/nutrition/nutrition-calculator";
 import { evaluateWarningSeals } from "@/lib/nutrition/warning-seals";
 import { z } from "zod";
@@ -49,6 +51,7 @@ export async function listLegalIngredientsPreviews() {
                   id: true,
                   name: true,
                   genericName: true,
+                  siesaCode: true,
                   isAllergen: true,
                   allergenTags: true,
                   profiles: {
@@ -77,7 +80,9 @@ export async function listLegalIngredientsPreviews() {
     const ctnInputs = resolveCtnNutritionSnapshot(version.nutritionSourceSnapshot, profileInputs);
     const nutritionInputs = ctnInputs.status === "ready" ? ctnInputs.inputs : ctnInputs.status === "absent" ? profileInputs : [];
     const requiredNutrients = ["FAT_TOTAL", "FAT_SAT", "FAT_TRANS", "PROTEIN", "CARBS_TOTAL", "SUGAR_TOTAL", "SUGAR_ADDED", "FIBER", "SODIUM"];
-    const nutritionReady = ctnInputs.status !== "invalid"
+    const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+    const recipeConflict = getKnownRecipeConflict(formulation.product.codigoInterno, version.ingredients.map((row) => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentajeParticipacion.toString() })));
+    const nutritionReady = !sourceEvidence?.issues.length && !recipeConflict && ctnInputs.status !== "invalid"
       && nutritionInputs.length > 0
       && nutritionInputs.every((input) => requiredNutrients.every((key) => input.nutrientsPer100g[key] !== undefined));
     const nutrition = nutritionReady
@@ -105,7 +110,7 @@ export async function listLegalIngredientsPreviews() {
           activeSeals: seals.activeSeals,
         };
       })()
-      : { ready: false as const, reason: ctnInputs.status === "invalid" ? ctnInputs.reason : "Faltan perfiles o nutrientes críticos para construir la tabla nutricional." };
+      : { ready: false as const, reason: sourceEvidence?.issues.length ? `Receta fuente pendiente: ${sourceEvidence.issues.join(", ")}` : recipeConflict ?? (ctnInputs.status === "invalid" ? ctnInputs.reason : "Faltan perfiles o nutrientes críticos para construir la tabla nutricional.") };
 
     return [{
       productId: formulation.product.id,

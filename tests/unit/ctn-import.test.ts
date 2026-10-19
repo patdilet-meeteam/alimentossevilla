@@ -22,11 +22,21 @@ describe("Unit: importador CTN", () => {
     expect(rows.map((row) => row.sourceName)).not.toContain("BRAZUELO DE OTRA SECCIÓN");
   });
 
-  it("construye porcentajes persistibles exactos desde cantidades", () => {
-    const plan = buildCtnImportPlan(parseCtnCsv(ctn));
-    expect(plan[0].percentage.toFixed(4)).toBe("92.6471");
-    expect(plan[1].percentage.toFixed(4)).toBe("7.3529");
-    expect(plan.reduce((sum, item) => sum.plus(item.percentage), plan[0].percentage.minus(plan[0].percentage)).toFixed(4))
-      .toBe("100.0000");
+  it("does not invent zero nutrients for blank source cells", () => {
+    const rows = parseCtnCsv("DESCRIPCIÓN,CANTIDAD,GRASA (g),SODIO (mg)\nSample,10,,0\nTOTAL,10,,");
+    expect(rows[0].nutrientsPer100g.FAT_TOTAL).toBeUndefined();
+    expect(rows[0].nutrientsPer100g.SODIUM.toString()).toBe("0");
+  });
+
+  it("rechaza porcentajes fuente incompletos en vez de normalizarlos", () => {
+    expect(() => buildCtnImportPlan(parseCtnCsv(ctn))).toThrow("No se normalizaron");
+  });
+
+  it("conserva porcentajes fuente exactos cuando suman 100", () => {
+    const valid = ctn.replace("315,64.56", "315,92.6471").replace("25,5.12", "25,7.3529");
+    const plan = buildCtnImportPlan(parseCtnCsv(valid));
+    expect(plan[0].percentage.toString()).toBe("92.6471");
+    expect(plan[1].percentage.toString()).toBe("7.3529");
+    expect(plan[0].quantity.toString()).toBe("315");
   });
 });
