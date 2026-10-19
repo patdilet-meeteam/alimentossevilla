@@ -1,0 +1,1 @@
+{"authenticated":true,"checks":[{"route":"/productos","status":200},{"route":"/ingredientes","status":200},{"route":"/documentos","status":200},{"route":"/auditoria","status":200}],"uid":1000,"node":"v22.23.3"}

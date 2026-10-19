@@ -4,616 +4,1456 @@
   "excludes": "actual credentials, tokens, .env, unrelated personal data and sensitive extra Git history",
   "files": [
     {
-      "path": "sevilla-ready-fixes.patch",
-      "sha256": "3c91be0236d3891f6531a50810e4f61330d7ba746171c35ac4397af74332ffde",
-      "bytes": 201073,
-      "source": "authorized Sevilla delivery package"
+      "path": "CANDIDATO-REVISION-Y-DESPLIEGUE-2026-10-19.md",
+      "sha256": "8009d9cb3322a69b445f40233f3b9cae4bbf7eb44ab7b92c970d3c1c31504873",
+      "bytes": 9953,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "CASOS-PARA-CONTRASTE-DOCUMENTAL.md",
+      "sha256": "b17565acc50d09234f6546083bcef36eee2c1051839e3e5087b7275a90e003d1",
+      "bytes": 4382,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "CONCILIACION-VIGENCIA-2026-10-19.md",
+      "sha256": "3be11c909f7881be31e229084cf26246430ad2ee87b5d4ade1542165cfdeb2a3",
+      "bytes": 8648,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "GATE-ENTREGA-CODIGO.json",
+      "sha256": "27f5b73fb8f41203df92f6594432e692bca0ea446d8266ace116ab27af333f9c",
+      "bytes": 2028,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "PUBLICATION-FORMATTING.json",
+      "sha256": "ba42831ae96be7314df9f5cc877fbe4713d833f31feec954f4135dfcd691d4e1",
+      "bytes": 9360,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "READINESS-2026-10-19.json",
       "sha256": "4e42dca95864e9f50602919466c118a0ad3aef413cf05427cbb638d3d21e3f2f",
       "bytes": 7172,
-      "source": "authorized Sevilla delivery package"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
-      "path": "originales_nuevos_manifest.json",
-      "sha256": "f356ae3335ba797b41aa097a963bdb1f05ec88b77f41a534cfbb908d98a21428",
-      "bytes": 3218,
-      "source": "authorized Sevilla delivery package"
+      "path": "RECUPERACION-FUENTES-2026-10-19.md",
+      "sha256": "491e787ed8d740ba53e0ea046a71836e2136ab08528c96eac023cd357c9321c7",
+      "bytes": 6385,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
-      "path": "banco_valores_originales.csv",
-      "sha256": "8cd3e58951a220c65e1f637a9322935303e086430bc66ba3f1a2aaf406b8eb68",
-      "bytes": 245503,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "banco_celdas.csv",
-      "sha256": "7051a906630c775cafa1fa5e64acc8fe831647184a9d3adec3e39d7d6d281d03",
-      "bytes": 370553,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ctn_celdas.csv",
-      "sha256": "c73234ee3bb27f459a25fa1ce7a96d68d3c73089f61ce84a308f4170a852ef1a",
-      "bytes": 155169,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ctn_paridad_historica.csv",
-      "sha256": "e5e64654513c7249732936282579529f3f8bac2557d0e961884326d3bbf35569",
-      "bytes": 3106,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ctn_paridad_y_ambiguedades.json",
-      "sha256": "e77168d7f6ab4643929163013f3ec7931c2dcf5e524c52ae23cab7fb99fca76f",
-      "bytes": 2676,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "parser_real_y_motor.json",
-      "sha256": "4c6cd604442c009178c53e0bcec8c86e2d7fb0fcf56adcbe39d24be2039cd12f",
-      "bytes": 86668,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "piloto_vs_banco_valores.csv",
-      "sha256": "9954049d006db3951962f57c2e216e5c3ed0e2685264016c528d7b5dc3794200",
-      "bytes": 10469,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "resolucion_codigos_por_fuentes.json",
-      "sha256": "516be2ac7db4f14c4f23cfa67e23b0dd6dc86b34ce5b45a6658ae774a17722d2",
-      "bytes": 28524,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "mapeos_explicitos_52_perfiles.json",
-      "sha256": "695c24cb34a16e722cf4e037a795161301868ec9a584b2b4f00cadccd5ff1159",
-      "bytes": 17377,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "maestro_destinos_codigos_nombres.json",
-      "sha256": "f9a419c3601b1a5af8db4411469a1295e6de7a2e55d2848858c96c98a47ae2ba",
-      "bytes": 35305,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "plan_52_perfiles_respaldados.json",
-      "sha256": "bed5f58e03e179490bc3f9abd98dc93f936ac179acc3276d11a0d3ad8a1dc80c",
-      "bytes": 142164,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pendientes_14_agotadas_fuentes_locales.json",
-      "sha256": "0574f293218c11e69ccb70766631c3eb47e4ab18b6deefdfe5da9b18e4f38ba6",
-      "bytes": 62798,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pendientes_14_codigos_candidatos_evidencia.csv",
-      "sha256": "b2f1a9acefc3b73c9970293e8dde0661a296b2bba4e03792c4f7d8d08f30f5d1",
-      "bytes": 44110,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "evidencia_regla_especie.json",
-      "sha256": "29373118f817a882d4719f6b04fea4e63e23a3035792e067c9992ab15e53523f",
-      "bytes": 984,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "diagrama_grasa_2026-10-01.png",
-      "sha256": "11db6866bb6dcd005b8620d7337f2a059e54ed2e11736f1ae39a471618d7e351",
-      "bytes": 83209,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "build_final.log",
-      "sha256": "5270b993b6178699909661c639babb71202191c0fed21901cf512a2e9aa89854",
-      "bytes": 1054,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "salchicha480_v3_vs_excel.csv",
-      "sha256": "902e85214ebef2370e4a7319a1a93f6739466038f6afbcdfd63c5e594e7f5944",
-      "bytes": 4688,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "inventario_fuentes.json",
-      "sha256": "596882adea7f9fd4d84a0d8ad59298d6492c412693b95ce3b32e6339942eea7e",
-      "bytes": 7833,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "dataset_auditoria_payload.json",
-      "sha256": "be62b5f748ad0371979d2ef8e35289015108e21a44e1ac1bb4c7373653ac194c",
-      "bytes": 381030,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ensayo_52_perfiles_por_producto.json",
-      "sha256": "a52b05cd7fdff52aeacaa86875ae165f392fb5a35f61499e32aa6aa9d61ecac6",
-      "bytes": 26123,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "cobertura_final_por_producto.json",
-      "sha256": "d0c74da613050693c63094d5a0017b76fb91cd661cc75bc56dea69201a9e6774",
-      "bytes": 27461,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "cobertura_calculo_por_producto.csv",
-      "sha256": "d62e9c4387efff4f5bbb353edcdf63892e0109041e39941fa321e3c42c987fb3",
-      "bytes": 4612,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "discrepancias_recetas_combos.json",
-      "sha256": "5484aa3e466d97aaa93eebe803f7e111fe941a1473c3603ee616685b89d69339",
-      "bytes": 19831,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pantallas_http_autenticadas.json",
-      "sha256": "2591be3d61e213b7fc2aa64a306e16bdbc87a6c9cbe29740f9a3af1033e783ac",
-      "bytes": 2176,
-      "source": "authorized Sevilla delivery package"
+      "path": "REVISION-VISUAL-2026-10-19.md",
+      "sha256": "bf129af9724cdb0bc3659f3f79cd28612c2975da32079c33f777f0aa0ddb28f8",
+      "bytes": 4799,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "asserts_cierre_dataset.json",
       "sha256": "b1b59741563a052557950fea2ec29760af97a34f77c4df7d89cecc56520c8b53",
       "bytes": 227,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "mapeos_explicitos_53_perfiles.json",
-      "sha256": "fa837da046c197215a3d17d88734271342543708ba01d82b9f91de4f2eb48c27",
-      "bytes": 17719,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "plan_53_perfiles_respaldados.json",
-      "sha256": "dd0dee9c5286762bd61f1fcfa470b3ed1338f2a08fae4d1aa5f7c920742f34bf",
-      "bytes": 144870,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "plan_recuperacion_junio_21_productos.json",
-      "sha256": "13181e23da2583b39d1fe61bec641629606334a14a58e9793ed785e94c56efe8",
-      "bytes": 1132601,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "mapeo_22_productos_hojas.json",
-      "sha256": "bf1e3207f611cf50cbd2ffbd0daf116cbb8657e02abd9b861d9229797876a51f",
-      "bytes": 1672,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ensayo_53_perfiles_por_producto.json",
-      "sha256": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
-      "bytes": 27171,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ensayo_recuperacion_junio.json",
-      "sha256": "807a6caeb847b248c4fc32dedf55eba8ab00b17d5e7272cfb18733c3c349f437",
-      "bytes": 22483,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "ensayo_recuperacion_junio_repetido.json",
-      "sha256": "3ccdb5dd7c4906af1da189ce9c11479e59a3f9590b7aa18440dcca315bdb39ce",
-      "bytes": 6397,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "verificacion_recuperacion_por_producto.json",
-      "sha256": "9477181cc036babb00db2ea62165c56ecafed22c7bb9d8e7a5c057327752e5f0",
-      "bytes": 166601,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "cobertura_recuperacion_por_producto.csv",
-      "sha256": "696d5b6f89f1a5a80f7dc2840af0fe5ea0d3b7bf99e42eec39e81feb9256aa01",
-      "bytes": 9435,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "comentarios_originales.xlsx.csv",
-      "sha256": "969b9fd0fa3753e60f6f58895bad53fe0d1911f2c284dd1135e45fe4663aaa27",
-      "bytes": 9824,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "comentarios_junio_costos.json",
-      "sha256": "59b2812ce728b68999dd12fb93d010dc62ebdbdd07c6c58d581052fb66bc28a1",
-      "bytes": 944,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pendientes_13_actualizacion.json",
-      "sha256": "0de8191f28df496925817c2bced86ea2eeb44b6a03ac02782afc6ef5280e62e4",
-      "bytes": 62971,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "recetas_celdas.csv",
-      "sha256": "3d5dc58cd53672cf76fc119e7bf0479b32817d698251ce9aecf1b9674c74812f",
-      "bytes": 3066747,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "recetas_filas.csv",
-      "sha256": "3ad50cb282057ac0017473986c6faba0cd6bfa97d40a96d7a05b50f493c8e5cf",
-      "bytes": 3472938,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pantallas_http_recuperacion.json",
-      "sha256": "dd1e0c55247a8f2c3196ae6fbb06fe37a708148317457737ae1d36908647fd03",
-      "bytes": 2798,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "migraciones_recuperacion.log",
-      "sha256": "3fd6f3dd45b7505f88a71bd1cfa877f584901db4a4a54410cb5d14dbe92a4990",
-      "bytes": 2081,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pruebas_recuperacion.log",
-      "sha256": "4ff91992bf7416a66fd491b51bf198fc04a5d9077956e3ccace9004c1d819188",
-      "bytes": 2380,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "build_recuperacion.log",
-      "sha256": "e9dac8a4c70b896d0e76bc37a85558699cb08f1b18624247e3cc928fdcc77010",
-      "bytes": 1056,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "RECUPERACION-FUENTES-2026-10-19.md",
-      "sha256": "dcc93c6adbe4fa0228916f56503effa9f2c79e940a6257603adae430dea5aaed",
-      "bytes": 6184,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "conciliacion_vigencia_y_sumas.json",
-      "sha256": "eb7afb8ca05631979694a6c12a1842194dda78e441fe5ad6fae8d4a569f35c87",
-      "bytes": 1458759,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "clasificacion_33_vigencia_sumas.csv",
-      "sha256": "35bdef672bed1edb4a9893f54c33b49d80f6cdd3f7aed89ec0107e82e3f66c0f",
-      "bytes": 10882,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "cobertura_candidata_vs_vigente_por_producto.csv",
-      "sha256": "2cd5391a99d85960d2c72991da5b5030023f20455a3926856a2dd63210b47803",
-      "bytes": 7435,
-      "source": "authorized Sevilla delivery package"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "asserts_conciliacion_fuente.json",
       "sha256": "d505a12bd58b1ff28d406292c374114e1460cb1f897f4f01f1f5fce671782b4e",
       "bytes": 608,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "plan_recuperacion_junio_ensayo_v5_no_vigencia.json",
-      "sha256": "d53c2076bca04fdfe9fc58de37ce41dcd78d0d24e294b3433af462ccbaf47fa7",
-      "bytes": 1108871,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "CONCILIACION-VIGENCIA-2026-10-19.md",
-      "sha256": "4e1c5808cc0722cdd676dd0aea91fa2623c716f2aa1c66062ce6ca7801941033",
-      "bytes": 8447,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "manifest_cambios_candidato.csv",
-      "sha256": "3b23008f43e026fd280b81b37b35e0f0ade98aad1253a23af6bcdcb8f8833e3d",
-      "bytes": 6440,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pruebas_candidato_final.log",
-      "sha256": "1f8a8ad225e4eb806613a15f4297c2b04fd8bf094d89ec884acb976670fc87be",
-      "bytes": 2450,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "build_candidato_final.log",
-      "sha256": "7453b8ed7423bbeca5931590e1bfa960b615496c9f08be02b8ca1f2af6926930",
-      "bytes": 1056,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "migraciones_candidato_final.log",
-      "sha256": "be59658a9951e1f0fd3c1812ea16d7ad18b3ada8197b904cb9df9937e1a653c9",
-      "bytes": 2081,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_fixture_perfiles.json",
-      "sha256": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
-      "bytes": 27171,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_fixture_recetas.json",
-      "sha256": "9818c1f95eb19c3de846cc3d839b0d7a7c5e6e4c97c8781842e97d8d4c767c20",
-      "bytes": 27078,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_fixture_recetas_repetidas.json",
-      "sha256": "1c7ab21469863e212554220801c8a1228309c57b8cd2258a062a69e424de1844",
-      "bytes": 6397,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_verificacion_fuentes.json",
-      "sha256": "1fdfbfe5224dda380504948f49c1395abd37d11c88ac2edee7094b03ae9e9fff",
-      "bytes": 171111,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_pantallas_http.json",
-      "sha256": "b17017c8b66f9c8b33168b5be1a394b98c5b78f753f76ba09dfaec39b31f5004",
-      "bytes": 3347,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "candidato_cierre_local.json",
-      "sha256": "2114411d9a1b100292164456f99d9933248af909b82eebf8dca2313180d78dec",
-      "bytes": 157,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "CANDIDATO-REVISION-Y-DESPLIEGUE-2026-10-19.md",
-      "sha256": "74361f1e56fdc3af076d5c05810ced717db1f8457be2e653280952c5d685faa8",
-      "bytes": 9752,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "pruebas_visual_final.log",
-      "sha256": "4ca93c23fc86df1b844614959911b4be288a9b099d7f58b1085da31b5b1f7564",
-      "bytes": 2447,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "build_visual_corregido.log",
-      "sha256": "906cb1839669aa0aa4e845b50dea38f1dac480a297949fc26f717291efd8dab0",
-      "bytes": 1056,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/galeria.html",
-      "sha256": "2ab162b46afebe2f251df68e2af72057d143bfe842b3af2580a04a7c2fd0e09d",
-      "bytes": 2199,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/desktop-selector-variantes.png",
-      "sha256": "9d46aba613491e3382c37714d0e13f28639e00795b50faeec02b63d62c136bd9",
-      "bytes": 206732,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/resultados_visuales.json",
-      "sha256": "b6d6ef280bbeef8d6884542d0851768e313c3827cf59e0482347352643b66046",
-      "bytes": 2045,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/desktop-aprobacion-bloqueada.png",
-      "sha256": "b0becf33cc9f88413a232bcfcf62956d73de1e93c1afc03860c4d052e6440022",
-      "bytes": 176133,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/mobile-fuente-reproceso.png",
-      "sha256": "07f81f2910d870a20793a36ab9e9f15d399d5043464feb01a07df94929b692a0",
-      "bytes": 85880,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/desktop-producto.png",
-      "sha256": "9bcc351dc24f855d63233b3c455312bfc18cb4ad17c1b97585d078853e1257d2",
-      "bytes": 171195,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/mobile-producto.png",
-      "sha256": "fb0434cf94bc1878bc92efc74cff92448b6fc27a6eddc0542b3b126b2a2314ce",
-      "bytes": 65992,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/matriz_capturas.csv",
-      "sha256": "44200e8283c6d836261340df1638e5316bdefd8bba02fedd5c1b0e973520a9a1",
-      "bytes": 1212,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/desktop-fuente-reproceso.png",
-      "sha256": "18132be9ec923a06724a7f14f5a1c5cd79e0ccab024e6d04874072e08fcb7a85",
-      "bytes": 326946,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/mobile-selector-variantes.png",
-      "sha256": "e98f8a5c2a9ce4942205557ad87d90662587d06b00253d6570c2b5013db86ff7",
-      "bytes": 75722,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_final/desktop-rol-investigacion.png",
-      "sha256": "67850e981b52f0bb8952cd933c108fd1c4a50a9060e63507effc9fe8a89b5795",
-      "bytes": 172738,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_primera/desktop-selector-variantes.png",
-      "sha256": "adceab45f24b67054e75aafa010201a1f6d9230ac050ec78667711e2c050f047",
-      "bytes": 206940,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_primera/resultados_visuales.json",
-      "sha256": "84cfcce670d4ddcc83377d6a3f4c38acc6ffc1d8bc2da85174a8573a59b5aa3a",
-      "bytes": 716,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_primera/desktop-producto.png",
-      "sha256": "c45d4d55e212a9b061304880db0e43a3717f3d4934c5d8c6678e37795eafad06",
-      "bytes": 168194,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/desktop-selector-variantes.png",
-      "sha256": "f9e8c3b7ece7ffb273f15933723237d1ad37782d43837de8d36617a6b74821dd",
-      "bytes": 210761,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/resultados_visuales.json",
-      "sha256": "340048e76e292ce34d31c4b598cb5f522bed81d44b68378d87438aaa3bd0ab0d",
-      "bytes": 1378,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/mobile-fuente-reproceso.png",
-      "sha256": "9a7eb586740add0dcf0ff7b5cef091b333f53698a7bdde63f9c09f5c693f6132",
-      "bytes": 89619,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/desktop-producto.png",
-      "sha256": "7332ba35c3c66a9ec2042442bc6aca038c7d84b172dca9e678162027fd2a6aa0",
-      "bytes": 171408,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/mobile-producto.png",
-      "sha256": "5cde71eba5d0e5fe105fb30404e2705d50975cac734a02c718f9c85ab699ce9c",
-      "bytes": 67485,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/desktop-fuente-reproceso.png",
-      "sha256": "114bd56a37bc1ffbfd137cb0436386c5f41bd09c4a358249346790ebd82e388d",
-      "bytes": 337885,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "visual_segunda/failure-state.png",
-      "sha256": "046768b2bde0ef18dbaa24ac6715b0d67a5f2dc88a95d5b3cae463415fb7c5e2",
-      "bytes": 180293,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "REVISION-VISUAL-2026-10-19.md",
-      "sha256": "14846f9c170ac38d669444341b8d8acd2209e3a3da94b4673994fa489cd92b5f",
-      "bytes": 4598,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "verificar_conteos.sql",
-      "sha256": "aed8cb8867777f7d53ba0450de72ce57ad241ae6b9f714adfa697371536edb14",
-      "bytes": 2225,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "fuentes/junio_original.xlsx",
-      "sha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
-      "bytes": 1577411,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "fuentes/ctn_salchicha_v11_original.xlsx",
-      "sha256": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
-      "bytes": 1428549,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "fuentes/manifest_fuentes.json",
-      "sha256": "7c91ffe433809b2057ad58168f7b98473e0a96bd92a6300997ab9d803bd21db3",
-      "bytes": 1134,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "fuentes/banco_nutricional_original.xlsx",
-      "sha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
-      "bytes": 71389,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "fuentes/costos_junio_original.xlsx",
-      "sha256": "a9f74a8ec998761582e56fe7295b0303f2ced9bfce532e3d1f5f53545ca2bedc",
-      "bytes": 69978,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "documentacion/TRACEABILITY-CLIENT-RESPONSE-2026-10-01.md",
-      "sha256": "eb5c17ac5de8c6542587afd370d0a11abdd11783af2b5278aaab88aaacccc3a3",
-      "bytes": 8984,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "documentacion/README_KIT_IMPORTACION.md",
-      "sha256": "d868c86f5d699152ebe7607be928616ec487904360c5c75f08ba3651fdb02dd2",
-      "bytes": 4471,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "documentacion/OPEN-QUESTIONS.md",
-      "sha256": "bd6e3a9f6deb18989430122171316ac1dfe5ddf3088329e84dc48ef104e3c4f9",
-      "bytes": 38770,
-      "source": "authorized Sevilla delivery package"
-    },
-    {
-      "path": "atomic_import_results.json",
-      "sha256": "a6d3dc9e240d509481a71eb8ffe73f242cbddc56d28b50d7abc24de340bd4108",
-      "bytes": 3590,
-      "source": "additional isolated importer verification"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "atomic_full_suite.log",
       "sha256": "a1aed73eb5d5073607d2a332029c924553251c28fe052a4be0cfc40e5e0d407e",
       "bytes": 2628,
-      "source": "additional isolated importer verification"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "atomic_import_results.json",
+      "sha256": "a6d3dc9e240d509481a71eb8ffe73f242cbddc56d28b50d7abc24de340bd4108",
+      "bytes": 3590,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "atomic_migrations.log",
       "sha256": "b3d60632ba70008f982c1bef830241bf15c83f3ccfa791c0b180252c1b3ac04e",
       "bytes": 2081,
-      "source": "additional isolated importer verification"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
-      "path": "verificar_conteos.sql",
-      "sha256": "aed8cb8867777f7d53ba0450de72ce57ad241ae6b9f714adfa697371536edb14",
-      "bytes": 2225,
-      "source": "additional isolated importer verification"
+      "path": "banco_celdas.csv",
+      "sha256": "7051a906630c775cafa1fa5e64acc8fe831647184a9d3adec3e39d7d6d281d03",
+      "bytes": 370553,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "banco_valores_originales.csv",
+      "sha256": "8cd3e58951a220c65e1f637a9322935303e086430bc66ba3f1a2aaf406b8eb68",
+      "bytes": 245503,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "build_candidato_final.log",
+      "sha256": "7453b8ed7423bbeca5931590e1bfa960b615496c9f08be02b8ca1f2af6926930",
+      "bytes": 1056,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "build_final.log",
+      "sha256": "5270b993b6178699909661c639babb71202191c0fed21901cf512a2e9aa89854",
+      "bytes": 1054,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "build_recuperacion.log",
+      "sha256": "e9dac8a4c70b896d0e76bc37a85558699cb08f1b18624247e3cc928fdcc77010",
+      "bytes": 1056,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "build_visual_corregido.log",
+      "sha256": "906cb1839669aa0aa4e845b50dea38f1dac480a297949fc26f717291efd8dab0",
+      "bytes": 1056,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_cierre_local.json",
+      "sha256": "2114411d9a1b100292164456f99d9933248af909b82eebf8dca2313180d78dec",
+      "bytes": 157,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_fixture_perfiles.json",
+      "sha256": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
+      "bytes": 27171,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_fixture_recetas.json",
+      "sha256": "9818c1f95eb19c3de846cc3d839b0d7a7c5e6e4c97c8781842e97d8d4c767c20",
+      "bytes": 27078,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_fixture_recetas_repetidas.json",
+      "sha256": "1c7ab21469863e212554220801c8a1228309c57b8cd2258a062a69e424de1844",
+      "bytes": 6397,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_pantallas_http.json",
+      "sha256": "b17017c8b66f9c8b33168b5be1a394b98c5b78f753f76ba09dfaec39b31f5004",
+      "bytes": 3347,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "candidato_verificacion_fuentes.json",
+      "sha256": "1fdfbfe5224dda380504948f49c1395abd37d11c88ac2edee7094b03ae9e9fff",
+      "bytes": 171111,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "clasificacion_33_vigencia_sumas.csv",
+      "sha256": "35bdef672bed1edb4a9893f54c33b49d80f6cdd3f7aed89ec0107e82e3f66c0f",
+      "bytes": 10882,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "cobertura_calculo_por_producto.csv",
+      "sha256": "d62e9c4387efff4f5bbb353edcdf63892e0109041e39941fa321e3c42c987fb3",
+      "bytes": 4612,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "cobertura_candidata_vs_vigente_por_producto.csv",
+      "sha256": "2cd5391a99d85960d2c72991da5b5030023f20455a3926856a2dd63210b47803",
+      "bytes": 7435,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "cobertura_final_por_producto.json",
+      "sha256": "d0c74da613050693c63094d5a0017b76fb91cd661cc75bc56dea69201a9e6774",
+      "bytes": 27461,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "cobertura_recuperacion_por_producto.csv",
+      "sha256": "696d5b6f89f1a5a80f7dc2840af0fe5ea0d3b7bf99e42eec39e81feb9256aa01",
+      "bytes": 9435,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "comentarios_junio_costos.json",
+      "sha256": "59b2812ce728b68999dd12fb93d010dc62ebdbdd07c6c58d581052fb66bc28a1",
+      "bytes": 944,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "comentarios_originales.xlsx.csv",
+      "sha256": "969b9fd0fa3753e60f6f58895bad53fe0d1911f2c284dd1135e45fe4663aaa27",
+      "bytes": 9824,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "conciliacion_vigencia_y_sumas.json",
+      "sha256": "eb7afb8ca05631979694a6c12a1842194dda78e441fe5ad6fae8d4a569f35c87",
+      "bytes": 1458759,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "consolidacion_resoluciones_y_limites.json",
+      "sha256": "d88f06bf773d1de8cc5ce1d7deac58f65ea0b8848afd683596516e5cdb33e562",
+      "bytes": 176355,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "consolidado_banco_celdas_originales.json",
+      "sha256": "5c64854ce1633f78adf6a85dd6881db830246eba973ccef802cff17dfa544426",
+      "bytes": 94,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ctn_celdas.csv",
+      "sha256": "c73234ee3bb27f459a25fa1ce7a96d68d3c73089f61ce84a308f4170a852ef1a",
+      "bytes": 155169,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ctn_paridad_historica.csv",
+      "sha256": "e5e64654513c7249732936282579529f3f8bac2557d0e961884326d3bbf35569",
+      "bytes": 3106,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ctn_paridad_y_ambiguedades.json",
+      "sha256": "8ef8e262e103bf419613f55566ef075a9b888f5bcef4b5edc002958561bd4117",
+      "bytes": 3426,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "dataset_auditoria_payload.json",
+      "sha256": "be62b5f748ad0371979d2ef8e35289015108e21a44e1ac1bb4c7373653ac194c",
+      "bytes": 381030,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "destinos_13_codigos_candidatos.json",
+      "sha256": "b093b2494966477bd6f0b576910fd36c5c25a271feebd9cdbc4f71a0bd27d0ef",
+      "bytes": 894,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "diagrama_grasa_2026-10-01.png",
+      "sha256": "11db6866bb6dcd005b8620d7337f2a059e54ed2e11736f1ae39a471618d7e351",
+      "bytes": 83209,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "discrepancias_recetas_combos.json",
+      "sha256": "5484aa3e466d97aaa93eebe803f7e111fe941a1473c3603ee616685b89d69339",
+      "bytes": 19831,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/ALCANCE-DOCKER.md",
+      "sha256": "804b3c801dda92bea65dbb9a5e507c82dc458fa2c14dc33c30df7685f71379e5",
+      "bytes": 1445,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-archive-implementation-match.json",
+      "sha256": "af8dbfe642347e7574f09793e55d4342aed38dcaea28f18da54d90160b1f04bf",
+      "bytes": 395,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-herramientas-archive-feedback.log",
+      "sha256": "11cfc653863d5937d336facf13dc20e08738f0dddf266599273c811e6be7aa94",
+      "bytes": 5408,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-load-normal-herramientas.log",
+      "sha256": "8171741672e0a5ace16bcb3c7f7e532091e41572d94b56064d8f2e77dcb1b32a",
+      "bytes": 54,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-own-runtime-copy-cache-cleanup.json",
+      "sha256": "a7dee837ecf8d409c3af7568e57bd0e1d340ce01eb010657e10296137dff6391",
+      "bytes": 1760,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-own-safe-branch-cleanup.json",
+      "sha256": "f9a3a6ed89ae39ab738c447ae2e6408011b2b3158f44d50999be92a26f31fcf8",
+      "bytes": 2779,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-own-tools-image-released-after-normal-pass.json",
+      "sha256": "ab2379b46a3ec56eb270f5c046113ae39904cd7cbf0f4ca42e02122eeba5dd6d",
+      "bytes": 410,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-runtime-artifacts-proof.json",
+      "sha256": "a83d0f7d3818ae9f3036130a6b23b2beb3bb75052f75159487470c20758e9ece",
+      "bytes": 803,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-runtime-from-verified-artifacts.log",
+      "sha256": "018f9622151f35a1cbd5107551d5eb1319a7928630433dd9a4973f66b12ec0ac",
+      "bytes": 2604,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-runtime-stage-provenance.json",
+      "sha256": "04c663592420786f0a9f8dca9cf9a0ff790bb8cfd8db59dfef0ef747d246ead0",
+      "bytes": 463,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/docker-tools-archive-proof.json",
+      "sha256": "ff348bedd8c22411a47787cb20f241ccf62702867880f7eb6c3abc133eecad62",
+      "bytes": 666,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/bootstrap.log",
+      "sha256": "33fc049ca0ca65aa59ba883ffb53068adbac644540fea3a7a7908db6b598688a",
+      "bytes": 206,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/image-identities.log",
+      "sha256": "ab87bc8db116866c3fd5c53222ff71e3e635244a8ae11c43d7d5d9be1ac64aae",
+      "bytes": 4170,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/migrations.log",
+      "sha256": "45b667353505b59337cbb7e6bf6820b5536f4d18c210aa6c8150d622ebcb4f69",
+      "bytes": 2441,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/network.log",
+      "sha256": "84317b90550a53a187308c1490ef5a7bc3aed5d0f33ae42536185027b3488657",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/positive-integration-node22.log",
+      "sha256": "1cf143620bbbfbd6865c74bb8299f7598c310dec11c23cb45af4e9238d9579a7",
+      "bytes": 271,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/postgres.log",
+      "sha256": "ef81cb6917b70cb3c2882b63d5ac98c4bdccde4d2c6f5062b4e64435acc777ed",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/result.json",
+      "sha256": "54b8a110650f18f4f340138ba2359afa29faa2b5d9a196b116fe76fd563fcb7f",
+      "bytes": 1924,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/runtime-authenticated.json",
+      "sha256": "aa02919bcfe68863851f79c5e2f616a6021001ad335929890ea53c2e1cba7fb6",
+      "bytes": 1563,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/start-runtime.log",
+      "sha256": "befe816f42a9cafdd337a7ec59359b85e3ee0af8cabee0e0ccb8c6b94c1486cb",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/herramientas_normal/toolchain.log",
+      "sha256": "aba7c89ab8bf96dd1f6ad8e23ce0645ed0b08d05e7e5a8e817c0772571833b31",
+      "bytes": 16,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/result.json",
+      "sha256": "d4cb5c7b92fe443b4211b582aa891a400466185ebfd3b9bb5dcfa20cf8c52f31",
+      "bytes": 3580,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime-artifact-stage.Dockerfile",
+      "sha256": "6133344d497e8233f417e94c9d04459cddc5b4073d03a08933762ff508154c4d",
+      "bytes": 1563,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime-payload-expected.json",
+      "sha256": "dc11a81cc93cfa7bff41b5c1ac98aa65b6df46c976e880b05c5046d280cb404c",
+      "bytes": 285,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/fixture-bootstrap-host-only.log",
+      "sha256": "87cedfb110b8c101f4f27b4bc916236729fd6a346245e820ad122f885800eebf",
+      "bytes": 125,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/fixture-port.log",
+      "sha256": "508b8f7aea12545cf4e35edc58406aa24df10dfad918bb342ccd149745de974f",
+      "bytes": 16,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/fixture-schema-host-only.log",
+      "sha256": "e6db87d63057eaa44a564a6ff1e7af519f1f15bb741958093889f541333bbb9a",
+      "bytes": 2360,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/image-identities.log",
+      "sha256": "2c585ac09f3f4bbdbdb63dcc7fb22898c08ec93db062da7be49683c44b458ac3",
+      "bytes": 1915,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/network.log",
+      "sha256": "34dc8ef5fb13a114f1286e17c12872d770d4bc8ca5897db427202e39fc7fb3b7",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/postgres.log",
+      "sha256": "128bcb2a16303f73455eb4b8d9e0cd10eaf978c030785f11ad32b1932b3bcda0",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/result.json",
+      "sha256": "c290f408cba3f261010ce78f93327be451c9917c944870381b4680f2abf3f157",
+      "bytes": 2145,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/runtime-artifact-payload-hash.log",
+      "sha256": "cd70b4c86b23a20386f1dd6110244299c8f0f54e0287858c713afd9ce9757cdc",
+      "bytes": 102,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/runtime-authenticated.json",
+      "sha256": "76d4126fa999f7bac748c63e3c9838d7a6a0b115e4454cb200c20044b0767c9c",
+      "bytes": 1563,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/start-runtime.log",
+      "sha256": "e1cd2b0c5fb2b9e0dfd369962ef86dfea1fa360588e55428a68c02566783911d",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "docker_cierre_final/runtime_actual_normal/toolchain.log",
+      "sha256": "aba7c89ab8bf96dd1f6ad8e23ce0645ed0b08d05e7e5a8e817c0772571833b31",
+      "bytes": 16,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "documentacion/OPEN-QUESTIONS.md",
+      "sha256": "bd6e3a9f6deb18989430122171316ac1dfe5ddf3088329e84dc48ef104e3c4f9",
+      "bytes": 38770,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "documentacion/README_KIT_IMPORTACION.md",
+      "sha256": "d868c86f5d699152ebe7607be928616ec487904360c5c75f08ba3651fdb02dd2",
+      "bytes": 4471,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "documentacion/TRACEABILITY-CLIENT-RESPONSE-2026-10-01.md",
+      "sha256": "eb5c17ac5de8c6542587afd370d0a11abdd11783af2b5278aaab88aaacccc3a3",
+      "bytes": 8984,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_52_perfiles_por_producto.json",
+      "sha256": "a52b05cd7fdff52aeacaa86875ae165f392fb5a35f61499e32aa6aa9d61ecac6",
+      "bytes": 26123,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_53_perfiles_por_producto.json",
+      "sha256": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
+      "bytes": 27171,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/atomic-batch.json",
+      "sha256": "dc60c8edfed5d68fa6e7ae582baee320cb9ff2863c1c71a2d223040798a54549",
+      "bytes": 3851,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/atomic-batch.log",
+      "sha256": "7bd057d333ec56a7897502f759a697ea6eb847251df988e615e9291a72d03bd1",
+      "bytes": 3852,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/build.log",
+      "sha256": "cf40e85060f81eed0b23e4ea20d06aa4275993e157b30a677cb12feca2f5e4ac",
+      "bytes": 1048,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/client.log",
+      "sha256": "e1f73c5523d2686e90712c9703dafc45b74d67b7dc5cd3c181439284f02034af",
+      "bytes": 642,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/migrations.log",
+      "sha256": "c8b6be9b710d49885bd21cc564d202a67a9f54edbf447b7575a9e56d27cedd42",
+      "bytes": 2360,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/postgres-create.log",
+      "sha256": "ac2cafc50b441bfd8043491360da8f6d51f73d63f3e1bcb15c26eafa6130c2af",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/profiles66.json",
+      "sha256": "ba6057f9e79954f5b53b19645aaa07b29182c5ceee0acdc6b40de6c8f2577a00",
+      "bytes": 28381,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/profiles66.log",
+      "sha256": "4b2e68d1ad77e212a4e5193ca7c93fa2b36525b66e86f050f231fbf49b88db26",
+      "bytes": 965,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/result.json",
+      "sha256": "df58f9bb31faa746db939183e6d0dc3c7d67a82519af5d2afa13ef37388ba878",
+      "bytes": 1413,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/source-precision.json",
+      "sha256": "c5a52135b25773516bc26c9b9e1bb157916666bd472ccefbcdb3f5a7fa7ba8e7",
+      "bytes": 383,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/source-precision.log",
+      "sha256": "9abbe853afba2d8eb277e0fdbdb0df1c5b542122ecce09ecbac0de02358bfe9c",
+      "bytes": 384,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/source-review-browser.log",
+      "sha256": "e63eb6e76212cfe318a6c346229dad3416f270e5de0f1abb151c30078032fb5d",
+      "bytes": 3218,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/source-verification.json",
+      "sha256": "ef7fb6bcf9f71eba15f1373f9f315088a6e96fc001c6ad76c3091715ebd8b5c0",
+      "bytes": 161116,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/source-verification.log",
+      "sha256": "441549cc591a119a21201b8cfe020e13a7344bcb1537748467e7fad7083ac24e",
+      "bytes": 457,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/test-suite.log",
+      "sha256": "ac04fd7d61d8752da84d7aae739ff7e9c9ab6a9db4d596b35226c966e6d0946e",
+      "bytes": 3638,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/typescript.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/desktop-approved-fixture.png",
+      "sha256": "e84a7b0b0b4ed2161dc552b1d35e4bb450b4563599939a55a8fda418cf68bd2b",
+      "bytes": 186448,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/desktop-bundle-approved.png",
+      "sha256": "1d911ea6fbfaea2668034667262e9c1149744f55b2e450fe0b0fdb2505926ce2",
+      "bytes": 223293,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/desktop-classification-persisted.png",
+      "sha256": "02f651e94b9ec6051dd8174bd1307e1a73f728545cfb043a3fe5e6276b90ea5a",
+      "bytes": 181823,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/desktop-document-saved-printable.png",
+      "sha256": "e3dc542142ff2b5ee788f3d1a583686e606f4f4b0c682443aba8d4abf2447977",
+      "bytes": 190074,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/desktop-reconciliation-editor.png",
+      "sha256": "b6d9413730e0ca47ba809959e26b578f93037ee7c647b0303cc6dfc73971a451",
+      "bytes": 190065,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/documento-preliminar-fixture.pdf",
+      "sha256": "01d2b0e408d3751f38f75972e03821c07282cbf83668e48672351c7b81c890b8",
+      "bytes": 215249,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/mobile-reconciliation-editor.png",
+      "sha256": "bfa198831b72f15f42c1931572f977d7f58ca8bd12f012876e6e71fdf4d1ed82",
+      "bytes": 79988,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_cierre_final/visual_workflow/resultados_visuales.json",
+      "sha256": "ea7de4abc1c28841ef44d46d5a8ef849678155a9ecd39cd10fe986791e9a4aeb",
+      "bytes": 3217,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/atomic-batch.json",
+      "sha256": "20bd2e26fe3469f240b76ecf2dd1da860cb352e5bad3fc2a90ce02e2552246a6",
+      "bytes": 3851,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/atomic-batch.log",
+      "sha256": "412dcfe9bb0f0aba54189a1395c9e654cc74898d5a8ea64f56462d8aecdb9c05",
+      "bytes": 3852,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/build.log",
+      "sha256": "719aba9fcc0cb7c2e1e81802a6328cfe8d1cd48aca0d73af548956287fe06f17",
+      "bytes": 1049,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/client.log",
+      "sha256": "c3ebb3e59176c9fdbf317ec876179cc02c207e3241590d200b8c98085394c50a",
+      "bytes": 643,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/migrations.log",
+      "sha256": "17714deb91e8f93f16b5bd889ce2151fa68f6dde980fb6eb01c14cf863a89043",
+      "bytes": 2230,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/postgres-create.log",
+      "sha256": "9096a849cecdacc506c4b308206124a630af289a6fa52ca7e615bdc27918dce6",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/profiles66.json",
+      "sha256": "ba6057f9e79954f5b53b19645aaa07b29182c5ceee0acdc6b40de6c8f2577a00",
+      "bytes": 28381,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/profiles66.log",
+      "sha256": "4b2e68d1ad77e212a4e5193ca7c93fa2b36525b66e86f050f231fbf49b88db26",
+      "bytes": 965,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/result.json",
+      "sha256": "6168e64585154ef6e85353689ba1fc1829a3a23b740e2066633eea96213e129e",
+      "bytes": 1338,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/source-precision.json",
+      "sha256": "c5a52135b25773516bc26c9b9e1bb157916666bd472ccefbcdb3f5a7fa7ba8e7",
+      "bytes": 383,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/source-precision.log",
+      "sha256": "9abbe853afba2d8eb277e0fdbdb0df1c5b542122ecce09ecbac0de02358bfe9c",
+      "bytes": 384,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/source-verification.json",
+      "sha256": "5f03a831729678b360d514af67ba2d714e823c6d8baf641612053e8f5a316ef6",
+      "bytes": 162535,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/source-verification.log",
+      "sha256": "441549cc591a119a21201b8cfe020e13a7344bcb1537748467e7fad7083ac24e",
+      "bytes": 457,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/test-suite.log",
+      "sha256": "c05f085cbe375bc015579f3f04c100cf8eb437b46b3cb18247e94eef96cf8112",
+      "bytes": 2991,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_filas/typescript.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/atomic-batch.json",
+      "sha256": "75fe36be077f00957a4b23f339a74552f173431885d70ccc3b9233c9e61cd496",
+      "bytes": 3590,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/atomic-batch.log",
+      "sha256": "cb02a8e621315a18dac697469419e3f79e368f69b2fa991f318e40e25df01557",
+      "bytes": 3591,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/build.log",
+      "sha256": "728d47a2df26d7320f66676ff2ea28bed862f8d3be31ed5f221e1d272e8727f8",
+      "bytes": 1048,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/client.log",
+      "sha256": "e72c855fc6947815d2de50d0071b90e6d96f1bdd723b597367fe7cddb10ad810",
+      "bytes": 648,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/migrations.log",
+      "sha256": "9d3f140b601dd564e288b525089bb87ab0b7fe570399e93123208301157a7ceb",
+      "bytes": 2230,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/postgres-create.log",
+      "sha256": "fd0e6c19d6096ac46899c7829e695be894e44f8b8d0d6cbeaff7307c055d4927",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/profiles66.json",
+      "sha256": "ba6057f9e79954f5b53b19645aaa07b29182c5ceee0acdc6b40de6c8f2577a00",
+      "bytes": 28381,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/profiles66.log",
+      "sha256": "4b2e68d1ad77e212a4e5193ca7c93fa2b36525b66e86f050f231fbf49b88db26",
+      "bytes": 965,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/result.json",
+      "sha256": "3f258609159e1fcf60affa3c75825fe221d48b88de090ca75442b526e2bd9c2e",
+      "bytes": 1338,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/source-precision.json",
+      "sha256": "c5a52135b25773516bc26c9b9e1bb157916666bd472ccefbcdb3f5a7fa7ba8e7",
+      "bytes": 383,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/source-precision.log",
+      "sha256": "9abbe853afba2d8eb277e0fdbdb0df1c5b542122ecce09ecbac0de02358bfe9c",
+      "bytes": 384,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/source-verification.json",
+      "sha256": "f7c48de1ecc32e37dc29aaed8eff225cc771329381b3cb5d1bad0e9a27b135e2",
+      "bytes": 139219,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/source-verification.log",
+      "sha256": "83a9073f0d5a6d4628196ea0a382c7cc01e6df44fd8558afe7a3459eb6cda215",
+      "bytes": 457,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/test-suite.log",
+      "sha256": "ddd2f05414d8693a0ddea135ff4e0f75bbc4a4a360eada0977de09d561558f1c",
+      "bytes": 2927,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_consolidado_revision/typescript.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/atomic-batch.json",
+      "sha256": "a8f72da2df04be1d1880251089712a6bb8bb476e96f28a054f8b6bde3e2ba6ce",
+      "bytes": 3851,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/atomic-batch.log",
+      "sha256": "2d2e19275f9031a711cfaf0d68deb6e9d10dd535737aea49fd76e7aba38e42f2",
+      "bytes": 3852,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/build.log",
+      "sha256": "a893297fa95e5b1e3d88d9411fd753963541177dd88a1c1e97d3edcf2a076ad1",
+      "bytes": 1047,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/client.log",
+      "sha256": "760a063b092717ab35799709273133f53fe9b1329cf1727f4d2b5f5219107213",
+      "bytes": 600,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/migrations.log",
+      "sha256": "6432f28a28f857735f6814e03a744f61f9d0e00dc9771233a0cd79b3cafdf4b6",
+      "bytes": 2360,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/postgres-create.log",
+      "sha256": "7a3057d5eda63e6f47a1d625a4aad88e9422d7a1332e25e294e188bb6152e69c",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/profiles66.json",
+      "sha256": "ba6057f9e79954f5b53b19645aaa07b29182c5ceee0acdc6b40de6c8f2577a00",
+      "bytes": 28381,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/profiles66.log",
+      "sha256": "4b2e68d1ad77e212a4e5193ca7c93fa2b36525b66e86f050f231fbf49b88db26",
+      "bytes": 965,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/result.json",
+      "sha256": "c61e2297a9bc62fcfd4f7fee104c8af031ac29eeb898240589f5e605bec202f6",
+      "bytes": 1413,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/source-precision.json",
+      "sha256": "c5a52135b25773516bc26c9b9e1bb157916666bd472ccefbcdb3f5a7fa7ba8e7",
+      "bytes": 383,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/source-precision.log",
+      "sha256": "9abbe853afba2d8eb277e0fdbdb0df1c5b542122ecce09ecbac0de02358bfe9c",
+      "bytes": 384,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/source-review-browser.log",
+      "sha256": "0349911eb6dc6b79ee6511bdc79e2ffbf4d5381e2613efdeec44f45ce88c4620",
+      "bytes": 1774,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/source-verification.json",
+      "sha256": "ef7fb6bcf9f71eba15f1373f9f315088a6e96fc001c6ad76c3091715ebd8b5c0",
+      "bytes": 161116,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/source-verification.log",
+      "sha256": "441549cc591a119a21201b8cfe020e13a7344bcb1537748467e7fad7083ac24e",
+      "bytes": 457,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/test-suite.log",
+      "sha256": "7eee526ca01d60eaaf774137a087ba77d3c08c9c671cc5299e42f77005b68a96",
+      "bytes": 3166,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/typescript.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/visual_workflow/desktop-approved-fixture.png",
+      "sha256": "00e8c5818b197c80d1c7e0adac31e59ed1592b1e6f0e9415ae05cfbbe1902600",
+      "bytes": 186446,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/visual_workflow/desktop-classification-persisted.png",
+      "sha256": "2c2657e36bfe749a741b45d1f1d0d9a3db51459b2acaf898dd381095baa08794",
+      "bytes": 181839,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/visual_workflow/desktop-reconciliation-editor.png",
+      "sha256": "55ad1129ec78fd4f10a14b18958c99025d9016a879634943738b9cee0d19684f",
+      "bytes": 190092,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/visual_workflow/mobile-reconciliation-editor.png",
+      "sha256": "bfa198831b72f15f42c1931572f977d7f58ca8bd12f012876e6e71fdf4d1ed82",
+      "bytes": 79988,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_integrado_ultima_base/visual_workflow/resultados_visuales.json",
+      "sha256": "a39f955a92abc6ff333d948b6d204117ef40ba1556a573496b28885c0069b160",
+      "bytes": 1773,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_recuperacion_junio.json",
+      "sha256": "807a6caeb847b248c4fc32dedf55eba8ab00b17d5e7272cfb18733c3c349f437",
+      "bytes": 22483,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "ensayo_recuperacion_junio_repetido.json",
+      "sha256": "3ccdb5dd7c4906af1da189ce9c11479e59a3f9590b7aa18440dcca315bdb39ce",
+      "bytes": 6397,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "evidencia_regla_especie.json",
+      "sha256": "29373118f817a882d4719f6b04fea4e63e23a3035792e067c9992ab15e53523f",
+      "bytes": 984,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "fuentes/banco_nutricional_original.xlsx",
+      "sha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "bytes": 71389,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "fuentes/costos_junio_original.xlsx",
+      "sha256": "a9f74a8ec998761582e56fe7295b0303f2ced9bfce532e3d1f5f53545ca2bedc",
+      "bytes": 69978,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "fuentes/ctn_salchicha_v11_original.xlsx",
+      "sha256": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
+      "bytes": 1428549,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "fuentes/junio_original.xlsx",
+      "sha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "bytes": 1577411,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "fuentes/manifest_fuentes.json",
+      "sha256": "7c91ffe433809b2057ad58168f7b98473e0a96bd92a6300997ab9d803bd21db3",
+      "bytes": 1134,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/LIMITE-DOCKER.md",
+      "sha256": "7876718e5bfe257863a0a6ed61ece5ba3a8efd549d9d8d14f42324db110e171a",
+      "bytes": 955,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/bootstrap.log",
+      "sha256": "b110272a21c170ddd52717c3d918e78d3fc643f0999b59515129193f682661fc",
+      "bytes": 206,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/build-herramientas-archive.log",
+      "sha256": "11cfc653863d5937d336facf13dc20e08738f0dddf266599273c811e6be7aa94",
+      "bytes": 5408,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/build-runtime.log",
+      "sha256": "05bc217519de568422708604232031728fac62b9f6386b557f5451ec2e1c1027",
+      "bytes": 6001,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/docker-archive-implementation-match.json",
+      "sha256": "af8dbfe642347e7574f09793e55d4342aed38dcaea28f18da54d90160b1f04bf",
+      "bytes": 395,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/docker-tools-archive-proof.json",
+      "sha256": "ff348bedd8c22411a47787cb20f241ccf62702867880f7eb6c3abc133eecad62",
+      "bytes": 666,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/image-identities.log",
+      "sha256": "d9c53a6a2225151ca04e3ece367d999ebf167d6f9a8e1a1e321a82acf0e54693",
+      "bytes": 1915,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/limite-extraccion-herramientas.log",
+      "sha256": "54fafdc853e636f08ee89a2b4469ce5f5e051403cb2a1c2863d8befac58eba41",
+      "bytes": 3544,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/migrations.log",
+      "sha256": "aa30b07a94639b6422c6815a4de35d03423919f63a35ae6c8f53d0310a4b630c",
+      "bytes": 2441,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/network.log",
+      "sha256": "3d55ed5a8eafd1cdfe7ba864cfd1800f9c978c4b3d700c658ad6cea227995018",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/positive-integration-node22.log",
+      "sha256": "c416cbadbe7752f437b89a48a3f3bdff527c7f5c363712db1a165d4cda0e189c",
+      "bytes": 271,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/postgres.log",
+      "sha256": "6a8caf27aaa1ac3797ba1655e92ed7db2fb6f1a9a8ec1ea3967f0ce3abac70c6",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/result.json",
+      "sha256": "bdd43f1d26c022014ac7e7ddda5ed06b408475937bf21fdc45e40729ac4904b3",
+      "bytes": 2499,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/runtime-authenticated.json",
+      "sha256": "6db027f4411433e25d150a6828cf287ed3e5a8423b24cdefaca3d78ebe3a5574",
+      "bytes": 211,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/start-runtime.log",
+      "sha256": "7abbc680ea48c5c5493b820f51cac7759ab7b8ffe6bd21a55123e5d311e19a6b",
+      "bytes": 65,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "historico_docker_montaje_anterior/toolchain.log",
+      "sha256": "aba7c89ab8bf96dd1f6ad8e23ce0645ed0b08d05e7e5a8e817c0772571833b31",
+      "bytes": 16,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "identidades_nutricionales_por_fila_revision.json",
+      "sha256": "015c02ca9964339c9f7279425e161645243e27109c67308138d031b205e81d05",
+      "bytes": 12671,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "inventario_fuentes.json",
+      "sha256": "596882adea7f9fd4d84a0d8ad59298d6492c412693b95ce3b32e6339942eea7e",
+      "bytes": 7833,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     },
     {
       "path": "legado/alimentos_sevilla_admin_migration_kit_2026-10-09.zip",
       "sha256": "41b6f376fc9dbd79bf26fe2cd837931abac8870f03af6c943c8d4199d0ed7671",
       "bytes": 37064,
-      "source": "legacy operator kit; not current load approval"
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "maestro_destinos_codigos_nombres.json",
+      "sha256": "f9a419c3601b1a5af8db4411469a1295e6de7a2e55d2848858c96c98a47ae2ba",
+      "bytes": 35305,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "manifest_cambios_candidato.csv",
+      "sha256": "3b23008f43e026fd280b81b37b35e0f0ade98aad1253a23af6bcdcb8f8833e3d",
+      "bytes": 6440,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "mapeo_13_codigos_candidatos_identidad_literal.json",
+      "sha256": "ab70183e0c212562190106f7c9b753f99f9c370d0684dd2ae9b1516f869b76c0",
+      "bytes": 9002,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "mapeo_22_productos_hojas.json",
+      "sha256": "bf1e3207f611cf50cbd2ffbd0daf116cbb8657e02abd9b861d9229797876a51f",
+      "bytes": 1672,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "mapeos_explicitos_52_perfiles.json",
+      "sha256": "695c24cb34a16e722cf4e037a795161301868ec9a584b2b4f00cadccd5ff1159",
+      "bytes": 17377,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "mapeos_explicitos_53_perfiles.json",
+      "sha256": "fa837da046c197215a3d17d88734271342543708ba01d82b9f91de4f2eb48c27",
+      "bytes": 17719,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "migraciones_candidato_final.log",
+      "sha256": "be59658a9951e1f0fd3c1812ea16d7ad18b3ada8197b904cb9df9937e1a653c9",
+      "bytes": 2081,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "migraciones_recuperacion.log",
+      "sha256": "3fd6f3dd45b7505f88a71bd1cfa877f584901db4a4a54410cb5d14dbe92a4990",
+      "bytes": 2081,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "originales_nuevos_manifest.json",
+      "sha256": "f356ae3335ba797b41aa097a963bdb1f05ec88b77f41a534cfbb908d98a21428",
+      "bytes": 3218,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pantallas_http_autenticadas.json",
+      "sha256": "2591be3d61e213b7fc2aa64a306e16bdbc87a6c9cbe29740f9a3af1033e783ac",
+      "bytes": 2176,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pantallas_http_recuperacion.json",
+      "sha256": "dd1e0c55247a8f2c3196ae6fbb06fe37a708148317457737ae1d36908647fd03",
+      "bytes": 2798,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "parser_real_y_motor.json",
+      "sha256": "4c6cd604442c009178c53e0bcec8c86e2d7fb0fcf56adcbe39d24be2039cd12f",
+      "bytes": 86668,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pendientes_13_actualizacion.json",
+      "sha256": "f8fbda48061b2875c952ee4dafca74210e3dce6cb8f3eebd8703226b064bf80c",
+      "bytes": 61929,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pendientes_14_agotadas_fuentes_locales.json",
+      "sha256": "0574f293218c11e69ccb70766631c3eb47e4ab18b6deefdfe5da9b18e4f38ba6",
+      "bytes": 62798,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pendientes_14_codigos_candidatos_evidencia.csv",
+      "sha256": "b2f1a9acefc3b73c9970293e8dde0661a296b2bba4e03792c4f7d8d08f30f5d1",
+      "bytes": 44110,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "piloto_vs_banco_valores.csv",
+      "sha256": "9954049d006db3951962f57c2e216e5c3ed0e2685264016c528d7b5dc3794200",
+      "bytes": 10469,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_13_perfiles_candidatos_identidad_literal.json",
+      "sha256": "ee6b6c9907ebf5bbb7fd53c2972b17e1f9c90700da14dec5c2fa2fa8a0a1cb5b",
+      "bytes": 40331,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_52_perfiles_respaldados.json",
+      "sha256": "bed5f58e03e179490bc3f9abd98dc93f936ac179acc3276d11a0d3ad8a1dc80c",
+      "bytes": 142164,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_53_perfiles_respaldados.json",
+      "sha256": "8d848124ad7807898dc6c052534ea292845c3f5c0d7c5c87000e26ed20c101c3",
+      "bytes": 144915,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_66_perfiles_consolidado.json",
+      "sha256": "bb20885589d02e5e06caf33dc1a3b686f807acd08ba37f91748e1d0cb0792985",
+      "bytes": 185170,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_recuperacion_junio_21_productos.json",
+      "sha256": "13181e23da2583b39d1fe61bec641629606334a14a58e9793ed785e94c56efe8",
+      "bytes": 1132601,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "plan_recuperacion_junio_ensayo_v5_no_vigencia.json",
+      "sha256": "d53c2076bca04fdfe9fc58de37ce41dcd78d0d24e294b3433af462ccbaf47fa7",
+      "bytes": 1108871,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "precision_migracion_preservacion.json",
+      "sha256": "1513ea2a6e8dd4a5943eb004d97a929daa940d9ebd7ea652bd2e39a201565756",
+      "bytes": 418,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pruebas_candidato_final.log",
+      "sha256": "1f8a8ad225e4eb806613a15f4297c2b04fd8bf094d89ec884acb976670fc87be",
+      "bytes": 2450,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pruebas_recuperacion.log",
+      "sha256": "4ff91992bf7416a66fd491b51bf198fc04a5d9077956e3ccace9004c1d819188",
+      "bytes": 2380,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "pruebas_visual_final.log",
+      "sha256": "4ca93c23fc86df1b844614959911b4be288a9b099d7f58b1085da31b5b1f7564",
+      "bytes": 2447,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "recetas_celdas.csv",
+      "sha256": "3d5dc58cd53672cf76fc119e7bf0479b32817d698251ce9aecf1b9674c74812f",
+      "bytes": 3066747,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "recetas_filas.csv",
+      "sha256": "3ad50cb282057ac0017473986c6faba0cd6bfa97d40a96d7a05b50f493c8e5cf",
+      "bytes": 3472938,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "resolucion_codigos_por_fuentes.json",
+      "sha256": "516be2ac7db4f14c4f23cfa67e23b0dd6dc86b34ce5b45a6658ae774a17722d2",
+      "bytes": 28524,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "salchicha480_v3_vs_excel.csv",
+      "sha256": "902e85214ebef2370e4a7319a1a93f6739466038f6afbcdfd63c5e594e7f5944",
+      "bytes": 4688,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "sevilla-ready-fixes.patch",
+      "sha256": "3c91be0236d3891f6531a50810e4f61330d7ba746171c35ac4397af74332ffde",
+      "bytes": 201073,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "verificacion_recuperacion_por_producto.json",
+      "sha256": "9477181cc036babb00db2ea62165c56ecafed22c7bb9d8e7a5c057327752e5f0",
+      "bytes": 166601,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "verificar_conteos.sql",
+      "sha256": "aed8cb8867777f7d53ba0450de72ce57ad241ae6b9f714adfa697371536edb14",
+      "bytes": 2225,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/desktop-aprobacion-bloqueada.png",
+      "sha256": "b0becf33cc9f88413a232bcfcf62956d73de1e93c1afc03860c4d052e6440022",
+      "bytes": 176133,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/desktop-fuente-reproceso.png",
+      "sha256": "18132be9ec923a06724a7f14f5a1c5cd79e0ccab024e6d04874072e08fcb7a85",
+      "bytes": 326946,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/desktop-producto.png",
+      "sha256": "9bcc351dc24f855d63233b3c455312bfc18cb4ad17c1b97585d078853e1257d2",
+      "bytes": 171195,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/desktop-rol-investigacion.png",
+      "sha256": "67850e981b52f0bb8952cd933c108fd1c4a50a9060e63507effc9fe8a89b5795",
+      "bytes": 172738,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/desktop-selector-variantes.png",
+      "sha256": "9d46aba613491e3382c37714d0e13f28639e00795b50faeec02b63d62c136bd9",
+      "bytes": 206732,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/galeria.html",
+      "sha256": "2ab162b46afebe2f251df68e2af72057d143bfe842b3af2580a04a7c2fd0e09d",
+      "bytes": 2199,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/matriz_capturas.csv",
+      "sha256": "44200e8283c6d836261340df1638e5316bdefd8bba02fedd5c1b0e973520a9a1",
+      "bytes": 1212,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/mobile-fuente-reproceso.png",
+      "sha256": "07f81f2910d870a20793a36ab9e9f15d399d5043464feb01a07df94929b692a0",
+      "bytes": 85880,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/mobile-producto.png",
+      "sha256": "fb0434cf94bc1878bc92efc74cff92448b6fc27a6eddc0542b3b126b2a2314ce",
+      "bytes": 65992,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/mobile-selector-variantes.png",
+      "sha256": "e98f8a5c2a9ce4942205557ad87d90662587d06b00253d6570c2b5013db86ff7",
+      "bytes": 75722,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_final/resultados_visuales.json",
+      "sha256": "b6d6ef280bbeef8d6884542d0851768e313c3827cf59e0482347352643b66046",
+      "bytes": 2045,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_primera/desktop-producto.png",
+      "sha256": "c45d4d55e212a9b061304880db0e43a3717f3d4934c5d8c6678e37795eafad06",
+      "bytes": 168194,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_primera/desktop-selector-variantes.png",
+      "sha256": "adceab45f24b67054e75aafa010201a1f6d9230ac050ec78667711e2c050f047",
+      "bytes": 206940,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_primera/resultados_visuales.json",
+      "sha256": "84cfcce670d4ddcc83377d6a3f4c38acc6ffc1d8bc2da85174a8573a59b5aa3a",
+      "bytes": 716,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/desktop-fuente-reproceso.png",
+      "sha256": "114bd56a37bc1ffbfd137cb0436386c5f41bd09c4a358249346790ebd82e388d",
+      "bytes": 337885,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/desktop-producto.png",
+      "sha256": "7332ba35c3c66a9ec2042442bc6aca038c7d84b172dca9e678162027fd2a6aa0",
+      "bytes": 171408,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/desktop-selector-variantes.png",
+      "sha256": "f9e8c3b7ece7ffb273f15933723237d1ad37782d43837de8d36617a6b74821dd",
+      "bytes": 210761,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/failure-state.png",
+      "sha256": "046768b2bde0ef18dbaa24ac6715b0d67a5f2dc88a95d5b3cae463415fb7c5e2",
+      "bytes": 180293,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/mobile-fuente-reproceso.png",
+      "sha256": "9a7eb586740add0dcf0ff7b5cef091b333f53698a7bdde63f9c09f5c693f6132",
+      "bytes": 89619,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/mobile-producto.png",
+      "sha256": "5cde71eba5d0e5fe105fb30404e2705d50975cac734a02c718f9c85ab699ce9c",
+      "bytes": 67485,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
+    },
+    {
+      "path": "visual_segunda/resultados_visuales.json",
+      "sha256": "340048e76e292ce34d31c4b598cb5f522bed81d44b68378d87438aaa3bd0ab0d",
+      "bytes": 1378,
+      "source": "consolidated reviewed source; publication receipt confirms remote SHA"
     }
   ],
   "nestedEntriesInspected": 668,
@@ -631,112 +1471,98 @@
   ],
   "localFilesystemPathsGeneralized": true,
   "internalConnectorMetadataRemoved": true,
-  "publicationState": "AUTHORIZED_PUBLIC_RELEASE",
+  "publicationState": "CONSOLIDATED_SOURCE_APPROVED_SINGLE_PUSH_NO_DEPLOYMENT",
   "codeBranch": "codex/sevilla-review-code",
-  "atomicImporterCasesPassed": 16,
-  "unitAndIntegrationTestsPassed": 154,
+  "atomicImporterCasesPassed": 18,
+  "unitAndIntegrationTestsPassed": 186,
   "credentialsOrEnvironmentIncluded": false,
-  "publishedPathsSha256": {
-    "CANDIDATO-REVISION-Y-DESPLIEGUE-2026-10-19.md": "74361f1e56fdc3af076d5c05810ced717db1f8457be2e653280952c5d685faa8",
-    "candidato_fixture_recetas.json": "9818c1f95eb19c3de846cc3d839b0d7a7c5e6e4c97c8781842e97d8d4c767c20",
-    "mapeos_explicitos_52_perfiles.json": "695c24cb34a16e722cf4e037a795161301868ec9a584b2b4f00cadccd5ff1159",
-    "manifest_cambios_candidato.csv": "3b23008f43e026fd280b81b37b35e0f0ade98aad1253a23af6bcdcb8f8833e3d",
-    "pantallas_http_autenticadas.json": "2591be3d61e213b7fc2aa64a306e16bdbc87a6c9cbe29740f9a3af1033e783ac",
-    "build_visual_corregido.log": "906cb1839669aa0aa4e845b50dea38f1dac480a297949fc26f717291efd8dab0",
-    "atomic_import_results.json": "a6d3dc9e240d509481a71eb8ffe73f242cbddc56d28b50d7abc24de340bd4108",
-    "ensayo_recuperacion_junio.json": "807a6caeb847b248c4fc32dedf55eba8ab00b17d5e7272cfb18733c3c349f437",
-    "pruebas_recuperacion.log": "4ff91992bf7416a66fd491b51bf198fc04a5d9077956e3ccace9004c1d819188",
-    "sevilla-ready-fixes.patch": "3c91be0236d3891f6531a50810e4f61330d7ba746171c35ac4397af74332ffde",
-    "cobertura_final_por_producto.json": "d0c74da613050693c63094d5a0017b76fb91cd661cc75bc56dea69201a9e6774",
-    "inventario_fuentes.json": "596882adea7f9fd4d84a0d8ad59298d6492c412693b95ce3b32e6339942eea7e",
-    "verificacion_recuperacion_por_producto.json": "9477181cc036babb00db2ea62165c56ecafed22c7bb9d8e7a5c057327752e5f0",
-    "resolucion_codigos_por_fuentes.json": "516be2ac7db4f14c4f23cfa67e23b0dd6dc86b34ce5b45a6658ae774a17722d2",
-    "pendientes_13_actualizacion.json": "0de8191f28df496925817c2bced86ea2eeb44b6a03ac02782afc6ef5280e62e4",
-    "asserts_conciliacion_fuente.json": "d505a12bd58b1ff28d406292c374114e1460cb1f897f4f01f1f5fce671782b4e",
-    "discrepancias_recetas_combos.json": "5484aa3e466d97aaa93eebe803f7e111fe941a1473c3603ee616685b89d69339",
-    "evidencia_regla_especie.json": "29373118f817a882d4719f6b04fea4e63e23a3035792e067c9992ab15e53523f",
-    "ctn_celdas.csv": "c73234ee3bb27f459a25fa1ce7a96d68d3c73089f61ce84a308f4170a852ef1a",
-    "plan_53_perfiles_respaldados.json": "dd0dee9c5286762bd61f1fcfa470b3ed1338f2a08fae4d1aa5f7c920742f34bf",
-    "diagrama_grasa_2026-10-01.png": "11db6866bb6dcd005b8620d7337f2a059e54ed2e11736f1ae39a471618d7e351",
-    "build_final.log": "5270b993b6178699909661c639babb71202191c0fed21901cf512a2e9aa89854",
-    "banco_valores_originales.csv": "8cd3e58951a220c65e1f637a9322935303e086430bc66ba3f1a2aaf406b8eb68",
-    "REVISION-VISUAL-2026-10-19.md": "14846f9c170ac38d669444341b8d8acd2209e3a3da94b4673994fa489cd92b5f",
-    "atomic_full_suite.log": "a1aed73eb5d5073607d2a332029c924553251c28fe052a4be0cfc40e5e0d407e",
-    "RECUPERACION-FUENTES-2026-10-19.md": "dcc93c6adbe4fa0228916f56503effa9f2c79e940a6257603adae430dea5aaed",
-    "build_recuperacion.log": "e9dac8a4c70b896d0e76bc37a85558699cb08f1b18624247e3cc928fdcc77010",
-    "asserts_cierre_dataset.json": "b1b59741563a052557950fea2ec29760af97a34f77c4df7d89cecc56520c8b53",
-    "banco_celdas.csv": "7051a906630c775cafa1fa5e64acc8fe831647184a9d3adec3e39d7d6d281d03",
-    "conciliacion_vigencia_y_sumas.json": "eb7afb8ca05631979694a6c12a1842194dda78e441fe5ad6fae8d4a569f35c87",
-    "cobertura_calculo_por_producto.csv": "d62e9c4387efff4f5bbb353edcdf63892e0109041e39941fa321e3c42c987fb3",
-    "ctn_paridad_y_ambiguedades.json": "e77168d7f6ab4643929163013f3ec7931c2dcf5e524c52ae23cab7fb99fca76f",
-    "pruebas_candidato_final.log": "1f8a8ad225e4eb806613a15f4297c2b04fd8bf094d89ec884acb976670fc87be",
-    "READINESS-2026-10-19.json": "4e42dca95864e9f50602919466c118a0ad3aef413cf05427cbb638d3d21e3f2f",
-    "ensayo_recuperacion_junio_repetido.json": "3ccdb5dd7c4906af1da189ce9c11479e59a3f9590b7aa18440dcca315bdb39ce",
-    "migraciones_recuperacion.log": "3fd6f3dd45b7505f88a71bd1cfa877f584901db4a4a54410cb5d14dbe92a4990",
-    "plan_recuperacion_junio_21_productos.json": "13181e23da2583b39d1fe61bec641629606334a14a58e9793ed785e94c56efe8",
-    "comentarios_originales.xlsx.csv": "969b9fd0fa3753e60f6f58895bad53fe0d1911f2c284dd1135e45fe4663aaa27",
-    "plan_52_perfiles_respaldados.json": "bed5f58e03e179490bc3f9abd98dc93f936ac179acc3276d11a0d3ad8a1dc80c",
-    "originales_nuevos_manifest.json": "f356ae3335ba797b41aa097a963bdb1f05ec88b77f41a534cfbb908d98a21428",
-    "CONCILIACION-VIGENCIA-2026-10-19.md": "4e1c5808cc0722cdd676dd0aea91fa2623c716f2aa1c66062ce6ca7801941033",
-    "dataset_auditoria_payload.json": "be62b5f748ad0371979d2ef8e35289015108e21a44e1ac1bb4c7373653ac194c",
-    "pantallas_http_recuperacion.json": "dd1e0c55247a8f2c3196ae6fbb06fe37a708148317457737ae1d36908647fd03",
-    "ensayo_53_perfiles_por_producto.json": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
-    "candidato_fixture_perfiles.json": "4c5f6b203903a0b0a84f433e9ea4be21e35ab1daabf5e80a2ce10c14c944c344",
-    "salchicha480_v3_vs_excel.csv": "902e85214ebef2370e4a7319a1a93f6739466038f6afbcdfd63c5e594e7f5944",
-    "piloto_vs_banco_valores.csv": "9954049d006db3951962f57c2e216e5c3ed0e2685264016c528d7b5dc3794200",
-    "build_candidato_final.log": "7453b8ed7423bbeca5931590e1bfa960b615496c9f08be02b8ca1f2af6926930",
-    "recetas_filas.csv": "3ad50cb282057ac0017473986c6faba0cd6bfa97d40a96d7a05b50f493c8e5cf",
-    "plan_recuperacion_junio_ensayo_v5_no_vigencia.json": "d53c2076bca04fdfe9fc58de37ce41dcd78d0d24e294b3433af462ccbaf47fa7",
-    "candidato_pantallas_http.json": "b17017c8b66f9c8b33168b5be1a394b98c5b78f753f76ba09dfaec39b31f5004",
-    "mapeo_22_productos_hojas.json": "bf1e3207f611cf50cbd2ffbd0daf116cbb8657e02abd9b861d9229797876a51f",
-    "cobertura_recuperacion_por_producto.csv": "696d5b6f89f1a5a80f7dc2840af0fe5ea0d3b7bf99e42eec39e81feb9256aa01",
-    "ensayo_52_perfiles_por_producto.json": "a52b05cd7fdff52aeacaa86875ae165f392fb5a35f61499e32aa6aa9d61ecac6",
-    "clasificacion_33_vigencia_sumas.csv": "35bdef672bed1edb4a9893f54c33b49d80f6cdd3f7aed89ec0107e82e3f66c0f",
-    "pendientes_14_agotadas_fuentes_locales.json": "0574f293218c11e69ccb70766631c3eb47e4ab18b6deefdfe5da9b18e4f38ba6",
-    "candidato_verificacion_fuentes.json": "1fdfbfe5224dda380504948f49c1395abd37d11c88ac2edee7094b03ae9e9fff",
-    "recetas_celdas.csv": "3d5dc58cd53672cf76fc119e7bf0479b32817d698251ce9aecf1b9674c74812f",
-    "cobertura_candidata_vs_vigente_por_producto.csv": "2cd5391a99d85960d2c72991da5b5030023f20455a3926856a2dd63210b47803",
-    "pendientes_14_codigos_candidatos_evidencia.csv": "b2f1a9acefc3b73c9970293e8dde0661a296b2bba4e03792c4f7d8d08f30f5d1",
-    "comentarios_junio_costos.json": "59b2812ce728b68999dd12fb93d010dc62ebdbdd07c6c58d581052fb66bc28a1",
-    "candidato_cierre_local.json": "2114411d9a1b100292164456f99d9933248af909b82eebf8dca2313180d78dec",
-    "verificar_conteos.sql": "aed8cb8867777f7d53ba0450de72ce57ad241ae6b9f714adfa697371536edb14",
-    "maestro_destinos_codigos_nombres.json": "f9a419c3601b1a5af8db4411469a1295e6de7a2e55d2848858c96c98a47ae2ba",
-    "ctn_paridad_historica.csv": "e5e64654513c7249732936282579529f3f8bac2557d0e961884326d3bbf35569",
-    "mapeos_explicitos_53_perfiles.json": "fa837da046c197215a3d17d88734271342543708ba01d82b9f91de4f2eb48c27",
-    "migraciones_candidato_final.log": "be59658a9951e1f0fd3c1812ea16d7ad18b3ada8197b904cb9df9937e1a653c9",
-    "candidato_fixture_recetas_repetidas.json": "1c7ab21469863e212554220801c8a1228309c57b8cd2258a062a69e424de1844",
-    "atomic_migrations.log": "b3d60632ba70008f982c1bef830241bf15c83f3ccfa791c0b180252c1b3ac04e",
-    "pruebas_visual_final.log": "4ca93c23fc86df1b844614959911b4be288a9b099d7f58b1085da31b5b1f7564",
-    "parser_real_y_motor.json": "4c6cd604442c009178c53e0bcec8c86e2d7fb0fcf56adcbe39d24be2039cd12f",
-    "visual_segunda/desktop-selector-variantes.png": "f9e8c3b7ece7ffb273f15933723237d1ad37782d43837de8d36617a6b74821dd",
-    "visual_segunda/resultados_visuales.json": "340048e76e292ce34d31c4b598cb5f522bed81d44b68378d87438aaa3bd0ab0d",
-    "visual_segunda/mobile-fuente-reproceso.png": "9a7eb586740add0dcf0ff7b5cef091b333f53698a7bdde63f9c09f5c693f6132",
-    "visual_segunda/desktop-producto.png": "7332ba35c3c66a9ec2042442bc6aca038c7d84b172dca9e678162027fd2a6aa0",
-    "visual_segunda/mobile-producto.png": "5cde71eba5d0e5fe105fb30404e2705d50975cac734a02c718f9c85ab699ce9c",
-    "visual_segunda/desktop-fuente-reproceso.png": "114bd56a37bc1ffbfd137cb0436386c5f41bd09c4a358249346790ebd82e388d",
-    "visual_segunda/failure-state.png": "046768b2bde0ef18dbaa24ac6715b0d67a5f2dc88a95d5b3cae463415fb7c5e2",
-    "fuentes/junio_original.xlsx": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
-    "fuentes/ctn_salchicha_v11_original.xlsx": "a5ad8c21606ca0e7906af7c360b463c93d080242f6f6075928b4b4f004898571",
-    "fuentes/manifest_fuentes.json": "7c91ffe433809b2057ad58168f7b98473e0a96bd92a6300997ab9d803bd21db3",
-    "fuentes/banco_nutricional_original.xlsx": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
-    "fuentes/costos_junio_original.xlsx": "a9f74a8ec998761582e56fe7295b0303f2ced9bfce532e3d1f5f53545ca2bedc",
-    "documentacion/TRACEABILITY-CLIENT-RESPONSE-2026-10-01.md": "eb5c17ac5de8c6542587afd370d0a11abdd11783af2b5278aaab88aaacccc3a3",
-    "documentacion/README_KIT_IMPORTACION.md": "d868c86f5d699152ebe7607be928616ec487904360c5c75f08ba3651fdb02dd2",
-    "documentacion/OPEN-QUESTIONS.md": "bd6e3a9f6deb18989430122171316ac1dfe5ddf3088329e84dc48ef104e3c4f9",
-    "visual_final/galeria.html": "2ab162b46afebe2f251df68e2af72057d143bfe842b3af2580a04a7c2fd0e09d",
-    "visual_final/desktop-selector-variantes.png": "9d46aba613491e3382c37714d0e13f28639e00795b50faeec02b63d62c136bd9",
-    "visual_final/resultados_visuales.json": "b6d6ef280bbeef8d6884542d0851768e313c3827cf59e0482347352643b66046",
-    "visual_final/desktop-aprobacion-bloqueada.png": "b0becf33cc9f88413a232bcfcf62956d73de1e93c1afc03860c4d052e6440022",
-    "visual_final/mobile-fuente-reproceso.png": "07f81f2910d870a20793a36ab9e9f15d399d5043464feb01a07df94929b692a0",
-    "visual_final/desktop-producto.png": "9bcc351dc24f855d63233b3c455312bfc18cb4ad17c1b97585d078853e1257d2",
-    "visual_final/mobile-producto.png": "fb0434cf94bc1878bc92efc74cff92448b6fc27a6eddc0542b3b126b2a2314ce",
-    "visual_final/matriz_capturas.csv": "44200e8283c6d836261340df1638e5316bdefd8bba02fedd5c1b0e973520a9a1",
-    "visual_final/desktop-fuente-reproceso.png": "18132be9ec923a06724a7f14f5a1c5cd79e0ccab024e6d04874072e08fcb7a85",
-    "visual_final/mobile-selector-variantes.png": "e98f8a5c2a9ce4942205557ad87d90662587d06b00253d6570c2b5013db86ff7",
-    "visual_final/desktop-rol-investigacion.png": "67850e981b52f0bb8952cd933c108fd1c4a50a9060e63507effc9fe8a89b5795",
-    "legado/alimentos_sevilla_admin_migration_kit_2026-10-09.zip": "41b6f376fc9dbd79bf26fe2cd837931abac8870f03af6c943c8d4199d0ed7671",
-    "visual_primera/desktop-selector-variantes.png": "adceab45f24b67054e75aafa010201a1f6d9230ac050ec78667711e2c050f047",
-    "visual_primera/resultados_visuales.json": "84cfcce670d4ddcc83377d6a3f4c38acc6ffc1d8bc2da85174a8573a59b5aa3a",
-    "visual_primera/desktop-producto.png": "c45d4d55e212a9b061304880db0e43a3717f3d4934c5d8c6678e37795eafad06"
-  }
+  "publishedBaseCommit": "e891300",
+  "newScopeNeedsReviewBeforeAnotherPush": false,
+  "candidatePathsSha256": {
+    "Dockerfile": "fea49b6db2edfbe4fb8cce0dbe7dcf700d64a8046b28ca92776721b78f2b4d31",
+    "README.md": "7b03abc64700b666268e5b16537c519d1e0d16ed21d074a95e1e77e75ba32edd",
+    "deliverables/sevilla-review/README.md": "e9a1d7f83f325d9a0f771050b7fd650c0956429943af91820f52bae8b52946e0",
+    "docs/CONSOLIDACION-2026-10-19.md": "9d969c8315638beea98ea429fc1bd6c3fa8e48012b7eadedc5cc1a3e46c507ae",
+    "docs/ENTREGA-TEAM-LEAD.md": "9d67cde735dde8c6e3f34c615090b1a8228f4edfaf778c4a1d6d13e2210cb8a0",
+    "docs/ESTADO-VIGENTE-ENTREGA.md": "86119475a7c56285cf7093713597dd47cec97f619bb5989587af7aa2239c65c8",
+    "docs/GUIA-USUARIO-PREENTREGA.md": "d1ae323c2501e87a4447caf65175383525ec346c242f9bca50b31ece080b50a0",
+    "docs/OPEN-QUESTIONS.md": "1706bf6ba5a10d7c2e0769542d05d08304d6a295e4958074a02227e1af9413b5",
+    "docs/SOURCE_REVIEW_IMPORT_VALIDATION.md": "b5add160cf4869a05faf93752bd0d2cbdc7c2f7da3e93841ce172e97491e534f",
+    "docs/historico/CONSOLIDACION-2026-10-19-antes-cierre-final.md": "edd8b3f541efc75683b208ad0a85f7e30f794dc3b5c00062ec6a18e5b8ec5edd",
+    "docs/historico/OPEN-QUESTIONS-antes-cierre-final.md": "e23a7908ca9a2e5a1f9923db83b2bd4e549d97c71a0ee9314f9736d74c06adae",
+    "docs/historico/README-antes-cierre-final.md": "57a8d4493eaaf350a298b1bdb5211918fe1cbfcf151e7800e4074bb7019afef7",
+    "docs/historico/SOURCE_REVIEW_IMPORT_VALIDATION-antes-cierre-final.md": "66a60b98304846c7eed95d3461c5240c470e6c4fb626a567d2c16861e298015d",
+    "docs/historico/SPEC-006-technical-documents-and-closure-antes-cierre-final.md": "d958c2af549054d9e3d58a06351b5d06b4bae242e3e533952bd19ed6b472a1be",
+    "docs/specs/SPEC-006-technical-documents-and-closure.md": "14d2c8aabf88d1aac0486db9d09ecf684a954e044ee85c8d1206f923b244277b",
+    "package.json": "67ddfffdfdf58db26c1192d8f55af26240356c8731748fd11ec80d27bca89ccf",
+    "prisma/migrations/20261019190000_preserve_nutrient_source_precision/migration.sql": "c7c6bd9bdad6870d7848ea8f574253b3c789665c422da27d15582e379c377bba",
+    "prisma/migrations/20261019210000_source_working_review/migration.sql": "70c932f83b2b241006ea3f91ee43a40f007715e5afa22cdd1e81d784e8700387",
+    "prisma/schema.prisma": "63ddadc06e88ac18c6ad69420ba1e57764f15c5507b65ae03797f6204211978a",
+    "scripts/lib/atomic-source-review.cjs": "5c8532f9a8f76db53ec611b0ef0699e155ea5921f7c4057c9e293156aa34da63",
+    "scripts/review/check-docker-runtime.cjs": "73ecbb066a955c6319357162dee40cb2208b48b2272eab8ea20fb92568594d30",
+    "scripts/review/check-source-review-workflow.cjs": "6fb5e9e562cb316fc7cb2f831f4f43ee0d0b5ff852033f99a3db503f661b671a",
+    "scripts/review/prepare-consolidation-report.py": "abd4f223fba42cb0c31a4f2395d1cc09442d18abb369038500b0d5da1eae527d",
+    "scripts/review/run-consolidated-local.cjs": "596dad2008c9fd395b5230bf2ddb193b4e91c8568f34fe241867c9c6d12cc6f6",
+    "scripts/review/simulate-bank-plan.cjs": "3d0847dbd2f210f7de5e2f65177f1557b80b3441abd079bc8c9e84be1ac87aad",
+    "scripts/review/test-atomic-source-review.cjs": "3626c2d4b07bfb2403d4ff9f39ee35f7b9f0c854622c5504e6c00ba7b09b3aba",
+    "scripts/review/test-source-decimal-storage.cjs": "92777191e6bd51bf03aa9a8335d0eb4ed65558c7b9772155cbbd39d048d4bc4a",
+    "scripts/review/verify-june-recovery.cjs": "13de90c84cfa6a7d69fbdb9c5620a7853493693dfd41fa0bc89e19a4fc9ff94c",
+    "scripts/safe-data-import.cjs": "dca0c2c3c98b327be3d8c337aa15196d59f317f550def5b252ee63c33eed7fcb",
+    "src/app/(app)/documentos/page.tsx": "7371ad2e22a6504a417bb58276cdcc4d4f9dba914eab138991a82ef69ebe3acb",
+    "src/app/(app)/productos/[id]/page.tsx": "eb13131fabc2a0c51e3e095e8c31cb7b66097f6607192d8b835e01b261bb4308",
+    "src/app/actions/bundle-working-review-actions.ts": "28e20cd8fdc5e69515a4e5a7b6b43fa6eee2dcbe6d9398212cfa2ae32616f0d5",
+    "src/app/actions/document-preview-actions.ts": "09e48492921f70c858c09e8ba6b077741d1f2b180e69fc5a7a50a952ebd57968",
+    "src/app/actions/formulation-actions.ts": "eb44bb9e9ba342f04edc1be74a1a300fcf09671f606ec882831ed3f98926a6a0",
+    "src/app/actions/ingredient-actions.ts": "af94d03b3ee97c8f9de29fe4a6b3186f610c6ba2c15d646e758c803a9b8e615a",
+    "src/app/actions/nutrition-actions.ts": "0ead994759563383df529d20435d741041210edab63767179ad505ef0f80a464",
+    "src/app/actions/source-working-review-actions.ts": "9f45a85b2e002f90f898f5f8bd8c87acf4f8019d672e5d5410d1672c03fe763d",
+    "src/components/ingredients/ingredient-detail.tsx": "3de332af09deb7d9ec89f18bab9cc58ca4c7ad6c05d091e925291872998fbf20",
+    "src/components/ingredients/ingredient-form.tsx": "f6fb243bf589f48d9fd1fcb0e0c9739749e611edd58eb76d8f8130d8356a3ef7",
+    "src/components/nutrition/species-fat-preview.tsx": "a47089226d5ed8387ba3038f363b773fc154bb5e3f0625af1690a5c0a438beca",
+    "src/components/products/bundle-working-review-editor.tsx": "88f183b9373fd5f44d0c2d991b963be69cf1479c6d2c84f7680c0c17e8cc37d3",
+    "src/components/products/formulation-review-evidence.tsx": "12bbd41ecb588d455ba717e1cee2ac3258be3a048ddf957f78b0265cb557636c",
+    "src/components/products/product-version-panel.tsx": "b1c5288e754ddef6f1c54839ba2babe357c705350eb4ce2d96ef5c9deda1486e",
+    "src/components/products/source-working-review-editor.tsx": "d7ebc6b2c28f58b69373ac199aae982416cf377db87012f59b726504b3d5e8e6",
+    "src/lib/decimal-storage.ts": "f4803bf9e44db87632e257de07a4ce9f38c0e7eef535cb3d1d1d53332408e530",
+    "src/lib/formulations/review-feedback.ts": "de31a8b7179fc7b4b19a2a0398bc26b1dc892c4a37eb2256132ecfbea9adc0e2",
+    "src/lib/formulations/review-validation-error.ts": "349cf0a47ee3c004cc95bd0437dce7488612af1d37a49297b0450e1bc762cb21",
+    "src/lib/formulations/source-recipe-evidence.ts": "98f2d18aca45d0642d3156f4283e1179ab15d6ff5e888a54e6cf4c62a4c4d16c",
+    "src/lib/formulations/source-working-review.ts": "e4836e429181e3d3a1fd8d386ec57bd188e4f79253f6727692a8079134590f36",
+    "src/lib/nutrition/ctn-import.ts": "858f6412cd072536bacafbb39f942be0310b6b6b61c0046877705d3beff6436e",
+    "src/lib/nutrition/nutrient-input.ts": "eb43de5f72fe6600f54eb58c4d0df3f32ae0be5a6f10cdea14f701a6e20a26e7",
+    "src/lib/nutrition/reviewed-bank-plan.ts": "c44bdc1241c74cffc04501851c3277e373d66f7c56cc85c2f445dbac007eaa56",
+    "src/lib/nutrition/source-identity-evidence.json": "015c02ca9964339c9f7279425e161645243e27109c67308138d031b205e81d05",
+    "src/lib/nutrition/source-identity-guards.ts": "2b4219f691858832e2ff53bc1757481ba55fcffeab1f6207d09139a982e5e09d",
+    "src/lib/products/bundle-review.ts": "551d797bdce5675981166eeb8719669beced693db272d118b594b2fda21a4e9c",
+    "src/lib/validations/ingredients.ts": "a08b9d6d7d149fa99921b0a3069a3ed52f3422dcae034382b90080f3a3e438ed",
+    "src/lib/validations/products.ts": "ca4b30560651ba9710b0d7e5183a5c73a13e67e045a8549c5b6062e5b7da08a2",
+    "src/lib/validations/source-decimal.ts": "38cbc08cb46d43ca4cbb617db4f67035f72ac44362ba4652cd1bff0fb432f345",
+    "tests/integration/source-working-review.test.ts": "632d769a30b5669a5514511064a1da1741360dc42e0c4eb01dae194a60886638",
+    "tests/unit/bundle-review.test.ts": "2481b96b0225d5ca762ca894e9d15cd67b4072380eb9fe2305d3e6800fb59708",
+    "tests/unit/candidate-literal-mapping.test.ts": "6ac687628fce611c2b821ac49748d148a37a856baec1c5218ec69cc080502a9e",
+    "tests/unit/ctn-import.test.ts": "6a9da9e7d5d58a904ba9b50ca416aea0b2dbffa809f24ca5cc20013b68ec1f2d",
+    "tests/unit/decimal-storage.test.ts": "ca748636c76950e68de9cef4da9bba7e8c1fd2bcb17199d1608ce9ef1f3698e6",
+    "tests/unit/formulation-decimal-write.test.ts": "f988a556cc552551f32bff93558af0af0f48ef6c5c45d51d084fb2bd62b90365",
+    "tests/unit/formulation-review-evidence.test.tsx": "3766f50d6f37df2803831c4823c52dc5bc9ef08e40aae39588371ac1f463eeee",
+    "tests/unit/nutrient-form-precision.test.tsx": "8f70f2f4d13ab5bc71d22baf76b3590a427eb6cb8eaeff408cc5f8a1030403e8",
+    "tests/unit/nutrient-input.test.ts": "1425c405c668fde82fabb564f9ed8f9a286b94a00bee67ad9a84182d4c127860",
+    "tests/unit/nutritional-bank-action.test.ts": "fdd558b2e6e28261fd628c43b06eba91677b9d5184cb2ba67a966c4b42be0d49",
+    "tests/unit/review-feedback.test.ts": "cc44c9ecebde927dc4c3e017b03062a650a812c3cb0e0378e26ea1649dc8a5d7",
+    "tests/unit/source-identity-guards.test.ts": "994efa7edebf1bea8b9ee7db55a337ada819394c8bd7b67fde4ed544726c5330",
+    "tests/unit/source-working-review.test.ts": "967c550d7bef888b7531de03509e99c5983916c2b6213ef52503e41bb6394420"
+  },
+  "rowScopedSources": 5,
+  "rowScopedNutrientValues": 85,
+  "isolatedIdentityRows": 11,
+  "linkedSourceComponents": 586,
+  "unresolvedSourceIdentityRows": 20,
+  "migrations": 13,
+  "latestDocumentaryBaseConfirmed": "Junio (1).xlsx plus later documented corrections",
+  "currentProof": [
+    "ensayo_cierre_final/result.json",
+    "ensayo_cierre_final/visual_workflow/resultados_visuales.json",
+    "docker_cierre_final/result.json"
+  ],
+  "historicalReportsAreNotCurrentInstructions": true,
+  "publicationFormattingLedger": "PUBLICATION-FORMATTING.json"
 }

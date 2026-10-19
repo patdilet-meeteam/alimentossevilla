@@ -1,5 +1,6 @@
 "use server";
 
+import {getKnownRecipeConflict} from "@/lib/nutrition/recipe-source-consistency";
 import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
 
 import { db } from "@/lib/db";
@@ -43,7 +44,8 @@ async function loadVersionOrThrow(id: string) {
   const version = await db.formulationVersion.findUnique({
     where: { id },
     include: {
-      formulation: { select: { id: true, productId: true } },
+      formulation: { select: { id: true, productId: true, product:{select:{codigoInterno:true}} } },
+      ingredients: {include:{ingredient:{select:{siesaCode:true}}}},
     },
   });
   if (!version) throw new Error("Versión de formulación no encontrada.");
@@ -56,6 +58,10 @@ function assertMutable(version: { estado: string }) {
       `La versión está en estado ${version.estado} y no admite modificaciones.`
     );
   }
+}
+
+function assertIngredientEditingPath(version: {sourceRecipeSnapshot?:unknown}) {
+  if (version.sourceRecipeSnapshot != null) throw new Error("Concilie la captura fuente mediante una nueva copia de trabajo; la versión de origen se conserva intacta.");
 }
 
 // --- Formulation ---
@@ -179,6 +185,7 @@ export async function addIngredientToVersion(rawInput: AddIngredientToVersionInp
   const input = addIngredientToVersionSchema.parse(rawInput);
   const version = await loadVersionOrThrow(input.formulationVersionId);
   assertMutable(version);
+  assertIngredientEditingPath(version);
 
   // Idempotent on the (versionId, ingredientId) unique — update if exists.
   const created = await db.formulationIngredient.upsert({
@@ -191,19 +198,19 @@ export async function addIngredientToVersion(rawInput: AddIngredientToVersionInp
     create: {
       formulationVersionId: input.formulationVersionId,
       ingredientId: input.ingredientId,
-      porcentajeParticipacion: input.porcentajeParticipacion,
-      cantidadCanonica: input.cantidadCanonica ?? null,
+      porcentajeParticipacion: String(input.porcentajeParticipacion),
+      cantidadCanonica: input.cantidadCanonica == null ? null : String(input.cantidadCanonica),
     },
     update: {
-      porcentajeParticipacion: input.porcentajeParticipacion,
-      cantidadCanonica: input.cantidadCanonica ?? null,
+      porcentajeParticipacion: String(input.porcentajeParticipacion),
+      ...(input.cantidadCanonica === undefined ? {} : { cantidadCanonica: input.cantidadCanonica === null ? null : String(input.cantidadCanonica) }),
     },
   });
 
   await recordAuditEvent({
     actorId: user.id, actorEmail: user.email,
     action: "formulation_ingredient.upsert", entity: "FormulationIngredient", entityId: created.id,
-    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
+    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, ...(input.cantidadCanonica === undefined ? {} : { cantidadCanonica: input.cantidadCanonica }) },
   });
 
   revalidatePath(`/productos/${version.formulation.productId}`);
@@ -218,6 +225,7 @@ export async function updateIngredientPercentage(rawInput: UpdateIngredientPerce
   const input = updateIngredientPercentageSchema.parse(rawInput);
   const version = await loadVersionOrThrow(input.formulationVersionId);
   assertMutable(version);
+  assertIngredientEditingPath(version);
 
   const updated = await db.formulationIngredient.update({
     where: {
@@ -226,13 +234,13 @@ export async function updateIngredientPercentage(rawInput: UpdateIngredientPerce
         ingredientId: input.ingredientId,
       },
     },
-    data: { porcentajeParticipacion: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
+    data: { porcentajeParticipacion: String(input.porcentajeParticipacion), ...(input.cantidadCanonica === undefined ? {} : { cantidadCanonica: input.cantidadCanonica === null ? null : String(input.cantidadCanonica) }) },
   });
 
   await recordAuditEvent({
     actorId: user.id, actorEmail: user.email,
     action: "formulation_ingredient.update", entity: "FormulationIngredient", entityId: updated.id,
-    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, cantidadCanonica: input.cantidadCanonica ?? null },
+    metadata: { versionId: version.id, ingredientId: input.ingredientId, porcentaje: input.porcentajeParticipacion, ...(input.cantidadCanonica === undefined ? {} : { cantidadCanonica: input.cantidadCanonica }) },
   });
 
   revalidatePath(`/productos/${version.formulation.productId}`);
@@ -247,6 +255,7 @@ export async function removeIngredientFromVersion(rawInput: RemoveIngredientFrom
   const input = removeIngredientFromVersionSchema.parse(rawInput);
   const version = await loadVersionOrThrow(input.formulationVersionId);
   assertMutable(version);
+  assertIngredientEditingPath(version);
 
   await db.formulationIngredient.delete({
     where: {
@@ -277,9 +286,11 @@ export async function submitForReview(rawInput: TransitionVersionInput) {
     throw new Error(`Solo se pueden enviar a revisión versiones en estado DRAFT. Estado actual: ${version.estado}.`);
   }
 
-  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot, version.ingredients?.map(r=>({ingredientId:r.ingredientId,percentage:r.porcentajeParticipacion.toString(),quantity:r.cantidadCanonica?.toString()??null})),version.sourceReviewSnapshot);
   if (sourceEvidence?.issues.length) throw new Error(`La receta fuente requiere revisión: ${sourceEvidence.issues.join(", ")}`);
 
+  const recipeConflict=getKnownRecipeConflict(version.formulation?.product?.codigoInterno??'',version.ingredients?.map(r=>({siesaCode:r.ingredient.siesaCode,percentage:r.porcentajeParticipacion.toString()}))??[]);
+  if(recipeConflict)throw new Error(recipeConflict+" Concilie el conjunto de productos terminados.");
   const percentageSum = await db.formulationIngredient.aggregate({
     where: { formulationVersionId: version.id },
     _sum: { porcentajeParticipacion: true },
@@ -314,10 +325,14 @@ export async function approveVersion(rawInput: TransitionVersionInput) {
     throw new Error(`Solo se pueden aprobar versiones en estado IN_REVIEW. Estado actual: ${version.estado}.`);
   }
 
-  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot, version.ingredients?.map(r=>({ingredientId:r.ingredientId,percentage:r.porcentajeParticipacion.toString(),quantity:r.cantidadCanonica?.toString()??null})),version.sourceReviewSnapshot);
   if (sourceEvidence?.issues.length) throw new Error(`La receta fuente requiere revisión: ${sourceEvidence.issues.join(", ")}`);
+  const recipeConflict=getKnownRecipeConflict(version.formulation?.product?.codigoInterno??'',version.ingredients?.map(r=>({siesaCode:r.ingredient.siesaCode,percentage:r.porcentajeParticipacion.toString()}))??[]);
+  if(recipeConflict)throw new Error(recipeConflict+" Concilie el conjunto de productos terminados.");
   const percentageSum = await db.formulationIngredient.aggregate({ where: { formulationVersionId: version.id }, _sum: { porcentajeParticipacion: true } });
   if (!percentageSum._sum.porcentajeParticipacion?.equals(new Prisma.Decimal(100))) throw new Error("La suma de porcentajes debe ser exactamente 100,00 % antes de aprobar.");
+
+  if (version.sourceReviewSnapshot && !input.motivo?.trim()) throw new Error("La aprobación de la copia revisada requiere el motivo y la referencia de selección del Director Técnico.");
 
   // Audit event for the approval first, then point the version's auditTrailId at it.
   const audit = await recordAuditEvent({

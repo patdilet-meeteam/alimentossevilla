@@ -1,0 +1,60 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile-sevilla-runtime-artifacts
+#1 transferring dockerfile: 56B
+#1 transferring dockerfile: 1.63kB 0.1s done
+#1 DONE 0.2s
+
+#2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 1.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.1s
+
+#5 [base 1/4] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#5 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.0s done
+#5 DONE 0.1s
+
+#6 [base 3/4] RUN npm install -g pnpm@9.15.9 && npm cache clean --force
+#6 CACHED
+
+#7 [base 2/4] RUN for intento in 1 2 3 4 5; do       apt-get -o Acquire::Retries=5 update       && apt-get -o Acquire::Retries=5 install -y --no-install-recommends openssl ca-certificates       && break;       echo "apt falló (intento $intento), reintentando..."; sleep 15;     done  && command -v openssl >/dev/null  && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [base 4/4] WORKDIR /app
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 68.81MB 2.5s done
+#9 DONE 2.6s
+
+#10 [runtime 1/3] COPY --chown=node:node app/.next/standalone ./
+#10 DONE 1.1s
+
+#11 [runtime 2/3] COPY --chown=node:node app/.next/static ./.next/static
+#11 DONE 0.6s
+
+#12 [runtime 3/3] COPY --chown=node:node app/public ./public
+#12 DONE 0.3s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 3.3s done
+#13 exporting manifest sha256:b4b1bc889ab6d936a831b6c2640c7d55b4a4e56cb8ce638797ee804fa0ed691b 0.0s done
+#13 exporting config sha256:f9e47376e8895267f9cc2d8aef19775071e92b52857a0f383238536694b0103c 0.0s done
+#13 exporting attestation manifest sha256:7f091126e8b02dfbb8cf0ffc6e526dd2fba5510699fc3322b862ba272987258e 0.0s done
+#13 exporting manifest list sha256:102d61353fe0874d697d2e073882d9766510a60505576e02944acd6bd5983d6c
+#13 exporting manifest list sha256:102d61353fe0874d697d2e073882d9766510a60505576e02944acd6bd5983d6c 0.0s done
+#13 naming to docker.io/library/sevilla-review-local:runtime-final 0.0s done
+#13 unpacking to docker.io/library/sevilla-review-local:runtime-final
+#13 unpacking to docker.io/library/sevilla-review-local:runtime-final 1.4s done
+#13 DONE 4.9s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/sx61b7fd7qvkwu02c2t6z4b8y

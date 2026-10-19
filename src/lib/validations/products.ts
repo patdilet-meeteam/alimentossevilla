@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { exactNonnegativeDecimal } from "@/lib/validations/source-decimal";
 
 const ProductCategoryEnum = z.enum([
   "SALCHICHA",
@@ -122,23 +123,15 @@ export const updateDraftProcessLossSchema = z.object({
 export const addIngredientToVersionSchema = z.object({
   formulationVersionId: z.string().min(1),
   ingredientId: z.string().min(1, "El ingrediente es requerido"),
-  porcentajeParticipacion: z
-    .number()
-    .finite()
-    .min(0, "El porcentaje no puede ser negativo")
-    .max(100, "El porcentaje no puede exceder 100"),
-  cantidadCanonica: positiveDecimal.optional().nullable(),
+  porcentajeParticipacion: exactNonnegativeDecimal(100),
+  cantidadCanonica: exactNonnegativeDecimal(100000).optional().nullable(),
 });
 
 export const updateIngredientPercentageSchema = z.object({
   formulationVersionId: z.string().min(1),
   ingredientId: z.string().min(1),
-  porcentajeParticipacion: z
-    .number()
-    .finite()
-    .min(0)
-    .max(100),
-  cantidadCanonica: positiveDecimal.optional().nullable(),
+  porcentajeParticipacion: exactNonnegativeDecimal(100),
+  cantidadCanonica: exactNonnegativeDecimal(100000).optional().nullable(),
 });
 
 export const removeIngredientFromVersionSchema = z.object({

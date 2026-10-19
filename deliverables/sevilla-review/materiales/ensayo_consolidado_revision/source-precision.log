@@ -1,0 +1,14 @@
+{
+  "scope": "ISOLATED_FIXTURE_ONLY",
+  "noProductionAccess": true,
+  "percentagesCompared": 275,
+  "percentageDrift": 0,
+  "pilotExact100": true,
+  "reviewedNutrientValuesCompared": 1121,
+  "nutrientDrift": 0,
+  "candidateValuesRollbackRoundtrip": 221,
+  "exact24FractionalDigits": true,
+  "allRowsPreservedAfterRollback": true,
+  "businessApprovalsCreated": 0,
+  "result": "PASS"
+}

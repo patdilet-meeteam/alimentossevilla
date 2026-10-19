@@ -1,0 +1,58 @@
+[
+  {
+    "id": "l2jhlv064hyff4rw8xbifmgzg",
+    "description": "mount / from exec /bin/sh -c mkdir -p /app/node_modules/.vite && chown node:node /app/node_modules/.vite",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nl2jhlv064hyff4rw8xbifmgzg               \ttrue \t\t24.73kB   \t9 minutes ago\nTotal:\t24.73kB\n"
+  },
+  {
+    "id": "j3mrtepwbhislg3g5552gr8ri",
+    "description": "[build 1/2] COPY . .",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nj3mrtepwbhislg3g5552gr8ri               \ttrue \t\t2.332MB   \t21 minutes ago\nTotal:\t2.332MB\n"
+  },
+  {
+    "id": "cbde78gfhl0ac9xvrumsxwzgp",
+    "description": "[build 1/2] COPY . .",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ncbde78gfhl0ac9xvrumsxwzgp               \ttrue \t\t2.336MB   \t12 minutes ago\nTotal:\t2.336MB\n"
+  },
+  {
+    "id": "w5f18p563yp1oirykbgns8gsf",
+    "description": "[build 1/2] COPY . .",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nw5f18p563yp1oirykbgns8gsf               \ttrue \t\t2.011MB   \t18 minutes ago\nTotal:\t2.011MB\n"
+  },
+  {
+    "id": "olrbb0xgmt55xrsppf103aqnj",
+    "description": "[build 1/2] COPY . .",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nolrbb0xgmt55xrsppf103aqnj               \ttrue \t\t2.007MB   \t24 minutes ago\nTotal:\t2.007MB\n"
+  },
+  {
+    "id": "pgq2ztwty30toc58otmnhyh0e",
+    "description": "mount / from exec /bin/sh -c pnpm build",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\npgq2ztwty30toc58otmnhyh0e               \ttrue \t\t443.4MB   \t9 minutes ago\nTotal:\t443.4MB\n"
+  },
+  {
+    "id": "hy2pyzv7t0d4dixbfjknd697n",
+    "description": "[build 1/2] COPY . .",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nhy2pyzv7t0d4dixbfjknd697n               \ttrue \t\t2.345MB   \t9 minutes ago\nTotal:\t2.345MB\n"
+  },
+  {
+    "id": "i3i3bebk6x1vn7wra81wxpr5e",
+    "description": "mount / from exec /bin/sh -c pnpm install --frozen-lockfile --network-concurrency 8 --fetch-retries 5       --fetch-retry-mintimeout 20000 --fetch-retry-maxtimeout 120000",
+    "reclaimableVerified": true,
+    "sharedVerified": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ni3i3bebk6x1vn7wra81wxpr5e               \ttrue \t\t1.292GB   \t9 minutes ago\nTotal:\t1.292GB\n"
+  }
+]

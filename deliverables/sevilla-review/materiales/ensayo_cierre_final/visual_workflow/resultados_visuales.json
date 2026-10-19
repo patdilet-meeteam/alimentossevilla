@@ -1,0 +1,122 @@
+{
+  "browser": "Chrome/155.0.8059.82",
+  "scope": "Isolated installed Chrome/CDP; no personal session, production or current selection",
+  "screenshots": [
+    "desktop-reconciliation-editor.png",
+    "desktop-classification-persisted.png",
+    "desktop-approved-fixture.png",
+    "desktop-document-saved-printable.png",
+    "mobile-reconciliation-editor.png",
+    "desktop-bundle-approved.png"
+  ],
+  "checks": [
+    {
+      "name": "Unconfirmed source remains draft; review control is available",
+      "passed": true
+    },
+    {
+      "name": "Save creates a separate draft without approving or changing origin",
+      "passed": true
+    },
+    {
+      "name": "Unknown unit blocks submission but not draft preparation",
+      "passed": true
+    },
+    {
+      "name": "A reconciled exact100 draft can enter the Director workflow",
+      "passed": true
+    },
+    {
+      "name": "Classification evidence persists after reload",
+      "passed": true
+    },
+    {
+      "name": "Existing approval transition requires authenticated ADMIN and explicit reference",
+      "passed": true
+    },
+    {
+      "name": "Approved captured recipe calculates with complete row nutrients",
+      "passed": true
+    },
+    {
+      "name": "Document consumes persisted species classification with nutrition",
+      "passed": true
+    },
+    {
+      "name": "Document saved from the approved source version with frozen nutrition and composition criterion",
+      "passed": true
+    },
+    {
+      "name": "Print control invokes browser print",
+      "passed": true
+    },
+    {
+      "name": "Printable document renders to PDF",
+      "passed": true
+    },
+    {
+      "name": "New editor keeps mobile body within viewport",
+      "passed": true
+    },
+    {
+      "name": "Mobile reconciliation table scrolls locally",
+      "passed": true
+    },
+    {
+      "name": "R_AND_D can prepare another draft but cannot approve",
+      "passed": true
+    },
+    {
+      "name": "QUALITY reads approved evidence without reconciliation or classification writes",
+      "passed": true
+    },
+    {
+      "name": "QUALITY cannot save or trigger document printing",
+      "passed": true
+    },
+    {
+      "name": "Print CSS hides read-only role cards",
+      "passed": true
+    },
+    {
+      "name": "Bundle UI saves an incomplete separate draft and preserves original900",
+      "passed": true
+    },
+    {
+      "name": "Incomplete bundle cannot enter review",
+      "passed": true
+    },
+    {
+      "name": "R&D submits the reconciled bundle but has no approval control",
+      "passed": true
+    },
+    {
+      "name": "Director approves bundle composition and raw source stays unchanged",
+      "passed": true
+    },
+    {
+      "name": "Bundle UI explicitly blocks aggregate label",
+      "passed": true
+    },
+    {
+      "name": "QUALITY has no bundle write controls",
+      "passed": true
+    },
+    {
+      "name": "No customer/business version approved by browser test",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime exceptions",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "result": "PASS",
+  "cleanup": {
+    "users": 0,
+    "accounts": 0,
+    "sessions": 0,
+    "approvedVersions": 0
+  }
+}

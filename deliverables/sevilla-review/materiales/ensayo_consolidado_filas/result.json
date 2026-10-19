@@ -1,0 +1,62 @@
+{
+  "scope": "DISPOSABLE_LOOPBACK_FIXTURE_ONLY",
+  "productionAccess": false,
+  "stages": [
+    {
+      "name": "postgres-create",
+      "result": "PASS"
+    },
+    {
+      "name": "postgres-port",
+      "result": "PASS"
+    },
+    {
+      "name": "migrations",
+      "result": "PASS"
+    },
+    {
+      "name": "client",
+      "result": "PASS"
+    },
+    {
+      "name": "profiles66",
+      "result": "PASS"
+    },
+    {
+      "name": "source-precision",
+      "result": "PASS"
+    },
+    {
+      "name": "atomic-batch",
+      "result": "PASS"
+    },
+    {
+      "name": "source-verification",
+      "result": "PASS"
+    },
+    {
+      "name": "test-suite",
+      "result": "PASS"
+    },
+    {
+      "name": "typescript",
+      "result": "PASS"
+    },
+    {
+      "name": "lint",
+      "result": "PASS"
+    },
+    {
+      "name": "build",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "sourceFingerprintBefore": "13037102ec38fdd53da0267b06c4ab35fc3f453227ff0ad55354680ccc1c79ac",
+  "codeFilesVerified": 185,
+  "cleanup": {
+    "temporaryContainerRemoved": true
+  },
+  "sourceFingerprintAfter": "13037102ec38fdd53da0267b06c4ab35fc3f453227ff0ad55354680ccc1c79ac",
+  "limit": "Fixture and source validation only. Does not certify current recipes, actual deployed DB, production backup, Docker image build, or business approval."
+}

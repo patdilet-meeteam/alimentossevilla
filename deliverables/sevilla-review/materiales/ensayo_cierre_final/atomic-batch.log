@@ -1,0 +1,146 @@
+{
+  "scope": "ISOLATED_FIXTURE_ONLY_NO_PRODUCTION",
+  "checks": [
+    {
+      "name": "Full33+4 dry run rolled back every table",
+      "result": "PASS"
+    },
+    {
+      "name": "Late failure after33recipes+3bundles rolls back complete batch",
+      "result": "PASS"
+    },
+    {
+      "name": "Excess precision is rejected rather than rounded",
+      "result": "PASS"
+    },
+    {
+      "name": "Custom pg_dump restored to independent tmpfs PostgreSQL with identical row fingerprints",
+      "result": "PASS"
+    },
+    {
+      "name": "Atomic apply creates33drafts+4bundles and preserves existing rows",
+      "result": "PASS"
+    },
+    {
+      "name": "All606source rows and20unresolved rows remain captured without approval",
+      "result": "PASS"
+    },
+    {
+      "name": "Eleven ambiguous identity rows remain unlinked; five row-only sources never create global profiles",
+      "result": "PASS"
+    },
+    {
+      "name": "No global profiles contaminated by row-only identities",
+      "result": "PASS"
+    },
+    {
+      "name": "Existing version7 preserved; recovered variants append from8",
+      "result": "PASS"
+    },
+    {
+      "name": "Second apply is exactly idempotent including timestamps and all rows",
+      "result": "PASS"
+    },
+    {
+      "name": "Source header drift at sameSHA/sheet aborts rather than silently reusing",
+      "result": "PASS"
+    },
+    {
+      "name": "Existing component drift aborts without overwriting",
+      "result": "PASS"
+    },
+    {
+      "name": "Existing bundle component drift aborts without overwriting",
+      "result": "PASS"
+    },
+    {
+      "name": "Source version state change is preserved and stops reimport",
+      "result": "PASS"
+    },
+    {
+      "name": "Concurrent importer refused while advisory transaction lock is held",
+      "result": "PASS"
+    },
+    {
+      "name": "CLI rejects nonloopback/nonfixture target before connecting",
+      "result": "PASS"
+    },
+    {
+      "name": "CLI rejects wrong workbook SHA before writes",
+      "result": "PASS"
+    },
+    {
+      "name": "Final dry run is clean and no approved/profile state changes occur",
+      "result": "PASS"
+    }
+  ],
+  "businessApprovalsCreated": 0,
+  "baseline": {
+    "ingredients": 430,
+    "products": 40,
+    "presentations": 63,
+    "formulations": 19,
+    "versions": 20,
+    "components": 277,
+    "bundles": 0,
+    "bundleComponents": 0,
+    "profiles": 84,
+    "nutrientValues": 1427,
+    "approvals": 1,
+    "bundleApprovals": 0
+  },
+  "syntheticBaselineApprovedSentinel": 1,
+  "backupSha256": "def7255ef030b93d3b9882e13c8b2381ed5b76fee866e065d6a0ce588ba59b19",
+  "restoredBaselineCounts": {
+    "ingredients": 430,
+    "products": 40,
+    "presentations": 63,
+    "formulations": 19,
+    "versions": 20,
+    "components": 277,
+    "bundles": 0,
+    "bundleComponents": 0,
+    "profiles": 84,
+    "nutrientValues": 1427,
+    "approvals": 1,
+    "bundleApprovals": 0
+  },
+  "firstImport": {
+    "before": {
+      "ingredients": 430,
+      "products": 40,
+      "presentations": 63,
+      "formulations": 19,
+      "versions": 20,
+      "components": 277,
+      "bundles": 0,
+      "bundleComponents": 0,
+      "profiles": 84,
+      "nutrientValues": 1427,
+      "approvals": 1,
+      "bundleApprovals": 0
+    },
+    "after": {
+      "ingredients": 454,
+      "products": 40,
+      "presentations": 63,
+      "formulations": 39,
+      "versions": 53,
+      "components": 863,
+      "bundles": 4,
+      "bundleComponents": 14,
+      "profiles": 84,
+      "nutrientValues": 1427,
+      "approvals": 1,
+      "bundleApprovals": 0
+    }
+  },
+  "result": "PASS",
+  "testedCases": 18,
+  "limit": "Loopback rehearsal is executable and atomic; no production destination adapter/backup-gated execution is claimed.",
+  "cleanup": {
+    "users": 0,
+    "sessions": 0,
+    "approvedVersions": 0
+  }
+}

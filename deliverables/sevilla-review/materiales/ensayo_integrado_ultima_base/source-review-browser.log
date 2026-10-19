@@ -1,0 +1,68 @@
+{
+  "browser": "Chrome/155.0.8059.82",
+  "scope": "Isolated installed Chrome/CDP; no personal session, production or current selection",
+  "screenshots": [
+    "desktop-reconciliation-editor.png",
+    "desktop-classification-persisted.png",
+    "desktop-approved-fixture.png",
+    "mobile-reconciliation-editor.png"
+  ],
+  "checks": [
+    {
+      "name": "Unconfirmed source remains draft; review control is available",
+      "passed": true
+    },
+    {
+      "name": "Save creates a separate draft without approving or changing origin",
+      "passed": true
+    },
+    {
+      "name": "Unknown unit blocks submission but not draft preparation",
+      "passed": true
+    },
+    {
+      "name": "A reconciled exact100 draft can enter the Director workflow",
+      "passed": true
+    },
+    {
+      "name": "Classification evidence persists after reload",
+      "passed": true
+    },
+    {
+      "name": "Existing approval transition requires authenticated ADMIN and explicit reference",
+      "passed": true
+    },
+    {
+      "name": "New editor keeps mobile body within viewport",
+      "passed": true
+    },
+    {
+      "name": "Mobile reconciliation table scrolls locally",
+      "passed": true
+    },
+    {
+      "name": "R_AND_D can prepare another draft but cannot approve",
+      "passed": true
+    },
+    {
+      "name": "QUALITY reads approved evidence without reconciliation or classification writes",
+      "passed": true
+    },
+    {
+      "name": "No customer/business version approved by browser test",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime exceptions",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "result": "PASS",
+  "cleanup": {
+    "users": 0,
+    "accounts": 0,
+    "sessions": 0,
+    "approvedVersions": 0
+  }
+}

@@ -1,3 +1,5 @@
+import { assertGlobalProfileIdentity } from "@/lib/nutrition/source-identity-guards";
+import { fitsSourceDecimal } from "@/lib/decimal-storage";
 import type { NutritionalBankRow } from "@/lib/nutrition/nutritional-bank-import";
 export interface BankTargetMapping {
   targetCode: string;
@@ -16,6 +18,7 @@ export function buildReviewedBankPlan(
   if (!/^[a-f0-9]{64}$/i.test(source.sha256) || !source.fileName) throw new Error("La fuente requiere nombre y SHA-256.");
   const seen = new Set<string>();
   return mappings.map((mapping) => {
+    assertGlobalProfileIdentity(mapping.targetCode);
     if (seen.has(mapping.targetCode)) throw new Error(`Destino duplicado: ${mapping.targetCode}`);
     seen.add(mapping.targetCode);
     const target = targets.filter((item) => item.siesaCode === mapping.targetCode);
@@ -31,7 +34,7 @@ export function buildReviewedBankPlan(
       identityEvidence: mapping.evidence,
       referenceBase: "100g",
       values: Object.entries(row[0].valuesPer100g).map(([nutrientKey, value]) => ({ nutrientKey, value: value.toString(), method: `TN OFICIAL fila ${mapping.sourceRow}` })),
-      storagePrecisionIssues: Object.entries(row[0].valuesPer100g).filter(([, value]) => value.decimalPlaces() > 4).map(([key]) => key),
+      storagePrecisionIssues: Object.entries(row[0].valuesPer100g).filter(([, value]) => !fitsSourceDecimal(value.toString())).map(([key]) => key),
     };
   });
 }

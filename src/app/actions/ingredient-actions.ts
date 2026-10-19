@@ -1,5 +1,6 @@
 "use server";
 
+import { assertGlobalProfileIdentity } from "@/lib/nutrition/source-identity-guards";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth/session";
 import { hasRole } from "@/lib/auth/roles";
@@ -10,6 +11,7 @@ import {
   ingredientFilterSchema,
   nutritionalProfileSchema,
   nutrientValueSchema,
+  nutrientValueBatchSchema,
   createIngredientWithProfileSchema,
   normalizeSiesaCode,
 } from "@/lib/validations/ingredients";
@@ -177,6 +179,7 @@ export async function createIngredientWithProfile(
 
   // Normalize SIESA code
   const normalizedCode = normalizeSiesaCode(validated.ingredient.siesaCode);
+  assertGlobalProfileIdentity(normalizedCode);
 
   // Check for duplicate SIESA code
   const existing = await db.ingredient.findUnique({
@@ -213,7 +216,7 @@ export async function createIngredientWithProfile(
         values: {
           create: validated.profile.nutrientValues.map((nv) => ({
             nutrientId: nv.nutrientId,
-            value: nv.value,
+            value: String(nv.value),
             method: nv.method,
           })),
         },
@@ -268,6 +271,7 @@ export async function updateIngredient(
   // Normalize SIESA code if provided
   if (validated.siesaCode) {
     validated.siesaCode = normalizeSiesaCode(validated.siesaCode);
+    assertGlobalProfileIdentity(validated.siesaCode);
 
     // Check for duplicate SIESA code (excluding current ingredient)
     const existing = await db.ingredient.findFirst({
@@ -381,6 +385,8 @@ export async function createNutritionalProfile(
     throw new Error("Ingredient not found");
   }
 
+  assertGlobalProfileIdentity(ingredient.siesaCode);
+  const values = nutrientValueBatchSchema.parse(data.nutrientValues);
   // Validate input
   const validated = nutritionalProfileSchema.parse({
     ingredientId,
@@ -407,9 +413,9 @@ export async function createNutritionalProfile(
         isActive: true,
         createdById: currentUser.id,
         values: {
-          create: data.nutrientValues.map((nv) => ({
+          create: values.map((nv) => ({
             nutrientId: nv.nutrientId,
-            value: nv.value,
+            value: String(nv.value),
             method: nv.method,
           })),
         },

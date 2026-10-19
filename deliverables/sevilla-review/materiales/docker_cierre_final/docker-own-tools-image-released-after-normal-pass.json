@@ -1,0 +1,7 @@
+{
+  "imageId": "sha256:919c17274003e16e80898d94c00df58dbbbc09333153074d8bc8eec81b0a5c19",
+  "normalLoadAndRunPassed": true,
+  "preservedArchiveSha256": "3a75cdba0550e96b2a013bade2c506f3a2f339e96d1ba1b009ef0ef32fef01a9",
+  "noDependentContainersVerified": true,
+  "result": "Untagged: sevilla-review-local:herramientas-final\nDeleted: sha256:919c17274003e16e80898d94c00df58dbbbc09333153074d8bc8eec81b0a5c19\n"
+}

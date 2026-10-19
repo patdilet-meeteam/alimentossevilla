@@ -1,4 +1,6 @@
 "use server";
+import { globalProfileIdentityIssue } from "@/lib/nutrition/source-identity-guards";
+import { fitsSourceDecimal } from "@/lib/decimal-storage";
 
 import { NutrientUnit, Prisma, Role } from "@prisma/client";
 import { getCurrentUser } from "@/lib/auth/session";
@@ -261,6 +263,10 @@ export async function importNutritionalBankProfiles(formData: FormData): Promise
     return { ok: false, message: "No se modificó ningún perfil: ninguna fila del Banco coincide de forma única con un ingrediente maestro activo." };
   }
 
+  if (matched.some(({ row }) => Object.values(row.valuesPer100g).some((value) => !fitsSourceDecimal(value.toString())))) {
+    return { ok: false, message: "No se modificó ningún perfil: un valor fuente excede la precisión exacta disponible; no se redondea." };
+  }
+  if (matched.some(({ ingredient }) => globalProfileIdentityIssue(ingredient.siesaCode))) return {ok: false, message: "No se modificó ningún perfil: código con identidad pendiente por fila; no se permite un perfil global."};
   const nutrientKeys = [...new Set(matched.flatMap(({ row }) => Object.keys(row.valuesPer100g)))];
   await db.$transaction(async (tx) => {
     const nutrients = new Map<string, { id: string }>();
@@ -389,7 +395,7 @@ export async function calculateFormulationSeals(
     perPortion: Record<string, number>;
     energyKcalPer100g: number;
     energyKcalPerPortion: number;
-    calculationSource: "EXCEL_CTN" | "BANCO_NUTRICIONAL";
+    calculationSource: "EXCEL_CTN" | "SOURCE_REVIEW" | "BANCO_NUTRICIONAL";
     sourceFileName: string | null;
   };
   seals?: {
@@ -417,7 +423,7 @@ export async function calculateFormulationSeals(
     include: {
       formulation: {
         include: {
-          product: { select: { id: true, nombreComercial: true, codigoInterno: true } },
+          product: { select: { id: true, nombreComercial: true, codigoInterno: true, _count: {select: {bundleVersions:true}} } },
         },
       },
       ingredients: {
@@ -443,7 +449,9 @@ export async function calculateFormulationSeals(
     return { ok: false, message: "Versión de formulación no encontrada." };
   }
 
-  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot);
+  if (version.formulation.product._count.bundleVersions > 0) return {ok:false,message:"Etiqueta agregada bloqueada: la aprobación de composición de un conjunto no certifica una receta nutricional del paquete."};
+
+  const sourceEvidence = getSourceRecipeEvidence(version.sourceRecipeSnapshot,version.ingredients.map(r=>({ingredientId:r.ingredientId,percentage:r.porcentajeParticipacion.toString(),quantity:r.cantidadCanonica?.toString()??null})),version.sourceReviewSnapshot);
   if (sourceEvidence?.issues.length) return { ok: false, message: `Receta fuente pendiente: ${sourceEvidence.issues.join(", ")}` };
   const recipeConflict = getKnownRecipeConflict(version.formulation.product.codigoInterno, version.ingredients.map((row) => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentajeParticipacion.toString() })));
   if (recipeConflict) return { ok: false, message: recipeConflict, readiness: { ready: false, issues: [recipeConflict] } };
@@ -452,6 +460,8 @@ export async function calculateFormulationSeals(
     return { ok: false, message: `La versión ${version.numeroSecuencial} no está aprobada (estado: ${version.estado}). Los sellos solo se evalúan en versiones aprobadas.` };
   }
 
+  const withQuantity=version.ingredients.filter(r=>r.cantidadCanonica!==null).length;
+  if(withQuantity>0&&withQuantity!==version.ingredients.length)return {ok:false,message:"Complete todas las cantidades canónicas; no se mezclan cantidades con porcentajes."};
   const ctnSource = resolveCtnNutritionSnapshot(version.nutritionSourceSnapshot, version.ingredients.map((fi) => ({
     ingredientId: fi.ingredientId,
     name: fi.ingredient.name,
@@ -471,6 +481,8 @@ export async function calculateFormulationSeals(
     }
   }
   const ingredientsWithProfiles = ctnSource.status === "ready" ? version.ingredients : version.ingredients.filter((fi) => {
+    const identityIssue = globalProfileIdentityIssue(fi.ingredient.siesaCode);
+    if (identityIssue) { readinessIssues.push(`Identidad nutricional por fila pendiente: ${fi.ingredient.siesaCode}. ${identityIssue}`); return false; }
     const activeProfiles = fi.ingredient.profiles.filter((p) => p.isActive);
     if (activeProfiles.length === 0) {
       readinessIssues.push(`Falta perfil nutricional para: ${fi.ingredient.name}`);
@@ -548,7 +560,7 @@ export async function calculateFormulationSeals(
       ),
       energyKcalPer100g: Number(calculation.energyKcalPer100g),
       energyKcalPerPortion: Number(calculation.energyKcalPerPortion),
-      calculationSource: ctnSource.status === "ready" ? "EXCEL_CTN" : "BANCO_NUTRICIONAL",
+      calculationSource: ctnSource.status === "ready" ? (ctnSource.source === "SOURCE_REVIEW" ? "SOURCE_REVIEW" : "EXCEL_CTN") : "BANCO_NUTRICIONAL",
       sourceFileName: ctnSource.status === "ready" ? ctnSource.sourceFileName : null,
     },
     seals: {

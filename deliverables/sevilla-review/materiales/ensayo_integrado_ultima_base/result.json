@@ -1,0 +1,66 @@
+{
+  "scope": "DISPOSABLE_LOOPBACK_FIXTURE_ONLY",
+  "productionAccess": false,
+  "stages": [
+    {
+      "name": "postgres-create",
+      "result": "PASS"
+    },
+    {
+      "name": "postgres-port",
+      "result": "PASS"
+    },
+    {
+      "name": "migrations",
+      "result": "PASS"
+    },
+    {
+      "name": "client",
+      "result": "PASS"
+    },
+    {
+      "name": "profiles66",
+      "result": "PASS"
+    },
+    {
+      "name": "source-precision",
+      "result": "PASS"
+    },
+    {
+      "name": "atomic-batch",
+      "result": "PASS"
+    },
+    {
+      "name": "source-verification",
+      "result": "PASS"
+    },
+    {
+      "name": "test-suite",
+      "result": "PASS"
+    },
+    {
+      "name": "typescript",
+      "result": "PASS"
+    },
+    {
+      "name": "lint",
+      "result": "PASS"
+    },
+    {
+      "name": "build",
+      "result": "PASS"
+    },
+    {
+      "name": "source-review-browser",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "sourceFingerprintBefore": "fdc3fc391ba5de4763e3ce7a411d40c89f7797d1d4e14648623f2cb54ef45bf7",
+  "codeFilesVerified": 196,
+  "cleanup": {
+    "temporaryContainerRemoved": true
+  },
+  "sourceFingerprintAfter": "fdc3fc391ba5de4763e3ce7a411d40c89f7797d1d4e14648623f2cb54ef45bf7",
+  "limit": "Fixture and source validation only. Does not certify current recipes, actual deployed DB, production backup, Docker image build, or business approval."
+}

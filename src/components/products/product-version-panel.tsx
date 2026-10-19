@@ -1,5 +1,8 @@
 "use client";
 
+import {SourceWorkingReviewEditor} from "@/components/products/source-working-review-editor";
+import {saveVersionSpeciesClassificationFeedback as saveVersionSpeciesClassification} from "@/app/actions/source-working-review-actions";
+import {readVersionSpeciesClassifications} from "@/lib/formulations/source-working-review";
 import { getKnownRecipeConflict } from "@/lib/nutrition/recipe-source-consistency";
 import { getSourceRecipeEvidence } from "@/lib/formulations/source-recipe-evidence";
 import { sumExactDecimalStrings } from "@/lib/formulations/exact-decimal-sum";
@@ -48,6 +51,7 @@ interface IngredientLite {
 interface FormulationIngredientRow {
   id: string;
   porcentaje: string;
+  quantity?: string|null;
   ingredient: IngredientLite;
 }
 
@@ -60,6 +64,7 @@ interface FormulationVersionRow {
   aprobadaPor: { name: string; email: string } | null;
   ingredients: FormulationIngredientRow[];
   sourceRecipeSnapshot?: unknown;
+  sourceReviewSnapshot?: unknown;
   reviewIngredients?: ReviewIngredient[];
 }
 
@@ -103,7 +108,7 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
     [versions, activeVersionId],
   );
 
-  const sourceEvidence = getSourceRecipeEvidence(activeVersion?.sourceRecipeSnapshot);
+  const sourceEvidence = getSourceRecipeEvidence(activeVersion?.sourceRecipeSnapshot,activeVersion?.ingredients.map(r=>({ingredientId:r.ingredient.id,percentage:r.porcentaje,quantity:r.quantity??null})),activeVersion?.sourceReviewSnapshot);
   const exactPercentageSum = sumExactDecimalStrings(activeVersion?.ingredients.map((row) => row.porcentaje) ?? []);
   const recipeConflict = activeVersion ? getKnownRecipeConflict(productCode, activeVersion.ingredients.map((row) => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentaje }))) : null;
   const lossKey = `${activeVersion?.id ?? ""}:${activeVersion?.rendimientoEsperado ?? ""}`;
@@ -124,8 +129,10 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
     return () => { cancelled = true; };
   }, []);
 
+  const [approvalReference,setApprovalReference]=useState('');
   const [newIngredientId, setNewIngredientId] = useState<string>("");
   const [newPorcentaje, setNewPorcentaje] = useState<string>("0");
+  const [newQuantity,setNewQuantity]=useState('');
 
   function clearError() { setError(null); }
 
@@ -207,8 +214,10 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
 
   const versionLocked = activeVersion?.estado === "APPROVED" || activeVersion?.estado === "OBSOLETE";
   const sumaWarning = activeVersion && exactPercentageSum !== "100";
-  const processOutput = activeVersion?.rendimientoEsperado !== null && activeVersion
-    ? calculateProcessOutput(formulation?.baseCalculo ?? 0, activeVersion.rendimientoEsperado)
+  const reviewRecord=activeVersion?.sourceReviewSnapshot&&typeof activeVersion.sourceReviewSnapshot==='object'?activeVersion.sourceReviewSnapshot as Record<string,unknown>:{};
+  const lotKg=sourceEvidence ? !sourceEvidence.issues.length&&['g','kg'].includes(String(reviewRecord.unit)) ? Number(sumExactDecimalStrings(activeVersion?.ingredients.map(r=>r.quantity??'0')??[]))/(reviewRecord.unit==='g'?1000:1) : null : Number(formulation?.baseCalculo??0);
+  const processOutput = lotKg!==null && activeVersion?.rendimientoEsperado !== null && activeVersion
+    ? calculateProcessOutput(lotKg, activeVersion.rendimientoEsperado)
     : null;
 
   return (
@@ -231,7 +240,7 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                 {sourceEvidence ? `Cantidad de la hoja: ${sourceEvidence.quantitySum} (base/unidad de la fuente)` : `Lote de entrada: ${Number(formulation.baseCalculo).toLocaleString("es-CO", { maximumFractionDigits: 4 })} kg`}
                 {processOutput
                   ? ` · Merma estimada: ${processOutput.lossQuantityKg.toFixed(4)} kg · Salida total estimada: ${processOutput.outputQuantityKg.toFixed(4)} kg`
-                  : activeVersion ? " · Merma sin definir; salida total no estimada" : ""}
+                  : sourceEvidence&&lotKg===null ? " · Unidad/composición pendiente; salida no estimada" : activeVersion ? " · Merma sin definir; salida total no estimada" : ""}
               </span>
               <Select
                 value={activeVersion?.id ?? ""}
@@ -306,9 +315,10 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                 </div>
 
                 <FormulationReviewEvidence snapshot={activeVersion.sourceRecipeSnapshot} ingredients={activeVersion.reviewIngredients ?? []} />
+                {canWrite ? <SourceWorkingReviewEditor key={activeVersion.id} versionId={activeVersion.id} originComponents={activeVersion.ingredients.map(r=>({ingredientId:r.ingredient.id,percentage:r.porcentaje,quantity:r.quantity??null}))} snapshot={activeVersion.sourceRecipeSnapshot??{source:"APP_VERSION",sourceSheet:`Versión registrada v${activeVersion.numeroSecuencial}`,sourceRows:[...activeVersion.ingredients].sort((a,b)=>a.id.localeCompare(b.id)).map((r,i)=>({sourceRow:i+1,sourceCode:r.ingredient.siesaCode,sourceName:r.ingredient.name,quantity:r.quantity??null,percentage:r.porcentaje}))}} review={activeVersion.sourceReviewSnapshot} ingredients={ingredients} onSaved={id=>{setActiveVersionId(id);router.refresh();}} /> : null}
                 {sourceEvidence ? <p className="rounded border p-3 text-xs [overflow-wrap:anywhere]">Fuente: Junio / {sourceEvidence.sheet}. Cantidad fuente: {sourceEvidence.quantitySum}. Suma literal: {sourceEvidence.percentageSum} %. {sourceEvidence.issues.join(" · ")}</p> : null}
                 {recipeConflict ? <p role="alert" className="rounded border border-red-200 bg-red-50 p-3 text-sm text-red-800">{recipeConflict}</p> : null}
-                <SpeciesFatPreview key={activeVersion.id} ingredients={activeVersion.ingredients.filter((row) => Number(row.porcentaje) > 0).map((row) => ({ id: row.ingredient.id, name: row.ingredient.name }))} />
+                <SpeciesFatPreview key={`${activeVersion.id}:${JSON.stringify(activeVersion.sourceReviewSnapshot)}`} ingredients={activeVersion.ingredients.filter((row) => Number(row.porcentaje) > 0).map((row) => ({ id: row.ingredient.id, name: row.ingredient.name }))} initialClassifications={readVersionSpeciesClassifications(activeVersion.sourceReviewSnapshot,activeVersion.ingredients.map(r=>r.ingredient))} saving={pending} readOnly={!canWrite||versionLocked} onSave={canWrite&&!versionLocked?(rows)=>withRefresh(async()=>{const result=await saveVersionSpeciesClassification({versionId:activeVersion.id,contributions:rows});if(!result.ok)throw Error(result.error);}):undefined} />
 
                 {sumaWarning ? (
                   <div className="flex items-center gap-2 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-800">
@@ -353,7 +363,7 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                     {sealResult?.ok && sealResult.seals ? (
                       <div className="space-y-2 text-sm">
                         <p className="text-xs text-amber-700">
-                          Fuente: {sealResult.nutrition?.calculationSource === "EXCEL_CTN" ? `Excel CTN (${sealResult.nutrition.sourceFileName})` : "perfiles del Banco Nutricional"} · validación técnica · parámetros regulatorios v{sealResult.regulatoryParametersVersion ?? 1}
+                          Fuente: {sealResult.nutrition?.calculationSource === "SOURCE_REVIEW" ? `copia conciliada (${sealResult.nutrition.sourceFileName})` : sealResult.nutrition?.calculationSource === "EXCEL_CTN" ? `Excel CTN (${sealResult.nutrition.sourceFileName})` : "perfiles del Banco Nutricional"} · validación técnica · parámetros regulatorios v{sealResult.regulatoryParametersVersion ?? 1}
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {sealResult.seals.activeSeals.length > 0 ? sealResult.seals.sealTexts.map((seal) => (
@@ -424,7 +434,7 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                         <th className="px-3 py-2">Código</th>
                         <th className="px-3 py-2">Categoría</th>
                         <th className="px-3 py-2 text-right">%</th>
-                        {canWrite ? <th className="px-3 py-2 text-center">{versionLocked ? "Edición" : "Acciones"}</th> : null}
+                        {canWrite&&!sourceEvidence ? <th className="px-3 py-2 text-center">{versionLocked ? "Edición" : "Acciones"}</th> : null}
                       </tr>
                     </thead>
                     <tbody>
@@ -440,12 +450,13 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                             key={fi.id}
                             fi={fi}
                             disabled={pending || versionLocked}
-                            canWrite={canWrite}
-                            onUpdate={(p) =>
+                            canWrite={canWrite&&!sourceEvidence}
+                            onUpdate={(p,q) =>
                               withRefresh(() => updateIngredientPercentage({
                                 formulationVersionId: activeVersion.id,
                                 ingredientId: fi.ingredient.id,
                                 porcentajeParticipacion: p,
+                                cantidadCanonica:q,
                               }))
                             }
                             onRemove={() =>
@@ -480,18 +491,20 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                       type="number"
                       min={0}
                       max={100}
-                      step="0.0001"
+                      step="any"
                       value={newPorcentaje}
                       onChange={(e) => setNewPorcentaje(e.target.value)}
                       aria-label="Porcentaje de participación"
                     />
+                    <Input aria-label="Cantidad canónica del nuevo ingrediente" placeholder="Cantidad; misma unidad de los demás" type="number" step="any" value={newQuantity} onChange={e=>setNewQuantity(e.target.value)} />
                     <Button
-                      disabled={pending || !newIngredientId || Number.isNaN(Number(newPorcentaje))}
+                      disabled={pending || !newIngredientId || !newPorcentaje.trim() || Number.isNaN(Number(newPorcentaje))}
                       onClick={() => withRefresh(async () => {
                         await addIngredientToVersion({
                           formulationVersionId: activeVersion.id,
                           ingredientId: newIngredientId,
-                          porcentajeParticipacion: Number(newPorcentaje),
+                          porcentajeParticipacion: newPorcentaje,
+                          cantidadCanonica:newQuantity||null,
                         });
                         setNewIngredientId("");
                         setNewPorcentaje("0");
@@ -502,7 +515,7 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                   </div>
                 ) : null}
 
-                {sourceEvidence?.issues.length ? <p role="alert" className="rounded border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">Revisión y aprobación bloqueadas: concilie las diferencias de la fuente y acredite la variante vigente antes de continuar.</p> : null}
+                {sourceEvidence?.issues.length ? <p role="alert" className="rounded border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">Revisión y aprobación bloqueadas: concilie las diferencias de la fuente antes de enviar; el Director Técnico decide la aprobación de la copia conciliada.</p> : null}
                 <div className="flex flex-wrap items-center justify-end gap-2">
                   {canWrite && activeVersion.estado === "DRAFT" ? (
                     <Button
@@ -524,8 +537,9 @@ export function ProductVersionPanel({ productId, productCode = "", presentations
                           <XIcon className="mr-1 size-4" /> Rechazar
                         </Button>
                       ) : null}
+                      {activeVersion.sourceReviewSnapshot ? <Input aria-label="Referencia de aprobación del Director Técnico" placeholder="Motivo y referencia de selección documentada" value={approvalReference} onChange={e=>setApprovalReference(e.target.value)} /> : null}
                       <Button
-                        onClick={() => withRefresh(() => approveVersion({ formulationVersionId: activeVersion.id }))}
+                        onClick={() => withRefresh(() => approveVersion({ formulationVersionId: activeVersion.id, motivo: approvalReference||undefined }))}
                         disabled={pending || Boolean(sumaWarning) || Boolean(sourceEvidence?.issues.length)}
                       >
                         <Check className="mr-1 size-4" /> Aprobar
@@ -575,11 +589,12 @@ function Row({
   fi: FormulationIngredientRow;
   disabled: boolean;
   canWrite: boolean;
-  onUpdate: (p: number) => void;
+  onUpdate: (p: string,q:string|null) => void;
   onRemove: () => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [value, setValue] = useState(fi.porcentaje);
+  const [quantity,setQuantity]=useState(fi.quantity??'');
 
   if (!canWrite) {
     return (
@@ -587,7 +602,7 @@ function Row({
         <td className="px-3 py-2 font-medium text-[#1F2933]">{fi.ingredient.name}</td>
         <td className="px-3 py-2 text-xs">{fi.ingredient.siesaCode}</td>
         <td className="px-3 py-2 text-xs">{fi.ingredient.category}</td>
-        <td className="px-3 py-2 text-right">{Number(fi.porcentaje).toFixed(4)} %</td>
+        <td className="px-3 py-2 text-right">{fi.porcentaje} %</td>
       </tr>
     );
   }
@@ -603,14 +618,14 @@ function Row({
             type="number"
             min={0}
             max={100}
-            step="0.0001"
+            step="any"
             defaultValue={fi.porcentaje}
             onChange={(e) => setValue(e.target.value)}
             disabled={disabled}
             className="ml-auto h-8 w-28 text-right"
           />
         ) : (
-          <span>{Number(fi.porcentaje).toFixed(4)} %</span>
+          <span>{fi.porcentaje} %</span>
         )}
       </td>
       <td className="px-3 py-2 text-center">
@@ -619,13 +634,13 @@ function Row({
             <Button size="sm" variant="outline" className="h-8 border-slate-300 px-2.5" onClick={() => setEditing(false)} disabled={disabled}>
               Cancelar
             </Button>
+            <Input aria-label={`Cantidad canónica de ${fi.ingredient.name}`} placeholder="Cantidad; vacía=base porcentual" type="number" step="any" value={quantity} onChange={e=>setQuantity(e.target.value)} className="w-44" />
             <Button
               size="sm"
               className="h-8 px-2.5"
               onClick={() => {
-                const n = Number(value);
-                if (!Number.isFinite(n)) return;
-                onUpdate(n);
+                if (!value.trim() || !Number.isFinite(Number(value))) return;
+                onUpdate(value,quantity.trim()||null);
                 setEditing(false);
               }}
               disabled={disabled || Number.isNaN(Number(value))}

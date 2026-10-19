@@ -1,0 +1,97 @@
+{
+  "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+  "scope": "SOURCE_IDENTITY_ONLY_CURRENT_RECIPE_UNPROVEN",
+  "mappings": [
+    {
+      "targetCode": "1111002",
+      "targetName": "PIEL DE POLLO",
+      "sourceRow": 7,
+      "sourceName": "Piel de Pollo",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C7. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN SDW  EXITO X 225 !B10:C10; MDELA VIANDÉ X 225 G - 17 UND S!B8:C8; MNESA APANADA 240 G 2 UNDS!B6:C6; MNESA APANADA 600 G 5 UNDS!B6:C6; MNESA APANADA 1800 G 15 UND!B6:C6; MORTADELA JAMON X 225 !B10:C10; SCHON POLLO BRAKEL X 225!B22:C22; SCHON POLLO BRAKEL X 500!B22:C22; SCHON POLLO X 225 G!B22:C22"
+    },
+    {
+      "targetCode": "1122002",
+      "targetName": "PIERNA DE CERDO",
+      "sourceRow": 8,
+      "sourceName": "Pierna de Cerdo",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C8. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B5:C5; JMN SDW  EXITO X 225 !B7:C7; MORTADELA JAMON X 225 !B7:C7"
+    },
+    {
+      "targetCode": "1141001",
+      "targetName": "CARNE DE TERNERA",
+      "sourceRow": 15,
+      "sourceName": "Carne de Ternera",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C15. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B6:C6"
+    },
+    {
+      "targetCode": "1210008",
+      "targetName": "PIROFOSFATO ACIDO DE SODIO",
+      "sourceRow": 95,
+      "sourceName": "Pirofosfato ácido de sodio",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C95. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: MDELA VIANDÉ X 225 G - 17 UND S!B17:C17"
+    },
+    {
+      "targetCode": "1230010",
+      "targetName": "TAROMA HAM",
+      "sourceRow": 99,
+      "sourceName": "Taroma Ham",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C99. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B17:C17; JMN SDW  EXITO X 225 !B20:C20; MORTA JAMONADA 400!B19:C19; MORTADELA JAMON X 225 !B21:C21"
+    },
+    {
+      "targetCode": "1230012",
+      "targetName": "CEBOLLA PUERRO",
+      "sourceRow": 71,
+      "sourceName": "Cebolla Puerro",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C71. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B12:C12; CHORIZO SANTA COCTEL x 1000!B12:C12; CHORIZO SANTA CORTO 480 !B12:C12; CHORIZO SANTA LARGO x 1200 !B12:C12"
+    },
+    {
+      "targetCode": "1230022",
+      "targetName": "TOMATE EN POLVO",
+      "sourceRow": 72,
+      "sourceName": "Tomate en polvo",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C72. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHA INSTITU x 1200!B18:C18"
+    },
+    {
+      "targetCode": "1250001",
+      "targetName": "COLOR CARAMELO",
+      "sourceRow": 133,
+      "sourceName": "Color Caramelo",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C133. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B14:C14; CHORIZO SANTA COCTEL x 1000!B14:C14; CHORIZO SANTA CORTO 480 !B14:C14; CHORIZO SANTA LARGO x 1200 !B14:C14"
+    },
+    {
+      "targetCode": "1260011",
+      "targetName": "ALMIDON DE PAPA",
+      "sourceRow": 46,
+      "sourceName": "Almidón de Papa",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C46. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B18:C18; CERVECERO 750!B18:C18; CERVECERO 1300!B18:C18; CERVECERO 1500!B18:C18; CERVECERO FZAN  225!B17:C17; JMN PREMIUM 400 G!B22:C22; MDELA VIANDÉ X 225 G - 17 UND S!B26:C26; MORTA JAMONADA 400!B23:C23"
+    },
+    {
+      "targetCode": "1260014",
+      "targetName": "CARRAGENINA",
+      "sourceRow": 45,
+      "sourceName": "Carragenina",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C45. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B20:C20; JMN SDW  EXITO X 225 !B23:C23; MDELA VIANDÉ X 225 G - 17 UND S!B22:C22; MNESA APANADA 240 G 2 UNDS!B20:C20; MNESA APANADA 600 G 5 UNDS!B20:C20; MNESA APANADA 1800 G 15 UND!B20:C20; MORTA JAMONADA 400!B26:C26; MORTADELA JAMON X 225 !B24:C24; SNACK  CERV PREM X 50 G !B15:C15"
+    },
+    {
+      "targetCode": "1260015",
+      "targetName": "ALMIDON DE YUCA",
+      "sourceRow": 47,
+      "sourceName": "Almidón de Yuca",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C47. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHON AUTENTICO X 225 G!B21:C21; SCHON AUTENTICO X 750 G!B21:C21; SCHON POLLO BRAKEL X 225!B21:C21; SCHON POLLO BRAKEL X 500!B21:C21; SCHON POLLO X 225 G!B21:C21; SCHON TRAD VIANDÉ X 500 !B21:C21"
+    },
+    {
+      "targetCode": "1260017",
+      "targetName": "ALMIDON MODIFICADO DE MAIZ",
+      "sourceRow": 53,
+      "sourceName": "Almidón modificado de maíz",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C53. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B17:C17; JMN SDW  EXITO X 225 !B25:C25; MDELA VIANDÉ X 225 G - 17 UND S!B27:C27; MNESA APANADA 240 G 2 UNDS!B22:C22; MNESA APANADA 600 G 5 UNDS!B22:C22; MNESA APANADA 1800 G 15 UND!B22:C22; MORTADELA JAMON X 225 !B26:C26; SCHON CERV VIANDÉ X 225 G!B20:C20; SNACK  CERV PREM X 50 G !B10:C10; SUPER PERRO X 2500!B21:C21; SUPER PERRO X 2500 RX!B21:C21"
+    },
+    {
+      "targetCode": "2906001",
+      "targetName": "EMULSION DE PIEL DE CERDO",
+      "sourceRow": 13,
+      "sourceName": "Emulsión de Piel de Cerdo",
+      "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C13. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B8:C8; CERVECERO 750!B8:C8; CERVECERO 1300!B8:C8; CERVECERO 1500!B8:C8; CERVECERO FZAN  225!B8:C8; CHORIZO SANTA COCTEL x 300!B18:C18; CHORIZO SANTA COCTEL x 1000!B18:C18; CHORIZO SANTA CORTO 480 !B18:C18; CHORIZO SANTA LARGO x 1200 !B18:C18; JMN SDW  EXITO X 225 !B8:C8; MDELA VIANDÉ X 225 G - 17 UND S!B10:C10; MORTA JAMONADA 400!B8:C8; MORTADELA JAMON X 225 !B8:C8; SCHON AUTENTICO X 225 G!B6:C6; SCHON AUTENTICO X 750 G!B6:C6; SCHON CERV VIANDÉ X 225 G!B8:C8; SCHON POLLO BRAKEL X 225!B6:C6; SCHON POLLO BRAKEL X 500!B6:C6; SCHON POLLO X 225 G!B6:C6; SCHON TRAD VIANDÉ X 500 !B6:C6; SNACK  CERV PREM X 50 G !B8:C8; SUPER PERRO X 2500!B6:C6; SUPER PERRO X 2500 RX!B6:C6"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "result": "PASS",
+  "scope": "NORMAL_LOADED_IMAGES_OWN_FIXTURES_ONLY",
+  "executionMode": "NORMAL_DOCKER_LOAD_AND_RUN_NO_APPLICATION_BIND_MOUNTS",
+  "productionAccess": false,
+  "sourceFingerprintBefore": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "sourceFingerprintAfter": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "dockerfileSha256": "fea49b6db2edfbe4fb8cce0dbe7dcf700d64a8046b28ca92776721b78f2b4d31",
+  "lockfileSha256": "8b0347e4594b758ffae609e48d8072fd982d339df6e63d9da4153e1420b31312",
+  "checks": [
+    {
+      "name": "tools-normal-toolchain",
+      "result": "PASS"
+    },
+    {
+      "name": "tools-normal-migrations",
+      "result": "PASS"
+    },
+    {
+      "name": "tools-normal-bootstrap",
+      "result": "PASS"
+    },
+    {
+      "name": "tools-normal-positive-integration-node22",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-image-identities",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-runtime-artifact-payload-hash",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-network",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-postgres",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-fixture-port",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-toolchain",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-fixture-schema-host-only",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-fixture-bootstrap-host-only",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-start-runtime",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-read-only-nonroot-runtime-login-health",
+      "result": "PASS"
+    },
+    {
+      "name": "current-runtime-authenticated-runtime-pages",
+      "result": "PASS"
+    }
+  ],
+  "images": {
+    "herramientas": {
+      "id": "sha256:919c17274003e16e80898d94c00df58dbbbc09333153074d8bc8eec81b0a5c19",
+      "architecture": "arm64",
+      "os": "linux",
+      "tags": [
+        "sevilla-review-local:herramientas-final"
+      ]
+    },
+    "runtime": {
+      "id": "sha256:102d61353fe0874d697d2e073882d9766510a60505576e02944acd6bd5983d6c",
+      "architecture": "arm64",
+      "os": "linux",
+      "tags": [
+        "sevilla-review-local:runtime-final"
+      ]
+    }
+  },
+  "runtimePayload": {
+    "sha256": "7bdd51d8963737334a47204dcc55270a911886e7215c04a279e8a8d8261b88ba",
+    "files": 2215,
+    "uid": 1000,
+    "exactArchiveCompilationMatch": true
+  },
+  "architecture": {
+    "verifiedLocal": "linux/arm64",
+    "target": "UNCONFIRMED",
+    "evidence": "Dockerfile and both Compose files do not specify platform. No target architecture evidence in accessible project files. Denied SSH was not retried."
+  },
+  "runtimeConstruction": "Original Dockerfile base/runtime instructions; COPY sources remapped to exact standalone/static/public extracted from the already built tools image. Normal Docker image, no app bind mounts. Payload equality checked across2215 files.",
+  "cleanup": {
+    "toolsPhase": {
+      "webRemoved": true,
+      "dbRemoved": true,
+      "networkRemoved": true
+    },
+    "currentRuntimePhase": {
+      "webRemoved": true,
+      "dbRemoved": true,
+      "networkRemoved": true
+    },
+    "toolsImageReleasedAfterVerifiedNormalPass": true,
+    "toolsArchivePreserved": true,
+    "noDeniedOperationRetried": true
+  },
+  "limit": "Local arm64 normal image validation is complete. Target architecture and actual destination DB/infrastructure remain unverified."
+}

@@ -1,0 +1,17 @@
+{
+  "archive": "/Users/patmac/Documents/Codex/2026-10-19/task/Sevilla_herramientas_local_validacion_feedback.tar",
+  "archiveSha256": "3a75cdba0550e96b2a013bade2c506f3a2f339e96d1ba1b009ef0ef32fef01a9",
+  "imageConfigId": "sha256:965d81363a9d9039954f0ad196e8fc9fd28fa34d39168d4251591c782cd8465b",
+  "architecture": "arm64",
+  "imageUser": "node",
+  "imageCmd": [
+    "pnpm",
+    "db:deploy"
+  ],
+  "appFilesExtracted": 35209,
+  "appMount": "/Users/patmac/Documents/Codex/2026-10-19/task/herramientas-imagen-local-app",
+  "excludes": [
+    ".next build artifacts not needed by CLI"
+  ],
+  "scope": "Own image app subtree only; no extraction outside scoped directory"
+}

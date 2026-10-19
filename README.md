@@ -1,3 +1,5 @@
+> Entrega vigente de código: [gate del team lead](docs/ENTREGA-TEAM-LEAD.md). El despliegue se construye en destino mediante §8; las imágenes locales son evidencia de ensayo.
+
 # Plataforma Centralizada de Gestión Técnica y Nutricional
 
 **Cliente:** Alimentos Sevilla S.A.S.  
@@ -122,7 +124,7 @@ pnpm build
 - `/formulaciones`: Gestión y versionamiento de recetas (*Semana 3*).
 - `/costos`: Costeo de formulaciones e importación mensual SIESA (*Semana 5*).
 - `/normativa`: Motor de cálculo normativo y sellos regulatorios (*Semana 4*).
-- `/documentos`: Emisión de Fichas Técnicas y Textos Legales (*Semana 6*).
+- `/documentos`: Previsualización y snapshots preliminares imprimibles, no emisión oficial.
 - `/usuarios`: Administración de usuarios, roles y estados de cuenta (*Foundation*).
 - `/auditoria`: Bitácora inmutable de eventos de auditoría y trazabilidad (*Foundation*).
 

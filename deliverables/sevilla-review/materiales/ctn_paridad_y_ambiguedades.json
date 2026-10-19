@@ -97,6 +97,19 @@
       "attributes": ""
     }
   ],
-  "decision": "No se puede declarar réplica 1:1 con el motor vigente. CTN usa porcentajes mostrados y ajuste postmerma, motor usa cantidades sin merma. Se conservan ambos resultados; requiere contrato vigente explícito.",
-  "portions": "No cambiar gramos por porción a partir de aritmética de envase; evidencia histórica recibida indica115g/46g=2.5, mientras datos actuales23g resultan5. No se sobrescriben."
+  "decision": "CTN es evidencia histórica reproducible, no autoridad para sobrescribir las reglas posteriores del cliente. Diferencias por G23=100.005, ajuste posmerma Z24:AO24, H5 solo tocino, D12 de laboratorio y códigos enlazados incorrectamente se mantienen identificadas. El correo18Sep confirma sin normalizar, suma de saturadas y merma solo en cantidades; ya no se requiere pedir esas reglas otra vez. La moneda de receta completa y el original TLv4 no quedan acreditados por esas aclaraciones.",
+  "portions": "No cambiar gramos por porción a partir de aritmética de envase; evidencia histórica recibida indica115g/46g=2.5, mientras datos actuales23g resultan5. No se sobrescriben.",
+  "laterRuleResolution": {
+    "status": "RULES_RESOLVED_BY_LATER_PRIMARY_EVIDENCE_NOT_FULL_RECIPE_APPROVAL",
+    "source": "Correo original Joan18Sep y diagrama1Oct, revisados con las fuentes originales",
+    "ingredientsConfirmed": [
+      "ROJO AC150",
+      "HUMO TRUSMOKE OIL EX"
+    ],
+    "doesNotConfirm": [
+      "Vigencia/aprobación de toda la formulación",
+      "Valor nutricional de identidades comerciales distintas",
+      "TLv4 original"
+    ]
+  }
 }

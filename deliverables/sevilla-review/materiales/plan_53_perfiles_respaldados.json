@@ -1552,9 +1552,7 @@
           "method": "TN OFICIAL fila 130"
         }
       ],
-      "storagePrecisionIssues": [
-        "MOISTURE"
-      ]
+      "storagePrecisionIssues": []
     },
     {
       "ingredientSiesaCode": "color-natural-rojo-ac150",
@@ -4847,9 +4845,7 @@
           "method": "TN OFICIAL fila 130"
         }
       ],
-      "storagePrecisionIssues": [
-        "MOISTURE"
-      ]
+      "storagePrecisionIssues": []
     },
     {
       "ingredientSiesaCode": "1270004",
@@ -5142,5 +5138,6 @@
       ],
       "storagePrecisionIssues": []
     }
-  ]
+  ],
+  "storagePrecision": "DECIMAL(38,24); exact source strings; requires migration20261019190000"
 }

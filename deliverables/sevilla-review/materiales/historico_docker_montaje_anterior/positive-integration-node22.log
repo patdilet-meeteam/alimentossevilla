@@ -1,0 +1,9 @@
+
+ RUN  v3.2.7 /app
+
+ ✓ tests/integration/source-working-review.test.ts (3 tests) 229ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  21:11:13
+   Duration  823ms (transform 191ms, setup 0ms, collect 308ms, tests 229ms, environment 0ms, prepare 83ms)

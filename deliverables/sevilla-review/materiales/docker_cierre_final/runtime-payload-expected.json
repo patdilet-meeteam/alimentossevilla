@@ -1,0 +1,6 @@
+{
+  "sha256": "7bdd51d8963737334a47204dcc55270a911886e7215c04a279e8a8d8261b88ba",
+  "files": 2215,
+  "scope": "Exact runtime payload copied from tools Docker archive: standalone + static + public",
+  "archiveSha256": "3a75cdba0550e96b2a013bade2c506f3a2f339e96d1ba1b009ef0ef32fef01a9"
+}

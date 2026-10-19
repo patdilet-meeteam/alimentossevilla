@@ -39,4 +39,15 @@ describe("Unit: importador CTN", () => {
     expect(plan[1].percentage.toString()).toBe("7.3529");
     expect(plan[0].quantity.toString()).toBe("315");
   });
+  it("validates the full 24-digit sum without rounding a source difference away", () => {
+    const csv = "DESCRIPCIÓN,CANTIDAD,%,SODIO (mg)\nA,1,99.999999999999999999999999,0\nB,1,0.000000000000000000000001,0\nTOTAL,2,100,0";
+    expect(buildCtnImportPlan(parseCtnCsv(csv))[0].percentage.toString()).toBe("99.999999999999999999999999");
+    expect(() => buildCtnImportPlan(parseCtnCsv(csv.replace("0.000000000000000000000001", "0.000000000000000000000002")))).toThrow("No se normalizaron");
+  });
+
+  it("rejects a quantity that would be truncated by storage", () => {
+    const csv = "DESCRIPCIÓN,CANTIDAD,%,SODIO (mg)\nA,0.1234567890123456789012345,100,0\nTOTAL,1,100,0";
+    expect(() => buildCtnImportPlan(parseCtnCsv(csv))).toThrow("cantidad fuente excede");
+  });
+
 });

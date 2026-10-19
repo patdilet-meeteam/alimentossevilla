@@ -1,3 +1,5 @@
+> INFORME HISTÓRICO: conserva evidencia del momento. No usar sus solicitudes generales ni conteos como estado vigente. Consulte `proyecto/docs/ESTADO-VIGENTE-ENTREGA.md` en el ZIP y el ensayo final.
+
 # Recuperación local de fuentes — 19 octubre 2026
 
 **Antecedente de ensayo, supersedido para integridad/vigencia por CONCILIACION-VIGENCIA-2026-10-19.md.** La extracción inicial omitió5reprocesos sin código y eligió el primer bloque; las601filas verificadas no representan todas lasfilas fuente. El inventario revisable corregido tiene606filas y ninguna receta vigente acreditada.78no es faltante vigente confirmado. No reutilizar este ensayo como plan de carga.

@@ -1,0 +1,1268 @@
+{
+  "mode": "REVIEW_ONLY_NO_DATABASE",
+  "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+  "profiles": [
+    {
+      "ingredientSiesaCode": "1111002",
+      "ingredientName": "PIEL DE POLLO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 7 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172855/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C7. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN SDW  EXITO X 225 !B10:C10; MDELA VIANDÉ X 225 G - 17 UND S!B8:C8; MNESA APANADA 240 G 2 UNDS!B6:C6; MNESA APANADA 600 G 5 UNDS!B6:C6; MNESA APANADA 1800 G 15 UND!B6:C6; MORTADELA JAMON X 225 !B10:C10; SCHON POLLO BRAKEL X 225!B22:C22; SCHON POLLO BRAKEL X 500!B22:C22; SCHON POLLO X 225 G!B22:C22",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "44.9",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "44.2",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "12.1",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.229",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "105",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "9.58",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.79",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "51",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.37",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.65",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "59",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 7"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1122002",
+      "ingredientName": "PIERNA DE CERDO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 8 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168224/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C8. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B5:C5; JMN SDW  EXITO X 225 !B7:C7; MORTADELA JAMON X 225 !B7:C7",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "72.9",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "5.41",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.87",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "68",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "20.5",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "55",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.01",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.27",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "2",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.6",
+          "method": "TN OFICIAL fila 8"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1141001",
+      "ingredientName": "CARNE DE TERNERA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 15 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175290/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C15. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B6:C6",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "66.2",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "13.1",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "5.11",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.696",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "49",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "18.6",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "103",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "12",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.37",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.51",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1210008",
+      "ingredientName": "PIROFOSFATO ACIDO DE SODIO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 95 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C95. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: MDELA VIANDÉ X 225 G - 17 UND S!B17:C17",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20722",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.5",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230010",
+      "ingredientName": "TAROMA HAM",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 99 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C99. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B17:C17; JMN SDW  EXITO X 225 !B20:C20; MORTA JAMONADA 400!B19:C19; MORTADELA JAMON X 225 !B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "14",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "30",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "16000",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230012",
+      "ingredientName": "CEBOLLA PUERRO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 71 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169246/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C71. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B12:C12; CHORIZO SANTA COCTEL x 1000!B12:C12; CHORIZO SANTA CORTO 480 !B12:C12; CHORIZO SANTA LARGO x 1200 !B12:C12",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.04",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "14.2",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "3.9",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "59",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "2.1",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.12",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230022",
+      "ingredientName": "TOMATE EN POLVO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 72 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170461/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C72. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHA INSTITU x 1200!B18:C18",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "3.06",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.44",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.062",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "12.9",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "74.7",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "43.9",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "16.5",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "134",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "166",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "4.56",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.71",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "862",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1250001",
+      "ingredientName": "COLOR CARAMELO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 133 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C133. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B14:C14; CHORIZO SANTA COCTEL x 1000!B14:C14; CHORIZO SANTA CORTO 480 !B14:C14; CHORIZO SANTA LARGO x 1200 !B14:C14",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "89.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "3.8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "6.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260011",
+      "ingredientName": "ALMIDON DE PAPA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 46 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C46. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B18:C18; CERVECERO 750!B18:C18; CERVECERO 1300!B18:C18; CERVECERO 1500!B18:C18; CERVECERO FZAN  225!B17:C17; JMN PREMIUM 400 G!B22:C22; MDELA VIANDÉ X 225 G - 17 UND S!B26:C26; MORTA JAMONADA 400!B23:C23",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "15.87",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260014",
+      "ingredientName": "CARRAGENINA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 45 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C45. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B20:C20; JMN SDW  EXITO X 225 !B23:C23; MDELA VIANDÉ X 225 G - 17 UND S!B22:C22; MNESA APANADA 240 G 2 UNDS!B20:C20; MNESA APANADA 600 G 5 UNDS!B20:C20; MNESA APANADA 1800 G 15 UND!B20:C20; MORTA JAMONADA 400!B26:C26; MORTADELA JAMON X 225 !B24:C24; SNACK  CERV PREM X 50 G !B15:C15",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.4",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "7",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "3019",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260015",
+      "ingredientName": "ALMIDON DE YUCA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 47 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C47. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHON AUTENTICO X 225 G!B21:C21; SCHON AUTENTICO X 750 G!B21:C21; SCHON POLLO BRAKEL X 225!B21:C21; SCHON POLLO BRAKEL X 500!B21:C21; SCHON POLLO X 225 G!B21:C21; SCHON TRAD VIANDÉ X 500 !B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "13",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260017",
+      "ingredientName": "ALMIDON MODIFICADO DE MAIZ",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 53 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C53. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B17:C17; JMN SDW  EXITO X 225 !B25:C25; MDELA VIANDÉ X 225 G - 17 UND S!B27:C27; MNESA APANADA 240 G 2 UNDS!B22:C22; MNESA APANADA 600 G 5 UNDS!B22:C22; MNESA APANADA 1800 G 15 UND!B22:C22; MORTADELA JAMON X 225 !B26:C26; SCHON CERV VIANDÉ X 225 G!B20:C20; SNACK  CERV PREM X 50 G !B10:C10; SUPER PERRO X 2500!B21:C21; SUPER PERRO X 2500 RX!B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "14",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "80",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "2906001",
+      "ingredientName": "EMULSION DE PIEL DE CERDO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 13 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "LAB",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C13. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B8:C8; CERVECERO 750!B8:C8; CERVECERO 1300!B8:C8; CERVECERO 1500!B8:C8; CERVECERO FZAN  225!B8:C8; CHORIZO SANTA COCTEL x 300!B18:C18; CHORIZO SANTA COCTEL x 1000!B18:C18; CHORIZO SANTA CORTO 480 !B18:C18; CHORIZO SANTA LARGO x 1200 !B18:C18; JMN SDW  EXITO X 225 !B8:C8; MDELA VIANDÉ X 225 G - 17 UND S!B10:C10; MORTA JAMONADA 400!B8:C8; MORTADELA JAMON X 225 !B8:C8; SCHON AUTENTICO X 225 G!B6:C6; SCHON AUTENTICO X 750 G!B6:C6; SCHON CERV VIANDÉ X 225 G!B8:C8; SCHON POLLO BRAKEL X 225!B6:C6; SCHON POLLO BRAKEL X 500!B6:C6; SCHON POLLO X 225 G!B6:C6; SCHON TRAD VIANDÉ X 500 !B6:C6; SNACK  CERV PREM X 50 G !B8:C8; SUPER PERRO X 2500!B6:C6; SUPER PERRO X 2500 RX!B6:C6",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "81.7",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "5.6",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "10.9",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "1.6",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0.011013722162007404",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "46.17",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        }
+      ],
+      "storagePrecisionIssues": []
+    }
+  ],
+  "storagePrecision": "DECIMAL(38,24); exact source strings; requires migration20261019190000"
+}

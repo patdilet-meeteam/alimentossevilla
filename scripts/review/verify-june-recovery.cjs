@@ -25,12 +25,18 @@ async function main() {
     for (const key of Object.keys(a.cells)) if(stable(a.cells[key])!==stable(b.cells[key])) throw Error('Raw cell/formula mismatch');
    }
   }
+  const unlinked = new Set(snapshot.unresolvedRows ?? []);
+  const rowEvidence = snapshot.rowIdentityEvidence ?? [];
   const groups = new Map();
-  for (const row of recipe.sourceRows) { if (!row.sourceCode || row.sourceCode==='0' || row.quantity===null || row.percentage===null) continue; const group=groups.get(row.sourceCode)||{q:[],p:[]};group.q.push(row.quantity);group.p.push(row.percentage);groups.set(row.sourceCode,group); }
+  for (const row of recipe.sourceRows) { if (unlinked.has(row.sourceRow) || !row.sourceCode || row.sourceCode==='0' || row.quantity===null || row.percentage===null) continue; const group=groups.get(row.sourceCode)||{q:[],p:[]};group.q.push(row.quantity);group.p.push(row.percentage);groups.set(row.sourceCode,group); }
   if (groups.size!==version.ingredients.length) throw Error('Component count mismatch');
   for (const row of version.ingredients) { const group=groups.get(row.ingredient.siesaCode); if (!group || sum(group.q)!==sum([row.cantidadCanonica.toString()]) || sum(group.p)!==sum([row.porcentajeParticipacion.toString()])) throw Error('Decimal/code mismatch'); }
-  const missing = version.ingredients.flatMap(r => { const keys = new Set(r.ingredient.profiles[0]?.values.map(v=>v.nutrient.key));const missingKeys=required.filter(k=>!keys.has(k));return r.ingredient.profiles.length!==1 || missingKeys.length ? [{code:r.ingredient.siesaCode,name:r.ingredient.name,profileCount:r.ingredient.profiles.length,missingKeys}]:[]; });
-  checks.push({productCode:recipe.productCode,sheet:recipe.sourceSheet,rawSourceCellsEqual:true,exactDecimalsEqual:true,state:version.estado,sourceRows:recipe.sourceRows.length,linkedComponents:groups.size,percentageSum:sum(recipe.sourceRows.map(r=>r.percentage??'0')),blockedBySourceIssues:getSourceRecipeEvidence(snapshot).issues,missingNutrition:missing});
+  const missing = version.ingredients.flatMap(r => { const keys = new Set(r.ingredient.profiles[0]?.values.map(v=>v.nutrient.key));const missingKeys=required.filter(k=>!keys.has(k));return r.ingredient.profiles.length!==1 || missingKeys.length ? [{code:r.ingredient.siesaCode,name:r.ingredient.name,profileCount:r.ingredient.profiles.length,sourceRow:recipe.sourceRows.find(row=>row.sourceCode===r.ingredient.siesaCode)?.sourceRow,missingKeys}]:[]; });
+  for (const row of recipe.sourceRows.filter(r=>unlinked.has(r.sourceRow)&&r.sourceCode&&r.sourceCode!=='0')) {
+    const reviewed=rowEvidence.find(r=>r.sourceRow===row.sourceRow);
+    if (!reviewed?.reviewedNutrientSource) missing.push({code:row.sourceCode,name:row.sourceName,profileCount:0,missingKeys:required,sourceRow:row.sourceRow,reason:'ROW_IDENTITY_NOT_ESTABLISHED_NO_PROFILE_REUSED'});
+  }
+  checks.push({productCode:recipe.productCode,sheet:recipe.sourceSheet,rawSourceCellsEqual:true,exactDecimalsEqual:true,state:version.estado,sourceRows:recipe.sourceRows.length,linkedComponents:groups.size,unresolvedIdentityRows:[...unlinked],rowIdentityEvidence:rowEvidence,percentageSum:sum(recipe.sourceRows.map(r=>r.percentage??'0')),blockedBySourceIssues:getSourceRecipeEvidence(snapshot).issues,missingNutrition:missing});
  }
  const bundleChecks = [];
  for (const source of plan.bundles) {
@@ -39,7 +45,7 @@ async function main() {
   if(matches.length!==1 || matches[0].status!=='DRAFT') throw Error('Bundle identity/state mismatch');
   const stored=matches[0]; if(stored.components.length!==source.sourceRows.length) throw Error('Bundle component count mismatch');
   for(const row of source.sourceRows){const matches=stored.components.filter(c=>c.sourceCode===row.sourceCode && c.sourceName===row.sourceName);if(matches.length!==1)throw Error('Bundle row mismatch');const c=matches[0];if(sum([c.unitCount.toString()])!==sum([row.quantity]) || (c.netWeightGrams?.toString()??null)!==row.netWeightGrams)throw Error('Bundle units/weight mismatch');}
-  bundleChecks.push({productCode:source.productCode,sheet:source.sourceSheet,allRowsEqual:true,components:stored.components.length,issues:stored.sourceSnapshot.issues,computedWeightGrams:stored.sourceSnapshot.computedWeightGrams,state:stored.status});
+  bundleChecks.push({productCode:source.productCode,sheet:source.sourceSheet,allRowsEqual:true,components:stored.components.length,issues:stored.sourceSnapshot.issues,computedWeightGrams:stored.sourceSnapshot.computedWeightGrams,weightReconstruction:stored.sourceSnapshot.weightReconstruction,state:stored.status});
  }
  const summary = {products:products.length,productsWithFormulation:products.filter(p=>p.formulations.length).length,productsWithoutFormulation:products.filter(p=>!p.formulations.length).map(p=>p.codigoInterno),recoveredProducts:new Set(checks.map(r=>r.productCode)).size,recoveredVersions:checks.length,recoveredSourceRows:checks.reduce((n,r)=>n+r.sourceRows,0),recoveredLinkedComponents:checks.reduce((n,r)=>n+r.linkedComponents,0),recoveredVersionsWithExact100:checks.filter(r=>r.percentageSum==='100').length,recoveredVersionsMissingNutrition:checks.filter(r=>r.missingNutrition.length).length,bundleVersions:products.reduce((n,p)=>n+p.bundleVersions.length,0),bundleComponents:products.reduce((n,p)=>n+p.bundleVersions.reduce((m,b)=>m+b.components.length,0),0),approvedVersions:await db.formulationVersion.count({where:{estado:'APPROVED'}}),invalidZeroIngredientCount:await db.ingredient.count({where:{siesaCode:'0'}}),users:await db.user.count(),sessions:await db.session.count()};
  fs.writeFileSync(outputPath,JSON.stringify({scope:'LOCAL_SOURCE_RECOVERY_VERIFIED_NOT_DEPLOYMENT',summary,recipes:checks,bundles:bundleChecks,remainingNutritionCodes:[...new Set(checks.flatMap(r=>r.missingNutrition.map(m=>m.code)))].sort()},null,2));console.log(JSON.stringify(summary,null,2));

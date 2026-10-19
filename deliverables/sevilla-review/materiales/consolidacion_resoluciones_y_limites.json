@@ -1,0 +1,5052 @@
+{
+  "baseCommit": "e891300f8acddd24a226e402d45e6a29f12b026e",
+  "state": "LOCAL_CONSOLIDATED_REVIEW_CANDIDATE_NOT_PUBLISHED_OR_DEPLOYED",
+  "proof": {
+    "run": "ensayo_cierre_final/result.json",
+    "allStages": [
+      {
+        "name": "postgres-create",
+        "result": "PASS"
+      },
+      {
+        "name": "postgres-port",
+        "result": "PASS"
+      },
+      {
+        "name": "migrations",
+        "result": "PASS"
+      },
+      {
+        "name": "client",
+        "result": "PASS"
+      },
+      {
+        "name": "profiles66",
+        "result": "PASS"
+      },
+      {
+        "name": "source-precision",
+        "result": "PASS"
+      },
+      {
+        "name": "atomic-batch",
+        "result": "PASS"
+      },
+      {
+        "name": "source-verification",
+        "result": "PASS"
+      },
+      {
+        "name": "test-suite",
+        "result": "PASS"
+      },
+      {
+        "name": "typescript",
+        "result": "PASS"
+      },
+      {
+        "name": "lint",
+        "result": "PASS"
+      },
+      {
+        "name": "build",
+        "result": "PASS"
+      },
+      {
+        "name": "source-review-browser",
+        "result": "PASS"
+      }
+    ],
+    "precision": {
+      "scope": "ISOLATED_FIXTURE_ONLY",
+      "noProductionAccess": true,
+      "percentagesCompared": 275,
+      "percentageDrift": 0,
+      "pilotExact100": true,
+      "reviewedNutrientValuesCompared": 1121,
+      "nutrientDrift": 0,
+      "candidateValuesRollbackRoundtrip": 221,
+      "exact24FractionalDigits": true,
+      "allRowsPreservedAfterRollback": true,
+      "businessApprovalsCreated": 0,
+      "result": "PASS"
+    },
+    "atomicCases": 18
+  },
+  "resolved": {
+    "newLiteralCandidateMappings": [
+      {
+        "targetCode": "1111002",
+        "targetName": "PIEL DE POLLO",
+        "sourceRow": 7,
+        "sourceName": "Piel de Pollo",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C7. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN SDW  EXITO X 225 !B10:C10; MDELA VIANDÉ X 225 G - 17 UND S!B8:C8; MNESA APANADA 240 G 2 UNDS!B6:C6; MNESA APANADA 600 G 5 UNDS!B6:C6; MNESA APANADA 1800 G 15 UND!B6:C6; MORTADELA JAMON X 225 !B10:C10; SCHON POLLO BRAKEL X 225!B22:C22; SCHON POLLO BRAKEL X 500!B22:C22; SCHON POLLO X 225 G!B22:C22"
+      },
+      {
+        "targetCode": "1122002",
+        "targetName": "PIERNA DE CERDO",
+        "sourceRow": 8,
+        "sourceName": "Pierna de Cerdo",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C8. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B5:C5; JMN SDW  EXITO X 225 !B7:C7; MORTADELA JAMON X 225 !B7:C7"
+      },
+      {
+        "targetCode": "1141001",
+        "targetName": "CARNE DE TERNERA",
+        "sourceRow": 15,
+        "sourceName": "Carne de Ternera",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C15. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B6:C6"
+      },
+      {
+        "targetCode": "1210008",
+        "targetName": "PIROFOSFATO ACIDO DE SODIO",
+        "sourceRow": 95,
+        "sourceName": "Pirofosfato ácido de sodio",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C95. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: MDELA VIANDÉ X 225 G - 17 UND S!B17:C17"
+      },
+      {
+        "targetCode": "1230010",
+        "targetName": "TAROMA HAM",
+        "sourceRow": 99,
+        "sourceName": "Taroma Ham",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C99. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B17:C17; JMN SDW  EXITO X 225 !B20:C20; MORTA JAMONADA 400!B19:C19; MORTADELA JAMON X 225 !B21:C21"
+      },
+      {
+        "targetCode": "1230012",
+        "targetName": "CEBOLLA PUERRO",
+        "sourceRow": 71,
+        "sourceName": "Cebolla Puerro",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C71. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B12:C12; CHORIZO SANTA COCTEL x 1000!B12:C12; CHORIZO SANTA CORTO 480 !B12:C12; CHORIZO SANTA LARGO x 1200 !B12:C12"
+      },
+      {
+        "targetCode": "1230022",
+        "targetName": "TOMATE EN POLVO",
+        "sourceRow": 72,
+        "sourceName": "Tomate en polvo",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C72. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHA INSTITU x 1200!B18:C18"
+      },
+      {
+        "targetCode": "1250001",
+        "targetName": "COLOR CARAMELO",
+        "sourceRow": 133,
+        "sourceName": "Color Caramelo",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C133. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B14:C14; CHORIZO SANTA COCTEL x 1000!B14:C14; CHORIZO SANTA CORTO 480 !B14:C14; CHORIZO SANTA LARGO x 1200 !B14:C14"
+      },
+      {
+        "targetCode": "1260011",
+        "targetName": "ALMIDON DE PAPA",
+        "sourceRow": 46,
+        "sourceName": "Almidón de Papa",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C46. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B18:C18; CERVECERO 750!B18:C18; CERVECERO 1300!B18:C18; CERVECERO 1500!B18:C18; CERVECERO FZAN  225!B17:C17; JMN PREMIUM 400 G!B22:C22; MDELA VIANDÉ X 225 G - 17 UND S!B26:C26; MORTA JAMONADA 400!B23:C23"
+      },
+      {
+        "targetCode": "1260014",
+        "targetName": "CARRAGENINA",
+        "sourceRow": 45,
+        "sourceName": "Carragenina",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C45. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B20:C20; JMN SDW  EXITO X 225 !B23:C23; MDELA VIANDÉ X 225 G - 17 UND S!B22:C22; MNESA APANADA 240 G 2 UNDS!B20:C20; MNESA APANADA 600 G 5 UNDS!B20:C20; MNESA APANADA 1800 G 15 UND!B20:C20; MORTA JAMONADA 400!B26:C26; MORTADELA JAMON X 225 !B24:C24; SNACK  CERV PREM X 50 G !B15:C15"
+      },
+      {
+        "targetCode": "1260015",
+        "targetName": "ALMIDON DE YUCA",
+        "sourceRow": 47,
+        "sourceName": "Almidón de Yuca",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C47. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHON AUTENTICO X 225 G!B21:C21; SCHON AUTENTICO X 750 G!B21:C21; SCHON POLLO BRAKEL X 225!B21:C21; SCHON POLLO BRAKEL X 500!B21:C21; SCHON POLLO X 225 G!B21:C21; SCHON TRAD VIANDÉ X 500 !B21:C21"
+      },
+      {
+        "targetCode": "1260017",
+        "targetName": "ALMIDON MODIFICADO DE MAIZ",
+        "sourceRow": 53,
+        "sourceName": "Almidón modificado de maíz",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C53. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B17:C17; JMN SDW  EXITO X 225 !B25:C25; MDELA VIANDÉ X 225 G - 17 UND S!B27:C27; MNESA APANADA 240 G 2 UNDS!B22:C22; MNESA APANADA 600 G 5 UNDS!B22:C22; MNESA APANADA 1800 G 15 UND!B22:C22; MORTADELA JAMON X 225 !B26:C26; SCHON CERV VIANDÉ X 225 G!B20:C20; SNACK  CERV PREM X 50 G !B10:C10; SUPER PERRO X 2500!B21:C21; SUPER PERRO X 2500 RX!B21:C21"
+      },
+      {
+        "targetCode": "2906001",
+        "targetName": "EMULSION DE PIEL DE CERDO",
+        "sourceRow": 13,
+        "sourceName": "Emulsión de Piel de Cerdo",
+        "evidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C13. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B8:C8; CERVECERO 750!B8:C8; CERVECERO 1300!B8:C8; CERVECERO 1500!B8:C8; CERVECERO FZAN  225!B8:C8; CHORIZO SANTA COCTEL x 300!B18:C18; CHORIZO SANTA COCTEL x 1000!B18:C18; CHORIZO SANTA CORTO 480 !B18:C18; CHORIZO SANTA LARGO x 1200 !B18:C18; JMN SDW  EXITO X 225 !B8:C8; MDELA VIANDÉ X 225 G - 17 UND S!B10:C10; MORTA JAMONADA 400!B8:C8; MORTADELA JAMON X 225 !B8:C8; SCHON AUTENTICO X 225 G!B6:C6; SCHON AUTENTICO X 750 G!B6:C6; SCHON CERV VIANDÉ X 225 G!B8:C8; SCHON POLLO BRAKEL X 225!B6:C6; SCHON POLLO BRAKEL X 500!B6:C6; SCHON POLLO X 225 G!B6:C6; SCHON TRAD VIANDÉ X 500 !B6:C6; SNACK  CERV PREM X 50 G !B8:C8; SUPER PERRO X 2500!B6:C6; SUPER PERRO X 2500 RX!B6:C6"
+      }
+    ],
+    "reviewedProfilesConsolidated": 66,
+    "arconPreviouslyResolvedRemovedFromStalePendingCount": true,
+    "baselinePercentageBindingDriftFixed": 17,
+    "nutrientStorage": "DECIMAL(38,24), widened with all1206previous fixture rows fingerprint-preserved; source precision proven after fresh import",
+    "rulesAlreadyAnswered": [
+      "Sin normalización; suma exacta100",
+      "Merma solo cantidades",
+      "Sumar saturadas de todos los ingredientes",
+      "ROJO AC150 y HUMO TRUSMOKE OIL EX para piloto, sin aprobación de receta completa",
+      "Algoritmo puro del diagrama de grasa/especie"
+    ]
+  },
+  "baselineFixture": {
+    "products": 39,
+    "baseActualRecipes": 15,
+    "pilotComputationalCoverage": 1,
+    "baseRecipesMissingProfiles": 14,
+    "wrongRawIngredientCombos": 2,
+    "previouslyNoFormulation": 22,
+    "candidateProductsRecovered": 21,
+    "packagingLedgerWithoutRecipe": 1,
+    "productionReadyCertified": 0,
+    "currentCatalogMissingNutrition": null,
+    "baseMissingProfiles": [
+      {
+        "productCode": "chorizo-con-ternera",
+        "productName": "Chorizo Con Ternera",
+        "missingCodes": [
+          "color-natural-hemoglobina-i-red",
+          "preparado-sabor-chorizo-ternera"
+        ]
+      },
+      {
+        "productCode": "chorizo-de-cerdo",
+        "productName": "Chorizo De Cerdo",
+        "missingCodes": [
+          "preparado-sabor-chorizo-cerdo"
+        ]
+      },
+      {
+        "productCode": "chorizo-santarrosano-x",
+        "productName": "Chorizo Santarrosano X",
+        "missingCodes": [
+          "carnal-961",
+          "mdm-nacional",
+          "preparado-sabor-chorizo-ternera",
+          "recorte-70-30"
+        ]
+      },
+      {
+        "productCode": "hsa",
+        "productName": "Hsa",
+        "missingCodes": [
+          "aditivo-burger-meat-80b",
+          "color-natural-hemoglobina-i-red",
+          "recorte-80-20-emulsificados"
+        ]
+      },
+      {
+        "productCode": "hsa-cja",
+        "productName": "Hsa Cja",
+        "missingCodes": [
+          "aditivo-burger-meat-80b",
+          "color-natural-hemoglobina-i-red"
+        ]
+      },
+      {
+        "productCode": "jmn-premium-fzan",
+        "productName": "Jmn Premium Fzan",
+        "missingCodes": [
+          "hielo-en-escamas",
+          "proteina-colagenica-alta-funcionalidad"
+        ]
+      },
+      {
+        "productCode": "jmn-sdw-fzan-x",
+        "productName": "Jmn Sdw Fzan X",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "color-natural-hemoglobina-i-red",
+          "proteina-colagenica-alta-funcionalidad"
+        ]
+      },
+      {
+        "productCode": "perro-caliente-viande-x",
+        "productName": "Perro Caliente Viande X",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "recorte-80-20-importado"
+        ]
+      },
+      {
+        "productCode": "scha-cl-sica",
+        "productName": "Scha Clásica",
+        "missingCodes": [
+          "solu-tex-grasas-neutro"
+        ]
+      },
+      {
+        "productCode": "scha-jumbo-x",
+        "productName": "Scha Jumbo X",
+        "missingCodes": [
+          "recorte-80-20-emulsificados"
+        ]
+      },
+      {
+        "productCode": "scha-manguera",
+        "productName": "Scha Manguera",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "solu-tex-grasas-neutro"
+        ]
+      },
+      {
+        "productCode": "scha-perro-x",
+        "productName": "Scha Perro X",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "solu-tex-grasas-neutro"
+        ]
+      },
+      {
+        "productCode": "scha-s-perro-x",
+        "productName": "Scha S. Perro X",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "recorte-80-20-importado"
+        ]
+      },
+      {
+        "productCode": "schon-cerv-prem-x",
+        "productName": "Schon Cerv Prem X",
+        "missingCodes": [
+          "cloruro-de-potasio-kcl",
+          "color-natural-hemoglobina-i-red",
+          "proteina-colagenica-alta-funcionalidad"
+        ]
+      }
+    ],
+    "rawSourceNon100": [
+      {
+        "productCode": "chorizo-con-ternera",
+        "version": 1,
+        "sourcePercentageSum": "99.999"
+      },
+      {
+        "productCode": "chorizo-santarrosano-x",
+        "version": 1,
+        "sourcePercentageSum": "99.9680"
+      },
+      {
+        "productCode": "hsa",
+        "version": 1,
+        "sourcePercentageSum": "100.0158"
+      },
+      {
+        "productCode": "hsa-cja",
+        "version": 1,
+        "sourcePercentageSum": "99.9999"
+      },
+      {
+        "productCode": "jmn-premium-fzan",
+        "version": 1,
+        "sourcePercentageSum": "99.8204"
+      },
+      {
+        "productCode": "jmn-sdw-fzan-x",
+        "version": 1,
+        "sourcePercentageSum": "100.002"
+      },
+      {
+        "productCode": "perro-caliente-viande-x",
+        "version": 1,
+        "sourcePercentageSum": "99.95"
+      },
+      {
+        "productCode": "scha-cl-sica",
+        "version": 1,
+        "sourcePercentageSum": "99.9885"
+      },
+      {
+        "productCode": "scha-jumbo-x",
+        "version": 1,
+        "sourcePercentageSum": "100.03"
+      },
+      {
+        "productCode": "scha-manguera",
+        "version": 1,
+        "sourcePercentageSum": "99.9945"
+      },
+      {
+        "productCode": "scha-perro-x",
+        "version": 1,
+        "sourcePercentageSum": "100.0860"
+      },
+      {
+        "productCode": "scha-s-perro-x",
+        "version": 1,
+        "sourcePercentageSum": "99.95"
+      },
+      {
+        "productCode": "schon-cerv-prem-x",
+        "version": 1,
+        "sourcePercentageSum": "100.0484"
+      }
+    ]
+  },
+  "clientEvidencePending": {
+    "olderMissingProfiles": [
+      {
+        "code": "aditivo-burger-meat-80b",
+        "name": "Aditivo Burger Meat 80B NAT",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Burguer Meat no identifica variante80-B NAT del archivo Junio.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 60,
+            "name": "Burguer Meat"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 450 G - 5 UNDS",
+            "row": "14",
+            "code": "1220011",
+            "description": "ADITIVO BURGER MEAT 80 B NAT            "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 900 G - 10 UNDS",
+            "row": "14",
+            "code": "1220011",
+            "description": "ADITIVO BURGER MEAT 80 B NAT            "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA cja 2700 G - 30 UNDS",
+            "row": "15",
+            "code": "1220011",
+            "description": "ADITIVO BURGER MEAT 80 B NAT            "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA LOS PERRITOS",
+            "row": "14",
+            "code": "1220011",
+            "description": "ADITIVO BURGER MEAT 80 B NAT            "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "ALTERNATIVA HSAS",
+            "row": "11",
+            "code": "MPPC094",
+            "description": "ADITIVO BURGER MEAT 80-B NATUR. BOLSA X 5 KILOS."
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "38",
+            "code": "1220011",
+            "description": "ADITIVO BURGER MEAT 80 B NAT            "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "carnal-961",
+        "name": "Mezcla de Fosfatos Carnal 961",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco tiene otras mezclas fosfatadas; no Carnal961.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 91,
+            "name": "Supra meat"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 92,
+            "name": "Carfosel"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 93,
+            "name": "Tari K"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "ALTERNATIVA HSAS",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA FAIZAN  225 G 14 U CC",
+            "row": "17",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "EXPLORACIÓN LUCTA",
+            "row": "17",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA COLPAG X 250 UNDS",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": "46",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": "17",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": "41",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA MDELA ITALIAN",
+            "row": "17",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA MDELA ITALIAN",
+            "row": "40",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREM VIANDÉ 300 G - 15",
+            "row": "15",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA JMN SANDUCHE",
+            "row": "19",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 24 U ",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA AMERICANA QUESUDOS",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA AMERICANA SAN ANDRÉS",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "san andrés",
+            "row": "16",
+            "code": "MPPD160",
+            "description": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "cloruro-de-potasio-kcl",
+        "name": "Cloruro de Potasio (KCl)",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Sin relación inequívoca comprobada.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 500",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 750",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 1300",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 1500",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON CERV PREM X 50 G",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MINI PERRO X 1.0",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA PERRO X 480 G - 12 UNDS",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA S. PERRO X 500 ",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO X 2500",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA MANGUERA 560 G - 6 UND",
+            "row": "12",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA MANGUERA 1120G - 12UND",
+            "row": "12",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON POLLO X 225 G",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": "15",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  INST  500 G 28 U ",
+            "row": "15",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 28 U ",
+            "row": "15",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  FZAN X 225 ",
+            "row": "15",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": "12",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PERRO CALIENTE VIANDE x 240G",
+            "row": "12",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO VIANDE X 400G RX",
+            "row": "11",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO TERNERA VIANDE",
+            "row": "10",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARRO VIANDE",
+            "row": "10",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO ANTIOQUEÑO VIANDE",
+            "row": "10",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": "14",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "28",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja2",
+            "row": "5",
+            "code": "1210010",
+            "description": "CLORURO DE POTASIO - KCL"
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "color-natural-hemoglobina-i-red",
+        "name": "Color Natural Hemoglobina I Red",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Hemoglobina de Cerdo no vincula I-Red ni especifica esta formulación comercial.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 25,
+            "name": "Hemoglobina de Cerdo"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON CERV PREM X 50 G",
+            "row": "9",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 220",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 440 G FZAN",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 1100",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 300",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA CERVECERITO",
+            "row": "15",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 480 ",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 1200",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA INSTITU x 1200",
+            "row": "21",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 450 G - 5 UNDS",
+            "row": "7",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 900 G - 10 UNDS",
+            "row": "7",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA cja 2700 G - 30 UNDS",
+            "row": "7",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA LOS PERRITOS",
+            "row": "7",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "ALTERNATIVA HSAS",
+            "row": "20",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": "13",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  INST  500 G 28 U ",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 28 U ",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  FZAN X 225 ",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": "12",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA JMN SANDUCHE",
+            "row": "25",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO TERNERA VIANDE",
+            "row": "21",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 GRS FZAN",
+            "row": "23",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS FZAN",
+            "row": "23",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 RX",
+            "row": "23",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETAx 400 rx",
+            "row": "23",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS RX",
+            "row": "23",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": "21",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTA JAMONADA 400",
+            "row": "25",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINO BARR 1KG",
+            "row": "50",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 24 U ",
+            "row": "22",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA",
+            "row": "34",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA PP",
+            "row": "9",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA PP",
+            "row": "29",
+            "code": "MPPO142",
+            "description": "COLOR NATURAL HEMOGLOBINA. I RED. BOLSA X 1 KILO."
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "71",
+            "code": "1250003",
+            "description": "COLOR NATURAL HEMOGLOBINA I RED"
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "hielo-en-escamas",
+        "name": "Hielo en Escamas",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco incluye Agua; no hay equivalencia explícita Hielo1131001/MPII310 con Agua1131002/MPII311.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 39,
+            "name": "Agua"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 120 G ",
+            "row": "7",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 200 G",
+            "row": "7",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 220",
+            "row": "7",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM 400 G",
+            "row": "7",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": "12",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREM VIANDÉ 300 G - 15",
+            "row": "8",
+            "code": "MPII310",
+            "description": "HIELO EN ESCAMAS (BOLSA X 20 KILOS)"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA JMN SANDUCHE",
+            "row": "13",
+            "code": "MPII310",
+            "description": "HIELO EN ESCAMAS (BOLSA X 20 KILOS)"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTA JAMONADA 400",
+            "row": "9",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PERNIL DE CERDO ",
+            "row": "6",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINO BARR 1KG",
+            "row": "41",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "18",
+            "code": "1131001",
+            "description": "HIELO EN ESCAMAS                        "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "mdm-nacional",
+        "name": "MDM Nacional",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Pasta de Pollo no identifica explícitamente MDM Nacional ni su código/composición.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 5,
+            "name": "Pasta de Pollo"
+          }
+        ],
+        "originalRecipeCostReferences": [],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "preparado-sabor-chorizo-cerdo",
+        "name": "Preparado Sabor Chorizo Cerdo",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco contiene varias mezclas ChorizodeCerdo/antioqueño con códigos distintos; sin vínculo de fabricante/composición.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 115,
+            "name": "Chorizo de Cerdo"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 103,
+            "name": "Chorizo antioqueño81110B"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 113,
+            "name": "Chorizo antioqueño80489B"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 100 ",
+            "row": "9",
+            "code": "1230005",
+            "description": "PREPARADO SABOR CHORIZO CERDO           "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 250 FAZÁN",
+            "row": "9",
+            "code": "1230005",
+            "description": "PREPARADO SABOR CHORIZO CERDO           "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 400 g",
+            "row": "9",
+            "code": "1230005",
+            "description": "PREPARADO SABOR CHORIZO CERDO           "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 1000",
+            "row": "9",
+            "code": "1230005",
+            "description": "PREPARADO SABOR CHORIZO CERDO           "
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "47",
+            "code": "1230005",
+            "description": "PREPARADO SABOR CHORIZO CERDO           "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "preparado-sabor-chorizo-ternera",
+        "name": "Preparado Sabor Chorizo Ternera",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Chorizoconternera carece del identificador comercial del preparado de la receta.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 105,
+            "name": "Chorizo con ternera"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 220",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 440 G FZAN",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 1100",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 300",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 480 ",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 1200",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": "8",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "48",
+            "code": "1230006",
+            "description": "PREPARADO SABOR CHORIZO TERNERA         "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "proteina-colagenica-alta-funcionalidad",
+        "name": "Proteína Colagénica Alta Funcionalidad",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco especifica V-pro95; maestro/Junio no aporta ese fabricante ni porcentaje.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 29,
+            "name": "Colagénico alta funcionalidad V-pro95"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON CERV PREM X 50 G",
+            "row": "17",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": "34",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 220",
+            "row": "34",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 440 G FZAN",
+            "row": "34",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO CON TERNERA 1100",
+            "row": "33",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 100 ",
+            "row": "35",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50               "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 250 FAZÁN",
+            "row": "35",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50               "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 400 g",
+            "row": "35",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50               "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO DE CERDO 1000",
+            "row": "35",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50               "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 300",
+            "row": "36",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA CERVECERITO",
+            "row": "11",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 480 ",
+            "row": "36",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 1200",
+            "row": "36",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": "36",
+            "code": "1370039",
+            "description": "FUNDA COLAGENO NDX 17/50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": "36",
+            "code": "1370039",
+            "description": "FUNDA COLAGENO NDX 17/50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": "36",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": "36",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 120 G ",
+            "row": "9",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 200 G",
+            "row": "9",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM FZAN 220",
+            "row": "9",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREMIUM 400 G",
+            "row": "9",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA FAIZAN  225 G 14 U CC",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "EXPLORACIÓN LUCTA",
+            "row": "19",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA COLPAG X 250 UNDS",
+            "row": "11",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA FAIZAN  225 G 14 U SC",
+            "row": "29",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": "28",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  INST  500 G 28 U ",
+            "row": "29",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 28 U ",
+            "row": "29",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  FZAN X 225 ",
+            "row": "29",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": "28",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": "29",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA MDELA ITALIAN",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": "44",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": "38",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": "11",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN PREM VIANDÉ 300 G - 15",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PROPUESTA JMN SANDUCHE",
+            "row": "20",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO TERNERA VIANDE",
+            "row": "44",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARRO VIANDE",
+            "row": "37",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO ANTIOQUEÑO VIANDE",
+            "row": "42",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 GRS FZAN",
+            "row": "14",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS FZAN",
+            "row": "14",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 RX",
+            "row": "14",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETAx 400 rx",
+            "row": "14",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS RX",
+            "row": "14",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": "16",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA SUIZA X 9",
+            "row": "39",
+            "code": "1370029",
+            "description": "FUNDA COLAGENO  NDX F 28 / 50"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO RED ALIME",
+            "row": "39",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MORTA JAMONADA 400",
+            "row": "11",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "JMN SDW  450 G 24 U ",
+            "row": "12",
+            "code": "MPPA168",
+            "description": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "EXPLOSIÓN ME DIC 2022",
+            "row": "47",
+            "code": "MPEP354",
+            "description": "Funda Colageno NDX 26/60 (cartón x 4,718 metros x 258 tubos, C/tubo x 18.29 metros. 6 Caddy x 43 tubos C/U)"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "EXPLOSIÓN ME DIC 2022",
+            "row": "48",
+            "code": "MPEP354",
+            "description": "Funda Colageno NDX 26/60 (cartón x 4,718 metros x 258 tubos, C/tubo x 18.29 metros. 6 Caddy x 43 tubos C/U)"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "EXPLOSIÓN ME DIC 2022",
+            "row": "49",
+            "code": "MPEP354",
+            "description": "Funda Colageno NDX 26/60 (cartón x 4,718 metros x 258 tubos, C/tubo x 18.29 metros. 6 Caddy x 43 tubos C/U)"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "89",
+            "code": "1260022",
+            "description": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "235",
+            "code": "1370008",
+            "description": "FUNDA COLAGENO NDXF 25/50               "
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "236",
+            "code": "1370009",
+            "description": "FUNDA COLAGENO ND 26/60                 "
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "252",
+            "code": "1370029",
+            "description": "FUNDA COLAGENO  NDX F 28 / 50"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "258",
+            "code": "1370039",
+            "description": "FUNDA COLAGENO NDX 17/50"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "259",
+            "code": "1370040",
+            "description": "FUNDA COLAGENO NDX 23/50"
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "recorte-70-30",
+        "name": "Recorte de Cerdo 70/30",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco identifica recorte72/28 o80/20; composición distinta del70/30 solicitado.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 10,
+            "name": "Recorte80-20"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 14,
+            "name": "Repele Recorte72-28"
+          }
+        ],
+        "originalRecipeCostReferences": [],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "recorte-80-20-emulsificados",
+        "name": "Recorte de Cerdo 80/20 Emulsificados",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Fuente no identifica el estado emulsificado ni correspondencia con receta Mezclas de proporciones determinadas.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 10,
+            "name": "Recorte80-20"
+          },
+          {
+            "sheet": "TN OFICIAL",
+            "row": 13,
+            "name": "Emulsión de Piel de Cerdo"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA JUMBO X 1200 G",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA JUMBO X 450G fazán",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 450 G - 5 UNDS",
+            "row": "17",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 900 G - 10 UNDS",
+            "row": "17",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA LOS PERRITOS",
+            "row": "17",
+            "code": "1122004",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA SUIZA X 9",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "recorte-80-20-importado",
+        "name": "Recorte de Cerdo 80/20 Importado",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Recorte80-20 tiene referencia USDA pero no vínculo explícito a este material importado/código.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 10,
+            "name": "Recorte80-20"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 500",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 750",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 1300",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO 1500",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA JUMBO X 1200 G",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA JUMBO X 450G fazán",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 300",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 480 ",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARROSANO x 1200",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA INSTITU x 1200",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 450 G - 5 UNDS",
+            "row": "17",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA 900 G - 10 UNDS",
+            "row": "17",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "HSA LOS PERRITOS",
+            "row": "17",
+            "code": "1122004",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CERVECERO FZAN  225",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "PERRO CALIENTE VIANDE x 240G",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO VIANDE X 400G RX",
+            "row": "7",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SALCHICHA UNINORTE",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SALCHICHA LONG",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO TERNERA VIANDE",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO SANTARRO VIANDE",
+            "row": "6",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO ANTIOQUEÑO VIANDE",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 GRS FZAN",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS FZAN",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 150 RX",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETAx 400 rx",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "TOCINETA X 1000 GRS RX",
+            "row": "5",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA SUIZA X 9",
+            "row": "7",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL EMULSIFICADOS "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "CHORIZO RED ALIME",
+            "row": "8",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "14",
+            "code": "1122007",
+            "description": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "15",
+            "code": "1122008",
+            "description": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      },
+      {
+        "code": "solu-tex-grasas-neutro",
+        "name": "Solu-Tex Grasas Neutro",
+        "bankRow": null,
+        "bankName": null,
+        "status": "UNRESOLVED",
+        "reason": "Banco Solutexgrasas no identifica varianteNeutro del archivo Junio.",
+        "vectorEvidence": [],
+        "sourceOriginal": null,
+        "candidateBankRows": [
+          {
+            "sheet": "TN OFICIAL",
+            "row": 48,
+            "name": "Solutexgrasas"
+          }
+        ],
+        "originalRecipeCostReferences": [
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MINI PERRO X 1.0",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA PERRO X 480 G - 12 UNDS",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA S. PERRO X 500 ",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO X 2500",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA MANGUERA 560 G - 6 UND",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA MANGUERA 1120G - 12UND",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": "23",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": "23",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA FAIZAN  225 G 14 U SC",
+            "row": "13",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA CLÁSICA   225 G 9 UND",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA CLÁSICA   450 G 18 UND",
+            "row": "22",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": "23",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": "13",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": "39",
+            "code": "MPPA158",
+            "description": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": "44",
+            "code": "MPPA158",
+            "description": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS"
+          },
+          {
+            "book": "Junio (1).xlsx",
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": "20",
+            "code": "MPPA158",
+            "description": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS"
+          },
+          {
+            "book": "Junio  costos Base de Datos ME - MPNC - MPC.xlsx",
+            "sheet": "Hoja1",
+            "row": "82",
+            "code": "1260012",
+            "description": "SOLU TEX GRASAS NEUTRO                  "
+          }
+        ],
+        "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
+      }
+    ],
+    "currentCandidateRecipes": [
+      {
+        "productCode": "cervecero",
+        "sheet": "CERVECERO 500",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "cervecero",
+        "sheet": "CERVECERO 750",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "cervecero",
+        "sheet": "CERVECERO 1300",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "cervecero",
+        "sheet": "CERVECERO 1500",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "cervecero-fzan",
+        "sheet": "CERVECERO FZAN  225",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "chorizo-santa-coctel-x",
+        "sheet": "CHORIZO SANTA COCTEL x 300",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "chorizo-santa-coctel-x",
+        "sheet": "CHORIZO SANTA COCTEL x 1000",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "chorizo-santa-corto",
+        "sheet": "CHORIZO SANTA CORTO 480 ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "chorizo-santa-largo-x",
+        "sheet": "CHORIZO SANTA LARGO x 1200 ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "chrz-con-ternera",
+        "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "jmn-premium",
+        "sheet": "JMN PREMIUM 400 G",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "jmn-sdw-exito-x",
+        "sheet": "JMN SDW  EXITO X 225 ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mdela-viand-x",
+        "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mdela-viand-x",
+        "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mnesa-apanada",
+        "sheet": "MNESA APANADA 240 G 2 UNDS",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mnesa-apanada",
+        "sheet": "MNESA APANADA 600 G 5 UNDS",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mnesa-apanada",
+        "sheet": "MNESA APANADA 1800 G 15 UND",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "morta-jamonada",
+        "sheet": "MORTA JAMONADA 400",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "mortadela-jamon-x",
+        "sheet": "MORTADELA JAMON X 225 ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "scha-institu-x",
+        "sheet": "SCHA INSTITU x 1200",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "scha-viand",
+        "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "scha-viand",
+        "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "scha-viand",
+        "sheet": "SCHA VIANDÉ 400 G ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-autentico-x",
+        "sheet": "SCHON AUTENTICO X 225 G",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-autentico-x",
+        "sheet": "SCHON AUTENTICO X 750 G",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-cerv-viand-x",
+        "sheet": "SCHON CERV VIANDÉ X 225 G",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-pollo-brakel-x",
+        "sheet": "SCHON POLLO BRAKEL X 225",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-pollo-brakel-x",
+        "sheet": "SCHON POLLO BRAKEL X 500",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-pollo-x",
+        "sheet": "SCHON POLLO X 225 G",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "schon-trad-viand-x",
+        "sheet": "SCHON TRAD VIANDÉ X 500 ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "snack-cerv-prem-x",
+        "sheet": "SNACK  CERV PREM X 50 G ",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "super-perro-x",
+        "sheet": "SUPER PERRO X 2500",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      },
+      {
+        "productCode": "super-perro-x",
+        "sheet": "SUPER PERRO X 2500 RX",
+        "status": "LATEST_SUPPLIED_BASE_PENDING_OPERATIONAL_REVIEW"
+      }
+    ],
+    "candidateProfileCodesStillUnresolved": [
+      {
+        "code": "1112001",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CERVECERO FZAN  225",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 7,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 5,
+            "name": "PASTA DE POLLO IMPORTADA PREMIUM"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1112002",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 5,
+            "name": "PASTA DE POLLO ESTANDAR"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 5,
+            "name": "PASTA DE POLLO ESTANDAR"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1112005",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 7,
+            "name": "RECORTE DE PECHUGA 95 5 SIN PIEL"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 7,
+            "name": "RECORTE DE PECHUGA 95 5 SIN PIEL"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 7,
+            "name": "RECORTE DE PECHUGA 95 5 SIN PIEL"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1121009",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 7,
+            "name": "TOCINO FORANEO"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 22,
+            "name": "TOCINO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1122001",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 6,
+            "name": "BRAZUELO DE CERDO NACIONAL"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 7,
+            "name": "BRAZUELO DE CERDO NACIONAL"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1122006",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 5,
+            "name": "BRAZUELO DE CERDO IMPORTADO"
+          },
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 5,
+            "name": "BRAZUELO DE CERDO IMPORTADO"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 6,
+            "name": "BRAZUELO DE CERDO IMPORTADO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1122007",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "CERVECERO FZAN  225",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 8,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          },
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 7,
+            "name": "RECORTE DE CERDO 80/20 IMPORTADO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1122008",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 5,
+            "name": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 5,
+            "name": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 5,
+            "name": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 5,
+            "name": "RECORTE CERDO 80/20 NAL MEZCLADOS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1131001",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 7,
+            "name": "HIELO EN ESCAMAS"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 9,
+            "name": "HIELO EN ESCAMAS"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 12,
+            "name": "HIELO EN ESCAMAS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1210002",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 14,
+            "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 13,
+            "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 13,
+            "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 13,
+            "name": "MEZCLA FOSFATOS CARFOSEL996 (GRANULAR)"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1210005",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 11,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 14,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 13,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 11,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 13,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 10,
+            "name": "SAL YODADA REFISAL"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1210010",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 15,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 12,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 14,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 11,
+            "name": "CLORURO DE POTASIO - KCL"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1220001",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 20,
+            "name": "SABOR CERDO COCIDO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1220006",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 21,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 16,
+            "name": "PIMIENTA BLANCA MOLIDA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1220008",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 14,
+            "name": "COMINO MOLIDO B"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 14,
+            "name": "COMINO MOLIDO B"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 14,
+            "name": "COMINO MOLIDO B"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1220013",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 13,
+            "name": "AROMA SALCHICHON TRADICIONAL 84987B"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 13,
+            "name": "AROMA SALCHICHON TRADICIONAL 84987B"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 13,
+            "name": "AROMA SALCHICHON TRADICIONAL 84987B"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1220015",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 15,
+            "name": "MEZCLA LIQUIDA SALCHICHA"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 15,
+            "name": "MEZCLA LIQUIDA SALCHICHA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230003",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 14,
+            "name": "PREPARADO SABOR CERVECERO NEO"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 14,
+            "name": "PREPARADO SABOR CERVECERO NEO"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 14,
+            "name": "PREPARADO SABOR CERVECERO NEO"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 14,
+            "name": "PREPARADO SABOR CERVECERO NEO"
+          },
+          {
+            "sheet": "CERVECERO FZAN  225",
+            "row": 13,
+            "name": "PREPARADO SABOR CERVECERO NEO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230004",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 15,
+            "name": "PREPARADO SABOR CERVECERO SV GF"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230006",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 8,
+            "name": "PREPARADO SABOR CHORIZO TERNERA"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 8,
+            "name": "PREPARADO SABOR CHORIZO TERNERA"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 8,
+            "name": "PREPARADO SABOR CHORIZO TERNERA"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 8,
+            "name": "PREPARADO SABOR CHORIZO TERNERA"
+          },
+          {
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": 8,
+            "name": "PREPARADO SABOR CHORIZO TERNERA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230008",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 16,
+            "name": "PREPARADO SABOR JAMON T 3391"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 19,
+            "name": "PREPARADO SABOR JAMON T 3391"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 18,
+            "name": "PREPARADO SABOR JAMON T 3391"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 20,
+            "name": "PREPARADO SABOR JAMON T 3391"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230009",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 18,
+            "name": "PREPARADO SABOR CERVECERO PREMIUM SV LS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230016",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 13,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 13,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 13,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 9,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 9,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 9,
+            "name": "AROMA SCHON DE POLLO 88447B LUCTA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230017",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 19,
+            "name": "AROMA MORTADELA TRAD 88896B"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1230020",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 16,
+            "name": "CILANTRO MOLIDO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1240007",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 20,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 20,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 20,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 20,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 15,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 18,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 18,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 17,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 19,
+            "name": "CONSERVANTE PROVIAN K"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 23,
+            "name": "CONSERVANTE PROVIAN K"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1250002",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": 13,
+            "name": "COLOR LOY NARANJA LIQ A10 1"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1250003",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 13,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 13,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 13,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 13,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": 12,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 12,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 25,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 13,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "SCHA INSTITU x 1200",
+            "row": 21,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 21,
+            "name": "COLOR NATURAL HEMOGLOBINA I RED"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1250005",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": 16,
+            "name": "COLOR NATURAL NARANJA RA 40-3 9827"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1250007",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 9,
+            "name": "ENTURBIANTE EN POLVO DPA"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 9,
+            "name": "ENTURBIANTE EN POLVO DPA"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 9,
+            "name": "ENTURBIANTE EN POLVO DPA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260008",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 19,
+            "name": "PROTEINA TEXTURIZADA DE SOYA 70%"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 19,
+            "name": "PROTEINA TEXTURIZADA DE SOYA 70%"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 19,
+            "name": "PROTEINA TEXTURIZADA DE SOYA 70%"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260009",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 17,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 17,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 17,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 17,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "CERVECERO FZAN  225",
+            "row": 16,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "CHRZ CON TERNERA 110 G 2 UND",
+            "row": 14,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 21,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 24,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 24,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 22,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 25,
+            "name": "PROTEINA CONCENTRADA DE SOYA 70%"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260010",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 300",
+            "row": 16,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "CHORIZO SANTA COCTEL x 1000",
+            "row": 16,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "CHORIZO SANTA CORTO 480 ",
+            "row": 16,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "CHORIZO SANTA LARGO x 1200 ",
+            "row": 16,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 26,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 25,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 21,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 21,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 21,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON CERV VIANDÉ X 225 G",
+            "row": 19,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 11,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 20,
+            "name": "PROTEINA CONCENTRADA SOYA 65%"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260012",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 13,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 23,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 23,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 23,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 22,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 22,
+            "name": "SOLU TEX GRASAS NEUTRO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260018",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MNESA APANADA 240 G 2 UNDS",
+            "row": 23,
+            "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA"
+          },
+          {
+            "sheet": "MNESA APANADA 600 G 5 UNDS",
+            "row": 23,
+            "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA"
+          },
+          {
+            "sheet": "MNESA APANADA 1800 G 15 UND",
+            "row": 23,
+            "name": "PROTEINA TEXTURIZADA DE TRIGO - MNESA"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260022",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 9,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 28,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "sheet": "MDELA VIANDÉ X 225 G - 17 UND S",
+            "row": 29,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 11,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 28,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 16,
+            "name": "PROTEINA COLAGENICA ALTA FUNCIONALIDAD"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260023",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 24,
+            "name": "TRANSGLUTAMINASA PROLINK MB-MM BOLSA 1KG"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260024",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHON AUTENTICO X 225 G",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SCHON AUTENTICO X 750 G",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 225",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SCHON POLLO BRAKEL X 500",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SCHON POLLO X 225 G",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SCHON TRAD VIANDÉ X 500 ",
+            "row": 19,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500",
+            "row": 18,
+            "name": "EXTRACTO PROTEICO GP 83"
+          },
+          {
+            "sheet": "SUPER PERRO X 2500 RX",
+            "row": 18,
+            "name": "EXTRACTO PROTEICO GP 83"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1260025",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 29,
+            "name": "SUPRAMEAT PLUS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "1270009",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "CERVECERO 500",
+            "row": 19,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "CERVECERO 750",
+            "row": 19,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "CERVECERO 1300",
+            "row": 19,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "CERVECERO 1500",
+            "row": 19,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "CERVECERO FZAN  225",
+            "row": 18,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "JMN PREMIUM 400 G",
+            "row": 19,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "JMN SDW  EXITO X 225 ",
+            "row": 22,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "MORTA JAMONADA 400",
+            "row": 21,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "MORTADELA JAMON X 225 ",
+            "row": 23,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          },
+          {
+            "sheet": "SNACK  CERV PREM X 50 G ",
+            "row": 22,
+            "name": "HUMO TRUSMOKE DRY x 20 KG"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPCC012",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 8,
+            "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras"
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 10,
+            "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 10,
+            "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 7,
+            "name": "EMULSION (Piel de Cerdo) - Tocino Partes Magras"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPCC043",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 8,
+            "name": "TOCINO LOMO CONGELADO IMPORTADO"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 8,
+            "name": "TOCINO LOMO CONGELADO IMPORTADO"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 10,
+            "name": "TOCINO LOMO CONGELADO IMPORTADO"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPCP031",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 6,
+            "name": "PASTA DE POLLO IMPORTADA TYSON USA"
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 7,
+            "name": "PASTA DE POLLO GOLD CREEK"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 7,
+            "name": "PASTA DE POLLO GOLD CREEK"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPCP044",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 11,
+            "name": "PASTA DE POLLO NACIONAL ALIPAQ"
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 6,
+            "name": "PASTA DE POLLO NACIONAL ALIPAQ"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 6,
+            "name": "PASTA DE POLLO NACIONAL ALIPAQ"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 6,
+            "name": "PASTA DE POLLO NACIONAL ALIPAQ"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPII311",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 7,
+            "name": "AGUA POTABLE."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 5,
+            "name": "AGUA POTABLE."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 5,
+            "name": "AGUA POTABLE."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 5,
+            "name": "AGUA POTABLE."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPLO214",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 21,
+            "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 21,
+            "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 21,
+            "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 21,
+            "name": "COLOR NATURAL ROJO AC305RWS. GARRAFA X 4 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPLO215",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 23,
+            "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 23,
+            "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 23,
+            "name": "COLOR NATURAL NARANJA  PR801 WD. GARRAFA X 10 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPLR191",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 16,
+            "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 16,
+            "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 15,
+            "name": "PVH LIQUIDA - M - 1222. CANECA X 70 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA132",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 9,
+            "name": "PROTEÍNA DE SOYA AL 65%. SACO X 20 KILOS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA134",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 17,
+            "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 17,
+            "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 16,
+            "name": "EXTRACTO PROTEICO LC 300. Saco x 25 kg."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA151",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 13,
+            "name": "PLASMA APROPORK. SACO X 20 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 13,
+            "name": "PLASMA APROPORK. SACO X 20 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 12,
+            "name": "PLASMA APROPORK. SACO X 20 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA154",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 10,
+            "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS"
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 11,
+            "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 11,
+            "name": "PROTEÍNA DE SOYA AL 70%. WILCON SJ. SACO X 20 KILOS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA158",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 20,
+            "name": "SOLU-TEX GRASAS NEUTRO. SACO X 15 KILOS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPA168",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 12,
+            "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 12,
+            "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 12,
+            "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 11,
+            "name": "PROTEÍNA COLAGÉNICA COLLAPRO P -950. SACO X 12,5 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPC112",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 15,
+            "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 15,
+            "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS"
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 14,
+            "name": "MEZCLA LÍQUIDA PARA SABORIZAR SALCHICHA. BOLSA X 2.7 KILOS. CAJA X 24,3 KILOS"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPC122",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 15,
+            "name": "MEZCLA SABOR MORTADELA DROP TECH"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPD160",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 17,
+            "name": "MEZCLA DE FOSFATOS (CARNAL 961). SACO X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPD161",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 22,
+            "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 22,
+            "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 22,
+            "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 22,
+            "name": "ERITORBATO DE SODIO. CAJA X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPD168",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 14,
+            "name": "CARRAGENINA CEAMGEL M 9396. SACO X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPD172",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 19,
+            "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 19,
+            "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 18,
+            "name": "MEZCLA DE FOSFATOS (CARFOSEL 996). SACO X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPN323",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 16,
+            "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 18,
+            "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 18,
+            "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 17,
+            "name": "CONSERVANTE INBAC ACN/NA. CAJA X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPS104",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 20,
+            "name": "AJO MOLIDO DESHIDRATADO B. 1. CAJA X 20 KILOS. (LA CAMPANA)"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPS150",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 13,
+            "name": "SAL YODADA REFISAL. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 14,
+            "name": "SAL YODADA REFISAL. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 14,
+            "name": "SAL YODADA REFISAL. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 13,
+            "name": "SAL YODADA REFISAL. SACO X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPS151",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 18,
+            "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ   225 G 8 UNDS",
+            "row": 20,
+            "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+            "row": 20,
+            "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS."
+          },
+          {
+            "sheet": "SCHA VIANDÉ 400 G ",
+            "row": 19,
+            "name": "SAL CURANTE AL 12 %. SACO X 25 KILOS."
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      },
+      {
+        "code": "MPPS154",
+        "status": "DOCUMENTARY_IDENTITY_NOT_CLOSED",
+        "scope": "LATEST_SUPPLIED_JUNE_BASE_INTERNAL_VARIANTS_REQUIRE_REVIEW",
+        "uses": [
+          {
+            "sheet": "MDELA VIANDÉ X 225 G 14 UND ",
+            "row": 19,
+            "name": "PIMIENTA MOLIDA BLANCA. BOLSA X 1 KILO. (TECNAS)"
+          }
+        ],
+        "needed": "Ficha o vínculo inequívoco a fila/perfil del banco para el código/variante exactos, para la composición elegida en el flujo de revisión de la app."
+      }
+    ],
+    "candidateAdditionalBlocksNotImported": 7,
+    "rowScopedIdentityEvidence": {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "scope": "REVIEWED_SOURCE_ROWS_NOT_CURRENT_RECIPE_APPROVAL",
+      "globalProfileBlockedCodes": {
+        "MPPA144": "Contradicción papa/yuca; fuentes46/47 solo por aparición.",
+        "1260025": "JMN29→fila61 documentado; Mortadela PLUS sin equivalencia demostrada. Solo contexto de fila.",
+        "MPCP031": "Tyson USA/Gold Creek: fabricantes diferentes bajo mismo código."
+      },
+      "rows": [
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "JMN SDW  EXITO X 225 ",
+          "sourceRow": 29,
+          "sourceCode": "1260025",
+          "sourceName": "SUPRAMEAT TRANSGLUTAMINASA MEAT PLUS 874",
+          "identityStatus": "UNPROVEN_SHORT_NAME_ALIAS",
+          "reason": "Nombre corto SUPRAMEAT PLUS no demuestra equivalencia con Meat Plus874 ni contradicción. Solo JMN29 identifica explícitamente Meat Plus874.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA",
+          "reviewedNutrientSource": {
+            "sourceFile": "Banco de Información Nutricional..xlsx",
+            "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+            "sourceSheet": "TN OFICIAL",
+            "sourceRow": 61,
+            "sourceName": "Transglutaminasa Meat Plus 874",
+            "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+            "valuesPer100g": {
+              "MOISTURE": "10.0",
+              "FAT_TOTAL": "0.82",
+              "FAT_SAT": "0.38",
+              "FAT_TRANS": "0.0",
+              "CHOLESTEROL": "0.0",
+              "PROTEIN": "42.71",
+              "CARBS_TOTAL": "33.21",
+              "SUGAR_TOTAL": "38.25",
+              "SUGAR_ADDED": "3.51",
+              "STARCH": "0.0",
+              "FIBER": "0.16",
+              "SODIUM": "203.04",
+              "CALCIUM": "5358.0",
+              "IRON": "0.0",
+              "ZINC": "0.0",
+              "VITAMIN_A": "0.0",
+              "VITAMIN_D": "0.0"
+            }
+          }
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "MDELA VIANDÉ X 225 G 14 UND ",
+          "sourceRow": 6,
+          "sourceCode": "MPCP031",
+          "sourceName": "PASTA DE POLLO IMPORTADA TYSON USA",
+          "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+          "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "MDELA VIANDÉ X 225 G 14 UND ",
+          "sourceRow": 9,
+          "sourceCode": "MPPA144",
+          "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+          "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA",
+          "reviewedNutrientSource": {
+            "sourceFile": "Banco de Información Nutricional..xlsx",
+            "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+            "sourceSheet": "TN OFICIAL",
+            "sourceRow": 46,
+            "sourceName": "Almidón de Papa",
+            "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+            "valuesPer100g": {
+              "MOISTURE": "0.0",
+              "FAT_TOTAL": "0.1",
+              "FAT_SAT": "0.0",
+              "FAT_TRANS": "0.0",
+              "CHOLESTEROL": "0.0",
+              "PROTEIN": "0.1",
+              "CARBS_TOTAL": "80.0",
+              "SUGAR_TOTAL": "0.0",
+              "SUGAR_ADDED": "0.0",
+              "STARCH": "80.0",
+              "FIBER": "0.0",
+              "SODIUM": "15.87",
+              "CALCIUM": "0.0",
+              "IRON": "0.0",
+              "ZINC": "0.0",
+              "VITAMIN_A": "0.0",
+              "VITAMIN_D": "0.0"
+            }
+          }
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "MORTADELA JAMON X 225 ",
+          "sourceRow": 29,
+          "sourceCode": "1260025",
+          "sourceName": "SUPRAMEAT PLUS",
+          "identityStatus": "UNPROVEN_SHORT_NAME_ALIAS",
+          "reason": "Nombre corto SUPRAMEAT PLUS no demuestra equivalencia con Meat Plus874 ni contradicción. Solo JMN29 identifica explícitamente Meat Plus874.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA INSTITU x 1200",
+          "sourceRow": 7,
+          "sourceCode": "1121009",
+          "sourceName": "TOCINO FORANEO",
+          "identityStatus": "ORIGIN_IDENTITY_NOT_ESTABLISHED",
+          "reason": "Foráneo o sin origen no acredita el perfil maestro Tocino Nacional.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA VIANDÉ   225 G 8 UNDS",
+          "sourceRow": 7,
+          "sourceCode": "MPCP031",
+          "sourceName": "PASTA DE POLLO GOLD CREEK",
+          "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+          "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA VIANDÉ   225 G 8 UNDS",
+          "sourceRow": 9,
+          "sourceCode": "MPPA144",
+          "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+          "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA",
+          "reviewedNutrientSource": {
+            "sourceFile": "Banco de Información Nutricional..xlsx",
+            "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+            "sourceSheet": "TN OFICIAL",
+            "sourceRow": 46,
+            "sourceName": "Almidón de Papa",
+            "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+            "valuesPer100g": {
+              "MOISTURE": "0.0",
+              "FAT_TOTAL": "0.1",
+              "FAT_SAT": "0.0",
+              "FAT_TRANS": "0.0",
+              "CHOLESTEROL": "0.0",
+              "PROTEIN": "0.1",
+              "CARBS_TOTAL": "80.0",
+              "SUGAR_TOTAL": "0.0",
+              "SUGAR_ADDED": "0.0",
+              "STARCH": "80.0",
+              "FIBER": "0.0",
+              "SODIUM": "15.87",
+              "CALCIUM": "0.0",
+              "IRON": "0.0",
+              "ZINC": "0.0",
+              "VITAMIN_A": "0.0",
+              "VITAMIN_D": "0.0"
+            }
+          }
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+          "sourceRow": 7,
+          "sourceCode": "MPCP031",
+          "sourceName": "PASTA DE POLLO GOLD CREEK",
+          "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+          "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+          "sourceRow": 9,
+          "sourceCode": "MPPA144",
+          "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+          "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+          "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA",
+          "reviewedNutrientSource": {
+            "sourceFile": "Banco de Información Nutricional..xlsx",
+            "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+            "sourceSheet": "TN OFICIAL",
+            "sourceRow": 46,
+            "sourceName": "Almidón de Papa",
+            "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+            "valuesPer100g": {
+              "MOISTURE": "0.0",
+              "FAT_TOTAL": "0.1",
+              "FAT_SAT": "0.0",
+              "FAT_TRANS": "0.0",
+              "CHOLESTEROL": "0.0",
+              "PROTEIN": "0.1",
+              "CARBS_TOTAL": "80.0",
+              "SUGAR_TOTAL": "0.0",
+              "SUGAR_ADDED": "0.0",
+              "STARCH": "80.0",
+              "FIBER": "0.0",
+              "SODIUM": "15.87",
+              "CALCIUM": "0.0",
+              "IRON": "0.0",
+              "ZINC": "0.0",
+              "VITAMIN_A": "0.0",
+              "VITAMIN_D": "0.0"
+            }
+          }
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHA VIANDÉ 400 G ",
+          "sourceRow": 8,
+          "sourceCode": "MPPA144",
+          "sourceName": "ALMIDON DE YUCA SACO X 25 KILOS .",
+          "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+          "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA",
+          "reviewedNutrientSource": {
+            "sourceFile": "Banco de Información Nutricional..xlsx",
+            "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+            "sourceSheet": "TN OFICIAL",
+            "sourceRow": 47,
+            "sourceName": "Almidón de Yuca",
+            "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+            "valuesPer100g": {
+              "MOISTURE": "13.0",
+              "FAT_TOTAL": "0.0",
+              "FAT_SAT": "0.0",
+              "FAT_TRANS": "0.0",
+              "CHOLESTEROL": "0.0",
+              "PROTEIN": "0.0",
+              "CARBS_TOTAL": "85.0",
+              "SUGAR_TOTAL": "0.0",
+              "SUGAR_ADDED": "0.0",
+              "STARCH": "85.0",
+              "FIBER": "0.0",
+              "SODIUM": "0.0",
+              "CALCIUM": "0.0",
+              "IRON": "0.0",
+              "ZINC": "0.0",
+              "VITAMIN_A": "0.0",
+              "VITAMIN_D": "0.0"
+            }
+          }
+        },
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceFile": "Junio (1).xlsx",
+          "sourceSheet": "SCHON TRAD VIANDÉ X 500 ",
+          "sourceRow": 22,
+          "sourceCode": "1121009",
+          "sourceName": "TOCINO",
+          "identityStatus": "ORIGIN_IDENTITY_NOT_ESTABLISHED",
+          "reason": "Foráneo o sin origen no acredita el perfil maestro Tocino Nacional.",
+          "linkToGlobalIngredient": false,
+          "currentStatus": "VIGENCIA_NO_ACREDITADA"
+        }
+      ],
+      "bundleReconstructions": [
+        {
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "sourceSheet": "MEGA COMBO FAIZAN 675G X3 ",
+          "reconstructedWeightGrams": "675",
+          "status": "CANDIDATE_RECONSTRUCTION_NOT_APPROVED",
+          "conflictingDeclaredWeightGrams": "900",
+          "evidence": {
+            "B2": {
+              "value": "MEGA COMBO FAIZAN 675 G X 3",
+              "formula": "",
+              "type": "s"
+            },
+            "C14": {
+              "value": "900",
+              "formula": "",
+              "type": "n"
+            },
+            "C24": {
+              "value": "LAM SUP MEGA COMBO FAIZAN X 675 G X 3 UD",
+              "formula": "",
+              "type": "s"
+            },
+            "C5": {
+              "value": "SALCHICHÓN AUTÉNTICO X 225 GRAMOS",
+              "formula": "",
+              "type": "s"
+            },
+            "C6": {
+              "value": "MORTADELA SELECCIONADA X 225 GRAMOS OFERTA",
+              "formula": "",
+              "type": "s"
+            },
+            "C7": {
+              "value": "SALCHICHÓN DE POLLO X 225 GRAMOS",
+              "formula": "",
+              "type": "s"
+            },
+            "D5": {
+              "value": "1",
+              "formula": "",
+              "type": "n"
+            },
+            "D6": {
+              "value": "1",
+              "formula": "",
+              "type": "n"
+            },
+            "D7": {
+              "value": "1",
+              "formula": "",
+              "type": "n"
+            }
+          },
+          "limits": [
+            "30018 identity is unresolved; no alias selected.",
+            "No current recipe or assortment approval inferred."
+          ]
+        }
+      ]
+    },
+    "unresolvedIdentityRows": 20,
+    "candidateMissingCodesAllBlocksAfterLiteralPlan": null,
+    "uncodedOrZeroRows": [
+      {
+        "sheet": "MORTA JAMONADA 400",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHA INSTITU x 1200",
+        "rows": [
+          22
+        ]
+      },
+      {
+        "sheet": "SCHON AUTENTICO X 225 G",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHON AUTENTICO X 750 G",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHON CERV VIANDÉ X 225 G",
+        "rows": [
+          9
+        ]
+      },
+      {
+        "sheet": "SCHON POLLO BRAKEL X 225",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHON POLLO BRAKEL X 500",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHON POLLO X 225 G",
+        "rows": [
+          7
+        ]
+      },
+      {
+        "sheet": "SCHON TRAD VIANDÉ X 500 ",
+        "rows": [
+          7
+        ]
+      }
+    ],
+    "sourcePercentageRangeOmissions": [
+      {
+        "sheet": "CHORIZO SANTA COCTEL x 1000",
+        "rows": [
+          20
+        ],
+        "sum": "100.001000000000001015"
+      },
+      {
+        "sheet": "CHORIZO SANTA CORTO 480 ",
+        "rows": [
+          20
+        ],
+        "sum": "100.001000000000001015"
+      },
+      {
+        "sheet": "CHORIZO SANTA LARGO x 1200 ",
+        "rows": [
+          20
+        ],
+        "sum": "100.001000000000001015"
+      }
+    ],
+    "sourceQuantityRangeOmissions": [
+      {
+        "sheet": "CHORIZO SANTA COCTEL x 300",
+        "rows": [
+          20
+        ]
+      },
+      {
+        "sheet": "CHORIZO SANTA COCTEL x 1000",
+        "rows": [
+          20
+        ]
+      },
+      {
+        "sheet": "CHORIZO SANTA CORTO 480 ",
+        "rows": [
+          20
+        ]
+      },
+      {
+        "sheet": "CHORIZO SANTA LARGO x 1200 ",
+        "rows": [
+          20
+        ]
+      },
+      {
+        "sheet": "JMN PREMIUM 400 G",
+        "rows": [
+          24
+        ]
+      },
+      {
+        "sheet": "MORTADELA JAMON X 225 ",
+        "rows": [
+          29
+        ]
+      }
+    ],
+    "sourcePercentDifferences": {
+      "largerThanDiagnosticSerializationTail": 26,
+      "tinySerializationCompatibleButStillNotExact": 7,
+      "diagnosticIsNotValidationTolerance": true
+    },
+    "bundles": [
+      {
+        "productCode": "mega-combo-faizan",
+        "sheet": "MEGA COMBO FAIZAN 675 G",
+        "allRowsEqual": true,
+        "components": 3,
+        "issues": [
+          "Multiple source variants are retained; no approved assortment selected.",
+          "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+        ],
+        "computedWeightGrams": "675",
+        "weightReconstruction": null,
+        "state": "DRAFT"
+      },
+      {
+        "productCode": "mega-combo-faizan",
+        "sheet": "MEGA COMBO FAIZAN 900 G NUEVO",
+        "allRowsEqual": true,
+        "components": 4,
+        "issues": [
+          "Multiple source variants are retained; no approved assortment selected.",
+          "MEMBER_WEIGHT_NOT_IN_SOURCE",
+          "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+        ],
+        "computedWeightGrams": null,
+        "weightReconstruction": null,
+        "state": "DRAFT"
+      },
+      {
+        "productCode": "mega-combo-faizan",
+        "sheet": "MEGA COMBO FAIZAN 675G X3 ",
+        "allRowsEqual": true,
+        "components": 3,
+        "issues": [
+          "Multiple source variants are retained; no approved assortment selected.",
+          "DECLARED_AND_COMPONENT_WEIGHT_DIFFER",
+          "UNRESOLVED_MEMBER_PRODUCT_IDENTITY"
+        ],
+        "computedWeightGrams": "675",
+        "weightReconstruction": {
+          "limits": [
+            "30018 identity is unresolved; no alias selected.",
+            "No current recipe or assortment approval inferred."
+          ],
+          "status": "CANDIDATE_RECONSTRUCTION_NOT_APPROVED",
+          "evidence": {
+            "B2": {
+              "type": "s",
+              "value": "MEGA COMBO FAIZAN 675 G X 3",
+              "formula": ""
+            },
+            "C5": {
+              "type": "s",
+              "value": "SALCHICHÓN AUTÉNTICO X 225 GRAMOS",
+              "formula": ""
+            },
+            "C6": {
+              "type": "s",
+              "value": "MORTADELA SELECCIONADA X 225 GRAMOS OFERTA",
+              "formula": ""
+            },
+            "C7": {
+              "type": "s",
+              "value": "SALCHICHÓN DE POLLO X 225 GRAMOS",
+              "formula": ""
+            },
+            "D5": {
+              "type": "n",
+              "value": "1",
+              "formula": ""
+            },
+            "D6": {
+              "type": "n",
+              "value": "1",
+              "formula": ""
+            },
+            "D7": {
+              "type": "n",
+              "value": "1",
+              "formula": ""
+            },
+            "C14": {
+              "type": "n",
+              "value": "900",
+              "formula": ""
+            },
+            "C24": {
+              "type": "s",
+              "value": "LAM SUP MEGA COMBO FAIZAN X 675 G X 3 UD",
+              "formula": ""
+            }
+          },
+          "sourceSheet": "MEGA COMBO FAIZAN 675G X3 ",
+          "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+          "reconstructedWeightGrams": "675",
+          "conflictingDeclaredWeightGrams": "900"
+        },
+        "state": "DRAFT"
+      },
+      {
+        "productCode": "s-per-combo-viand",
+        "sheet": "SÚPER COMBO VIANDÉ 900 G",
+        "allRowsEqual": true,
+        "components": 4,
+        "issues": [
+          "Multiple source variants are retained; no approved assortment selected."
+        ],
+        "computedWeightGrams": "900",
+        "weightReconstruction": null,
+        "state": "DRAFT"
+      }
+    ],
+    "ctn": "ctn_paridad_y_ambiguedades.json; historical comparison retained; later corrections prevail; original TLv4 not available for output parity"
+  },
+  "functionalLimits": [
+    "Species facts are persisted per reviewed version and consumed by saved/printable preliminary documents; classification incomplete blocks saving/printing. Numeric thresholds remain separate and unchanged.",
+    "No additional role/permission or official publication workflow has been invented."
+  ],
+  "teamLeadPending": [
+    "Restore authorized actual destination backup and compare content/schema/collisions.",
+    "Validate operational target-specific data adapter; local fixture seed must never be used on production.",
+    "Read the final Docker proof: runtime and herramientas images plus isolated runtime smoke; validate target architecture and infrastructure before deployment.",
+    "Use the app to reconcile and operationally approve compositions; June (1).xlsx is confirmed as latest available base, no further general history request."
+  ],
+  "documentaryBase": {
+    "latestFile": "Junio (1).xlsx",
+    "confirmedByUser": true,
+    "laterDocumentedCorrectionsApply": true,
+    "generalHistoryRequired": false
+  },
+  "doNotAddCounts": "13 older profile identities and65/71candidatecodes overlap conceptually; do not sum as current ingredient deficits. Candidate current denominator is unknown."
+}

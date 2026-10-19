@@ -1,0 +1,19 @@
+{
+  "products": 39,
+  "productsWithFormulation": 38,
+  "productsWithoutFormulation": [
+    "explosi-n-me-dic"
+  ],
+  "recoveredProducts": 21,
+  "recoveredVersions": 33,
+  "recoveredSourceRows": 606,
+  "recoveredLinkedComponents": 597,
+  "recoveredVersionsWithExact100": 0,
+  "recoveredVersionsMissingNutrition": 33,
+  "bundleVersions": 4,
+  "bundleComponents": 14,
+  "approvedVersions": 0,
+  "invalidZeroIngredientCount": 0,
+  "users": 0,
+  "sessions": 0
+}

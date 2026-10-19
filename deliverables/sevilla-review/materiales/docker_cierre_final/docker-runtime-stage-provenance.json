@@ -1,0 +1,9 @@
+{
+  "sourceDockerfileSha256": "fea49b6db2edfbe4fb8cce0dbe7dcf700d64a8046b28ca92776721b78f2b4d31",
+  "artifactDockerfileSha256": "6133344d497e8233f417e94c9d04459cddc5b4073d03a08933762ff508154c4d",
+  "baseInstructionsUnchanged": true,
+  "runtimeInstructionsUnchangedExceptCopySourceFromVerifiedArtifacts": true,
+  "finalUserUnchanged": "node",
+  "applicationBindMounts": false,
+  "archiveSha256": "3a75cdba0550e96b2a013bade2c506f3a2f339e96d1ba1b009ef0ef32fef01a9"
+}

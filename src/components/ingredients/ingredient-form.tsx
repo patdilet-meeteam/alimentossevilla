@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { updateNutrientInput } from "@/lib/nutrition/nutrient-input";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -103,22 +104,7 @@ export function IngredientForm({
   };
 
   const handleNutrientValueChange = (nutrientId: string, value: string) => {
-    const existing = formData.nutrientValues.findIndex(
-      (nv: any) => nv.nutrientId === nutrientId
-    );
-    if (existing >= 0) {
-      const updated = [...formData.nutrientValues];
-      updated[existing] = { ...updated[existing], value: value ? parseFloat(value) : 0 };
-      setFormData({ ...formData, nutrientValues: updated });
-    } else {
-      setFormData({
-        ...formData,
-        nutrientValues: [
-          ...formData.nutrientValues,
-          { nutrientId, value: value ? parseFloat(value) : 0, method: "" },
-        ],
-      });
-    }
+    setFormData({ ...formData, nutrientValues: updateNutrientInput(formData.nutrientValues, nutrientId, value) });
   };
 
   const requiredNutrients = nutrients.filter((n) => n.isRequiredOnLabel);
@@ -314,9 +300,9 @@ export function IngredientForm({
                     <div className="flex items-center gap-1">
                       <Input
                         type="number"
-                        step="0.01"
+                        step="any"
                         min="0"
-                        value={currentValue?.value || ""}
+                        value={currentValue?.value ?? ""}
                         onChange={(e) =>
                           handleNutrientValueChange(nutrient.id, e.target.value)
                         }

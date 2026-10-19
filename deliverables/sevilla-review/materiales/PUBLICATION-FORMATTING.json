@@ -1,0 +1,164 @@
+{
+  "scope": "PUBLICATION_FORMATTING_ONLY",
+  "testedSourceFingerprint": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "publishedSourceFingerprint": "6e3399ddff66e1ce9543bd8f2ba372f671bfca868768495dadee8fd1528c102e",
+  "codeFiles": 200,
+  "onlyCodeDifference": [
+    "scripts/review/prepare-consolidation-report.py"
+  ],
+  "pythonASTUnchanged": true,
+  "allOtherCodeTestsAndHarnessFilesByteIdenticalToApprovedPackage": true,
+  "rawLogsPreservedInOriginalEvidenceAndLibraryV4": true,
+  "files": [
+    {
+      "path": "deliverables/sevilla-review/materiales/docker_cierre_final/docker-herramientas-archive-feedback.log",
+      "originalSha256": "7e880f834b9d9287f930364db542da2ee148b936d01813d016af6e59136a18dd",
+      "publishedSha256": "11cfc653863d5937d336facf13dc20e08738f0dddf266599273c811e6be7aa94",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/docker_cierre_final/herramientas_normal/migrations.log",
+      "originalSha256": "40343a44ffce9d8504759507a2266a5b18abef7fedda2bbda51db1ece4234a59",
+      "publishedSha256": "45b667353505b59337cbb7e6bf6820b5536f4d18c210aa6c8150d622ebcb4f69",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/docker_cierre_final/herramientas_normal/positive-integration-node22.log",
+      "originalSha256": "b7d7f32a8c22a97ffa9d80b4d3a9ce0cc6c111782c96576b5942abec5745ef8e",
+      "publishedSha256": "1cf143620bbbfbd6865c74bb8299f7598c310dec11c23cb45af4e9238d9579a7",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/docker_cierre_final/runtime_actual_normal/fixture-schema-host-only.log",
+      "originalSha256": "ed4c437e39c6ccaa13f6e71b02a3d826253da9aadd3d0671fa55cd5a9358ea43",
+      "publishedSha256": "e6db87d63057eaa44a564a6ff1e7af519f1f15bb741958093889f541333bbb9a",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_cierre_final/build.log",
+      "originalSha256": "29a5c9fbb02081da2768b800c3730f51fa85bec14772b737f5b880cfff76de83",
+      "publishedSha256": "cf40e85060f81eed0b23e4ea20d06aa4275993e157b30a677cb12feca2f5e4ac",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_cierre_final/client.log",
+      "originalSha256": "160ea46bf7e5cf7d2f7a9f5c3f97ad61e8561818d28fd7b9ec3378a355f385d2",
+      "publishedSha256": "e1f73c5523d2686e90712c9703dafc45b74d67b7dc5cd3c181439284f02034af",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_cierre_final/migrations.log",
+      "originalSha256": "50f658ec7a9953f437cc8f42b15ffae6ecb1cb6b153ed7c576c0cae27156f817",
+      "publishedSha256": "c8b6be9b710d49885bd21cc564d202a67a9f54edbf447b7575a9e56d27cedd42",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_cierre_final/test-suite.log",
+      "originalSha256": "329313a5190c8592b9b78edeb5b033cdff30cc31a79fe9967fcb674bc2441962",
+      "publishedSha256": "ac04fd7d61d8752da84d7aae739ff7e9c9ab6a9db4d596b35226c966e6d0946e",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_filas/build.log",
+      "originalSha256": "01ad9781ed739b42b6443e63e2e14199ce513df9fe925ec79b0ebc4d2f01d7c1",
+      "publishedSha256": "719aba9fcc0cb7c2e1e81802a6328cfe8d1cd48aca0d73af548956287fe06f17",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_filas/client.log",
+      "originalSha256": "1e4e9427a5cef54cb832f757d309817d1f569f9704172399cc3b35bcfc4357a7",
+      "publishedSha256": "c3ebb3e59176c9fdbf317ec876179cc02c207e3241590d200b8c98085394c50a",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_filas/migrations.log",
+      "originalSha256": "c4ba5e658d00a10166e5ddffee3eaa1f0feb5156344d6d69cecc34cb4fa3f5fe",
+      "publishedSha256": "17714deb91e8f93f16b5bd889ce2151fa68f6dde980fb6eb01c14cf863a89043",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_filas/test-suite.log",
+      "originalSha256": "63af5f55e7b53fb8fb133482f38a6f3f3aeef43798d0279709b89d0fa9ede4a1",
+      "publishedSha256": "c05f085cbe375bc015579f3f04c100cf8eb437b46b3cb18247e94eef96cf8112",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_revision/build.log",
+      "originalSha256": "2279cd9a82d37c6dbe7827a442c8a6d0989b0a5494c8460fa6fef22b506160df",
+      "publishedSha256": "728d47a2df26d7320f66676ff2ea28bed862f8d3be31ed5f221e1d272e8727f8",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_revision/client.log",
+      "originalSha256": "7053a07884b4e069daeeb2085b573be68bf9457af293d62f870a134b39ab1bb9",
+      "publishedSha256": "e72c855fc6947815d2de50d0071b90e6d96f1bdd723b597367fe7cddb10ad810",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_revision/migrations.log",
+      "originalSha256": "d496077907fd0e604caa70bfaa0beefec64cea67a69debf5cbc19eb61275292f",
+      "publishedSha256": "9d3f140b601dd564e288b525089bb87ab0b7fe570399e93123208301157a7ceb",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_consolidado_revision/test-suite.log",
+      "originalSha256": "7f592076c122051c00727b127cc247fb92ab5b19275cd4f6881cc13081d517b3",
+      "publishedSha256": "ddd2f05414d8693a0ddea135ff4e0f75bbc4a4a360eada0977de09d561558f1c",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_integrado_ultima_base/build.log",
+      "originalSha256": "cd41f3401d8d6cc00bc1d64fa129a4efaaa487c400db233465ff186ae9c67723",
+      "publishedSha256": "a893297fa95e5b1e3d88d9411fd753963541177dd88a1c1e97d3edcf2a076ad1",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_integrado_ultima_base/client.log",
+      "originalSha256": "1636ec4270ef2f3a3396f52a08e6197f02d0f04898031f1fa3fc0559a86410f9",
+      "publishedSha256": "760a063b092717ab35799709273133f53fe9b1329cf1727f4d2b5f5219107213",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_integrado_ultima_base/migrations.log",
+      "originalSha256": "8f1fd9ebc202dc26e2123b727ce1fae84443e7077f509b94652e81eea57c2cd8",
+      "publishedSha256": "6432f28a28f857735f6814e03a744f61f9d0e00dc9771233a0cd79b3cafdf4b6",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/ensayo_integrado_ultima_base/test-suite.log",
+      "originalSha256": "e09e16db3c751074349fb991136460dcbf3a0d867ed763fc6796f4eeba1a0284",
+      "publishedSha256": "7eee526ca01d60eaaf774137a087ba77d3c08c9c671cc5299e42f77005b68a96",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/historico_docker_montaje_anterior/build-herramientas-archive.log",
+      "originalSha256": "7e880f834b9d9287f930364db542da2ee148b936d01813d016af6e59136a18dd",
+      "publishedSha256": "11cfc653863d5937d336facf13dc20e08738f0dddf266599273c811e6be7aa94",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/historico_docker_montaje_anterior/build-runtime.log",
+      "originalSha256": "6466254c9ada1a02981065046fbc0bdd0dfed65866869a2b3276b660ff5807f6",
+      "publishedSha256": "05bc217519de568422708604232031728fac62b9f6386b557f5451ec2e1c1027",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/historico_docker_montaje_anterior/migrations.log",
+      "originalSha256": "ec61efa2720958c8e4d8ff0078185aff21812e53b760f4644ec4aa599466f3e5",
+      "publishedSha256": "aa30b07a94639b6422c6815a4de35d03423919f63a35ae6c8f53d0310a4b630c",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "deliverables/sevilla-review/materiales/historico_docker_montaje_anterior/positive-integration-node22.log",
+      "originalSha256": "d6d52a831d4c79889109a40dce931bda171d4a1b679a1e5f403e44f1976560de",
+      "publishedSha256": "c416cbadbe7752f437b89a48a3f3bdff527c7f5c363712db1a165d4cda0e189c",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    },
+    {
+      "path": "scripts/review/prepare-consolidation-report.py",
+      "originalSha256": "31d77fa5bbbe2d5bece7d73bddd14b131064514959973f6959b614f3a05faf4d",
+      "publishedSha256": "abd4f223fba42cb0c31a4f2395d1cc09442d18abb369038500b0d5da1eae527d",
+      "onlyTrailingWhitespaceAndBlankEOFRemoved": true
+    }
+  ]
+}

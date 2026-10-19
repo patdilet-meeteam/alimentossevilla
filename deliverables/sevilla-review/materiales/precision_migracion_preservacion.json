@@ -1,0 +1,14 @@
+{
+  "scope": "ISOLATED_FIXTURE_ONLY",
+  "before": {
+    "scope": "ISOLATED_FIXTURE",
+    "rows": 1206,
+    "sha256": "2afe782424bc1adcf035bd1901e9910b9c59034b0da072d449b1a4f3a2838033"
+  },
+  "after": {
+    "rows": 1206,
+    "sha256": "2afe782424bc1adcf035bd1901e9910b9c59034b0da072d449b1a4f3a2838033"
+  },
+  "allExistingNutrientRowsPreserved": true,
+  "migration": "20261019190000_preserve_nutrient_source_precision"
+}

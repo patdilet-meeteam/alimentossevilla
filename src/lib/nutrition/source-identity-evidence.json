@@ -1,0 +1,338 @@
+{
+  "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+  "scope": "REVIEWED_SOURCE_ROWS_NOT_CURRENT_RECIPE_APPROVAL",
+  "globalProfileBlockedCodes": {
+    "MPPA144": "Contradicción papa/yuca; fuentes46/47 solo por aparición.",
+    "1260025": "JMN29→fila61 documentado; Mortadela PLUS sin equivalencia demostrada. Solo contexto de fila.",
+    "MPCP031": "Tyson USA/Gold Creek: fabricantes diferentes bajo mismo código."
+  },
+  "rows": [
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "JMN SDW  EXITO X 225 ",
+      "sourceRow": 29,
+      "sourceCode": "1260025",
+      "sourceName": "SUPRAMEAT TRANSGLUTAMINASA MEAT PLUS 874",
+      "identityStatus": "UNPROVEN_SHORT_NAME_ALIAS",
+      "reason": "Nombre corto SUPRAMEAT PLUS no demuestra equivalencia con Meat Plus874 ni contradicción. Solo JMN29 identifica explícitamente Meat Plus874.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA",
+      "reviewedNutrientSource": {
+        "sourceFile": "Banco de Información Nutricional..xlsx",
+        "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+        "sourceSheet": "TN OFICIAL",
+        "sourceRow": 61,
+        "sourceName": "Transglutaminasa Meat Plus 874",
+        "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+        "valuesPer100g": {
+          "MOISTURE": "10.0",
+          "FAT_TOTAL": "0.82",
+          "FAT_SAT": "0.38",
+          "FAT_TRANS": "0.0",
+          "CHOLESTEROL": "0.0",
+          "PROTEIN": "42.71",
+          "CARBS_TOTAL": "33.21",
+          "SUGAR_TOTAL": "38.25",
+          "SUGAR_ADDED": "3.51",
+          "STARCH": "0.0",
+          "FIBER": "0.16",
+          "SODIUM": "203.04",
+          "CALCIUM": "5358.0",
+          "IRON": "0.0",
+          "ZINC": "0.0",
+          "VITAMIN_A": "0.0",
+          "VITAMIN_D": "0.0"
+        }
+      }
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 6,
+      "sourceCode": "MPCP031",
+      "sourceName": "PASTA DE POLLO IMPORTADA TYSON USA",
+      "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+      "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "MDELA VIANDÉ X 225 G 14 UND ",
+      "sourceRow": 9,
+      "sourceCode": "MPPA144",
+      "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+      "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+      "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA",
+      "reviewedNutrientSource": {
+        "sourceFile": "Banco de Información Nutricional..xlsx",
+        "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+        "sourceSheet": "TN OFICIAL",
+        "sourceRow": 46,
+        "sourceName": "Almidón de Papa",
+        "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+        "valuesPer100g": {
+          "MOISTURE": "0.0",
+          "FAT_TOTAL": "0.1",
+          "FAT_SAT": "0.0",
+          "FAT_TRANS": "0.0",
+          "CHOLESTEROL": "0.0",
+          "PROTEIN": "0.1",
+          "CARBS_TOTAL": "80.0",
+          "SUGAR_TOTAL": "0.0",
+          "SUGAR_ADDED": "0.0",
+          "STARCH": "80.0",
+          "FIBER": "0.0",
+          "SODIUM": "15.87",
+          "CALCIUM": "0.0",
+          "IRON": "0.0",
+          "ZINC": "0.0",
+          "VITAMIN_A": "0.0",
+          "VITAMIN_D": "0.0"
+        }
+      }
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "MORTADELA JAMON X 225 ",
+      "sourceRow": 29,
+      "sourceCode": "1260025",
+      "sourceName": "SUPRAMEAT PLUS",
+      "identityStatus": "UNPROVEN_SHORT_NAME_ALIAS",
+      "reason": "Nombre corto SUPRAMEAT PLUS no demuestra equivalencia con Meat Plus874 ni contradicción. Solo JMN29 identifica explícitamente Meat Plus874.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA INSTITU x 1200",
+      "sourceRow": 7,
+      "sourceCode": "1121009",
+      "sourceName": "TOCINO FORANEO",
+      "identityStatus": "ORIGIN_IDENTITY_NOT_ESTABLISHED",
+      "reason": "Foráneo o sin origen no acredita el perfil maestro Tocino Nacional.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 7,
+      "sourceCode": "MPCP031",
+      "sourceName": "PASTA DE POLLO GOLD CREEK",
+      "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+      "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA VIANDÉ   225 G 8 UNDS",
+      "sourceRow": 9,
+      "sourceCode": "MPPA144",
+      "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+      "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+      "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA",
+      "reviewedNutrientSource": {
+        "sourceFile": "Banco de Información Nutricional..xlsx",
+        "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+        "sourceSheet": "TN OFICIAL",
+        "sourceRow": 46,
+        "sourceName": "Almidón de Papa",
+        "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+        "valuesPer100g": {
+          "MOISTURE": "0.0",
+          "FAT_TOTAL": "0.1",
+          "FAT_SAT": "0.0",
+          "FAT_TRANS": "0.0",
+          "CHOLESTEROL": "0.0",
+          "PROTEIN": "0.1",
+          "CARBS_TOTAL": "80.0",
+          "SUGAR_TOTAL": "0.0",
+          "SUGAR_ADDED": "0.0",
+          "STARCH": "80.0",
+          "FIBER": "0.0",
+          "SODIUM": "15.87",
+          "CALCIUM": "0.0",
+          "IRON": "0.0",
+          "ZINC": "0.0",
+          "VITAMIN_A": "0.0",
+          "VITAMIN_D": "0.0"
+        }
+      }
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+      "sourceRow": 7,
+      "sourceCode": "MPCP031",
+      "sourceName": "PASTA DE POLLO GOLD CREEK",
+      "identityStatus": "DIFFERENT_NAMED_MANUFACTURERS",
+      "reason": "Tyson USA y Gold Creek usan el mismo código; no se presume equivalencia nutricional.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA VIANDÉ 450 G - 16 UNDS",
+      "sourceRow": 9,
+      "sourceCode": "MPPA144",
+      "sourceName": "ALMIDON DE PAPA SACO X 25 KILOS .",
+      "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+      "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA",
+      "reviewedNutrientSource": {
+        "sourceFile": "Banco de Información Nutricional..xlsx",
+        "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+        "sourceSheet": "TN OFICIAL",
+        "sourceRow": 46,
+        "sourceName": "Almidón de Papa",
+        "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+        "valuesPer100g": {
+          "MOISTURE": "0.0",
+          "FAT_TOTAL": "0.1",
+          "FAT_SAT": "0.0",
+          "FAT_TRANS": "0.0",
+          "CHOLESTEROL": "0.0",
+          "PROTEIN": "0.1",
+          "CARBS_TOTAL": "80.0",
+          "SUGAR_TOTAL": "0.0",
+          "SUGAR_ADDED": "0.0",
+          "STARCH": "80.0",
+          "FIBER": "0.0",
+          "SODIUM": "15.87",
+          "CALCIUM": "0.0",
+          "IRON": "0.0",
+          "ZINC": "0.0",
+          "VITAMIN_A": "0.0",
+          "VITAMIN_D": "0.0"
+        }
+      }
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHA VIANDÉ 400 G ",
+      "sourceRow": 8,
+      "sourceCode": "MPPA144",
+      "sourceName": "ALMIDON DE YUCA SACO X 25 KILOS .",
+      "identityStatus": "CONTRADICTORY_MATERIAL_NAMES",
+      "reason": "Código usado para papa y yuca; se documenta fuente nutricional por aparición, sin perfil global.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA",
+      "reviewedNutrientSource": {
+        "sourceFile": "Banco de Información Nutricional..xlsx",
+        "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+        "sourceSheet": "TN OFICIAL",
+        "sourceRow": 47,
+        "sourceName": "Almidón de Yuca",
+        "scope": "THIS_SOURCE_ROW_ONLY_NOT_GLOBAL_CODE_PROFILE",
+        "valuesPer100g": {
+          "MOISTURE": "13.0",
+          "FAT_TOTAL": "0.0",
+          "FAT_SAT": "0.0",
+          "FAT_TRANS": "0.0",
+          "CHOLESTEROL": "0.0",
+          "PROTEIN": "0.0",
+          "CARBS_TOTAL": "85.0",
+          "SUGAR_TOTAL": "0.0",
+          "SUGAR_ADDED": "0.0",
+          "STARCH": "85.0",
+          "FIBER": "0.0",
+          "SODIUM": "0.0",
+          "CALCIUM": "0.0",
+          "IRON": "0.0",
+          "ZINC": "0.0",
+          "VITAMIN_A": "0.0",
+          "VITAMIN_D": "0.0"
+        }
+      }
+    },
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceFile": "Junio (1).xlsx",
+      "sourceSheet": "SCHON TRAD VIANDÉ X 500 ",
+      "sourceRow": 22,
+      "sourceCode": "1121009",
+      "sourceName": "TOCINO",
+      "identityStatus": "ORIGIN_IDENTITY_NOT_ESTABLISHED",
+      "reason": "Foráneo o sin origen no acredita el perfil maestro Tocino Nacional.",
+      "linkToGlobalIngredient": false,
+      "currentStatus": "VIGENCIA_NO_ACREDITADA"
+    }
+  ],
+  "bundleReconstructions": [
+    {
+      "sourceSha256": "664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27",
+      "sourceSheet": "MEGA COMBO FAIZAN 675G X3 ",
+      "reconstructedWeightGrams": "675",
+      "status": "CANDIDATE_RECONSTRUCTION_NOT_APPROVED",
+      "conflictingDeclaredWeightGrams": "900",
+      "evidence": {
+        "B2": {
+          "value": "MEGA COMBO FAIZAN 675 G X 3",
+          "formula": "",
+          "type": "s"
+        },
+        "C14": {
+          "value": "900",
+          "formula": "",
+          "type": "n"
+        },
+        "C24": {
+          "value": "LAM SUP MEGA COMBO FAIZAN X 675 G X 3 UD",
+          "formula": "",
+          "type": "s"
+        },
+        "C5": {
+          "value": "SALCHICHÓN AUTÉNTICO X 225 GRAMOS",
+          "formula": "",
+          "type": "s"
+        },
+        "C6": {
+          "value": "MORTADELA SELECCIONADA X 225 GRAMOS OFERTA",
+          "formula": "",
+          "type": "s"
+        },
+        "C7": {
+          "value": "SALCHICHÓN DE POLLO X 225 GRAMOS",
+          "formula": "",
+          "type": "s"
+        },
+        "D5": {
+          "value": "1",
+          "formula": "",
+          "type": "n"
+        },
+        "D6": {
+          "value": "1",
+          "formula": "",
+          "type": "n"
+        },
+        "D7": {
+          "value": "1",
+          "formula": "",
+          "type": "n"
+        }
+      },
+      "limits": [
+        "30018 identity is unresolved; no alias selected.",
+        "No current recipe or assortment approval inferred."
+      ]
+    }
+  ]
+}

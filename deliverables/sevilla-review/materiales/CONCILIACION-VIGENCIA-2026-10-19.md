@@ -1,3 +1,5 @@
+> INFORME HISTÓRICO: conserva evidencia del momento. No usar sus solicitudes generales ni conteos como estado vigente. Consulte `proyecto/docs/ESTADO-VIGENTE-ENTREGA.md` en el ZIP y el ensayo final.
+
 # Conciliación de vigencia y cierre de porcentajes
 
 Este informe sustituye las conclusiones de cobertura vigente del ensayo anterior. Requisito confirmado: cargar solo información vigente (OQ-015/P-15); una fórmula por producto, con cambios de gramaje/empaque por presentación (OQ-002/P-04). No se seleccionó ninguna versión ni se realizaron nuevas cargas, aprobaciones o conexiones a DB. La base temporal anterior ya fue eliminada.

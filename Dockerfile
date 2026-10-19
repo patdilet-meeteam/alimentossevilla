@@ -33,15 +33,17 @@ COPY prisma ./prisma
 RUN pnpm install --frozen-lockfile --network-concurrency 8 --fetch-retries 5 \
       --fetch-retry-mintimeout 20000 --fetch-retry-maxtimeout 120000
 
-FROM base AS build
-COPY --from=deps /app/node_modules ./node_modules
+FROM deps AS build
+# Reutiliza la capa de dependencias; evita duplicar node_modules durante el build.
 COPY . .
 # `next build` corre con NODE_ENV=production pero sin los secretos reales: la
 # validación de src/lib/auth/config.ts lo reconoce por NEXT_PHASE.
 RUN pnpm build
 
 FROM build AS herramientas
-RUN chown -R node:node /app
+# Migraciones/bootstrap leen el código y usan /tmp; no duplicar node_modules
+# con un chown recursivo. Solo la caché de herramientas necesita escritura.
+RUN mkdir -p /app/node_modules/.vite && chown node:node /app/node_modules/.vite
 USER node
 CMD ["pnpm", "db:deploy"]
 

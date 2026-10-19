@@ -1,3 +1,4 @@
+import {BundleWorkingReviewEditor} from "@/components/products/bundle-working-review-editor";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProductById } from "@/app/actions/product-actions";
@@ -102,11 +103,13 @@ export default async function ProductoDetallePage({ params }: PageProps) {
 
       {product.bundleVersions.length ? <Card><CardHeader><CardTitle>Agrupaciones de productos terminados</CardTitle></CardHeader><CardContent className="space-y-3">
         {product.bundleVersions.map((bundle) => <div key={bundle.id} className="rounded border p-3 text-sm">
-          <p className="font-medium">Borrador {bundle.sequence} · {bundle.sourceSheet}</p>
-          <p className="text-xs text-muted-foreground">Fuente de agrupación; no es una receta de materias primas.</p>
+          <p className="font-medium">Versión {bundle.sequence} · {bundle.sourceSheet}</p>
+          <p className="text-xs text-muted-foreground">Fuente de agrupación; no es una receta de materias primas. Etiqueta nutricional agregada bloqueada: aprobar la composición no permite calcular, guardar ni imprimir una tabla global del paquete.</p>
           <p className="text-xs">Peso declarado en hoja: {bundle.declaredNetWeightGrams?.toString() ?? "Pendiente"} g. Estado: {bundle.status}.</p>
           {bundle.sourceSnapshot && typeof bundle.sourceSnapshot === "object" && !Array.isArray(bundle.sourceSnapshot) && Array.isArray(bundle.sourceSnapshot.issues) ? <p className="text-xs text-amber-800">Pendientes de fuente: {bundle.sourceSnapshot.issues.filter((issue): issue is string => typeof issue === "string").join(" · ")}</p> : null}
           <ul className="ml-4 list-disc">{bundle.components.map((component) => <li key={component.id}>{component.unitCount.toString()} × {component.sourceName}{component.netWeightGrams ? ` · ${component.netWeightGrams.toString()} g por unidad` : ""}{component.memberProduct ? ` · Producto: ${component.memberProduct.nombreComercial}` : " · Referencia de producto pendiente"}</li>)}</ul>
+          <details className="text-xs"><summary>Evidencia original y revisiones del conjunto</summary><pre className="max-h-64 overflow-auto whitespace-pre-wrap">{JSON.stringify(bundle.sourceSnapshot,null,2)}</pre></details>
+          <BundleWorkingReviewEditor key={bundle.id} canWrite={canWrite} canApprove={canApprove} bundle={{id:bundle.id,status:bundle.status,declared:bundle.declaredNetWeightGrams?.toString()??null,sourceSnapshot:bundle.sourceSnapshot,components:bundle.components.map(c=>({id:c.id,name:c.sourceName,units:c.unitCount.toString(),weight:c.netWeightGrams?.toString()??null,memberProductId:c.memberProductId}))}} />
         </div>)}
       </CardContent></Card> : null}
 
@@ -131,6 +134,7 @@ export default async function ProductoDetallePage({ params }: PageProps) {
               aprobadaEn: v.aprobadaEn ? v.aprobadaEn.toISOString() : null,
               aprobadaPor: v.aprobadaPor ? { name: v.aprobadaPor.name, email: v.aprobadaPor.email } : null,
               sourceRecipeSnapshot: v.sourceRecipeSnapshot,
+              sourceReviewSnapshot: v.sourceReviewSnapshot,
               reviewIngredients: v.ingredients.map((fi) => {
                 const keys = new Set(fi.ingredient.profiles[0]?.values.map(value => value.nutrient.key));
                 return { code: fi.ingredient.siesaCode, name: fi.ingredient.name, percentage: fi.porcentajeParticipacion.toString(), quantity: fi.cantidadCanonica?.toString() ?? null, activeProfileCount: fi.ingredient.profiles.length, missingNutrients: ["FAT_TOTAL", "FAT_SAT", "FAT_TRANS", "PROTEIN", "CARBS_TOTAL", "SUGAR_TOTAL", "SUGAR_ADDED", "FIBER", "SODIUM"].filter(key => !keys.has(key)) };
@@ -138,6 +142,7 @@ export default async function ProductoDetallePage({ params }: PageProps) {
               ingredients: v.ingredients.map((fi) => ({
                 id: fi.id,
                 porcentaje: fi.porcentajeParticipacion.toString(),
+                quantity: fi.cantidadCanonica?.toString() ?? null,
                 ingredient: { id: fi.ingredient.id, name: fi.ingredient.name, siesaCode: fi.ingredient.siesaCode, category: String(fi.ingredient.category) },
               })),
             })),

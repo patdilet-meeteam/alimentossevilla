@@ -1,0 +1,6409 @@
+{
+  "mode": "REVIEW_ONLY_NO_DATABASE",
+  "sourceSha256": "7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+  "profiles": [
+    {
+      "ingredientSiesaCode": "agua",
+      "ingredientName": "Agua",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 39 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173647/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "99.9",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "4",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "3",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 39"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "ajo-molido",
+      "ingredientName": "Ajo molido",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 66 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "6.75",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "17",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "75",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "24",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "9.9",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "60",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "55",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "5.6",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 66"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "almid-n-de-papa",
+      "ingredientName": "Almidón de Papa",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 46 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "15.87",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "almid-n-de-yuca",
+      "ingredientName": "Almidón de Yuca",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 47 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "13",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "almid-n-modificado-de-ma-z",
+      "ingredientName": "Almidón modificado de maíz",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 53 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "14",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "80",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "brazuelo-de-cerdo",
+      "ingredientName": "Brazuelo de Cerdo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 3 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169190/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "73.6",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "4",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.42",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.032",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "59",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "21.1",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.21",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "67",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "15",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.86",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.93",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 3"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "carfosel",
+      "ingredientName": "Carfosel",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 92 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "31252",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 92"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "carne-de-ternera",
+      "ingredientName": "Carne de Ternera",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 15 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175290/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "66.2",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "13.1",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "5.11",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.696",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "49",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "18.6",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "103",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "12",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.37",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.51",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "carragenina",
+      "ingredientName": "Carragenina",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 45 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.4",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "7",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "3019",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "cebolla-en-polvo",
+      "ingredientName": "Cebolla en polvo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 64 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "1",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "10.4",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "79.1",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "15.2",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "6.6",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "73",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "384",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "3.9",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 64"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "cebolla-puerro",
+      "ingredientName": "Cebolla Puerro",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 71 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169246/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.04",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "14.2",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "3.9",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "59",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "2.1",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.12",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "cerdo-cocido",
+      "ingredientName": "Cerdo Cocido",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 102 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "2",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "98",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 102"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "cervecero-premium-sv",
+      "ingredientName": "Cervecero premium SV",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 106 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "7.5",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "31",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2.4",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "1.1",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "2",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20522",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "71",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.3",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.33",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "4.5",
+          "method": "TN OFICIAL fila 106"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 106"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "color-caramelo",
+      "ingredientName": "Color Caramelo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 133 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "89.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "3.8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "6.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "color-loy",
+      "ingredientName": "Color Loy",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 132 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "58.8",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "1.2",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "40",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "62",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 132"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "color-natural-naranja-pr801wd",
+      "ingredientName": "Color Natural Naranja PR801WD",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 130 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: OQ-027 confirmed identity; June B10/C10",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "2.269999999999996",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "96.3",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "21.8",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.15",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "5.3",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.43",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "2.27",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "22",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "8.1",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "color-natural-rojo-ac150",
+      "ingredientName": "Color Natural Rojo AC150",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 129 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B9/C9 and explicit June master mapping",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "43",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.08",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.1",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "3.1",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "3.1",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0.04",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0.01",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 129"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "comino-en-polvo",
+      "ingredientName": "Comino en polvo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 68 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "14",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "22",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "18",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "44",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2.3",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "11",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "168",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "791",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "56",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "324",
+          "method": "TN OFICIAL fila 68"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 68"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "conservante-inbac-acn-na",
+      "ingredientName": "Conservante INBAC ACN/NA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 86 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B14/C14 and explicit June master mapping",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "33",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "17000",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "dextrosa",
+      "ingredientName": "Dextrosa",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 43 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0.5",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.002",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "99.5",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "99.5",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "99.5",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.005",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 43"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "eritorbato-de-sodio",
+      "ingredientName": "Eritorbato de Sodio",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 44 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "10680",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 44"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "extracto-gp83p",
+      "ingredientName": "Extracto GP83P",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 36 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "5",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "10",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "4.2",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "87",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 36"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "extracto-levadura",
+      "ingredientName": "Extracto levadura",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 49 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "7",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.02",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.02",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "35",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "9.19",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "9.19",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "9.19",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "13000",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 49"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "inbac-sin-sal",
+      "ingredientName": "INBAC sin sal",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 86 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "33",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "2",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "17000",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 86"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "jam-n-t",
+      "ingredientName": "Jamón T",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 98 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "53",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.395",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.012",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "14.063",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "25.871",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0.998",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.115",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "6880.715",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "24.221",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.592",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 98"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "mortadela",
+      "ingredientName": "Mortadela",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 114 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "2.08",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "97.92",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "16.1",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "1",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 114"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "naranja-ra-40-3",
+      "ingredientName": "Naranja RA 40-3",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 131 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "71",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "29",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "61",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 131"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "paprika-en-polvo",
+      "ingredientName": "Paprika en polvo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 65 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "13",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.43",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "15",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "58",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "25",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "18",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "30",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "180",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "5",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.9",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "4450",
+          "method": "TN OFICIAL fila 65"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 65"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "pasta-de-pollo",
+      "ingredientName": "Pasta de Pollo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 5 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171105/nutrients",
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "69.3",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "15.5",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "4.71",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "104",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "13.8",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "51",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "123",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.73",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.82",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "32",
+          "method": "TN OFICIAL fila 5"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 5"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "piel-de-cerdo-2",
+      "ingredientName": "Piel de cerdo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 18 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/2341308/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "31.3",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "11.4",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "95",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "61.3",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "1820",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "30",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.88",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.56",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "12",
+          "method": "TN OFICIAL fila 18"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 18"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "piel-de-pollo",
+      "ingredientName": "Piel de Pollo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 7 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172855/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "44.9",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "44.2",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "12.1",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.229",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "105",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "9.58",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.79",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "51",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.37",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.65",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "59",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 7"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "pierna-de-cerdo",
+      "ingredientName": "Pierna de Cerdo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 8 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168224/nutrients",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "72.9",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "5.41",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.87",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "68",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "20.5",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "55",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.01",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.27",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "2",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.6",
+          "method": "TN OFICIAL fila 8"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "pimienta-negra-en-polvo",
+      "ingredientName": "Pimienta negra en polvo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 67 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "3.3",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "11",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "64.8",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "26.5",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "44",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "437",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "28.9",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "57",
+          "method": "TN OFICIAL fila 67"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 67"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "plasma-de-cerdo-vepro-75-psc",
+      "ingredientName": "Plasma de cerdo Vepro 75 PSC",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 37 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "7",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "70",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "4.3",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 37"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "pok",
+      "ingredientName": "POK",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 51 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "56.9",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "56.9",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "56.9",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "400",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 51"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "prote-na-texturizada-de-trigo",
+      "ingredientName": "Proteína texturizada de trigo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 34 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "10",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "4.1",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "59",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "24.2",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.3",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "300",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 34"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "proteina-concentrada-de-soya-65",
+      "ingredientName": "Proteína Concentrada de Soya 65%",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 28 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "10",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.9",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "61.4",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "28",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.4",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "550",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 28"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "proteina-concentrada-de-soya-70",
+      "ingredientName": "Proteína Concentrada de Soya 70%",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 26 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "6",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "3",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "65",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "21",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "19",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "1200",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "200",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "9.5",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "3.5",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 26"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "proteina-texturizada-de-soya-70",
+      "ingredientName": "Proteína Texturizada de Soya 70%",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 27 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SAME_EXPLICIT_COMPOSITION_NAME: Coinciden textualmente tipo de proteína, especie soya y concentración porcentual; diferencia gramatical de/al. Sin transferencia entre concentrada y texturizada ni entre65/70.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "9",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "64.8",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "5",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "19",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "3",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "446",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "11",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "pvh-l-quida",
+      "ingredientName": "PVH Líquida",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 30 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "38.1",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "13.7",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "29.2",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "7160",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "29",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 30"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "sal",
+      "ingredientName": "Sal",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 40 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "ICBF",
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "38781",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "24",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 40"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "sal-curante-al-12",
+      "ingredientName": "Sal Curante al 12%",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 85 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "EXPLICIT_PILOT_MAPPING_SAME_JUNE_DESCRIPTION: June B12/C12 and explicit June master mapping",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.001",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.005",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "38339",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 85"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "sal-reducida-en-sodio",
+      "ingredientName": "Sal reducida en sodio (60%)",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 41 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "ICBF",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "23268",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 41"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "taroma-ham",
+      "ingredientName": "Taroma Ham",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 99 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "14",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "30",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "16000",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "tocino-de-cerdo",
+      "ingredientName": "Tocino de Cerdo",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 6 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "ICBF",
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "10.8",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "85.8",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "34.6",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "70",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "2.9",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "22",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.1",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "10",
+          "method": "TN OFICIAL fila 6"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 6"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "transglutaminasa",
+      "ingredientName": "Transglutaminasa",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 59 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "10",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "48",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "4",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "2",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "17000",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 59"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "trusmoke-dry",
+      "ingredientName": "Trusmoke Dry",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 124 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_EXACT_NAME: Nombre identifica una fila fuente; registro destino específico, sin fusionar códigos.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "6",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "69",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "3",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "65",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "11.6",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 124"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "trusmoke-oil-ex",
+      "ingredientName": "Trusmoke oil ex",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 107 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "SOURCE_ROW_CORROBORATED_17_VALUES: Nombre fuente y17valores originales del snapshot histórico coinciden; duplicidad de maestro no es ambigüedad nutricional de esta fila. No se fusionan registros.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "99",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "13.86",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.49",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "2903003",
+      "ingredientName": "BRAZUELO CHARQUEADO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 3 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169190/nutrients",
+      "identityEvidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "73.6",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "4",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.42",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.032",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "59",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "21.1",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.21",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "67",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "15",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.86",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.93",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 3"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 3"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1250004",
+      "ingredientName": "COLOR NATURAL NARANJA PR801WD",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 130 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "2.269999999999996",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "96.3",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "21.8",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.15",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "5.3",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.43",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "2.27",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "22",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "8.1",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 130"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1270004",
+      "ingredientName": "HUMO TRUSMOKE OIL EX",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 107 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Mapeo explícito del piloto; grasa trans del original distinta del cero guardado.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "99",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "13.86",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.49",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 107"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "conservante-provian-k",
+      "ingredientName": "Conservante Provian K",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 94 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "EXACT_BRANDED_PRODUCT: Producto distintivo Provian K coincide en nombre del maestro/costos1240007 y Banco fila94; Conservante es función, paréntesis declara composición. Sin sustituir otros conservantes.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "200",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 94"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "arcon-t",
+      "ingredientName": "Arcon T (Proteína de Soya 70% Hojuelas)",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "Banco de Información Nutricional..xlsx / TN OFICIAL fila 27 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Comentario original TN OFICIAL!C27: Arcon T; corroborado T.N!C31. Se conserva grasa total 0 y saturada 0.2 sin corregir la fuente.",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "9",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "64.8",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "5",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0.8",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "19",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "3",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "446",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "11",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 27"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1111002",
+      "ingredientName": "PIEL DE POLLO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 7 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172855/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C7. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN SDW  EXITO X 225 !B10:C10; MDELA VIANDÉ X 225 G - 17 UND S!B8:C8; MNESA APANADA 240 G 2 UNDS!B6:C6; MNESA APANADA 600 G 5 UNDS!B6:C6; MNESA APANADA 1800 G 15 UND!B6:C6; MORTADELA JAMON X 225 !B10:C10; SCHON POLLO BRAKEL X 225!B22:C22; SCHON POLLO BRAKEL X 500!B22:C22; SCHON POLLO X 225 G!B22:C22",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "44.9",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "44.2",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "12.1",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.229",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "105",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "9.58",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0.79",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "51",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.37",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.65",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "59",
+          "method": "TN OFICIAL fila 7"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.2",
+          "method": "TN OFICIAL fila 7"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1122002",
+      "ingredientName": "PIERNA DE CERDO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 8 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168224/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C8. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B5:C5; JMN SDW  EXITO X 225 !B7:C7; MORTADELA JAMON X 225 !B7:C7",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "72.9",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "5.41",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1.87",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "68",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "20.5",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "55",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "6",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.01",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.27",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "2",
+          "method": "TN OFICIAL fila 8"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0.6",
+          "method": "TN OFICIAL fila 8"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1141001",
+      "ingredientName": "CARNE DE TERNERA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 15 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/175290/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C15. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B6:C6",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "66.2",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "13.1",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "5.11",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0.696",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "49",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "18.6",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "103",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "12",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "1.37",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "2.51",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 15"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1210008",
+      "ingredientName": "PIROFOSFATO ACIDO DE SODIO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 95 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C95. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: MDELA VIANDÉ X 225 G - 17 UND S!B17:C17",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20722",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.5",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 95"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230010",
+      "ingredientName": "TAROMA HAM",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 99 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C99. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B17:C17; JMN SDW  EXITO X 225 !B20:C20; MORTA JAMONADA 400!B19:C19; MORTADELA JAMON X 225 !B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "14",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "30",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "16000",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 99"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230012",
+      "ingredientName": "CEBOLLA PUERRO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 71 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169246/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C71. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B12:C12; CHORIZO SANTA COCTEL x 1000!B12:C12; CHORIZO SANTA CORTO 480 !B12:C12; CHORIZO SANTA LARGO x 1200 !B12:C12",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.3",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.04",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "14.2",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "3.9",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "1.8",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "20",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "59",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "2.1",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.12",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "83",
+          "method": "TN OFICIAL fila 71"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 71"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1230022",
+      "ingredientName": "TOMATE EN POLVO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 72 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170461/nutrients",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C72. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHA INSTITU x 1200!B18:C18",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "3.06",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.44",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0.062",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "12.9",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "74.7",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "43.9",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "16.5",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "134",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "166",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "4.56",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "1.71",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "862",
+          "method": "TN OFICIAL fila 72"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 72"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1250001",
+      "ingredientName": "COLOR CARAMELO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 133 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C133. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHORIZO SANTA COCTEL x 300!B14:C14; CHORIZO SANTA COCTEL x 1000!B14:C14; CHORIZO SANTA CORTO 480 !B14:C14; CHORIZO SANTA LARGO x 1200 !B14:C14",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "89.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "3.8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "6.6",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "8",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 133"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260011",
+      "ingredientName": "ALMIDON DE PAPA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 46 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C46. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B18:C18; CERVECERO 750!B18:C18; CERVECERO 1300!B18:C18; CERVECERO 1500!B18:C18; CERVECERO FZAN  225!B17:C17; JMN PREMIUM 400 G!B22:C22; MDELA VIANDÉ X 225 G - 17 UND S!B26:C26; MORTA JAMONADA 400!B23:C23",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "80",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "15.87",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 46"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260014",
+      "ingredientName": "CARRAGENINA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 45 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C45. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: JMN PREMIUM 400 G!B20:C20; JMN SDW  EXITO X 225 !B23:C23; MDELA VIANDÉ X 225 G - 17 UND S!B22:C22; MNESA APANADA 240 G 2 UNDS!B20:C20; MNESA APANADA 600 G 5 UNDS!B20:C20; MNESA APANADA 1800 G 15 UND!B20:C20; MORTA JAMONADA 400!B26:C26; MORTADELA JAMON X 225 !B24:C24; SNACK  CERV PREM X 50 G !B15:C15",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0.4",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "48",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "7",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "3019",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 45"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260015",
+      "ingredientName": "ALMIDON DE YUCA",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 47 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C47. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: SCHON AUTENTICO X 225 G!B21:C21; SCHON AUTENTICO X 750 G!B21:C21; SCHON POLLO BRAKEL X 225!B21:C21; SCHON POLLO BRAKEL X 500!B21:C21; SCHON POLLO X 225 G!B21:C21; SCHON TRAD VIANDÉ X 500 !B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "13",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "85",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 47"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "1260017",
+      "ingredientName": "ALMIDON MODIFICADO DE MAIZ",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 53 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": null,
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C53. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CHRZ CON TERNERA 110 G 2 UND!B17:C17; JMN SDW  EXITO X 225 !B25:C25; MDELA VIANDÉ X 225 G - 17 UND S!B27:C27; MNESA APANADA 240 G 2 UNDS!B22:C22; MNESA APANADA 600 G 5 UNDS!B22:C22; MNESA APANADA 1800 G 15 UND!B22:C22; MORTADELA JAMON X 225 !B26:C26; SCHON CERV VIANDÉ X 225 G!B20:C20; SNACK  CERV PREM X 50 G !B10:C10; SUPER PERRO X 2500!B21:C21; SUPER PERRO X 2500 RX!B21:C21",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "14",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "88",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "80",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "1.5",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0.1",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 53"
+        }
+      ],
+      "storagePrecisionIssues": []
+    },
+    {
+      "ingredientSiesaCode": "2906001",
+      "ingredientName": "EMULSION DE PIEL DE CERDO",
+      "source": "BANCO_ALIMENTOS",
+      "sourceDetail": "banco_nutricional_original.xlsx / TN OFICIAL fila 13 / SHA-256 7736ed164895cd6b449d8c169258b90c3e507378eb150210254d55d870b9e33d",
+      "originalBibliography": "LAB",
+      "identityEvidence": "Identidad literal completa en maestro y todas las filas de receta de este código (solo se ignoran mayúsculas, acentos y espacios), coincidente con TN OFICIAL!C13. No se eliminan marcas, variantes ni calificadores. Receta Junio SHA 664f546cfe4a0c339481a642395c2f0212ec095957731fc18c9c86c9e7ee9f27. Usos: CERVECERO 500!B8:C8; CERVECERO 750!B8:C8; CERVECERO 1300!B8:C8; CERVECERO 1500!B8:C8; CERVECERO FZAN  225!B8:C8; CHORIZO SANTA COCTEL x 300!B18:C18; CHORIZO SANTA COCTEL x 1000!B18:C18; CHORIZO SANTA CORTO 480 !B18:C18; CHORIZO SANTA LARGO x 1200 !B18:C18; JMN SDW  EXITO X 225 !B8:C8; MDELA VIANDÉ X 225 G - 17 UND S!B10:C10; MORTA JAMONADA 400!B8:C8; MORTADELA JAMON X 225 !B8:C8; SCHON AUTENTICO X 225 G!B6:C6; SCHON AUTENTICO X 750 G!B6:C6; SCHON CERV VIANDÉ X 225 G!B8:C8; SCHON POLLO BRAKEL X 225!B6:C6; SCHON POLLO BRAKEL X 500!B6:C6; SCHON POLLO X 225 G!B6:C6; SCHON TRAD VIANDÉ X 500 !B6:C6; SNACK  CERV PREM X 50 G !B8:C8; SUPER PERRO X 2500!B6:C6; SUPER PERRO X 2500 RX!B6:C6",
+      "referenceBase": "100g",
+      "values": [
+        {
+          "nutrientKey": "MOISTURE",
+          "value": "81.7",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_TOTAL",
+          "value": "5.6",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_SAT",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FAT_TRANS",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CHOLESTEROL",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "PROTEIN",
+          "value": "10.9",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CARBS_TOTAL",
+          "value": "1.6",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SUGAR_TOTAL",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SUGAR_ADDED",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "STARCH",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "FIBER",
+          "value": "0.011013722162007404",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "SODIUM",
+          "value": "46.17",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "CALCIUM",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "IRON",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "ZINC",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "VITAMIN_A",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        },
+        {
+          "nutrientKey": "VITAMIN_D",
+          "value": "0",
+          "method": "TN OFICIAL fila 13"
+        }
+      ],
+      "storagePrecisionIssues": []
+    }
+  ],
+  "storagePrecision": "DECIMAL(38,24); exact source strings; requires migration20261019190000",
+  "scope": "SOURCE_BACKED_PROFILES_ONLY_NOT_CURRENT_RECIPE_APPROVAL",
+  "composition": {
+    "previousReviewedPlan": 53,
+    "newLiteralCandidateIdentities": 13
+  }
+}

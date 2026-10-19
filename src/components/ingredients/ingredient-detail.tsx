@@ -95,8 +95,7 @@ export function IngredientDetail({
   const activeProfile = ingredient.profiles.find((p) => p.isActive);
 
   const formatValue = (val: any): string => {
-    const num = typeof val === 'number' ? val : Number(val);
-    return num.toFixed(2);
+    return val == null ? "" : String(val);
   };
 
   return (
@@ -219,7 +218,7 @@ export function IngredientDetail({
                               )}
                             </div>
                           </TableCell>
-                          <TableCell className="font-mono">
+                          <TableCell className="font-mono [overflow-wrap:anywhere]">
                             {formatValue(nv.value)}
                           </TableCell>
                           <TableCell>{nv.nutrient.unit}</TableCell>

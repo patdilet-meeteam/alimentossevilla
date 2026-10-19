@@ -1,0 +1,80 @@
+{
+  "scope": "NORMAL_LOADED_DOCKER_IMAGES_OWN_DISPOSABLE_FIXTURE_ONLY",
+  "productionAccess": false,
+  "checks": [
+    {
+      "name": "image-identities",
+      "result": "PASS"
+    },
+    {
+      "name": "runtime-artifact-payload-hash",
+      "result": "PASS"
+    },
+    {
+      "name": "network",
+      "result": "PASS"
+    },
+    {
+      "name": "postgres",
+      "result": "PASS"
+    },
+    {
+      "name": "fixture-port",
+      "result": "PASS"
+    },
+    {
+      "name": "toolchain",
+      "result": "PASS"
+    },
+    {
+      "name": "fixture-schema-host-only",
+      "result": "PASS",
+      "scope": "Fixture setup only; normal tools image already tested separately"
+    },
+    {
+      "name": "fixture-bootstrap-host-only",
+      "result": "PASS",
+      "scope": "Fixture setup only; normal tools image already tested separately"
+    },
+    {
+      "name": "start-runtime",
+      "result": "PASS"
+    },
+    {
+      "name": "read-only-nonroot-runtime-login-health",
+      "result": "PASS"
+    },
+    {
+      "name": "authenticated-runtime-pages",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "sourceFingerprintBefore": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "executionMode": "CURRENT_RUNTIME_NORMAL_NO_APPLICATION_BIND_MOUNTS",
+  "targetArchitecture": "UNCONFIRMED_FROM_AVAILABLE_DEPLOYMENT_EVIDENCE",
+  "images": [
+    {
+      "id": "sha256:102d61353fe0874d697d2e073882d9766510a60505576e02944acd6bd5983d6c",
+      "architecture": "arm64",
+      "os": "linux",
+      "tags": [
+        "sevilla-review-local:runtime-final"
+      ]
+    }
+  ],
+  "runtimePayload": {
+    "sha256": "7bdd51d8963737334a47204dcc55270a911886e7215c04a279e8a8d8261b88ba",
+    "files": 2215,
+    "uid": 1000,
+    "exactArchiveCompilationMatch": true
+  },
+  "cleanup": {
+    "webRemoved": true,
+    "dbRemoved": true,
+    "networkRemoved": true
+  },
+  "sourceFingerprintAfter": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "lockfileSha256": "8b0347e4594b758ffae609e48d8072fd982d339df6e63d9da4153e1420b31312",
+  "dockerfileSha256": "fea49b6db2edfbe4fb8cce0dbe7dcf700d64a8046b28ca92776721b78f2b4d31"
+}

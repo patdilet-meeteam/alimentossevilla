@@ -1,0 +1,76 @@
+{
+  "scope": "NORMAL_LOADED_DOCKER_IMAGES_OWN_DISPOSABLE_FIXTURE_ONLY",
+  "productionAccess": false,
+  "checks": [
+    {
+      "name": "image-identities",
+      "result": "PASS"
+    },
+    {
+      "name": "network",
+      "result": "PASS"
+    },
+    {
+      "name": "postgres",
+      "result": "PASS"
+    },
+    {
+      "name": "toolchain",
+      "result": "PASS"
+    },
+    {
+      "name": "migrations",
+      "result": "PASS"
+    },
+    {
+      "name": "bootstrap",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-integration-node22",
+      "result": "PASS"
+    },
+    {
+      "name": "start-runtime",
+      "result": "PASS"
+    },
+    {
+      "name": "read-only-nonroot-runtime-login-health",
+      "result": "PASS"
+    },
+    {
+      "name": "authenticated-runtime-pages",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "sourceFingerprintBefore": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "executionMode": "NORMAL_LOADED_DOCKER_IMAGES_NO_APPLICATION_BIND_MOUNTS",
+  "targetArchitecture": "UNCONFIRMED_FROM_AVAILABLE_DEPLOYMENT_EVIDENCE",
+  "images": [
+    {
+      "id": "sha256:877877e6afe610abe52d1ee46a29c9cfe6176de06d1278da9a3892fc9d87bffe",
+      "architecture": "arm64",
+      "os": "linux",
+      "tags": [
+        "sevilla-review-local:runtime-final"
+      ]
+    },
+    {
+      "id": "sha256:919c17274003e16e80898d94c00df58dbbbc09333153074d8bc8eec81b0a5c19",
+      "architecture": "arm64",
+      "os": "linux",
+      "tags": [
+        "sevilla-review-local:herramientas-final"
+      ]
+    }
+  ],
+  "cleanup": {
+    "webRemoved": true,
+    "dbRemoved": true,
+    "networkRemoved": true
+  },
+  "sourceFingerprintAfter": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "lockfileSha256": "8b0347e4594b758ffae609e48d8072fd982d339df6e63d9da4153e1420b31312",
+  "dockerfileSha256": "fea49b6db2edfbe4fb8cce0dbe7dcf700d64a8046b28ca92776721b78f2b4d31"
+}

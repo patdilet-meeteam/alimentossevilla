@@ -1,0 +1,49 @@
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "sevilla_ready_dataset", schema "public" at "127.0.0.1:52152"
+
+12 migrations found in prisma/migrations
+
+Applying migration `20260828002437_init`
+Applying migration `20260911022228_spec_002_ingredients`
+Applying migration `20260911050100_spec_002p1_ingredient_enum_add_values`
+Applying migration `20260911050200_spec_002p1_ingredient_remap_demo`
+Applying migration `20260911050300_spec_003_products`
+Applying migration `20260914070100_spec_005_cost_imports`
+Applying migration `20260923010000_spec_004_canonical_quantities`
+Applying migration `20261001090000_spec_006_preliminary_document_snapshots`
+Applying migration `20261001100000_spec_004_regulatory_parameter_versions`
+Applying migration `20261002100000_ctn_nutrient_source_snapshots`
+Applying migration `20261019170000_source_recipes_and_bundles`
+Applying migration `20261019190000_preserve_nutrient_source_precision`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20260828002437_init/
+    └─ migration.sql
+  └─ 20260911022228_spec_002_ingredients/
+    └─ migration.sql
+  └─ 20260911050100_spec_002p1_ingredient_enum_add_values/
+    └─ migration.sql
+  └─ 20260911050200_spec_002p1_ingredient_remap_demo/
+    └─ migration.sql
+  └─ 20260911050300_spec_003_products/
+    └─ migration.sql
+  └─ 20260914070100_spec_005_cost_imports/
+    └─ migration.sql
+  └─ 20260923010000_spec_004_canonical_quantities/
+    └─ migration.sql
+  └─ 20261001090000_spec_006_preliminary_document_snapshots/
+    └─ migration.sql
+  └─ 20261001100000_spec_004_regulatory_parameter_versions/
+    └─ migration.sql
+  └─ 20261002100000_ctn_nutrient_source_snapshots/
+    └─ migration.sql
+  └─ 20261019170000_source_recipes_and_bundles/
+    └─ migration.sql
+  └─ 20261019190000_preserve_nutrient_source_precision/
+    └─ migration.sql
+
+All migrations have been successfully applied.
+warn The configuration property `package.json#prisma` is deprecated and will be removed in Prisma 7. Please migrate to a Prisma config file (e.g., `prisma.config.ts`).
+For more information, see: https://pris.ly/prisma-config

@@ -1,3 +1,5 @@
+> INFORME HISTÓRICO: conserva evidencia del momento. No usar sus solicitudes generales ni conteos como estado vigente. Consulte `proyecto/docs/ESTADO-VIGENTE-ENTREGA.md` en el ZIP y el ensayo final.
+
 # Candidato de revisión y plan separado de despliegue
 
 **Estado: candidato técnico revisable, no liberado ni desplegado.** No se importó en producción ni se declaró vigente ninguna variante. Base de comparación `21ea62a`, rama `codex/ready-use-audit-fixes`. Ruta local: `<REPO>`.

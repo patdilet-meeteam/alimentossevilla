@@ -1,3 +1,5 @@
+import { fitsSourceDecimal } from "@/lib/decimal-storage";
+import { sumExactDecimalStrings } from "@/lib/formulations/exact-decimal-sum";
 import { Prisma } from "@prisma/client";
 import { readSheet } from "read-excel-file/node";
 import { z } from "zod";
@@ -22,7 +24,7 @@ export interface CtnImportPlanItem {
 }
 
 const ctnNutritionSnapshotSchema = z.object({
-  source: z.literal("CTN"),
+  source: z.enum(["CTN","SOURCE_REVIEW"]),
   sourceFileName: z.string().min(1),
   rows: z.array(z.object({
     sourceRow: z.number().int().positive(),
@@ -30,7 +32,7 @@ const ctnNutritionSnapshotSchema = z.object({
     sourceName: z.string().min(1),
     ingredientId: z.string().min(1),
     quantity: z.string().refine((value) => {
-      try { return new Prisma.Decimal(value).isFinite() && new Prisma.Decimal(value).greaterThan(0); } catch { return false; }
+      try { return new Prisma.Decimal(value).isFinite() && new Prisma.Decimal(value).greaterThanOrEqualTo(0); } catch { return false; }
     }),
     nutrientsPer100g: z.record(z.string(), z.string().refine((value) => {
       try { return new Prisma.Decimal(value).isFinite() && new Prisma.Decimal(value).greaterThanOrEqualTo(0); } catch { return false; }
@@ -45,7 +47,7 @@ export type CtnSnapshotIngredient = Pick<NutritionIngredientInput, "ingredientId
 export type CtnNutritionSnapshotResolution =
   | { status: "absent" }
   | { status: "invalid"; reason: string }
-  | { status: "ready"; sourceFileName: string; inputs: NutritionIngredientInput[] };
+  | { status: "ready"; source: "CTN" | "SOURCE_REVIEW"; sourceFileName: string; inputs: NutritionIngredientInput[] };
 
 /**
  * Resolves immutable CTN row inputs for one formulation version. It refuses
@@ -76,6 +78,7 @@ export function resolveCtnNutritionSnapshot(
 
   return {
     status: "ready",
+    source: parsed.data.source,
     sourceFileName: parsed.data.sourceFileName,
     inputs: parsed.data.rows.map((row) => ({
       ingredientId: row.ingredientId,
@@ -188,11 +191,12 @@ export function parseCtnCsv(text: string): CtnParsedRow[] {
 
 export function buildCtnImportPlan(rows: readonly CtnParsedRow[]): CtnImportPlanItem[] {
   if (rows.length === 0) throw new Error("El CTN no contiene ingredientes importables.");
+  if (rows.some(row => !fitsSourceDecimal(row.quantity.toString()))) throw new Error("Una cantidad fuente excede la precisión exacta disponible; no se redondea.");
   const percentages = rows.map((row) => row.sourcePercentage);
-  if (percentages.some((value) => value == null || !value.isFinite() || value.isNegative() || value.greaterThan(100) || value.decimalPlaces() > 4)) {
-    throw new Error("El CTN requiere porcentajes fuente explícitos y representables sin redondeo (máximo cuatro decimales).");
+  if (percentages.some((value) => value == null || !value.isFinite() || value.isNegative() || value.greaterThan(100) || !fitsSourceDecimal(value.toString()))) {
+    throw new Error("El CTN requiere porcentajes fuente explícitos y representables sin redondeo (máximo veinticuatro decimales).");
   }
-  const total = percentages.reduce<Prisma.Decimal>((sum, value) => sum.plus(value!), new Prisma.Decimal(0));
-  if (!total.eq(100)) throw new Error(`Los porcentajes fuente suman ${total.toString()} %; deben ser exactamente 100,00 %. No se normalizaron.`);
+  const total = sumExactDecimalStrings(percentages.map(value => value!.toString()));
+  if (total !== "100") throw new Error(`Los porcentajes fuente suman ${total.toString()} %; deben ser exactamente 100,00 %. No se normalizaron.`);
   return rows.map((row) => ({ ...row, percentage: new Prisma.Decimal(row.sourcePercentage!) }));
 }

@@ -13,4 +13,10 @@ describe("reviewable source evidence", () => {
   const html = renderToStaticMarkup(<FormulationReviewEvidence snapshot={{ ...source, sourceRows: [{ ...source.sourceRows[1], percentage: "1.0000", cells: { E8: { formula: "D8*100/D10" } } }] }} ingredients={ingredients.map(i => ({...i, activeProfileCount: 1, missingNutrients: []}))} />);
   expect(html).toContain("Valores coincidentes"); expect(html).toContain("D8*100/D10");expect(html).toContain("esto no acredita vigencia ni aprobación");
  });
+ it("shows a row-only bank source without treating its code as a global linked profile", async () => {
+  const evidence=(await import("@/lib/nutrition/source-identity-evidence.json")).default;const r=evidence.rows.find(r=>r.sourceCode==="MPPA144"&&r.sourceName.includes("YUCA"))!;
+  const html=renderToStaticMarkup(<FormulationReviewEvidence snapshot={{sourceSha256:r.sourceSha256,sourceSheet:r.sourceSheet,sourceRows:[{...r,quantity:"1",percentage:"2"}]}} ingredients={[{code:r.sourceCode,name:"Papa",percentage:"2",quantity:"1",activeProfileCount:1,missingNutrients:[]}]} />);
+  expect(html).toContain("TN OFICIAL 47");expect(html).toContain("Identidad pendiente");expect(html).not.toContain("Valores coincidentes");
+ });
+
 });

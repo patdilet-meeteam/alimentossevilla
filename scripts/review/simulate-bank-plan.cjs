@@ -8,11 +8,13 @@ if (target.hostname !== '127.0.0.1' || target.pathname !== '/sevilla_ready_datas
 const [payloadPath, planPath, outputPath] = process.argv.slice(2);
 if (!payloadPath || !planPath || !outputPath) throw new Error('Pass AUDIT_PAYLOAD PLAN OUTPUT');
 const payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
+const blockedGlobalCodes=require('../../src/lib/nutrition/source-identity-evidence.json').globalProfileBlockedCodes;
 const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
-if (plan.mode !== 'REVIEW_ONLY_NO_DATABASE' || ![52, 53].includes(plan.profiles.length)) throw new Error('Unexpected reviewed plan');
+if(plan.profiles.some(p=>Object.prototype.hasOwnProperty.call(blockedGlobalCodes,p.ingredientSiesaCode)))throw Error('ROW_SCOPED_IDENTITY_CANNOT_CREATE_GLOBAL_PROFILE');
+if (plan.mode !== 'REVIEW_ONLY_NO_DATABASE' || ![52, 53, 66].includes(plan.profiles.length)) throw new Error('Unexpected reviewed plan');
 const db = new PrismaClient({ datasources: { db: { url } } });
 const dec = value => new Prisma.Decimal(value);
-const stored = value => dec(value).toDecimalPlaces(4).toString();
+const stored = value => dec(value).toString();
 async function counts() {
   return { ingredients: await db.ingredient.count(), products: await db.product.count(), presentations: await db.presentation.count(), formulations: await db.formulation.count(), versions: await db.formulationVersion.count(), components: await db.formulationIngredient.count(), profiles: await db.nutritionalProfile.count(), activeProfiles: await db.nutritionalProfile.count({ where: { isActive: true } }), nutrientValues: await db.nutrientValue.count(), approvedVersions: await db.formulationVersion.count({ where: { estado: 'APPROVED' } }) };
 }
@@ -26,8 +28,8 @@ async function seed() {
     for (const p of payload.presentations) await tx.presentation.create({ data: { productId: ids.products.get(p.productCode), gramajeNeto: p.netWeight, unidadesPorEmpaque: p.unitsPerPackage, porcionDeclarada: p.declaredPortion, porcionPorEnvase: p.portionsPerPackage, isActive: p.isActive } });
     for (const f of payload.formulations) { const record = await tx.formulation.create({ data: { productId: ids.products.get(f.productCode), baseCalculo: f.baseCalculation, rendimientoEsperado: f.expectedYield } }); ids.formulations.set(f.productCode, record.id); }
     for (const v of payload.formulationVersions) { if (v.status !== 'DRAFT') throw new Error('Only draft audit fixture'); const record = await tx.formulationVersion.create({ data: { formulationId: ids.formulations.get(v.productCode), numeroSecuencial: v.sequence, estado: 'DRAFT', rendimientoEsperado: v.expectedYield, nutritionSourceSnapshot: v.nutritionSourceSnapshot ?? Prisma.JsonNull } }); ids.versions.set(`${v.productCode}#${v.sequence}`, record.id); }
-    for (const c of payload.formulationIngredients) await tx.formulationIngredient.create({ data: { formulationVersionId: ids.versions.get(`${c.productCode}#${c.versionSequence}`), ingredientId: ids.ingredients.get(c.ingredientSiesaCode), porcentajeParticipacion: c.participationPercent, cantidadCanonica: c.canonicalQuantity } });
-    for (const p of payload.nutritionalProfiles) await tx.nutritionalProfile.create({ data: { ingredientId: ids.ingredients.get(p.ingredientSiesaCode), source: p.source, sourceDetail: p.sourceDetail, referenceBase: p.referenceBase, validFrom: new Date(p.validFrom), isActive: p.isActive, values: { create: p.values.map(v => ({ nutrientId: ids.nutrients.get(v.nutrientKey), value: v.value, method: v.method })) } } });
+    for (const c of payload.formulationIngredients) await tx.formulationIngredient.create({ data: { formulationVersionId: ids.versions.get(`${c.productCode}#${c.versionSequence}`), ingredientId: ids.ingredients.get(c.ingredientSiesaCode), porcentajeParticipacion: String(c.participationPercent), cantidadCanonica: c.canonicalQuantity == null ? null : String(c.canonicalQuantity) } });
+    for (const p of payload.nutritionalProfiles) await tx.nutritionalProfile.create({ data: { ingredientId: ids.ingredients.get(p.ingredientSiesaCode), source: p.source, sourceDetail: p.sourceDetail, referenceBase: p.referenceBase, validFrom: new Date(p.validFrom), isActive: p.isActive, values: { create: p.values.map(v => ({ nutrientId: ids.nutrients.get(v.nutrientKey), value: String(v.value), method: v.method })) } } });
   }, { timeout: 120000 });
 }
 async function applyReviewedPlan() {
@@ -46,7 +48,7 @@ async function applyReviewedPlan() {
       }
       if (ingredient.profiles.some(profile => profile.source !== 'BANCO_ALIMENTOS')) throw new Error('Protected non-bank profile');
       result.deactivatedPreviousProfiles += (await tx.nutritionalProfile.updateMany({ where: { ingredientId: ingredient.id, isActive: true }, data: { isActive: false } })).count;
-      await tx.nutritionalProfile.create({ data: { ingredientId: ingredient.id, source: p.source, sourceDetail: p.sourceDetail, referenceBase: p.referenceBase, isActive: true, values: { create: p.values.map(v => ({ nutrientId: nutrients.get(v.nutrientKey), value: v.value, method: v.method })) } } });
+      await tx.nutritionalProfile.create({ data: { ingredientId: ingredient.id, source: p.source, sourceDetail: p.sourceDetail, referenceBase: p.referenceBase, isActive: true, values: { create: p.values.map(v => ({ nutrientId: nutrients.get(v.nutrientKey), value: String(v.value), method: v.method })) } } });
       result.created++;
     }
   }, { timeout: 120000 });
@@ -69,9 +71,9 @@ async function main() {
     let calculation = null; let error = null;
     if (!missing.length) { try { const c = calculateNutrition(inputs, product.presentations[0]?.porcionDeclarada ?? 100); calculation = { per100g: c.per100g, energyKcalPer100g: c.energyKcalPer100g, totalQuantity: c.totalQuantity }; } catch (e) { error = e.message; } }
     const sourceConflict = getKnownRecipeConflict(product.codigoInterno, version.ingredients.map(row => ({ siesaCode: row.ingredient.siesaCode, percentage: row.porcentajeParticipacion.toString() })));
-    return { productCode: product.codigoInterno, productName: product.nombreComercial, sourceConflict, mathematicallyReady: !missing.length && !error, version: version.numeroSecuencial, state: version.estado, percentageSum: total.toString(), exact100: total.eq(100), nutritionReady: !missing.length && !error && !sourceConflict, missing, calculation, error, canApproveAutomatically: false, clientSpeciesRule: evaluateSpeciesFatRule(version.ingredients.map(row => ({ ingredientId: row.ingredientId, role: 'UNKNOWN', species: null, evidence: null }))).status };
+    return { productCode: product.codigoInterno, productName: product.nombreComercial, sourceConflict, mathematicallyReady: !missing.length && !error, version: version.numeroSecuencial, state: version.estado, percentageSum: total.toString(), exact100: total.eq(100), nutritionReady: !missing.length && !error && !sourceConflict && total.eq(100), productionReady: false, currentRecipeConfirmed: false, missing, calculation, error, canApproveAutomatically: false, clientSpeciesRule: evaluateSpeciesFatRule(version.ingredients.map(row => ({ ingredientId: row.ingredientId, role: 'UNKNOWN', species: null, evidence: null }))).status };
   });
-  const report = { scope: 'ISOLATED_LOOPBACK_REHEARSAL_ONLY', before, first, after, second, afterSecond, idempotent: true, productCoverage: { total: results.length, ready: results.filter(r => r.nutritionReady).length, mathematicallyReady: results.filter(r => r.mathematicallyReady).length, sourceRecipeConflicts: results.filter(r => r.sourceConflict).length, missingProfileRecipes: results.filter(r => r.missing?.length).length, incomplete: results.filter(r => r.status !== 'NO_FORMULATION' && !r.nutritionReady).length, noFormulation: results.filter(r => r.status === 'NO_FORMULATION').length }, products: results };
+  const report = { scope: 'ISOLATED_LOOPBACK_REHEARSAL_ONLY', readinessMeaning: 'Computational draft coverage only; not approval or confirmed current production catalog', before, first, after, second, afterSecond, idempotent: true, productCoverage: { total: results.length, ready: results.filter(r => r.nutritionReady).length, mathematicallyReady: results.filter(r => r.mathematicallyReady).length, sourceRecipeConflicts: results.filter(r => r.sourceConflict).length, missingProfileRecipes: results.filter(r => r.missing?.length).length, incomplete: results.filter(r => r.status !== 'NO_FORMULATION' && !r.nutritionReady).length, noFormulation: results.filter(r => r.status === 'NO_FORMULATION').length }, products: results };
   fs.writeFileSync(outputPath, JSON.stringify(report, null, 2));
   console.log(JSON.stringify({ before, first, after, second, productCoverage: report.productCoverage, readyProducts: results.filter(r => r.nutritionReady).map(r => r.productCode) }, null, 2));
 }

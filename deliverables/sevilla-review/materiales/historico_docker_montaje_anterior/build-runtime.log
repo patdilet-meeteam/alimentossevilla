@@ -1,0 +1,133 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.51kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 229B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [base 1/4] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#5 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.1s done
+#5 DONE 0.1s
+
+#4 [internal] load build context
+#4 transferring context: 36.97kB 0.0s done
+#4 DONE 0.0s
+
+#6 [base 2/4] RUN for intento in 1 2 3 4 5; do       apt-get -o Acquire::Retries=5 update       && apt-get -o Acquire::Retries=5 install -y --no-install-recommends openssl ca-certificates       && break;       echo "apt falló (intento $intento), reintentando..."; sleep 15;     done  && command -v openssl >/dev/null  && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [deps 1/3] COPY package.json pnpm-lock.yaml ./
+#7 CACHED
+
+#8 [deps 2/3] COPY prisma ./prisma
+#8 CACHED
+
+#9 [base 3/4] RUN npm install -g pnpm@9.15.9 && npm cache clean --force
+#9 CACHED
+
+#10 [base 4/4] WORKDIR /app
+#10 CACHED
+
+#11 [deps 3/3] RUN pnpm install --frozen-lockfile --network-concurrency 8 --fetch-retries 5       --fetch-retry-mintimeout 20000 --fetch-retry-maxtimeout 120000
+#11 CACHED
+
+#12 [build 1/2] COPY . .
+#12 DONE 0.1s
+
+#13 [build 2/2] RUN pnpm build
+#13 0.418
+#13 0.418 > alimentossevilla@0.1.0 build /app
+#13 0.418 > prisma generate && next build --webpack
+#13 0.418
+#13 1.158 warn The configuration property `package.json#prisma` is deprecated and will be removed in Prisma 7. Please migrate to a Prisma config file (e.g., `prisma.config.ts`).
+#13 1.158 For more information, see: https://pris.ly/prisma-config
+#13 1.158
+#13 1.506 Prisma schema loaded from prisma/schema.prisma
+#13 2.168
+#13 2.168 ✔ Generated Prisma Client (v6.19.3) to ./node_modules/.pnpm/@prisma+client@6.19.3_prisma@6.19.3_typescript@5.9.3__typescript@5.9.3/node_modules/@prisma/client in 394ms
+#13 2.168
+#13 2.168 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+#13 2.168
+#13 2.168 Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+#13 2.168
+#13 2.582 ▲ Next.js 16.3.3 (webpack)
+#13 2.724 ✓ Running next.config.ts took 142ms
+#13 2.746
+#13 2.768   Creating an optimized production build ...
+#13 20.60 ✓ Compiled successfully in 15.2s
+#13 20.60   Running TypeScript ...
+#13 28.22   Finished TypeScript in 7.6s ...
+#13 28.22   Collecting page data using 3 workers ...
+#13 28.92 2026-10-19T20:54:28.046Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+#13 28.96 2026-10-19T20:54:28.080Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+#13 28.96 2026-10-19T20:54:28.091Z WARN [Better Auth]: [better-auth] Base URL is not set. Set the baseURL option or BETTER_AUTH_URL env, or use a dynamic baseURL with allowedHosts for multi-host setups. Without it the origin is derived from the incoming request, and callbacks and redirects may not work correctly.
+#13 30.83   Generating static pages using 3 workers (0/5) ...
+#13 31.16   Generating static pages using 3 workers (1/5)
+#13 31.16   Generating static pages using 3 workers (2/5)
+#13 31.16   Generating static pages using 3 workers (3/5)
+#13 31.16 ✓ Generating static pages using 3 workers (5/5) in 334ms
+#13 31.41   Finalizing page optimization ...
+#13 31.41   Collecting build traces ...
+#13 46.66
+#13 46.67 Route (app)
+#13 46.67 ┌ ƒ /
+#13 46.67 ├ ○ /_not-found
+#13 46.67 ├ ƒ /api/auth/[...all]
+#13 46.67 ├ ○ /apple-icon.png
+#13 46.67 ├ ƒ /auditoria
+#13 46.67 ├ ƒ /costos
+#13 46.67 ├ ƒ /dashboard
+#13 46.67 ├ ƒ /documentos
+#13 46.67 ├ ƒ /formulaciones
+#13 46.67 ├ ○ /icon.png
+#13 46.67 ├ ƒ /ingredientes
+#13 46.67 ├ ƒ /ingredientes/[id]
+#13 46.67 ├ ƒ /ingredientes/nuevo
+#13 46.67 ├ ○ /login
+#13 46.67 ├ ƒ /normativa
+#13 46.67 ├ ƒ /productos
+#13 46.67 ├ ƒ /productos/[id]
+#13 46.67 └ ƒ /usuarios
+#13 46.67
+#13 46.67
+#13 46.67 ƒ Proxy (Middleware)
+#13 46.67
+#13 46.67 ○  (Static)   prerendered as static content
+#13 46.67 ƒ  (Dynamic)  server-rendered on demand
+#13 46.67
+#13 DONE 47.2s
+
+#10 [base 4/4] WORKDIR /app
+#10 CACHED
+
+#14 [runtime 1/3] COPY --from=build --chown=node:node /app/.next/standalone ./
+#14 DONE 0.5s
+
+#15 [runtime 2/3] COPY --from=build --chown=node:node /app/.next/static ./.next/static
+#15 DONE 0.1s
+
+#16 [runtime 3/3] COPY --from=build --chown=node:node /app/public ./public
+#16 DONE 0.0s
+
+#17 exporting to image
+#17 exporting layers
+#17 exporting layers 1.6s done
+#17 exporting manifest sha256:4f277781b924876c14e44cfd947231e5c6cbaa94afe1a5b25df20ac9adaadd82 0.0s done
+#17 exporting config sha256:fdbe1693a0ebdc59b62e4a413ba661b99dd11364653da52df7c1579763e88934 done
+#17 exporting attestation manifest sha256:eb0dbde9ebdae5d300042c25ba045c16c17b4de1c964889b615853d8e3388d2e done
+#17 exporting manifest list sha256:877877e6afe610abe52d1ee46a29c9cfe6176de06d1278da9a3892fc9d87bffe done
+#17 naming to docker.io/library/sevilla-review-local:runtime-final done
+#17 unpacking to docker.io/library/sevilla-review-local:runtime-final
+#17 unpacking to docker.io/library/sevilla-review-local:runtime-final 0.4s done
+#17 DONE 2.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tux64fz57oisn6humfwde19mz

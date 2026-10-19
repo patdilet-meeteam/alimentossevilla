@@ -51,14 +51,14 @@ export default async function DocumentosPage() {
         <Info className="size-4" />
         <AlertTitle>Validación técnica de paridad con Excel</AlertTitle>
         <AlertDescription>
-          El cliente ya confirmó que los Excel compartidos son la base del reporte nutricional y deben replicarse 1:1. Esta versión aprobada no tiene una captura de nutrientes del CTN, por lo que muestra los perfiles activos del Banco Nutricional. Al importar y aprobar una nueva versión desde el CTN, se usarán sus valores por fila sin reemplazar los perfiles maestros. La previsualización seguirá marcada para cotejo técnico hasta comparar todos los resultados con el Excel.
+          El cliente ya confirmó que los Excel compartidos son la base del reporte nutricional y deben replicarse 1:1. Cada tarjeta identifica su fuente: captura CTN, copia conciliada o perfiles activos del Banco. Las capturas conservan los valores por fila sin reemplazar perfiles maestros. La previsualización seguirá marcada para cotejo técnico hasta comparar todos los resultados con el Excel.
         </AlertDescription>
       </Alert>
 
       {previews.length === 0 ? (
         <Card className="border-[#D3D8DE]"><CardContent className="py-8 text-sm text-muted-foreground">No hay formulaciones aprobadas para previsualizar.</CardContent></Card>
       ) : previews.map((preview) => (
-        <Card key={preview.productId} className={`${styles.previewCard} ${canPrint ? "" : styles.printRestricted} border-[#D3D8DE]`}>
+        <Card key={preview.productId} className={`${styles.previewCard} ${canPrint && preview.documentReady ? "" : styles.printRestricted} border-[#D3D8DE]`}>
           <CardHeader>
             <Badge className={styles.printOnly} variant="outline">PRELIMINAR — NO OFICIAL</Badge>
             <CardTitle className="text-base"><Link href={`/productos/${preview.productId}`} className="hover:underline">{preview.productName}</Link></CardTitle>
@@ -70,7 +70,7 @@ export default async function DocumentosPage() {
                 <Badge key={presentation.id} variant="outline">{presentation.netWeightGrams} g{presentation.portionGrams ? ` · porción ${presentation.portionGrams} g` : ""}</Badge>
               ))}
             </div>
-            {canSaveSnapshot && preview.nutrition.ready && preview.nutrition.calculationSource === "EXCEL_CTN" && (
+            {canSaveSnapshot && preview.documentReady && (
               <form className={styles.hideForPrint} action={async () => {
                 "use server";
                 await saveLegalIngredientsPreviewSnapshot(preview.productId);
@@ -81,9 +81,9 @@ export default async function DocumentosPage() {
                 </Button>
               </form>
             )}
-            {canPrint && preview.nutrition.ready && preview.nutrition.calculationSource === "EXCEL_CTN" && <div className={styles.hideForPrint}><PrintPreviewButton /></div>}
-            {canPrint && preview.nutrition.ready && preview.nutrition.calculationSource !== "EXCEL_CTN" && (
-              <p className="text-xs text-amber-700">La salida nutricional de esta versión aún no se puede guardar ni imprimir: debe provenir de una captura del Excel CTN confirmada para la formulación.</p>
+            {canPrint && preview.documentReady && <div className={styles.hideForPrint}><PrintPreviewButton /></div>}
+            {canPrint && preview.nutrition.ready && !["EXCEL_CTN","SOURCE_REVIEW"].includes(preview.nutrition.calculationSource) && (
+              <p className="text-xs text-amber-700">La salida nutricional de esta versión aún no se puede guardar ni imprimir: requiere una captura CTN o una copia conciliada y aprobada para la formulación.</p>
             )}
             {snapshots.filter((snapshot) => snapshot.productId === preview.productId).length > 0 && (
               <section aria-label="Historial de versiones preliminares" className={`${styles.hideForPrint} rounded-md border p-3`}>
@@ -116,7 +116,7 @@ export default async function DocumentosPage() {
               ) : (
                 <div className="space-y-3">
                   <p className="text-xs text-muted-foreground">
-                    Fuente de nutrientes: {readyNutrition.calculationSource === "EXCEL_CTN" ? `captura del Excel CTN (${readyNutrition.sourceFileName})` : "perfiles maestros activos del Banco Nutricional"}. Cálculo desde la versión aprobada y parámetros regulatorios v{readyNutrition.regulatoryParametersVersion}. Energía: {readyNutrition.energyKcalPer100g.toFixed(1)} kcal/100 g.
+                    Fuente de nutrientes: {readyNutrition.calculationSource === "SOURCE_REVIEW" ? `copia de trabajo conciliada (${readyNutrition.sourceFileName})` : readyNutrition.calculationSource === "EXCEL_CTN" ? `captura del Excel CTN (${readyNutrition.sourceFileName})` : "perfiles maestros activos del Banco Nutricional"}. Cálculo desde la versión aprobada y parámetros regulatorios v{readyNutrition.regulatoryParametersVersion}. Energía: {readyNutrition.energyKcalPer100g.toFixed(1)} kcal/100 g.
                   </p>
                   <div className="overflow-x-auto">
                     <table className="w-full min-w-[520px] text-xs">
@@ -126,11 +126,18 @@ export default async function DocumentosPage() {
                       ].map(([label, key, unit]) => <tr key={key} className="border-t"><td className="px-2 py-1 font-medium">{label}</td><td className="px-2 py-1 text-right">{(readyNutrition.per100g[key] ?? 0).toFixed(2)} {unit}</td>{readyNutrition.presentations.filter((p) => p.portionGrams !== null).map((p) => <td key={p.id} className="px-2 py-1 text-right">{(p.values?.[key] ?? 0).toFixed(2)} {unit}</td>)}</tr>)}</tbody>
                     </table>
                   </div>
-                  <div className="flex flex-wrap gap-2"><span className="text-xs text-muted-foreground">Sellos propuestos:</span>{readyNutrition.activeSeals.length ? readyNutrition.activeSeals.map((seal) => <Badge key={seal} variant="destructive">{seal.replaceAll("_", " ")}</Badge>) : <Badge variant="outline">Sin sellos</Badge>}</div>
+                  <div className="flex flex-wrap gap-2"><span className="text-xs text-muted-foreground">Evaluación por umbrales nutricionales:</span>{readyNutrition.activeSeals.length ? readyNutrition.activeSeals.map((seal) => <Badge key={seal} variant="destructive">{seal.replaceAll("_", " ")}</Badge>) : <Badge variant="outline">Sin sellos</Badge>}</div>
                 </div>
               );
       })()}
             </div>
+            <section aria-label="Criterio grasa y especie del documento" className="rounded border p-3 text-sm">
+              <h2 className="font-medium">Criterio del cliente: grasa animal y carne de la misma especie</h2>
+              <p>{preview.speciesFat.status === "WITH_FAT_SEAL" ? "Con sello de grasa según el diagrama del Director Técnico" : preview.speciesFat.status === "WITHOUT_FAT_SEAL" ? "Sin sello de grasa según el diagrama del Director Técnico" : "Pendiente de clasificación: guardar e imprimir está bloqueado hasta conciliarla en una copia de trabajo."}</p>
+              {preview.speciesFat.orphanFatSpecies.length > 0 && <p>Grasa sin carne de su especie: {preview.speciesFat.orphanFatSpecies.join(", ")}</p>}
+              <p className="text-xs text-muted-foreground">{preview.speciesFat.source}. Este resultado por composición se conserva junto con los umbrales nutricionales; no modifica los gramos de saturadas ni establece equivalencia jurídica entre ambos criterios.</p>
+              <ul className="text-xs">{preview.speciesClassifications.map(row => <li key={row.ingredientId}>{preview.ingredients.find(i=>i.ingredientId===row.ingredientId)?.label}: {row.role} {row.species ?? ""} · {row.evidence ?? "Sin evidencia"}</li>)}</ul>
+            </section>
             <div>
               <h2 className="mb-2 text-sm font-medium">Alérgenos registrados</h2>
               {preview.allergenTags.length === 0 ? <p className="text-sm text-muted-foreground">No hay etiquetas de alérgenos en los ingredientes de esta formulación.</p> : <div className="flex flex-wrap gap-2">{preview.allergenTags.map((tag) => <Badge key={tag} variant="outline" className="border-amber-200 bg-amber-50 text-amber-800">{tag}</Badge>)}</div>}

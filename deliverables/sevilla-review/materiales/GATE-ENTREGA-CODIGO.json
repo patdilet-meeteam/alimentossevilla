@@ -1,0 +1,38 @@
+{
+  "recommendation": "READY_FOR_SINGLE_SOURCE_CODE_UPLOAD_TO_TEAM_LEAD_NOT_DEPLOYMENT_APPROVAL",
+  "deploymentProcedure": "BUILD_IN_DESTINATION",
+  "evidence": [
+    "README.md section8 up -d --build",
+    "docker-compose.prod.yml migrar.build.target=herramientas, web.build.target=runtime, context=."
+  ],
+  "localImagesAreEvidenceNotDistribution": true,
+  "unknownTargetArchitectureBlocksSourceUpload": false,
+  "requiresAdditionalLocalAmd64ImageForSourceDelivery": false,
+  "sourceFingerprint": "6e3399ddff66e1ce9543bd8f2ba372f671bfca868768495dadee8fd1528c102e",
+  "codeFilesVerified": 200,
+  "diffCheck": "PASS",
+  "scannedFiles": 489,
+  "credentialFindings": [],
+  "newMigrationFiles": [
+    "prisma/migrations/20261019190000_preserve_nutrient_source_precision/migration.sql",
+    "prisma/migrations/20261019210000_source_working_review/migration.sql"
+  ],
+  "totalMigrations": 13,
+  "rollback": "Keep additive schema on code rollback; actual verified backup restore if data reversal required; never shrink decimals/drop review evidence automatically",
+  "worktreePaths": 91,
+  "newCommitOrPush": false,
+  "productionWrites": false,
+  "teamLeadControls": [
+    "Build natively from source with the repository Dockerfile/Compose",
+    "Validate actual destination schema/history/backups/restore/collisions/adapter before migration/data load",
+    "Check runtime health/login/roles/drafts/documents in actual infrastructure",
+    "Resolve and operationally approve documentary contradictions in app; no auto-normalization or invented nutrition"
+  ],
+  "authoritativeGuide": "docs/ENTREGA-TEAM-LEAD.md",
+  "gatePhase": "PRE_PUSH_VERIFICATION_SNAPSHOT",
+  "testedSourceFingerprint": "62c755bbb0af85d417944c141e9d4fb0544ec94e4115e76d35f75ace1453e403",
+  "publicationSourceFingerprint": "6e3399ddff66e1ce9543bd8f2ba372f671bfca868768495dadee8fd1528c102e",
+  "publicationFormattingLedger": "PUBLICATION-FORMATTING.json",
+  "onlyCodeDifferenceHasIdenticalPythonAST": true,
+  "publicationReceiptConfirmsRemoteSHASeparately": true
+}

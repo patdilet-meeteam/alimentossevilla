@@ -1,0 +1,54 @@
+[
+  {
+    "siesaCode": "1111002",
+    "name": "PIEL DE POLLO"
+  },
+  {
+    "siesaCode": "1122002",
+    "name": "PIERNA DE CERDO"
+  },
+  {
+    "siesaCode": "1141001",
+    "name": "CARNE DE TERNERA"
+  },
+  {
+    "siesaCode": "1210008",
+    "name": "PIROFOSFATO ACIDO DE SODIO"
+  },
+  {
+    "siesaCode": "1230010",
+    "name": "TAROMA HAM"
+  },
+  {
+    "siesaCode": "1230012",
+    "name": "CEBOLLA PUERRO"
+  },
+  {
+    "siesaCode": "1230022",
+    "name": "TOMATE EN POLVO"
+  },
+  {
+    "siesaCode": "1250001",
+    "name": "COLOR CARAMELO"
+  },
+  {
+    "siesaCode": "1260011",
+    "name": "ALMIDON DE PAPA"
+  },
+  {
+    "siesaCode": "1260014",
+    "name": "CARRAGENINA"
+  },
+  {
+    "siesaCode": "1260015",
+    "name": "ALMIDON DE YUCA"
+  },
+  {
+    "siesaCode": "1260017",
+    "name": "ALMIDON MODIFICADO DE MAIZ"
+  },
+  {
+    "siesaCode": "2906001",
+    "name": "EMULSION DE PIEL DE CERDO"
+  }
+]

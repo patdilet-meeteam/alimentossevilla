@@ -1,0 +1,44 @@
+[
+  {
+    "id": "t0jlzlysxwqkpgm4knfe5qz3s",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nt0jlzlysxwqkpgm4knfe5qz3s               \ttrue \t\t61.59kB   \t23 minutes ago\nTotal:\t61.59kB\n"
+  },
+  {
+    "id": "ttgfizaot3u5roneylz559ifn",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nttgfizaot3u5roneylz559ifn               \ttrue \t\t61.59kB   \t26 minutes ago\nTotal:\t61.59kB\n"
+  },
+  {
+    "id": "xpo0if58vt6bt4qscdccpe8r9",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nxpo0if58vt6bt4qscdccpe8r9               \ttrue \t\t2.119MB   \t23 minutes ago\nTotal:\t2.119MB\n"
+  },
+  {
+    "id": "xi1vkdgdvqo3xazrfqq83sfu4",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nxi1vkdgdvqo3xazrfqq83sfu4               \ttrue \t\t2.119MB   \t26 minutes ago\nTotal:\t2.119MB\n"
+  },
+  {
+    "id": "o0rmv0ge91koqd41wkg2l26ga",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\no0rmv0ge91koqd41wkg2l26ga               \ttrue \t\t98.46MB   \t23 minutes ago\nTotal:\t98.46MB\n"
+  },
+  {
+    "id": "uf7x7uklef8f3z2h9bqndv8rc",
+    "verifiedOwnRuntimeCopy": true,
+    "reclaimable": true,
+    "shared": false,
+    "result": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nuf7x7uklef8f3z2h9bqndv8rc               \ttrue \t\t98.45MB   \t26 minutes ago\nTotal:\t98.45MB\n"
+  }
+]

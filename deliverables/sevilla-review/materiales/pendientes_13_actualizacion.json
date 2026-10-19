@@ -1,5 +1,5 @@
 {
-  "count": 14,
+  "count": 13,
   "searched": [
     "Banco todas hojas TN OFICIAL/T.N/Mezclas",
     "CTN todas hojas incluyendo ocultas",
@@ -71,45 +71,6 @@
           "row": "38",
           "code": "1220011",
           "description": "ADITIVO BURGER MEAT 80 B NAT            "
-        }
-      ],
-      "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
-    },
-    {
-      "code": "arcon-t",
-      "name": "Arcon T (Proteína de Soya 70% Hojuelas)",
-      "bankRow": null,
-      "bankName": null,
-      "status": "UNRESOLVED",
-      "reason": "Nombre original de receta especifica ARCON T hojuelas; Banco ofrece concentrada70 y texturizada70 sin ARCON T.",
-      "vectorEvidence": [],
-      "sourceOriginal": null,
-      "candidateBankRows": [
-        {
-          "sheet": "TN OFICIAL",
-          "row": 26,
-          "name": "Proteína concentrada de Soya al70%"
-        },
-        {
-          "sheet": "TN OFICIAL",
-          "row": 27,
-          "name": "Proteína texturizada de Soya al70%"
-        }
-      ],
-      "originalRecipeCostReferences": [
-        {
-          "book": "Junio (1).xlsx",
-          "sheet": "ALTERNATIVA HSAS",
-          "row": "12",
-          "code": "MPPA122",
-          "description": "PROTEÍNA DE SOYA AL 70%. ARCON T (Hojuelas). SACO X 11.34 KILOS"
-        },
-        {
-          "book": "Junio (1).xlsx",
-          "sheet": "MNESA POLLO 4 UND BRASSET V1.",
-          "row": "9",
-          "code": "MPPA122",
-          "description": "PROTEÍNA DE SOYA AL 70%. ARCON T (Hojuelas). SACO X 11.34 KILOS"
         }
       ],
       "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
@@ -1987,5 +1948,12 @@
       "lookupNote": "Referencias por token explícito de producto; no autorizan equivalencia nutricional."
     }
   ],
-  "supersededBy": "Comentario original TN OFICIAL!C27 y T.N!C31 resuelve arcon-t; plan53. Restan13 de este conjunto; no incluye78 códigos de recetas recién recuperadas."
+  "supersededBy": "Comentario original TN OFICIAL!C27 y T.N!C31 resuelve arcon-t; plan53. Restan13 de este conjunto; no incluye78 códigos de recetas recién recuperadas.",
+  "resolved": [
+    {
+      "code": "arcon-t",
+      "status": "RESOLVED_SOURCE_IDENTITY",
+      "evidence": "Comentario original TN OFICIAL!C27 y T.N!C31: Arcon T. Perfil plan53; anomalía grasa total0/saturada0.2 conservada sin inventar corrección."
+    }
+  ]
 }

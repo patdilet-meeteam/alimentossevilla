@@ -1,0 +1,7 @@
+{
+  "implementationFilesCompared": 138,
+  "implementationFingerprint": "2180c6e252f95e5d0f5c8a83b6622b9c8138ecc4e11630ec29db7d64892e547c",
+  "exactWorkingTreeMatch": true,
+  "scope": "Application, schema, deployment/bootstrap/import library, manifest/lock/config and Dockerfile; excludes tests and review harness scripts",
+  "imageArchive": "Sevilla_herramientas_local_validacion_feedback.tar"
+}

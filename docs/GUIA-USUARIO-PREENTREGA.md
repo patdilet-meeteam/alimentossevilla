@@ -1,3 +1,5 @@
+> Guía vigente de entrega y límites: [ENTREGA-TEAM-LEAD.md](ENTREGA-TEAM-LEAD.md). Para una versión respaldada por fuente, los cambios se guardan mediante «Preparar copia de trabajo»; conservan el original. La aprobación histórica importada no se traslada.
+
 # Guía de uso — preentrega
 
 **Plataforma Centralizada de Gestión Técnica y Nutricional · Alimentos Sevilla S.A.S.**

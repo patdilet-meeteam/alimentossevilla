@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { exactNonnegativeDecimal } from "@/lib/validations/source-decimal";
 
 // Enum values based on Prisma schema (extended in SPEC-003 to include real customer categories)
 const IngredientCategoryEnum = z.enum([
@@ -91,10 +92,7 @@ export const nutritionalProfileSchema = z.object({
 
 export const nutrientValueSchema = z.object({
   nutrientId: z.string().min(1, "El nutriente es requerido"),
-  value: z
-    .number()
-    .finite("El valor debe ser un número finito")
-    .min(0, "El valor no puede ser negativo"),
+  value: exactNonnegativeDecimal(),
   method: z
     .string()
     .max(255, "El método no puede exceder 255 caracteres")

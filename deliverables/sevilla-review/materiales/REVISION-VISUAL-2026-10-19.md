@@ -1,3 +1,5 @@
+> INFORME HISTÓRICO: conserva evidencia del momento. No usar sus solicitudes generales ni conteos como estado vigente. Consulte `proyecto/docs/ESTADO-VIGENTE-ENTREGA.md` en el ZIP y el ensayo final.
+
 # Revisión visual interactiva local
 
 **Resultado:15 comprobaciones PASS,8 capturas, Chrome 155.0.8059.82.** Se utilizó Chrome instalado en modo headless, control CDP 1.3 con WebSocket de Node y perfil temporal independiente. No se instaló software, no se usó IAB ni ninguna sesión personal. El servidor estuvo ligado a `http://127.0.0.1:33117`; la base fue PostgreSQL tmpfs efímero `sevilla_ready_dataset`. Todo se elimina al cerrar.

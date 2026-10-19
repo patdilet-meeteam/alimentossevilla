@@ -1,0 +1,48 @@
+{
+  "before": {
+    "ingredients": 430,
+    "products": 39,
+    "presentations": 63,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "profiles": 18,
+    "activeProfiles": 18,
+    "nutrientValues": 306,
+    "approvedVersions": 0
+  },
+  "first": {
+    "created": 66,
+    "identical": 0,
+    "deactivatedPreviousProfiles": 3
+  },
+  "after": {
+    "ingredients": 430,
+    "products": 39,
+    "presentations": 63,
+    "formulations": 17,
+    "versions": 18,
+    "components": 275,
+    "profiles": 84,
+    "activeProfiles": 81,
+    "nutrientValues": 1427,
+    "approvedVersions": 0
+  },
+  "second": {
+    "created": 0,
+    "identical": 66,
+    "deactivatedPreviousProfiles": 0
+  },
+  "productCoverage": {
+    "total": 39,
+    "ready": 1,
+    "mathematicallyReady": 3,
+    "sourceRecipeConflicts": 2,
+    "missingProfileRecipes": 14,
+    "incomplete": 16,
+    "noFormulation": 22
+  },
+  "readyProducts": [
+    "salchicha-desayuno-premium-480"
+  ]
+}

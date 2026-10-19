@@ -39,4 +39,18 @@ describe("bank import preserves source values and absence", () => {
     expect(second[0].nutrientId).toBe("SODIUM");
     expect(second[0].value.toString()).toBe("0");
   });
+  it("refuses excess source precision before creating or deactivating profiles", async () => {
+    mocks.parse.mockResolvedValue([{sourceRow: 65, ingredientName: "Paprika", sourceDetail: null, valuesPer100g: {FIBER: new Prisma.Decimal("0.1234567890123456789012345")}}]);
+    const form = new FormData(); form.set("file", new File(["fixture"], "Banco.xlsx"));
+    expect((await importNutritionalBankProfiles(form)).ok).toBe(false);
+    expect(mocks.transaction).not.toHaveBeenCalled(); expect(mocks.updateProfiles).not.toHaveBeenCalled();
+  });
+
+  it("does not activate a global profile for a code with row-specific identities", async () => {
+    mocks.findMany.mockResolvedValue([{id:"ambiguous",siesaCode:"MPPA144",name:"Almidón de Papa",genericName:null,profiles:[]}]);
+    mocks.parse.mockResolvedValue([{sourceRow:46,ingredientName:"Almidón de Papa",sourceDetail:null,valuesPer100g:{SODIUM:new Prisma.Decimal(0)}}]);
+    const form=new FormData();form.set("file",new File(["fixture"],"Banco.xlsx"));
+    expect((await importNutritionalBankProfiles(form)).ok).toBe(false);expect(mocks.transaction).not.toHaveBeenCalled();expect(mocks.updateProfiles).not.toHaveBeenCalled();
+  });
+
 });
